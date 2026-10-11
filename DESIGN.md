@@ -260,6 +260,26 @@ The strut tripod carries all overturning and quake loads at the collars, so the 
 - Running power is milliwatts. Size the drive for breakaway in dust (~20x running force, ~1 kN tangential): a few hundred watts.
 - Power crosses the rotation through a **slip ring or rotary transformer** in the kingpin.
 
+## 5b. Bearing and joint schedule
+
+Only **three sets of bearings rotate in service**: the 6 tyres and 2 collars. Everything else is static in service and moves only during installation or maintenance, or by tiny thermal amounts.
+
+| # | Joint | Relative motion | Load (Moon) | Type |
+|---|---|---|---|---|
+| 1 | **Tyres** (3 bogies x 2) | Rotating, ~0.5°/h, always | ~3.4 kN each, vertical | Wheel cartridges: hybrid ceramic bearings, dry lube, conical tread on a flat rail head |
+| 2 | **Upper collar** (62 m, 6 cartridges) | Rotating (mast inside a stationary collar) | Stay pull-down ~4 kN total, ~0.7 kN per thrust roller; small radial | Roller cartridges with dual rotation paths; torque read by the V-link load pins |
+| 3 | **Strut collar** (35 m, 6 cartridges) | Rotating | Strut push-up ~5.7 kN total, ~0.9 kN per lower thrust roller | Same cartridge design as the upper collar |
+| 4 | Kingpin | Rotating, but radial centring only | A few hundred N (quake, misalignment) | Slewing ring ~1.2 m, with the slip ring / rotary transformer |
+| 5 | **Mast foot** on the deck centre | **No rotation** (turns with the deck); small tilt only | **~8 to 9 kN** vertical: mast + wings + top yard (~10 kN), plus stay pull-down (~4 kN), less strut push-up (~5.7 kN) | **Spherical seat** (ball joint), dry-film plain bearing; torque through a dog coupling |
+| 6 | Bogie pivots (3) | Rocking ±0.5°, ±20 mm radial float | ~6.8 kN each | Spherical pivot with hard stops |
+| 7 | Uplift rollers, support shoes | None in service (standby) | ~0 (quake / fault only) | Rollers / screw shoes |
+| 8 | **Strut A-frame ends** (6 tubes, 2 ends each) | **Static in service.** Swing only during the scissor erection; thermal micro-motion after | ~1.25 kN per tube | Spherical plain bearings, dry film. They hardly move, so the concern is fretting, not wear |
+| 9 | **V-links** (3 x 2 pins, upper collar) | Static in service; hinge only during installation | Stay tension 1.5 to 3 kN; couple ≤ ±0.2 kN at the interlock limit | Pins in lugs; instrumented load pins |
+| 10 | Stay and tie terminations, foot pads | Static (tensioners adjusted occasionally) | 1.5 to 3 kN | Screw tensioners + load cells |
+| 11 | **Top yard** at 100 m | **None:** fixed to the mast, turns with it | Wings + yard ~4.4 to 5 kN down, through topping lifts into the mast top, then down the mast to the mast foot | Bolted joint, no bearing |
+| 12 | Halyard sheaves (4, top yard) | Only when lowering and raising the wings | ~1.1 kN per halyard | Sheaves on dry-lubricated bushings |
+| 13 | Drive pinions (2) | Rotating, always | ≤ ~1 kN at breakaway | Pinion on a rack on the rail web |
+
 ## 6. Track (raised, segmented, swappable)
 
 - **Raised rail** on piers ~0.5 m above the regolith, away from near-surface dust and with room to work underneath.
