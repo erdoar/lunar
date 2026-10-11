@@ -228,6 +228,22 @@ The whole cycle (down ~20 min, swap, up ~20 min) costs about an hour of output; 
 - Lengths: ~214 m (outer) and ~200 m (inner), including the 97.5 m stroke from the yard down to the landing trays.
 - The halyard loop adds ~4.4 kN of compression to the mast while the wings hang on it. It does not add load at the mast foot: the pull is internal, top to deck.
 
+**How the deck motor drives the wings: the halyard path**
+
+![Halyard path from the deck winch to the wing](halyard-path.svg)
+
+The motor never drives the yard, which is fixed to the mast. It only pulls the halyards, so **the rope is the whole transmission**. In the baseline the deck, mast and yard turn together, so the ropes never cross a rotating joint and cannot twist. Each halyard runs:
+1. **Traction sheave on the deck** → straight up into the **clear centre channel of the mast lattice**. The lattice members sit only on the three faces.
+2. **Up 100 m** as a loose 4-rope bundle through **ceramic-lined guide rings at every 3 m section**. Each rope weighs only ~23 N over 100 m on the Moon, so it barely touches the rings.
+3. **Turning block** at the yard-mast section (100 m) → 90° to horizontal.
+4. **Along the inside of the yard truss** on 2–3 guide rollers to the **end sheave** (2 m or 17 m out) → 90° down to the cone on the wing top bar.
+
+- **Friction:** about 85% overall efficiency through 2 sheaves and the rollers.
+- **Stretch:** ~0.06% at 1.1 kN, ~13 cm over 214 m, the same on all 4 ropes, and the docking cones self-centre.
+- **Thermal length change:** ~0.24 m over 200 m for a 100 K swing. It is taken up because the wings sit on the docks in service and the ropes are held at ~0.1 kN by constant-torque motor control.
+- **Fitting the ropes during jack-up:** the halyards are rove through the top yard first, and the winch pays out as the mast rises. Each **flat-pack section is unfolded around the 4-rope bundle** at the jack frame before its third chord is pinned, so the ropes end up inside every section and nothing is threaded at height.
+- **Alternative: send power, not rope.** A winch at the yard, with only a power cable up the mast, gives short ropes but puts the motor and brake at 100 m. The winch is rarely used (the wings sit on docks), so it stays on the deck for ground access. In the turret option (section 9) rope cannot cross the turret bearing, so the winch rides on the turret.
+
 **Docking latches (wings off the halyards when up)**
 - At each halyard point the top bar carries a **cone**, which seats in a **dock** under the yard.
 - The dock has a **"push-to-latch, push-to-release" mechanism**, the same principle as a ballpoint pen or a parachute release hook. It needs no motor or power at height:
