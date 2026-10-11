@@ -239,8 +239,20 @@ The motor never drives the yard, which is fixed to the mast. It only pulls the h
 4. **Along the inside of the yard truss** on 2–3 guide rollers to the **end sheave** (2 m or 17 m out) → 90° down to the cone on the wing top bar.
 
 - **Friction:** about 85% overall efficiency through 2 sheaves and the rollers.
-- **Stretch:** ~0.06% at 1.1 kN, ~13 cm over 214 m, the same on all 4 ropes, and the docking cones self-centre.
+- **Stretch:** ~0.06% at 1.1 kN, ~13 cm over 214 m. The differences between ropes are handled below.
 - **Thermal length change:** ~0.24 m over 200 m for a 100 K swing. It is taken up because the wings sit on the docks in service and the ropes are held at ~0.1 kN by constant-torque motor control.
+- **Inner vs outer rope lengths differ** (~200 m vs ~214 m), so their stretch and thermal changes differ too, which the equal-stroke traction sheaves cannot cancel:
+
+  | Source | Difference between inner and outer rope |
+  |---|---|
+  | Stretch at 1.1 kN | ~9 mm |
+  | Uniform 100 K swing | ~17 mm |
+  | Uneven heating (one rope ~50 K warmer over 100 m) | ~60 mm, the largest |
+
+  A 6 cm difference tilts a 15 m top bar by only ~0.2°, which is harmless to the structure, but it makes the two cones reach their docks at different moments. Three measures handle it:
+  1. **Length-matched routing.** The inner halyard takes a ~7 m out-and-back loop along the yard over a small extra sheave, so all 4 halyards are the same length and follow similar paths. That cancels the systematic stretch and uniform-thermal difference.
+  2. **Trim sheaves.** Each halyard passes a small sheave on a lead screw on the deck, motorised with ±0.25 m range. An inclinometer on each wing top bar levels the bar automatically before docking. This also takes out uneven heating, rope creep, and any port/starboard difference.
+  3. **Sprung docks.** Each dock has ~60 mm of spring travel, so the first cone to arrive rides up until the second latches. Both limit switches must read latched before the halyards are eased. The same applies on release.
 - **Fitting the ropes during jack-up:** the halyards are rove through the top yard first, and the winch pays out as the mast rises. Each **flat-pack section is unfolded around the 4-rope bundle** at the jack frame before its third chord is pinned, so the ropes end up inside every section and nothing is threaded at height.
 - **Alternative: send power, not rope.** A winch at the yard, with only a power cable up the mast, gives short ropes but puts the motor and brake at 100 m. The winch is rarely used (the wings sit on docks), so it stays on the deck for ground access. In the turret option (section 9) rope cannot cross the turret bearing, so the winch rides on the turret.
 
