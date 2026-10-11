@@ -49,7 +49,7 @@
 <text x="680" y="34" class="t">B. Top turret (set aside)</text>
 <path d="M944 327L982 296" class="l"/>
 <text x="986" y="300" text-anchor="start">Turret bearing ~Ø2 m at 64 m</text>
-<text x="986" y="314" text-anchor="start">+ drive, slip ring, wing winch</text>
+<text x="986" y="314" text-anchor="start">+ drive, slip ring</text>
 <path d="M938 338L982 369" class="l"/>
 <text x="986" y="373" text-anchor="start">Stay head (fixed lugs, no rollers)</text>
 <path d="M938 478L982 509" class="l"/>

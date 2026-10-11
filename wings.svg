@@ -1,136 +1,160 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 760" font-family="Helvetica, Arial, sans-serif" font-size="12.5">
-<rect width="1240" height="760" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 820" font-family="Helvetica, Arial, sans-serif" font-size="12">
+<rect width="1240" height="820" fill="#fff"/>
 <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker><pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#a08c6c"/></pattern></defs>
-<style>.s{stroke:#222;stroke-width:1.5}.hal{stroke:#555;stroke-width:1}.l{stroke:#555;stroke-width:1;fill:none}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:15px;font-weight:bold}</style>
-<text x="160" y="40" text-anchor="middle" class="t">1. Operating</text>
-<rect x="20" y="600" width="280" height="30" fill="url(#g)"/><line x1="20" y1="600" x2="300" y2="600" stroke="#222"/>
-<rect x="153.55" y="593.55" width="12.899999999999999" height="3" fill="#e67e22"/><path d="M155.7 600 L158.28 597.42 H161.72 L164.3 600 Z" fill="#7d8790"/>
-<rect x="158.0" y="148.5" width="4" height="451.5" fill="#888"/>
-<rect x="155.0" y="446.5" width="10" height="6" fill="#4a9" class="s"/>
-<rect x="155.0" y="330.40000000000003" width="10" height="6" fill="#4a9" class="s"/>
-<rect x="84.75" y="168.0" width="150.5" height="4" fill="#e0a040" class="s"/>
-<line x1="160.0" y1="148.5" x2="86.9" y2="170.0" stroke="#555"/>
-<rect x="84.9" y="593.55" width="68.5" height="3" fill="#7d8790"/>
-<rect x="86.9" y="170.0" width="64.5" height="129.0" fill="#2c4a7a"/>
-<line x1="94.9625" y1="170.0" x2="94.9625" y2="299.0" stroke="#7fa3d6"/>
-<line x1="103.025" y1="170.0" x2="103.025" y2="299.0" stroke="#7fa3d6"/>
-<line x1="111.0875" y1="170.0" x2="111.0875" y2="299.0" stroke="#7fa3d6"/>
-<line x1="119.15" y1="170.0" x2="119.15" y2="299.0" stroke="#7fa3d6"/>
-<line x1="127.2125" y1="170.0" x2="127.2125" y2="299.0" stroke="#7fa3d6"/>
-<line x1="135.275" y1="170.0" x2="135.275" y2="299.0" stroke="#7fa3d6"/>
-<line x1="143.3375" y1="170.0" x2="143.3375" y2="299.0" stroke="#7fa3d6"/>
-<rect x="86.9" y="168.0" width="64.5" height="4" fill="#e0a040" class="s"/>
-<line x1="160.0" y1="148.5" x2="233.1" y2="170.0" stroke="#555"/>
-<rect x="166.6" y="593.55" width="68.5" height="3" fill="#7d8790"/>
-<rect x="168.6" y="170.0" width="64.5" height="129.0" fill="#2c4a7a"/>
-<line x1="176.6625" y1="170.0" x2="176.6625" y2="299.0" stroke="#7fa3d6"/>
-<line x1="184.725" y1="170.0" x2="184.725" y2="299.0" stroke="#7fa3d6"/>
-<line x1="192.7875" y1="170.0" x2="192.7875" y2="299.0" stroke="#7fa3d6"/>
-<line x1="200.85" y1="170.0" x2="200.85" y2="299.0" stroke="#7fa3d6"/>
-<line x1="208.9125" y1="170.0" x2="208.9125" y2="299.0" stroke="#7fa3d6"/>
-<line x1="216.975" y1="170.0" x2="216.975" y2="299.0" stroke="#7fa3d6"/>
-<line x1="225.0375" y1="170.0" x2="225.0375" y2="299.0" stroke="#7fa3d6"/>
-<rect x="168.6" y="168.0" width="64.5" height="4" fill="#e0a040" class="s"/>
-<text x="160" y="650" text-anchor="middle" font-size="12" fill="#2e7d32" font-weight="bold">Balanced (both wings together)</text>
-<text x="460" y="40" text-anchor="middle" class="t">2. Lowering both wings</text>
-<rect x="320" y="600" width="280" height="30" fill="url(#g)"/><line x1="320" y1="600" x2="600" y2="600" stroke="#222"/>
-<rect x="453.55" y="593.55" width="12.899999999999999" height="3" fill="#e67e22"/><path d="M455.7 600 L458.28 597.42 H461.72 L464.3 600 Z" fill="#7d8790"/>
-<rect x="458.0" y="148.5" width="4" height="451.5" fill="#888"/>
-<rect x="455.0" y="446.5" width="10" height="6" fill="#4a9" class="s"/>
-<rect x="455.0" y="330.40000000000003" width="10" height="6" fill="#4a9" class="s"/>
-<rect x="384.75" y="168.0" width="150.5" height="4" fill="#e0a040" class="s"/>
-<line x1="460.0" y1="148.5" x2="386.9" y2="170.0" stroke="#555"/>
-<rect x="384.9" y="593.55" width="68.5" height="3" fill="#7d8790"/>
-<line x1="451.4" y1="170.0" x2="451.4" y2="505.4" class="hal"/>
-<line x1="386.9" y1="170.0" x2="386.9" y2="505.4" class="hal"/>
-<rect x="386.9" y="505.4" width="64.5" height="83.85" fill="#2c4a7a"/>
-<line x1="394.9625" y1="505.4" x2="394.9625" y2="589.25" stroke="#7fa3d6"/>
-<line x1="403.025" y1="505.4" x2="403.025" y2="589.25" stroke="#7fa3d6"/>
-<line x1="411.0875" y1="505.4" x2="411.0875" y2="589.25" stroke="#7fa3d6"/>
-<line x1="419.15" y1="505.4" x2="419.15" y2="589.25" stroke="#7fa3d6"/>
-<line x1="427.2125" y1="505.4" x2="427.2125" y2="589.25" stroke="#7fa3d6"/>
-<line x1="435.275" y1="505.4" x2="435.275" y2="589.25" stroke="#7fa3d6"/>
-<line x1="443.3375" y1="505.4" x2="443.3375" y2="589.25" stroke="#7fa3d6"/>
-<rect x="386.9" y="589.3359999999999" width="64.5" height="4.2139999999999995" fill="#2c4a7a" opacity="0.6"/>
-<rect x="386.9" y="503.4" width="64.5" height="4" fill="#e0a040" class="s"/>
-<line x1="460.0" y1="148.5" x2="533.1" y2="170.0" stroke="#555"/>
-<rect x="466.6" y="593.55" width="68.5" height="3" fill="#7d8790"/>
-<line x1="468.6" y1="170.0" x2="468.6" y2="505.4" class="hal"/>
-<line x1="533.1" y1="170.0" x2="533.1" y2="505.4" class="hal"/>
-<rect x="468.6" y="505.4" width="64.5" height="83.85" fill="#2c4a7a"/>
-<line x1="476.6625" y1="505.4" x2="476.6625" y2="589.25" stroke="#7fa3d6"/>
-<line x1="484.725" y1="505.4" x2="484.725" y2="589.25" stroke="#7fa3d6"/>
-<line x1="492.7875" y1="505.4" x2="492.7875" y2="589.25" stroke="#7fa3d6"/>
-<line x1="500.85" y1="505.4" x2="500.85" y2="589.25" stroke="#7fa3d6"/>
-<line x1="508.9125" y1="505.4" x2="508.9125" y2="589.25" stroke="#7fa3d6"/>
-<line x1="516.975" y1="505.4" x2="516.975" y2="589.25" stroke="#7fa3d6"/>
-<line x1="525.0375" y1="505.4" x2="525.0375" y2="589.25" stroke="#7fa3d6"/>
-<rect x="468.6" y="589.3359999999999" width="64.5" height="4.2139999999999995" fill="#2c4a7a" opacity="0.6"/>
-<rect x="468.6" y="503.4" width="64.5" height="4" fill="#e0a040" class="s"/>
-<text x="460" y="650" text-anchor="middle" font-size="12" fill="#2e7d32" font-weight="bold">Balanced (both wings together)</text>
-<text x="760" y="40" text-anchor="middle" class="t">3. Down: swap packs</text>
-<rect x="620" y="600" width="280" height="30" fill="url(#g)"/><line x1="620" y1="600" x2="900" y2="600" stroke="#222"/>
-<rect x="753.55" y="593.55" width="12.899999999999999" height="3" fill="#e67e22"/><path d="M755.7 600 L758.28 597.42 H761.72 L764.3 600 Z" fill="#7d8790"/>
-<rect x="758.0" y="148.5" width="4" height="451.5" fill="#888"/>
-<rect x="755.0" y="446.5" width="10" height="6" fill="#4a9" class="s"/>
-<rect x="755.0" y="330.40000000000003" width="10" height="6" fill="#4a9" class="s"/>
-<rect x="684.75" y="168.0" width="150.5" height="4" fill="#e0a040" class="s"/>
-<line x1="760.0" y1="148.5" x2="686.9" y2="170.0" stroke="#555"/>
-<rect x="684.9" y="593.55" width="68.5" height="3" fill="#7d8790"/>
-<line x1="751.4" y1="170.0" x2="751.4" y2="586.24" class="hal"/>
-<line x1="686.9" y1="170.0" x2="686.9" y2="586.24" class="hal"/>
-<rect x="686.9" y="586.24" width="64.5" height="3.0100000000000007" fill="#2c4a7a"/>
-<line x1="694.9625" y1="586.24" x2="694.9625" y2="589.25" stroke="#7fa3d6"/>
-<line x1="703.025" y1="586.24" x2="703.025" y2="589.25" stroke="#7fa3d6"/>
-<line x1="711.0875" y1="586.24" x2="711.0875" y2="589.25" stroke="#7fa3d6"/>
-<line x1="719.15" y1="586.24" x2="719.15" y2="589.25" stroke="#7fa3d6"/>
-<line x1="727.2125" y1="586.24" x2="727.2125" y2="589.25" stroke="#7fa3d6"/>
-<line x1="735.275" y1="586.24" x2="735.275" y2="589.25" stroke="#7fa3d6"/>
-<line x1="743.3375" y1="586.24" x2="743.3375" y2="589.25" stroke="#7fa3d6"/>
-<rect x="686.9" y="581.7909333333333" width="64.5" height="11.759066666666666" fill="#2c4a7a" opacity="0.6"/>
-<rect x="686.9" y="584.24" width="64.5" height="4" fill="#e0a040" class="s"/>
-<line x1="760.0" y1="148.5" x2="833.1" y2="170.0" stroke="#555"/>
-<rect x="766.6" y="593.55" width="68.5" height="3" fill="#7d8790"/>
-<line x1="768.6" y1="170.0" x2="768.6" y2="586.24" class="hal"/>
-<line x1="833.1" y1="170.0" x2="833.1" y2="586.24" class="hal"/>
-<rect x="768.6" y="586.24" width="64.5" height="3.0100000000000007" fill="#2c4a7a"/>
-<line x1="776.6625" y1="586.24" x2="776.6625" y2="589.25" stroke="#7fa3d6"/>
-<line x1="784.725" y1="586.24" x2="784.725" y2="589.25" stroke="#7fa3d6"/>
-<line x1="792.7875" y1="586.24" x2="792.7875" y2="589.25" stroke="#7fa3d6"/>
-<line x1="800.85" y1="586.24" x2="800.85" y2="589.25" stroke="#7fa3d6"/>
-<line x1="808.9125" y1="586.24" x2="808.9125" y2="589.25" stroke="#7fa3d6"/>
-<line x1="816.975" y1="586.24" x2="816.975" y2="589.25" stroke="#7fa3d6"/>
-<line x1="825.0375" y1="586.24" x2="825.0375" y2="589.25" stroke="#7fa3d6"/>
-<rect x="768.6" y="581.7909333333333" width="64.5" height="11.759066666666666" fill="#2c4a7a" opacity="0.6"/>
-<rect x="768.6" y="584.24" width="64.5" height="4" fill="#e0a040" class="s"/>
-<text x="760" y="650" text-anchor="middle" font-size="12" fill="#2e7d32" font-weight="bold">Balanced (both wings together)</text>
-<path d="M233.1 164.0L263.1 134.0" class="l"/><text x="243.1" y="130.0" font-size="11">Permanent top yard</text>
-<path d="M511.6 548.4L560 428.0" class="l"/><text x="520" y="422.0" font-size="11">Packs land and fold</text><text x="520" y="436.0" font-size="11">themselves in the trays</text>
-<path d="M386.9 342.0L360 299.0" class="l"/><text x="360" y="293.0" font-size="11" text-anchor="end">Halyards</text>
-<path d="M468 213.0 V342.0" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
-<path d="M803.0 586.24L840 514.0" class="l"/><text x="820" y="508.0" font-size="11">Hangers at working</text><text x="820" y="522.0" font-size="11">height (~1 m above tray)</text>
-<path d="M699.8 593.55L670 539.8" class="l"/><text x="668" y="539.8" font-size="11" text-anchor="end">Landing tray</text><text x="668" y="552.8" font-size="11" text-anchor="end">(on ground legs)</text>
-<text x="1080" y="40" text-anchor="middle" class="t">4. One pack, side view</text>
-<rect x="1010" y="120" width="140" height="10" fill="#e0a040" class="s"/><text x="1080" y="112" text-anchor="middle" font-size="11">top bar (lowering)</text>
-<rect x="1068" y="130" width="24" height="10" fill="#4a9" class="s"/>
-<line x1="1080" y1="142" x2="1080" y2="178" stroke="#2c4a7a" stroke-width="5" stroke-linecap="round"/>
-<circle cx="1080" cy="180" r="2.5" fill="#222"/>
-<line x1="1080" y1="182" x2="1080" y2="218" stroke="#2c4a7a" stroke-width="5" stroke-linecap="round"/>
-<circle cx="1080" cy="220" r="2.5" fill="#222"/>
-<line x1="1080" y1="222" x2="1080" y2="258" stroke="#2c4a7a" stroke-width="5" stroke-linecap="round"/>
-<circle cx="1080" cy="260" r="2.5" fill="#222"/>
-<line x1="1080" y1="262" x2="1080" y2="298" stroke="#2c4a7a" stroke-width="5" stroke-linecap="round"/>
-<circle cx="1080" cy="300" r="2.5" fill="#222"/>
-<line x1="1080" y1="302" x2="1080" y2="338" stroke="#2c4a7a" stroke-width="5" stroke-linecap="round"/>
-<circle cx="1080" cy="340" r="2.5" fill="#222"/>
-<polyline points="1080,340 1057,340 1103,352 1057,364 1103,376 1057,388 1103,400 1057,412 1103,424 1057,436 1103,448 1057,460 1103,472" fill="none" stroke="#2c4a7a" stroke-width="4" stroke-linejoin="round"/>
-<rect x="1020" y="480" width="120" height="8" fill="#7d8790" class="s"/><line x1="1020" y1="456" x2="1020" y2="480" stroke="#7d8790" stroke-width="3"/><line x1="1140" y1="456" x2="1140" y2="480" stroke="#7d8790" stroke-width="3"/>
-<path d="M1170 160 V260" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
-<text x="1176" y="215" font-size="11">lowering</text>
-<path d="M1046 360 L1000 330" class="l"/><text x="998" y="326" font-size="11" text-anchor="end">Alternate hinges sprung</text><text x="998" y="340" font-size="11" text-anchor="end">to fold the same way</text>
-<path d="M1140 484 L1170 510" class="l"/><text x="1100" y="524" font-size="11">Tray with low side walls</text>
-<text x="970" y="560" font-size="11.5">Raising reverses it: each panel</text>
-<text x="970" y="575" font-size="11.5">unfolds as it lifts off the tray.</text>
-<text x="20" y="722" font-size="12.5">One winch drives all 4 halyards through linked drums, so both wings always lower, fold, lift and unfold together and the rig stays balanced.</text>
-<text x="20" y="740" font-size="12.5">No Roman-blind cords, carriers or per-pack hoists: the packs fold by landing. Down ~20 min, swap, up ~20 min.</text>
+<style>.s{stroke:#222;stroke-width:1.5}.l{stroke:#555;stroke-width:1;fill:none}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:15px;font-weight:bold}</style>
+<text x="20" y="30" class="t">Swapping one pack (rev 22): elevation at the maintenance azimuth</text>
+<text x="20" y="48" fill="#555">Bots drawn enlarged. Struts and stays lie 30° out of the wing plane (drawn faint), so a lowered pack passes them.</text>
+<rect x="74.0" y="780" width="512.0" height="24" fill="url(#g)"/><line x1="74.0" y1="780" x2="586.0" y2="780" stroke="#222"/>
+<line x1="163.6" y1="780" x2="330.0" y2="556.0" stroke="#bbb" stroke-width="3"/>
+<line x1="163.6" y1="780" x2="320.016" y2="383.2" stroke="#d7c0e6" stroke-width="1.2"/>
+<line x1="496.4" y1="780" x2="330.0" y2="556.0" stroke="#bbb" stroke-width="3"/>
+<line x1="496.4" y1="780" x2="339.984" y2="383.2" stroke="#d7c0e6" stroke-width="1.2"/>
+<rect x="325.52" y="88.79999999999995" width="8.959999999999999" height="691.2" fill="#e8e8e8" stroke="#888"/>
+<line x1="330.0" y1="769.76" x2="330.0" y2="136.15999999999997" stroke="#6c3483" stroke-width="1.6" stroke-dasharray="5 3"/>
+<rect x="321.04" y="553.0" width="17.919999999999998" height="6" fill="#4a9" class="s"/>
+<rect x="321.04" y="380.2" width="17.919999999999998" height="6" fill="#4a9" class="s"/>
+<rect x="320.4" y="768.4" width="19.200000000000003" height="4" fill="#e67e22"/><rect x="323.6" y="776" width="12.8" height="4" fill="#7d8790"/>
+<rect x="221.2" y="137.43999999999994" width="217.60000000000002" height="5.120000000000001" fill="#e0a040" class="s"/>
+<line x1="221.2" y1="129.76" x2="438.8" y2="129.76" stroke="#6c3483" stroke-width="1.2"/>
+<line x1="221.2" y1="137.43999999999994" x2="221.2" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="234.0" y1="137.43999999999994" x2="234.0" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="246.8" y1="137.43999999999994" x2="246.8" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="259.6" y1="137.43999999999994" x2="259.6" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="272.4" y1="137.43999999999994" x2="272.4" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="285.2" y1="137.43999999999994" x2="285.2" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="298.0" y1="137.43999999999994" x2="298.0" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="310.8" y1="137.43999999999994" x2="310.8" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="323.6" y1="137.43999999999994" x2="323.6" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="336.4" y1="137.43999999999994" x2="336.4" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="349.2" y1="137.43999999999994" x2="349.2" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="362.0" y1="137.43999999999994" x2="362.0" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="374.8" y1="137.43999999999994" x2="374.8" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="387.6" y1="137.43999999999994" x2="387.6" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="400.4" y1="137.43999999999994" x2="400.4" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="413.2" y1="137.43999999999994" x2="413.2" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="426.0" y1="137.43999999999994" x2="426.0" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="438.8" y1="137.43999999999994" x2="438.8" y2="129.76" stroke="#6c3483" stroke-width="0.8"/>
+<line x1="330.0" y1="88.79999999999995" x2="221.2" y2="137.43999999999994" stroke="#555"/>
+<line x1="330.0" y1="88.79999999999995" x2="438.8" y2="137.43999999999994" stroke="#555"/>
+<rect x="219.2" y="770.4" width="100.0" height="4" fill="#7d8790"/>
+<line x1="314.0" y1="770.4" x2="314.0" y2="780" stroke="#7d8790" stroke-width="2"/>
+<line x1="269.2" y1="770.4" x2="269.2" y2="780" stroke="#7d8790" stroke-width="2"/>
+<line x1="224.39999999999998" y1="770.4" x2="224.39999999999998" y2="780" stroke="#7d8790" stroke-width="2"/>
+<rect x="308.2" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="305.6" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="296.2" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="293.6" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="284.2" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="281.6" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="272.2" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="269.6" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="260.2" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="257.6" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="248.2" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="245.6" y="140.0" width="11.200000000000001" height="192.0" fill="none" stroke="#2c4a7a" stroke-dasharray="4 3"/>
+<line x1="251.2" y1="137.43999999999994" x2="251.2" y2="472.79999999999995" stroke="#c0392b" stroke-width="1.6"/>
+<rect x="245.6" y="472.79999999999995" width="11.200000000000001" height="192.0" fill="#2c4a7a"/>
+<rect x="244.6" y="470.79999999999995" width="13.200000000000001" height="3" fill="#e0a040"/>
+<path d="M267.2 502.79999999999995 V562.8" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="236.2" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="233.6" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="224.2" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="221.6" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="340.8" y="770.4" width="100.0" height="4" fill="#7d8790"/>
+<line x1="346.0" y1="770.4" x2="346.0" y2="780" stroke="#7d8790" stroke-width="2"/>
+<line x1="390.8" y1="770.4" x2="390.8" y2="780" stroke="#7d8790" stroke-width="2"/>
+<line x1="435.6" y1="770.4" x2="435.6" y2="780" stroke="#7d8790" stroke-width="2"/>
+<rect x="345.8" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="343.2" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="357.8" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="355.2" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="369.8" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="367.2" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="381.8" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="379.2" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="393.8" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="391.2" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="405.8" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="403.2" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="417.8" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="415.2" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="429.8" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
+<rect x="427.2" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
+<rect x="195.6" y="764.4" width="11.200000000000001" height="6" fill="#2c4a7a" opacity="0.7" class="s"/>
+<g stroke="#6c3483" stroke-width="2.6" stroke-linecap="round" fill="none"><line x1="253.2" y1="121.14461538461538" x2="248.89230769230767" y2="129.76"/><line x1="253.2" y1="121.14461538461538" x2="257.5076923076923" y2="129.76"/><line x1="253.2" y1="121.14461538461538" x2="253.2" y2="109.29846153846154"/><line x1="253.2" y1="111.45230769230768" x2="246.73846153846154" y2="118.99076923076922"/><line x1="253.2" y1="111.45230769230768" x2="259.66153846153844" y2="117.91384615384615"/></g><circle cx="253.2" cy="105.52923076923076" r="3.7" fill="#6c3483"/>
+<rect x="258.6" y="123.3" width="7.5" height="6.5" fill="#7fa3d6" stroke="#222" stroke-width="1"/>
+<g stroke="#6c3483" stroke-width="2.4" stroke-linecap="round" fill="none"><line x1="330.0" y1="420.0" x2="326.0" y2="428.0"/><line x1="330.0" y1="420.0" x2="334.0" y2="428.0"/><line x1="330.0" y1="420.0" x2="330.0" y2="409.0"/><line x1="330.0" y1="411.0" x2="324.0" y2="418.0"/><line x1="330.0" y1="411.0" x2="336.0" y2="417.0"/></g><circle cx="330.0" cy="405.5" r="3.4" fill="#6c3483"/>
+<rect x="326.0" y="432.0" width="8" height="7" fill="#7fa3d6" stroke="#222"/>
+<line x1="330.0" y1="428.0" x2="330.0" y2="432.0" stroke="#222"/>
+<path d="M257 117L176 95" class="l"/>
+<text x="172" y="99" text-anchor="end">Bot at the station: reel hoist</text>
+<text x="172" y="113" text-anchor="end">clipped into the socket</text>
+<path d="M251 281L176 255" class="l"/>
+<text x="172" y="259" text-anchor="end">Rope from the reel (0.1 m/s)</text>
+<path d="M247 569L176 524" class="l"/>
+<text x="172" y="528" text-anchor="end">One pack lowered,</text>
+<text x="172" y="542" text-anchor="end">~16 min each way</text>
+<path d="M324 441L176 409" class="l"/>
+<text x="172" y="413" text-anchor="end">Second bot climbing the rail</text>
+<text x="172" y="427" text-anchor="end">inside the mast core</text>
+<path d="M251 768L176 703" class="l"/>
+<text x="172" y="707" text-anchor="end">Lands in its tray slot,</text>
+<text x="172" y="721" text-anchor="end">then folds itself up</text>
+<path d="M202 764L138 745" class="l"/>
+<text x="134" y="749" text-anchor="end">New folded pack</text>
+<text x="134" y="763" text-anchor="end">waits by the tray</text>
+<path d="M394 130L458 102" class="l"/>
+<text x="462" y="106" text-anchor="start">Walkway + fall-arrest rail on the yard</text>
+<path d="M420 141L458 159" class="l"/>
+<text x="462" y="163" text-anchor="start">16 fixed pack hangers under the yard</text>
+<path d="M407 236L458 236" class="l"/>
+<text x="462" y="240" text-anchor="start">Starboard wing: 8 packs,</text>
+<text x="462" y="254" text-anchor="start">still working</text>
+<path d="M339 383L458 370" class="l"/>
+<text x="462" y="374" text-anchor="start">Upper collar 62 m</text>
+<path d="M339 556L458 543" class="l"/>
+<text x="462" y="547" text-anchor="start">Strut collar 35 m</text>
+<path d="M426 770L458 690" class="l"/>
+<text x="462" y="694" text-anchor="start">Landing trays (8 slots each)</text>
+<path d="M340 770L458 788" class="l"/>
+<text x="462" y="792" text-anchor="start">Base frame: bot dock + hatch</text>
+<text x="800" y="30" class="t">Inside the mast: plan section</text>
+<polygon points="945,72 1060,272 830,272" fill="#f4f4f4" stroke="#888" stroke-width="2"/>
+<circle cx="945" cy="72" r="10" fill="#888" stroke="#222"/>
+<circle cx="1060" cy="272" r="10" fill="#888" stroke="#222"/>
+<circle cx="830" cy="272" r="10" fill="#888" stroke="#222"/>
+<circle cx="945" cy="205" r="57" fill="none" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="933" y="261.6839560914018" width="24" height="10" fill="#555"/><rect x="937" y="251.6839560914018" width="16" height="10" fill="#6c3483" opacity="0.6" stroke="#222"/>
+<ellipse cx="945" cy="211" rx="37" ry="25" fill="#6c3483" opacity="0.35" stroke="#6c3483" stroke-width="2"/>
+<circle cx="945" cy="207" r="16" fill="#6c3483" opacity="0.8"/>
+<path d="M830 294 H1060" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="945" y="308" text-anchor="middle">1.4 m face</text>
+<path d="M985 165L1055 95" class="l"/>
+<text x="1059" y="99" text-anchor="start">Clear core ~Ø0.69 m</text>
+<text x="1059" y="113" text-anchor="start">(members on faces only)</text>
+<path d="M982 211L1055 165" class="l"/>
+<text x="1059" y="169" text-anchor="start">Bot ~0.45 x 0.3 m;</text>
+<text x="1059" y="183" text-anchor="start">reel slung below</text>
+<path d="M957 266L1055 255" class="l"/>
+<text x="1059" y="259" text-anchor="start">Climb rail + captive</text>
+<text x="1059" y="273" text-anchor="start">fall-arrest trolley</text>
+<text x="800" y="355" font-size="11.5">Collars, V-links, stays and spreaders are all outside the</text>
+<text x="800" y="370" font-size="11.5">mast, so the climb inside never has to pass them.</text>
+<text x="800" y="420" class="t">Pack swap, ~1.3 h with one bot</text>
+<text x="800" y="442">1. Park at the maintenance azimuth; new pack to the tray.</text>
+<text x="800" y="459">2. Bot climbs inside the mast (~11 min), clips to the yard</text>
+<text x="814" y="476">rail and walks out to the station.</text>
+<text x="800" y="493">3. Reel into the socket, rope to the pack head; take the</text>
+<text x="814" y="510">load, open the hanger latch.</text>
+<text x="800" y="527">4. Lower ~16 min: past its neighbours, clear of the collars;</text>
+<text x="814" y="544">it lands in its slot and folds itself up.</text>
+<text x="800" y="561">5. Rover or crew swaps the folded pack in the tray.</text>
+<text x="800" y="578">6. Hoist ~16 min: it unfolds as it lifts; cones seat, bot</text>
+<text x="814" y="595">latches, unhooks and climbs down.</text>
+<text x="800" y="632" class="t">Balance</text>
+<text x="800" y="652">A pack on the rope still hangs from the yard: no change.</text>
+<text x="800" y="669">Pack landed: ≤3.6 kN·m; with the bot at the far tip ≤6 kN·m,</text>
+<text x="800" y="686">half the ~12 kN·m quake case. First fit alternates sides.</text>
+<text x="800" y="703"></text>
+<text x="800" y="720" fill="#555">Deleted: halyards, wing winch, trim sheaves, wing top bars,</text>
+<text x="800" y="737" fill="#555">docks and ballast pallet. The rest of the array keeps working.</text>
 </svg>

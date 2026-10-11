@@ -121,7 +121,7 @@
 <circle cx="950" cy="640" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="950" y="644" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">12</text>
 <text x="963" y="644" font-size="11.5">Captive bolts (2 per cartridge)</text>
 <circle cx="950" cy="659" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="950" y="663" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">13</text>
-<text x="963" y="663" font-size="11.5">Grapple for the climber robot</text>
+<text x="963" y="663" font-size="11.5">Grapple for the service bots</text>
 <circle cx="950" cy="678" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="950" y="682" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">14</text>
 <text x="963" y="682" font-size="11.5">Strut/wire lug with load pin</text>
 <text x="680" y="705" font-size="11.5">Red = ceramic/DLC running faces. Upper collar is pulled down, mid collar pushed up: same cartridge.</text>

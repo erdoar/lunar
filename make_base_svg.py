@@ -1,4 +1,4 @@
-# Generates base.svg (rev 21): spherical base pivot (hard ball, wear cup with sensing layers), drive, foundation, base frame.
+# Generates base.svg (rev 22): spherical base pivot (hard ball, wear cup with sensing layers), drive, foundation, base frame.
 # Run: python3 make_base_svg.py
 from math import sin, cos, radians
 
@@ -38,7 +38,7 @@ def call(n, px, py, qx, qy):   # numbered callout: part point (m) -> circle (m)
       f'<text x="{X(qx):.0f}" y="{Z(qy)+4:.0f}" text-anchor="middle" class="n" style="stroke:none">{n}</text>')
 
 
-A('<text x="20" y="30" class="t">Section through the base pivot (rev 21): fixed parts grey, turning parts orange</text>')
+A('<text x="20" y="30" class="t">Section through the base pivot (rev 22): fixed parts grey, turning parts orange</text>')
 A('<text x="20" y="50" fill="#555">Hard convex ball below, replaceable dry-lubricated wear cup above. Cup and gaps drawn thicker than true scale.</text>')
 # ground, pad, ties
 A(f'<rect x="{X(-1.45)}" y="{gy}" width="{2.9*k}" height="60" fill="url(#g)"/><line x1="{X(-1.45)}" y1="{gy}" x2="{X(1.45)}" y2="{gy}" stroke="#222"/>')
@@ -108,23 +108,25 @@ A(f'<path d="M{dp[0]:.0f} {dp[1]-6:.0f} {arc(-30,-78,R+0.02)} L{X(-0.27)} {Z(0.6
   f'fill="none" stroke="#8a5a2b" stroke-width="1.5" stroke-dasharray="2 3" marker-end="url(#ad)"/>')
 for (xx, zz) in ((-0.33, 0.47), (-0.335, 0.52), (-0.30, 0.596), (-0.31, 0.43)):
     A(f'<circle cx="{X(xx)}" cy="{Z(zz)}" r="2.2" fill="#8a5a2b"/>')
-# rotating base frame at 1.5 m (shown cut), winch, readout, brush skirt
+# rotating base frame at 1.5 m (shown cut), bot dock, readout, brush skirt
 A(f'<rect x="{X(-1.35)}" y="{Z(1.53)}" width="{2.7*k}" height="9" fill="url(#gr)" stroke="{ROT}" stroke-width="2"/>')
 for sx in (-1, 1):
     xb = X(sx*1.35)
     A(f'<path d="M{xb} {Z(1.53)-6} l{sx*6} 6 l{-sx*6} 6 l{sx*6} 6" fill="none" stroke="#222"/>')
     A(f'<line x1="{X(sx*0.68)}" y1="{Z(1.53)}" x2="{X(sx*1.0)}" y2="{Z(1.30)}" stroke="{ROT}" stroke-width="2"/>')
     A(f'<line x1="{X(sx*1.2)}" y1="{Z(1.50)}" x2="{X(sx*1.2)}" y2="{Z(0.15)}" stroke="#999" stroke-width="4" stroke-dasharray="3 2"/>')
-A(f'<rect x="{X(0.80)}" y="{Z(1.72)}" width="{0.36*k}" height="{0.19*k}" fill="{DRV}" class="s"/><text x="{X(0.98)}" y="{Z(1.60)}" text-anchor="middle" font-size="11" style="stroke:none">winch</text>')
+A(f'<rect x="{X(0.80)}" y="{Z(1.72)}" width="{0.36*k}" height="{0.19*k}" fill="{DRV}" class="s"/><text x="{X(0.98)}" y="{Z(1.60)}" text-anchor="middle" font-size="11" style="stroke:none">bot dock</text>')
 A(f'<rect x="{X(-1.16)}" y="{Z(1.70)}" width="{0.36*k}" height="{0.17*k}" fill="{SR}" class="s"/><text x="{X(-0.98)}" y="{Z(1.585)}" text-anchor="middle" font-size="10" style="stroke:none">readout</text>')
 A(f'<path d="M{X(-0.98)} {Z(1.53)} V{Z(1.20)} H{X(-0.20)} V{Z(1.06)}" fill="none" stroke="{CU}" stroke-width="1.5" stroke-dasharray="4 2"/>')
 # jack frame (fixed, stays bolted): posts + jack heads under the mast lugs
 for sx in (-1, 1):
     A(f'<path d="M{X(sx*1.06)} {Z(0.40)} V{Z(2.05)} H{X(sx*0.68)}" fill="none" stroke="#2e7d32" stroke-width="3" stroke-dasharray="8 4"/>')
     A(f'<rect x="{min(X(sx*0.68), X(sx*0.78))}" y="{Z(2.0)}" width="{0.10*k}" height="{0.05*k}" fill="{ROT}" class="s"/>')
-# halyards: winch -> side window sheave -> up the mast centre
-A(f'<path d="M{X(0.86)} {Z(1.72)} L{X(0.68)} {Z(2.16)} L{X(0.02)} {Z(2.22)} V{Z(2.32)}" fill="none" stroke="#c0392b" stroke-width="2"/>')
-A(f'<circle cx="{X(0.68)}" cy="{Z(2.16)}" r="6" fill="#fff" class="s"/>')
+# bot hatch in the mast face at the base frame, climb rail up the mast core
+A(f'<rect x="{X(0.60)}" y="{Z(2.25)}" width="{0.16*k}" height="{0.68*k}" fill="#fff" stroke="#6c3483" stroke-width="2" stroke-dasharray="5 3"/>')
+A(f'<line x1="{X(0.05)}" y1="{Z(1.6)}" x2="{X(0.05)}" y2="{Z(2.32)}" stroke="#6c3483" stroke-width="4"/>')
+for zz in (1.7, 1.85, 2.0, 2.15, 2.3):
+    A(f'<line x1="{X(-0.03)}" y1="{Z(zz)}" x2="{X(0.13)}" y2="{Z(zz)}" stroke="#6c3483" stroke-width="2"/>')
 # callouts
 call(1, 0.0, 0.86, 0.0, 0.86)
 call(2, 0.16, 1.0, 0.24, 1.30)
@@ -140,7 +142,7 @@ call(11, -1.30, 1.53, -1.33, 1.85)
 call(12, -1.20, 0.90, -1.38, 1.0)
 call(13, -1.06, 1.20, -1.38, 1.40)
 call(14, -0.33, 0.47, -1.38, 0.62)
-call(15, 0.68, 2.16, 1.0, 2.25)
+call(15, 0.05, 2.2, 1.0, 2.25)
 A(f'<text x="{X(0.37)}" y="{Z(0.53)+4}" font-size="10" fill="#555">5 mm</text>')
 # ---- right column: wear-cup detail
 ix, iy, iw = 930, 70, 310
@@ -185,11 +187,11 @@ key = ['Pivot ball R 0.25 m, ~60 HRC steel + DLC or Si₃N₄ (fixed)',
        'Worm gearmotors (2), self-locking; slip clutch ~300 N·m',
        'Annular slip ring Ø0.9 m: rotor turns, stator fixed',
        'Foundation frame, ~2 x 2 m pad, 3 ground-tie lugs',
-       'Rotating base frame Ø3 m: winch, power, wear readout',
+       'Rotating base frame Ø3 m: bot dock, power, wear readout',
        'Brush skirt',
        'Jack frame: erection, then ~60 mm lift for a cup swap',
        'Debris falls off the ball, between the hooks',
-       'Halyards enter via a side window and sheave']
+       'Bot hatch + climb rail up the mast core']
 for j, t in enumerate(key):
     yy = ky + 22 + j * 21
     A(f'<circle cx="{ix+10}" cy="{yy-4}" r="9" fill="#fff" stroke="#222"/><text x="{ix+10}" y="{yy}" text-anchor="middle" class="n" style="stroke:none">{j+1}</text>')

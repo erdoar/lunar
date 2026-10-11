@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 920" font-family="Helvetica, Arial, sans-serif" font-size="12">
+<rect width="1240" height="920" fill="#fff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker></defs>
+<style>.s{stroke:#222;stroke-width:1.5}.l{stroke:#555;stroke-width:1;fill:none}.w{stroke:#555;stroke-width:1.4}.hal{stroke:#c0392b;stroke-width:1.6;fill:none}.yard{stroke:#c87f0a;stroke-width:3}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:15px;font-weight:bold}</style>
+<text x="20" y="30" class="t">1. Front elevation (wing plane), 92–108 m</text>
+<rect x="318.45" y="136.0" width="23.099999999999998" height="264.0" fill="none" stroke="#888" stroke-width="2"/>
+<line x1="318.45" y1="400.0" x2="341.55" y2="383.5" stroke="#aaa"/>
+<line x1="318.45" y1="383.5" x2="341.55" y2="367.0" stroke="#aaa"/>
+<line x1="318.45" y1="367.0" x2="341.55" y2="350.5" stroke="#aaa"/>
+<line x1="318.45" y1="350.5" x2="341.55" y2="334.0" stroke="#aaa"/>
+<line x1="318.45" y1="334.0" x2="341.55" y2="317.5" stroke="#aaa"/>
+<line x1="318.45" y1="317.5" x2="341.55" y2="301.0" stroke="#aaa"/>
+<line x1="318.45" y1="301.0" x2="341.55" y2="284.5" stroke="#aaa"/>
+<line x1="318.45" y1="284.5" x2="341.55" y2="268.0" stroke="#aaa"/>
+<line x1="318.45" y1="268.0" x2="341.55" y2="251.5" stroke="#aaa"/>
+<line x1="318.45" y1="251.5" x2="341.55" y2="235.0" stroke="#aaa"/>
+<line x1="318.45" y1="235.0" x2="341.55" y2="218.5" stroke="#aaa"/>
+<line x1="318.45" y1="218.5" x2="341.55" y2="202.0" stroke="#aaa"/>
+<line x1="318.45" y1="202.0" x2="341.55" y2="185.5" stroke="#aaa"/>
+<line x1="318.45" y1="185.5" x2="341.55" y2="169.0" stroke="#aaa"/>
+<line x1="318.45" y1="169.0" x2="341.55" y2="152.5" stroke="#aaa"/>
+<line x1="318.45" y1="152.5" x2="341.55" y2="136.0" stroke="#aaa"/>
+<line x1="49.5" y1="261.3999999999999" x2="610.5" y2="261.3999999999999" class="yard"/>
+<line x1="49.5" y1="274.6000000000001" x2="610.5" y2="274.6000000000001" class="yard"/>
+<line x1="49.5" y1="261.3999999999999" x2="66.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="66.0" y1="261.3999999999999" x2="82.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="82.5" y1="261.3999999999999" x2="99.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="99.0" y1="261.3999999999999" x2="115.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="115.5" y1="261.3999999999999" x2="132.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="132.0" y1="261.3999999999999" x2="148.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="148.5" y1="261.3999999999999" x2="165.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="165.0" y1="261.3999999999999" x2="181.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="181.5" y1="261.3999999999999" x2="198.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="198.0" y1="261.3999999999999" x2="214.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="214.5" y1="261.3999999999999" x2="231.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="231.0" y1="261.3999999999999" x2="247.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="247.5" y1="261.3999999999999" x2="264.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="264.0" y1="261.3999999999999" x2="280.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="280.5" y1="261.3999999999999" x2="297.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="297.0" y1="261.3999999999999" x2="313.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="313.5" y1="261.3999999999999" x2="330.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="330.0" y1="261.3999999999999" x2="346.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="346.5" y1="261.3999999999999" x2="363.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="363.0" y1="261.3999999999999" x2="379.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="379.5" y1="261.3999999999999" x2="396.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="396.0" y1="261.3999999999999" x2="412.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="412.5" y1="261.3999999999999" x2="429.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="429.0" y1="261.3999999999999" x2="445.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="445.5" y1="261.3999999999999" x2="462.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="462.0" y1="261.3999999999999" x2="478.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="478.5" y1="261.3999999999999" x2="495.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="495.0" y1="261.3999999999999" x2="511.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="511.5" y1="261.3999999999999" x2="528.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="528.0" y1="261.3999999999999" x2="544.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="544.5" y1="261.3999999999999" x2="561.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="561.0" y1="261.3999999999999" x2="577.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="577.5" y1="261.3999999999999" x2="594.0" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="594.0" y1="261.3999999999999" x2="610.5" y2="274.6000000000001" stroke="#c87f0a" stroke-width="1"/>
+<line x1="330.0" y1="136.0" x2="49.5" y2="261.3999999999999" class="w"/>
+<line x1="330.0" y1="136.0" x2="610.5" y2="261.3999999999999" class="w"/>
+<circle cx="330.0" cy="136.0" r="4" fill="#555"/>
+<circle cx="297.0" cy="280.6000000000001" r="5" fill="#fff" class="s"/>
+<path d="M289.0 286.6000000000001 h16 l-4 8 h-8 z" fill="#4a9" stroke="#222"/>
+<circle cx="49.5" cy="280.6000000000001" r="5" fill="#fff" class="s"/>
+<path d="M41.5 286.6000000000001 h16 l-4 8 h-8 z" fill="#4a9" stroke="#222"/>
+<rect x="45.5" y="294.6000000000001" width="255.5" height="7" fill="#e0a040" class="s"/>
+<rect x="49.5" y="301.6000000000001" width="247.5" height="88.5" fill="#2c4a7a" opacity="0.85"/>
+<line x1="80.4375" y1="301.6000000000001" x2="80.4375" y2="400.0" stroke="#7fa3d6"/>
+<line x1="111.375" y1="301.6000000000001" x2="111.375" y2="400.0" stroke="#7fa3d6"/>
+<line x1="142.3125" y1="301.6000000000001" x2="142.3125" y2="400.0" stroke="#7fa3d6"/>
+<line x1="173.25" y1="301.6000000000001" x2="173.25" y2="400.0" stroke="#7fa3d6"/>
+<line x1="204.1875" y1="301.6000000000001" x2="204.1875" y2="400.0" stroke="#7fa3d6"/>
+<line x1="235.125" y1="301.6000000000001" x2="235.125" y2="400.0" stroke="#7fa3d6"/>
+<line x1="266.0625" y1="301.6000000000001" x2="266.0625" y2="400.0" stroke="#7fa3d6"/>
+<path d="M49.5 280.6000000000001 H323.4" class="hal"/>
+<path d="M297.0 280.6000000000001 H323.4" class="hal" stroke-dasharray="1 0"/>
+<circle cx="363.0" cy="280.6000000000001" r="5" fill="#fff" class="s"/>
+<path d="M355.0 286.6000000000001 h16 l-4 8 h-8 z" fill="#4a9" stroke="#222"/>
+<circle cx="610.5" cy="280.6000000000001" r="5" fill="#fff" class="s"/>
+<path d="M602.5 286.6000000000001 h16 l-4 8 h-8 z" fill="#4a9" stroke="#222"/>
+<rect x="359.0" y="294.6000000000001" width="255.5" height="7" fill="#e0a040" class="s"/>
+<rect x="363.0" y="301.6000000000001" width="247.5" height="88.5" fill="#2c4a7a" opacity="0.85"/>
+<line x1="393.9375" y1="301.6000000000001" x2="393.9375" y2="400.0" stroke="#7fa3d6"/>
+<line x1="424.875" y1="301.6000000000001" x2="424.875" y2="400.0" stroke="#7fa3d6"/>
+<line x1="455.8125" y1="301.6000000000001" x2="455.8125" y2="400.0" stroke="#7fa3d6"/>
+<line x1="486.75" y1="301.6000000000001" x2="486.75" y2="400.0" stroke="#7fa3d6"/>
+<line x1="517.6875" y1="301.6000000000001" x2="517.6875" y2="400.0" stroke="#7fa3d6"/>
+<line x1="548.625" y1="301.6000000000001" x2="548.625" y2="400.0" stroke="#7fa3d6"/>
+<line x1="579.5625" y1="301.6000000000001" x2="579.5625" y2="400.0" stroke="#7fa3d6"/>
+<path d="M610.5 280.6000000000001 H336.6" class="hal"/>
+<path d="M363.0 280.6000000000001 H336.6" class="hal" stroke-dasharray="1 0"/>
+<path d="M325.05 280.6000000000001 V400.0" class="hal" stroke-dasharray="6 3"/><path d="M334.95 280.6000000000001 V400.0" class="hal" stroke-dasharray="6 3"/>
+<circle cx="330.0" cy="280.6000000000001" r="6" fill="#fff" class="s"/>
+<path d="M334 136L380 126" class="l"/>
+<text x="384" y="130" text-anchor="start">Masthead, 108 m (8 m above yard)</text>
+<path d="M182 199L132 152" class="l"/>
+<text x="128" y="156" text-anchor="end">Topping lift ~3.0 kN</text>
+<path d="M446 261L454 209" class="l"/>
+<text x="458" y="213" text-anchor="start">Yard truss 34 m, 0.8 m deep,</text>
+<text x="458" y="227" text-anchor="start">~2.7 kN compression</text>
+<path d="M610 281L578 308" class="l"/>
+<text x="574" y="312" text-anchor="end">Sheave + dock</text>
+<path d="M165 281L132 311" class="l"/>
+<text x="128" y="315" text-anchor="end">Halyards run inside the yard</text>
+<path d="M335 350L380 342" class="l"/>
+<text x="384" y="346" text-anchor="start">…then down inside the mast</text>
+<text x="384" y="360" text-anchor="start">to the base-frame winch</text>
+<path d="M182 299L132 364" class="l"/>
+<text x="128" y="368" text-anchor="end">Wing top bar, docked</text>
+<text x="128" y="382" text-anchor="end">(weight on the yard)</text>
+<text x="49.5" y="418.0" font-size="11.5">Wing packs hang below (30 m, shortened here)</text>
+<text x="670" y="30" class="t">2. Side view</text>
+<line x1="760.0" y1="60.0" x2="760.0" y2="420.0" stroke="#888" stroke-width="5"/>
+<line x1="715.0" y1="262.5" x2="805.0" y2="262.5" stroke="#e0a040" stroke-width="4"/>
+<polyline points="760.0,390.0 715.0,262.5 760.0,60.0" fill="none" class="w"/>
+<line x1="760.0" y1="120.0" x2="715.0" y2="262.5" stroke="#2e7d32" stroke-width="1.6"/>
+<polyline points="760.0,390.0 805.0,262.5 760.0,60.0" fill="none" class="w"/>
+<line x1="760.0" y1="120.0" x2="805.0" y2="262.5" stroke="#2e7d32" stroke-width="1.6"/>
+<rect x="757.0" y="116.99999999999994" width="6.0" height="6.0" fill="#c87f0a" class="s"/>
+<rect x="758.875" y="120.0" width="2.25" height="74.25" fill="#2c4a7a"/>
+<rect x="751.0" y="401.0" width="18.0" height="8" fill="#4a9" class="s"/>
+<path d="M764 120L779 90" class="l"/>
+<text x="783" y="94" text-anchor="start">Yard (end-on)</text>
+<path d="M790 218L809 158" class="l"/>
+<text x="813" y="162" text-anchor="start">Braces: yard tips</text>
+<text x="813" y="176" text-anchor="start">to spreader tips</text>
+<path d="M805 262L816 278" class="l"/>
+<text x="820" y="282" text-anchor="start">Spreaders ±6 m, 81 m</text>
+<path d="M782 326L798 360" class="l"/>
+<text x="802" y="364" text-anchor="start">Diamond stays</text>
+<text x="802" y="378" text-anchor="start">64 → 81 → 108 m</text>
+<path d="M769 405L782 412" class="l"/>
+<text x="786" y="416" text-anchor="start">Upper collar, 62 m</text>
+<path d="M760 285L745 315" class="l"/>
+<text x="741" y="319" text-anchor="end">Wings</text>
+<text x="741" y="333" text-anchor="end">(edge-on)</text>
+<text x="960" y="30" class="t">3. Docking latch (no power)</text>
+<text x="1020" y="80" text-anchor="middle" font-size="11.5" font-weight="bold">Docked</text>
+<rect x="985" y="90" width="70" height="26" fill="#c87f0a" class="s"/>
+<path d="M996 116 h48 l-10 22 h-28 z" fill="#4a9" stroke="#222"/>
+<path d="M1020 120 l-12 18 h24 z" fill="#e0a040" stroke="#222"/>
+<rect x="990" y="138" width="60" height="9" fill="#e0a040" class="s"/>
+<path d="M998 134 l10 0" stroke="#c0392b" stroke-width="4"/>
+<line x1="1032" y1="147" x2="1032" y2="270" class="hal"/>
+<text x="1140" y="80" text-anchor="middle" font-size="11.5" font-weight="bold">Push to release</text>
+<rect x="1105" y="90" width="70" height="26" fill="#c87f0a" class="s"/>
+<path d="M1116 116 h48 l-10 22 h-28 z" fill="#4a9" stroke="#222"/>
+<path d="M1140 160 l-12 18 h24 z" fill="#e0a040" stroke="#222"/>
+<rect x="1110" y="178" width="60" height="9" fill="#e0a040" class="s"/>
+<path d="M1118 134 l4 -10" stroke="#c0392b" stroke-width="4"/>
+<line x1="1152" y1="187" x2="1152" y2="270" class="hal"/>
+<text x="960" y="295" font-size="11.5">Hoist ~50 mm past the dock: the latch</text>
+<text x="960" y="310" font-size="11.5">toggles (shut, then open next time).</text>
+<text x="960" y="325" font-size="11.5">Like a ballpoint pen; limit switch</text>
+<text x="960" y="340" font-size="11.5">confirms the state.</text>
+<text x="20" y="500" class="t">4. Panel elevation winch (on the rotating base frame at the mast base)</text>
+<rect x="40" y="520" width="1160" height="380" fill="none" stroke="#999" stroke-dasharray="4 3"/>
+<line x1="200" y1="690" x2="1020" y2="690" stroke="#555" stroke-width="8"/>
+<ellipse cx="300" cy="690" rx="28" ry="60" fill="#bbb" class="s"/>
+<line x1="278" y1="632" x2="278" y2="748" stroke="#777"/>
+<line x1="300" y1="632" x2="300" y2="748" stroke="#777"/>
+<line x1="322" y1="632" x2="322" y2="748" stroke="#777"/>
+<line x1="300" y1="630" x2="300" y2="535" class="hal"/>
+<rect x="340" y="765" width="60" height="40" rx="18" fill="#ddd" class="s"/>
+<path d="M310 748 Q330 785 340 785" class="hal"/>
+<text x="300" y="532" text-anchor="middle" font-size="11">Port outer</text>
+<text x="370" y="822" text-anchor="middle" font-size="10.5">storage reel</text>
+<ellipse cx="490" cy="690" rx="28" ry="60" fill="#bbb" class="s"/>
+<line x1="468" y1="632" x2="468" y2="748" stroke="#777"/>
+<line x1="490" y1="632" x2="490" y2="748" stroke="#777"/>
+<line x1="512" y1="632" x2="512" y2="748" stroke="#777"/>
+<line x1="490" y1="630" x2="490" y2="535" class="hal"/>
+<rect x="530" y="765" width="60" height="40" rx="18" fill="#ddd" class="s"/>
+<path d="M500 748 Q520 785 530 785" class="hal"/>
+<text x="490" y="532" text-anchor="middle" font-size="11">Port inner</text>
+<text x="560" y="822" text-anchor="middle" font-size="10.5">storage reel</text>
+<ellipse cx="680" cy="690" rx="28" ry="60" fill="#bbb" class="s"/>
+<line x1="658" y1="632" x2="658" y2="748" stroke="#777"/>
+<line x1="680" y1="632" x2="680" y2="748" stroke="#777"/>
+<line x1="702" y1="632" x2="702" y2="748" stroke="#777"/>
+<line x1="680" y1="630" x2="680" y2="535" class="hal"/>
+<rect x="720" y="765" width="60" height="40" rx="18" fill="#ddd" class="s"/>
+<path d="M690 748 Q710 785 720 785" class="hal"/>
+<text x="680" y="532" text-anchor="middle" font-size="11">Stbd inner</text>
+<text x="750" y="822" text-anchor="middle" font-size="10.5">storage reel</text>
+<ellipse cx="870" cy="690" rx="28" ry="60" fill="#bbb" class="s"/>
+<line x1="848" y1="632" x2="848" y2="748" stroke="#777"/>
+<line x1="870" y1="632" x2="870" y2="748" stroke="#777"/>
+<line x1="892" y1="632" x2="892" y2="748" stroke="#777"/>
+<line x1="870" y1="630" x2="870" y2="535" class="hal"/>
+<rect x="910" y="765" width="60" height="40" rx="18" fill="#ddd" class="s"/>
+<path d="M880 748 Q900 785 910 785" class="hal"/>
+<text x="870" y="532" text-anchor="middle" font-size="11">Stbd outer</text>
+<text x="940" y="822" text-anchor="middle" font-size="10.5">storage reel</text>
+<rect x="1030" y="650" width="70" height="80" fill="#9fb4c7" class="s"/><text x="1065" y="694" text-anchor="middle" font-size="11">gearbox</text><text x="1065" y="708" text-anchor="middle" font-size="11">~600:1</text>
+<rect x="1110" y="635" width="60" height="45" fill="#7fa3d6" class="s"/><text x="1140" y="662" text-anchor="middle" font-size="11">motor 1</text>
+<rect x="1110" y="700" width="60" height="45" fill="#7fa3d6" class="s"/><text x="1140" y="727" text-anchor="middle" font-size="11">motor 2</text>
+<rect x="150" y="660" width="40" height="60" fill="#c0392b" class="s"/><text x="170" y="738" text-anchor="middle" font-size="11">brake</text>
+<circle cx="110" cy="690" r="12" fill="#fff" class="s"/><text x="110" y="720" text-anchor="middle" font-size="11">hand crank</text><line x1="122" y1="690" x2="150" y2="690" stroke="#555" stroke-width="4"/>
+<text x="60" y="865" font-size="12">One shaft, 4 grooved traction sheaves (Ø0.4 m, 3 wraps): exactly equal stroke on all 4 halyards, so both wings move together and stay level.</text>
+<text x="60" y="883" font-size="12">0.1 m/s = 4.8 rpm, ~890 N·m; 2 x 0.5 kW motors (either suffices), spring-applied brake, load cells and encoders on every halyard.</text>
+</svg>

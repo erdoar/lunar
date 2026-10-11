@@ -112,7 +112,7 @@ C = [(1, 663, 180, 640, 120, 'CFRP mast leg'),
      (10, 980, 315, 975, 275, 'Preload spring: ±10 mm thermal float'),
      (11, 1015, 200, 1010, 140, 'Collar ring (stationary)'),
      (12, 959, 190, 940, 140, 'Captive bolts (2 per cartridge)'),
-     (13, 1058, 330, 1075, 375, 'Grapple for the climber robot'),
+     (13, 1058, 330, 1075, 375, 'Grapple for the service bots'),
      (14, 1011, 478, 1050, 500, 'Strut/wire lug with load pin')]
 for n, tx, ty, x, y, _ in C:
     call(n, tx, ty, x, y)

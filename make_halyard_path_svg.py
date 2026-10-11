@@ -1,4 +1,4 @@
-# Generates halyard-path.svg: one halyard from the base-frame winch, up the mast, along the yard, down to the wing.
+# Generates halyard-path.svg (superseded, Appendix B): one halyard from the base-frame winch, up the mast, along the yard, down to the wing.
 o = []
 A = o.append
 W, H = 1000, 640

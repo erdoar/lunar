@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 760" font-family="Helvetica, Arial, sans-serif" font-size="12.5">
+<rect width="1240" height="760" fill="#fff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker><pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#a08c6c"/></pattern></defs>
+<style>.s{stroke:#222;stroke-width:1.5}.hal{stroke:#555;stroke-width:1}.l{stroke:#555;stroke-width:1;fill:none}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:15px;font-weight:bold}</style>
+<text x="160" y="40" text-anchor="middle" class="t">1. Operating</text>
+<rect x="20" y="600" width="280" height="30" fill="url(#g)"/><line x1="20" y1="600" x2="300" y2="600" stroke="#222"/>
+<rect x="153.55" y="593.55" width="12.899999999999999" height="3" fill="#e67e22"/><path d="M155.7 600 L158.28 597.42 H161.72 L164.3 600 Z" fill="#7d8790"/>
+<rect x="158.0" y="148.5" width="4" height="451.5" fill="#888"/>
+<rect x="155.0" y="446.5" width="10" height="6" fill="#4a9" class="s"/>
+<rect x="155.0" y="330.40000000000003" width="10" height="6" fill="#4a9" class="s"/>
+<rect x="84.75" y="168.0" width="150.5" height="4" fill="#e0a040" class="s"/>
+<line x1="160.0" y1="148.5" x2="86.9" y2="170.0" stroke="#555"/>
+<rect x="84.9" y="593.55" width="68.5" height="3" fill="#7d8790"/>
+<rect x="86.9" y="170.0" width="64.5" height="129.0" fill="#2c4a7a"/>
+<line x1="94.9625" y1="170.0" x2="94.9625" y2="299.0" stroke="#7fa3d6"/>
+<line x1="103.025" y1="170.0" x2="103.025" y2="299.0" stroke="#7fa3d6"/>
+<line x1="111.0875" y1="170.0" x2="111.0875" y2="299.0" stroke="#7fa3d6"/>
+<line x1="119.15" y1="170.0" x2="119.15" y2="299.0" stroke="#7fa3d6"/>
+<line x1="127.2125" y1="170.0" x2="127.2125" y2="299.0" stroke="#7fa3d6"/>
+<line x1="135.275" y1="170.0" x2="135.275" y2="299.0" stroke="#7fa3d6"/>
+<line x1="143.3375" y1="170.0" x2="143.3375" y2="299.0" stroke="#7fa3d6"/>
+<rect x="86.9" y="168.0" width="64.5" height="4" fill="#e0a040" class="s"/>
+<line x1="160.0" y1="148.5" x2="233.1" y2="170.0" stroke="#555"/>
+<rect x="166.6" y="593.55" width="68.5" height="3" fill="#7d8790"/>
+<rect x="168.6" y="170.0" width="64.5" height="129.0" fill="#2c4a7a"/>
+<line x1="176.6625" y1="170.0" x2="176.6625" y2="299.0" stroke="#7fa3d6"/>
+<line x1="184.725" y1="170.0" x2="184.725" y2="299.0" stroke="#7fa3d6"/>
+<line x1="192.7875" y1="170.0" x2="192.7875" y2="299.0" stroke="#7fa3d6"/>
+<line x1="200.85" y1="170.0" x2="200.85" y2="299.0" stroke="#7fa3d6"/>
+<line x1="208.9125" y1="170.0" x2="208.9125" y2="299.0" stroke="#7fa3d6"/>
+<line x1="216.975" y1="170.0" x2="216.975" y2="299.0" stroke="#7fa3d6"/>
+<line x1="225.0375" y1="170.0" x2="225.0375" y2="299.0" stroke="#7fa3d6"/>
+<rect x="168.6" y="168.0" width="64.5" height="4" fill="#e0a040" class="s"/>
+<text x="160" y="650" text-anchor="middle" font-size="12" fill="#2e7d32" font-weight="bold">Balanced (both wings together)</text>
+<text x="460" y="40" text-anchor="middle" class="t">2. Lowering both wings</text>
+<rect x="320" y="600" width="280" height="30" fill="url(#g)"/><line x1="320" y1="600" x2="600" y2="600" stroke="#222"/>
+<rect x="453.55" y="593.55" width="12.899999999999999" height="3" fill="#e67e22"/><path d="M455.7 600 L458.28 597.42 H461.72 L464.3 600 Z" fill="#7d8790"/>
+<rect x="458.0" y="148.5" width="4" height="451.5" fill="#888"/>
+<rect x="455.0" y="446.5" width="10" height="6" fill="#4a9" class="s"/>
+<rect x="455.0" y="330.40000000000003" width="10" height="6" fill="#4a9" class="s"/>
+<rect x="384.75" y="168.0" width="150.5" height="4" fill="#e0a040" class="s"/>
+<line x1="460.0" y1="148.5" x2="386.9" y2="170.0" stroke="#555"/>
+<rect x="384.9" y="593.55" width="68.5" height="3" fill="#7d8790"/>
+<line x1="451.4" y1="170.0" x2="451.4" y2="505.4" class="hal"/>
+<line x1="386.9" y1="170.0" x2="386.9" y2="505.4" class="hal"/>
+<rect x="386.9" y="505.4" width="64.5" height="83.85" fill="#2c4a7a"/>
+<line x1="394.9625" y1="505.4" x2="394.9625" y2="589.25" stroke="#7fa3d6"/>
+<line x1="403.025" y1="505.4" x2="403.025" y2="589.25" stroke="#7fa3d6"/>
+<line x1="411.0875" y1="505.4" x2="411.0875" y2="589.25" stroke="#7fa3d6"/>
+<line x1="419.15" y1="505.4" x2="419.15" y2="589.25" stroke="#7fa3d6"/>
+<line x1="427.2125" y1="505.4" x2="427.2125" y2="589.25" stroke="#7fa3d6"/>
+<line x1="435.275" y1="505.4" x2="435.275" y2="589.25" stroke="#7fa3d6"/>
+<line x1="443.3375" y1="505.4" x2="443.3375" y2="589.25" stroke="#7fa3d6"/>
+<rect x="386.9" y="589.3359999999999" width="64.5" height="4.2139999999999995" fill="#2c4a7a" opacity="0.6"/>
+<rect x="386.9" y="503.4" width="64.5" height="4" fill="#e0a040" class="s"/>
+<line x1="460.0" y1="148.5" x2="533.1" y2="170.0" stroke="#555"/>
+<rect x="466.6" y="593.55" width="68.5" height="3" fill="#7d8790"/>
+<line x1="468.6" y1="170.0" x2="468.6" y2="505.4" class="hal"/>
+<line x1="533.1" y1="170.0" x2="533.1" y2="505.4" class="hal"/>
+<rect x="468.6" y="505.4" width="64.5" height="83.85" fill="#2c4a7a"/>
+<line x1="476.6625" y1="505.4" x2="476.6625" y2="589.25" stroke="#7fa3d6"/>
+<line x1="484.725" y1="505.4" x2="484.725" y2="589.25" stroke="#7fa3d6"/>
+<line x1="492.7875" y1="505.4" x2="492.7875" y2="589.25" stroke="#7fa3d6"/>
+<line x1="500.85" y1="505.4" x2="500.85" y2="589.25" stroke="#7fa3d6"/>
+<line x1="508.9125" y1="505.4" x2="508.9125" y2="589.25" stroke="#7fa3d6"/>
+<line x1="516.975" y1="505.4" x2="516.975" y2="589.25" stroke="#7fa3d6"/>
+<line x1="525.0375" y1="505.4" x2="525.0375" y2="589.25" stroke="#7fa3d6"/>
+<rect x="468.6" y="589.3359999999999" width="64.5" height="4.2139999999999995" fill="#2c4a7a" opacity="0.6"/>
+<rect x="468.6" y="503.4" width="64.5" height="4" fill="#e0a040" class="s"/>
+<text x="460" y="650" text-anchor="middle" font-size="12" fill="#2e7d32" font-weight="bold">Balanced (both wings together)</text>
+<text x="760" y="40" text-anchor="middle" class="t">3. Down: swap packs</text>
+<rect x="620" y="600" width="280" height="30" fill="url(#g)"/><line x1="620" y1="600" x2="900" y2="600" stroke="#222"/>
+<rect x="753.55" y="593.55" width="12.899999999999999" height="3" fill="#e67e22"/><path d="M755.7 600 L758.28 597.42 H761.72 L764.3 600 Z" fill="#7d8790"/>
+<rect x="758.0" y="148.5" width="4" height="451.5" fill="#888"/>
+<rect x="755.0" y="446.5" width="10" height="6" fill="#4a9" class="s"/>
+<rect x="755.0" y="330.40000000000003" width="10" height="6" fill="#4a9" class="s"/>
+<rect x="684.75" y="168.0" width="150.5" height="4" fill="#e0a040" class="s"/>
+<line x1="760.0" y1="148.5" x2="686.9" y2="170.0" stroke="#555"/>
+<rect x="684.9" y="593.55" width="68.5" height="3" fill="#7d8790"/>
+<line x1="751.4" y1="170.0" x2="751.4" y2="586.24" class="hal"/>
+<line x1="686.9" y1="170.0" x2="686.9" y2="586.24" class="hal"/>
+<rect x="686.9" y="586.24" width="64.5" height="3.0100000000000007" fill="#2c4a7a"/>
+<line x1="694.9625" y1="586.24" x2="694.9625" y2="589.25" stroke="#7fa3d6"/>
+<line x1="703.025" y1="586.24" x2="703.025" y2="589.25" stroke="#7fa3d6"/>
+<line x1="711.0875" y1="586.24" x2="711.0875" y2="589.25" stroke="#7fa3d6"/>
+<line x1="719.15" y1="586.24" x2="719.15" y2="589.25" stroke="#7fa3d6"/>
+<line x1="727.2125" y1="586.24" x2="727.2125" y2="589.25" stroke="#7fa3d6"/>
+<line x1="735.275" y1="586.24" x2="735.275" y2="589.25" stroke="#7fa3d6"/>
+<line x1="743.3375" y1="586.24" x2="743.3375" y2="589.25" stroke="#7fa3d6"/>
+<rect x="686.9" y="581.7909333333333" width="64.5" height="11.759066666666666" fill="#2c4a7a" opacity="0.6"/>
+<rect x="686.9" y="584.24" width="64.5" height="4" fill="#e0a040" class="s"/>
+<line x1="760.0" y1="148.5" x2="833.1" y2="170.0" stroke="#555"/>
+<rect x="766.6" y="593.55" width="68.5" height="3" fill="#7d8790"/>
+<line x1="768.6" y1="170.0" x2="768.6" y2="586.24" class="hal"/>
+<line x1="833.1" y1="170.0" x2="833.1" y2="586.24" class="hal"/>
+<rect x="768.6" y="586.24" width="64.5" height="3.0100000000000007" fill="#2c4a7a"/>
+<line x1="776.6625" y1="586.24" x2="776.6625" y2="589.25" stroke="#7fa3d6"/>
+<line x1="784.725" y1="586.24" x2="784.725" y2="589.25" stroke="#7fa3d6"/>
+<line x1="792.7875" y1="586.24" x2="792.7875" y2="589.25" stroke="#7fa3d6"/>
+<line x1="800.85" y1="586.24" x2="800.85" y2="589.25" stroke="#7fa3d6"/>
+<line x1="808.9125" y1="586.24" x2="808.9125" y2="589.25" stroke="#7fa3d6"/>
+<line x1="816.975" y1="586.24" x2="816.975" y2="589.25" stroke="#7fa3d6"/>
+<line x1="825.0375" y1="586.24" x2="825.0375" y2="589.25" stroke="#7fa3d6"/>
+<rect x="768.6" y="581.7909333333333" width="64.5" height="11.759066666666666" fill="#2c4a7a" opacity="0.6"/>
+<rect x="768.6" y="584.24" width="64.5" height="4" fill="#e0a040" class="s"/>
+<text x="760" y="650" text-anchor="middle" font-size="12" fill="#2e7d32" font-weight="bold">Balanced (both wings together)</text>
+<path d="M233.1 164.0L263.1 134.0" class="l"/><text x="243.1" y="130.0" font-size="11">Permanent top yard</text>
+<path d="M511.6 548.4L560 428.0" class="l"/><text x="520" y="422.0" font-size="11">Packs land and fold</text><text x="520" y="436.0" font-size="11">themselves in the trays</text>
+<path d="M386.9 342.0L360 299.0" class="l"/><text x="360" y="293.0" font-size="11" text-anchor="end">Halyards</text>
+<path d="M468 213.0 V342.0" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M803.0 586.24L840 514.0" class="l"/><text x="820" y="508.0" font-size="11">Hangers at working</text><text x="820" y="522.0" font-size="11">height (~1 m above tray)</text>
+<path d="M699.8 593.55L670 539.8" class="l"/><text x="668" y="539.8" font-size="11" text-anchor="end">Landing tray</text><text x="668" y="552.8" font-size="11" text-anchor="end">(on ground legs)</text>
+<text x="1080" y="40" text-anchor="middle" class="t">4. One pack, side view</text>
+<rect x="1010" y="120" width="140" height="10" fill="#e0a040" class="s"/><text x="1080" y="112" text-anchor="middle" font-size="11">top bar (lowering)</text>
+<rect x="1068" y="130" width="24" height="10" fill="#4a9" class="s"/>
+<line x1="1080" y1="142" x2="1080" y2="178" stroke="#2c4a7a" stroke-width="5" stroke-linecap="round"/>
+<circle cx="1080" cy="180" r="2.5" fill="#222"/>
+<line x1="1080" y1="182" x2="1080" y2="218" stroke="#2c4a7a" stroke-width="5" stroke-linecap="round"/>
+<circle cx="1080" cy="220" r="2.5" fill="#222"/>
+<line x1="1080" y1="222" x2="1080" y2="258" stroke="#2c4a7a" stroke-width="5" stroke-linecap="round"/>
+<circle cx="1080" cy="260" r="2.5" fill="#222"/>
+<line x1="1080" y1="262" x2="1080" y2="298" stroke="#2c4a7a" stroke-width="5" stroke-linecap="round"/>
+<circle cx="1080" cy="300" r="2.5" fill="#222"/>
+<line x1="1080" y1="302" x2="1080" y2="338" stroke="#2c4a7a" stroke-width="5" stroke-linecap="round"/>
+<circle cx="1080" cy="340" r="2.5" fill="#222"/>
+<polyline points="1080,340 1057,340 1103,352 1057,364 1103,376 1057,388 1103,400 1057,412 1103,424 1057,436 1103,448 1057,460 1103,472" fill="none" stroke="#2c4a7a" stroke-width="4" stroke-linejoin="round"/>
+<rect x="1020" y="480" width="120" height="8" fill="#7d8790" class="s"/><line x1="1020" y1="456" x2="1020" y2="480" stroke="#7d8790" stroke-width="3"/><line x1="1140" y1="456" x2="1140" y2="480" stroke="#7d8790" stroke-width="3"/>
+<path d="M1170 160 V260" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+<text x="1176" y="215" font-size="11">lowering</text>
+<path d="M1046 360 L1000 330" class="l"/><text x="998" y="326" font-size="11" text-anchor="end">Alternate hinges sprung</text><text x="998" y="340" font-size="11" text-anchor="end">to fold the same way</text>
+<path d="M1140 484 L1170 510" class="l"/><text x="1100" y="524" font-size="11">Tray with low side walls</text>
+<text x="970" y="560" font-size="11.5">Raising reverses it: each panel</text>
+<text x="970" y="575" font-size="11.5">unfolds as it lifts off the tray.</text>
+<text x="20" y="722" font-size="12.5">One winch drives all 4 halyards through linked drums, so both wings always lower, fold, lift and unfold together and the rig stays balanced.</text>
+<text x="20" y="740" font-size="12.5">No Roman-blind cords, carriers or per-pack hoists: the packs fold by landing. Down ~20 min, swap, up ~20 min.</text>
+</svg>

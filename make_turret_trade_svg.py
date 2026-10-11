@@ -62,7 +62,7 @@ A(f'<text x="60" y="{gy+71}" font-size="12.5">2 collars (12 cartridges). All dri
 # ---------- B
 X, Z = rig(930, True)
 A('<text x="680" y="34" class="t">B. Top turret (set aside)</text>')
-lab(X(0) + 14, Z(64), X(10), Z(70), ['Turret bearing ~Ø2 m at 64 m', '+ drive, slip ring, wing winch'])
+lab(X(0) + 14, Z(64), X(10), Z(70), ['Turret bearing ~Ø2 m at 64 m', '+ drive, slip ring'])
 lab(X(0) + 8, Z(62), X(10), Z(56), ['Stay head (fixed lugs, no rollers)'])
 lab(X(0) + 8, Z(35), X(10), Z(29), ['Strut head (fixed lugs)'])
 lab(X(0) + 5, Z(20), X(-24), Z(26), ['Service lift on the', 'fixed mast'], 'end')

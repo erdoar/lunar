@@ -30,9 +30,8 @@
 <rect x="141.6" y="317.0" width="216.8" height="6" fill="#e0a040" class="s"/>
 <line x1="250.0" y1="103.0" x2="144.6" y2="134.0" class="c"/>
 <line x1="250.0" y1="103.0" x2="355.4" y2="134.0" class="c"/>
-<rect x="144.6" y="729.2" width="93.0" height="5" fill="none" stroke="#2c4a7a" stroke-width="2" stroke-dasharray="5 3"/>
-<line x1="144.6" y1="134.0" x2="144.6" y2="729.2" stroke="#2c4a7a" stroke-width="0.8" stroke-dasharray="3 4"/>
-<line x1="237.6" y1="134.0" x2="237.6" y2="729.2" stroke="#2c4a7a" stroke-width="0.8" stroke-dasharray="3 4"/>
+<rect x="144.6" y="729.2" width="26.35" height="5" fill="none" stroke="#2c4a7a" stroke-width="2" stroke-dasharray="5 3"/>
+<line x1="157.62" y1="134.0" x2="157.62" y2="729.2" stroke="#c0392b" stroke-width="0.9" stroke-dasharray="3 4"/>
 <path d="M163.2 328.0V630.0" class="l" marker-end="url(#ar)"/>
 <path d="M392.6 134.0V760" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="397.6" y="413.0">100 m</text>
 <path d="M144.6 93.0H355.4" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="250.0" y="87.0" text-anchor="middle">34 m</text>
@@ -56,9 +55,9 @@
 <text x="291" y="790" text-anchor="start">Horizontal tie to central foundation</text>
 <path d="M436 756L455 806" class="l"/>
 <text x="459" y="810" text-anchor="start">Foot pad at 30 m</text>
-<path d="M169 729L101 667" class="l"/>
-<text x="97" y="671" text-anchor="end">Wing (packs retracted)</text>
-<text x="97" y="686" text-anchor="end">lowered on halyards</text>
+<path d="M158 667L182 605" class="l"/>
+<text x="186" y="609" text-anchor="start">One pack lowered</text>
+<text x="186" y="624" text-anchor="start">by a bot's reel</text>
 <path d="M259 752L337 732" class="l"/>
 <text x="341" y="736" text-anchor="start">Single base pivot + Ø3 m</text>
 <text x="341" y="751" text-anchor="start">rotating base frame</text>
@@ -93,7 +92,7 @@
 <circle cx="880" cy="360" r="5" fill="#fff" class="s"/>
 <path d="M941 254L1000 210" class="l"/>
 <text x="1004" y="214" text-anchor="start">Array parked at maintenance</text>
-<text x="1004" y="229" text-anchor="start">azimuth (30°/210°): wings</text>
+<text x="1004" y="229" text-anchor="start">azimuth (30°/210°): packs</text>
 <text x="1004" y="244" text-anchor="start">lower between bracing planes</text>
 <path d="M975 335L1030 420" class="l"/>
 <text x="1034" y="424" text-anchor="start">Array while tracking</text>

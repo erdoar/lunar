@@ -1,4 +1,4 @@
-# Generates platform-layout.svg (rev 14: strut tripod, A-frame struts, stay cables on V-links). Run: python3 make_layout_svg.py
+# Generates platform-layout.svg (rev 22: strut tripod, A-frame struts, stay cables on V-links, bot-lowered pack). Run: python3 make_layout_svg.py
 import math
 o = []
 A = o.append
@@ -50,10 +50,9 @@ for m in (YT, YB):
     A(f'<rect x="{X(-HALF)-3}" y="{Z(m)-3}" width="{2*HALF*e+6}" height="6" fill="#e0a040" class="s"/>')
 for sx in (-1, 1):
     A(f'<line x1="{X(0)}" y1="{Z(MAST)}" x2="{X(sx*HALF)}" y2="{Z(YT)}" class="c"/>')
-# port wing shown rolled up and lowered on its halyards (ghost)
-A(f'<rect x="{X(-HALF)}" y="{Z(4)}" width="{(HALF-2)*e}" height="5" fill="none" stroke="#2c4a7a" stroke-width="2" stroke-dasharray="5 3"/>')
-for xh in (-HALF, -2):
-    A(f'<line x1="{X(xh)}" y1="{Z(YT)}" x2="{X(xh)}" y2="{Z(4)}" stroke="#2c4a7a" stroke-width="0.8" stroke-dasharray="3 4"/>')
+# one port pack being lowered by a service bot's reel into its tray (ghost)
+A(f'<rect x="{X(-HALF)}" y="{Z(4)}" width="{4.25*e}" height="5" fill="none" stroke="#2c4a7a" stroke-width="2" stroke-dasharray="5 3"/>')
+A(f'<line x1="{X(-HALF+2.1)}" y1="{Z(YT)}" x2="{X(-HALF+2.1)}" y2="{Z(4)}" stroke="#c0392b" stroke-width="0.9" stroke-dasharray="3 4"/>')
 A(f'<path d="M{X(-HALF+3)} {Z(YB)+8}V{Z(20)}" class="l" marker-end="url(#ar)"/>')
 # dims + labels
 A(f'<path d="M{X(23)} {Z(YT)}V{gy}" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="{X(23)+5}" y="{Z(55)}">100 m</text>')
@@ -67,7 +66,7 @@ lab(X(12), Z(UP * 0.6), X(16), Z(46), ['Stay cable (6 mm rope)'])
 lab(X(19), Z(MID * 0.37), X(25), Z(24), ['A-frame strut', '(2 CFRP tubes, 46 m)'])
 lab(X(20), gy - 2, X(6), gy + 26, ['Horizontal tie to central foundation'])
 lab(X(FOOT), gy - 4, X(33), gy + 46, ['Foot pad at 30 m'])
-lab(X(-HALF + 4), Z(4), X(-24), Z(14), ['Wing (packs retracted)', 'lowered on halyards'], 'end')
+lab(X(-HALF + 2.1), Z(14), X(-11), Z(24), ['One pack lowered', 'by a bot\'s reel'])
 lab(X(RING), gy - 8, X(14), gy - 28, ['Single base pivot + Ø3 m', 'rotating base frame'])
 hx = X(-9)
 A(f'<line x1="{hx}" y1="{gy-12}" x2="{hx}" y2="{gy}" stroke="#222" stroke-width="2"/><text x="{hx-4}" y="{gy-4}" font-size="11" text-anchor="end">2 m person</text>')
@@ -101,7 +100,7 @@ for d, style in ((30, 'stroke="#2c4a7a" stroke-width="6"'), (75, 'stroke="#2c4a7
     A(f'<line x1="{cx-HALF*k*math.cos(a):.1f}" y1="{cy-HALF*k*math.sin(a):.1f}" x2="{cx+HALF*k*math.cos(a):.1f}" y2="{cy+HALF*k*math.sin(a):.1f}" {style}/>')
 A(f'<circle cx="{cx}" cy="{cy}" r="5" fill="#fff" class="s"/>')
 a = math.radians(30 - 90)
-lab(cx + HALF * k * math.cos(a), cy + HALF * k * math.sin(a), cx + 120, cy - 150, ['Array parked at maintenance', 'azimuth (30°/210°): wings', 'lower between bracing planes'])
+lab(cx + HALF * k * math.cos(a), cy + HALF * k * math.sin(a), cx + 120, cy - 150, ['Array parked at maintenance', 'azimuth (30°/210°): packs', 'lower between bracing planes'])
 a = math.radians(75 - 90)
 lab(cx + 0.8 * HALF * k * math.cos(a), cy + 0.8 * HALF * k * math.sin(a), cx + 150, cy + 60, ['Array while tracking', '(any angle above 67 m:', 'clears all bracing)'])
 lab(cx - HALF * k * 0.7, cy + HALF * k * 0.7, cx - 150, cy + 150, ['Array sweep, r = 17 m', '(only at 67–100 m)'], 'end')
