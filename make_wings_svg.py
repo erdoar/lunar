@@ -1,4 +1,4 @@
-# Generates wings.svg (rev 22): service bots swap one pack at a time with a portable reel hoist; no halyards.
+# Generates wings.svg (rev 23): service bots swap one pack at a time on two ropes from a twin-drum reel; no halyards.
 # Run: python3 make_wings_svg.py
 from math import sqrt
 
@@ -36,7 +36,7 @@ def bot(x, y, h=26, reel=True):
 e, cx, gy = 6.4, 330, 780
 X = lambda m: cx + m * e
 Z = lambda m: gy - m * e
-A('<text x="20" y="30" class="t">Swapping one pack (rev 22): elevation at the maintenance azimuth</text>')
+A('<text x="20" y="30" class="t">Swapping one pack (rev 23): elevation at the maintenance azimuth</text>')
 A('<text x="20" y="48" fill="#555">Bots drawn enlarged. Struts and stays lie 30° out of the wing plane (drawn faint), so a lowered pack passes them.</text>')
 A(f'<rect x="{X(-40)}" y="{gy}" width="{80*e}" height="24" fill="url(#g)"/><line x1="{X(-40)}" y1="{gy}" x2="{X(40)}" y2="{gy}" stroke="#222"/>')
 # faint bracing (out of plane)
@@ -72,7 +72,8 @@ for sx in (-1, 1):
         A(f'<rect x="{X(c)-3}" y="{Z(100.4)}" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>')   # hanger
         if sx == -1 and i == LOW:
             A(f'<rect x="{x0}" y="{Z(100)}" width="{pw*e}" height="{30*e}" fill="none" stroke="{PACK}" stroke-dasharray="4 3"/>')
-            A(f'<line x1="{X(c)}" y1="{Z(100.4)}" x2="{X(c)}" y2="{Z(top_now)}" stroke="{ROPE}" stroke-width="1.6"/>')
+            for dx in (-0.8, 0.8):
+                A(f'<line x1="{X(c+dx)}" y1="{Z(100.4)}" x2="{X(c+dx)}" y2="{Z(top_now)}" stroke="{ROPE}" stroke-width="1.3"/>')
             A(f'<rect x="{x0}" y="{Z(top_now)}" width="{pw*e}" height="{30*e}" fill="{PACK}"/>')
             A(f'<rect x="{x0-1}" y="{Z(top_now)-2}" width="{pw*e+2}" height="3" fill="{YARD}"/>')
             A(f'<path d="M{X(c)+16} {Z(top_now)+30} V{Z(top_now)+90}" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>')
@@ -84,13 +85,11 @@ A(f'<rect x="{X(-21)}" y="{Z(1.5)-6}" width="{pw*e}" height="6" fill="{PACK}" op
 # bots: one at the station on the yard with its reel, one climbing inside the mast
 bot(low_x + 2, Z(101.6), 28)
 bot(X(0), Z(55), 26, reel=False)
-A(f'<rect x="{X(0)-4}" y="{Z(55)+4}" width="8" height="7" fill="#7fa3d6" stroke="#222"/>')
-A(f'<line x1="{X(0)}" y1="{Z(55)}" x2="{X(0)}" y2="{Z(55)+4}" stroke="#222"/>')
 # labels, left
 lab(low_x + 6, Z(103.6), X(-24), Z(107), ['Bot at the station: reel hoist', 'clipped into the socket'], 'end')
-lab(X(-12.3), Z(78), X(-24), Z(82), ['Rope from the reel (0.1 m/s)'], 'end')
+lab(X(-12.3), Z(78), X(-24), Z(82), ['Two ropes, 0.1 m/s'], 'end')
 lab(X(-13), Z(33), X(-24), Z(40), ['One pack lowered,', '~16 min each way'], 'end')
-lab(X(0) - 6, Z(53), X(-24), Z(58), ['Second bot climbing the rail', 'inside the mast core'], 'end')
+lab(X(0) - 6, Z(53), X(-24), Z(58), ['Second bot climbing unladen', 'inside the mast core'], 'end')
 lab(X(-12.3), Z(1.8), X(-24), Z(12), ['Lands in its tray slot,', 'then folds itself up'], 'end')
 lab(X(-20), Z(1.5) - 6, X(-30), Z(5.5), ['New folded pack', 'waits by the tray'], 'end')
 # labels, right
@@ -120,29 +119,30 @@ A(f'<ellipse cx="{pcx}" cy="{pcy+6}" rx="{0.225*pk:.0f}" ry="{0.15*pk:.0f}" fill
 A(f'<circle cx="{pcx}" cy="{pcy+2}" r="{0.1*pk:.0f}" fill="{BOT}" opacity="0.8"/>')
 A(f'<path d="M{verts[2][0]:.0f} {verts[2][1]+22:.0f} H{verts[1][0]:.0f}" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="{pcx}" y="{verts[2][1]+36:.0f}" text-anchor="middle">1.4 m face</text>')
 lab(pcx + rin * pk * 0.7, pcy - rin * pk * 0.7, pcx + 110, pcy - 110, ['Clear core ~Ø0.69 m', '(members on faces only)'])
-lab(pcx + 0.225 * pk, pcy + 6, pcx + 110, pcy - 40, ['Bot ~0.45 x 0.3 m;', 'reel slung below'])
+lab(pcx + 0.225 * pk, pcy + 6, pcx + 110, pcy - 40, ['Bot ~0.45 x 0.3 m; a reel', 'rides as a chest pack'])
 lab(pcx + 12, ry, pcx + 110, pcy + 50, ['Climb rail + captive', 'fall-arrest trolley'])
 A(f'<text x="800" y="{pcy+150}" font-size="11.5">Collars, V-links, stays and spreaders are all outside the</text>')
 A(f'<text x="800" y="{pcy+165}" font-size="11.5">mast, so the climb inside never has to pass them.</text>')
 
 # ================= RIGHT BOTTOM: sequence and balance =================
 sx0, sy0 = 800, 420
-A(f'<text x="{sx0}" y="{sy0}" class="t">Pack swap, ~1.3 h with one bot</text>')
+A(f'<text x="{sx0}" y="{sy0}" class="t">Pack swap, ~1.2 h with one bot</text>')
 steps = ['1. Park at the maintenance azimuth; new pack to the tray.',
-         '2. Bot climbs inside the mast (~11 min), clips to the yard',
-         '    rail and walks out to the station.',
-         '3. Reel into the socket, rope to the pack head; take the',
+         '2. Bot climbs inside the mast unladen (~11 min), clips to the',
+         '    yard rail, takes a reel from the garage, walks out.',
+         '3. Reel into the socket, 2 ropes to the pack head; take the',
          '    load, open the hanger latch.',
          '4. Lower ~16 min: past its neighbours, clear of the collars;',
          '    it lands in its slot and folds itself up.',
          '5. Rover or crew swaps the folded pack in the tray.',
-         '6. Hoist ~16 min: it unfolds as it lifts; cones seat, bot',
-         '    latches, unhooks and climbs down.']
+         '6. Hoist ~16 min: it unfolds as it lifts; guide forks square',
+         '    it, cones seat, bot latches, parks the reel, climbs down.',
+         'Two ropes 1.6 m apart hold it square (≤1.3° at 100 m): no spin.']
 for j, t in enumerate(steps):
     A(f'<text x="{sx0+(14 if t.startswith(" ") else 0)}" y="{sy0+22+j*17}">{t.strip()}</text>')
 by = sy0 + 22 + len(steps) * 17 + 20
 A(f'<text x="{sx0}" y="{by}" class="t">Balance</text>')
-for j, t in enumerate(['A pack on the rope still hangs from the yard: no change.',
+for j, t in enumerate(['A pack on its ropes still hangs from the yard: no change.',
                        'Pack landed: ≤3.6 kN·m; with the bot at the far tip ≤6 kN·m,',
                        'half the ~12 kN·m quake case. First fit alternates sides.',
                        '',

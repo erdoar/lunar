@@ -1,4 +1,4 @@
-# Generates top-yard.svg (rev 22): front elevation, side view, pack hanger station and portable reel hoist.
+# Generates top-yard.svg (rev 23): front elevation, side view, two-rope hanger station and twin-drum reel hoist.
 # Run: python3 make_top_yard_svg.py
 o = []
 A = o.append
@@ -58,21 +58,25 @@ for sx in (-1, 1):
         A(f'<path d="M{X(c)-9} {Z(99.6)} h18 l-4 7 h-10 z" fill="{HNG}" stroke="#222"/>')
         A(f'<rect x="{X(c)-4}" y="{Z(100.4)-9}" width="8" height="6" fill="#ddd" stroke="#222" stroke-width="0.8"/>')   # reel socket
         if sx == -1 and i == LOW:
-            A(f'<line x1="{X(c)}" y1="{Z(100.4)-5}" x2="{X(c)}" y2="{Z(Zb)}" class="rope"/>')
+            for dx in (-0.8, 0.8):
+                A(f'<line x1="{X(c+dx)}" y1="{Z(99.6)+4}" x2="{X(c+dx)}" y2="{Z(Zb)}" class="rope"/>')
+            A(f'<line x1="{X(c-0.8)}" y1="{Z(99.6)+4}" x2="{X(c+0.8)}" y2="{Z(99.6)+4}" class="rope"/>')
             A(f'<rect x="{X(c-pw/2)}" y="{Z(99.6)+7}" width="{pw*k}" height="{(99.6-Zb)*k-7}" fill="none" stroke="{PACK}" stroke-dasharray="4 3"/>')
             lx = X(c)
         else:
             A(f'<rect x="{X(c-pw/2)}" y="{Z(99.6)+7}" width="{pw*k}" height="4" fill="#e0a040" class="s"/>')
             A(f'<rect x="{X(c-pw/2)}" y="{Z(99.6)+11}" width="{pw*k}" height="{(99.6-Zb)*k-11}" fill="{PACK}" opacity="0.88"/>')
 bot(lx + 4, Z(100.4) - 3, 34, kneel=True)
+A(f'<rect x="{X(-2.6)}" y="{Z(100.4)-16}" width="{1.6*k}" height="13" fill="#d5d8dc" class="s"/>')
+lab(X(-1.8), Z(100.4) - 16, X(-3.5), Z(104.2), ['Reel garage (2 reels)'])
 A(f'<rect x="{lx-12}" y="{Z(100.4)-15}" width="12" height="11" fill="#7fa3d6" class="s"/>')
 lab(X(0) + 4, Z(108), X(3), Z(108.6), ['Masthead, 108 m (8 m above yard)'])
 lab(X(9), Z(103.9), X(10), Z(106.3), ['Topping lift ~3.0 kN'])
 lab(X(6), Z(101.5), X(7.5), Z(104.3), ['Walkway + fall-arrest rail'])
 lab(X(8), Z(100.4), X(8.5), Z(102.6), ['Yard truss 34 m, 0.8 m deep'])
-lab(lx + 4, Z(102.6), X(-15.5), Z(107.6), ['Bot with its reel at the station'])
+lab(lx + 4, Z(102.6), X(-15.5), Z(107.6), ['Bot with a reel at the station'])
 lab(X(-2.9), Z(99.6) + 5, X(-6), Z(89.2), ['Fixed hanger (16)'])
-lab(lx, Z(93), X(-16.5), Z(89.2), ['Rope to the pack', 'being lowered'])
+lab(lx, Z(93), X(-16.5), Z(89.2), ['Two ropes to the', 'pack being lowered'])
 lab(X(0), Z(93), X(2), Z(89.2), ['Climb rail inside', 'the mast'])
 lab(X(12), Z(92.5), X(9), Z(89.2), ['Packs hang 30 m below'])
 
@@ -96,77 +100,106 @@ lab(SX(3), SZ(72.5), SX(5), SZ(68), ['Diamond stays', '64 → 81 → 108 m'])
 lab(SX(1.2), SZ(62), SX(3), SZ(61), ['Upper collar, 62 m'])
 lab(SX(0), SZ(78), SX(-2), SZ(74), ['Wings', '(edge-on)'], 'end')
 
-# ---------------- 3. hanger station, section across the yard
-hk, hx, hy = 95, 1010, 175          # px/m; yard top-chord centre
-A(f'<text x="{hx-80}" y="30" class="t">3. Hanger station (section)</text>')
-YW, YD = 0.5, 0.8
-A(f'<rect x="{hx-YW/2*hk}" y="{hy}" width="{YW*hk}" height="{YD*hk}" fill="none" stroke="#c87f0a" stroke-width="3"/>')
-A(f'<line x1="{hx-YW/2*hk}" y1="{hy}" x2="{hx+YW/2*hk}" y2="{hy+YD*hk}" stroke="#c87f0a"/>')
-A(f'<rect x="{hx-YW/2*hk-4}" y="{hy-7}" width="{YW*hk+8}" height="7" fill="url(#gr)" stroke="#777"/>')        # grating
-A(f'<line x1="{hx+YW/2*hk}" y1="{hy-7}" x2="{hx+YW/2*hk}" y2="{hy-0.9*hk}" stroke="{BOT}" stroke-width="2.5"/>')  # rail post
-A(f'<rect x="{hx+YW/2*hk-5}" y="{hy-0.9*hk-6}" width="12" height="8" fill="{BOT}"/>')                           # rail head
-A(f'<rect x="{hx+YW/2*hk-7}" y="{hy-0.9*hk+3}" width="14" height="10" fill="#555"/>')                           # trolley
-# reel socket and reel, rope through the yard to the hanger and pack head
-A(f'<rect x="{hx-18}" y="{hy-13}" width="36" height="6" fill="#ddd" class="s"/>')
-A(f'<rect x="{hx-17}" y="{hy-40}" width="34" height="27" rx="4" fill="#7fa3d6" class="s"/><circle cx="{hx}" cy="{hy-27}" r="8" fill="#fff" stroke="#222"/>')
-A(f'<line x1="{hx}" y1="{hy-19}" x2="{hx}" y2="{hy+YD*hk+46}" class="rope"/>')
-# hanger: cone sockets + latch, pack head with cones and eye
-hb = hy + YD * hk
-A(f'<path d="M{hx-0.45*hk} {hb} h{0.9*hk} v14 h-{0.9*hk} z" fill="{HNG}" stroke="#222"/>')
-for dx in (-0.32, 0.32):
-    A(f'<path d="M{hx+dx*hk-9} {hb+14} l9 -12 l9 12 z" fill="#fff" stroke="#222"/>')
-    A(f'<path d="M{hx+dx*hk-8} {hb+28} l8 -12 l8 12 z" fill="#e0a040" stroke="#222"/>')
-A(f'<rect x="{hx-0.5*hk}" y="{hb+28}" width="{hk}" height="10" fill="#e0a040" class="s"/>')
-A(f'<circle cx="{hx}" cy="{hb+46}" r="6" fill="#fff" stroke="#222" stroke-width="2"/>')
-A(f'<path d="M{hx-0.45*hk} {hb+6} h-14 v26" stroke="#c0392b" stroke-width="4" fill="none"/>')                      # latch hook
-A(f'<line x1="{hx-0.45*hk-14}" y1="{hb+6}" x2="{hx-0.45*hk-14}" y2="{hy-30}" stroke="#555" stroke-width="2.5"/>')   # lever rod up
-A(f'<rect x="{hx-0.45*hk-24}" y="{hy-44}" width="20" height="14" fill="#f2c94c" class="s"/>')                    # flag / handle
-for j in range(4):
-    A(f'<line x1="{hx}" y1="{hb+52+j*34}" x2="{hx}" y2="{hb+82+j*34}" stroke="{PACK}" stroke-width="6" stroke-linecap="round"/>')
-    A(f'<circle cx="{hx}" cy="{hb+84+j*34}" r="2.5" fill="#222"/>')
-bot(hx - 0.36 * hk, hy - 7, 62, kneel=True)
-A(f'<path d="M{hx-0.36*hk} {hy-45} Q{hx} {hy-110} {hx+YW/2*hk} {hy-0.9*hk+8}" stroke="#555" stroke-width="1.2" fill="none" stroke-dasharray="3 2"/>')
-RX = hx + 80
-for (px, py, ly, lines) in ((hx + YW / 2 * hk + 6, hy - 0.9 * hk, hy - 125, ['Fall-arrest rail', '+ captive trolley']),
-                            (hx - 0.36 * hk, hy - 52, hy - 88, ['Bot, tethered', 'to the trolley']),
-                            (hx - 0.45 * hk - 4, hy - 38, hy - 52, ['Latch handle', 'with position flag']),
-                            (hx + 17, hy - 22, hy - 16, ['Reel hoist in', 'its socket']),
-                            (hx + YW / 2 * hk, hy + 40, hy + 30, ['Yard truss', '0.5 x 0.8 m']),
-                            (hx + 0.45 * hk, hb + 8, hb - 2, ['Hanger: 4 cone', 'sockets + latch']),
-                            (hx + 0.5 * hk, hb + 33, hb + 36, ['Pack head: cones', '+ lifting eye']),
-                            (hx + 3, hb + 100, hb + 96, ['Pack: 30 x 1 m', 'hinged panels'])):
-    lab(px, py, RX, ly, lines)
+# ---------------- 3. hanger station, front view along the yard (two ropes)
+hk, hx, hy = 105, 1075, 150
+A(f'<text x="{hx-150}" y="30" class="t">3. Hanger station (front view)</text>')
+L2 = 1.2
+A(f'<rect x="{hx-L2*hk}" y="{hy-7}" width="{2*L2*hk}" height="7" fill="url(#gr)" stroke="#777"/>')            # walkway
+A(f'<line x1="{hx-L2*hk}" y1="{hy-0.9*hk}" x2="{hx+L2*hk}" y2="{hy-0.9*hk}" stroke="{BOT}" stroke-width="3"/>')  # rail
+hb = hy + 0.8 * hk
+for yy in (hy, hb):
+    A(f'<line x1="{hx-L2*hk}" y1="{yy}" x2="{hx+L2*hk}" y2="{yy}" class="yard"/>')
+for j in range(-3, 3):
+    A(f'<line x1="{hx+j*0.4*hk}" y1="{hy}" x2="{hx+(j+1)*0.4*hk}" y2="{hb}" stroke="#c87f0a"/>')
+# reel in its socket, bot kneeling beside it
+A(f'<rect x="{hx-20}" y="{hy-13}" width="40" height="6" fill="#ddd" class="s"/>')
+A(f'<rect x="{hx-20}" y="{hy-38}" width="40" height="25" rx="4" fill="#7fa3d6" class="s"/>')
+for dx in (-9, 9):
+    A(f'<circle cx="{hx+dx}" cy="{hy-26}" r="7" fill="#fff" stroke="#222"/>')
+bot(hx - 0.55 * hk, hy - 7, 66, kneel=True)
+A(f'<path d="M{hx-0.55*hk} {hy-50} Q{hx-0.7*hk} {hy-0.9*hk-20} {hx-0.85*hk} {hy-0.9*hk}" stroke="#555" stroke-width="1.2" fill="none" stroke-dasharray="3 2"/>')
+A(f'<rect x="{hx-0.85*hk-7}" y="{hy-0.9*hk-4}" width="14" height="9" fill="#555"/>')
+# hanger plate, 4 sheaves, guide forks
+A(f'<rect x="{hx-1.05*hk}" y="{hb}" width="{2.1*hk}" height="12" fill="{HNG}" stroke="#222"/>')
+ys = hb + 20
+A(f'<path d="M{hx-9} {hy-19} V{ys} H{hx-0.8*hk} V{hb+86} M{hx+9} {hy-19} V{ys} H{hx+0.8*hk} V{hb+86}" class="rope"/>')
+for x_ in (hx - 9, hx + 9, hx - 0.8 * hk, hx + 0.8 * hk):
+    A(f'<circle cx="{x_}" cy="{ys}" r="6" fill="#fff" stroke="#222" stroke-width="1.3"/>')
+for sx in (-1, 1):
+    xf = hx + sx * 1.02 * hk
+    A(f'<path d="M{xf-5} {hb+12} V{hb+40} L{xf-16} {hb+58} M{xf+5} {hb+12} V{hb+40} L{xf+16} {hb+58}" stroke="#2e7d32" stroke-width="3" fill="none"/>')
+# pack head (hanging a little below, arriving): cones, end tabs, 2 eyes; pack below
+yh = hb + 86
+A(f'<rect x="{hx-1.0*hk}" y="{yh}" width="{2.0*hk}" height="10" fill="#e0a040" class="s"/>')
+for sx in (-1, 1):
+    A(f'<rect x="{hx+sx*1.02*hk-4}" y="{yh-14}" width="8" height="14" fill="#e0a040" stroke="#222"/>')
+    A(f'<path d="M{hx+sx*0.5*hk-8} {yh} l8 -12 l8 12 z" fill="#e0a040" stroke="#222"/>')
+    A(f'<path d="M{hx+sx*0.5*hk-9} {hb+12} l9 12 l9 -12 z" fill="#fff" stroke="#222"/>')
+    A(f'<circle cx="{hx+sx*0.8*hk}" cy="{yh-5}" r="5" fill="#fff" stroke="#222" stroke-width="2"/>')
+A(f'<rect x="{hx-1.0*hk}" y="{yh+10}" width="{2.0*hk}" height="64" fill="{PACK}" opacity="0.9"/>')
+for j in range(1, 3):
+    A(f'<line x1="{hx-1.0*hk}" y1="{yh+10+j*30}" x2="{hx+1.0*hk}" y2="{yh+10+j*30}" stroke="#7fa3d6"/>')
+A(f'<path d="M{hx-1.2*hk} {yh+40} V{yh-6}" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>')
+A(f'<text x="{hx-1.2*hk-4}" y="{yh+56}" text-anchor="end" font-size="11">hoisting</text>')
+# numbered key
+def num(n, x, y):
+    A(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="9" fill="#fff" stroke="#222"/><text x="{x:.0f}" y="{y+4:.0f}" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">{n}</text>')
+pts = [(hx + 26, hy - 34), (hx - 0.55 * hk - 16, hy - 66), (hx - 0.85 * hk, hy - 0.9 * hk - 14), (hx + 0.8 * hk + 14, ys - 12),
+       (hx + 1.02 * hk + 22, hb + 40), (hx + 0.5 * hk + 14, yh - 14), (hx + 0.8 * hk + 14, yh + 4), (hx + 0.6 * hk, yh + 44)]
+for n, (x_, y_) in enumerate(pts, 1):
+    num(n, x_, y_)
+keys = ['Twin-drum reel in its socket', 'Bot, tethered to the rail trolley', 'Yard fall-arrest rail', '4 passive sheaves in the hanger',
+        'Flared guide forks (squares the head)', 'Cones into the hanger sockets', '2 lifting eyes, ~1.6 m apart', 'Pack hangs square on 2 ropes']
+ky = yh + 96
+for j, t in enumerate(keys):
+    num(j + 1, hx - 140, ky + j * 20)
+    A(f'<text x="{hx-124}" y="{ky+j*20+4}" font-size="11.5">{t}</text>')
 
-# ---------------- 4. portable reel hoist
+# ---------------- 4. twin-drum reel hoist + chest-pack carry
 ry = 610
-A(f'<text x="20" y="{ry-20}" class="t">4. Portable reel hoist (~12 kg; 2 + 1 spare)</text>')
+A(f'<text x="20" y="{ry-20}" class="t">4. Twin-drum reel hoist (~14 kg; 2 parked at the top, 1 spare on the ground)</text>')
 A(f'<rect x="40" y="{ry}" width="1160" height="270" fill="none" stroke="#999" stroke-dasharray="4 3"/>')
 by = ry + 130
-A(f'<rect x="90" y="{by-70}" width="520" height="150" rx="10" fill="#eef3f8" stroke="#222"/>')
-A(f'<rect x="130" y="{by-50}" width="150" height="100" rx="6" fill="#bbb" class="s"/>')
-for j in range(7):
-    A(f'<line x1="{140+j*20}" y1="{by-48}" x2="{140+j*20}" y2="{by+48}" stroke="#c0392b" stroke-width="2"/>')
-A(f'<text x="290" y="{by-56}" font-size="11">drum Ø0.12 m, ~105 m rope</text>')
-A(f'<rect x="300" y="{by-30}" width="80" height="60" fill="#7fa3d6" class="s"/><text x="340" y="{by+4}" text-anchor="middle" font-size="11">worm</text>')
-A(f'<rect x="395" y="{by-30}" width="80" height="60" fill="#7fa3d6" class="s"/><text x="435" y="{by+4}" text-anchor="middle" font-size="11">motor</text>')
-A(f'<rect x="490" y="{by-25}" width="40" height="50" fill="#c0392b" class="s"/><text x="510" y="{by+42}" text-anchor="middle" font-size="11">brake</text>')
-A(f'<rect x="545" y="{by-25}" width="50" height="50" fill="#ddd" class="s"/><text x="570" y="{by+4}" text-anchor="middle" font-size="10">enc.</text>')
-A(f'<line x1="280" y1="{by}" x2="300" y2="{by}" stroke="#555" stroke-width="4"/><line x1="380" y1="{by}" x2="395" y2="{by}" stroke="#555" stroke-width="4"/><line x1="475" y1="{by}" x2="490" y2="{by}" stroke="#555" stroke-width="4"/>')
-A(f'<rect x="150" y="{by-90}" width="110" height="16" fill="#ddd" class="s"/><text x="205" y="{by-78}" text-anchor="middle" font-size="10">level wind</text>')
-A(f'<rect x="90" y="{by+80}" width="520" height="18" fill="#888" class="s"/><text x="350" y="{by+93}" text-anchor="middle" font-size="11" fill="#fff" style="stroke:none">clamp + power/data plug into the reel socket</text>')
-A(f'<rect x="190" y="{by+56}" width="30" height="16" fill="#f2c94c" class="s"/><text x="226" y="{by+68}" font-size="10">load-cell guide</text>')
-A(f'<path d="M205 {by+50} V{by+125}" class="rope" marker-end="url(#ar)"/><text x="214" y="{by+120}" font-size="11">rope down through the socket to the pack head</text>')
-specs = ['2.5 mm stainless wire rope, breaks at ~3.5 kN:',
-         '   factor ~15 on the 0.23 kN pack (stainless for UV)',
-         '~14 N·m at the drum, 16 rpm for 0.1 m/s; ~40 W;',
-         '   ~6 Wh per 100 m; ~16 min to lower or hoist',
+A(f'<rect x="70" y="{by-75}" width="560" height="160" rx="10" fill="#eef3f8" stroke="#222"/>')
+for x0 in (100, 220):
+    A(f'<rect x="{x0}" y="{by-50}" width="100" height="100" rx="6" fill="#bbb" class="s"/>')
+    for j in range(5):
+        A(f'<line x1="{x0+10+j*20}" y1="{by-48}" x2="{x0+10+j*20}" y2="{by+48}" stroke="#c0392b" stroke-width="2"/>')
+    A(f'<rect x="{x0+15}" y="{by-72}" width="70" height="14" fill="#ddd" class="s"/><text x="{x0+50}" y="{by-61}" text-anchor="middle" font-size="9.5">level wind</text>')
+    A(f'<rect x="{x0+35}" y="{by+54}" width="30" height="14" fill="#f2c94c" class="s"/>')
+    A(f'<path d="M{x0+50} {by+50} V{by+120}" class="rope" marker-end="url(#ar)"/>')
+A(f'<line x1="90" y1="{by}" x2="330" y2="{by}" stroke="#555" stroke-width="5"/>')
+A(f'<text x="210" y="{by+138}" text-anchor="middle" font-size="11">2 ropes down through the socket to the hanger sheaves</text>')
+A(f'<text x="345" y="{by-54}" font-size="11">2 drums Ø0.1 m on one shaft</text>')
+A(f'<rect x="340" y="{by-30}" width="75" height="60" fill="#7fa3d6" class="s"/><text x="377" y="{by+4}" text-anchor="middle" font-size="11">worm</text>')
+A(f'<rect x="425" y="{by-30}" width="75" height="60" fill="#7fa3d6" class="s"/><text x="462" y="{by+4}" text-anchor="middle" font-size="11">motor</text>')
+A(f'<rect x="510" y="{by-25}" width="40" height="50" fill="#c0392b" class="s"/><text x="530" y="{by+42}" text-anchor="middle" font-size="11">brake</text>')
+A(f'<rect x="560" y="{by-25}" width="50" height="50" fill="#ddd" class="s"/><text x="585" y="{by+4}" text-anchor="middle" font-size="10">enc.</text>')
+A(f'<line x1="330" y1="{by}" x2="340" y2="{by}" stroke="#555" stroke-width="4"/><line x1="415" y1="{by}" x2="425" y2="{by}" stroke="#555" stroke-width="4"/><line x1="500" y1="{by}" x2="510" y2="{by}" stroke="#555" stroke-width="4"/>')
+A(f'<text x="420" y="{by+72}" font-size="10.5">load cell on each rope (yellow)</text>')
+specs = ['2 x ~108 m of 2 mm stainless rope, opposite lay:',
+         '   ~0.11 kN each, factor ~21; lay torques cancel',
+         'One shaft: both ropes pay out exactly together',
+         '~11 N·m, 19 rpm for 0.1 m/s; ~40 W; ~6 Wh per 100 m',
          'Self-locking worm + spring brake hold the pack',
-         '   if power fails',
-         'Load cell + encoder: slow, automatic approach',
-         '   to the tray and to the hanger cones',
-         'Powered from the socket (array harness):',
-         '   the bot carries no extra battery']
+         'Load cells + encoder: slow, automatic approach;',
+         '   unequal loads flag a snag or a tilted head',
+         'Powered from the socket; parked in the garage',
+         '   at the yard root, so the bots climb unladen']
 for j, t in enumerate(specs):
-    A(f'<text x="{740+(14 if t.startswith(" ") else 0)}" y="{ry+40+j*20}" font-size="12">{t.strip()}</text>')
+    A(f'<text x="{660+(14 if t.startswith(" ") else 0)}" y="{ry+40+j*20}" font-size="12">{t.strip()}</text>')
+# chest-pack carry on the ladder (side view)
+cx_, cy_ = 1120, ry + 235
+A(f'<text x="{cx_-55}" y="{ry+24}" font-size="12" font-weight="bold">Carrying a reel</text>')
+A(f'<line x1="{cx_+40}" y1="{ry+35}" x2="{cx_+40}" y2="{ry+262}" stroke="#555" stroke-width="5"/>')
+for j in range(6):
+    A(f'<line x1="{cx_+40}" y1="{ry+50+j*38}" x2="{cx_+26}" y2="{ry+50+j*38}" stroke="#555" stroke-width="3"/>')
+u = 7
+A(f'<g stroke="{BOT}" stroke-width="5" stroke-linecap="round" fill="none">'
+  f'<polyline points="{cx_+30},{cy_-6} {cx_+8},{cy_-30} {cx_-4},{cy_-70}"/><polyline points="{cx_+30},{cy_-60} {cx_+2},{cy_-80} {cx_-4},{cy_-70}"/>'
+  f'<line x1="{cx_-4}" y1="{cy_-70}" x2="{cx_-4}" y2="{cy_-150}"/><polyline points="{cx_-4},{cy_-140} {cx_+18},{cy_-158} {cx_+30},{cy_-180}"/></g>'
+  f'<circle cx="{cx_-4}" cy="{cy_-166}" r="12" fill="{BOT}"/>')
+A(f'<rect x="{cx_+2}" y="{cy_-138}" width="22" height="40" rx="4" fill="#7fa3d6" class="s"/>')
+A(f'<text x="{cx_-60}" y="{cy_+18}" font-size="11">chest pack between</text><text x="{cx_-60}" y="{cy_+31}" font-size="11">the bot and the rungs</text>')
 A('</svg>')
 open('top-yard.svg', 'w').write('\n'.join(o))

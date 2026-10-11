@@ -2,7 +2,7 @@
 <rect width="1240" height="820" fill="#fff"/>
 <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker><pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#a08c6c"/></pattern></defs>
 <style>.s{stroke:#222;stroke-width:1.5}.l{stroke:#555;stroke-width:1;fill:none}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:15px;font-weight:bold}</style>
-<text x="20" y="30" class="t">Swapping one pack (rev 22): elevation at the maintenance azimuth</text>
+<text x="20" y="30" class="t">Swapping one pack (rev 23): elevation at the maintenance azimuth</text>
 <text x="20" y="48" fill="#555">Bots drawn enlarged. Struts and stays lie 30° out of the wing plane (drawn faint), so a lowered pack passes them.</text>
 <rect x="74.0" y="780" width="512.0" height="24" fill="url(#g)"/><line x1="74.0" y1="780" x2="586.0" y2="780" stroke="#222"/>
 <line x1="163.6" y1="780" x2="330.0" y2="556.0" stroke="#bbb" stroke-width="3"/>
@@ -52,7 +52,8 @@
 <rect x="257.6" y="140.0" width="11.200000000000001" height="192.0" fill="#2c4a7a" opacity="0.92"/>
 <rect x="248.2" y="137.43999999999994" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>
 <rect x="245.6" y="140.0" width="11.200000000000001" height="192.0" fill="none" stroke="#2c4a7a" stroke-dasharray="4 3"/>
-<line x1="251.2" y1="137.43999999999994" x2="251.2" y2="472.79999999999995" stroke="#c0392b" stroke-width="1.6"/>
+<line x1="246.07999999999998" y1="137.43999999999994" x2="246.07999999999998" y2="472.79999999999995" stroke="#c0392b" stroke-width="1.3"/>
+<line x1="256.32" y1="137.43999999999994" x2="256.32" y2="472.79999999999995" stroke="#c0392b" stroke-width="1.3"/>
 <rect x="245.6" y="472.79999999999995" width="11.200000000000001" height="192.0" fill="#2c4a7a"/>
 <rect x="244.6" y="470.79999999999995" width="13.200000000000001" height="3" fill="#e0a040"/>
 <path d="M267.2 502.79999999999995 V562.8" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
@@ -84,18 +85,16 @@
 <g stroke="#6c3483" stroke-width="2.6" stroke-linecap="round" fill="none"><line x1="253.2" y1="121.14461538461538" x2="248.89230769230767" y2="129.76"/><line x1="253.2" y1="121.14461538461538" x2="257.5076923076923" y2="129.76"/><line x1="253.2" y1="121.14461538461538" x2="253.2" y2="109.29846153846154"/><line x1="253.2" y1="111.45230769230768" x2="246.73846153846154" y2="118.99076923076922"/><line x1="253.2" y1="111.45230769230768" x2="259.66153846153844" y2="117.91384615384615"/></g><circle cx="253.2" cy="105.52923076923076" r="3.7" fill="#6c3483"/>
 <rect x="258.6" y="123.3" width="7.5" height="6.5" fill="#7fa3d6" stroke="#222" stroke-width="1"/>
 <g stroke="#6c3483" stroke-width="2.4" stroke-linecap="round" fill="none"><line x1="330.0" y1="420.0" x2="326.0" y2="428.0"/><line x1="330.0" y1="420.0" x2="334.0" y2="428.0"/><line x1="330.0" y1="420.0" x2="330.0" y2="409.0"/><line x1="330.0" y1="411.0" x2="324.0" y2="418.0"/><line x1="330.0" y1="411.0" x2="336.0" y2="417.0"/></g><circle cx="330.0" cy="405.5" r="3.4" fill="#6c3483"/>
-<rect x="326.0" y="432.0" width="8" height="7" fill="#7fa3d6" stroke="#222"/>
-<line x1="330.0" y1="428.0" x2="330.0" y2="432.0" stroke="#222"/>
 <path d="M257 117L176 95" class="l"/>
 <text x="172" y="99" text-anchor="end">Bot at the station: reel hoist</text>
 <text x="172" y="113" text-anchor="end">clipped into the socket</text>
 <path d="M251 281L176 255" class="l"/>
-<text x="172" y="259" text-anchor="end">Rope from the reel (0.1 m/s)</text>
+<text x="172" y="259" text-anchor="end">Two ropes, 0.1 m/s</text>
 <path d="M247 569L176 524" class="l"/>
 <text x="172" y="528" text-anchor="end">One pack lowered,</text>
 <text x="172" y="542" text-anchor="end">~16 min each way</text>
 <path d="M324 441L176 409" class="l"/>
-<text x="172" y="413" text-anchor="end">Second bot climbing the rail</text>
+<text x="172" y="413" text-anchor="end">Second bot climbing unladen</text>
 <text x="172" y="427" text-anchor="end">inside the mast core</text>
 <path d="M251 768L176 703" class="l"/>
 <text x="172" y="707" text-anchor="end">Lands in its tray slot,</text>
@@ -132,29 +131,30 @@
 <text x="1059" y="99" text-anchor="start">Clear core ~Ø0.69 m</text>
 <text x="1059" y="113" text-anchor="start">(members on faces only)</text>
 <path d="M982 211L1055 165" class="l"/>
-<text x="1059" y="169" text-anchor="start">Bot ~0.45 x 0.3 m;</text>
-<text x="1059" y="183" text-anchor="start">reel slung below</text>
+<text x="1059" y="169" text-anchor="start">Bot ~0.45 x 0.3 m; a reel</text>
+<text x="1059" y="183" text-anchor="start">rides as a chest pack</text>
 <path d="M957 266L1055 255" class="l"/>
 <text x="1059" y="259" text-anchor="start">Climb rail + captive</text>
 <text x="1059" y="273" text-anchor="start">fall-arrest trolley</text>
 <text x="800" y="355" font-size="11.5">Collars, V-links, stays and spreaders are all outside the</text>
 <text x="800" y="370" font-size="11.5">mast, so the climb inside never has to pass them.</text>
-<text x="800" y="420" class="t">Pack swap, ~1.3 h with one bot</text>
+<text x="800" y="420" class="t">Pack swap, ~1.2 h with one bot</text>
 <text x="800" y="442">1. Park at the maintenance azimuth; new pack to the tray.</text>
-<text x="800" y="459">2. Bot climbs inside the mast (~11 min), clips to the yard</text>
-<text x="814" y="476">rail and walks out to the station.</text>
-<text x="800" y="493">3. Reel into the socket, rope to the pack head; take the</text>
+<text x="800" y="459">2. Bot climbs inside the mast unladen (~11 min), clips to the</text>
+<text x="814" y="476">yard rail, takes a reel from the garage, walks out.</text>
+<text x="800" y="493">3. Reel into the socket, 2 ropes to the pack head; take the</text>
 <text x="814" y="510">load, open the hanger latch.</text>
 <text x="800" y="527">4. Lower ~16 min: past its neighbours, clear of the collars;</text>
 <text x="814" y="544">it lands in its slot and folds itself up.</text>
 <text x="800" y="561">5. Rover or crew swaps the folded pack in the tray.</text>
-<text x="800" y="578">6. Hoist ~16 min: it unfolds as it lifts; cones seat, bot</text>
-<text x="814" y="595">latches, unhooks and climbs down.</text>
-<text x="800" y="632" class="t">Balance</text>
-<text x="800" y="652">A pack on the rope still hangs from the yard: no change.</text>
-<text x="800" y="669">Pack landed: ≤3.6 kN·m; with the bot at the far tip ≤6 kN·m,</text>
-<text x="800" y="686">half the ~12 kN·m quake case. First fit alternates sides.</text>
-<text x="800" y="703"></text>
-<text x="800" y="720" fill="#555">Deleted: halyards, wing winch, trim sheaves, wing top bars,</text>
-<text x="800" y="737" fill="#555">docks and ballast pallet. The rest of the array keeps working.</text>
+<text x="800" y="578">6. Hoist ~16 min: it unfolds as it lifts; guide forks square</text>
+<text x="814" y="595">it, cones seat, bot latches, parks the reel, climbs down.</text>
+<text x="800" y="612">Two ropes 1.6 m apart hold it square (≤1.3° at 100 m): no spin.</text>
+<text x="800" y="649" class="t">Balance</text>
+<text x="800" y="669">A pack on its ropes still hangs from the yard: no change.</text>
+<text x="800" y="686">Pack landed: ≤3.6 kN·m; with the bot at the far tip ≤6 kN·m,</text>
+<text x="800" y="703">half the ~12 kN·m quake case. First fit alternates sides.</text>
+<text x="800" y="720"></text>
+<text x="800" y="737" fill="#555">Deleted: halyards, wing winch, trim sheaves, wing top bars,</text>
+<text x="800" y="754" fill="#555">docks and ballast pallet. The rest of the array keeps working.</text>
 </svg>

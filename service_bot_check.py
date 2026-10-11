@@ -1,9 +1,9 @@
-# Rev 22: service bots replace the halyards. Sizing checks for the climb, the portable reel hoist and the balance.
+# Rev 22/23: service bots replace the halyards. Sizing checks for the climb, the twin-rope reel hoist, pack spin and balance.
 # Run: python3 service_bot_check.py
 from math import sqrt
 
 g = 1.62                     # m/s², Moon
-bot, reel, pack = 70.0, 12.0, 140.0   # kg: humanoid-class bot, portable reel hoist, folded concertina pack
+bot, reel, pack = 70.0, 14.0, 140.0   # kg: humanoid-class bot, twin-rope reel hoist (chest pack), folded concertina pack
 H_yard, H_tray = 100.0, 1.5  # m
 
 # 1. Clear core inside the triangular mast lattice (members on the faces only)
@@ -13,29 +13,40 @@ for face in (1.2, 1.4):
     print(f'mast face {face} m: inscribed Ø{2*r_in:.2f} m, clear core ~Ø{clear:.2f} m')
 print('humanoid ~0.45 m shoulders x 0.3 m deep: needs the 1.4 m face over the full height\n')
 
-# 2. Climb (bot + reel on its back) and fall consequences
+# 2. Climb (bot + reel as a chest pack, when one has to go up) and fall consequences
 m = bot + reel
 E = m * g * H_yard
-print(f'climb {H_yard:.0f} m with reel: {m*g:.0f} N, {E/1e3:.1f} kJ = {E/3600:.1f} Wh (x5 for losses ~{5*E/3600:.0f} Wh)')
+print(f'climb {H_yard:.0f} m carrying a reel (it is normally parked at the top): {m*g:.0f} N, {E/1e3:.1f} kJ = {E/3600:.1f} Wh (x5 for losses ~{5*E/3600:.0f} Wh)')
 t_fall = sqrt(2 * H_yard / g)
 print(f'unarrested fall from {H_yard:.0f} m: {t_fall:.1f} s, impact {g*t_fall:.0f} m/s -> captive fall-arrest trolley always\n')
 
-# 3. Portable reel hoist
-T = pack * g                                 # N, pack weight on the line
-line_d, line_break, line_kgm = 2.5, 3.5e3, 0.025   # mm, N, kg/m (7x19 stainless)
-L = H_yard + 5
-v, eta, drum = 0.1, 0.6, 0.12                # m/s, efficiency, drum Ø m
-print(f'pack on the line: {T:.0f} N; 2.5 mm stainless rope breaks ~{line_break/1e3:.1f} kN -> factor {line_break/T:.0f}')
-print(f'line {L:.0f} m, {L*line_kgm:.1f} kg; drum Ø{drum} m: torque {T*drum/2:.0f} N.m, {v/(3.1416*drum)*60:.0f} rpm')
+# 3. Twin-rope reel hoist: 2 ropes on one shaft (equal stroke) to the two ends of the pack head
+T = pack * g                                 # N, pack weight, shared by the 2 ropes
+line_break, line_kgm = 2.4e3, 0.016          # N, kg/m (2 mm 7x19 stainless)
+L = H_yard + 8
+v, eta, drum = 0.1, 0.6, 0.10                # m/s, efficiency, drum Ø m
+print(f'pack {T:.0f} N on 2 ropes ({T/2:.0f} N each); 2 mm stainless breaks ~{line_break/1e3:.1f} kN -> factor {line_break/(T/2):.0f}')
+print(f'ropes 2 x {L:.0f} m, {2*L*line_kgm:.1f} kg; drums Ø{drum} m: torque {T*drum/2:.0f} N.m, {v/(3.1416*drum)*60:.0f} rpm')
 print(f'power at {v} m/s: {T*v:.0f} W mech, ~{T*v/eta:.0f} W electric; energy per 100 m {T*H_yard/3600:.1f} Wh')
 t_move = (H_yard - H_tray) / v / 60
 print(f'lower or hoist {H_yard-H_tray:.0f} m at {v} m/s: {t_move:.0f} min\n')
 
+# 3b. Spin: a single rope gives no torsional restraint; two ropes d apart (bifilar) do
+d = 1.6                                      # m, eye spacing on the 2 m pack head
+I = pack * 2.0**2 / 12                       # kg m², pack about its vertical axis
+k_lay = 0.07                                 # rope torque ~ k_lay * T * d_rope (regular lay)
+tq = 2 * k_lay * (T / 2) * 0.002
+for Lr in (100, 30, 5, 1):
+    kt = T * d * d / (4 * Lr)
+    print(f'bifilar at {Lr:>3} m: stiffness {kt:6.1f} N.m/rad, twist from same-hand lay torque {tq/kt*57.3:4.1f} deg,'
+          f' period {2*3.1416*(I/kt)**0.5:4.1f} s')
+print('opposite-hand pair: lay torques cancel; flared guide forks square the last few degrees\n')
+
 # 4. Swap time (one pack, one bot)
 climb_v = 0.15                               # m/s inside the mast, clipped on
-t = 2 * H_yard / climb_v / 60 + 2 * 17 / 0.3 / 60 + 2 * t_move + 20
+t = 2 * H_yard / climb_v / 60 + 2 * 17 / 0.3 / 60 + 2 * t_move + 15
 print(f'one swap: climb up/down {2*H_yard/climb_v/60:.0f} min, walk out/back {2*17/0.3/60:.0f} min, lower+hoist {2*t_move:.0f} min,'
-      f' rig/unrig + ground handling ~20 min -> ~{t/60:.1f} h')
+      f' rig/unrig + ground handling ~15 min -> ~{t/60:.1f} h')
 print(f'first fit of 16 packs: hoist only ~{16*(t_move+15)/60:.0f} h with one bot, half that with two\n')
 
 # 5. Balance about the mast (wing plane), worst cases
