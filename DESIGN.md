@@ -25,6 +25,8 @@ That speed is extremely slow. Friction barely matters for running power; it matt
 | Nominal wheel load | ~2.0 kN (~200 kg-force) |
 | Design wheel load | 6 kN (x3 for uneven load, dynamic, one neighbour bogie removed) |
 
+![Platform layout: plan and elevation](platform-layout.svg)
+
 Twin back-to-back walls keep the centre of mass on the axis and balance the overturning moment; a single wall would put a large eccentric load on one side of the ring.
 
 ```
@@ -71,7 +73,7 @@ Twin back-to-back walls keep the centre of mass on the axis and balance the over
 
 - **Raised rail** on piers ~0.6 m above the regolith. Most dust that moves near the surface (rover-kicked, electrostatically lofted) stays low. It also keeps the rail away from regolith creep and gives clearance to work underneath.
 - Rail profile: a hollow steel or titanium box beam with a bolted, replaceable **rail head strip**.
-- **Segments**: 3 m arcs (42 per inner ring, 44 per outer ring), all identical within each ring. Each segment sits on **2 adjustable piers** with leveling screws (±50 mm).
+- **Segments**: 3 m arcs (40 per inner ring, 44 per outer ring), all identical within each ring. Each segment sits on **2 adjustable piers** with leveling screws (±50 mm).
 - **Joints**: angled (scarf) joints so the wheel never meets a square gap; slotted holes give ~5 mm expansion per joint. Steel across 150 K changes ~5.4 mm per 3 m segment, so each joint takes its own segment's movement.
 - **Foundations**: one of
   - sintered or microwave-melted regolith pads,
