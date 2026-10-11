@@ -44,12 +44,12 @@ print('cup and ball both come out UPWARD through a Ø0.55 m opening in the foot 
       ' the jack only unloads the pivot (~10 mm lift)\n')
 
 # ---------- 4. Slip ring heat (all array power crosses it)
-P, V = 350e3, 600
+P, V = 350e3, 1000                          # +/-500 V bipolar (rev 27, power_cabling_check.py)
 I_ = P / V
 brush = 0.6 * I_                             # two Ag-MoS2-graphite contact drops of ~0.3 V
 ring = I_**2 * 0.3e-3
 print(f'slip ring: {P/1e3:.0f} kW at {V} V DC = {I_:.0f} A; brush drop {brush:.0f} W + conductors {ring:.0f} W = ~{(brush+ring)/1e3:.2f} kW of heat')
-print(f'brushes at ~5 A/cm2 (vacuum derating): ~{I_/5:.0f} cm2 per polarity, e.g. 24 brushes of 5 cm2\n')
+print(f'brushes at ~5 A/cm2 (vacuum derating): ~{I_/5:.0f} cm2 per ring, 16 brushes of ~4.4 cm2\n')
 
 # ---------- 5. Enclosure thermal balance
 sig = 5.67e-8
@@ -66,7 +66,7 @@ print(f'survival (array dark, louvres shut): MLI {Q_mli:.0f} W + radiators {Q_lo
       f' 48 h = {(Q_mli+Q_louv)*48/1e3:.1f} kWh from the base battery')
 Q = (brush + ring)
 T_r = (Q / (0.8 * sig * A_rad) + 150**4) ** 0.25
-print(f'operating: {Q:.0f} W through {A_rad:.2f} m2 of radiator (e 0.8, 150 K sink) -> radiator ~{T_r-273:.0f} C\n')
+print(f'operating: {Q:.0f} W through {A_rad:.2f} m2 of radiator (e 0.8, 150 K sink) -> radiator ~{T_r-273:.0f} C with louvres fully open; they close part-way to hold -20 C inside\n')
 
 # ---------- 6. Dropped-object energy (outside the mast core)
 for m in (0.5, 1.0, 5.0):

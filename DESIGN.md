@@ -1,8 +1,8 @@
-# Lunar polar rotating solar platform: concept design (rev 26, tall mast on a single base pivot, bot-serviced wings)
+# Lunar polar rotating solar platform: concept design (rev 27, tall mast on a single base pivot, bot-serviced wings)
 
 A very tall mast that turns on a single spherical base pivot, braced by a stationary strut tripod, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
-## Current design at a glance (rev 26 baseline)
+## Current design at a glance (rev 27 baseline)
 
 This is the design being developed (mode 1: the **whole mast turns**). Everything under "Revision history" below records how it evolved. Section 9 (mode 2, a top turret) is set aside, and Appendix A (the earlier rail turntable) is superseded.
 
@@ -62,11 +62,17 @@ Weight path: mast → foot plate → wear cup (turns) → pivot ball (fixed) →
 - Rev 23: **two-rope (bifilar) lowering stops pack spin.** A single rope gives a hanging pack no resistance to turning, so it can spin and arrive at the hanger misaligned. The reel becomes a **twin-drum** hoist: two ropes on one shaft run over passive sheaves at the hanger to lifting eyes at both ends of the pack head, ~1.6 m apart. The pair holds the pack square to within ~1° even 100 m down, and **flared guide forks** at the hanger square the last few degrees before the cones engage. The reels now **stay parked in a garage at the yard root**; when one has to travel, the bot carries it as a **chest pack**, the most compact place in a ladder posture.
 - Rev 24: **bot tool kit and power.** The bots carry **cable cutters** and **rope grabs** for emergencies such as a fouled (cobbled) reel. The rule is never to cut a loaded rope: the grabs take the pack's weight onto anchor eyes at the station first. The reels gain slack-rope stops and spring take-up to prevent cobbling. The bots recharge from a **~20 kWh custom storage battery on the rotating base frame**, which turns with the mast, so charging needs no slip-ring channel. A small service feeder from it powers the reel sockets and garage even when the array is dark.
 - Rev 25: **recovery without cutting or joining.** A joint on one of the two ropes would change its length and how it winds, so the pair would no longer pay out equally and the pack would tilt. Cutting near a hanging pack risks dropping it onto the trays, the base or the bracing. So no rope that holds a pack is ever cut or joined, and the wedge joiners are deleted. A fouled reel is recovered with only the kit on site, escalating step by step: hold on rope grabs, untangle in place, re-equalise each drum with its **indexing clutch**, hoist and latch. If the rope can't be saved, the second reel does a **rescue lowering**: **rope-riding hooks** slide down the stuck ropes into **rescue eyes** on the pack head. The cutters are kept for unloaded lines only.
-- **Rev 26 (this):** **pivot, drive and protection enclosure detailed** (section 5a, `base_drive_check.py`).
+- Rev 26: **pivot, drive and protection enclosure detailed** (section 5a, `base_drive_check.py`).
   - **Drive:** 2 removable drive cartridges (motor, planetary, self-locking worm, torque limiter, 12-tooth pin wheel) on a 96-pin ring, 24,000:1. They run together with a torque bias against backlash. Each has a mesh release and a hand-drive socket.
   - **Enclosure:** a removable enclosure replaces the brush skirt. It is a fixed 6-panel tub with radiator panels and a drive door per unit, under a rotating lid with a double labyrinth.
   - **Slip ring:** defined as a 600 V DC slip ring, whose ~0.45 kW of heat sets the enclosure's thermal design.
   - **Correction:** the rev 21 sideways cup slide was blocked by the pin ring and slip-ring rotor. The cup and ball now lift out **upward through the foot plate into the mast core**, and the jack lift drops from ~60 to ~10 mm.
+- **Rev 27 (this):** **slip ring and power cabling detailed** (section 5c, `power_cabling_check.py`).
+  - **Voltage:** the bus becomes **bipolar ±500 V DC**. That needs 108 kg of trunk conductor against ~270 kg at 600 V, and cuts the slip-ring heat to ~0.25 kW.
+  - **Packs:** each pack carries its own MPPT converter in its head and plugs into its hanger through an interlocked blind-mate connector. Its yard bus taps through an e-fuse.
+  - **Mast:** 2 jointless trunks run in grounded trays in the corners of the mast core.
+  - **Slip ring:** a drum type with 4 power-class rings (including a spare) and 2 signal rings, 8 brush cartridges and barrier fins.
+  - **Rule:** no connector or brush ever makes or breaks under load.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -326,7 +332,7 @@ On the Moon there is no outside help, so every fault must be recoverable with th
 - One per pack, between 2 and 17 m from the mast on each side, bolted under the yard's bottom chord.
 - **4 cone sockets** take the pack head's cones. A **captive latch** holds them: a hooked bar on a hand lever, spring-closed, with a lock pin.
 - The lever suits a robot hand or a simple end tool, and carries a large position flag that a camera can read. A limit switch reports latched or open.
-- Above each hanger, on the walkway, is a **reel socket**: a standard clamp interface and a power/data plug fed from the array harness.
+- Above each hanger, on the walkway, is a **reel socket**: a standard clamp interface and a power/data plug fed from the service feeder (section 5c).
 - **4 small passive sheaves** in the hanger take the two ropes down from the socket, out ~0.8 m each way, and down to the two lifting eyes. They turn only during a swap, on dry-lubricated bushings.
 - A **flared guide fork** at each end of the hanger squares the pack head before the cones engage.
 - **2 anchor eyes** on the walkway beside each socket take the rope grabs in a fouled-reel recovery (section 4).
@@ -427,9 +433,9 @@ Layout rules:
   - Worms are **self-locking**, so the mast holds position with no brake power.
 - Sized for ~500 N·m. There are no wheels in dust, so there is no kN·m breakaway torque.
 - **Collar protection:** each motor carries a **mechanical slip clutch at ~300 N·m**, set just above the highest pivot friction. It backs up the electronic collar-torque interlock (V-link load pins, ~200 N·m), and neither the base drive nor a stuck collar can wind the mast round more than ~3°.
-- **Power transfer:** an **annular slip ring**, Ø ~0.9 m, around the pivot, carrying all the array power at ~600 V DC (~580 A).
-  - Silver rings with ~24 silver-MoS₂-graphite brushes per polarity, as on spacecraft solar-array drives.
-  - ~0.45 kW of loss, shed by the enclosure radiators.
+- **Power transfer:** an **annular drum slip ring**, Ø ~0.93 m, around the pivot, carrying all the array power at **±500 V DC** (~350 A per pole). Details in section 5c.
+  - Silver-plated rings with 16 silver-MoS₂-graphite brushes per ring, as on spacecraft solar-array drives.
+  - ~0.25 kW of loss, shed by the enclosure radiators.
   - Data crosses on a short-range contactless link. A separate ground ring and brush tie the mast to ground.
   - The rotor is under the foot plate and the stator on the foundation frame, so the pivot ball stays solid.
 
@@ -437,12 +443,12 @@ Layout rules:
 - A light CFRP/Ti platform, **Ø ~3 m**, clamped to the bottom mast section ~1.5 m above the ground. It turns with the mast. ~0.75 t with the battery, in 3 freight pieces plus the battery modules. It carries:
   - a **custom storage battery**, ~20 kWh (~0.17 t).
     - It is made of modules in an insulated, heated box, spread evenly round the mast.
-    - The array charges it through the power conditioning.
+    - The array charges it through the base power cabinet.
     - It turns with the mast, so bot charging needs no slip-ring channel.
     - It covers 2 full bot charges plus ~48 h of reels, garage heating, sensors and survival heat if the array is dark (`service_bot_check.py`).
     - A small **service feeder** from it runs up the mast to the reel sockets and the reel garage.
   - the **service-bot dock**: chargers for the 2 bots, a rack for the spare reel hoist, spare rope and tools, and the **hatch** into the climb rail in the mast core;
-  - **power conditioning** (combiners, DC/DC) feeding the **slip-ring rotor**;
+  - the **base power cabinet** (section 5c): trunk terminations and breakers, the insulation monitor, the battery's bidirectional DC/DC, the bot chargers and the service-feeder converter, feeding the **slip-ring rotor**;
   - **drive, wear-sensor and other electronics**, and cameras looking at the pivot, the trays and the bot hatch;
   - a **grating walkway** round the mast for suited crew and robots.
 
@@ -537,7 +543,7 @@ Its parts:
   - Its CFRP/Ti sandwich is the dropped-tool shield. Inside the mast core, the solid foot plate does that job.
 - **Floor:** the foundation deck, sloped 2° to a removable **debris drawer** under the drip-flange drop zone, emptied from outside.
 - **Thermal:**
-  - Operating: ~0.45 kW of slip-ring heat through 1.9 m² of radiator keeps it at ~2 °C.
+  - Operating: ~0.25 kW of slip-ring heat leaves through 1.9 m² of radiator, with the louvres modulating to hold the inside at −20 to +40 °C.
   - Array dark: the louvres shut, and ~90 W of thermostatic heaters (drives, slip ring, cup holder) run from the base battery. That is 4.4 kWh for 48 h, inside its 12 kWh dark budget.
 - **Inside:** 4 cameras with LED lights, temperature sensors and a dust witness plate.
 - **Penetrations:** harness glands through the deck. The tie lugs and jack-frame posts are outside, and the mast passes through the lid.
@@ -560,10 +566,86 @@ Only **three bearing sets rotate in service**: the base pivot and the 2 collars.
 | 9 | **Top yard** at 100 m | **None:** fixed to the mast, turns with it | Wings + yard ~5 kN down, through topping lifts into the mast top, then down the mast to the base pivot | Bolted joint, no bearing |
 | 10 | Pack hangers (16, top yard) | Static; unlatched only for a pack swap; 4 rope sheaves turn only during a swap | ~0.23 kN per pack | 4 alignment cones, 2 flared guide forks, a captive latch worked by the bot; limit switch |
 | 11 | Climb- and yard-rail trolleys | Only while a bot moves | Bot + reel ~0.14 kN; arrest load ~2 kN | Captive trolley with a cam fall-arrest brake |
+| 12 | **Slip ring** (Ø0.93 m drum) | Rotating, always | ~350 A per pole at ±500 V | Silver-plated rings, 16 silver-MoS₂-graphite brushes per ring in 8 cartridges, barrier fins |
+
+## 5c. Power: cabling and slip ring
+
+![Power: one-line diagram, slip ring section and mast cable trays](power-cabling.svg)
+
+Numbers from `power_cabling_check.py`.
+
+**Choices**
+- **Bipolar ±500 V DC** from the packs to the fixed side: 1 kV pole to pole, 500 V to structure. At ±500 V the two mast trunks need ~108 kg of aluminium for ~1.1% loss; at 600 V they would need ~270 kg.
+- **No connector or brush ever makes or breaks under load.** A DC arc in vacuum can sustain itself. So all switching is done by solid-state breakers, and connectors and isolators open only at zero current, guarded by pilot interlocks.
+- **Floating bus with a high-resistance midpoint ground** and an insulation monitor. A first insulation fault is an alarm, not an outage.
+- **Each pack is its own source.** The packs connect in parallel, so a pack removed for a swap simply drops off the bus.
+
+**From pack to base**
+1. **Pack converter, in the pack head.**
+   - MPPT plus an isolated boost from the pack's cell strings to ±500 V: ~98% efficient, ~23 A, ~12 kg.
+   - Its ~0.47 kW of heat leaves through a radiator fin on the back of the pack head.
+   - It travels with the pack, so it reaches the ground for repair at every swap.
+   - Each pack has its own ground-fault and arc-fault detection.
+   - The pack becomes ~150 kg (~0.24 kN), within the reel's margin.
+2. **Hanger connector.**
+   - A blind-mate connector in each hanger, aligned by the cones: 2 power pins (30 A) and 2 pilot pins (make last, break first).
+   - The contacts are recessed behind a spring shutter against dust.
+   - Moving the latch lever breaks the pilot loop first, which shuts the pack converter down, so the contacts never carry current while they move.
+3. **Yard bus.** Each wing has a ± pair of tapered aluminium conductors (50 mm² at the root, ~182 A) in a closed, grounded tray inside the yard truss. Each hanger taps it through a 40 A **e-fuse** in a small junction box. Loss is ~0.45 kW for both wings at full power.
+4. **Yard-root junction box,** at the yard-mast section. It holds a solid-state breaker, surge suppressor and current sensor for each wing. It also takes the service feeder and the fibre, and feeds the reel sockets and the reel garage.
+5. **Mast trunks.** There are 2 independent trunks, one per wing. Each is a ± pair of 95 mm² aluminium cables with polyimide/PTFE insulation, ~105 m long, carrying ~175 A with ~1.9 kW of loss at full power. Either trunk can be isolated without stopping the other wing.
+   - They run in 2 closed, grounded aluminium **trays in two corners of the triangular mast core**, outside the bots' clear circle. The climb rail is on the third face. The trays protect the bots from the cables and the cables from the bots.
+   - They are clamped every 1.5 m, with a gentle **S-loop at each section joint** to take ~0.24 m of thermal length change over 105 m (~7 mm per joint).
+   - **No joints:** each trunk is one continuous 115 m cable. It is fed from a reel at the jack frame as the mast rises and laid into each new section's tray as that section goes in.
+   - The service feeder (120 V, 2 x 4 mm² copper, ~400 W) and 2 radiation-tolerant fibres share the trays.
+6. **Base power cabinet,** on the rotating base frame. It holds the trunk terminations and breakers, the insulation monitor, the battery's bidirectional DC/DC (~10 kW), the bot chargers and the service-feeder converter. Short flexible bus bars run down through the foot plate to the slip-ring rotor.
+
+**Slip ring** (inside the base enclosure)
+- **Drum type, mean Ø0.93 m,** around the pivot. The rotor is an insulating CFRP/ceramic drum hung under the foot plate. The stator is 8 **brush-holder cartridges** on posts from the foundation deck.
+- **Rings, top to bottom:**
+
+  | Ring | Use | Size |
+  |---|---|---|
+  | 1 | +500 V | 40 mm wide, silver-plated copper, 60 mm pitch |
+  | 2 | −500 V | same |
+  | 3 | Protective earth: mast structure to foundation | same |
+  | 4 | Spare power ring; replaces ring 1 or 2 by moving its bus-bar link | same |
+  | 5, 6 | Signal rings (gold), the back-up data path (CAN) | 12 mm wide, 20 mm pitch |
+
+  The whole stack is 280 mm tall, which fits the space between the foundation deck posts and the foot plate.
+- **Brushes:** silver-MoS₂-graphite, 16 per power ring (2 per cartridge), ~4.4 cm² each, run at 5 A/cm² (derated for vacuum).
+  - Losses: ~0.21 kW at the contacts + ~0.04 kW in the rings and leads = **~0.25 kW**, shed by the enclosure radiators.
+- **Float:** the rings are 40 mm wide against 15 mm brushes, and the brush arms give ±6 mm radially. That covers the ±1° pivot tilt (±8 mm axial, ±4 mm radial) and the 10 mm jack lift.
+- **Wear:** the ring turns only ~12 times a year (~36 m of sliding), so brush wear is negligible. Each brush still has a length sensor.
+- **Insulation:** 500 V to structure.
+  - Insulating barrier fins between the rings interleave with fins on the stator to form a labyrinth, so conductive wear dust cannot bridge from ring to ring.
+  - ≥20 mm creepage, ≥10 mm clearance, and a debris gutter under the stack.
+- **Data:** a contactless 60 GHz ring coupler carries the main data link; the 2 gold signal rings are the back-up.
+- **Power to the fixed side at night:** the bus works both ways. When the array is dark, the base battery holds it up and powers the fixed-side loads (drives, enclosure heaters, cameras) through a small DC/DC on the fixed side.
+- **Brush cartridge swap** (~30 min outage):
+  1. Open the base breakers; the pack converters go idle.
+  2. Remove the nearest tub panel.
+  3. Undo 2 captive screws and slide the cartridge out radially.
+  4. Slide the spare in.
+
+  With one cartridge out, the other 7 still carry full current, so a fault can wait for the next planned window.
+
+**Fixed side and export**
+- The stator bus bars go to the **base switchgear** on the foundation, inside the enclosure. It holds:
+  - a solid-state breaker;
+  - a mechanical isolator, opened only at zero current;
+  - a surge arrester;
+  - metering;
+  - the fixed-side DC/DC.
+- The export cable leaves through a deck gland at ±500 V DC, 350 kW, to the user's substation. For runs of several kilometres, stepping up near the rig (for example to ±3 kV) saves cable mass; that belongs to the site network.
+
+**Totals**
+- **~95.7%** of the cells' DC reaches the fixed side, after the pack converters, yard buses, trunks and slip ring.
+- Cable mass ~0.22 t, including insulation, trays, feeder and fibre.
 
 ## 6. Spares on site
 
-2 pivot wear cups, 1 pivot ball, 1 drive-unit cartridge, 1 torque limiter, 1 pin-ring segment, 2 enclosure panels (1 radiator, 1 plain), 1 lid segment, slip-ring brush cartridges, 2 collar roller cartridges, 1 stay cable, 1 V-link with load pins, 1 tie with tensioner, 1 strut section, 4 concertina packs, 1 spare reel hoist and 2 spare ropes, spare fall-arrest trolleys, 2 cable cutters, 4 rope grabs, 1 spare rescue kit (2 rope-riding hooks, 2 edge rollers), 2 battery modules. A third service bot in reserve is worth considering.
+2 pivot wear cups, 1 pivot ball, 1 drive-unit cartridge, 1 torque limiter, 1 pin-ring segment, 2 enclosure panels (1 radiator, 1 plain), 1 lid segment, 2 slip-ring brush cartridges, 1 pack converter, 1 hanger connector, 4 e-fuses, 2 collar roller cartridges, 1 stay cable, 1 V-link with load pins, 1 tie with tensioner, 1 strut section, 4 concertina packs, 1 spare reel hoist and 2 spare ropes, spare fall-arrest trolleys, 2 cable cutters, 4 rope grabs, 1 spare rescue kit (2 rope-riding hooks, 2 edge rollers), 2 battery modules. A third service bot in reserve is worth considering.
 
 ## 7. Installation equipment and sequence (human supervised)
 
@@ -588,7 +670,8 @@ Everything is assembled at the base (on the foundation, inside the jack frame) a
 4. Fit the **top yard first**, on the topmost mast section at the base:
    - **unfolded and horizontal**, at the maintenance azimuth,
    - topping lifts set and tensioned,
-   - walkway, fall-arrest rail, pack hangers (with their sheaves and guide forks), reel sockets and the reel garage fitted, with the 2 reels in it.
+   - the yard-root junction box, with the 2 mast trunks, the service feeder and the fibres connected to it. They pay out from reels at the jack frame as the mast rises and are laid into each new section's corner trays;
+   - walkway, fall-arrest rail, pack hangers (with their sheaves, guide forks, connectors and e-fuses), reel sockets and the reel garage fitted, with the 2 reels in it.
 
    The climb rail is part of every mast section, pinned at each joint as the section goes in.
 
@@ -599,7 +682,7 @@ Everything is assembled at the base (on the foundation, inside the jack frame) a
    - As the mast keeps rising, the struts swing up and the tie winches (E6) **pull the feet in** along the ground, from 46 m to their 30 m pads. Low gravity keeps the strut and dolly loads tiny.
    - At final height, the feet drop onto their pads. The stay cables and ties are trimmed to final tension; the V-links line up with their cables by themselves. The clamp pins are pulled. The bottom section's foot plate (wear cup, pin-ring gear, keeper hooks) is lowered onto the pivot ball, and the **rotating base frame** is clamped on ~1.5 m up. The enclosure lid segments are bolted under the foot plate and the tub panels dropped in. From then on the mast turns freely on the base pivot and in both collars.
 6. At full height (the top yard is already rigged), park at the maintenance azimuth and set the folded packs in their tray slots. The service bots (E7) climb to the yard and **hoist the packs one at a time** with the reel hoists (E8), ~16 min each, alternating port and starboard so the rig is never more than one pack out of balance. Each pack unfolds as it lifts off its tray and is latched to its hanger. All 16 take ~8 h with one bot and ~4 h with two. More packs can be added later the same way.
-7. Trim wire and tie tensions to plumb the mast and take out thermal bow. Connect the harness to the slip ring, commission the worm drives and slip clutches, start tracking.
+7. Trim wire and tie tensions to plumb the mast and take out thermal bow. Terminate the trunks in the base power cabinet, check insulation and polarity, then energise the packs one by one through the slip ring; commission the worm drives and slip clutches, start tracking.
 
 Design rules for every part: captive fasteners, one tool size, alignment cones, grapple fixtures, and no single piece heavier than ~150 kg-weight on the Moon without lifting gear.
 
@@ -614,6 +697,7 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
 | Moonquakes | Strut tripod carries lateral load; balanced rig; lower thrust rollers in the collars; the base pivot has keeper hooks and is always ~10 kN in compression |
 | Micrometeoroids | Damaged packs lowered and exchanged one at a time by a service bot; doubled wires; struts are thick-walled tubes, inspected by the bots |
 | Work at 100 m | Bots, not crew, work at height. They are always clipped to a captive fall-arrest trolley on the climb rail (inside the mast) or the yard rail. Packs move on a reel with a fail-safe brake. No rope that holds a pack is ever cut or joined. A fouled reel is recovered with rope grabs and untangling, or a rescue lowering on the second reel |
+| High voltage in vacuum and dust | ±500 V bus (500 V to structure); no connector or brush makes or breaks under load (pilot interlocks, solid-state breakers); insulation monitor; barrier fins and creepage in the slip ring; recessed, shuttered connectors |
 | UV and radiation on cables | Steel wire rope or coated CFRP rod, not bare aramid or polymer fibre |
 | Regolith settlement | Shimmable foundation frame and foot pads; the spherical seat lets the mast stay plumb; wire and tie tensions monitored and re-trimmed |
 
@@ -663,6 +747,7 @@ The tight part is the **lunar lander's cargo deck and unloading gear**, and that
 | Landing trays (2 x 15 m) | Light frames | 3 m sections | 1 module |
 | Solar packs (16) | 2 x 30 m deployed | Folded packs ~2 x 1 x 0.7 m (1 to 3 m wide all fit) | 2 per module: **8 modules** |
 | Stay cables, ties, reel-hoist ropes | 68 m and less | On reels | 1 module |
+| Power trunks (2 x 115 m), service feeder, fibres | Continuous cables | On reels | 1 module |
 | Collars, V-links, jack frame, foot winches, drive cartridges, base enclosure, reel hoists | ≤ ~2 m | As-is (collar rings in 3 segments, as designed) | 3 modules |
 | Service bots (2) | Humanoid-class | Folded in padded crates, ~1.8 x 0.8 x 0.6 m each | 1 module |
 
@@ -709,7 +794,7 @@ At ~1 hour per 3 m section, the mast goes up in roughly **35 working hours** of 
 
 1. **Site illumination study** on LOLA data: sunlight hours vs array height at candidate spots; pick the height.
 2. Mast and tripod analysis: strut and mast buckling, pre-tension, thermal bow, moonquake response, every jack-up and scissor stage.
-3. Life tests in vacuum, thermal cycling and dust (LHS-1, NU-LHT simulants) for the collar cartridges and the base pivot: friction, wear rate with regolith simulant, and the wear-indicator layers. Thermal-vacuum test of the base enclosure with the slip ring under load, and a dual-drive torque-bias and mesh-release test.
+3. Life tests in vacuum, thermal cycling and dust (LHS-1, NU-LHT simulants) for the collar cartridges and the base pivot: friction, wear rate with regolith simulant, and the wear-indicator layers. Thermal-vacuum test of the base enclosure with the slip ring under load at ±500 V with simulant dust (brush wear, contact drop, tracking); make-and-break tests of the hanger connector interlock; and a dual-drive torque-bias and mesh-release test.
 4. Prototype the jack-up with collars, the strut scissor and tie winches at small scale; rehearse with suited operators.
 5. Concertina pack trials: self-folding into a tray and unfolding on lift (fold direction, hinge springs, panel edge contact), cycles in vacuum and cold; lowering one pack past its neighbours.
 6. Confirm the actual lander's freight envelope and re-cut the parts list (section 10) to it; build and fold a flat-pack mast section and a tent-pole strut, and test their assembly with suited operators.

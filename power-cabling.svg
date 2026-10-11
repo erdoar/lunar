@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 1010" font-family="Helvetica, Arial, sans-serif" font-size="12">
+<rect width="1300" height="1010" fill="#fff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker></defs>
+<style>.s{stroke:#222;stroke-width:1.3}.l{stroke:#555;stroke-width:1;fill:none}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:15px;font-weight:bold}.k{font-size:11px}</style>
+<text x="20" y="28" class="t">A. One-line diagram (±500 V DC bipolar; both wings shown, 8 packs each)</text>
+<rect x="20" y="42" width="190" height="380" fill="#fdf2e9" stroke="#ddd"/>
+<text x="115.0" y="60" text-anchor="middle" font-weight="bold" font-size="12">Pack head (x16)</text>
+<rect x="210" y="42" width="210" height="380" fill="#fef9e7" stroke="#ddd"/>
+<text x="315.0" y="60" text-anchor="middle" font-weight="bold" font-size="12">Top yard, 100 m</text>
+<rect x="420" y="42" width="165" height="380" fill="#f4f6f6" stroke="#ddd"/>
+<text x="502.5" y="60" text-anchor="middle" font-weight="bold" font-size="12">Mast, 105 m</text>
+<rect x="585" y="42" width="285" height="380" fill="#fdf2e9" stroke="#ddd"/>
+<text x="727.5" y="60" text-anchor="middle" font-weight="bold" font-size="12">Rotating base frame</text>
+<rect x="870" y="42" width="140" height="380" fill="#f5eef8" stroke="#ddd"/>
+<text x="940.0" y="60" text-anchor="middle" font-weight="bold" font-size="12">Slip ring</text>
+<rect x="1010" y="42" width="270" height="380" fill="#eaf2f8" stroke="#ddd"/>
+<text x="1145.0" y="60" text-anchor="middle" font-weight="bold" font-size="12">Fixed foundation</text>
+<rect x="30" y="110" width="120" height="58" rx="5" fill="#fff" class="s"/>
+<text x="90.0" y="126" text-anchor="middle" font-size="11" style="stroke:none">Port pack</text>
+<text x="90.0" y="140" text-anchor="middle" font-size="11" style="stroke:none">cells → MPPT</text>
+<text x="90.0" y="154" text-anchor="middle" font-size="11" style="stroke:none">+ isolated boost</text>
+<text x="155" y="122" font-size="10" fill="#555">x8</text>
+<line x1="150" y1="139" x2="230" y2="139" stroke="#c0392b" stroke-width="4"/>
+<rect x="168" y="129" width="18" height="20" fill="#fff" class="s"/><text x="177" y="143" text-anchor="middle" font-size="9" style="stroke:none">P</text>
+<rect x="230" y="122" width="60" height="34" rx="5" fill="#fff" class="s"/>
+<text x="260.0" y="138" text-anchor="middle" font-size="10" style="stroke:none">e-fuse</text>
+<text x="260.0" y="152" text-anchor="middle" font-size="10" style="stroke:none">40 A</text>
+<line x1="290" y1="139" x2="330" y2="139" stroke="#c0392b" stroke-width="6"/>
+<rect x="330" y="114" width="80" height="50" rx="5" fill="#fff" class="s"/>
+<text x="370.0" y="130" text-anchor="middle" font-size="10" style="stroke:none">Root box</text>
+<text x="370.0" y="144" text-anchor="middle" font-size="10" style="stroke:none">SSB + surge</text>
+<line x1="410" y1="139" x2="600" y2="139" stroke="#c0392b" stroke-width="6"/>
+<text x="500" y="132" text-anchor="middle" font-size="10.5">trunk P: 95 mm² Al ±</text>
+<text x="500" y="158" text-anchor="middle" font-size="10.5">105 m, 175 A, ~1.9 kW loss</text>
+<rect x="30" y="250" width="120" height="58" rx="5" fill="#fff" class="s"/>
+<text x="90.0" y="266" text-anchor="middle" font-size="11" style="stroke:none">Starboard pack</text>
+<text x="90.0" y="280" text-anchor="middle" font-size="11" style="stroke:none">cells → MPPT</text>
+<text x="90.0" y="294" text-anchor="middle" font-size="11" style="stroke:none">+ isolated boost</text>
+<text x="155" y="262" font-size="10" fill="#555">x8</text>
+<line x1="150" y1="279" x2="230" y2="279" stroke="#c0392b" stroke-width="4"/>
+<rect x="168" y="269" width="18" height="20" fill="#fff" class="s"/><text x="177" y="283" text-anchor="middle" font-size="9" style="stroke:none">P</text>
+<rect x="230" y="262" width="60" height="34" rx="5" fill="#fff" class="s"/>
+<text x="260.0" y="278" text-anchor="middle" font-size="10" style="stroke:none">e-fuse</text>
+<text x="260.0" y="292" text-anchor="middle" font-size="10" style="stroke:none">40 A</text>
+<line x1="290" y1="279" x2="330" y2="279" stroke="#c0392b" stroke-width="6"/>
+<rect x="330" y="254" width="80" height="50" rx="5" fill="#fff" class="s"/>
+<text x="370.0" y="270" text-anchor="middle" font-size="10" style="stroke:none">Root box</text>
+<text x="370.0" y="284" text-anchor="middle" font-size="10" style="stroke:none">SSB + surge</text>
+<line x1="410" y1="279" x2="600" y2="279" stroke="#c0392b" stroke-width="6"/>
+<text x="500" y="272" text-anchor="middle" font-size="10.5">trunk S: 95 mm² Al ±</text>
+<text x="500" y="298" text-anchor="middle" font-size="10.5">105 m, 175 A, ~1.9 kW loss</text>
+<text x="240" y="196" font-size="10.5">yard bus: 50 mm² Al ±, ≤182 A</text>
+<rect x="600" y="92" width="255" height="230" rx="5" fill="#fff" class="s"/>
+<text x="727.5" y="108" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">Base power cabinet</text>
+<rect x="612" y="118" width="110" height="40" rx="5" fill="#f4f6f8" class="s"/>
+<text x="667.0" y="134" text-anchor="middle" font-size="10" style="stroke:none">Trunk breakers</text>
+<text x="667.0" y="148" text-anchor="middle" font-size="10" style="stroke:none">+ insulation mon.</text>
+<rect x="612" y="260" width="110" height="40" rx="5" fill="#f4f6f8" class="s"/>
+<text x="667.0" y="276" text-anchor="middle" font-size="10" style="stroke:none">Trunk breakers</text>
+<text x="667.0" y="290" text-anchor="middle" font-size="10" style="stroke:none">+ insulation mon.</text>
+<line x1="722" y1="138" x2="740" y2="138" stroke="#c0392b" stroke-width="6"/>
+<line x1="722" y1="280" x2="740" y2="280" stroke="#c0392b" stroke-width="6"/>
+<line x1="740" y1="138" x2="740" y2="280" stroke="#c0392b" stroke-width="6"/>
+<line x1="740" y1="209" x2="870" y2="209" stroke="#c0392b" stroke-width="8"/>
+<rect x="760" y="118" width="90" height="30" rx="5" fill="#f4f6f8" class="s"/>
+<text x="805.0" y="134" text-anchor="middle" font-size="10" style="stroke:none">Bot chargers</text>
+<line x1="740" y1="133" x2="760" y2="133" stroke="#555" stroke-width="2"/>
+<rect x="760" y="232" width="90" height="34" rx="5" fill="#f4f6f8" class="s"/>
+<text x="805.0" y="248" text-anchor="middle" font-size="10" style="stroke:none">Battery DC/DC</text>
+<text x="805.0" y="262" text-anchor="middle" font-size="10" style="stroke:none">10 kW, 2-way</text>
+<line x1="740" y1="249" x2="760" y2="249" stroke="#555" stroke-width="2"/>
+<rect x="612" y="175" width="110" height="34" rx="5" fill="#f4f6f8" class="s"/>
+<text x="667.0" y="191" text-anchor="middle" font-size="10" style="stroke:none">Feeder conv.</text>
+<text x="667.0" y="205" text-anchor="middle" font-size="10" style="stroke:none">120 V</text>
+<line x1="722" y1="192" x2="740" y2="192" stroke="#555" stroke-width="2"/>
+<rect x="760" y="340" width="90" height="40" rx="5" fill="#fff" class="s"/>
+<text x="805.0" y="356" text-anchor="middle" font-size="10" style="stroke:none">Battery</text>
+<text x="805.0" y="370" text-anchor="middle" font-size="10" style="stroke:none">~20 kWh</text>
+<line x1="805" y1="266" x2="805" y2="340" stroke="#555" stroke-width="2"/>
+<path d="M612 192 H440 V96 H372 V110" stroke="#2e7d32" stroke-width="2" fill="none" stroke-dasharray="6 3" marker-end="url(#ar)"/>
+<text x="445" y="90" font-size="10.5" fill="#2e7d32">service feeder 120 V → reel sockets, garage</text>
+<path d="M590 400 H300 V400" stroke="#1f6fb2" stroke-width="2" stroke-dasharray="2 3" fill="none"/><text x="300" y="414" font-size="10.5" fill="#1f6fb2">2 fibres (data), same trays</text>
+<rect x="900" y="150" width="80" height="14" fill="#c0392b" opacity="0.8" class="s"/><text x="940" y="161" text-anchor="middle" font-size="10" fill="#fff" style="stroke:none">+500</text>
+<rect x="900" y="174" width="80" height="14" fill="#c0392b" opacity="0.8" class="s"/><text x="940" y="185" text-anchor="middle" font-size="10" fill="#fff" style="stroke:none">−500</text>
+<rect x="900" y="198" width="80" height="14" fill="#2e7d32" opacity="0.8" class="s"/><text x="940" y="209" text-anchor="middle" font-size="10" fill="#fff" style="stroke:none">PE</text>
+<rect x="900" y="222" width="80" height="14" fill="#999" opacity="0.8" class="s"/><text x="940" y="233" text-anchor="middle" font-size="10" fill="#fff" style="stroke:none">spare</text>
+<text x="940" y="262" text-anchor="middle" font-size="10">+ 2 signal rings</text>
+<text x="940" y="276" text-anchor="middle" font-size="10">+ 60 GHz data coupler</text>
+<text x="940" y="300" text-anchor="middle" font-size="10">~0.25 kW loss</text>
+<line x1="985" y1="209" x2="1025" y2="209" stroke="#c0392b" stroke-width="8"/>
+<rect x="1025" y="92" width="245" height="230" rx="5" fill="#fff" class="s"/>
+<text x="1147.5" y="108" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">Base switchgear</text>
+<rect x="1037" y="118" width="100" height="34" rx="5" fill="#f4f6f8" class="s"/>
+<text x="1087.0" y="134" text-anchor="middle" font-size="10" style="stroke:none">Solid-state</text>
+<text x="1087.0" y="148" text-anchor="middle" font-size="10" style="stroke:none">breaker</text>
+<rect x="1037" y="162" width="100" height="34" rx="5" fill="#f4f6f8" class="s"/>
+<text x="1087.0" y="178" text-anchor="middle" font-size="10" style="stroke:none">Isolator</text>
+<text x="1087.0" y="192" text-anchor="middle" font-size="10" style="stroke:none">(zero current)</text>
+<rect x="1150" y="118" width="108" height="34" rx="5" fill="#f4f6f8" class="s"/>
+<text x="1204.0" y="134" text-anchor="middle" font-size="10" style="stroke:none">Surge arrester</text>
+<text x="1204.0" y="148" text-anchor="middle" font-size="10" style="stroke:none">+ metering</text>
+<rect x="1150" y="162" width="108" height="34" rx="5" fill="#f4f6f8" class="s"/>
+<text x="1204.0" y="178" text-anchor="middle" font-size="10" style="stroke:none">Fixed DC/DC</text>
+<text x="1204" y="214" text-anchor="middle" font-size="10">→ drives, heaters,</text><text x="1204" y="227" text-anchor="middle" font-size="10">cameras (fixed side)</text>
+<line x1="1147" y1="260" x2="1262" y2="260" stroke="#c0392b" stroke-width="8"/>
+<polygon points="1262,250 1280,260 1262,270" fill="#c0392b"/>
+<text x="1150" y="288" font-size="10.5" font-weight="bold">EXPORT ±500 V DC</text><text x="1150" y="302" font-size="10.5">350 kW to the site</text>
+<text x="30" y="345" font-size="10.5">P: hanger connector with pilot pins.</text><text x="30" y="359" font-size="10.5">Latch lever breaks the pilot first;</text><text x="30" y="373" font-size="10.5">the converter stops before the</text><text x="30" y="387" font-size="10.5">contacts move.</text>
+<text x="20" y="460" class="t">B. Slip ring, half-section (rotor left, stator right)</text>
+<rect x="0" y="466" width="360" height="22" fill="#e67e22" class="s"/><text x="10" y="481" font-size="10.5" fill="#fff" style="stroke:none">foot plate (turns)</text>
+<rect x="80" y="488" width="40" height="362.5" fill="#d9d2c3" class="s"/>
+<text x="100" y="680" text-anchor="middle" font-size="10" transform="rotate(-90 100 680)" style="stroke:none">insulating drum</text>
+<rect x="120" y="512" width="8" height="50" fill="#c0392b" class="s"/>
+<rect x="120" y="573" width="38" height="4" fill="#8e7cc3"/>
+<rect x="128" y="522" width="28" height="9" fill="#333"/>
+<path d="M155,523 159,529 163,523 167,529 171,523 175,529 179,523" fill="none" stroke="#555" stroke-width="1.5"/>
+<rect x="128" y="544" width="28" height="9" fill="#333"/>
+<path d="M155,546 159,552 163,546 167,552 171,546 175,552 179,546" fill="none" stroke="#555" stroke-width="1.5"/>
+<text x="72" y="542" text-anchor="end" font-size="10.5">+500 V</text>
+<rect x="120" y="588" width="8" height="50" fill="#c0392b" class="s"/>
+<rect x="120" y="648" width="38" height="4" fill="#8e7cc3"/>
+<rect x="128" y="597" width="28" height="9" fill="#333"/>
+<path d="M155,598 159,604 163,598 167,604 171,598 175,604 179,598" fill="none" stroke="#555" stroke-width="1.5"/>
+<rect x="128" y="619" width="28" height="9" fill="#333"/>
+<path d="M155,621 159,627 163,621 167,627 171,621 175,627 179,621" fill="none" stroke="#555" stroke-width="1.5"/>
+<text x="72" y="616" text-anchor="end" font-size="10.5">−500 V</text>
+<rect x="120" y="662" width="8" height="50" fill="#2e7d32" class="s"/>
+<rect x="120" y="723" width="38" height="4" fill="#8e7cc3"/>
+<rect x="128" y="672" width="28" height="9" fill="#333"/>
+<path d="M155,673 159,679 163,673 167,679 171,673 175,679 179,673" fill="none" stroke="#555" stroke-width="1.5"/>
+<rect x="128" y="694" width="28" height="9" fill="#333"/>
+<path d="M155,696 159,702 163,696 167,702 171,696 175,702 179,696" fill="none" stroke="#555" stroke-width="1.5"/>
+<text x="72" y="692" text-anchor="end" font-size="10.5">PE</text>
+<rect x="120" y="738" width="8" height="50" fill="#999" class="s"/>
+<rect x="120" y="798" width="38" height="4" fill="#8e7cc3"/>
+<rect x="128" y="747" width="28" height="9" fill="#333"/>
+<path d="M155,748 159,754 163,748 167,754 171,748 175,754 179,748" fill="none" stroke="#555" stroke-width="1.5"/>
+<rect x="128" y="769" width="28" height="9" fill="#333"/>
+<path d="M155,771 159,777 163,771 167,777 171,771 175,777 179,771" fill="none" stroke="#555" stroke-width="1.5"/>
+<text x="72" y="766" text-anchor="end" font-size="10.5">spare</text>
+<rect x="120" y="805" width="8" height="15" fill="#c9a227" class="s"/>
+<rect x="120" y="823" width="38" height="4" fill="#8e7cc3"/>
+<rect x="128" y="810" width="22" height="6" fill="#c9a227"/>
+<rect x="120" y="830" width="8" height="15" fill="#c9a227" class="s"/>
+<rect x="128" y="834" width="22" height="6" fill="#c9a227"/>
+<rect x="195.0" y="496" width="56.25" height="362.5" fill="none" stroke="#7d8790" stroke-width="3"/>
+<rect x="140" y="578" width="55" height="3" fill="#7d8790"/>
+<rect x="140" y="653" width="55" height="3" fill="#7d8790"/>
+<rect x="140" y="728" width="55" height="3" fill="#7d8790"/>
+<rect x="140" y="803" width="55" height="3" fill="#7d8790"/>
+<rect x="140" y="828" width="55" height="3" fill="#7d8790"/>
+<rect x="251.25" y="520" width="12" height="312.5" fill="#7d8790"/>
+<rect x="205.0" y="868.5" width="80" height="8" fill="#8a5a2b"/>
+<circle cx="220.0" cy="520" r="6" fill="#fff" stroke="#222"/>
+<circle cx="220.0" cy="832.5" r="6" fill="#fff" stroke="#222"/>
+<path d="M123 538L370 500" class="l"/><circle cx="123" cy="538" r="2" fill="#222"/><text x="374" y="504" font-size="11">Silver-plated Cu rings, 40 mm wide</text>
+<path d="M140 564L370 546" class="l"/><circle cx="140" cy="564" r="2" fill="#222"/><text x="374" y="550" font-size="11">Brushes Ag-MoS₂-graphite, 2 per ring per cartridge</text>
+<path d="M159 575L370 592" class="l"/><circle cx="159" cy="575" r="2" fill="#222"/><text x="374" y="596" font-size="11">Rotor barrier fins (labyrinth with stator fins)</text>
+<path d="M170 599L370 638" class="l"/><circle cx="170" cy="599" r="2" fill="#222"/><text x="374" y="642" font-size="11">Brush springs ±6 mm radial float</text>
+<path d="M220 520L370 684" class="l"/><circle cx="220" cy="520" r="2" fill="#222"/><text x="374" y="688" font-size="11">Captive screws (2): cartridge slides out radially</text>
+<path d="M258 688L370 730" class="l"/><circle cx="258" cy="688" r="2" fill="#222"/><text x="374" y="734" font-size="11">Stator post on the foundation deck</text>
+<path d="M245 872L370 776" class="l"/><circle cx="245" cy="872" r="2" fill="#222"/><text x="374" y="780" font-size="11">Debris gutter under the stack</text>
+<text x="20" y="915.0" font-size="11">Drum Ø0.93 m · 8 cartridges round the stator · 16 brushes per power ring, ~4.4 cm² each, 5 A/cm²</text>
+<text x="20" y="931.0" font-size="11">40 mm rings vs 15 mm brushes: ±8 mm axial tilt + 10 mm jack lift; ≥20 mm creepage, ≥10 mm clearance</text>
+<text x="760" y="460" class="t">C. Mast core: trays, climb rail and cables</text>
+<polygon points="960,479 1065,661 855,661" fill="#f7f7f7" stroke="#888" stroke-width="2"/>
+<circle cx="960" cy="600" r="52" fill="none" stroke="#2e7d32" stroke-dasharray="5 4"/>
+<rect x="950" y="647" width="20" height="10" fill="#555"/>
+<rect x="947" y="513" width="26" height="18" fill="#ddd" stroke="#222"/>
+<circle cx="954" cy="522" r="4" fill="#c0392b"/><circle cx="966" cy="522" r="4" fill="#c0392b"/>
+<text x="978" y="526" font-size="10.5">trunk P + fibre</text>
+<rect x="1014" y="630" width="26" height="18" fill="#ddd" stroke="#222"/>
+<circle cx="1021" cy="639" r="4" fill="#c0392b"/><circle cx="1033" cy="639" r="4" fill="#c0392b"/>
+<text x="1045" y="643" font-size="10.5">trunk S + feeder</text>
+<text x="960" y="681" text-anchor="middle" font-size="10.5">climb rail (third face)</text>
+<text x="1020" y="590" font-size="10.5" fill="#2e7d32">bots' clear circle</text>
+<text x="780" y="720" font-size="12" font-weight="bold">Section joint (side view)</text>
+<line x1="780" y1="780" x2="960" y2="780" stroke="#888" stroke-dasharray="5 3"/><text x="965" y="784" font-size="10">joint</text>
+<path d="M840 735 V765 C840 780 870 772 870 780 S840 795 840 810 V830" stroke="#c0392b" stroke-width="4" fill="none"/>
+<rect x="832" y="750" width="16" height="6" fill="#555"/>
+<rect x="832" y="820" width="16" height="6" fill="#555"/>
+<text x="880" y="755" font-size="10.5">clamps every 1.5 m</text><text x="880" y="810" font-size="10.5">S-loop takes ~7 mm</text><text x="880" y="824" font-size="10.5">(0.24 m over 105 m)</text>
+<text x="1040" y="720" font-size="12" font-weight="bold">Hanger connector</text>
+<rect x="1040" y="732" width="210" height="34" fill="#4a9" class="s"/><text x="1145" y="753" text-anchor="middle" font-size="10.5" style="stroke:none">hanger socket (shutter)</text>
+<rect x="1066" y="766" width="8" height="26" fill="#c0392b"/>
+<rect x="1106" y="766" width="8" height="26" fill="#c0392b"/>
+<rect x="1166" y="766" width="8" height="18" fill="#555"/>
+<rect x="1206" y="766" width="8" height="18" fill="#555"/>
+<rect x="1040" y="800" width="210" height="26" fill="#e0a040" class="s"/><text x="1145" y="818" text-anchor="middle" font-size="10.5" style="stroke:none">pack head plug</text>
+<text x="1040" y="845" font-size="10.5">2 power pins (30 A) · 2 shorter pilot pins:</text>
+<text x="1040" y="859" font-size="10.5">pilots make last, break first; the latch</text>
+<text x="1040" y="873" font-size="10.5">lever opens the pilot loop before the</text>
+<text x="1040" y="887" font-size="10.5">cones lift, so no contact ever moves</text>
+<text x="1040" y="901" font-size="10.5">under load (DC arcs persist in vacuum).</text>
+<text x="780" y="935" font-size="11.5" font-weight="bold">Totals (power_cabling_check.py)</text>
+<text x="780" y="953" font-size="11">~95.7% of the cells' DC reaches the fixed side</text>
+<text x="780" y="969" font-size="11">cables ~0.22 t with insulation, trays, feeder, fibre</text>
+<text x="780" y="985" font-size="11">trunks are continuous 115 m cables laid in during jack-up</text>
+</svg>
