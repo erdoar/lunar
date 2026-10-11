@@ -276,7 +276,7 @@ Only **three sets of bearings rotate in service**: the 6 tyres and 2 collars. Ev
 | 8 | **Strut A-frame ends** (6 tubes, 2 ends each) | **Static in service.** Swing only during the scissor erection; thermal micro-motion after | ~1.25 kN per tube | Spherical plain bearings, dry film. They hardly move, so the concern is fretting, not wear |
 | 9 | **V-links** (3 x 2 pins, upper collar) | Static in service; hinge only during installation | Stay tension 1.5 to 3 kN; couple ≤ ±0.2 kN at the interlock limit | Pins in lugs; instrumented load pins |
 | 10 | Stay and tie terminations, foot pads | Static (tensioners adjusted occasionally) | 1.5 to 3 kN | Screw tensioners + load cells |
-| 11 | **Top yard** at 100 m | **None:** fixed to the mast, turns with it | Wings + yard ~4.4 to 5 kN down, through topping lifts into the mast top, then down the mast to the mast foot | Bolted joint, no bearing |
+| 11 | **Top yard** at 100 m | **None:** fixed to the mast, turns with it | Wings + yard ~5 kN down, through topping lifts into the mast top, then down the mast to the mast foot | Bolted joint, no bearing |
 | 12 | Halyard sheaves (4, top yard) | Only when lowering and raising the wings | ~1.1 kN per halyard | Sheaves on dry-lubricated bushings |
 | 13 | Drive pinions (2) | Rotating, always | ≤ ~1 kN at breakaway | Pinion on a rack on the rail web |
 
