@@ -1,8 +1,8 @@
-# Lunar polar rotating solar platform: concept design (rev 25, tall mast on a single base pivot, bot-serviced wings)
+# Lunar polar rotating solar platform: concept design (rev 26, tall mast on a single base pivot, bot-serviced wings)
 
 A very tall mast that turns on a single spherical base pivot, braced by a stationary strut tripod, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
-## Current design at a glance (rev 25 baseline)
+## Current design at a glance (rev 26 baseline)
 
 This is the design being developed (mode 1: the **whole mast turns**). Everything under "Revision history" below records how it evolved. Section 9 (mode 2, a top turret) is set aside, and Appendix A (the earlier rail turntable) is superseded.
 
@@ -32,7 +32,8 @@ Weight path: mast → foot plate → wear cup (turns) → pivot ball (fixed) →
 - The cup rests on a hard **convex pivot ball** (Ø0.5 m) bolted to the **foundation frame**. The ball faces up, so dust and wear particles fall off it. The spherical contact both carries the load and lets the mast settle plumb (±1°).
 - **2 worm-drive motors** on the foundation frame drive a **pin-ring gear** (Ø ~1.2 m) under the foot plate.
 - The **rotating base frame** clamps to the bottom mast section ~1.5 m up, and turns with it.
-- An **annular slip ring / rotary transformer** (Ø ~0.9 m) encircles the pivot: rotor under the foot plate, stator on the foundation frame.
+- An **annular slip ring** (Ø ~0.9 m) encircles the pivot: rotor under the foot plate, stator on the foundation frame.
+- A removable **protection enclosure** (section 5a) closes the pivot, drives and slip ring off from dust and cold: a fixed tub on the foundation under a lid that turns with the mast.
 - The **3 ground ties** from the strut feet end on lugs on the foundation frame and cancel out. The **jack frame** used for erection stays bolted to the foundation frame for wear-cup swaps.
 
 **Revision history**
@@ -60,7 +61,12 @@ Weight path: mast → foot plate → wear cup (turns) → pivot ball (fixed) →
 - Rev 22: **service bots replace the halyards** (sections 4 and 4a, `service_bot_check.py`). Two humanoid-class bots climb a fall-arrest rail inside the mast core and walk out along a railed walkway on the yard. Each pack hangs on its own **fixed hanger** under the yard. To swap one, a bot clips a ~12 kg **portable reel hoist** into the socket above it and lowers the pack into its landing tray, where it folds itself up as before, then hoists the new one. The halyards, wing winch, trim sheaves, wing top bars, sprung docks and ballast pallet are deleted (~0.55 t out, ~0.3 t of rails and walkway in). The rest of the array keeps working during a swap. The halyard design is kept in **Appendix B**.
 - Rev 23: **two-rope (bifilar) lowering stops pack spin.** A single rope gives a hanging pack no resistance to turning, so it can spin and arrive at the hanger misaligned. The reel becomes a **twin-drum** hoist: two ropes on one shaft run over passive sheaves at the hanger to lifting eyes at both ends of the pack head, ~1.6 m apart. The pair holds the pack square to within ~1° even 100 m down, and **flared guide forks** at the hanger square the last few degrees before the cones engage. The reels now **stay parked in a garage at the yard root**; when one has to travel, the bot carries it as a **chest pack**, the most compact place in a ladder posture.
 - Rev 24: **bot tool kit and power.** The bots carry **cable cutters** and **rope grabs** for emergencies such as a fouled (cobbled) reel. The rule is never to cut a loaded rope: the grabs take the pack's weight onto anchor eyes at the station first. The reels gain slack-rope stops and spring take-up to prevent cobbling. The bots recharge from a **~20 kWh custom storage battery on the rotating base frame**, which turns with the mast, so charging needs no slip-ring channel. A small service feeder from it powers the reel sockets and garage even when the array is dark.
-- **Rev 25 (this):** **recovery without cutting or joining.** A joint on one of the two ropes would change its length and how it winds, so the pair would no longer pay out equally and the pack would tilt. Cutting near a hanging pack risks dropping it onto the trays, the base or the bracing. So no rope that holds a pack is ever cut or joined, and the wedge joiners are deleted. A fouled reel is recovered with only the kit on site, escalating step by step: hold on rope grabs, untangle in place, re-equalise each drum with its **indexing clutch**, hoist and latch. If the rope can't be saved, the second reel does a **rescue lowering**: **rope-riding hooks** slide down the stuck ropes into **rescue eyes** on the pack head. The cutters are kept for unloaded lines only.
+- Rev 25: **recovery without cutting or joining.** A joint on one of the two ropes would change its length and how it winds, so the pair would no longer pay out equally and the pack would tilt. Cutting near a hanging pack risks dropping it onto the trays, the base or the bracing. So no rope that holds a pack is ever cut or joined, and the wedge joiners are deleted. A fouled reel is recovered with only the kit on site, escalating step by step: hold on rope grabs, untangle in place, re-equalise each drum with its **indexing clutch**, hoist and latch. If the rope can't be saved, the second reel does a **rescue lowering**: **rope-riding hooks** slide down the stuck ropes into **rescue eyes** on the pack head. The cutters are kept for unloaded lines only.
+- **Rev 26 (this):** **pivot, drive and protection enclosure detailed** (section 5a, `base_drive_check.py`).
+  - **Drive:** 2 removable drive cartridges (motor, planetary, self-locking worm, torque limiter, 12-tooth pin wheel) on a 96-pin ring, 24,000:1. They run together with a torque bias against backlash. Each has a mesh release and a hand-drive socket.
+  - **Enclosure:** a removable enclosure replaces the brush skirt. It is a fixed 6-panel tub with radiator panels and a drive door per unit, under a rotating lid with a double labyrinth.
+  - **Slip ring:** defined as a 600 V DC slip ring, whose ~0.45 kW of heat sets the enclosure's thermal design.
+  - **Correction:** the rev 21 sideways cup slide was blocked by the pin ring and slip-ring rotor. The cup and ball now lift out **upward through the foot plate into the mast core**, and the jack lift drops from ~60 to ~10 mm.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -393,13 +399,13 @@ Layout rules:
   - the **stator of the annular slip ring**;
   - **lugs for the 3 ground ties** (their pulls cancel at the centre);
   - the **jack-frame** mounting.
-- The pivot sits ~1 m above the regolith, out of the near-surface dust. A **brush skirt** on the rotating base frame hangs over it.
+- The pivot sits ~1 m above the regolith, out of the near-surface dust, inside the **protection enclosure** (section 5a).
 
 **Base pivot: hard ball below, wear cup above** (`pivot_check.py`)
 - **Pivot ball (fixed):** a convex spherical cap, **R 0.25 m** (Ø0.5 m), bolted to a pedestal on the foundation frame and facing **up**.
   - Through-hardened bearing steel (~60 HRC) with a DLC or TiN coating, or a Si₃N₄ ceramic shell.
   - Hard, smooth and convex, so any dust or wear particles **roll off its sides** instead of collecting.
-- **Wear cup (turning):** a matching **concave** liner, ~6 mm thick on a Ti backing, held by captive screws in a holder under the mast foot plate and facing **down**.
+- **Wear cup (turning):** a matching **concave** liner, ~6 mm thick on a Ti backing, held in a **holder ring** that drops into a Ø0.55 m opening in the mast foot plate from above, facing **down** (section 5a).
   - It is the **only intended wear part**: a sintered metal-matrix composite with MoS₂/WS₂ solid lubricant, which works in vacuum and cold with no outgassing. A MoS₂-filled polyimide liner is the alternative.
   - Dissimilar, hard-against-soft surfaces cannot cold-weld.
 - **One part, three jobs.** The spherical contact carries the ~9.9 kN, centres the mast foot (radial and quake loads), and lets the mast settle plumb within ±1°, so the separate seat is gone. There are no rollers to seize.
@@ -412,7 +418,7 @@ Layout rules:
   - The readout electronics sit on the rotating base frame next to the cup, so no extra slip-ring channels are needed.
   - Normal wear should never reach the first layer. **Any layer tripping signals an anomaly** (galling, contamination, overload) long before it matters.
 - **Keeper hooks:** 3 hooks on the foot plate reach under a flange on the ball pedestal with ~5 mm clearance. They stop the cup lifting off during handling or a quake, though the net load is always ~10 kN down. The flange is **conical** (a drip edge) and the open arcs between the hooks let debris fall through to the foundation frame. The hooks are pinned and are removed before the mast is jacked.
-- **Dust:** the brush skirt keeps most dust off. Anything that gets in falls off the convex ball, off the conical flange and between the keeper hooks, onto the foundation frame ~0.4 m below the contact.
+- **Dust:** the enclosure keeps dust out. Anything that does get in falls off the convex ball, off the conical flange and between the keeper hooks, onto the foundation deck ~0.4 m below the contact, which slopes to a removable debris drawer.
 
 **Drive**
 - **Running torque ~50 to 165 N·m:** pivot friction ~30 to 145 N·m plus ~20 N·m from the two collars. The mechanical power is microwatts.
@@ -421,7 +427,11 @@ Layout rules:
   - Worms are **self-locking**, so the mast holds position with no brake power.
 - Sized for ~500 N·m. There are no wheels in dust, so there is no kN·m breakaway torque.
 - **Collar protection:** each motor carries a **mechanical slip clutch at ~300 N·m**, set just above the highest pivot friction. It backs up the electronic collar-torque interlock (V-link load pins, ~200 N·m), and neither the base drive nor a stuck collar can wind the mast round more than ~3°.
-- **Power transfer:** an **annular slip ring / rotary transformer**, Ø ~0.9 m, around the pivot. The rotor is under the foot plate and the stator on the foundation frame, so the pivot ball stays solid.
+- **Power transfer:** an **annular slip ring**, Ø ~0.9 m, around the pivot, carrying all the array power at ~600 V DC (~580 A).
+  - Silver rings with ~24 silver-MoS₂-graphite brushes per polarity, as on spacecraft solar-array drives.
+  - ~0.45 kW of loss, shed by the enclosure radiators.
+  - Data crosses on a short-range contactless link. A separate ground ring and brush tie the mast to ground.
+  - The rotor is under the foot plate and the stator on the foundation frame, so the pivot ball stays solid.
 
 **Rotating base frame**
 - A light CFRP/Ti platform, **Ø ~3 m**, clamped to the bottom mast section ~1.5 m above the ground. It turns with the mast. ~0.75 t with the battery, in 3 freight pieces plus the battery modules. It carries:
@@ -437,10 +447,101 @@ Layout rules:
   - a **grating walkway** round the mast for suited crew and robots.
 
 **Swapping the wear cup (rare: only if a wear layer trips)**
-1. Park the mast at any azimuth (the worms hold it).
-2. Unpin the 3 keeper hooks. The **jack frame**, left bolted to the foundation after erection, lifts the mast **~60 mm** at its bottom-section jack lugs, enough for the 45 mm-deep cup to clear the ball. The collars and tripod hold it upright, and only ~10 kN is lifted.
-3. Release the cup's captive screws and slide the cup out sideways on its holder rails with the **service cart**. Slide the spare in, screw it home, lower. The ball, which should never wear, can be swapped the same way.
-4. About one supervised shift. The array stops tracking only during the swap.
+1. Park the mast (the worms hold it). Unpin the 3 keeper hooks; their pins are reached from above, inside the mast core.
+2. The **jack frame**, left bolted to the foundation after erection, lifts the mast **~10 mm** at its jack lugs, enough to unload the pivot. The collars and tripod hold it upright, and only ~10 kN is lifted.
+3. Inside the mast core, a bot or suited crew member undoes the holder ring's 12 captive bolts. The **pivot service davit** (E3) on the climb rail lifts the ring and cup **out upward**. The new cup goes in the same way, and its wear-layer connector mates as it seats.
+4. Lower the mast, re-pin the hooks and check the wear-layer circuits.
+   - About half a shift.
+   - The enclosure, drives and slip ring are not disturbed.
+   - The array stops tracking only during the swap.
+5. The ball, which should never wear, comes out the same way after the cup: 12 bolts to the pedestal, ~51 kg (~8 kg-weight on the Moon).
+
+## 5a. Pivot and drive detail, and the protection enclosure
+
+![Base detail: drive unit, plan view, enclosure section](base-detail.svg)
+
+Numbers from `base_drive_check.py`.
+
+**A correction found while detailing.** In rev 21 the wear cup was to slide out sideways on rails. That path is blocked all round by the pin-ring gear and the slip-ring rotor, which sit at the same height. The cup and the ball now come out **upward**, through a Ø0.55 m opening in the foot plate into the clear mast core. So the jack only has to unload the pivot (~10 mm), and nothing else is disturbed.
+
+**Pivot assembly**
+
+| Part | Detail |
+|---|---|
+| Pivot ball (fixed) | Forged, through-hardened steel dome shell. R 0.25 m, 20 mm thick, to 80° (Ø0.49 m at its edge), ~51 kg. Ground to ≤10 µm sphericity, polished to Ra ≤0.1 µm, 2–3 µm DLC (or a bonded Si₃N₄ shell). 12 captive bolts to the pedestal. Grounding strap and thermistor |
+| Pedestal | Ribbed Ti, Ø0.34 m, with the conical drip flange (Ø0.62 m). 3 strain-gauge bridges read the vertical load, a running check on the sum of the bracing pre-tensions |
+| Wear cup (turns) | Ti backing 8 mm + 6 mm MoS₂/WS₂ composite liner, 35° cap, rim Ø0.30 m, ~8 kg. Ø44 mm apex relief. A 13-pin spring connector on the rim flange carries the 4 layers x 3 sectors + ground |
+| Holder ring (turns) | Ti ring that drops into the foot plate's Ø0.55 m opening from above and seats on a ledge. Load path: foot plate → ledge → holder ring → cup → ball. 12 captive M10 bolts, reached inside the mast core |
+| Keeper hooks (3) | Pinned to the foot plate, ~5 mm under the drip flange. Pins reached from above |
+| Thermal match | Steel dome against a Ti-backed cup: over a 200 K swing the radii differ by only ~0.03 mm, taken up by the liner |
+
+**Drive units** (2, either one enough)
+- **Gear train** (24,000:1 overall):
+  - ~20 W brushless motor, vacuum-rated, with a resolver and dry-lubricated bearings;
+  - 50:1 planetary, MoS₂-lubricated;
+  - 60:1 single-start **self-locking worm**: case-hardened steel worm and aluminium-bronze wheel, both MoS₂-coated, so the surfaces are dissimilar;
+  - ball-detent **torque limiter**;
+  - **12-tooth pin wheel** (hardened steel, DLC) on a vertical output shaft.
+- **Pin ring:**
+  - 96 hardened steel pins, Ø20 mm with free-turning sleeves, on a 39.3 mm pitch at Ø1.2 m.
+  - The pins are held between two Ti flanges under the foot plate, in 4 bolted segments.
+  - The pins are 100 mm long and the pin wheel 50 mm wide. That gives ±25 mm of vertical float, covering the ±1° tilt (±10 mm) and the 10 mm jack lift.
+- **Torques:**
+  - Running: 50 to 165 N·m at the ring (mesh force 83 to 275 N).
+  - Limiter: 37.5 N·m at the pin wheel, which is 300 N·m at the ring.
+  - Design: 500 N·m (833 N). Even then the motor needs only ~0.07 N·m; the ~20 W size is for cold-start margin.
+- **Mesh compliance:** each unit sits on a swing plate pivoting on a vertical pin, spring-preloaded (~400 N) into mesh. It takes up ±5 mm of centre-distance change, with a hard stop.
+- **Two units, one ring.**
+  - Both self-locking worms are always in mesh, so they run together under one controller, with a small torque bias between them to take out backlash (as on dual-pinion slewing drives).
+  - A failed unit would lock the ring. So each has a **mesh release**: a spring cam, fired remotely by a small pin-puller or turned by hand, swings it out of mesh. The other unit then carries on alone.
+- **Hand drive:** a hex socket on the worm shaft. 1.33 turns per degree, ~3 N·m at 500 N·m, so a bot can park the mast with a hand tool if both motors are dead.
+- **Sensing:**
+  - a resolver on each motor;
+  - an encoder on each pin-wheel shaft;
+  - an absolute magnetic ring scale on the pin-ring flange, read by 2 fixed heads, giving mast azimuth to ~0.01°.
+  - If the motor and pin-wheel readings disagree, the limiter has slipped.
+- **Removable cartridge:** each unit (~14 kg, ~0.5 x 0.25 x 0.55 m) sits on a dovetail slide on the foundation deck, with 2 captive bolts and a blind-mate connector. Swap (~1 h; the other worm holds the mast):
+  1. Release its mesh.
+  2. Undo the 2 bolts and slide it out through its enclosure door.
+  3. Slide the spare in, re-engage the mesh and re-sync.
+- **Wear:** the pin wheel turns only ~100 times a year, so pin and tooth wear is negligible.
+
+**Control**
+- **Tracking** at 0.508°/h: the mast steps 0.1° every ~12 min (6.7 motor turns, ~0.4 s), so the array is never more than 0.1° off the Sun.
+- **Slewing** (parking) at up to 5°/min, with ~5 s ramps. 180° takes 36 min. The whole rotating rig (~340,000 kg·m²) then holds only ~0.4 J, so stops are gentle.
+- **Interlocks:**
+  - collar torque (V-link load pins, 200 N·m);
+  - motor current;
+  - torque-limiter slip;
+  - **no rotation while any reel socket reports a load**, that is, while a pack hangs on ropes.
+  - A wear-layer trip raises an alarm only.
+
+**Protection enclosure (removable)**
+
+It replaces the brush skirt. It:
+- keeps out lofted, electrostatic dust and rocket-landing ejecta;
+- holds the drives, slip ring and pivot at −20 to +40 °C;
+- sheds the slip ring's heat;
+- stops a tool dropped from the yard (~160 J for 1 kg from 100 m) reaching the mechanism;
+- lets a bot or suited crew reach any part by removing one light panel.
+
+Its parts:
+- **Fixed tub** on the foundation deck: Ø1.96 m, 0.62 m tall (0.40 to 1.02 m above the ground). It is made of **6 curved panels** (60° each, ~5 kg), CFRP honeycomb with a grounded conductive outer skin.
+  - Each panel drops into a floor channel and locks to a top ring with 2 quarter-turn captive fasteners. It has grapple handles, and one bot lifts it out in ~2 min.
+  - 2 panels carry a **drive door** facing each drive unit.
+  - 3 panels are **radiators**: a white OSR (silvered Teflon) outer face with bimetal louvres, joined to the slip-ring stator by flexible copper straps.
+  - The other panel and the lid carry **MLI** on the inside.
+- **Rotating lid:** an annulus, r 0.72 to 1.06 m, in 3 segments bolted under the foot-plate rim, so it turns with the mast.
+  - A **double labyrinth** seals it to the tub: an outer lip outside the tub top and an inner lip inside it, ~10 mm gaps and 70 mm overlap. A stainless-bristle brush ring on the tub top adds <2 N·m.
+  - The 70 mm overlap stays closed with the mast jacked 10 mm.
+  - Its CFRP/Ti sandwich is the dropped-tool shield. Inside the mast core, the solid foot plate does that job.
+- **Floor:** the foundation deck, sloped 2° to a removable **debris drawer** under the drip-flange drop zone, emptied from outside.
+- **Thermal:**
+  - Operating: ~0.45 kW of slip-ring heat through 1.9 m² of radiator keeps it at ~2 °C.
+  - Array dark: the louvres shut, and ~90 W of thermostatic heaters (drives, slip ring, cup holder) run from the base battery. That is 4.4 kWh for 48 h, inside its 12 kWh dark budget.
+- **Inside:** 4 cameras with LED lights, temperature sensors and a dust witness plate.
+- **Penetrations:** harness glands through the deck. The tie lugs and jack-frame posts are outside, and the mast passes through the lid.
+- **Mass:** ~45 kg (tub ~30 kg, lid ~15 kg).
 
 ## 5b. Bearing and joint schedule
 
@@ -452,7 +553,7 @@ Only **three bearing sets rotate in service**: the base pivot and the 2 collars.
 | 2 | **Upper collar** (62 m, 6 cartridges) | Rotating (mast inside a stationary collar) | Stay pull-down ~4 kN total, ~0.7 kN per thrust roller; small radial | Roller cartridges with dual rotation paths; torque read by the V-link load pins |
 | 3 | **Strut collar** (35 m, 6 cartridges) | Rotating | Strut push-up ~5.7 kN total, ~0.9 kN per lower thrust roller | Same cartridge design as the upper collar |
 | 4 | Pivot keeper hooks (3) | None in service (~5 mm clearance) | ~0 (handling, quake only) | Pinned hooks on the foot plate, under a conical flange on the pedestal |
-| 5 | Drive pinions and worms (2) | Rotating, always (very slowly) | ~50 to 165 N·m running, slip clutch at ~300 N·m | Self-locking worm gearmotors driving a Ø1.2 m pin-ring gear |
+| 5 | Drive units (2) | Rotating, always (very slowly) | ~50 to 165 N·m running, limiter at ~300 N·m | Removable cartridges: motor, 50:1 planetary, self-locking 60:1 worm, torque limiter, 12-tooth pin wheel on a 96-pin Ø1.2 m ring (24,000:1) |
 | 6 | **Strut A-frame ends** (6 tubes, 2 ends each) | **Static in service.** Swing only during the scissor erection; thermal micro-motion after | ~1.25 kN per tube | Spherical plain bearings, dry film. They hardly move, so the concern is fretting, not wear |
 | 7 | **V-links** (3 x 2 pins, upper collar) | Static in service; hinge only during installation | Stay tension 1.5 to 3 kN; couple ≤ ±0.2 kN at the interlock limit | Pins in lugs; instrumented load pins |
 | 8 | Stay and tie terminations, foot pads | Static (tensioners adjusted occasionally) | 1.5 to 3 kN | Screw tensioners + load cells |
@@ -462,7 +563,7 @@ Only **three bearing sets rotate in service**: the base pivot and the 2 collars.
 
 ## 6. Spares on site
 
-2 pivot wear cups, 1 pivot ball, 1 worm-drive motor unit, 1 slip clutch, slip-ring brush cartridges, 2 collar roller cartridges, 1 stay cable, 1 V-link with load pins, 1 tie with tensioner, 1 strut section, 4 concertina packs, 1 spare reel hoist and 2 spare ropes, spare fall-arrest trolleys, 2 cable cutters, 4 rope grabs, 1 spare rescue kit (2 rope-riding hooks, 2 edge rollers), 2 battery modules. A third service bot in reserve is worth considering.
+2 pivot wear cups, 1 pivot ball, 1 drive-unit cartridge, 1 torque limiter, 1 pin-ring segment, 2 enclosure panels (1 radiator, 1 plain), 1 lid segment, slip-ring brush cartridges, 2 collar roller cartridges, 1 stay cable, 1 V-link with load pins, 1 tie with tensioner, 1 strut section, 4 concertina packs, 1 spare reel hoist and 2 spare ropes, spare fall-arrest trolleys, 2 cable cutters, 4 rope grabs, 1 spare rescue kit (2 rope-riding hooks, 2 edge rollers), 2 battery modules. A third service bot in reserve is worth considering.
 
 ## 7. Installation equipment and sequence (human supervised)
 
@@ -472,7 +573,7 @@ Everything is assembled at the base (on the foundation, inside the jack frame) a
 |---|---|---|
 | E1 | **Foundation rig** | Compacts or sinters the central pad and sets the foundation frame and pivot pedestal: the datum for everything else. |
 | E2 | **Radius arm ("compass")** | Arm on the foundation datum with a laser level, encoder and rangefinder. It lays out the 3 foot-pad sites at 30 m and the landing-tray legs. |
-| E3 | **Pivot service cart** | Carries the pivot ball and wear cups and slides the cup in and out of its holder on rails (installation and swaps). |
+| E3 | **Pivot service davit** | A small hoist that clamps to the climb rail inside the mast core and lifts the cup, the holder ring or the ball in and out through the foot-plate opening (installation and swaps). |
 | E4 | **Foot-pad and tie layer** | Compacts or sinters the 3 foot pads and lays the 3 ground ties from the central foundation out to the feet. No pull-out anchors needed. |
 | E5 | **Mast jack-up frame** | Bolts to the foundation frame around the pivot and lifts the whole mast one 3 m section at a time; the new section is pinned in at the bottom. Peak lift ~10 kN. It stays afterwards for wear-cup swaps. |
 | E6 | **Tie and wire winches with load cells** | One at each foot. They control the ties (which pull the strut feet in as the mast rises) and the wires, and keep the mast plumb. Tensions are shown live on a supervisor tablet. |
@@ -482,7 +583,7 @@ Everything is assembled at the base (on the foundation, inside the jack frame) a
 
 **Sequence**
 1. Survey and clear the site. Make the central pad and set the foundation frame and pivot pedestal (E1). Lay out the 3 foot sites and the tray legs with the radius arm (E2); prepare the pads and lay the ties (E4).
-2. Bolt the pivot ball to the foundation frame and fit the 2 drive units and the slip-ring stator (E3). The wear cup, pin-ring gear and slip-ring rotor go on the bottom mast section's foot plate.
+2. Bolt the pivot ball to the foundation frame (E3), fit the 2 drive-unit cartridges and the slip-ring stator, and set the enclosure floor channel and top ring. The wear cup, pin-ring gear and slip-ring rotor go on the bottom mast section's foot plate.
 3. Bolt the jack frame (E5) to the foundation frame around the pivot.
 4. Fit the **top yard first**, on the topmost mast section at the base:
    - **unfolded and horizontal**, at the maintenance azimuth,
@@ -496,7 +597,7 @@ Everything is assembled at the base (on the foundation, inside the jack frame) a
    - Up to ~43 m the mast stands free in the jack frame (section 10.3). When the upper-collar band reaches the jack frame, the **upper collar** goes on, with its 3 V-links already shackled to their stay cables, which are paid out from the foot winches as it rises. Until the struts are in, these cables act as light temporary guys (a few hundred N). Each foot winch is ballasted with regolith bags so it never needs a pull-out anchor.
    - When the strut band reaches the jack frame, the **strut collar** goes on. The 3 A-frame struts are pinned to its torque brackets while lying flat on the ground, pointing outward, with their feet on skid dollies.
    - As the mast keeps rising, the struts swing up and the tie winches (E6) **pull the feet in** along the ground, from 46 m to their 30 m pads. Low gravity keeps the strut and dolly loads tiny.
-   - At final height, the feet drop onto their pads. The stay cables and ties are trimmed to final tension; the V-links line up with their cables by themselves. The clamp pins are pulled. The bottom section's foot plate (wear cup, pin-ring gear, keeper hooks) is lowered onto the pivot ball, and the **rotating base frame** is clamped on ~1.5 m up. From then on the mast turns freely on the base pivot and in both collars.
+   - At final height, the feet drop onto their pads. The stay cables and ties are trimmed to final tension; the V-links line up with their cables by themselves. The clamp pins are pulled. The bottom section's foot plate (wear cup, pin-ring gear, keeper hooks) is lowered onto the pivot ball, and the **rotating base frame** is clamped on ~1.5 m up. The enclosure lid segments are bolted under the foot plate and the tub panels dropped in. From then on the mast turns freely on the base pivot and in both collars.
 6. At full height (the top yard is already rigged), park at the maintenance azimuth and set the folded packs in their tray slots. The service bots (E7) climb to the yard and **hoist the packs one at a time** with the reel hoists (E8), ~16 min each, alternating port and starboard so the rig is never more than one pack out of balance. Each pack unfolds as it lifts off its tray and is latched to its hanger. All 16 take ~8 h with one bot and ~4 h with two. More packs can be added later the same way.
 7. Trim wire and tie tensions to plumb the mast and take out thermal bow. Connect the harness to the slip ring, commission the worm drives and slip clutches, start tracking.
 
@@ -509,7 +610,7 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
 | Terrain and neighbour shadows | Array at the top of a 100 m+ mast; site illumination study sets the height; spacing and stagger rules (section 4b) |
 | Temperature swings, one-sided sunlight | CFRP mast and struts, mast behind the blanket, spring tensioners on wires and ties, steady sun-tracking gradient trimmed by wire tension |
 | Cold welding in vacuum | Dissimilar or coated mating surfaces: hard ball against a solid-lubricant composite cup at the base; dry lubricants on all collar rollers |
-| Abrasive, electrostatic dust | Only one moving part at ground level: the base pivot, ~1 m up, under a brush skirt. Its convex ball sheds debris, and the wear cup's embedded layers flag any abrasive wear. Nothing rolls on regolith. Collars and array are high above most lofted dust |
+| Abrasive, electrostatic dust | Only one moving part at ground level: the base pivot, ~1 m up, inside a removable enclosure with a labyrinth lid. Its convex ball sheds debris, and the wear cup's embedded layers flag any abrasive wear. Nothing rolls on regolith. Collars and array are high above most lofted dust |
 | Moonquakes | Strut tripod carries lateral load; balanced rig; lower thrust rollers in the collars; the base pivot has keeper hooks and is always ~10 kN in compression |
 | Micrometeoroids | Damaged packs lowered and exchanged one at a time by a service bot; doubled wires; struts are thick-walled tubes, inspected by the bots |
 | Work at 100 m | Bots, not crew, work at height. They are always clipped to a captive fall-arrest trolley on the climb rail (inside the mast) or the yard rail. Packs move on a reel with a fail-safe brake. No rope that holds a pack is ever cut or joined. A fouled reel is recovered with rope grabs and untangling, or a rescue lowering on the second reel |
@@ -562,7 +663,7 @@ The tight part is the **lunar lander's cargo deck and unloading gear**, and that
 | Landing trays (2 x 15 m) | Light frames | 3 m sections | 1 module |
 | Solar packs (16) | 2 x 30 m deployed | Folded packs ~2 x 1 x 0.7 m (1 to 3 m wide all fit) | 2 per module: **8 modules** |
 | Stay cables, ties, reel-hoist ropes | 68 m and less | On reels | 1 module |
-| Collars, V-links, jack frame, foot winches, drives, reel hoists | ≤ ~2 m | As-is (collar rings in 3 segments, as designed) | 3 modules |
+| Collars, V-links, jack frame, foot winches, drive cartridges, base enclosure, reel hoists | ≤ ~2 m | As-is (collar rings in 3 segments, as designed) | 3 modules |
 | Service bots (2) | Humanoid-class | Folded in padded crates, ~1.8 x 0.8 x 0.6 m each | 1 module |
 
 Roughly **23 freight modules** in total for one rig.
@@ -608,7 +709,7 @@ At ~1 hour per 3 m section, the mast goes up in roughly **35 working hours** of 
 
 1. **Site illumination study** on LOLA data: sunlight hours vs array height at candidate spots; pick the height.
 2. Mast and tripod analysis: strut and mast buckling, pre-tension, thermal bow, moonquake response, every jack-up and scissor stage.
-3. Life tests in vacuum, thermal cycling and dust (LHS-1, NU-LHT simulants) for the collar cartridges and the base pivot: friction, wear rate with regolith simulant, and the wear-indicator layers.
+3. Life tests in vacuum, thermal cycling and dust (LHS-1, NU-LHT simulants) for the collar cartridges and the base pivot: friction, wear rate with regolith simulant, and the wear-indicator layers. Thermal-vacuum test of the base enclosure with the slip ring under load, and a dual-drive torque-bias and mesh-release test.
 4. Prototype the jack-up with collars, the strut scissor and tie winches at small scale; rehearse with suited operators.
 5. Concertina pack trials: self-folding into a tray and unfolding on lift (fold direction, hinge springs, panel edge contact), cycles in vacuum and cold; lowering one pack past its neighbours.
 6. Confirm the actual lander's freight envelope and re-cut the parts list (section 10) to it; build and fold a flat-pack mast section and a tent-pole strut, and test their assembly with suited operators.

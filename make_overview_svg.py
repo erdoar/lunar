@@ -131,7 +131,7 @@ items = [
     ('Slip ring', 'Annular, Ø0.9 m, around the pivot: rotor under the foot plate, stator on the frame.'),
     ('Base frame → mast', 'The Ø3 m rotating base frame clamps to the bottom mast section ~1.5 m up (battery, bot dock, power).'),
     ('Ties → foundation', 'The 3 ground ties from the strut feet end on lugs on the foundation frame and cancel out.'),
-    ('Jack frame', 'Bolted to the foundation frame: erection, then lifts the mast ~60 mm for a cup swap.'),
+    ('Jack frame', 'Bolted to the foundation frame: erection, then lifts the mast ~10 mm for a cup swap.'),
 ]
 ly = 600
 for i, (a_, b_) in enumerate(items):

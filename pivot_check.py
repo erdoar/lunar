@@ -14,7 +14,7 @@ print(f'contact annulus r {r_in*1000:.0f}–{r_out*1000:.0f} mm, area {A*1e4:.0f
 for mu in (0.03, 0.08, 0.15):
     print(f'  mu {mu}: friction torque {mu*N*r_eff:.0f} N.m')
 cup_depth = R * (1 - math.cos(a_out))
-print(f'cup depth {cup_depth*1000:.0f} mm -> jack the mast ~{cup_depth*1000+15:.0f} mm to slide the cup out')
+print(f'cup depth {cup_depth*1000:.0f} mm; the cup lifts out upward through the foot plate (rev 26), so the jack only unloads the pivot (~10 mm)')
 # sliding distance and Archard wear
 s_year = 2 * math.pi * r_eff * 365.25 / 29.53          # m per Earth year at r_eff
 for k in (1e-15, 1e-14, 1e-13):                         # m^3/(N.m): clean MoS2 composite in vacuum ... dusty third-body

@@ -2,7 +2,7 @@
 <rect width="1400" height="900" fill="#fff"/>
 <defs><pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#a08c6c"/></pattern><pattern id="gr" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 0H6M0 0V6" stroke="#9aa" stroke-width="0.8"/></pattern><pattern id="cm" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#e3d08e"/><circle cx="3" cy="3" r="0.6" fill="#8d7a45"/></pattern><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker><marker id="ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8a5a2b"/></marker></defs>
 <style>.s{stroke:#222;stroke-width:1.5}.l{stroke:#444;stroke-width:1;fill:none}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:15px;font-weight:bold}.n{font-size:11px;font-weight:bold}</style>
-<text x="20" y="30" class="t">Section through the base pivot (rev 24): fixed parts grey, turning parts orange</text>
+<text x="20" y="30" class="t">Section through the base pivot (rev 26): fixed parts grey, turning parts orange</text>
 <text x="20" y="50" fill="#555">Hard convex ball below, replaceable dry-lubricated wear cup above. Cup and gaps drawn thicker than true scale.</text>
 <rect x="35.0" y="790" width="870.0" height="60" fill="url(#g)"/><line x1="35.0" y1="790" x2="905.0" y2="790" stroke="#222"/>
 <rect x="170.0" y="790" width="600.0" height="16" fill="#c9b79c" stroke="#222"/>
@@ -11,7 +11,7 @@
 <line x1="335.0" y1="790" x2="470.0" y2="670.0" stroke="#7d8790" stroke-width="3"/>
 <line x1="470.0" y1="790" x2="605.0" y2="670.0" stroke="#7d8790" stroke-width="3"/>
 <line x1="605.0" y1="790" x2="755.0" y2="670.0" stroke="#7d8790" stroke-width="3"/>
-<rect x="185.0" y="670.0" width="570.0" height="10" fill="#7d8790" class="s"/>
+<rect x="170.0" y="670.0" width="600.0" height="10" fill="#7d8790" class="s"/>
 <circle cx="185.0" cy="772.0" r="7" fill="#fff" class="s"/>
 <line x1="176.0" y1="772.0" x2="35.0" y2="772.0" stroke="#c87f0a" stroke-width="2" stroke-dasharray="6 3" marker-end="url(#ar)"/>
 <circle cx="755.0" cy="772.0" r="7" fill="#fff" class="s"/>
@@ -68,16 +68,18 @@
 <rect x="65.0" y="331.0" width="810.0" height="9" fill="url(#gr)" stroke="#e67e22" stroke-width="2"/>
 <path d="M65.0 325.0 l-6 6 l6 6 l-6 6" fill="none" stroke="#222"/>
 <line x1="266.0" y1="331.0" x2="170.0" y2="400.0" stroke="#e67e22" stroke-width="2"/>
-<line x1="110.0" y1="340.0" x2="110.0" y2="745.0" stroke="#999" stroke-width="4" stroke-dasharray="3 2"/>
+<line x1="176.0" y1="670.0" x2="176.0" y2="484.0" stroke="#3a7d6b" stroke-width="5"/>
+<path d="M254.0 466.0 H155.0 V505.0 M183.5 466.0 V499.0" fill="none" stroke="#e67e22" stroke-width="3"/>
 <path d="M875.0 325.0 l6 6 l-6 6 l6 6" fill="none" stroke="#222"/>
 <line x1="674.0" y1="331.0" x2="770.0" y2="400.0" stroke="#e67e22" stroke-width="2"/>
-<line x1="830.0" y1="340.0" x2="830.0" y2="745.0" stroke="#999" stroke-width="4" stroke-dasharray="3 2"/>
+<line x1="764.0" y1="670.0" x2="764.0" y2="484.0" stroke="#3a7d6b" stroke-width="5"/>
+<path d="M686.0 466.0 H785.0 V505.0 M756.5 466.0 V499.0" fill="none" stroke="#e67e22" stroke-width="3"/>
 <rect x="710.0" y="274.0" width="108.0" height="57.0" fill="#7fa3d6" class="s"/><text x="764.0" y="310.0" text-anchor="middle" font-size="11" style="stroke:none">battery + dock</text>
 <rect x="122.0" y="280.0" width="108.0" height="51.00000000000001" fill="#bfa6d9" class="s"/><text x="176.0" y="314.5" text-anchor="middle" font-size="10" style="stroke:none">readout</text>
 <path d="M176.0 331.0 V430.0 H410.0 V472.0" fill="none" stroke="#b87333" stroke-width="1.5" stroke-dasharray="4 2"/>
-<path d="M152.0 670.0 V175.0 H266.0" fill="none" stroke="#2e7d32" stroke-width="3" stroke-dasharray="8 4"/>
+<path d="M133.99999999999994 670.0 V175.0 H266.0" fill="none" stroke="#2e7d32" stroke-width="3" stroke-dasharray="8 4"/>
 <rect x="236.0" y="190.0" width="30.0" height="15.0" fill="#e67e22" class="s"/>
-<path d="M788.0 670.0 V175.0 H674.0" fill="none" stroke="#2e7d32" stroke-width="3" stroke-dasharray="8 4"/>
+<path d="M806.0 670.0 V175.0 H674.0" fill="none" stroke="#2e7d32" stroke-width="3" stroke-dasharray="8 4"/>
 <rect x="674.0" y="190.0" width="30.0" height="15.0" fill="#e67e22" class="s"/>
 <rect x="650.0" y="115.0" width="48.0" height="204.00000000000003" fill="#fff" stroke="#6c3483" stroke-width="2" stroke-dasharray="5 3"/>
 <line x1="485.0" y1="310.0" x2="485.0" y2="94.0" stroke="#6c3483" stroke-width="4"/>
@@ -107,9 +109,9 @@
 <circle cx="71" cy="715" r="11" fill="#fff" stroke="#222"/><text x="71" y="719" text-anchor="middle" class="n" style="stroke:none">10</text>
 <path d="M80 331L71 235" class="l"/><circle cx="80" cy="331" r="2" fill="#222"/>
 <circle cx="71" cy="235" r="11" fill="#fff" stroke="#222"/><text x="71" y="239" text-anchor="middle" class="n" style="stroke:none">11</text>
-<path d="M110 520L56 490" class="l"/><circle cx="110" cy="520" r="2" fill="#222"/>
+<path d="M176 550L56 490" class="l"/><circle cx="176" cy="550" r="2" fill="#222"/>
 <circle cx="56" cy="490" r="11" fill="#fff" stroke="#222"/><text x="56" y="494" text-anchor="middle" class="n" style="stroke:none">12</text>
-<path d="M152 430L56 370" class="l"/><circle cx="152" cy="430" r="2" fill="#222"/>
+<path d="M134 430L56 370" class="l"/><circle cx="134" cy="430" r="2" fill="#222"/>
 <circle cx="56" cy="370" r="11" fill="#fff" stroke="#222"/><text x="56" y="374" text-anchor="middle" class="n" style="stroke:none">13</text>
 <path d="M371 649L56 604" class="l"/><circle cx="371" cy="649" r="2" fill="#222"/>
 <circle cx="56" cy="604" r="11" fill="#fff" stroke="#222"/><text x="56" y="608" text-anchor="middle" class="n" style="stroke:none">14</text>
@@ -151,7 +153,7 @@
 <circle cx="940" cy="506" r="9" fill="#fff" stroke="#222"/><text x="940" y="510" text-anchor="middle" class="n" style="stroke:none">1</text>
 <text x="956" y="510">Pivot ball R 0.25 m, ~60 HRC steel + DLC or Si₃N₄ (fixed)</text>
 <circle cx="940" cy="527" r="9" fill="#fff" stroke="#222"/><text x="940" y="531" text-anchor="middle" class="n" style="stroke:none">2</text>
-<text x="956" y="531">Wear cup with sensing layers (turns); slides out on rails</text>
+<text x="956" y="531">Wear cup with sensing layers (turns); lifts out upward</text>
 <circle cx="940" cy="548" r="9" fill="#fff" stroke="#222"/><text x="940" y="552" text-anchor="middle" class="n" style="stroke:none">3</text>
 <text x="956" y="552">Cup holder + Ti backing, under the foot plate</text>
 <circle cx="940" cy="569" r="9" fill="#fff" stroke="#222"/><text x="940" y="573" text-anchor="middle" class="n" style="stroke:none">4</text>
@@ -163,7 +165,7 @@
 <circle cx="940" cy="632" r="9" fill="#fff" stroke="#222"/><text x="940" y="636" text-anchor="middle" class="n" style="stroke:none">7</text>
 <text x="956" y="636">Pin-ring (lantern) gear Ø1.2 m (turns)</text>
 <circle cx="940" cy="653" r="9" fill="#fff" stroke="#222"/><text x="940" y="657" text-anchor="middle" class="n" style="stroke:none">8</text>
-<text x="956" y="657">Worm gearmotors (2), self-locking; slip clutch ~300 N·m</text>
+<text x="956" y="657">Drive cartridges (2): self-locking worm, limiter ~300 N·m (5a)</text>
 <circle cx="940" cy="674" r="9" fill="#fff" stroke="#222"/><text x="940" y="678" text-anchor="middle" class="n" style="stroke:none">9</text>
 <text x="956" y="678">Annular slip ring Ø0.9 m: rotor turns, stator fixed</text>
 <circle cx="940" cy="695" r="9" fill="#fff" stroke="#222"/><text x="940" y="699" text-anchor="middle" class="n" style="stroke:none">10</text>
@@ -171,9 +173,9 @@
 <circle cx="940" cy="716" r="9" fill="#fff" stroke="#222"/><text x="940" y="720" text-anchor="middle" class="n" style="stroke:none">11</text>
 <text x="956" y="720">Base frame Ø3 m: battery, bot dock, power, wear readout</text>
 <circle cx="940" cy="737" r="9" fill="#fff" stroke="#222"/><text x="940" y="741" text-anchor="middle" class="n" style="stroke:none">12</text>
-<text x="956" y="741">Brush skirt</text>
+<text x="956" y="741">Removable enclosure: fixed tub + rotating lid (5a)</text>
 <circle cx="940" cy="758" r="9" fill="#fff" stroke="#222"/><text x="940" y="762" text-anchor="middle" class="n" style="stroke:none">13</text>
-<text x="956" y="762">Jack frame: erection, then ~60 mm lift for a cup swap</text>
+<text x="956" y="762">Jack frame: erection, then ~10 mm lift for a cup swap</text>
 <circle cx="940" cy="779" r="9" fill="#fff" stroke="#222"/><text x="940" y="783" text-anchor="middle" class="n" style="stroke:none">14</text>
 <text x="956" y="783">Debris falls off the ball, between the hooks</text>
 <circle cx="940" cy="800" r="9" fill="#fff" stroke="#222"/><text x="940" y="804" text-anchor="middle" class="n" style="stroke:none">15</text>
@@ -181,5 +183,5 @@
 <text x="930" y="837" font-weight="bold">Numbers (pivot_check.py)</text>
 <text x="930" y="855">Contact ~630 cm², ~0.16 MPa; friction ~30 to 145 N·m</text>
 <text x="930" y="871">Running torque ~50 to 165 N·m (with collars)</text>
-<text x="930" y="887">Cup 45 mm deep; jack lift ~60 mm; ~1 shift to swap</text>
+<text x="930" y="887">Cup and ball lift out upward into the mast core</text>
 </svg>

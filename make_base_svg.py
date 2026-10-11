@@ -1,4 +1,4 @@
-# Generates base.svg (rev 24): spherical base pivot (hard ball, wear cup with sensing layers), drive, foundation, base frame.
+# Generates base.svg (rev 26): spherical base pivot (hard ball, wear cup with sensing layers), drive, foundation, base frame.
 # Run: python3 make_base_svg.py
 from math import sin, cos, radians
 
@@ -38,7 +38,7 @@ def call(n, px, py, qx, qy):   # numbered callout: part point (m) -> circle (m)
       f'<text x="{X(qx):.0f}" y="{Z(qy)+4:.0f}" text-anchor="middle" class="n" style="stroke:none">{n}</text>')
 
 
-A('<text x="20" y="30" class="t">Section through the base pivot (rev 24): fixed parts grey, turning parts orange</text>')
+A('<text x="20" y="30" class="t">Section through the base pivot (rev 26): fixed parts grey, turning parts orange</text>')
 A('<text x="20" y="50" fill="#555">Hard convex ball below, replaceable dry-lubricated wear cup above. Cup and gaps drawn thicker than true scale.</text>')
 # ground, pad, ties
 A(f'<rect x="{X(-1.45)}" y="{gy}" width="{2.9*k}" height="60" fill="url(#g)"/><line x1="{X(-1.45)}" y1="{gy}" x2="{X(1.45)}" y2="{gy}" stroke="#222"/>')
@@ -47,7 +47,7 @@ A(f'<rect x="{X(-1.0)}" y="{gy}" width="{2.0*k}" height="16" fill="#c9b79c" stro
 A(f'<rect x="{X(-0.95)}" y="{Z(0.40)}" width="{1.9*k}" height="{0.40*k}" fill="none" stroke="{FIX}" stroke-width="5"/>')
 for a_, b_ in ((-0.95, -0.45), (-0.45, 0.0), (0.0, 0.45), (0.45, 0.95)):
     A(f'<line x1="{X(a_)}" y1="{Z(0)}" x2="{X(b_)}" y2="{Z(0.40)}" stroke="{FIX}" stroke-width="3"/>')
-A(f'<rect x="{X(-0.95)}" y="{Z(0.40)}" width="{1.9*k}" height="10" fill="{FIX}" class="s"/>')
+A(f'<rect x="{X(-1.0)}" y="{Z(0.40)}" width="{2.0*k}" height="10" fill="{FIX}" class="s"/>')
 for sx in (-1, 1):
     A(f'<circle cx="{X(sx*0.95)}" cy="{Z(0.06)}" r="7" fill="#fff" class="s"/>')
     A(f'<line x1="{X(sx*0.98)}" y1="{Z(0.06)}" x2="{X(sx*1.45)}" y2="{Z(0.06)}" stroke="#c87f0a" stroke-width="2" stroke-dasharray="6 3" marker-end="url(#ar)"/>')
@@ -108,19 +108,20 @@ A(f'<path d="M{dp[0]:.0f} {dp[1]-6:.0f} {arc(-30,-78,R+0.02)} L{X(-0.27)} {Z(0.6
   f'fill="none" stroke="#8a5a2b" stroke-width="1.5" stroke-dasharray="2 3" marker-end="url(#ad)"/>')
 for (xx, zz) in ((-0.33, 0.47), (-0.335, 0.52), (-0.30, 0.596), (-0.31, 0.43)):
     A(f'<circle cx="{X(xx)}" cy="{Z(zz)}" r="2.2" fill="#8a5a2b"/>')
-# rotating base frame at 1.5 m (shown cut), bot dock, readout, brush skirt
+# rotating base frame at 1.5 m (shown cut), bot dock, readout; protection enclosure (fixed tub + rotating lid)
 A(f'<rect x="{X(-1.35)}" y="{Z(1.53)}" width="{2.7*k}" height="9" fill="url(#gr)" stroke="{ROT}" stroke-width="2"/>')
 for sx in (-1, 1):
     xb = X(sx*1.35)
     A(f'<path d="M{xb} {Z(1.53)-6} l{sx*6} 6 l{-sx*6} 6 l{sx*6} 6" fill="none" stroke="#222"/>')
     A(f'<line x1="{X(sx*0.68)}" y1="{Z(1.53)}" x2="{X(sx*1.0)}" y2="{Z(1.30)}" stroke="{ROT}" stroke-width="2"/>')
-    A(f'<line x1="{X(sx*1.2)}" y1="{Z(1.50)}" x2="{X(sx*1.2)}" y2="{Z(0.15)}" stroke="#999" stroke-width="4" stroke-dasharray="3 2"/>')
+    A(f'<line x1="{X(sx*0.98)}" y1="{Z(0.40)}" x2="{X(sx*0.98)}" y2="{Z(1.02)}" stroke="#3a7d6b" stroke-width="5"/>')
+    A(f'<path d="M{X(sx*0.72)} {Z(1.08)} H{X(sx*1.05)} V{Z(0.95)} M{X(sx*0.955)} {Z(1.08)} V{Z(0.97)}" fill="none" stroke="{ROT}" stroke-width="3"/>')
 A(f'<rect x="{X(0.80)}" y="{Z(1.72)}" width="{0.36*k}" height="{0.19*k}" fill="{DRV}" class="s"/><text x="{X(0.98)}" y="{Z(1.60)}" text-anchor="middle" font-size="11" style="stroke:none">battery + dock</text>')
 A(f'<rect x="{X(-1.16)}" y="{Z(1.70)}" width="{0.36*k}" height="{0.17*k}" fill="{SR}" class="s"/><text x="{X(-0.98)}" y="{Z(1.585)}" text-anchor="middle" font-size="10" style="stroke:none">readout</text>')
 A(f'<path d="M{X(-0.98)} {Z(1.53)} V{Z(1.20)} H{X(-0.20)} V{Z(1.06)}" fill="none" stroke="{CU}" stroke-width="1.5" stroke-dasharray="4 2"/>')
 # jack frame (fixed, stays bolted): posts + jack heads under the mast lugs
 for sx in (-1, 1):
-    A(f'<path d="M{X(sx*1.06)} {Z(0.40)} V{Z(2.05)} H{X(sx*0.68)}" fill="none" stroke="#2e7d32" stroke-width="3" stroke-dasharray="8 4"/>')
+    A(f'<path d="M{X(sx*1.12)} {Z(0.40)} V{Z(2.05)} H{X(sx*0.68)}" fill="none" stroke="#2e7d32" stroke-width="3" stroke-dasharray="8 4"/>')
     A(f'<rect x="{min(X(sx*0.68), X(sx*0.78))}" y="{Z(2.0)}" width="{0.10*k}" height="{0.05*k}" fill="{ROT}" class="s"/>')
 # bot hatch in the mast face at the base frame, climb rail up the mast core
 A(f'<rect x="{X(0.60)}" y="{Z(2.25)}" width="{0.16*k}" height="{0.68*k}" fill="#fff" stroke="#6c3483" stroke-width="2" stroke-dasharray="5 3"/>')
@@ -139,8 +140,8 @@ call(8, 0.93, 0.50, 1.38, 0.62)
 call(9, 0.50, 1.00, 0.84, 0.86)
 call(10, -0.70, 0.10, -1.33, 0.25)
 call(11, -1.30, 1.53, -1.33, 1.85)
-call(12, -1.20, 0.90, -1.38, 1.0)
-call(13, -1.06, 1.20, -1.38, 1.40)
+call(12, -0.98, 0.80, -1.38, 1.0)
+call(13, -1.12, 1.20, -1.38, 1.40)
 call(14, -0.33, 0.47, -1.38, 0.62)
 call(15, 0.05, 2.2, 1.0, 2.25)
 A(f'<text x="{X(0.37)}" y="{Z(0.53)+4}" font-size="10" fill="#555">5 mm</text>')
@@ -178,18 +179,18 @@ for j, t in enumerate(['When wear reaches a layer it touches the ball: a metal b
 ky = ty + 100
 A(f'<text x="{ix}" y="{ky}" class="t">Key</text>')
 key = ['Pivot ball R 0.25 m, ~60 HRC steel + DLC or Si₃N₄ (fixed)',
-       'Wear cup with sensing layers (turns); slides out on rails',
+       'Wear cup with sensing layers (turns); lifts out upward',
        'Cup holder + Ti backing, under the foot plate',
        'Mast foot plate: ~9.9 kN down',
        'Keeper hooks (3), pinned; ~5 mm under the flange',
        'Pedestal with conical drip flange',
        'Pin-ring (lantern) gear Ø1.2 m (turns)',
-       'Worm gearmotors (2), self-locking; slip clutch ~300 N·m',
+       'Drive cartridges (2): self-locking worm, limiter ~300 N·m (5a)',
        'Annular slip ring Ø0.9 m: rotor turns, stator fixed',
        'Foundation frame, ~2 x 2 m pad, 3 ground-tie lugs',
        'Base frame Ø3 m: battery, bot dock, power, wear readout',
-       'Brush skirt',
-       'Jack frame: erection, then ~60 mm lift for a cup swap',
+       'Removable enclosure: fixed tub + rotating lid (5a)',
+       'Jack frame: erection, then ~10 mm lift for a cup swap',
        'Debris falls off the ball, between the hooks',
        'Bot hatch + climb rail up the mast core']
 for j, t in enumerate(key):
@@ -200,7 +201,7 @@ ny = ky + 22 + len(key) * 21 + 12
 A(f'<text x="{ix}" y="{ny}" font-weight="bold">Numbers (pivot_check.py)</text>')
 for j, t in enumerate(['Contact ~630 cm², ~0.16 MPa; friction ~30 to 145 N·m',
                        'Running torque ~50 to 165 N·m (with collars)',
-                       'Cup 45 mm deep; jack lift ~60 mm; ~1 shift to swap']):
+                       'Cup and ball lift out upward into the mast core']):
     A(f'<text x="{ix}" y="{ny+18+j*16}">{t}</text>')
 A('</svg>')
 open('base.svg', 'w').write('\n'.join(o))
