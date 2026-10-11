@@ -1,4 +1,4 @@
-# Lunar polar rotating solar platform: concept design (rev 13, tall mast on a strut tripod)
+# Lunar polar rotating solar platform: concept design (rev 14, tall mast on a strut tripod)
 
 A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
@@ -15,7 +15,8 @@ A small turntable on a circular rail that turns a very tall mast, with the solar
 - Rev 10: the curtains become **rigid concertina packs**, 1 to 3 m wide (2 m baseline), shipped and replaced as separate units. Each pack deploys and retracts like a **Roman blind**, and each can be **lowered on its own** to the ground for exchange. Lowering a whole wing is now only for top-bar work.
 - Rev 11: two-point arm root (fold hinge + seat 500 mm below) instead of knee braces.
 - Rev 12: hanging A-bracket knee (compression strut into a funnel cup).
-- **Rev 13 (this):** the knee becomes the simplest possible part: a **flat V-plate**. Its 2 pin holes mount on the arm, and a single shackle hole at the apex takes a short wire **pendant** up to a stationary **crown ring** 1.5 m above the hinge. It works in **tension**: a flat bar would buckle in compression, and a shackle can't push. It hangs vertically when unloaded and tightens by itself as the arm comes down.
+- Rev 13: V-plate pendant knee on the torque arms (superseded).
+- **Rev 14 (this):** the torque arms, Y-bridles, knees and crown ring are all removed. Each bracing plane now has **one stay cable** from the foot to the apex of a **V-link**: a flat V-plate hinged on **two close pins** on the upper collar. The V-link only spreads and levers the cable's sideways (twisting) pull into a couple on those two pins. It has no other bracing, and with the cable slack it hangs straight down under gravity. Collar twist is limited by a **collar-torque interlock** on the drive.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -62,11 +63,10 @@ How the design uses this:
 | Roller collars (stationary) | **Strut collar at 35 m**, **upper collar at 62 m** |
 | Struts | 3 **A-frames** at 120°: each 2 CFRP tubes Ø0.3 m x 2 mm, ~46 m long, ~3 kg/m, ball joints at both ends. Joined at the foot, spread ±1.5 m at a torque bracket 4 m out from the strut collar |
 | Foot pads | 3 at **30 m radius**, ~1 m² sintered or gabion pad, compression only (~0.5 kN) |
-| Upper torque arms | Per bracing plane, **2 hinged CFRP arms in a V** from the upper collar to tips 8 m out and ±3 m apart. The hinge axes line up, so the pair folds as one frame. A light tie bar joins the tips. Each arm has one fold hinge at the collar, plus a **V-plate + shackle + wire pendant** up to the crown ring 1.5 m above the hinge. ~30 kg per arm, ~1.5 kg per V-plate and pendant |
-| Crown ring (stationary) | Light ring (Ø~3.4 m) on 3 short posts, 1.5 m above the upper collar. It carries 6 pendant lugs, and the pendant pulls from the 3 stations cancel through the ring |
-| Cables | Per bracing plane, **one Y-bridle**: a single main cable (~13 m) from the foot tensioner up to a fixed **split plate** at ~12 m height, 26 m out, then 2 legs (~53 m) to the arm tips. 6 mm stainless wire rope, UV-proof. ~1.5 kN pre-tension per plane, adjustable to ~3 kN |
+| V-links (upper collar) | 1 per bracing plane: a flat Ti V-plate (~8 mm), **2 pin holes 0.4 m apart** on the collar (horizontally aligned, instrumented load pins) and **1 shackle hole at the apex, 1 m out**. Free to hinge; hangs straight down when the cable is slack. ~2 kg |
+| Stay cables | 1 per bracing plane, from the foot tensioner to the V-link shackle (~68 m), 6 mm stainless wire rope, UV-proof. ~1.5 kN pre-tension, adjustable to ~3 kN, load cell at the foot |
 | Ties | Foot to kingpin foundation, horizontal at ground level (passing under the raised rail), ~1 kN |
-| Upper bracing (rotating) | Diamond stays: spreaders ±6 m at 81 m, stays from 64 m (just above the crown ring) to the mast top |
+| Upper bracing (rotating) | Diamond stays: spreaders ±6 m at 81 m, stays from 64 m (just above the upper collar) to the mast top |
 | Rail ring | Ø12 m single rail, 12 segments of π m, **3 bogies x 2 tyres** at 120° |
 | Rotating mass | ~12.6 t (mast 2.5 t, wings + top yard 3.1 t, deck 4 t, bogies 0.2 t, collar bands + margin 1.1 t, kingpin 1 t, diamond stays 0.5 t) |
 | Lunar weight on the ring | ~20.5 kN; the pre-tensioned tripod lifts the mast very slightly (~1.5 kN), so the ring carries a little less |
@@ -121,11 +121,11 @@ A **transport clamp pin** in each cartridge locks the collar to the band during 
    - Each roller has a **second rotation path**: the ball bearing runs on a dry-lubricated sleeve journal. If the bearing locks, the roller turns on the sleeve.
    - If both lock, the roller skids on its hard coated face rather than jamming. The other 5 cartridges keep guiding the mast.
    - No single cartridge can lock the collar.
-3. **See it coming.** The difference in leg tension at each split plate reads collar friction torque directly.
+3. **See it coming.** The V-link load pins read collar friction torque directly.
    - Every roller has a small rotation sensor (magnet + Hall sensor). If the mast turns and a roller doesn't, the system alarms long before the bearing seizes.
    - Load cells on the wires and ties, drive motor current, and strain gauges on the mast between base and collar all track friction torque. A rising trend means "swap a cartridge soon".
 4. **Protect the structure if it happens.**
-   - The base drive has a **torque limiter** set just above normal collar friction. If the collar torque rises past it, the drive slips and stops. The mast is never forced to twist against a locked collar.
+   - A **collar-torque interlock** stops the base drive if the V-link load pins read more than ~200 N·m. A drive torque limiter can't do this job: the drive needs several kN·m to break the deck free in dust. The collar is never wound round more than ~3°.
    - The array keeps working in its last position until the fault is cleared. At most a few percent of a lunar day's energy is lost.
 5. **Fix it in place.**
    - The climber robot swaps the cartridge (2 captive bolts, slide out, slide in) while the other 5 hold the mast. Spare cartridges are kept on site.
@@ -134,37 +134,36 @@ A **transport clamp pin** in each cartridge locks the collar to the band during 
 
 **Wind-up: keeping the collars from turning with the mast.** Friction in the collar rollers drags the stationary collar round with the mast, so the bracing must hold it against twisting. In rev 4 to 6 every wire and strut lay in a vertical plane through the mast axis, so together they barely resisted twisting (`torsion_check.py` gives the numbers):
 
-![Torque arm: plan and elevation](torque-arm.svg)
+![V-link torque lever: plan, elevation and the part](torque-arm.svg)
 
-| Collar | Rev 4 to 6 | Rev 7 to 9 |
+| Collar | Rev 4 to 6 | Now |
 |---|---|---|
-| Upper (wires) | ~2.9 kN·m/rad: ~0.2° of twist at normal friction (~10 N·m), **~10°** at 500 N·m (a partly seized roller) | Rev 7, two separate cables per plane: ~320 kN·m/rad. **Rev 9, Y-bridle**: ~170 kN·m/rad at 1.5 kN (**~0.17°** at 500 N·m), ~250 kN·m/rad at 3 kN |
+| Upper (stay cables) | ~2.9 kN·m/rad: ~0.2° of twist at normal friction (~10 N·m), ~10° at 500 N·m | **V-link, 1 m lever** (`vlink_check.py`): ~3.8 kN·m/rad at 1.5 kN (**0.15°** at normal friction), ~7.5 kN·m/rad at 3 kN. Fault twist capped at **~3°** (1.5° at 3 kN) by the collar-torque interlock |
 | Strut collar | **Negative** (~ -7 kN·m/rad). Compressed struts on ball joints push the collar further round once it starts to turn: torsionally unstable, held only by roller friction | **A-frame struts**: ~14 MN·m/rad, effectively rigid |
 
+(Revs 7 to 13 used 8 m torque arms with crossbars or Y-bridles: up to ~100x stiffer, but with many more parts. They are kept in `torsion_check.py` and `bridle_check.py` for reference.)
+
 How it works:
-- **Torque arms with a Y-bridle (upper collar).** At each bracing plane two hinged arms form a V from the collar, with tips 8 m out and ±3 m apart. A single cable runs up from the foot to a fixed **split plate**, and from there two legs run to the two arm tips. In plan view it is a triangle again. If the collar starts to turn, one leg tightens and the other slackens, and the split plate is pulled sideways against the main cable's tension. This is the same idea as the "torque arm" used on tall guyed masts on Earth.
-- **Why the split sits low.** The split plate is free to move, so the bridle resists twist partly through its pre-tension rather than purely by stretching the cable (`bridle_check.py`):
+- **V-link (upper collar), the whole torque lever.** Each bracing plane has a single **stay cable** from the foot tensioner up to the **apex shackle** of a flat **V-plate**. The V's two legs end in **2 pin holes 0.4 m apart** on lugs on the upper collar, on one horizontal axis.
+  - The V hinges freely about that axis. Under tension it simply lines up with the cable, so it adds no vertical or rigid bracing of any kind.
+  - With the cable slack it **hangs straight down under gravity**.
+- **What it does.** If the collar starts to turn, the cable's attachment point moves sideways and the tensioned cable pulls it back. The V moves that attachment out from the collar (1.45 m) to ~1.9 m, and turns the sideways pull into a **couple on its two close pins**. Those pins are instrumented load pins.
+- **Stiffness depends on tension.** Twist resistance comes from pre-tension acting on the geometry: k ≈ 3·T·R_foot·r_apex / L_cable.
 
-  | Split position (0 = at the arm tips, 1 = at the foot) | 0.1 | 0.3 | 0.5 | 0.7 | 0.9 |
-  |---|---|---|---|---|---|
-  | 1.5 kN pre-tension (kN·m/rad) | 23 | 42 | 72 | 125 | 227 |
-  | 3.0 kN pre-tension (kN·m/rad) | 46 | 83 | 135 | 206 | 293 |
+  | V length | 1.5 kN | 3 kN |
+  |---|---|---|
+  | 1 m (chosen) | 3.8 kN·m/rad | 7.5 kN·m/rad |
+  | 3 m | 5.6 kN·m/rad | 11.2 kN·m/rad |
 
-  Near the collar the bridle is weak; near the foot it acts almost like two separate cables. **The split is set at 0.8** (~12 m above the ground, 26 m out), where it is ~170 kN·m/rad at the normal 1.5 kN and still reachable from the ground for inspection.
-- **The split must be a fixed plate, not a pulley.** A pulley would let the legs equalise and slide, and the twist resistance would almost vanish. Each leg is terminated on the plate separately.
-- **Tension monitored and adjustable.** There is one screw tensioner and load cell per plane, at the foot. Because stiffness rises with tension, the operator can raise pre-tension (up to ~3 kN, ~250 kN·m/rad) if collar friction trends upward. Above 1.5 kN the struts and ties are re-trimmed to keep the feet pressing down.
-- **V-plate pendant "knee" (tension, self-tightening).**
-  - Each arm root is a single **fold hinge** (a horizontal pin in two lugs) on the collar ring.
-  - The knee is one **flat V-plate** (Ti, ~8 mm thick, 40 mm legs, about 0.5 m across and 0.6 m deep). Its **2 pin holes** mount on 2 horizontally aligned pins on the arm's top chord, 3 m out from the hinge. Its **apex hole** takes a **shackle**.
-  - The shackle connects to a short **wire pendant** (~2.3 m, 6 mm rope with a thimble), which runs up to a lug on the stationary **crown ring** 1.5 m above the hinge.
-  - **Tension, not compression.** The bridle pulls the arm tip down, so the arm wants to rotate down about its hinge, and the pendant holds it up. The pendant runs ~3.4 kN at 1.5 kN bridle tension (~6.9 kN at 3 kN). A flat V-plate carries hundreds of kN in tension, but as a 3.35 m compression strut the same bar would buckle at ~0.2 kN, and a shackle cannot push. That is why this knee hangs *above* the arm rather than bracing from below.
-  - **Hangs vertically when unloaded.** With the arm folded upright for jack-up, the pendant is slack and the V-plate just dangles from its two pins. As bridle tension swings the arm down, the pendant straightens and goes taut by itself at the horizontal position. That taut length *is* the arm stop: no latch, seat or funnel.
-  - **Fitted at deck level.** The V-plate, shackle and pendant are all connected before jack-up, so nothing has to be shackled at height. The shackles are safety-pin type with cotters, and their pins and bows are coated or of dissimilar metals against cold welding.
-  - **Crown ring.** A light stationary ring on 3 short posts above the collar takes all 6 pendants. Their horizontal pulls from the 3 stations balance through the ring, so neither the posts nor the collar see a net tilt. The ring sits at r ~1.7 m, clear of the turning mast, and the diamond stays start just above it at 64 m.
-  - The hinge pin takes ~3 kN, pushed inward against the collar.
+  - In normal running (~10 N·m of collar friction) the collar twists ~0.15° and stays there, elastically and stably.
+  - Raising the tension (monitored at the foot, adjustable to ~3 kN) stiffens it.
+  - A longer V adds little and costs clearance, so 1 m is the baseline.
+- **Collar-torque interlock (essential with this simple lever).** The base drive must be able to break the deck free in dust (several kN·m), so a drive torque limiter cannot protect the collar. Instead, the **V-link load pins** read the collar's friction torque directly. The drive stops if it exceeds **~200 N·m** (about 20x normal), which caps the twist at **~3°** at 1.5 kN (~1.5° at 3 kN). That is well inside what the cables and clearances accept, and the collar springs back once the fault is cleared.
+- **Installation.** The V-links are pinned to the collar and shackled to their stay cables at deck level, before jack-up. As the collar rides up, they hang and then line up with the cables by themselves. Nothing is fitted at height.
+- **Loads.** Each V-plate carries the stay tension (~1.5 to 3 kN) in tension. The pin couple at the 200 N·m interlock limit is about ±0.2 kN. Shackles are safety-pin type, coated or of dissimilar metals against cold welding.
 - **A-frame struts (strut collar).** Each strut is two tubes joined at the foot and spread ±1.5 m at a torque bracket 4 m out from the collar. This is the same triangle idea, in compression.
-- **Clearances.** All arm, crossbar and A-frame tips stay within ~21° of their bracing plane, so the maintenance azimuth (30°/210°) stays clear for lowering the wings. Everything is at or below 62 m, under the array sweep.
-- **Torque sensing.** Small load pins where the two legs attach to the split plate read the difference in leg tension, a direct measure of the upper collar's friction torque. The main cable's load cell at the foot reads the pre-tension. Together they give the seizure early warning in layer 3 below.
+- **Clearances.** The V-links stay within ~2 m of the mast, and the A-frame brackets within ~21° of their bracing plane. So the maintenance azimuth (30°/210°) stays clear for lowering the wings. Everything is at or below 62 m, under the array sweep.
+- **Torque sensing.** The couple on each V-link's two load pins is a direct measure of the upper collar's friction torque. The load cell at each foot reads the pre-tension. Together they give the seizure early warning in layer 3 below and feed the interlock.
 
 **Port and starboard wings of concertina packs.**
 
@@ -187,7 +186,7 @@ There are three raise/lower mechanisms, used from most to least often.
 2. Retract the pack to its stack.
 3. Release the carrier latch and **lower carrier + folded pack** straight down on the hoist lines to a **ground cart**, or onto the deck for the inner packs.
 
-   On the way down the pack stays ≥2 m from the mast and passes the collars, torque arms and A-frames ≥1.4 m clear.
+   On the way down the pack stays ≥2 m from the mast and passes the collars, V-links and A-frames ≥1.4 m clear.
 4. Unlatch the pack from the carrier (4 alignment cones, captive latches), latch the new pack on, hoist, latch the carrier, deploy.
 
 The other 15 packs keep producing power the whole time; one exchange costs ~6% of output for under an hour.
@@ -284,7 +283,7 @@ The strut tripod carries all overturning and quake loads at the collars, so the 
 2. Release the spherical pivot, wind both support shoes up, roll the bogie out along the rail into the gap and lift it off. Fit the spare the same way.
 3. Lower, remove the stand.
 
-**Spares on site**: 4 wheel cartridges, 2 uplift roller cartridges, 1 bogie, 2 rail segments, 6 rail head wear strips, 1 drive unit, slip-ring brush cartridges, 2 collar roller cartridges, 1 bridle (main cable, split plate, 2 legs) and 1 tie with tensioners, 1 strut section, 4 concertina packs, 2 carriers, 2 ballast pallet frames (filled with local regolith).
+**Spares on site**: 4 wheel cartridges, 2 uplift roller cartridges, 1 bogie, 2 rail segments, 6 rail head wear strips, 1 drive unit, slip-ring brush cartridges, 2 collar roller cartridges, 1 stay cable, 1 V-link with load pins, and 1 tie with tensioners, 1 strut section, 4 concertina packs, 2 carriers, 2 ballast pallet frames (filled with local regolith).
 
 ## 7. Installation equipment and sequence (human supervised)
 
@@ -308,10 +307,10 @@ Everything is assembled at deck level and raised. A crew member (EVA, or in a pr
 3. Place the 3 bogies and the 4 deck quarters. Check the deck turns by hand and all 6 support shoes are at their 3 mm standoff.
 4. Fit the jack-up frame (E5). Assemble the **top assembly** at deck level: mast top section, diamond spreaders and stays, and the permanent top yard folded vertically with its halyards rove. The wings are not on the mast during jack-up.
 5. **Jack up, with a scissor action.** Each collar is fitted around the mast at deck level (3 segments), clamped to its band, and rides up with the mast.
-   - The **upper collar** goes on first, with its 3 V pairs of torque arms folded upright and their bridles paid out from the foot winches as it rises (the split plates ride up on the main cables). Until the struts are in, these wires act as light temporary guys (a few hundred N). Each foot winch is ballasted with regolith bags so it never needs a pull-out anchor.
+   - The **upper collar** goes on first, with its 3 V-links already shackled to their stay cables, which are paid out from the foot winches as it rises. Until the struts are in, these wires act as light temporary guys (a few hundred N). Each foot winch is ballasted with regolith bags so it never needs a pull-out anchor.
    - When the strut band reaches the deck, the **strut collar** goes on. The 3 A-frame struts are pinned to its torque brackets while lying flat on the ground, pointing outward, with their feet on skid dollies.
    - As the mast keeps rising, the struts swing up and the tie winches (E6) **pull the feet in** along the ground, from 46 m to their 30 m pads. Low gravity keeps the strut and dolly loads tiny.
-   - At final height, the feet drop onto their pads. Tensioning the wires swings the torque arms down until they latch, then the ties and wires are trimmed to final tension. The clamp pins are pulled, and from then on the mast turns freely in both collars.
+   - At final height, the feet drop onto their pads. The stay cables and ties are trimmed to final tension; the V-links line up with their cables by themselves. The clamp pins are pulled, and from then on the mast turns freely in both collars.
 6. At full height, unfold the top yard and set its topping lifts. Park at the maintenance azimuth. **Hoist both empty wing top bars together** (clutch engaged) and latch them. Then hoist the **packs one by one, alternating port and starboard**, latch each carrier and deploy it (E8, E9). The array grows in 2 m steps, and every pack starts producing power as soon as it opens.
 7. Trim wire and tie tensions to plumb the mast and take out thermal bow. Connect the harness to the slip ring, commission the drive, start tracking.
 
