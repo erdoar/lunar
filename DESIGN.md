@@ -1,4 +1,4 @@
-# Lunar polar rotating solar platform: concept design (rev 7, tall mast on a strut tripod)
+# Lunar polar rotating solar platform: concept design (rev 8, tall mast on a strut tripod)
 
 A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
@@ -9,7 +9,8 @@ A small turntable on a circular rail that turns a very tall mast, with the solar
 - Rev 4: the ground guys and their tension anchors are replaced by a **strut tripod**. Three rigid struts run from a **mid-height collar** down to foot pads on the surface. Each foot is wire-braced up to an **upper collar** and tied **horizontally back to the platform's kingpin foundation**. It is a closed, pre-tensioned truss: no ground anchor ever has to resist being pulled up, and there are 2 collars instead of 3.
 - Rev 5: base running gear changed to **3 bogies with 4 individually replaceable tyres each**. Three supports always share the load evenly, so rail flatness and settlement don't matter. Any tyre can be lifted off the rail and swapped without jacking the deck. About 10 m of clear rail between bogies leaves room to replace wear-surface segments without a bridging rail.
 - Rev 6: **2 tyres per bogie** (6 in all). Each bogie pivots at its centre, so the whole base is statically determinate and every tyre carries exactly the same load, with no springs. Each tyre has a built-in **support shoe** for swaps. The tyres are vertical, not angled outward, because the load they carry is vertical.
-- **Rev 7 (this):** anti-**wind-up** bracing. The upper collar gets 3 **hinged rigid torque arms** whose tips carry the wires, and each strut becomes a narrow **A-frame**. Without them the upper collar would twist ~10° under a partly seized roller, and the strut collar is torsionally unstable (see section 4). The bogie pivot is now a stiff, travel-limited rocker with hard stops.
+- Rev 7: anti-**wind-up** bracing. The upper collar gets 3 **hinged rigid torque arms** whose tips carry the wires, and each strut becomes a narrow **A-frame**. Without them the upper collar would twist ~10° under a partly seized roller, and the strut collar is torsionally unstable (see section 4). The bogie pivot is now a stiff, travel-limited rocker with hard stops.
+- **Rev 8 (this):** the array is split into **port and starboard wings**. Each hangs on halyards from a **permanent top yard** and is raised and lowered on its own for installation and maintenance. The wing's weight stays on the same sheaves whichever height it is at, so lowering one wing does not unbalance the rig. Only taking a wing's weight off its halyards would, and that is handled by a ballast swap or by landing both wings together (section 4).
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -48,9 +49,10 @@ How the design uses this:
 |---|---|
 | Array top / bottom | **100 m / 70 m** above the deck |
 | Mast | 105 m triangular CFRP lattice (Ti nodes), 1.2 to 1.5 m face, ~25 kg/m (~2.5 t), built in 3 m sections |
-| Solar curtains | 8 vertical curtains, each ~4 m x 30 m, total 34 m x 30 m ≈ **1,000 m²** |
+| Solar wings | **Port and starboard wings**, each 17 m x 30 m (~500 m²), each made of 4 roll-up curtain modules ~4 m wide; total ≈ **1,000 m²**. ~0.75 t per wing (~1.2 kN on the Moon) |
 | Power (30% cells, 1,361 W/m², ~85% system) | **~350 kWe** |
-| Top / bottom yards | 34 m, at 100 m and 70 m |
+| Top yard (permanent) | 34 m truss fixed to the mast at 100 m, held by topping lifts; 2 halyard sheaves per wing (inner at 2 m, outer at 17 m from the mast) |
+| Wing bars | Each wing has a top bar (with the curtain roll drums) on 2 halyards, and a bottom tension bar that hangs from the curtains. No fixed bottom yard |
 | Roller collars (stationary) | **Strut collar at 35 m**, **upper collar at 62 m** |
 | Struts | 3 **A-frames** at 120°: each 2 CFRP tubes Ø0.3 m x 2 mm, ~46 m long, ~3 kg/m, ball joints at both ends. Joined at the foot, spread ±1.5 m at a torque bracket 4 m out from the strut collar |
 | Foot pads | 3 at **30 m radius**, ~1 m² sintered or gabion pad, compression only (~0.5 kN) |
@@ -79,7 +81,7 @@ Above ~150 m the struts get long enough that they need a larger lattice section 
 
 **Pre-tension (100 m case).** Tighten the wire to ~1.5 kN and the tie to ~1 kN. That puts ~2.5 kN of compression in the strut (buckling load ~10 kN) and leaves each foot pressing ~0.5 kN on its pad. Keep strut compression above ~1.2x the wire tension so the feet never lift. Load cells on every wire and tie show the rig's state.
 
-## 4. Mast, collars and curtains
+## 4. Mast, collars and wings
 
 ![Roller collar: plan and section](collar.svg)
 
@@ -136,16 +138,35 @@ How it works:
 - **Torque arms (upper collar).** At each bracing plane a rigid arm runs 8 m out from the collar and ends in a ±3 m crossbar, like a T. The plane's two wires leave from the two crossbar ends and meet at the foot, so in plan view they form a triangle. If the collar starts to turn, one wire stretches and the other slackens, and with a 3 m lever that resists strongly. This is the "torque arm" used on tall guyed masts on Earth to stop twisting.
 - **Hinged.** Each arm is hinged to the collar ring on a horizontal axis. During jack-up the arms ride folded upright against the mast. At height, tensioning the wires pulls the arms down to horizontal, where they land on a stop and a latch closes; the supervisor confirms each latch on camera. A knee brace to the collar's lower flange carries the arm's bending. The 3 arms balance one another, so the ring as a whole is not tilted.
 - **A-frame struts (strut collar).** Each strut is two tubes joined at the foot and spread ±1.5 m at a torque bracket 4 m out from the collar. This is the same triangle idea, in compression.
-- **Clearances.** All arm, crossbar and A-frame tips stay within ~21° of their bracing plane, so the maintenance azimuth (30°/210°) stays clear for lowering curtains. Everything is at or below 62 m, under the array sweep.
+- **Clearances.** All arm, crossbar and A-frame tips stay within ~21° of their bracing plane, so the maintenance azimuth (30°/210°) stays clear for lowering the wings. Everything is at or below 62 m, under the array sweep.
 - **Free torque sensing.** The difference in tension between a torque arm's two wires is a direct reading of the upper collar's friction torque. Load cells at the feet already measure it, which gives the seizure early warning in layer 3 below.
 
-**Curtains instead of one blanket.** The array is 8 vertical curtains, 4 m wide. Each hangs from its own **halyard on the top yard** and is tensioned down to the bottom yard. To repair one (for example after a micrometeoroid strike):
-1. Rotate the mast to the **maintenance azimuth**, so the array lies between the bracing planes.
-2. Release the curtain's bottom tension lines.
-3. Lower it on its halyard, in front of the bottom yard, straight down to the ground. No strut, wire or tie lies in that vertical plane, and the innermost curtain starts 2 m from the mast to clear the collars.
-4. Swap the curtain (or a section) at ground level and haul it back up.
+**Port and starboard wings, raised and lowered on halyards.**
 
-Nobody has to climb for the most common repair.
+![Wings: raising, lowering and balance](wings.svg)
+
+The array is two wings, port and starboard, one each side of the mast. Each wing is made of:
+- a **top bar** carrying 4 curtain **roll drums** (like roller blinds),
+- the 4 curtains, ~4 m x 30 m each, and
+- a **bottom tension bar** that hangs from the curtains. In 1/6 g with no wind, its weight keeps the curtains flat.
+
+The top bar hangs from **2 halyards**, run over sheaves on the **permanent top yard** at 2 m and 17 m from the mast. The halyards run down the mast to a **double-drum winch** on the deck, one per wing, which keeps the bar level. When the wing is up, the top bar latches to the yard and **sheets** (light tag lines) from the bottom bar ends to the mast hold the wing plane true.
+
+To lower a wing for maintenance:
+1. Park the mast at the **maintenance azimuth**, so both wings lie in the clear 30°/210° plane between the bracing planes.
+2. Release the sheets and **roll the curtains up** onto the drums. The bottom bar rises and docks under the top bar, leaving a compact bundle ~17 m long and ~0.6 m deep.
+3. Unlatch the top bar and **lower the bundle** on its halyards to ~3 m above the ground: above the deck at the inner end, on stands at the outer end.
+
+   On the way down it passes the collars, torque arms and A-frames. In that plane they are ≥1.4 m away, and the inner end stays ≥2 m from the mast.
+4. Work at ground level: swap a whole curtain module (drum + curtain) or repair one. Then hoist, latch, unroll and set the sheets.
+
+**Balance.** Each wing weighs ~1.2 kN on the Moon, and that weight always hangs from the same two sheaves on the permanent top yard. Raising, lowering, rolling up or hanging the wing low doesn't change the load on the yard, so **either wing can be raised or lowered on its own** with no imbalance.
+
+Imbalance only appears if a wing's weight comes **off** its halyards. One wing landed or removed while the other is up puts ~11 kN·m on the mast top above the upper collar: ~9 kN extra in the lattice chords. There are two ways to avoid it:
+- **Ballast swap (one wing at a time):** before un-hooking a wing that is being removed, hang a **regolith ballast pallet** of equal weight (~0.75 t) on its halyards. Halyard load cells confirm the match within ~5%.
+- **Simultaneous (both wings):** if both wings have to land (for example at first installation or for a full re-fit), a **cross-connect clutch** joins the two winches into one mechanism. Both wings then move and land together and stay balanced at every moment.
+
+The halyard load cells and the collar load readings act as a balance monitor. The winches interlock against landing one wing alone unless ballast is detected.
 
 **Mast climber robot.** A small robot climbs the lattice to inspect it, swap collar roller cartridges, re-tension diamond stays and service the yards. It is teleoperated with a human supervising, and it doubles as an installation tool (section 7).
 
@@ -230,7 +251,7 @@ The strut tripod carries all overturning and quake loads at the collars, so the 
 2. Release the spherical pivot, wind both support shoes up, roll the bogie out along the rail into the gap and lift it off. Fit the spare the same way.
 3. Lower, remove the stand.
 
-**Spares on site**: 4 wheel cartridges, 2 uplift roller cartridges, 1 bogie, 2 rail segments, 6 rail head wear strips, 1 drive unit, slip-ring brush cartridges, 2 collar roller cartridges, 1 wire and 1 tie with tensioners, 1 strut section, 2 blanket curtains.
+**Spares on site**: 4 wheel cartridges, 2 uplift roller cartridges, 1 bogie, 2 rail segments, 6 rail head wear strips, 1 drive unit, slip-ring brush cartridges, 2 collar roller cartridges, 1 wire and 1 tie with tensioners, 1 strut section, 2 curtain modules (drum + curtain), 2 ballast pallet frames (filled with local regolith).
 
 ## 7. Installation equipment and sequence (human supervised)
 
@@ -245,19 +266,19 @@ Everything is assembled at deck level and raised. A crew member (EVA, or in a pr
 | E5 | **Mast jack-up frame** | Sits on the deck around the kingpin and lifts the whole mast one 3 m section at a time; the new section is pinned in at the bottom. Peak lift is ~8 kN (whole mast + array) plus bracing pre-tension. |
 | E6 | **Tie and wire winches with load cells** | One at each foot. They control the ties (which pull the strut feet in as the mast rises) and the wires, and keep the mast plumb. Tensions are shown live on a supervisor tablet. |
 | E7 | **Mast climber robot** | Fits and checks the diamond stays and collar cartridges at height. Later used for inspection and maintenance. |
-| E8 | **Curtain winch** | Raises and lowers curtains on their halyards (also used for repairs). |
+| E8 | **Wing winches** | Two double-drum halyard winches on the deck (port, starboard) with load cells, roll-drum drives, and a cross-connect clutch for simultaneous moves. Also used for maintenance. |
 
 **Sequence**
 1. Survey and clear the site. Set the kingpin (E1). Lay out the 3 foot sites with the radius arm (E2); prepare the pads and lay the ties (E4).
 2. Set the 12 rail piers and lay the ring (E2, E3). Hold point: ring flat to ±2 mm.
 3. Place the 3 bogies and the 4 deck quarters. Check the deck turns by hand and all 6 support shoes are at their 3 mm standoff.
-4. Fit the jack-up frame (E5). Assemble the **top assembly** at deck level: mast top section, diamond spreaders and stays, top yard folded vertically, curtains rolled on the top yard, bottom yard folded.
+4. Fit the jack-up frame (E5). Assemble the **top assembly** at deck level: mast top section, diamond spreaders and stays, and the permanent top yard folded vertically with its halyards rove. The wings are not on the mast during jack-up.
 5. **Jack up, with a scissor action.** Each collar is fitted around the mast at deck level (3 segments), clamped to its band, and rides up with the mast.
    - The **upper collar** goes on first, with its 3 torque arms folded upright and their 6 wires paid out from the foot winches as it rises. Until the struts are in, these wires act as light temporary guys (a few hundred N). Each foot winch is ballasted with regolith bags so it never needs a pull-out anchor.
    - When the strut band reaches the deck, the **strut collar** goes on. The 3 A-frame struts are pinned to its torque brackets while lying flat on the ground, pointing outward, with their feet on skid dollies.
    - As the mast keeps rising, the struts swing up and the tie winches (E6) **pull the feet in** along the ground, from 46 m to their 30 m pads. Low gravity keeps the strut and dolly loads tiny.
    - At final height, the feet drop onto their pads. Tensioning the wires swings the torque arms down until they latch, then the ties and wires are trimmed to final tension. The clamp pins are pulled, and from then on the mast turns freely in both collars.
-6. At full height, unfold the yards. Set the maintenance azimuth and lower the curtains one at a time onto the bottom yard, then tension them (E8).
+6. At full height, unfold the top yard and set its topping lifts. Park at the maintenance azimuth. **Hoist both wing bundles simultaneously** from their ground stands (clutch engaged), latch them, unroll the curtains and set the sheets (E8).
 7. Trim wire and tie tensions to plumb the mast and take out thermal bow. Connect the harness to the slip ring, commission the drive, start tracking.
 
 Design rules for every part: captive fasteners, one tool size, alignment cones, grapple fixtures, and no single piece heavier than ~150 kg-weight on the Moon without lifting gear.
@@ -271,7 +292,7 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
 | Cold welding in vacuum | Dissimilar or coated mating surfaces, dry lubricants on all rollers |
 | Abrasive, electrostatic dust | Raised rail, scrapers, seals, skirt at ground level; collars and array are high above most lofted dust |
 | Moonquakes | Strut tripod carries lateral load; balanced rig; lower thrust rollers in the collars and uplift rollers at the base |
-| Micrometeoroids | Lowerable curtains; doubled wires; struts are thick-walled tubes, inspected by the climber |
+| Micrometeoroids | Wings lowered to ground level for repair; replaceable curtain modules; doubled wires; struts are thick-walled tubes, inspected by the climber |
 | UV and radiation on cables | Steel wire rope or coated CFRP rod, not bare aramid or polymer fibre |
 | Regolith settlement | Adjustable piers and foot pads; wire and tie tensions monitored with load cells and re-trimmed |
 
@@ -288,5 +309,5 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
 2. Mast and tripod analysis: strut and mast buckling, pre-tension, thermal bow, moonquake response, every jack-up and scissor stage.
 3. Collar cartridge life test (vacuum, thermal cycling, dust), and tyre/rail tests (LHS-1, NU-LHT simulants).
 4. Prototype the jack-up with collars, the strut scissor and tie winches at small scale; rehearse with suited operators.
-5. Curtain halyard and lowering trials; pick a blanket that tolerates repeated lowering.
-6. Packaging: deck quarters, 3 m mast sections, rail segments, curtain rolls to fit the lander.
+5. Wing roll-up, lowering and ballast-swap trials; pick a blanket that tolerates repeated rolling.
+6. Packaging: deck quarters, 3 m mast sections, rail segments, wing bundles (top bar + rolled curtains) to fit the lander.

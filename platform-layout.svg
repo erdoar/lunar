@@ -39,12 +39,14 @@
 <rect x="141.6" y="317.0" width="216.8" height="6" fill="#e0a040" class="s"/>
 <line x1="250.0" y1="103.0" x2="144.6" y2="134.0" class="c"/>
 <line x1="250.0" y1="103.0" x2="355.4" y2="134.0" class="c"/>
-<rect x="145.6" y="506.0" width="24.35" height="186.0" fill="none" stroke="#2c4a7a" stroke-dasharray="5 4"/>
-<path d="M157.62 328.0V493.59999999999997" class="l" marker-end="url(#ar)"/>
+<rect x="144.6" y="729.2" width="93.0" height="5" fill="none" stroke="#2c4a7a" stroke-width="2" stroke-dasharray="5 3"/>
+<line x1="144.6" y1="134.0" x2="144.6" y2="729.2" stroke="#2c4a7a" stroke-width="0.8" stroke-dasharray="3 4"/>
+<line x1="237.6" y1="134.0" x2="237.6" y2="729.2" stroke="#2c4a7a" stroke-width="0.8" stroke-dasharray="3 4"/>
+<path d="M163.2 328.0V630.0" class="l" marker-end="url(#ar)"/>
 <path d="M392.6 134.0V760" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="397.6" y="413.0">100 m</text>
 <path d="M144.6 93.0H355.4" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="250.0" y="87.0" text-anchor="middle">34 m</text>
 <path d="M355 227L411 208" class="l"/>
-<text x="415" y="212" text-anchor="start">8 curtains, 34 x 30 m</text>
+<text x="415" y="212" text-anchor="start">Port + starboard wings, 2 x 17 x 30 m</text>
 <text x="415" y="227" text-anchor="start">≈1,000 m², ~350 kWe</text>
 <path d="M287 252L411 283" class="l"/>
 <text x="415" y="287" text-anchor="start">Diamond stays (rotate)</text>
@@ -63,9 +65,9 @@
 <text x="291" y="790" text-anchor="start">Horizontal tie to kingpin foundation</text>
 <path d="M436 756L455 806" class="l"/>
 <text x="459" y="810" text-anchor="start">Foot pad at 30 m</text>
-<path d="M157 568L101 605" class="l"/>
-<text x="97" y="609" text-anchor="end">Curtain lowered</text>
-<text x="97" y="624" text-anchor="end">for repair</text>
+<path d="M169 729L101 667" class="l"/>
+<text x="97" y="671" text-anchor="end">Wing rolled up and</text>
+<text x="97" y="686" text-anchor="end">lowered on halyards</text>
 <path d="M287 752L337 732" class="l"/>
 <text x="341" y="736" text-anchor="start">Ø12 m ring: bogies,</text>
 <text x="341" y="751" text-anchor="start">drive, slip ring</text>
@@ -106,8 +108,8 @@
 <circle cx="880" cy="360" r="5" fill="#fff" class="s"/>
 <path d="M941 254L1000 210" class="l"/>
 <text x="1004" y="214" text-anchor="start">Array parked at maintenance</text>
-<text x="1004" y="229" text-anchor="start">azimuth (30°/210°): curtains</text>
-<text x="1004" y="244" text-anchor="start">drop between bracing planes</text>
+<text x="1004" y="229" text-anchor="start">azimuth (30°/210°): wings</text>
+<text x="1004" y="244" text-anchor="start">lower between bracing planes</text>
 <path d="M975 335L1030 420" class="l"/>
 <text x="1034" y="424" text-anchor="start">Array while tracking</text>
 <text x="1034" y="439" text-anchor="start">(any angle above 67 m:</text>
@@ -122,7 +124,7 @@
 <line x1="610" y1="640" x2="635" y2="640" class="guy"/><text x="642" y="644">Wire to upper collar</text>
 <line x1="810" y1="640" x2="835" y2="640" stroke="#c87f0a" stroke-width="2" stroke-dasharray="7 3"/><text x="842" y="644">Tie to kingpin foundation</text>
 <rect x="610" y="654" width="22" height="8" fill="#4a9" class="s"/><text x="642" y="663">Roller collar (mast turns inside)</text>
-<line x1="610" y1="678" x2="635" y2="678" stroke="#2c4a7a" stroke-width="5"/><text x="642" y="682">Solar curtains</text>
+<line x1="610" y1="678" x2="635" y2="678" stroke="#2c4a7a" stroke-width="5"/><text x="642" y="682">Solar wings</text>
 <text x="610" y="712" font-size="12">Neighbouring rigs: ≥10x array width apart, in a line along the</text>
 <text x="610" y="728" font-size="12">ridge, heights staggered (≈1–2% loss per neighbour).</text>
 </svg>
