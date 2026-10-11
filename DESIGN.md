@@ -1,4 +1,4 @@
-# Lunar polar rotating solar platform: concept design (rev 18, tall mast on a strut tripod)
+# Lunar polar rotating solar platform: concept design (rev 19, tall mast on a strut tripod)
 
 A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
@@ -20,7 +20,8 @@ A small turntable on a circular rail that turns a very tall mast, with the solar
 - Rev 15: the Roman-blind cords and per-pack hoists are removed. **Both wings are lowered together** on their halyards. Each pack lands in a **landing tray** and folds itself up as the top bar comes down, which brings every pack attachment to working height for replacement. Raising unfolds the packs again. One winch drives all 4 halyards, so the wings can't move out of step.
 - Rev 16: **transport packaging and erection** (section 10). Every part is cut down to fit a **3.2 x 1.5 x 1.5 m freight module**. The mast becomes **flat-pack lattice sections**, the struts become **tent-pole segments**, and the deck becomes a 12-segment ring with spokes. Erection is base jack-up with the top weight kept to ~1 t.
 - Rev 17: **detailed top yard** (section 4a): yard truss, an 8 m masthead (the mast becomes 108 m), topping lifts, braces, halyard sheaves and routing, **docking latches** that take the wings' weight off the halyards, and the **panel elevation winch** (one motor, linked traction sheaves).
-- **Rev 18 (this):** **deck defined** (section 5a): a spoked frame with 3 deep main spokes over the bogies, a hub carrying the mast-foot seat over the kingpin, gratings only where needed, and an equipment layout. The halyards now enter the mast through a side window, not through the foot seat. Deck mass is revised from 4 t to ~2.5 t, so rotating mass becomes ~11.1 t (~18 kN, ~3.0 kN per tyre).
+- Rev 18: **deck defined** (section 5a): a spoked frame with 3 deep main spokes over the bogies, a hub carrying the mast-foot seat over the kingpin, gratings only where needed, and an equipment layout. The halyards now enter the mast through a side window, not through the foot seat. Deck mass is revised from 4 t to ~2.5 t, so rotating mass becomes ~11.1 t (~18 kN, ~3.0 kN per tyre).
+- **Rev 19 (this):** **deck spokes characterised** (section 5a, `spoke_check.py`): tapered triangular CFRP trusses, member sizes, loads, stiffness, joints and mass.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -353,11 +354,42 @@ The strut tripod carries all overturning and quake loads at the collars, so the 
 | Part | Description | Load |
 |---|---|---|
 | **Hub** (Ø ~1.6 m) | Ti/steel weldment at the centre. Top: the **mast-foot spherical seat** with its dog coupling. Underside: the **kingpin slewing ring** (radial centring only) and the **slip-ring / rotary-transformer rotor** | Mast foot **~9 kN** down, small radial |
-| **3 main spokes** | Deep CFRP/Ti trusses (~1 m deep), radially over the 3 bogie pivots. They carry the hub load out to the bogies | Each takes ~3 kN from the hub, ~18 kN·m at the bogie end, ~18 kN chord force |
-| **9 light spokes** | Shallow trusses filling between the main spokes. They support gratings and equipment and tie the ring girder in | Light |
+| **3 main spokes** | Tapered triangular CFRP/Ti trusses (1.0 m deep at the hub → 0.4 m at the rim), radially over the 3 bogie pivots. They carry the hub load out to the bogies (see Spokes below) | Each takes ~3 kN from the hub, ~18 kN·m at the bogie end, ~18 kN chord force |
+| **9 light spokes** | 0.45 m deep triangular trusses between the main spokes. They support gratings and equipment and tie the ring girder in | ~1 kN at the tip |
 | **Ring girder** | Box girder over the rail, in 12 segments. Ties the spokes together, carries the 3 bogie pivots and the dust skirt | Bogie reactions ~6 kN each |
 | **Gratings** | Open CFRP grating panels only where people and robots work: a walkway ring, the mast-base area, the equipment bays and the inboard tray strip. No solid floor, to save mass and stop dust collecting | Foot and robot traffic |
 | **Dust skirt** | Brush/flap skirt hanging from the ring girder over the rail head | n/a |
+
+**Spokes**
+
+![Deck spokes: main and light](spokes.svg)
+
+*How they work.* The hub is a stiff, moment-carrying "spider" (an upper and a lower ring ~1 m apart). Each spoke is bolted rigidly to the hub and runs out to the ring girder.
+- The **3 main spokes** end on the bogie pivots, which are spherical and carry no moment. The deck is therefore a stiff hub on 3 pinned legs: each main spoke takes a third of the hub load as shear, and its bending moment grows from **zero at the bogie to a maximum at the hub**. So the main spokes are **tapered**: deep at the hub, shallow at the rim.
+- The **9 light spokes** are short cantilevers from the hub carrying gratings, equipment and their share of the ring girder. The ring girder ties all spoke ends together. It also carries the drive's tangential forces from bogie to bogie around the rim, so the spokes see little sideways load.
+
+| | **Main spoke (x3)** | **Light spoke (x9)** |
+|---|---|---|
+| Where | Radially over each bogie (0°, 120°, 240°) | Every 30° between them; the 30° and 210° spokes also carry the inboard landing-tray strip |
+| Span | 5.2 m (hub edge r 0.8 m → bogie pivot r 6.0 m) | 5.2 m (hub → ring girder) |
+| Form | **Triangular-section truss**: 2 top chords (0.5 m apart, carrying the grating) and 1 bottom chord; Warren diagonals; 0.8 m panels | Triangular-section truss, same pattern, 0.6 m panels |
+| Depth | **Tapered 1.0 m at the hub → 0.4 m at the bogie** | Constant **0.45 m** |
+| Chords | CFRP tube Ø50 x 2 mm | CFRP tube Ø35 x 1.5 mm |
+| Diagonals | CFRP tube Ø30 x 1.5 mm | CFRP tube Ø25 x 1.2 mm |
+| Nodes and ends | Ti-6Al-4V node fittings, bonded and pinned to the tubes. Ti end plates: a 3-bolt moment joint to the hub's upper and lower rings; at the rim, the **bogie-pivot socket** and a bolted joint to the ring girder | Ti node fittings; 2-bolt joint to the hub's upper and middle rings; bolted to the ring girder |
+| Splice | Mid-span, bolted chord sleeves with captive bolts, so it ships as **2 pieces of ~2.6 m** | Same: 2 pieces of ~2.6 m |
+| Design load | Hub share **~3.3 kN** (mast foot ~8.9 kN + hub + winch, over 3) plus self-weight; **0.5 kN sideways** at the rim | **~1 kN** at the tip: ring and grating share, a suited astronaut or robot (~300 kg), and landed packs on the tray strip |
+| Root moment | **~17 kN·m** | **~5 kN·m** |
+| Chord forces at root | Bottom chord **~17 kN tension** (55 MPa); top chords **~9 kN compression** each | ~11 kN |
+| Buckling margin | Top chord over a 0.8 m panel: ~180 kN, **21x** | ~80 kN, >7x |
+| Deflection | Hub sits **~12 mm** below the bogie pivots under full load (L/420), the same on all 3 so the mast stays plumb | ~17 mm at the tip as a free cantilever, less in practice because the ring girder ties the tips |
+| Mass | ~12 kg/m calculated; **carried at 20 kg/m** for fittings and margin: **~105 kg each, ~0.31 t for 3** | ~5 kg/m calculated, carried at 8 kg/m: **~42 kg each, ~0.37 t for 9** |
+
+*Design notes*
+- **Stiffness and joints set the sizes, not strength.** Member stresses are below 60 MPa. The tubes are sized for buckling, handling and robust bonded-and-pinned Ti joints.
+- **Thermal.** CFRP has near-zero expansion, so the spokes hardly change length. Any mismatch with the ring girder is taken by the bogies' ±20 mm radial float.
+- **Dust.** Open trusses under open gratings: nothing traps regolith, and debris falls through.
+- **Mass saving.** The calculated spokes (~0.69 t for all 12) come in well under the earlier 1.26 t allowance. The deck total stays at **2.5 t**, with the ~0.5 t difference held as **margin**.
 
 **Equipment on the deck** (all turns with the mast)
 - **Panel elevation winch** with its 4 trim sheaves, beside the mast base (section 4a).
