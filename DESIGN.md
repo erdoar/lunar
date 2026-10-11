@@ -1,8 +1,8 @@
-# Lunar polar rotating solar platform: concept design (rev 27, tall mast on a single base pivot, bot-serviced wings)
+# Lunar polar rotating solar platform: concept design (rev 28, tall mast on a single base pivot, bot-serviced wings)
 
 A very tall mast that turns on a single spherical base pivot, braced by a stationary strut tripod, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
-## Current design at a glance (rev 27 baseline)
+## Current design at a glance (rev 28 baseline)
 
 This is the design being developed (mode 1: the **whole mast turns**). Everything under "Revision history" below records how it evolved. Section 9 (mode 2, a top turret) is set aside, and Appendix A (the earlier rail turntable) is superseded.
 
@@ -67,12 +67,16 @@ Weight path: mast → foot plate → wear cup (turns) → pivot ball (fixed) →
   - **Enclosure:** a removable enclosure replaces the brush skirt. It is a fixed 6-panel tub with radiator panels and a drive door per unit, under a rotating lid with a double labyrinth.
   - **Slip ring:** defined as a 600 V DC slip ring, whose ~0.45 kW of heat sets the enclosure's thermal design.
   - **Correction:** the rev 21 sideways cup slide was blocked by the pin ring and slip-ring rotor. The cup and ball now lift out **upward through the foot plate into the mast core**, and the jack lift drops from ~60 to ~10 mm.
-- **Rev 27 (this):** **slip ring and power cabling detailed** (section 5c, `power_cabling_check.py`).
+- Rev 27: **slip ring and power cabling detailed** (section 5c, `power_cabling_check.py`).
   - **Voltage:** the bus becomes **bipolar ±500 V DC**. That needs 108 kg of trunk conductor against ~270 kg at 600 V, and cuts the slip-ring heat to ~0.25 kW.
   - **Packs:** each pack carries its own MPPT converter in its head and plugs into its hanger through an interlocked blind-mate connector. Its yard bus taps through an e-fuse.
   - **Mast:** 2 jointless trunks run in grounded trays in the corners of the mast core.
   - **Slip ring:** a drum type with 4 power-class rings (including a spare) and 2 signal rings, 8 brush cartridges and barrier fins.
   - **Rule:** no connector or brush ever makes or breaks under load.
+- **Rev 28 (this):** **pack converter and hanger connector detailed** (section 5d, `pack_converter_check.py`).
+  - **Converter:** 4 height-banded MPPT boost inputs, a 450 V link, and a dual-active-bridge converter with 2 stacked secondaries giving ±500 V. Its SiC transistors run at ≤42% of their voltage rating. It is 98% efficient and has a hinged radiator fin.
+  - **Connector:** 5 pins of three lengths (earth first, then power, then pilots), with shutters on both halves and a floating receptacle. The **hanger e-fuse is the switch**: it stays open unless the pilot loop, including the latch, is closed.
+  - **Power figure:** with real cell packing (87%) a pack makes ~21 kW, so the array delivers ~335 kW. Reaching the 350 kW headline needs ~91% packing; that is noted as a design-margin item.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -581,16 +585,8 @@ Numbers from `power_cabling_check.py`.
 - **Each pack is its own source.** The packs connect in parallel, so a pack removed for a swap simply drops off the bus.
 
 **From pack to base**
-1. **Pack converter, in the pack head.**
-   - MPPT plus an isolated boost from the pack's cell strings to ±500 V: ~98% efficient, ~23 A, ~12 kg.
-   - Its ~0.47 kW of heat leaves through a radiator fin on the back of the pack head.
-   - It travels with the pack, so it reaches the ground for repair at every swap.
-   - Each pack has its own ground-fault and arc-fault detection.
-   - The pack becomes ~150 kg (~0.24 kN), within the reel's margin.
-2. **Hanger connector.**
-   - A blind-mate connector in each hanger, aligned by the cones: 2 power pins (30 A) and 2 pilot pins (make last, break first).
-   - The contacts are recessed behind a spring shutter against dust.
-   - Moving the latch lever breaks the pilot loop first, which shuts the pack converter down, so the contacts never carry current while they move.
+1. **Pack converter, in the pack head** (detail in section 5d). MPPT plus an isolated converter to ±500 V, ~98% efficient, ~21 A, ~12 kg with its radiator. It travels with the pack, so it reaches the ground for repair at every swap.
+2. **Hanger connector** (detail in section 5d). A floating, shuttered, 5-pin blind-mate connector aligned by the cones. The **hanger's e-fuse is the switch**: it stays open unless the pilot loop, which runs through the latch, is closed. So the contacts never carry current while they move.
 3. **Yard bus.** Each wing has a ± pair of tapered aluminium conductors (50 mm² at the root, ~182 A) in a closed, grounded tray inside the yard truss. Each hanger taps it through a 40 A **e-fuse** in a small junction box. Loss is ~0.45 kW for both wings at full power.
 4. **Yard-root junction box,** at the yard-mast section. It holds a solid-state breaker, surge suppressor and current sensor for each wing. It also takes the service feeder and the fibre, and feeds the reel sockets and the reel garage.
 5. **Mast trunks.** There are 2 independent trunks, one per wing. Each is a ± pair of 95 mm² aluminium cables with polyimide/PTFE insulation, ~105 m long, carrying ~175 A with ~1.9 kW of loss at full power. Either trunk can be isolated without stopping the other wing.
@@ -643,9 +639,72 @@ Numbers from `power_cabling_check.py`.
 - **~95.7%** of the cells' DC reaches the fixed side, after the pack converters, yard buses, trunks and slip ring.
 - Cable mass ~0.22 t, including insulation, trays, feeder and fibre.
 
+## 5d. Pack converter and hanger connector
+
+![Pack converter and hanger connector](pack-converter.svg)
+
+Numbers from `pack_converter_check.py`.
+
+**Cells and strings**
+- **Cell temperature:** a vertical pack facing the low Sun radiates from both faces to a cold sky, so its cells run at only ~30 °C.
+- **Cells:** 8 x 8 cm triple-junction, 30%: Vmp ~2.32 V, Imp ~1.13 A.
+- **Strings:** each 2 m² panel carries 2 strings of 136 cells (~315 V), at 87% packing.
+- **Bands:** the 30 panels form **4 MPPT bands by height** (8, 8, 7 and 7 panels, top to bottom), because terrain shade creeps up from the bottom as the Sun's elevation changes. Each band is ~16 to 18 A at 315 V, ~5 to 5.7 kW.
+- **Protection:** a bypass diode every 17 cells and a blocking diode per string. The flat harness crosses each hinge in a loop sized for the fold.
+- **Output:** ~21.3 kW per pack at the converter input.
+  - **This is a margin item.** 16 packs then deliver ~335 kW at the bus, ~5% under the 350 kW headline.
+  - Closing the gap needs ~91% packing (larger or edge-trimmed cells), or slightly larger packs.
+
+**Pack converter** (in the pack head; ~8 kg plus a ~4 kg radiator)
+- **4 interleaved boost MPPT stages** (315 → 450 V, ~99.2%), one per band, feed a shared **450 V link**.
+- **Dual active bridge** (SiC, ~100 kHz). A planar transformer with **2 secondaries** feeds 2 bridges whose outputs are stacked: +500 V, midpoint, −500 V (~98.8%). The output is isolated from the cells, so the cell strings sit close to structure potential, which keeps arcing and charging stress low.
+- **Overall ~98%:** ~0.42 kW of loss and ~21 A out.
+- **Radiation derating:** every transistor sees ≤42% of its 1,200 V rating (450 V on the boost and primary, 500 V on each secondary). That is within the ≤50% guideline against single-event burnout from cosmic rays. This is the reason for the stacked secondaries rather than a single 1 kV bridge.
+- **Built for vacuum and cold:**
+  - film and ceramic capacitors only;
+  - the high-voltage transformer and bus bars potted in degassed silicone, with conformal coating elsewhere;
+  - vented through a dust labyrinth so outgassing cannot linger at corona-prone pressures.
+  - High voltage is enabled only after a vacuum hold at first deployment.
+- **Heat:** a **hinged radiator fin** on the back of the pack head (2.0 x 0.45 m, both faces, heat pipes from the cold plate) holds the plate at ~60 °C with margin (1.1 m² effective against 0.82 m² needed). The fin folds flat against the head for transport and in the tray.
+- **Keep-warm:** ~5 W per pack, drawn from the bus side when the array is dark. All 16 packs take 80 W from the base battery, inside its dark budget.
+- **Control:**
+  - MPPT per band;
+  - output **droop** so the 16 packs share the bus without talking to each other;
+  - a 25 A current limit and soft start;
+  - an ideal-diode output, so the pack can never draw from the bus.
+- **Protection:** an insulation monitor on the cell strings, series-arc detection (from the high-frequency signature), overvoltage clamps, and an output e-fuse at the hanger.
+- **Data:** telemetry and commands go by power-line communication on the bus pins, so no extra connector pins are needed.
+
+**Hanger connector**
+
+Each half is ~1.5 kg. The receptacle hangs under the hanger, facing down, 0.25 m off the hanger centre, clear of the rope sheaves. The plug sits on top of the pack head, facing up.
+
+- **5 pins, three lengths:**
+
+  | Pin | Length | Job |
+  |---|---|---|
+  | PE | Longest | Bonds the pack frame to the structure first, and breaks last |
+  | +500, −500 | Middle | Ø8 mm rhodium-plated pins in gold-plated multi-lam sockets: 30 A rated, ~21 A used, ~0.2 mΩ each. The dissimilar platings avoid cold welding in vacuum |
+  | Pilot x 2 | 4 mm shorter | Make last and break first. They close a loop that also runs through a switch on the latch lever |
+
+- **Spacing:** pins 40 mm apart, with a ribbed PEEK/alumina insulator giving ≥25 mm creepage.
+- **Float:** the receptacle sits on a compliant mount (±3 mm, ±1°). The cones and guide forks bring the plug to ±1 mm; the float takes the rest.
+- **Dust:**
+  - The receptacle's sliding shutter is pushed open by a boss on the plug as the cones engage.
+  - The plug's flip cover is cammed aside by the hanger.
+  - Both close by spring when apart, so the contacts are never open to dust, even in the tray.
+- **Mating force:** ~60 N, supplied by the reel hoist in the last 50 mm, at a 10 mm/s creep.
+
+**Interlock sequence** (the hanger e-fuse is the switch)
+1. **Hoisting in:** the forks square the head, the cones enter and the shutters open. PE touches first, then the power pins, then the pilots. The e-fuse is still **open**, so both sides of the power pins are dead.
+2. **Latching:** the bot closes the latch, which completes the pilot loop. The e-fuse pre-charges the converter's output (~100 ms soft start), then closes, and the converter starts MPPT.
+3. **Unlatching:** the first ~10° of latch-lever travel opens the pilot switch. The e-fuse opens in <1 ms and the converter stops. Only then does further lever travel free the hook.
+4. **Lowering:** the pack lifts 50 mm off the cones and the contacts part with no current. The pilots break first anyway: 4 mm of lead at 10 mm/s gives 0.4 s of margin.
+5. **Double check:** the bot also requests "pack off" through the controller before touching the lever, and checks the e-fuse state on its display.
+
 ## 6. Spares on site
 
-2 pivot wear cups, 1 pivot ball, 1 drive-unit cartridge, 1 torque limiter, 1 pin-ring segment, 2 enclosure panels (1 radiator, 1 plain), 1 lid segment, 2 slip-ring brush cartridges, 1 pack converter, 1 hanger connector, 4 e-fuses, 2 collar roller cartridges, 1 stay cable, 1 V-link with load pins, 1 tie with tensioner, 1 strut section, 4 concertina packs, 1 spare reel hoist and 2 spare ropes, spare fall-arrest trolleys, 2 cable cutters, 4 rope grabs, 1 spare rescue kit (2 rope-riding hooks, 2 edge rollers), 2 battery modules. A third service bot in reserve is worth considering.
+2 pivot wear cups, 1 pivot ball, 1 drive-unit cartridge, 1 torque limiter, 1 pin-ring segment, 2 enclosure panels (1 radiator, 1 plain), 1 lid segment, 2 slip-ring brush cartridges, 1 pack converter, 1 converter radiator fin, 1 hanger receptacle and 1 plug, 4 e-fuses, 2 collar roller cartridges, 1 stay cable, 1 V-link with load pins, 1 tie with tensioner, 1 strut section, 4 concertina packs, 1 spare reel hoist and 2 spare ropes, spare fall-arrest trolleys, 2 cable cutters, 4 rope grabs, 1 spare rescue kit (2 rope-riding hooks, 2 edge rollers), 2 battery modules. A third service bot in reserve is worth considering.
 
 ## 7. Installation equipment and sequence (human supervised)
 
@@ -794,7 +853,7 @@ At ~1 hour per 3 m section, the mast goes up in roughly **35 working hours** of 
 
 1. **Site illumination study** on LOLA data: sunlight hours vs array height at candidate spots; pick the height.
 2. Mast and tripod analysis: strut and mast buckling, pre-tension, thermal bow, moonquake response, every jack-up and scissor stage.
-3. Life tests in vacuum, thermal cycling and dust (LHS-1, NU-LHT simulants) for the collar cartridges and the base pivot: friction, wear rate with regolith simulant, and the wear-indicator layers. Thermal-vacuum test of the base enclosure with the slip ring under load at ±500 V with simulant dust (brush wear, contact drop, tracking); make-and-break tests of the hanger connector interlock; and a dual-drive torque-bias and mesh-release test.
+3. Life tests in vacuum, thermal cycling and dust (LHS-1, NU-LHT simulants) for the collar cartridges and the base pivot: friction, wear rate with regolith simulant, and the wear-indicator layers. Thermal-vacuum test of the base enclosure with the slip ring under load at ±500 V with simulant dust (brush wear, contact drop, tracking); make-and-break tests of the hanger connector interlock; a pack converter heavy-ion test (single-event burnout at the 42% derating) and a thermal-vacuum test with its radiator fin; a cell-packing study to close the ~5% gap to 350 kW; and a dual-drive torque-bias and mesh-release test.
 4. Prototype the jack-up with collars, the strut scissor and tie winches at small scale; rehearse with suited operators.
 5. Concertina pack trials: self-folding into a tray and unfolding on lift (fold direction, hinge springs, panel edge contact), cycles in vacuum and cold; lowering one pack past its neighbours.
 6. Confirm the actual lander's freight envelope and re-cut the parts list (section 10) to it; build and fold a flat-pack mast section and a tent-pole strut, and test their assembly with suited operators.

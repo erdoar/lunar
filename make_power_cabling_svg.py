@@ -1,4 +1,4 @@
-# Generates power-cabling.svg (rev 27): one-line diagram, slip-ring section, mast cable trays, hanger connector interlock.
+# Generates power-cabling.svg (rev 28): one-line diagram, slip-ring section, mast cable trays, hanger connector interlock.
 # Run: python3 make_power_cabling_svg.py
 from math import sqrt
 
@@ -157,13 +157,13 @@ A(f'<text x="{sx+100}" y="{sy+35}" font-size="10.5">clamps every 1.5 m</text><te
 hx, hy = 1040, 720
 A(f'<text x="{hx}" y="{hy}" font-size="12" font-weight="bold">Hanger connector</text>')
 A(f'<rect x="{hx}" y="{hy+12}" width="210" height="34" fill="#4a9" class="s"/><text x="{hx+105}" y="{hy+33}" text-anchor="middle" font-size="10.5" style="stroke:none">hanger socket (shutter)</text>')
-for j, (dx, col, h) in enumerate(((30, HV, 26), (70, HV, 26), (130, '#555', 18), (170, '#555', 18))):
+for j, (dx, col, h) in enumerate(((30, HV, 26), (70, HV, 26), (105, '#2e7d32', 32), (140, '#555', 18), (175, '#555', 18))):
     A(f'<rect x="{hx+dx-4}" y="{hy+46}" width="8" height="{h}" fill="{col}"/>')
 A(f'<rect x="{hx}" y="{hy+80}" width="210" height="26" fill="#e0a040" class="s"/><text x="{hx+105}" y="{hy+98}" text-anchor="middle" font-size="10.5" style="stroke:none">pack head plug</text>')
-A(f'<text x="{hx}" y="{hy+125}" font-size="10.5">2 power pins (30 A) · 2 shorter pilot pins:</text>')
-A(f'<text x="{hx}" y="{hy+139}" font-size="10.5">pilots make last, break first; the latch</text>')
-A(f'<text x="{hx}" y="{hy+153}" font-size="10.5">lever opens the pilot loop before the</text>')
-A(f'<text x="{hx}" y="{hy+167}" font-size="10.5">cones lift, so no contact ever moves</text>')
+A(f'<text x="{hx}" y="{hy+125}" font-size="10.5">PE longest · 2 power pins (30 A) · 2 short pilots:</text>')
+A(f'<text x="{hx}" y="{hy+139}" font-size="10.5">pilots make last, break first; the hanger</text>')
+A(f'<text x="{hx}" y="{hy+153}" font-size="10.5">e-fuse stays open until the latch closes</text>')
+A(f'<text x="{hx}" y="{hy+167}" font-size="10.5">the pilot loop, so no contact ever moves</text>')
 A(f'<text x="{hx}" y="{hy+181}" font-size="10.5">under load (DC arcs persist in vacuum).</text>')
 A(f'<text x="780" y="{hy+215}" font-size="11.5" font-weight="bold">Totals (power_cabling_check.py)</text>')
 for j, t in enumerate(['~95.7% of the cells\' DC reaches the fixed side', 'cables ~0.22 t with insulation, trays, feeder, fibre',

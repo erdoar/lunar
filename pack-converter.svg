@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 1000" font-family="Helvetica, Arial, sans-serif" font-size="12">
+<rect width="1300" height="1000" fill="#fff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker></defs>
+<style>.s{stroke:#222;stroke-width:1.3}.l{stroke:#555;stroke-width:1;fill:none}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:15px;font-weight:bold}</style>
+<text x="20" y="28" class="t">A. Pack converter (in the pack head): 4 MPPT bands → 450 V link → dual active bridge → ±500 V</text>
+<rect x="20" y="52" width="120" height="46" rx="4" fill="#dfe8f5" class="s"/>
+<text x="80.0" y="67" text-anchor="middle" font-size="10" style="stroke:none">Band 1 (top→bottom)</text>
+<text x="80.0" y="80" text-anchor="middle" font-size="10" style="stroke:none">8 panels, 18 A</text>
+<text x="80.0" y="93" text-anchor="middle" font-size="10" style="stroke:none">315 V, 2 strings/panel</text>
+<path d="M150 69 l10 6 l-10 6 z" fill="#222"/><line x1="160" y1="69" x2="160" y2="81" stroke="#222" stroke-width="2"/>
+<polyline points="140,75 175,75" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<rect x="175" y="58" width="110" height="34" rx="4" fill="#f4f6f8" class="s"/>
+<text x="230.0" y="73" text-anchor="middle" font-size="10" style="stroke:none">MPPT boost</text>
+<text x="230.0" y="86" text-anchor="middle" font-size="10" style="stroke:none">315 → 450 V</text>
+<polyline points="285,75 320,75" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<rect x="20" y="114" width="120" height="46" rx="4" fill="#dfe8f5" class="s"/>
+<text x="80.0" y="129" text-anchor="middle" font-size="10" style="stroke:none">Band 2</text>
+<text x="80.0" y="142" text-anchor="middle" font-size="10" style="stroke:none">8 panels, 18 A</text>
+<text x="80.0" y="155" text-anchor="middle" font-size="10" style="stroke:none">315 V, 2 strings/panel</text>
+<path d="M150 131 l10 6 l-10 6 z" fill="#222"/><line x1="160" y1="131" x2="160" y2="143" stroke="#222" stroke-width="2"/>
+<polyline points="140,137 175,137" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<rect x="175" y="120" width="110" height="34" rx="4" fill="#f4f6f8" class="s"/>
+<text x="230.0" y="135" text-anchor="middle" font-size="10" style="stroke:none">MPPT boost</text>
+<text x="230.0" y="148" text-anchor="middle" font-size="10" style="stroke:none">315 → 450 V</text>
+<polyline points="285,137 320,137" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<rect x="20" y="176" width="120" height="46" rx="4" fill="#dfe8f5" class="s"/>
+<text x="80.0" y="191" text-anchor="middle" font-size="10" style="stroke:none">Band 3</text>
+<text x="80.0" y="204" text-anchor="middle" font-size="10" style="stroke:none">7 panels, 16 A</text>
+<text x="80.0" y="217" text-anchor="middle" font-size="10" style="stroke:none">315 V, 2 strings/panel</text>
+<path d="M150 193 l10 6 l-10 6 z" fill="#222"/><line x1="160" y1="193" x2="160" y2="205" stroke="#222" stroke-width="2"/>
+<polyline points="140,199 175,199" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<rect x="175" y="182" width="110" height="34" rx="4" fill="#f4f6f8" class="s"/>
+<text x="230.0" y="197" text-anchor="middle" font-size="10" style="stroke:none">MPPT boost</text>
+<text x="230.0" y="210" text-anchor="middle" font-size="10" style="stroke:none">315 → 450 V</text>
+<polyline points="285,199 320,199" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<rect x="20" y="238" width="120" height="46" rx="4" fill="#dfe8f5" class="s"/>
+<text x="80.0" y="253" text-anchor="middle" font-size="10" style="stroke:none">Band 4</text>
+<text x="80.0" y="266" text-anchor="middle" font-size="10" style="stroke:none">7 panels, 16 A</text>
+<text x="80.0" y="279" text-anchor="middle" font-size="10" style="stroke:none">315 V, 2 strings/panel</text>
+<path d="M150 255 l10 6 l-10 6 z" fill="#222"/><line x1="160" y1="255" x2="160" y2="267" stroke="#222" stroke-width="2"/>
+<polyline points="140,261 175,261" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<rect x="175" y="244" width="110" height="34" rx="4" fill="#f4f6f8" class="s"/>
+<text x="230.0" y="259" text-anchor="middle" font-size="10" style="stroke:none">MPPT boost</text>
+<text x="230.0" y="272" text-anchor="middle" font-size="10" style="stroke:none">315 → 450 V</text>
+<polyline points="285,261 320,261" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<polyline points="320,75 320,263" fill="none" stroke="#c0392b" stroke-width="5"/>
+<text x="326" y="290" font-size="10.5">450 V link</text>
+<polyline points="320,170 360,170" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<rect x="360" y="140" width="100" height="60" rx="4" fill="#f4f6f8" class="s"/>
+<text x="410.0" y="155" text-anchor="middle" font-size="10" style="stroke:none">Primary bridge</text>
+<text x="410.0" y="168" text-anchor="middle" font-size="10" style="stroke:none">SiC 1200 V</text>
+<text x="410.0" y="181" text-anchor="middle" font-size="10" style="stroke:none">(38% of rating)</text>
+<polyline points="460,170 490,170" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<rect x="490" y="120" width="70" height="100" rx="6" fill="#fff" class="s"/>
+<path d="M500 135 q6 -8 12 0 q6 -8 12 0 q6 -8 12 0 q6 -8 12 0" fill="none" stroke="#b87333" stroke-width="2"/>
+<path d="M500 185 q6 -8 12 0 q6 -8 12 0 q6 -8 12 0 q6 -8 12 0" fill="none" stroke="#b87333" stroke-width="2"/>
+<text x="525" y="232" text-anchor="middle" font-size="10">planar transformer</text><text x="525" y="245" text-anchor="middle" font-size="10">~100 kHz, 2 secondaries</text>
+<polyline points="560,140 590,140" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<rect x="590" y="100" width="100" height="60" rx="4" fill="#f4f6f8" class="s"/>
+<text x="640.0" y="115" text-anchor="middle" font-size="10" style="stroke:none">Sec. bridge +</text>
+<text x="640.0" y="128" text-anchor="middle" font-size="10" style="stroke:none">SiC 1200 V</text>
+<text x="640.0" y="141" text-anchor="middle" font-size="10" style="stroke:none">500 V (42%)</text>
+<polyline points="560,195 590,195" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<rect x="590" y="190" width="100" height="60" rx="4" fill="#f4f6f8" class="s"/>
+<text x="640.0" y="205" text-anchor="middle" font-size="10" style="stroke:none">Sec. bridge −</text>
+<text x="640.0" y="218" text-anchor="middle" font-size="10" style="stroke:none">SiC 1200 V</text>
+<text x="640.0" y="231" text-anchor="middle" font-size="10" style="stroke:none">500 V (42%)</text>
+<polyline points="690,130 740,130" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<polyline points="690,220 740,220" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<polyline points="690,160 715,160 715,190 690,190" fill="none" stroke="#555" stroke-width="2"/>
+<text x="745" y="126" font-size="11" font-weight="bold" fill="#c0392b">+500</text><text x="745" y="178" font-size="11">mid</text><text x="745" y="226" font-size="11" font-weight="bold" fill="#c0392b">−500</text>
+<polyline points="715,175 740,175" fill="none" stroke="#555" stroke-width="2"/>
+<rect x="790" y="120" width="120" height="110" rx="4" fill="#f4f6f8" class="s"/>
+<text x="850.0" y="135" text-anchor="middle" font-size="10" style="stroke:none">Output stage</text>
+<text x="850.0" y="148" text-anchor="middle" font-size="10" style="stroke:none">ideal diode (no</text>
+<text x="850.0" y="161" text-anchor="middle" font-size="10" style="stroke:none">backfeed), filter,</text>
+<text x="850.0" y="174" text-anchor="middle" font-size="10" style="stroke:none">current limit 25 A,</text>
+<text x="850.0" y="187" text-anchor="middle" font-size="10" style="stroke:none">droop sharing</text>
+<text x="850.0" y="200" text-anchor="middle" font-size="10" style="stroke:none">soft start</text>
+<polyline points="910,175 950,175" fill="none" stroke="#c0392b" stroke-width="4"/>
+<rect x="950" y="140" width="80" height="70" rx="4" fill="#fdebd0" class="s"/>
+<text x="990.0" y="155" text-anchor="middle" font-size="10" style="stroke:none">Plug</text>
+<text x="990.0" y="168" text-anchor="middle" font-size="10" style="stroke:none">5 pins</text>
+<text x="990.0" y="181" text-anchor="middle" font-size="10" style="stroke:none">(pack head)</text>
+<polyline points="1030,175 1060,175" fill="none" stroke="#c0392b" stroke-width="4"/>
+<rect x="1060" y="140" width="90" height="70" rx="4" fill="#d5f5e3" class="s"/>
+<text x="1105.0" y="155" text-anchor="middle" font-size="10" style="stroke:none">Receptacle</text>
+<text x="1105.0" y="168" text-anchor="middle" font-size="10" style="stroke:none">+ e-fuse</text>
+<text x="1105.0" y="181" text-anchor="middle" font-size="10" style="stroke:none">(hanger)</text>
+<polyline points="1150,175 1270,175" fill="none" stroke="#c0392b" stroke-width="5"/>
+<text x="1160" y="168" font-size="10.5">yard bus ±500 V</text>
+<rect x="360" y="290" width="560" height="92" rx="4" fill="#fff" class="s"/>
+<text x="640.0" y="305" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">Controller (rad-tolerant MCU + FPGA watchdog)</text>
+<text x="640.0" y="318" text-anchor="middle" font-size="10.5" style="stroke:none">MPPT x 4 bands · droop + current limit · soft start · power-line modem on the bus pins (telemetry, commands)</text>
+<text x="640.0" y="331" text-anchor="middle" font-size="10.5" style="stroke:none">insulation monitor on the cell strings · series-arc detector · overvoltage clamps · temperatures</text>
+<text x="640.0" y="344" text-anchor="middle" font-size="10.5" style="stroke:none">enable only when the pilot loop is closed · keep-warm ~5 W from the bus when the array is dark</text>
+<path d="M640 290 V230" class="l" stroke-dasharray="3 3"/>
+<rect x="950" y="290" width="200" height="92" rx="4" fill="#eaf2f8" class="s"/>
+<text x="1050.0" y="305" text-anchor="middle" font-size="10.5" style="stroke:none">Cold plate → heat pipes</text>
+<text x="1050.0" y="318" text-anchor="middle" font-size="10.5" style="stroke:none">→ hinged radiator fin</text>
+<text x="1050.0" y="331" text-anchor="middle" font-size="10.5" style="stroke:none">2.0 x 0.45 m, both faces</text>
+<text x="1050.0" y="344" text-anchor="middle" font-size="10.5" style="stroke:none">~0.42 kW at ~60 °C</text>
+<text x="20" y="320" font-size="11">Cells ~30 °C (radiating both faces)</text><text x="20" y="335" font-size="11">8 x 8 cm triple junction, 136 per string</text><text x="20" y="350" font-size="11">bypass diode per 17 cells, blocking</text><text x="20" y="365" font-size="11">diode per string; ~21.3 kW per pack</text><text x="20" y="380" font-size="11" font-weight="bold">Overall ~98%, ~21 A out</text>
+<text x="20" y="430" class="t">B. Pack head: front view and side section</text>
+<rect x="79.5" y="490" width="441.0" height="14" fill="#4a9" class="s"/>
+<rect x="334.5" y="504" width="36" height="14" fill="#d5f5e3" class="s"/>
+<rect x="90.0" y="530" width="420.0" height="34" fill="#e0a040" class="s"/>
+<path d="M186.0 530 l9 -14 l9 14 z" fill="#e0a040" stroke="#222"/>
+<path d="M396.0 530 l9 -14 l9 14 z" fill="#e0a040" stroke="#222"/>
+<rect x="80.79999999999998" y="512" width="10" height="18" fill="#e0a040" stroke="#222"/>
+<rect x="509.20000000000005" y="512" width="10" height="18" fill="#e0a040" stroke="#222"/>
+<circle cx="132.0" cy="524" r="6" fill="#fff" stroke="#222" stroke-width="2"/>
+<circle cx="468.0" cy="524" r="6" fill="#fff" stroke="#222" stroke-width="2"/>
+<circle cx="161.4" cy="525" r="4.5" fill="#fff" stroke="#c0392b" stroke-width="2"/>
+<circle cx="438.6" cy="525" r="4.5" fill="#fff" stroke="#c0392b" stroke-width="2"/>
+<rect x="338.5" y="518" width="28" height="12" fill="#fdebd0" class="s"/>
+<rect x="237.0" y="534" width="94.5" height="26" fill="#7fa3d6" class="s"/>
+<rect x="90.0" y="564" width="420.0" height="120" fill="#2c4a7a" opacity="0.9"/>
+<line x1="90.0" y1="594" x2="510.0" y2="594" stroke="#7fa3d6"/>
+<line x1="90.0" y1="624" x2="510.0" y2="624" stroke="#7fa3d6"/>
+<line x1="90.0" y1="654" x2="510.0" y2="654" stroke="#7fa3d6"/>
+<path d="M96.30000000000001 680 V566 M503.7 680 V566" stroke="#f2c94c" stroke-width="3" stroke-dasharray="6 3"/>
+<path d="M86 512L60 462" class="l"/><circle cx="60" cy="462" r="9" fill="#fff" stroke="#222"/><text x="60" y="466" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">1</text>
+<path d="M132 524L100 462" class="l"/><circle cx="100" cy="462" r="9" fill="#fff" stroke="#222"/><text x="100" y="466" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">2</text>
+<path d="M161 525L140 462" class="l"/><circle cx="140" cy="462" r="9" fill="#fff" stroke="#222"/><text x="140" y="466" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">3</text>
+<path d="M195 516L180 462" class="l"/><circle cx="180" cy="462" r="9" fill="#fff" stroke="#222"/><text x="180" y="466" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">4</text>
+<path d="M352 518L350 462" class="l"/><circle cx="350" cy="462" r="9" fill="#fff" stroke="#222"/><text x="350" y="466" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">5</text>
+<path d="M504 620L540 620" class="l"/><circle cx="540" cy="620" r="9" fill="#fff" stroke="#222"/><text x="540" y="624" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">6</text>
+<path d="M284 547L260 462" class="l"/><circle cx="260" cy="462" r="9" fill="#fff" stroke="#222"/><text x="260" y="466" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">7</text>
+<text x="20" y="720" font-size="10.5">1 end tab (into the guide fork) · 2 lifting eye · 3 rescue eye · 4 cone (2) · 5 plug, facing up under the receptacle</text>
+<text x="20" y="735" font-size="10.5">6 band harnesses down both edges · 7 converter (~8 kg) on the cold plate</text>
+<text x="90.0" y="702" font-size="10.5">2.0 m wide; panels hang below (30 x 1 m)</text>
+<text x="650" y="458" font-size="12" font-weight="bold">Side section</text>
+<rect x="650" y="480" width="80" height="14" fill="#4a9" class="s"/>
+<rect x="670" y="520" width="40" height="34" fill="#e0a040" class="s"/>
+<rect x="676" y="525" width="22" height="24" fill="#7fa3d6" class="s"/>
+<rect x="684" y="554" width="12" height="120" fill="#2c4a7a"/>
+<line x1="710" y1="528" x2="792.215" y2="575.25" stroke="#9ec9e8" stroke-width="6"/>
+<circle cx="710" cy="528" r="4" fill="#fff" stroke="#222"/>
+<line x1="710" y1="528" x2="714" y2="490" stroke="#9ec9e8" stroke-width="3" stroke-dasharray="3 3"/>
+<path d="M610 540 H660" stroke="#f5b700" stroke-width="2" marker-end="url(#ar)"/><text x="608" y="536" font-size="10" text-anchor="end">Sun</text>
+<text x="740" y="595" font-size="10.5">radiator fin, hinged,</text><text x="740" y="609" font-size="10.5">30° down-back (anti-Sun);</text><text x="740" y="623" font-size="10.5">folds flat (dashed) for</text><text x="740" y="637" font-size="10.5">transport and the tray</text>
+<text x="860" y="430" class="t">C. Hanger connector (section)</text>
+<rect x="870" y="470" width="220" height="16" fill="#4a9" class="s"/><text x="980" y="482" text-anchor="middle" font-size="10" style="stroke:none">hanger plate</text>
+<path d="M881,486 889,490 881,494 889,498 881,502 889,506" fill="none" stroke="#555" stroke-width="1.5"/>
+<path d="M1071,486 1079,490 1071,494 1079,498 1071,502 1079,506" fill="none" stroke="#555" stroke-width="1.5"/>
+<rect x="880" y="506" width="200" height="50" fill="#d5f5e3" class="s"/><text x="1084" y="520" font-size="10">receptacle on</text><text x="1084" y="533" font-size="10">float (±3 mm, ±1°)</text>
+<rect x="880" y="556" width="120" height="6" fill="#888"/><text x="1084" y="560" font-size="10">sliding shutter (open)</text>
+<rect x="903" y="514" width="14" height="36" fill="#fff" stroke="#222"/>
+<rect x="906" y="550" width="8" height="70" fill="#c0392b"/>
+<text x="910" y="670" text-anchor="middle" font-size="9.5">power +</text>
+<rect x="938" y="514" width="14" height="36" fill="#fff" stroke="#222"/>
+<rect x="941" y="550" width="8" height="70" fill="#c0392b"/>
+<text x="945" y="670" text-anchor="middle" font-size="9.5">power −</text>
+<rect x="973" y="514" width="14" height="36" fill="#fff" stroke="#222"/>
+<rect x="976" y="542" width="8" height="78" fill="#2e7d32"/>
+<text x="980" y="670" text-anchor="middle" font-size="9.5">PE</text>
+<rect x="1008" y="514" width="14" height="36" fill="#fff" stroke="#222"/>
+<rect x="1011" y="554" width="8" height="66" fill="#555"/>
+<text x="1015" y="670" text-anchor="middle" font-size="9.5">pilot</text>
+<rect x="1043" y="514" width="14" height="36" fill="#fff" stroke="#222"/>
+<rect x="1046" y="554" width="8" height="66" fill="#555"/>
+<text x="1050" y="670" text-anchor="middle" font-size="9.5">pilot</text>
+<rect x="880" y="620" width="200" height="34" fill="#fdebd0" class="s"/><text x="980" y="642" text-anchor="middle" font-size="10" style="stroke:none">plug on the pack head</text>
+<path d="M1080 620 l20 -16" stroke="#888" stroke-width="4"/><text x="1104" y="606" font-size="10">flip cover (cammed aside)</text>
+<text x="1084" y="580" font-size="10">PE longest; pilots</text><text x="1084" y="593" font-size="10">4 mm shorter</text>
+<text x="870" y="695" font-size="10.5">Ø8 mm rhodium pins in gold multi-lam sockets: 30 A rated, ~21 A used,</text><text x="870" y="709" font-size="10.5">~0.2 mΩ; 40 mm pitch, ribbed PEEK/alumina, ≥25 mm creepage; ~60 N to mate</text>
+<text x="20" y="760" class="t">D. Interlock: the hanger e-fuse is the switch</text>
+<text x="20" y="785" font-weight="bold" font-size="11.5">Step</text>
+<text x="230" y="785" font-weight="bold" font-size="11.5">PE</text>
+<text x="330" y="785" font-weight="bold" font-size="11.5">± pins</text>
+<text x="450" y="785" font-weight="bold" font-size="11.5">Pilots</text>
+<text x="560" y="785" font-weight="bold" font-size="11.5">Latch</text>
+<text x="660" y="785" font-weight="bold" font-size="11.5">E-fuse</text>
+<text x="800" y="785" font-weight="bold" font-size="11.5">Converter</text>
+<rect x="15" y="793" width="890" height="22" fill="#fff"/>
+<text x="20" y="808" font-size="11" fill="#222">1 Hoisting: cones enter</text>
+<text x="230" y="808" font-size="11" fill="#222">made</text>
+<text x="330" y="808" font-size="11" fill="#222">made (dead)</text>
+<text x="450" y="808" font-size="11" fill="#222">made</text>
+<text x="560" y="808" font-size="11" fill="#222">open</text>
+<text x="660" y="808" font-size="11" fill="#2e7d32">OPEN</text>
+<text x="800" y="808" font-size="11" fill="#222">off</text>
+<rect x="15" y="817" width="890" height="22" fill="#f7f9fb"/>
+<text x="20" y="832" font-size="11" fill="#222">2 Bot closes the latch</text>
+<text x="230" y="832" font-size="11" fill="#222">made</text>
+<text x="330" y="832" font-size="11" fill="#222">made</text>
+<text x="450" y="832" font-size="11" fill="#222">made</text>
+<text x="560" y="832" font-size="11" fill="#222">closed</text>
+<text x="660" y="832" font-size="11" fill="#c0392b">pre-charge → ON</text>
+<text x="800" y="832" font-size="11" fill="#222">MPPT</text>
+<rect x="15" y="841" width="890" height="22" fill="#fff"/>
+<text x="20" y="856" font-size="11" fill="#222">3 Lever first ~10°</text>
+<text x="230" y="856" font-size="11" fill="#222">made</text>
+<text x="330" y="856" font-size="11" fill="#222">made</text>
+<text x="450" y="856" font-size="11" fill="#222">loop open</text>
+<text x="560" y="856" font-size="11" fill="#222">closing...</text>
+<text x="660" y="856" font-size="11" fill="#2e7d32">OPEN &lt;1 ms</text>
+<text x="800" y="856" font-size="11" fill="#222">stops</text>
+<rect x="15" y="865" width="890" height="22" fill="#f7f9fb"/>
+<text x="20" y="880" font-size="11" fill="#222">4 Lever on: hook frees</text>
+<text x="230" y="880" font-size="11" fill="#222">made</text>
+<text x="330" y="880" font-size="11" fill="#222">made (dead)</text>
+<text x="450" y="880" font-size="11" fill="#222">loop open</text>
+<text x="560" y="880" font-size="11" fill="#222">open</text>
+<text x="660" y="880" font-size="11" fill="#2e7d32">OPEN</text>
+<text x="800" y="880" font-size="11" fill="#222">off</text>
+<rect x="15" y="889" width="890" height="22" fill="#fff"/>
+<text x="20" y="904" font-size="11" fill="#222">5 Lift 50 mm, lower</text>
+<text x="230" y="904" font-size="11" fill="#222">breaks last</text>
+<text x="330" y="904" font-size="11" fill="#222">part, no current</text>
+<text x="450" y="904" font-size="11" fill="#222">break first</text>
+<text x="560" y="904" font-size="11" fill="#222">open</text>
+<text x="660" y="904" font-size="11" fill="#2e7d32">OPEN</text>
+<text x="800" y="904" font-size="11" fill="#222">off</text>
+<text x="20" y="948" font-size="11">The bot also commands "pack off" and checks the e-fuse state before touching the lever. Contacts only ever move dead,</text><text x="20" y="963" font-size="11">so no DC arc can strike in vacuum. Pilot lead 4 mm at the 10 mm/s final creep = 0.4 s of margin.</text>
+<text x="930" y="800" font-size="12" font-weight="bold">Numbers (pack_converter_check.py)</text>
+<text x="930" y="820" font-size="11">~21.3 kW in, ~98%, ~0.42 kW of heat</text>
+<text x="930" y="837" font-size="11">SiC at 38–42% of 1,200 V (SEB derating)</text>
+<text x="930" y="854" font-size="11">radiator 1.1 m² effective (0.82 needed)</text>
+<text x="930" y="871" font-size="11">keep-warm 5 W/pack, 80 W total</text>
+<text x="930" y="888" font-size="11">connector loss ~0.2 W; mate ~60 N</text>
+<text x="930" y="905" font-size="11">16 packs ≈ 335 kW at the bus (margin item)</text>
+</svg>
