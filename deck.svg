@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 680" font-family="Helvetica, Arial, sans-serif" font-size="12">
+<rect width="1240" height="680" fill="#fff"/>
+<defs><pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#a08c6c"/></pattern><pattern id="gr" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 0H6M0 0V6" stroke="#9aa" stroke-width="0.8"/></pattern></defs>
+<style>.s{stroke:#222;stroke-width:1.5}.l{stroke:#555;stroke-width:1;fill:none}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:15px;font-weight:bold}</style>
+<text x="20" y="30" class="t">Plan</text>
+<circle cx="300" cy="300" r="216" fill="none" stroke="#c0392b" stroke-width="5"/>
+<circle cx="300" cy="300" r="216" fill="none" stroke="#9fb4c7" stroke-width="14" opacity="0.8"/>
+<circle cx="300" cy="300" r="180.0" fill="none" stroke="url(#gr)" stroke-width="36.0"/>
+<line x1="300" y1="300" x2="300.0" y2="84.0" stroke="#c87f0a" stroke-width="9"/>
+<rect x="288.0" y="72.0" width="24" height="24" fill="#e0a040" class="s"/>
+<line x1="353.3" y1="101.0" x2="358.5" y2="81.7" stroke="#222" stroke-width="1.2"/>
+<line x1="300" y1="300" x2="408.0" y2="112.9" stroke="#888" stroke-width="3"/>
+<line x1="445.7" y1="154.3" x2="459.8" y2="140.2" stroke="#222" stroke-width="1.2"/>
+<line x1="300" y1="300" x2="487.1" y2="192.0" stroke="#888" stroke-width="3"/>
+<line x1="499.0" y1="246.7" x2="518.3" y2="241.5" stroke="#222" stroke-width="1.2"/>
+<line x1="300" y1="300" x2="516.0" y2="300.0" stroke="#888" stroke-width="3"/>
+<line x1="499.0" y1="353.3" x2="518.3" y2="358.5" stroke="#222" stroke-width="1.2"/>
+<line x1="300" y1="300" x2="487.1" y2="408.0" stroke="#c87f0a" stroke-width="9"/>
+<rect x="475.1" y="396.0" width="24" height="24" fill="#e0a040" class="s"/>
+<line x1="445.7" y1="445.7" x2="459.8" y2="459.8" stroke="#222" stroke-width="1.2"/>
+<line x1="300" y1="300" x2="408.0" y2="487.1" stroke="#888" stroke-width="3"/>
+<line x1="353.3" y1="499.0" x2="358.5" y2="518.3" stroke="#222" stroke-width="1.2"/>
+<line x1="300" y1="300" x2="300.0" y2="516.0" stroke="#888" stroke-width="3"/>
+<line x1="246.7" y1="499.0" x2="241.5" y2="518.3" stroke="#222" stroke-width="1.2"/>
+<line x1="300" y1="300" x2="192.0" y2="487.1" stroke="#888" stroke-width="3"/>
+<line x1="154.3" y1="445.7" x2="140.2" y2="459.8" stroke="#222" stroke-width="1.2"/>
+<line x1="300" y1="300" x2="112.9" y2="408.0" stroke="#c87f0a" stroke-width="9"/>
+<rect x="100.9" y="396.0" width="24" height="24" fill="#e0a040" class="s"/>
+<line x1="101.0" y1="353.3" x2="81.7" y2="358.5" stroke="#222" stroke-width="1.2"/>
+<line x1="300" y1="300" x2="84.0" y2="300.0" stroke="#888" stroke-width="3"/>
+<line x1="101.0" y1="246.7" x2="81.7" y2="241.5" stroke="#222" stroke-width="1.2"/>
+<line x1="300" y1="300" x2="112.9" y2="192.0" stroke="#888" stroke-width="3"/>
+<line x1="154.3" y1="154.3" x2="140.2" y2="140.2" stroke="#222" stroke-width="1.2"/>
+<line x1="300" y1="300" x2="192.0" y2="112.9" stroke="#888" stroke-width="3"/>
+<line x1="246.7" y1="101.0" x2="241.5" y2="81.7" stroke="#222" stroke-width="1.2"/>
+<line x1="336.0" y1="237.6" x2="408.0" y2="112.9" stroke="#7d8790" stroke-width="12" opacity="0.7"/>
+<line x1="264.0" y1="362.4" x2="192.0" y2="487.1" stroke="#7d8790" stroke-width="12" opacity="0.7"/>
+<circle cx="300" cy="300" r="28.8" fill="#cfd8e3" class="s"/>
+<polygon points="300.0,270.8 325.3,314.6 274.7,314.6" fill="none" stroke="#555" stroke-width="3"/>
+<rect x="343.2" y="318.0" width="57.6" height="32.4" fill="#7fa3d6" class="s"/>
+<rect x="199.2" y="321.6" width="43.199999999999996" height="28.8" fill="#bfa6d9" class="s"/>
+<rect x="255.0" y="255.0" width="90.0" height="90.0" fill="none" stroke="#2e7d32" stroke-width="2" stroke-dasharray="6 3"/>
+<path d="M312 84L342 74" class="l"/><circle cx="342" cy="74" r="10" fill="#fff" stroke="#222"/><text x="342" y="78" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">1</text>
+<path d="M425 372L455 397" class="l"/><circle cx="455" cy="397" r="10" fill="#fff" stroke="#222"/><text x="455" y="401" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">2</text>
+<path d="M440 219L470 199" class="l"/><circle cx="470" cy="199" r="10" fill="#fff" stroke="#222"/><text x="470" y="203" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">3</text>
+<path d="M106 192L81 172" class="l"/><circle cx="81" cy="172" r="10" fill="#fff" stroke="#222"/><text x="81" y="176" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">4</text>
+<path d="M347 474L367 504" class="l"/><circle cx="367" cy="504" r="10" fill="#fff" stroke="#222"/><text x="367" y="508" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">5</text>
+<path d="M228 425L198 450" class="l"/><circle cx="198" cy="450" r="10" fill="#fff" stroke="#222"/><text x="198" y="454" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">6</text>
+<path d="M401 334L431 364" class="l"/><circle cx="431" cy="364" r="10" fill="#fff" stroke="#222"/><text x="431" y="368" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">7</text>
+<path d="M199 336L169 366" class="l"/><circle cx="169" cy="366" r="10" fill="#fff" stroke="#222"/><text x="169" y="370" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">8</text>
+<path d="M318 278L358 228" class="l"/><circle cx="358" cy="228" r="10" fill="#fff" stroke="#222"/><text x="358" y="232" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">9</text>
+<path d="M255 255L225 225" class="l"/><circle cx="225" cy="225" r="10" fill="#fff" stroke="#222"/><text x="225" y="229" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">10</text>
+<circle cx="30" cy="556" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="30" y="560" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">1</text>
+<text x="43" y="560" font-size="11.5">Bogie under each main spoke (x3)</text>
+<circle cx="30" cy="575" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="30" y="579" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">2</text>
+<text x="43" y="579" font-size="11.5">Main spoke: ~1 m deep truss (x3)</text>
+<circle cx="30" cy="594" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="30" y="598" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">3</text>
+<text x="43" y="598" font-size="11.5">Light spoke (x9)</text>
+<circle cx="30" cy="613" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="30" y="617" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">4</text>
+<text x="43" y="617" font-size="11.5">Ring girder over the rail (12 segments) + dust skirt</text>
+<circle cx="30" cy="632" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="30" y="636" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">5</text>
+<text x="43" y="636" font-size="11.5">Walkway grating ring</text>
+<circle cx="330" cy="556" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="330" y="560" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">6</text>
+<text x="343" y="560" font-size="11.5">Inboard landing-tray strip (maintenance azimuth)</text>
+<circle cx="330" cy="575" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="330" y="579" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">7</text>
+<text x="343" y="579" font-size="11.5">Panel elevation winch + 4 trim sheaves</text>
+<circle cx="330" cy="594" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="330" y="598" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">8</text>
+<text x="343" y="598" font-size="11.5">Power conditioning (to the slip ring)</text>
+<circle cx="330" cy="613" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="330" y="617" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">9</text>
+<text x="343" y="617" font-size="11.5">Hub: mast-foot seat on top, kingpin + slip ring below</text>
+<circle cx="330" cy="632" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="330" y="636" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">10</text>
+<text x="343" y="636" font-size="11.5">Jack frame (erection) / base maintenance frame</text>
+<text x="700" y="30" class="t">Section through the hub and a main spoke</text>
+<rect x="738.0" y="530" width="420" height="40" fill="url(#g)"/><line x1="738.0" y1="530" x2="1158.0" y2="530" stroke="#222"/>
+<rect x="1128" y="500" width="24" height="30" fill="#ccc" class="s"/><rect x="1124" y="488" width="32" height="12" fill="#7d8790" class="s"/><rect x="1124" y="484" width="32" height="5" fill="#c0392b"/>
+<circle cx="1140" cy="472" r="12" fill="#bbb" class="s"/>
+<rect x="1118" y="446.0" width="44" height="16" fill="#e0a040" class="s"/>
+<rect x="750.0" y="500" width="60.0" height="30" fill="#ccc" class="s"/>
+<rect x="744.0" y="452.0" width="72.0" height="12" fill="#4a9" class="s"/>
+<rect x="732.0" y="392.0" width="96.0" height="48.0" fill="#cfd8e3" class="s"/>
+<path d="M759.0 392.0 A21.0 12.0 0 0 1 801.0 392.0" fill="#e0a040" class="s"/>
+<line x1="828.0" y1="392.0" x2="1140" y2="392.0" stroke="#c87f0a" stroke-width="5"/>
+<line x1="828.0" y1="452.0" x2="1140" y2="452.0" stroke="#c87f0a" stroke-width="5"/>
+<line x1="828.0" y1="392.0" x2="853.8" y2="452.0" stroke="#c87f0a" stroke-width="2"/>
+<line x1="880.2" y1="392.0" x2="906.0" y2="452.0" stroke="#c87f0a" stroke-width="2"/>
+<line x1="932.4" y1="392.0" x2="958.2" y2="452.0" stroke="#c87f0a" stroke-width="2"/>
+<line x1="984.6" y1="392.0" x2="1010.4" y2="452.0" stroke="#c87f0a" stroke-width="2"/>
+<line x1="1036.8" y1="392.0" x2="1062.6" y2="452.0" stroke="#c87f0a" stroke-width="2"/>
+<line x1="1089.0" y1="392.0" x2="1114.8" y2="452.0" stroke="#c87f0a" stroke-width="2"/>
+<rect x="828.0" y="386.0" width="312.0" height="6" fill="url(#gr)" stroke="#999"/>
+<rect x="738.0" y="230" width="84.0" height="156.0" fill="none" stroke="#888" stroke-width="3"/>
+<path d="M738.0 386.0 L780 388.8 L822.0 386.0" fill="none" stroke="#555" stroke-width="3"/>
+<rect x="820.0" y="344.0" width="6" height="30.0" fill="#fff" stroke="#c0392b" stroke-width="2"/>
+<path d="M876.0 386.0 L825.0 350.0 L780 332.0 V230" fill="none" stroke="#c0392b" stroke-width="2"/>
+<circle cx="825.0" cy="350.0" r="5" fill="#fff" class="s"/>
+<rect x="858.0" y="365.0" width="54.0" height="25.2" fill="#7fa3d6" class="s"/>
+<path d="M780 390L720 314" class="l"/>
+<text x="716" y="318" text-anchor="end">Mast-foot spherical</text>
+<text x="716" y="332" text-anchor="end">seat, ~9 kN</text>
+<path d="M744 455L720 434" class="l"/>
+<text x="716" y="438" text-anchor="end">Kingpin slewing ring</text>
+<text x="716" y="452" text-anchor="end">+ slip ring (centring only)</text>
+<path d="M978 422L924 518" class="l"/>
+<text x="928" y="522" text-anchor="start">Main spoke truss, ~1 m deep</text>
+<text x="928" y="536" text-anchor="start">(~18 kN chord force)</text>
+<path d="M885 377L936 314" class="l"/>
+<text x="940" y="318" text-anchor="start">Winch</text>
+<path d="M825 350L936 284" class="l"/>
+<text x="940" y="288" text-anchor="start">Halyards enter via a side</text>
+<text x="940" y="302" text-anchor="start">window + deflection sheave</text>
+<path d="M1140 452L1134 332" class="l"/>
+<text x="1130" y="336" text-anchor="end">Bogie pivot (~6 kN)</text>
+<path d="M1020 389L1056 344" class="l"/>
+<text x="1060" y="348" text-anchor="start">Grating, deck top ~1.4 m</text>
+<text x="20" y="666" font-size="12">Deck ~2.5 t: hub 0.30, main spokes 0.72, light spokes 0.54, ring girder 0.57, gratings 0.24, skirt/trays/mounts 0.15 t. All parts fit the 3.2 x 1.5 x 1.5 m freight module.</text>
+</svg>

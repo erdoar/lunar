@@ -1,4 +1,4 @@
-# Lunar polar rotating solar platform: concept design (rev 17, tall mast on a strut tripod)
+# Lunar polar rotating solar platform: concept design (rev 18, tall mast on a strut tripod)
 
 A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
@@ -19,7 +19,8 @@ A small turntable on a circular rail that turns a very tall mast, with the solar
 - Rev 14: the torque arms, Y-bridles, knees and crown ring are all removed. Each bracing plane now has **one stay cable** from the foot to the apex of a **V-link**: a flat V-plate hinged on **two close pins** on the upper collar. The V-link only spreads and levers the cable's sideways (twisting) pull into a couple on those two pins. It has no other bracing, and with the cable slack it hangs straight down under gravity. Collar twist is limited by a **collar-torque interlock** on the drive.
 - Rev 15: the Roman-blind cords and per-pack hoists are removed. **Both wings are lowered together** on their halyards. Each pack lands in a **landing tray** and folds itself up as the top bar comes down, which brings every pack attachment to working height for replacement. Raising unfolds the packs again. One winch drives all 4 halyards, so the wings can't move out of step.
 - Rev 16: **transport packaging and erection** (section 10). Every part is cut down to fit a **3.2 x 1.5 x 1.5 m freight module**. The mast becomes **flat-pack lattice sections**, the struts become **tent-pole segments**, and the deck becomes a 12-segment ring with spokes. Erection is base jack-up with the top weight kept to ~1 t.
-- **Rev 17 (this):** **detailed top yard** (section 4a): yard truss, an 8 m masthead (the mast becomes 108 m), topping lifts, braces, halyard sheaves and routing, **docking latches** that take the wings' weight off the halyards, and the **panel elevation winch** (one motor, linked traction sheaves).
+- Rev 17: **detailed top yard** (section 4a): yard truss, an 8 m masthead (the mast becomes 108 m), topping lifts, braces, halyard sheaves and routing, **docking latches** that take the wings' weight off the halyards, and the **panel elevation winch** (one motor, linked traction sheaves).
+- **Rev 18 (this):** **deck defined** (section 5a): a spoked frame with 3 deep main spokes over the bogies, a hub carrying the mast-foot seat over the kingpin, gratings only where needed, and an equipment layout. The halyards now enter the mast through a side window, not through the foot seat. Deck mass is revised from 4 t to ~2.5 t, so rotating mass becomes ~11.1 t (~18 kN, ~3.0 kN per tyre).
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -72,8 +73,8 @@ How the design uses this:
 | Ties | Foot to kingpin foundation, horizontal at ground level (passing under the raised rail), ~1 kN |
 | Upper bracing (rotating) | Diamond stays: spreaders ±6 m at 81 m, stays from 64 m (just above the upper collar) to the mast top |
 | Rail ring | Ø12 m single rail, 12 segments of π m, **3 bogies x 2 tyres** at 120° |
-| Rotating mass | ~12.6 t (mast 2.5 t, wings + top yard 3.1 t, deck 4 t, bogies 0.2 t, collar bands + margin 1.1 t, kingpin 1 t, diamond stays 0.5 t) |
-| Lunar weight on the ring | ~20.5 kN; the pre-tensioned tripod lifts the mast very slightly (~1.5 kN), so the ring carries a little less |
+| Rotating mass | ~11.1 t (mast 2.7 t, wings + top yard 3.1 t, deck 2.5 t, bogies 0.2 t, collar bands + margin 1.1 t, kingpin 1 t, diamond stays 0.5 t) |
+| Lunar weight on the ring | ~18 kN; the pre-tensioned tripod lifts the mast very slightly (~1.5 kN), so the ring carries a little less |
 | Maintenance azimuth | Mast parked so the array lies **between** bracing planes (e.g. 30°/210° when the struts are at 0°/120°/240°) |
 
 **Scaling to other heights** (rough; same array, CFRP mast; struts sized for ~4x buckling margin):
@@ -81,7 +82,7 @@ How the design uses this:
 | Array top | Upper collar | Strut collar | Foot radius | Strut length | Mast mass | Lunar weight |
 |---|---|---|---|---|---|---|
 | 60 m | 22 m | 12 m | ~12 m | ~17 m | 1.2 t | ~16 kN |
-| **100 m** | **62 m** | **35 m** | **30 m** | **46 m** | **2.5 t** | **~20.5 kN** (rigid packs) |
+| **100 m** | **62 m** | **35 m** | **30 m** | **46 m** | **2.7 t** | **~18 kN** (rigid packs) |
 | 150 m | 112 m | 60 m | ~50 m | ~78 m | 4.8 t | ~23 kN |
 | 200 m | 162 m | 85 m | ~70 m | ~110 m | 8 t | ~29 kN |
 
@@ -233,7 +234,7 @@ The whole cycle (down ~20 min, swap, up ~20 min) costs about an hour of output; 
 ![Halyard path from the deck winch to the wing](halyard-path.svg)
 
 The motor never drives the yard, which is fixed to the mast. It only pulls the halyards, so **the rope is the whole transmission**. In the baseline the deck, mast and yard turn together, so the ropes never cross a rotating joint and cannot twist. Each halyard runs:
-1. **Traction sheave on the deck** → straight up into the **clear centre channel of the mast lattice**. The lattice members sit only on the three faces.
+1. **Traction sheave on the deck** → through a **side window in mast section 1** over a deflection sheave ~2 m up (clear of the mast-foot seat at the centre) → into the **clear centre channel of the mast lattice**. The lattice members sit only on the three faces.
 2. **Up 100 m** as a loose 4-rope bundle through **ceramic-lined guide rings at every 3 m section**. Each rope weighs only ~23 N over 100 m on the Moon, so it barely touches the rings.
 3. **Turning block** at the yard-mast section (100 m) → 90° to horizontal.
 4. **Along the inside of the yard truss** on 2–3 guide rollers to the **end sheave** (2 m or 17 m out) → 90° down to the cone on the wing top bar.
@@ -301,7 +302,7 @@ Layout rules:
 
 The strut tripod carries all overturning and quake loads at the collars, so the base only has to carry vertical load and centre the deck. Three bogies are enough. They are 12.6 m apart along the rail and each is ~1.3 m long, which leaves **~11 m of clear rail** between neighbours: three full rail segments with room to spare.
 
-**Loads.** ~20.5 kN on the Moon over 6 tyres is **~3.4 kN per tyre**. Tyres are designed for 6 kN.
+**Loads.** ~18 kN on the Moon over 6 tyres is **~3.0 kN per tyre**. Tyres are designed for 6 kN.
 
 **Which way should the tyres point? (the "duty force")**
 - The force on each tyre is **vertical**. The kingpin centres the deck, and each bogie floats ±20 mm radially on its pivot, so no outward or inward push reaches the rail. Tilting the tyres outward would only add a side thrust and scrub.
@@ -338,18 +339,59 @@ The strut tripod carries all overturning and quake loads at the collars, so the 
 - Running power is milliwatts. Size the drive for breakaway in dust (~20x running force, ~1 kN tangential): a few hundred watts.
 - Power crosses the rotation through a **slip ring or rotary transformer** in the kingpin.
 
+## 5a. Deck
+
+![Deck: plan and section](deck.svg)
+
+**What it is.** The deck is the **turning platform at the base**. It rides on the 3 bogies, is centred by the kingpin, carries the mast on its hub, and holds all the base equipment that turns with the mast. It turns once per lunar day with everything above it.
+
+**Geometry**
+- Ø12 m, a spoked frame rather than a solid floor. The top surface is **~1.4 m above the regolith**: rail on piers 0.5 m, bogies, then the frame.
+- Built from **12 ring-girder segments** (π m arcs) and **12 spokes**. Each spoke ships in 2 x 3 m pieces, and everything bolts together with captive fasteners (section 10).
+
+**Structure and load path**
+| Part | Description | Load |
+|---|---|---|
+| **Hub** (Ø ~1.6 m) | Ti/steel weldment at the centre. Top: the **mast-foot spherical seat** with its dog coupling. Underside: the **kingpin slewing ring** (radial centring only) and the **slip-ring / rotary-transformer rotor** | Mast foot **~9 kN** down, small radial |
+| **3 main spokes** | Deep CFRP/Ti trusses (~1 m deep), radially over the 3 bogie pivots. They carry the hub load out to the bogies | Each takes ~3 kN from the hub, ~18 kN·m at the bogie end, ~18 kN chord force |
+| **9 light spokes** | Shallow trusses filling between the main spokes. They support gratings and equipment and tie the ring girder in | Light |
+| **Ring girder** | Box girder over the rail, in 12 segments. Ties the spokes together, carries the 3 bogie pivots and the dust skirt | Bogie reactions ~6 kN each |
+| **Gratings** | Open CFRP grating panels only where people and robots work: a walkway ring, the mast-base area, the equipment bays and the inboard tray strip. No solid floor, to save mass and stop dust collecting | Foot and robot traffic |
+| **Dust skirt** | Brush/flap skirt hanging from the ring girder over the rail head | n/a |
+
+**Equipment on the deck** (all turns with the mast)
+- **Panel elevation winch** with its 4 trim sheaves, beside the mast base (section 4a).
+- **Rope entry.** The halyards turn into the mast through a **side window in mast section 1** over a deflection sheave ~2 m up, then run up the centre channel. That keeps them clear of the **mast-foot seat**, which sits under the mast centre.
+- **Power conditioning:** combiners and DC/DC converters from the wings feed the slip ring at the hub. Cables run down the mast in a tray on one face.
+- **Drive:** the 2 drive units sit on their bogies, not on the deck, with control boxes on the deck.
+- **Jack-up frame** around the mast base. It is used for erection and stays as the base maintenance frame (jacking points, tool stowage).
+- **Landing tray, inboard part**, along the maintenance azimuth, from 2 m out to the rim on both sides.
+- **Jack points** for a whole-bogie swap (section 6), and **parking lock pins** that lock the deck to the rail during maintenance.
+- **Instruments:** inclinometer, deck temperature sensors, cameras at the mast base and trays, and load-cell readouts for the halyards and bogies.
+
+**Mass ~2.5 t** (revised from the earlier 4 t):
+
+| Part | Mass |
+|---|---|
+| Main spokes | 0.72 t |
+| Light spokes | 0.54 t |
+| Ring girder | 0.57 t |
+| Hub | 0.30 t |
+| Gratings | 0.24 t |
+| Skirt, trays and mounts | 0.15 t |
+
 ## 5b. Bearing and joint schedule
 
 Only **three sets of bearings rotate in service**: the 6 tyres and 2 collars. Everything else is static in service and moves only during installation or maintenance, or by tiny thermal amounts.
 
 | # | Joint | Relative motion | Load (Moon) | Type |
 |---|---|---|---|---|
-| 1 | **Tyres** (3 bogies x 2) | Rotating, ~0.5°/h, always | ~3.4 kN each, vertical | Wheel cartridges: hybrid ceramic bearings, dry lube, conical tread on a flat rail head |
+| 1 | **Tyres** (3 bogies x 2) | Rotating, ~0.5°/h, always | ~3.0 kN each, vertical | Wheel cartridges: hybrid ceramic bearings, dry lube, conical tread on a flat rail head |
 | 2 | **Upper collar** (62 m, 6 cartridges) | Rotating (mast inside a stationary collar) | Stay pull-down ~4 kN total, ~0.7 kN per thrust roller; small radial | Roller cartridges with dual rotation paths; torque read by the V-link load pins |
 | 3 | **Strut collar** (35 m, 6 cartridges) | Rotating | Strut push-up ~5.7 kN total, ~0.9 kN per lower thrust roller | Same cartridge design as the upper collar |
 | 4 | Kingpin | Rotating, but radial centring only | A few hundred N (quake, misalignment) | Slewing ring ~1.2 m, with the slip ring / rotary transformer |
-| 5 | **Mast foot** on the deck centre | **No rotation** (turns with the deck); small tilt only | **~8 to 9 kN** vertical: mast + wings + top yard (~10 kN), plus stay pull-down (~4 kN), less strut push-up (~5.7 kN) | **Spherical seat** (ball joint), dry-film plain bearing; torque through a dog coupling |
-| 6 | Bogie pivots (3) | Rocking ±0.5°, ±20 mm radial float | ~6.8 kN each | Spherical pivot with hard stops |
+| 5 | **Mast foot** on the deck centre | **No rotation** (turns with the deck); small tilt only | **~9 kN** vertical: mast + wings + top yard (~10.6 kN), plus stay pull-down (~4 kN), less strut push-up (~5.7 kN) | **Spherical seat** (ball joint), dry-film plain bearing; torque through a dog coupling |
+| 6 | Bogie pivots (3) | Rocking ±0.5°, ±20 mm radial float | ~6.0 kN each | Spherical pivot with hard stops |
 | 7 | Uplift rollers, support shoes | None in service (standby) | ~0 (quake / fault only) | Rollers / screw shoes |
 | 8 | **Strut A-frame ends** (6 tubes, 2 ends each) | **Static in service.** Swing only during the scissor erection; thermal micro-motion after | ~1.25 kN per tube | Spherical plain bearings, dry film. They hardly move, so the concern is fretting, not wear |
 | 9 | **V-links** (3 x 2 pins, upper collar) | Static in service; hinge only during installation | Stay tension 1.5 to 3 kN; couple ≤ ±0.2 kN at the interlock limit | Pins in lugs; instrumented load pins |
@@ -437,7 +479,7 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
 
 | | **A. Ground turntable (baseline, rev 15)** | **B. Top turret** |
 |---|---|---|
-| What turns | Whole mast + wings + deck, ~12.6 t (~20.5 kN) | Upper mast + yard + wings, **~5 t (~8 kN)** |
+| What turns | Whole mast + wings + deck, ~11.1 t (~18 kN) | Upper mast + yard + wings, **~5 t (~8 kN)** |
 | Rotating bearing sets | 6 tyres, kingpin, 2 collars (12 roller cartridges), drive pinions | **1 turret bearing** (~Ø2 m, 8 cartridges), turret drive |
 | Hardware removed by B | n/a | Rail ring + 12 piers, 3 bogies, deck, kingpin, 2 roller collars, V-links, collar-torque interlock: **~7 t less landed mass** |
 | Bracing | Stays and A-frame struts on stationary collars around a turning mast | Stays and struts bolt **straight onto the fixed mast**. No wind-up, so the A-frames could revert to single struts (the fixed mast foot carries the small drive torque) |
