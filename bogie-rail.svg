@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 640" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <rect width="1080" height="640" fill="#ffffff"/>
+  <defs>
+    <pattern id="ground" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8 L8 0" stroke="#a08c6c" stroke-width="1"/></pattern>
+  </defs>
+  <style>
+    .s{stroke:#222;stroke-width:2}
+    .deck{fill:#9fb4c7}.frame{fill:#e0a040}.wheel{fill:#bbb}.rail{fill:#7d8790}.head{fill:#c0392b}
+    .pier{fill:#cfcfcf}.spare{fill:#4a9}
+    .lbl{fill:#222}.t{font-size:17px;font-weight:bold;fill:#222}.lead{stroke:#555;stroke-width:1;fill:none}
+  </style>
+
+  <!-- ========== SIDE VIEW ========== -->
+  <text x="40" y="30" class="t">Side view (along the rail)</text>
+  <!-- deck -->
+  <rect x="30" y="50" width="520" height="35" class="deck s"/>
+  <text x="40" y="73" class="lbl">Rotating deck ring girder</text>
+  <!-- kinematic mount + spring -->
+  <rect x="250" y="85" width="80" height="20" class="spare s"/>
+  <path d="M290 105 l-12 6 24 6 -24 6 24 6 -24 6 12 6" class="s" fill="none"/>
+  <circle cx="290" cy="150" r="9" fill="#fff" class="s"/>
+  <!-- equaliser beam -->
+  <rect x="150" y="140" width="280" height="22" rx="4" class="frame s"/>
+  <!-- wheels -->
+  <circle cx="200" cy="225" r="52" class="wheel s"/><circle cx="200" cy="225" r="10" fill="#555"/>
+  <circle cx="380" cy="225" r="52" class="wheel s"/><circle cx="380" cy="225" r="10" fill="#555"/>
+  <line x1="200" y1="162" x2="200" y2="215" class="s"/><line x1="380" y1="162" x2="380" y2="215" class="s"/>
+  <!-- scrapers / brushes -->
+  <path d="M150 150 L118 268 M136 150 L104 268" class="s"/>
+  <path d="M430 150 L462 268 M444 150 L476 268" class="s"/>
+  <!-- rail -->
+  <rect x="40" y="277" width="510" height="12" class="head s"/>
+  <rect x="40" y="289" width="510" height="45" class="rail s"/>
+  <line x1="315" y1="277" x2="345" y2="334" stroke="#fff" stroke-width="3"/>
+  <!-- piers -->
+  <rect x="90" y="334" width="30" height="170" class="pier s"/>
+  <rect x="460" y="334" width="30" height="170" class="pier s"/>
+  <path d="M95 340 h20 M95 348 h20 M95 356 h20 M465 340 h20 M465 348 h20 M465 356 h20" stroke="#222"/>
+  <rect x="70" y="504" width="70" height="18" class="pier s"/><rect x="440" y="504" width="70" height="18" class="pier s"/>
+  <rect x="20" y="522" width="540" height="40" fill="url(#ground)"/>
+  <line x1="20" y1="522" x2="560" y2="522" class="s"/>
+
+  <!-- side labels -->
+  <path d="M330 95 L370 110" class="lead"/><text x="372" y="114" class="lbl">Kinematic 4-bolt mount + spring</text>
+  <path d="M281 150 L240 122" class="lead"/><text x="140" y="118" class="lbl">Equaliser pivot</text>
+  <text x="205" y="300" class="lbl" visibility="hidden">.</text>
+  <path d="M380 277 L380 250" class="lead" visibility="hidden"/>
+  <path d="M110 268 L60 238" class="lead"/><text x="20" y="232" class="lbl">Dust scraper</text><text x="20" y="246" class="lbl">+ brush</text>
+  <path d="M200 225 L250 200" class="lead" visibility="hidden"/>
+  <text x="166" y="295" class="lbl" fill="#fff" visibility="hidden">.</text>
+  <path d="M330 300 L350 375" class="lead"/><text x="300" y="392" class="lbl">Scarf joint (3 m segments,</text><text x="300" y="406" class="lbl">slotted for expansion)</text>
+  <path d="M120 350 L160 430" class="lead"/><text x="150" y="446" class="lbl">Pier with leveling screws</text>
+  <text x="150" y="460" class="lbl">(rail ~0.6 m above regolith)</text>
+  <path d="M140 513 L200 495" class="lead"/><text x="202" y="497" class="lbl">Sintered pad / ground screw</text>
+  <text x="186" y="265" class="lbl" font-size="11">Ø400</text>
+  <text x="40" y="590" class="lbl">Red: replaceable rail head strip.  Green: swap interface / rollers</text>
+
+  <!-- ========== CROSS SECTION ========== -->
+  <text x="610" y="30" class="t">Cross-section (inner rail)</text>
+  <rect x="640" y="50" width="330" height="35" class="deck s"/>
+  <!-- skirts -->
+  <line x1="665" y1="85" x2="665" y2="300" stroke="#555" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="945" y1="85" x2="945" y2="300" stroke="#555" stroke-width="3" stroke-dasharray="6 4"/>
+  <rect x="770" y="85" width="80" height="20" class="spare s"/>
+  <!-- bogie frame with cheeks -->
+  <rect x="720" y="125" width="180" height="22" class="frame s"/>
+  <rect x="720" y="147" width="16" height="185" class="frame s"/>
+  <rect x="884" y="147" width="16" height="185" class="frame s"/>
+  <!-- wheel edge-on with flange -->
+  <rect x="785" y="160" width="60" height="117" rx="6" class="wheel s"/>
+  <rect x="773" y="230" width="12" height="57" class="wheel s"/>
+  <line x1="760" y1="200" x2="870" y2="200" stroke="#555" stroke-width="5"/>
+  <!-- rail -->
+  <rect x="770" y="277" width="90" height="16" class="head s"/>
+  <rect x="800" y="293" width="30" height="20" class="rail s"/>
+  <rect x="760" y="313" width="110" height="80" class="rail s"/>
+  <!-- uplift rollers -->
+  <path d="M736 305 h40" class="s"/><circle cx="780" cy="300" r="7" class="spare s"/>
+  <path d="M884 305 h-40" class="s"/><circle cx="850" cy="300" r="7" class="spare s"/>
+  <!-- side guide roller -->
+  <rect x="746" y="272" width="16" height="26" rx="6" class="spare s"/><path d="M736 285 h10" class="s"/>
+  <!-- pier -->
+  <rect x="795" y="393" width="40" height="111" class="pier s"/>
+  <rect x="770" y="504" width="90" height="18" class="pier s"/>
+  <rect x="620" y="522" width="360" height="40" fill="url(#ground)"/>
+  <line x1="620" y1="522" x2="980" y2="522" class="s"/>
+
+  <!-- section labels -->
+  <path d="M665 180 L620 200" class="lead"/><text x="606" y="216" class="lbl">Dust</text><text x="606" y="230" class="lbl">skirt</text>
+  <text x="905" y="110" class="lbl" visibility="hidden">.</text>
+  <path d="M870 200 L950 200" class="lead"/><text x="955" y="190" class="lbl">Axle: hybrid</text><text x="955" y="204" class="lbl">ceramic bearing,</text><text x="955" y="218" class="lbl">MoS₂, labyrinth</text><text x="955" y="232" class="lbl">seal</text>
+  <path d="M754 298 L700 340" class="lead"/><text x="620" y="356" class="lbl">Side guide roller</text><text x="620" y="370" class="lbl">(inner rail only)</text>
+  <path d="M850 307 L900 345" class="lead"/><text x="880" y="360" class="lbl">Uplift rollers</text><text x="880" y="374" class="lbl">under rail head</text>
+  <text x="905" y="296" class="lbl" visibility="hidden">.</text>
+  <path d="M870 350 L880 420" class="lead"/><text x="850" y="436" class="lbl">Box beam rail</text>
+  <path d="M773 260 L700 260" class="lead"/><text x="610" y="264" class="lbl">Wheel flange</text>
+  <text x="625" y="600" class="lbl">Ceramic/DLC-coated head vs hardened steel wheel</text>
+  <text x="625" y="616" class="lbl">(dissimilar surfaces: no cold welding)</text>
+</svg>

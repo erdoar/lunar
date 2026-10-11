@@ -41,6 +41,8 @@ Twin back-to-back walls keep the centre of mass on the axis and balance the over
 
 ## 3. Running gear (low friction, dust tolerant)
 
+![Bogie and rail: side view and cross-section](bogie-rail.svg)
+
 **Wheels**
 - Flanged steel wheels, ~400 mm diameter, through-hardened bearing steel (or Ti wheel with a hard coating). Wheel load is low, so wheels can be light.
 - **Avoid like-on-like metals** in vacuum (cold welding). Pair a hardened steel wheel with a rail head of a different material or coating: e.g. ceramic (TiN / DLC / Al₂O₃ plasma spray) on the rail head, or silicon nitride rollers on a steel rail.
