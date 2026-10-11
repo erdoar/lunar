@@ -346,14 +346,45 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
 | UV and radiation on cables | Steel wire rope or coated CFRP rod, not bare aramid or polymer fibre |
 | Regolith settlement | Adjustable piers and foot pads; wire and tie tensions monitored with load cells and re-trimmed |
 
-## 9. Alternatives worth comparing
+## 9. Trade study: ground turntable (baseline) vs top turret
+
+![Ground turntable vs top turret](turret-trade.svg)
+
+**Option B, top turret.** The whole mast below ~64 m is **fixed** to a foundation at the base. A single **turret bearing** at ~64 m, just above the upper bracing, carries everything that turns: the upper mast (64 to 105 m), diamond stays, top yard and both wings. The drive, slip ring and wing winch move up onto the turret.
+
+| | **A. Ground turntable (baseline, rev 15)** | **B. Top turret** |
+|---|---|---|
+| What turns | Whole mast + wings + deck, ~12.6 t (~20.5 kN) | Upper mast + yard + wings, **~5 t (~8 kN)** |
+| Rotating bearing sets | 6 tyres, kingpin, 2 collars (12 roller cartridges), drive pinions | **1 turret bearing** (~Ø2 m, 8 cartridges), turret drive |
+| Hardware removed by B | n/a | Rail ring + 12 piers, 3 bogies, 4-quarter deck, kingpin, 2 roller collars, V-links, collar-torque interlock: **~7 t less landed mass** |
+| Bracing | Stays and A-frame struts on stationary collars around a turning mast | Stays and struts bolt **straight onto the fixed mast**. No wind-up, so the A-frames could revert to single struts (the fixed mast foot carries the small drive torque) |
+| Groundwork | 12-segment rail, piers levelled to ±2 mm, raised above the dust | One mast foundation pad, plus the strut feet as before |
+| Dust exposure of moving parts | Tyres, rail and drive at ground level, the main wear risk | **None**: every moving part is at 64 m, above most lofted dust |
+| Turret bearing loads | n/a | Normal: ~1 kN per cartridge. Quake (0.1 m/s², ~12 kN·m): ±3 kN. One wing landed alone (~21 kN·m): ±5 kN. A crossed-roller ring or 8 collar-style cartridges rated ~6 kN |
+| Access to moving parts | **From the ground** (tyres, drive, slip ring) | **At 64 m.** But a fixed mast can carry a permanent **service lift / climber rail** that a turning mast cannot, so access improves for the parts that are high up anyway |
+| Power and cables | Slip ring at the kingpin; everything turns with the mast | Slip ring at the turret; cables run down the fixed mast |
+| Wing lowering | Winch on the deck | Winch on the turret (halyards must not cross the turning joint). Trays and the maintenance azimuth are unchanged |
+| Failure modes | Collar seizure / wind-up; rail damage from regolith; settlement under 3 bogies | Turret seizure, which stops tracking (the collar measures there disappear, but the bearing is a single point); the drive and slip ring are at height |
+| Installation | Rail, bogies and deck to set; collars ride up with the mast | Simpler groundwork. The turret assembly is fitted at deck level on its mast section and rides up with the jack-up; no collars, so the bracing heads are just lugs on mast sections |
+| Fits the original brief? | **Yes**: platform on circular rails, replaceable wheels and track sections | No: no ground rails or wheels |
+
+**Assessment.**
+- *B is simpler:* fewer bearing sets, ~7 t lighter, no dust on moving parts, no wind-up problem, and much less precise groundwork.
+- *A's advantages:* its heaviest rotating hardware (tyres, drive, slip ring) can be reached and swapped from the ground, and it matches the original brief.
+- *Access cuts both ways.* Both options already depend on the climber robot for parts at height. A fixed mast also allows a permanent service lift, which shrinks B's access penalty.
+- *Recommendation:* carry **B as the leading alternative**. Run a short side-by-side study before freezing the design, based on:
+  - turret bearing life testing,
+  - the site's foundation conditions for one mast pad versus a levelled rail ring, and
+  - how often the drive and slip ring are expected to need service.
+
+## 10. Alternatives worth comparing
 
 - **Ground guys with tension anchors (rev 3):** 9 guys, 3 collars, anchors at 40 m. Needs proof-loaded pull-out anchors in regolith, which are uncertain and slow to install. The rev 4 tripod avoids them.
-- **Rotate only the top** (VSAT / LUNARSABER style): a fixed tower with a slewing bearing and slip ring under the array at 70 to 100 m. No collars, but the heaviest moving parts are high up. This design keeps them at ground level.
+- **Rotate only the top** (VSAT / LUNARSABER style): see the full trade study in section 9 (option B).
 - **No rail, kingpin only:** the rig is balanced and the tripod carries lateral load, so a single base slewing bearing may be enough. The rail adds redundancy and a track for the maintenance cart. Worth a trade study.
 - **Several shorter rigs vs one tall one:** depends on the site's illumination-vs-height curve.
 
-## 10. Next steps
+## 11. Next steps
 
 1. **Site illumination study** on LOLA data: sunlight hours vs array height at candidate spots; pick the height.
 2. Mast and tripod analysis: strut and mast buckling, pre-tension, thermal bow, moonquake response, every jack-up and scissor stage.

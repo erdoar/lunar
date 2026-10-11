@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 760" font-family="Helvetica, Arial, sans-serif" font-size="12.5">
+<rect width="1240" height="760" fill="#fff"/>
+<defs><pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#a08c6c"/></pattern><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker></defs>
+<style>.s{stroke:#222;stroke-width:1.5}.l{stroke:#555;stroke-width:1;fill:none}.cab{stroke:#8e44ad;stroke-width:1.3}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:16px;font-weight:bold}</style>
+<rect x="50" y="660" width="520" height="30" fill="url(#g)"/><line x1="50" y1="660" x2="570" y2="660" stroke="#222"/>
+<line x1="466.0" y1="658" x2="310.0" y2="337.59999999999997" class="cab"/>
+<line x1="466.0" y1="658" x2="310.0" y2="478.0" stroke="#555" stroke-width="4"/>
+<rect x="459.0" y="655" width="14" height="5" fill="#555"/>
+<line x1="232.0" y1="658" x2="310.0" y2="337.59999999999997" class="cab"/>
+<line x1="232.0" y1="658" x2="310.0" y2="478.0" stroke="#555" stroke-width="4"/>
+<rect x="225.0" y="655" width="14" height="5" fill="#555"/>
+
+<rect x="307.0" y="114.0" width="6" height="546.0" fill="#e67e22"/>
+<rect x="219.0" y="138.0" width="182.0" height="4" fill="#e67e22" class="s"/>
+<rect x="221.6" y="140.0" width="78.00000000000003" height="156.0" fill="#2c4a7a" stroke="#e67e22" stroke-width="3"/>
+<rect x="320.4" y="140.0" width="78.0" height="156.0" fill="#2c4a7a" stroke="#e67e22" stroke-width="3"/>
+<rect x="278.8" y="646" width="62.400000000000006" height="8" fill="#e67e22" class="s"/>
+<rect x="272.8" y="654" width="12" height="6" fill="#888"/><circle cx="278.8" cy="651" r="4" fill="#e67e22" stroke="#222"/>
+<rect x="335.2" y="654" width="12" height="6" fill="#888"/><circle cx="341.2" cy="651" r="4" fill="#e67e22" stroke="#222"/>
+<rect x="302.0" y="474.0" width="16" height="8" fill="#4a9" class="s"/>
+<rect x="302.0" y="333.59999999999997" width="16" height="8" fill="#4a9" class="s"/>
+<text x="60" y="34" class="t">A. Ground turntable (baseline)</text>
+<path d="M318 338L362 369" class="l"/>
+<text x="366" y="373" text-anchor="start">Roller collar (mast turns inside)</text>
+<path d="M318 478L362 509" class="l"/>
+<text x="366" y="513" text-anchor="start">Roller collar</text>
+<path d="M341 648L393 620" class="l"/>
+<text x="397" y="624" text-anchor="start">Deck + 3 bogies on a</text>
+<text x="397" y="638" text-anchor="start">Ø12 m rail (ground level)</text>
+<path d="M310 244L185 369" class="l"/>
+<text x="181" y="373" text-anchor="end">Whole mast turns</text>
+<text x="60" y="715" font-size="12.5">Turns: ~12.6 t. Rotating bearings: 6 tyres, kingpin,</text>
+<text x="60" y="731" font-size="12.5">2 collars (12 cartridges). Reachable from the ground; dust-exposed.</text>
+<rect x="670" y="660" width="520" height="30" fill="url(#g)"/><line x1="670" y1="660" x2="1190" y2="660" stroke="#222"/>
+<line x1="1086.0" y1="658" x2="930.0" y2="337.59999999999997" class="cab"/>
+<line x1="1086.0" y1="658" x2="930.0" y2="478.0" stroke="#555" stroke-width="4"/>
+<rect x="1079.0" y="655" width="14" height="5" fill="#555"/>
+<line x1="852.0" y1="658" x2="930.0" y2="337.59999999999997" class="cab"/>
+<line x1="852.0" y1="658" x2="930.0" y2="478.0" stroke="#555" stroke-width="4"/>
+<rect x="845.0" y="655" width="14" height="5" fill="#555"/>
+<rect x="927.0" y="327.2" width="6" height="332.8" fill="#888"/>
+<rect x="927.0" y="114.0" width="6" height="213.20000000000002" fill="#e67e22"/>
+<rect x="839.0" y="138.0" width="182.0" height="4" fill="#e67e22" class="s"/>
+<rect x="841.6" y="140.0" width="78.0" height="156.0" fill="#2c4a7a" stroke="#e67e22" stroke-width="3"/>
+<rect x="940.4" y="140.0" width="78.0" height="156.0" fill="#2c4a7a" stroke="#e67e22" stroke-width="3"/>
+<rect x="916.0" y="321.2" width="28" height="12" fill="#e67e22" class="s"/>
+<rect x="922.0" y="334.59999999999997" width="16" height="6" fill="#888" class="s"/><rect x="922.0" y="475.0" width="16" height="6" fill="#888" class="s"/>
+<rect x="909.2" y="650" width="41.6" height="10" fill="#888" class="s"/>
+<line x1="935.0" y1="649.6" x2="935.0" y2="332.4" stroke="#2e7d32" stroke-width="2" stroke-dasharray="6 3"/>
+<text x="680" y="34" class="t">B. Top turret (alternative)</text>
+<path d="M944 327L982 296" class="l"/>
+<text x="986" y="300" text-anchor="start">Turret bearing ~Ø2 m at 64 m</text>
+<text x="986" y="314" text-anchor="start">+ drive, slip ring, wing winch</text>
+<path d="M938 338L982 369" class="l"/>
+<text x="986" y="373" text-anchor="start">Stay head (fixed lugs, no rollers)</text>
+<path d="M938 478L982 509" class="l"/>
+<text x="986" y="513" text-anchor="start">Strut head (fixed lugs)</text>
+<path d="M935 556L805 525" class="l"/>
+<text x="801" y="529" text-anchor="end">Service lift on the</text>
+<text x="801" y="543" text-anchor="end">fixed mast</text>
+<path d="M940 652L982 630" class="l"/>
+<text x="986" y="634" text-anchor="start">Mast foundation pad (no rail)</text>
+<path d="M930 390L805 421" class="l"/>
+<text x="801" y="425" text-anchor="end">Fixed lower mast</text>
+<text x="680" y="715" font-size="12.5">Turns: ~5 t. Rotating bearings: 1 turret. ~7 t less hardware;</text>
+<text x="680" y="731" font-size="12.5">no moving parts in the dust; all moving parts at 64 m.</text>
+<rect x="560" y="60" width="16" height="10" fill="#e67e22"/><text x="582" y="70">turns</text><rect x="560" y="78" width="16" height="10" fill="#888"/><text x="582" y="88">fixed</text>
+</svg>
