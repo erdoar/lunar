@@ -31,12 +31,13 @@
 <path d="M398 374 L460 350" class="l"/><text x="462" y="354" font-size="11.5">pin the open edge</text><text x="462" y="368" font-size="11.5">(captive pin, one tool)</text>
 <text x="60" y="520" font-size="11.5">Faces hinged on two chords; the third chord is pinned on site.</text>
 <text x="60" y="536" font-size="11.5">Then the section is pushed into the bottom of the mast.</text>
-<text x="560" y="32" class="t">3. Jack-up from the base: top weight stays ~1 t</text>
+<text x="560" y="32" class="t">3. Jack-up: top yard fitted first, rigged, rides up</text>
 <text x="640" y="70" text-anchor="middle" font-size="12.5" font-weight="bold">Free-standing</text>
 <rect x="540" y="640" width="200" height="22" fill="url(#g)"/><line x1="540" y1="640" x2="740" y2="640" stroke="#222"/>
 <rect x="624" y="624" width="32" height="16" fill="#9fb4c7" class="s"/>
 <rect x="637" y="510.0" width="6" height="130.0" fill="#888"/>
-<rect x="626" y="506.0" width="28" height="6" fill="#e0a040" class="s"/>
+<rect x="569.28" y="507.0" width="141.44000000000003" height="5" fill="#e0a040" class="s"/>
+<line x1="640" y1="496.0" x2="569.28" y2="509.0" stroke="#555"/><line x1="640" y1="496.0" x2="710.72" y2="509.0" stroke="#555"/><rect x="637" y="496.0" width="6" height="14" fill="#888"/>
 <rect x="509.20000000000005" y="635" width="12" height="5" fill="#555"/>
 <rect x="758.8" y="635" width="12" height="5" fill="#555"/>
 <text x="640" y="680" text-anchor="middle" font-size="11.5">top at 25 m</text>
@@ -44,7 +45,8 @@
 <rect x="760" y="640" width="200" height="22" fill="url(#g)"/><line x1="760" y1="640" x2="960" y2="640" stroke="#222"/>
 <rect x="844" y="624" width="32" height="16" fill="#9fb4c7" class="s"/>
 <rect x="857" y="354.0" width="6" height="286.0" fill="#888"/>
-<rect x="846" y="350.0" width="28" height="6" fill="#e0a040" class="s"/>
+<rect x="789.28" y="351.0" width="141.44000000000003" height="5" fill="#e0a040" class="s"/>
+<line x1="860" y1="340.0" x2="789.28" y2="353.0" stroke="#555"/><line x1="860" y1="340.0" x2="930.72" y2="353.0" stroke="#555"/><rect x="857" y="340.0" width="6" height="14" fill="#888"/>
 <rect x="729.2" y="635" width="12" height="5" fill="#555"/>
 <rect x="978.8" y="635" width="12" height="5" fill="#555"/>
 <rect x="853" y="574.6" width="14" height="6" fill="#4a9" class="s"/>
@@ -55,7 +57,8 @@
 <rect x="980" y="640" width="200" height="22" fill="url(#g)"/><line x1="980" y1="640" x2="1180" y2="640" stroke="#222"/>
 <rect x="1064" y="624" width="32" height="16" fill="#9fb4c7" class="s"/>
 <rect x="1077" y="94.0" width="6" height="546.0" fill="#888"/>
-<rect x="1066" y="90.0" width="28" height="6" fill="#e0a040" class="s"/>
+<rect x="1009.28" y="91.0" width="141.44000000000003" height="5" fill="#e0a040" class="s"/>
+<line x1="1080" y1="80.0" x2="1009.28" y2="93.0" stroke="#555"/><line x1="1080" y1="80.0" x2="1150.72" y2="93.0" stroke="#555"/><rect x="1077" y="80.0" width="6" height="14" fill="#888"/>
 <rect x="949.2" y="635" width="12" height="5" fill="#555"/>
 <rect x="1198.8" y="635" width="12" height="5" fill="#555"/>
 <rect x="1073" y="314.59999999999997" width="14" height="6" fill="#4a9" class="s"/>

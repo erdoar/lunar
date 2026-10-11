@@ -37,7 +37,7 @@ A(f'<text x="{bx}" y="{by+136}" font-size="11.5">Then the section is pushed into
 
 # ---------- 3. jack-up stages
 gy, e = 640, 5.2
-A('<text x="560" y="32" class="t">3. Jack-up from the base: top weight stays ~1 t</text>')
+A('<text x="560" y="32" class="t">3. Jack-up: top yard fitted first, rigged, rides up</text>')
 stages = [(25, 'Free-standing', False, False), (55, 'Upper collar + stays', True, False), (105, 'Struts scissor up', True, True)]
 for i, (top, title, collar, struts) in enumerate(stages):
     mid = 640 + i * 220
@@ -47,7 +47,8 @@ for i, (top, title, collar, struts) in enumerate(stages):
     A(f'<rect x="{mid-100}" y="{gy}" width="200" height="22" fill="url(#g)"/><line x1="{mid-100}" y1="{gy}" x2="{mid+100}" y2="{gy}" stroke="#222"/>')
     A(f'<rect x="{mid-16}" y="{gy-16}" width="32" height="16" fill="#9fb4c7" class="s"/>')       # jack frame
     A(f'<rect x="{mid-3}" y="{Z(top)}" width="6" height="{top*e}" fill="#888"/>')
-    A(f'<rect x="{mid-14}" y="{Z(top)-4}" width="28" height="6" fill="#e0a040" class="s"/>')    # folded top yard + top section
+    A(f'<rect x="{mid-17*e*0.8}" y="{Z(top)-3}" width="{34*e*0.8}" height="5" fill="#e0a040" class="s"/>')    # top yard, fitted first: unfolded and rigged
+    A(f'<line x1="{mid}" y1="{Z(top)-14}" x2="{mid-17*e*0.8}" y2="{Z(top)-1}" stroke="#555"/><line x1="{mid}" y1="{Z(top)-14}" x2="{mid+17*e*0.8}" y2="{Z(top)-1}" stroke="#555"/><rect x="{mid-3}" y="{Z(top)-14}" width="6" height="14" fill="#888"/>')
     for fx in (-1, 1):
         A(f'<rect x="{X(fx*30)-6}" y="{gy-5}" width="12" height="5" fill="#555"/>')
     if collar:

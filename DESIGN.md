@@ -323,13 +323,18 @@ Everything is assembled at deck level and raised. A crew member (EVA, or in a pr
 1. Survey and clear the site. Set the kingpin (E1). Lay out the 3 foot sites with the radius arm (E2); prepare the pads and lay the ties (E4).
 2. Set the 12 rail piers and lay the ring (E2, E3). Hold point: ring flat to ±2 mm.
 3. Place the 3 bogies, then assemble the deck (12 ring-girder segments + 12 spokes) on them. Check the deck turns by hand and all 6 support shoes are at their 3 mm standoff.
-4. Fit the jack-up frame (E5). Assemble the **top assembly** at deck level: mast top section, diamond spreaders and stays, and the permanent top yard folded vertically with its halyards rove. The wings are not on the mast during jack-up.
+4. Fit the jack-up frame (E5). Fit the **top yard first**, on the topmost mast section at deck level:
+   - **unfolded and horizontal**, at the maintenance azimuth,
+   - topping lifts set and tensioned,
+   - all 4 halyards rove through their sheaves and led to the wing winch, which pays them out as the mast rises.
+
+   It then simply rides up. During jack-up only the stays and struts are on the mast, and both are always below the yard, so it cannot foul anything and nothing has to be unfolded at height. The wings are not on the mast during jack-up. **Build it as it rises:** every later section goes in at deck level already in its final form. The diamond-spreader section, for example, is fitted with its spreaders open (12 m across) and its stays connected.
 5. **Jack up, with a scissor action.** Each collar is fitted around the mast at deck level (3 segments), clamped to its band, and rides up with the mast.
    - Up to ~43 m the mast stands free in the jack frame (section 10.3). When the upper-collar band reaches the deck, the **upper collar** goes on, with its 3 V-links already shackled to their stay cables, which are paid out from the foot winches as it rises. Until the struts are in, these cables act as light temporary guys (a few hundred N). Each foot winch is ballasted with regolith bags so it never needs a pull-out anchor.
    - When the strut band reaches the deck, the **strut collar** goes on. The 3 A-frame struts are pinned to its torque brackets while lying flat on the ground, pointing outward, with their feet on skid dollies.
    - As the mast keeps rising, the struts swing up and the tie winches (E6) **pull the feet in** along the ground, from 46 m to their 30 m pads. Low gravity keeps the strut and dolly loads tiny.
    - At final height, the feet drop onto their pads. The stay cables and ties are trimmed to final tension; the V-links line up with their cables by themselves. The clamp pins are pulled, and from then on the mast turns freely in both collars.
-6. At full height, unfold the top yard and set its topping lifts. Park at the maintenance azimuth. Lower both wing top bars to the trays, set the folded packs in the trays and latch them to their hangers (all 16, or as many as have arrived, in matched port/starboard pairs). **Raise both wings together** (E8, E9); the packs unfold as they lift. More packs can be added later by the same lower, latch and raise cycle.
+6. At full height (the top yard is already rigged), park at the maintenance azimuth. Shackle both wing top bars, waiting at the trays, to their halyards, set the folded packs in the trays and latch them to their hangers (all 16, or as many as have arrived, in matched port/starboard pairs). **Raise both wings together** (E8, E9); the packs unfold as they lift. More packs can be added later by the same lower, latch and raise cycle.
 7. Trim wire and tie tensions to plumb the mast and take out thermal bow. Connect the harness to the slip ring, commission the drive, start tracking.
 
 Design rules for every part: captive fasteners, one tool size, alignment cones, grapple fixtures, and no single piece heavier than ~150 kg-weight on the Moon without lifting gear.
@@ -418,7 +423,7 @@ Roughly **25 freight modules** in total for one rig.
 
 **Rules**
 1. **Build from the bottom.** All assembly happens at the jack frame at deck level. Top weight never grows as the mast gets taller; only the jack load does. No crane, no work at height.
-2. **Keep the top light during erection.** Only the mast top section, the folded top yard and the folded diamond spreaders ride up: **~1 t (~1.6 kN)**. Wings and packs go up last on their halyards (section 4). The turret option (section 9) rides up its turret on its own mast section in the same way.
+2. **Fit the top yard first, and keep the top light.** The top yard goes on the very first section, unfolded, horizontal and fully rigged (topping lifts set, halyards rove), and rides up the whole way. The diamond spreaders are fitted open when their section reaches the deck, 24 m below the top. The top weight is **~1 t (~1.6 kN)**: top section + yard + spreaders. Wings and packs go up last on their halyards (section 4). The turret option (section 9) rides up its turret on its own mast section in the same way.
 3. **Guy as soon as possible, and from the ground.** The stays come from winches at the feet, so tensioning is always done at ground level.
 
 **Stages**
@@ -429,7 +434,7 @@ Roughly **25 freight modules** in total for one rig.
 | 43 to ~70 m | Stays from the foot winches to the upper collar act as **erection guys**; winches pay out to keep the mast plumb | Stays at a few hundred N |
 | ~70 m (strut band at the deck) | Strut collar fitted; A-frame struts pinned to it, lying flat, feet on skid dollies | Scissor action starts |
 | 70 to 105 m | Struts swing up as the tie winches pull the feet in to their pads | Feet land at 30 m |
-| 105 m | Clamp pins pulled, stays/ties trimmed, top yard unfolded and wings hoisted | Peak jack force ~10 kN (mast 2.5 t + top 1 t + stay pull-down) |
+| 105 m | Clamp pins pulled, stays/ties trimmed, wings hoisted on the pre-rove halyards | Peak jack force ~10 kN (mast 2.5 t + top 1 t + stay pull-down) |
 
 At ~1 hour per 3 m section, the mast goes up in roughly **35 working hours** of supervised jacking.
 
