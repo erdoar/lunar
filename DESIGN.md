@@ -1,4 +1,4 @@
-# Lunar polar rotating solar platform: concept design (rev 16, tall mast on a strut tripod)
+# Lunar polar rotating solar platform: concept design (rev 17, tall mast on a strut tripod)
 
 A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
@@ -18,7 +18,8 @@ A small turntable on a circular rail that turns a very tall mast, with the solar
 - Rev 13: V-plate pendant knee on the torque arms (superseded).
 - Rev 14: the torque arms, Y-bridles, knees and crown ring are all removed. Each bracing plane now has **one stay cable** from the foot to the apex of a **V-link**: a flat V-plate hinged on **two close pins** on the upper collar. The V-link only spreads and levers the cable's sideways (twisting) pull into a couple on those two pins. It has no other bracing, and with the cable slack it hangs straight down under gravity. Collar twist is limited by a **collar-torque interlock** on the drive.
 - Rev 15: the Roman-blind cords and per-pack hoists are removed. **Both wings are lowered together** on their halyards. Each pack lands in a **landing tray** and folds itself up as the top bar comes down, which brings every pack attachment to working height for replacement. Raising unfolds the packs again. One winch drives all 4 halyards, so the wings can't move out of step.
-- **Rev 16 (this):** **transport packaging and erection** (section 10). Every part is cut down to fit a **3.2 x 1.5 x 1.5 m freight module**. The mast becomes **flat-pack lattice sections**, the struts become **tent-pole segments**, and the deck becomes a 12-segment ring with spokes. Erection is base jack-up with the top weight kept to ~1 t.
+- Rev 16: **transport packaging and erection** (section 10). Every part is cut down to fit a **3.2 x 1.5 x 1.5 m freight module**. The mast becomes **flat-pack lattice sections**, the struts become **tent-pole segments**, and the deck becomes a 12-segment ring with spokes. Erection is base jack-up with the top weight kept to ~1 t.
+- **Rev 17 (this):** **detailed top yard** (section 4a): yard truss, an 8 m masthead (the mast becomes 108 m), topping lifts, braces, halyard sheaves and routing, **docking latches** that take the wings' weight off the halyards, and the **panel elevation winch** (one motor, linked traction sheaves).
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -56,11 +57,11 @@ How the design uses this:
 | Item | Value |
 |---|---|
 | Array top / bottom | **100 m / 70 m** above the deck |
-| Mast | 105 m triangular CFRP lattice (Ti nodes), 1.2 to 1.5 m face, ~25 kg/m (~2.5 t), in **35 flat-pack 3 m sections** (section 10) |
+| Mast | **108 m** triangular CFRP lattice (Ti nodes), 1.2 to 1.5 m face, ~25 kg/m (~2.7 t), in **36 flat-pack 3 m sections** (section 10). Top yard at 100 m, masthead 8 m above it |
 | Solar wings | **Port and starboard wings**, each 17 m x 30 m (~500 m²), total ≈ **1,000 m²**. Each wing is **8 concertina packs** hung from a top bar. ~1.37 t per wing (~2.2 kN on the Moon) |
 | Concertina pack | Rigid panels ~2 m wide x 1 m tall (CFRP-honeycomb, ~2 kg/m² with cells), 30 panels hinged along their horizontal edges. Deployed: 2 m x 30 m. Folded: ~2 m x 1 m x 0.7 m, ~140 kg (~0.23 kN on the Moon). Packs from 1 to 3 m wide use the same station hardware |
 | Power (30% cells, 1,361 W/m², ~85% system) | **~350 kWe** |
-| Top yard (permanent) | 34 m truss fixed to the mast at 100 m, held by topping lifts; 2 halyard sheaves per wing (inner at 2 m, outer at 17 m from the mast) |
+| Top yard (permanent) | 34 m CFRP truss fixed to the mast at 100 m, with topping lifts from the masthead and braces to the spreader tips. 2 halyard sheaves and 2 docking latches per wing. Details in section 4a |
 | Wing top bar | Each wing has a top bar on 2 halyards carrying 8 **pack hangers** (4 alignment cones + captive latches each). No fixed bottom yard: each pack has its own small bottom bar |
 | Landing trays | 2 light trays at deck height (~1.5 m) along the maintenance azimuth (port and starboard, 2 to 17 m from the mast), on the deck inboard and on short legs outboard. The packs fold into them |
 | Roller collars (stationary) | **Strut collar at 35 m**, **upper collar at 62 m** |
@@ -197,6 +198,54 @@ The whole cycle (down ~20 min, swap, up ~20 min) costs about an hour of output; 
 - So **the wings always move together**. A single winch drives all 4 halyards through linked drums, so the two wings land, fold and lift at the same rate, and the rig stays balanced at every moment.
 - Halyard load cells confirm that both sides match. A pack swap changes one side by at most ~0.23 kN (~2 kN·m) while it is unlatched, which is negligible.
 - A **regolith ballast pallet** (~1.4 t) remains as a contingency, for example if one wing's top bar ever has to come off.
+
+### 4a. Top yard: structure, lifts, stays and panel elevation winch
+
+![Top yard: elevation, side view, docking latch and winch](top-yard.svg)
+
+**Structure**
+- **Yard:** a 34 m CFRP-tube truss with Ti nodes, ~0.8 m deep and ~0.5 m wide. It is built from 12 bolted sections of ~2.8 m, flat-pack like the mast, to fit the freight module. Mass ~0.4 t (~12 kg/m).
+  - It is bolted at its centre to a **yard-mast section** at 100 m, so it turns with the mast. There is no bearing.
+  - It carries only light, mostly axial loads: ~2.7 kN of compression from the topping lifts. Its buckling load as a 17 m pinned strut is ~275 kN.
+- **Masthead:** an 8 m mast extension above the yard (mast top at 108 m), carrying the topping-lift tangs and the diamond-stay head.
+  - It is 8 m rather than 5 m because the steeper lift angle (25° instead of 16°) cuts the topping-lift tension from ~4.5 kN to **~3.0 kN**, and the yard compression from ~4.3 to **~2.7 kN**.
+  - Cost: one extra mast section (+75 kg).
+
+**Stays at the top**
+| Line | From → to | Purpose | Load (wings up) |
+|---|---|---|---|
+| **Topping lifts** (2) | Masthead → yard tips (±17 m) | Hold the yard ends up against the wing weight | ~3.0 kN each |
+| **Braces** (4) | Yard tips → diamond-spreader tips (±6 m fore/aft, at 81 m) | Hold the yard square to the mast against yaw and quake, and stop it swinging | Pre-tension ~0.3 kN |
+| **Diamond stays** (2 pairs) | Mast at 64 m → spreader tips (81 m) → masthead (108 m) | Brace the upper mast fore/aft (the wing plane is braced by the yard + topping lifts) | Pre-tension ~1 kN |
+
+- All are 6 mm stainless wire rope with turnbuckles. The topping lifts get **load cells**: the two readings show the wing balance directly.
+- The front braces cross in front of the wings, and their shadow (two 6 mm wires) costs <0.05%.
+
+**Halyards and routing**
+- Each wing hangs on **2 halyards**, one at each end of its top bar (2 m and 17 m from the mast).
+- Each halyard runs up to a **sheave at the yard**, turns 90° to run **inside the yard truss** to a **turning block at the yard-mast section**, then runs **down inside the mast lattice** to the panel elevation winch on the deck.
+- Halyard tension is ~1.1 kN with a wing hanging, in 6 mm stainless wire rope (breaking load ~25 kN, factor >20).
+- Lengths: ~214 m (outer) and ~200 m (inner), including the 97.5 m stroke from the yard down to the landing trays.
+- The halyard loop adds ~4.4 kN of compression to the mast while the wings hang on it. It does not add load at the mast foot: the pull is internal, top to deck.
+
+**Docking latches (wings off the halyards when up)**
+- At each halyard point the top bar carries a **cone**, which seats in a **dock** under the yard.
+- The dock has a **"push-to-latch, push-to-release" mechanism**, the same principle as a ballpoint pen or a parachute release hook. It needs no motor or power at height:
+  - *Raising:* hoist the bar ~50 mm past the dock and the latch toggles shut. Ease the halyard and the cone sits on the latch.
+  - *Lowering:* hoist ~50 mm again and the latch toggles open, then lower.
+- Once docked, the halyards are eased to a light holding tension (~0.1 kN). **The wing weight sits on the yard, not on the halyards or the winch brake**, so wire creep and brake load are avoided while the array operates. A limit switch at each dock confirms latched or open.
+
+**Panel elevation winch (on the deck at the mast base)**
+- **One drive for all 4 halyards**, so both wings always move together (section 4, Balance):
+  - **4 grooved traction sheaves** (Ø0.4 m, 3 wraps each) on **one shaft**. Constant-diameter traction sheaves give **exactly equal stroke** on all 4 halyards, so the bars stay level whatever length is stored.
+  - **4 storage reels**, each with a slip clutch that keeps the rope just taut behind its traction sheave, and a level-wind guide.
+- **Drive:** about 4.8 rpm at the sheaves (0.1 m/s), ~890 N·m.
+  - **2 brushless motors** (~0.5 kW each, either one can do the job) through a ~600:1 planetary gearbox.
+  - A **spring-applied fail-safe brake**, and a **hand-crank socket** for an EVA tool as the last-resort backup.
+- **Controls:** load cells on all 4 halyards give balance monitoring and the interlock (section 4). Encoders give position, so the trays and docks are approached slowly. The winch has a dust-sealed housing on the deck.
+- **Power** at 0.1 m/s with 70% efficiency is ~0.65 kW: trivial next to the ~350 kW the wings make.
+
+**No panel tilt drive is needed.** At the poles the Sun stays within ~1.5° of the horizon, and vertical panels lose only cos 1.5° ≈ 0.03%. "Elevation" here means only raising and lowering the wings.
 
 **Mast climber robot.** A small robot climbs the lattice to inspect it, swap collar roller cartridges, re-tension diamond stays and service the yards. It is teleoperated with a human supervising, and it doubles as an installation tool (section 7).
 
@@ -356,7 +405,7 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
 
 ![Ground turntable vs top turret](turret-trade.svg)
 
-**Option B, top turret.** The whole mast below ~64 m is **fixed** to a foundation at the base. A single **turret bearing** at ~64 m, just above the upper bracing, carries everything that turns: the upper mast (64 to 105 m), diamond stays, top yard and both wings. The drive, slip ring and wing winch move up onto the turret.
+**Option B, top turret.** The whole mast below ~64 m is **fixed** to a foundation at the base. A single **turret bearing** at ~64 m, just above the upper bracing, carries everything that turns: the upper mast (64 to 108 m), diamond stays, top yard and both wings. The drive, slip ring and wing winch move up onto the turret.
 
 | | **A. Ground turntable (baseline, rev 15)** | **B. Top turret** |
 |---|---|---|
@@ -397,7 +446,7 @@ The tight part is the **lunar lander's cargo deck and unloading gear**, and that
 
 | Item | Size as designed | Cut for freight | Packed size |
 |---|---|---|---|
-| Mast (105 m) | Triangular lattice, 1.4 m face | **35 flat-pack sections**, each 3 m long (see 10.2) | ~3 x 1.4 x 0.12 m each; 35 stack to ~4.2 m: **3 modules** |
+| Mast (108 m) | Triangular lattice, 1.4 m face | **36 flat-pack sections**, each 3 m long (see 10.2) | ~3 x 1.4 x 0.12 m each; 36 stack to ~4.3 m: **3 modules** |
 | Struts (6 tubes, 46 m) | CFRP tube Ø0.3 m | **Tent-pole segments**, 15 x ~3.1 m per tube, sleeve joints, internal steel tensioning cord | 90 tubes, ~25 per module: **4 modules** |
 | Rail | Ø12 m ring | 12 segments, π m arcs (~3.1 m chord), unchanged | 1 to 2 modules |
 | Deck (Ø12 m) | Was 4 quarter-sections (~8.5 m chord: too big) | **12 ring-girder segments + 12 spokes**, each spoke in 2 x 3 m pieces | 2 modules |
@@ -433,8 +482,8 @@ Roughly **25 freight modules** in total for one rig.
 | ~43 m | Upper collar fitted at the deck around its band; V-links shackled to their stay cables | Collar clamped (transport pin), rides up |
 | 43 to ~70 m | Stays from the foot winches to the upper collar act as **erection guys**; winches pay out to keep the mast plumb | Stays at a few hundred N |
 | ~70 m (strut band at the deck) | Strut collar fitted; A-frame struts pinned to it, lying flat, feet on skid dollies | Scissor action starts |
-| 70 to 105 m | Struts swing up as the tie winches pull the feet in to their pads | Feet land at 30 m |
-| 105 m | Clamp pins pulled, stays/ties trimmed, wings hoisted on the pre-rove halyards | Peak jack force ~10 kN (mast 2.5 t + top 1 t + stay pull-down) |
+| 70 to 108 m | Struts swing up as the tie winches pull the feet in to their pads | Feet land at 30 m |
+| 108 m | Clamp pins pulled, stays/ties trimmed, wings hoisted on the pre-rove halyards | Peak jack force ~10 kN (mast 2.5 t + top 1 t + stay pull-down) |
 
 At ~1 hour per 3 m section, the mast goes up in roughly **35 working hours** of supervised jacking.
 
