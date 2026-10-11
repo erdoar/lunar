@@ -1,61 +1,109 @@
-# Lunar polar rotating solar platform: concept design (rev 2, compact ring)
+# Lunar polar rotating solar platform: concept design (rev 3, tall guyed rig)
 
-A small turntable on a circular rail that carries a tall, cable-stayed solar array, for a lunar polar site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
+A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
-**Rev 2 changes:** for logistics and construction reasons the rail ring is cut from Ø42 m (two rails) to **Ø12 m (one rail)**. The array is now much wider and taller than the ring. That only works because the Moon has **low gravity and no wind**, and the design is built around using both as fully as possible (section 2). The installation equipment is custom and human supervised (section 6).
+**Revision history**
+- Rev 1: Ø42 m twin-rail turntable carrying a 30 m panel wall.
+- Rev 2: rail ring cut to Ø12 m for logistics; cable-stayed rig that uses low gravity and no wind; human-supervised installation equipment.
+- **Rev 3 (this):** the array goes to the **highest practical height**, above local terrain shadows and the shadows of other collectors. Baseline array top: **100 m**. The 12 m ring stays, but the tall mast is now braced by **stationary ground guys** through **roller collars**, and the array is split into **curtains that can be lowered** to the ground for repair.
 
-![Platform layout: plan and elevation](platform-layout.svg)
+![Platform layout: elevation and plan](platform-layout.svg)
 
-## 1. Why it rotates, and how fast
+## 1. Why it rotates, and why it must be tall
 
-At the poles the Sun stays within ~1.5° of the horizon and goes once around the horizon each lunar day (synodic, 29.5 Earth days). So the panels must:
+At the poles the Sun stays within ~1.5° of the horizon and goes once around it each lunar day (29.5 Earth days). So the array must stand **vertical** and turn about a vertical axis **once every 29.5 days** (~0.51°/hour), always in the same direction.
 
-- stand **vertical**, and
-- turn about a vertical axis **once every 29.5 days**: about **0.51°/hour**, continuously, in one direction.
+At such low Sun angles every bump shades a long way: a 10 m rise casts a shadow ~380 m long at 1.5°, and a 100 m object ~3.8 km. On crater rims and ridges, how many hours of sunlight a point gets rises steeply with height above the ground, because the line to the Sun clears more of the far terrain. So the array top is pushed up as far as structure, installation and site allow. Published illumination models of polar sites, and tower concepts such as Honeybee Robotics' LUNARSABER (~100 m), point to the same order of height.
 
-Height also pays: a few tens of metres above the local ground clears nearby terrain shadows and gives noticeably more hours of sunlight at most polar sites.
+**How to set the height for a real site:** run a horizon/illumination analysis on LOLA elevation data for the exact spot, for array-top heights of, say, 20 to 200 m. Plot hours of sunlight per year against height and pick the knee of the curve. The structure in this document scales across that range (section 3).
 
 ## 2. Using low gravity and no wind
 
-On Earth a 40 m wide vertical sail on a 12 m base would blow over. On the Moon the only loads are:
-
 | Load | Earth | Moon | Effect on design |
 |---|---|---|---|
-| Wind | Governs everything | **None** | Huge flat area costs almost nothing in structure; no flutter, no gust factor |
-| Gravity | 9.81 m/s² | **1.62 m/s² (1/6)** | Members, stays, jacks and bearings are 1/6 the size for the same mass |
-| Seismic | Varies | Shallow moonquakes, small accelerations | Main lateral load case; handled by symmetry, stays and uplift rollers |
-| Thermal | Moderate | Large swings (~40 K to ~330 K) | Stays need spring tensioners; joints need float |
-| Rotation dynamics | n/a | 0.51°/h: negligible | Only the start/stop steps matter; ramp them gently |
+| Wind | Governs tall masts | **None** | A slender 100 m+ mast and a 1,000 m² sail with almost no lateral load |
+| Gravity | 9.81 m/s² | **1.62 m/s² (1/6)** | Mast compression, guy tension, jacks and bearings are 1/6 the size |
+| Seismic | Varies | Shallow moonquakes, small accelerations | Main lateral load; carried by guys |
+| Thermal | Moderate | Large swings and one-sided sunlight | Thermal bow of the mast; use CFRP, keep the gradient steady (below) |
+| Rotation dynamics | n/a | 0.51°/h | Negligible; ramp the drive steps gently |
 
 How the design uses this:
 
-1. **Tension structure, sailing-ship rig.** A central mast holds horizontal yards; the solar blanket hangs from the top yard and is tensioned down to a bottom yard, like a square sail. Thin cables and booms carry everything; there are almost no bending members.
-2. **Thin flexible solar blankets** (roll-out, ROSA-type, ~0.5 to 1 kg/m² including harness) instead of rigid panels. In 1/6 g with no wind they hang flat under light tension.
-3. **Symmetry puts the centre of mass on the axis.** The array is one plane through the mast, left and right wings balanced. The ring only carries vertical load and small moments, so it can be small.
-4. **The array overhangs the ring.** A 40 m wide blanket sits on a 12 m ring. Tipping needs a lateral acceleration of about g x r / h(CoM) = 1.62 x 6 / 18 ≈ **0.5 m/s²**, far above expected moonquake shaking, and uplift rollers add a positive lock on top.
-5. **Low natural frequency is acceptable.** With no wind there is nothing to excite the rig except the drive and quakes. Drive in small steps with smooth acceleration ramps (seconds to minutes), never sudden starts.
-6. **Light installation gear.** A jack or winch lifts 6x the mass it could on Earth. A 3 t mast weighs only ~4.9 kN on the Moon: hand-winch territory.
+1. **A guyed mast.** On Earth, guyed lattice masts over 600 m tall stand up to wind and ice. On the Moon, without wind and in 1/6 g, a light lattice mast with guys every ~20 m can reach 100 to 200 m. Its practical limit is set by the site, installation and shading, not strength.
+2. **The guys don't rotate.** They run from ground anchors to **roller collars** that encircle the mast. The mast turns inside the collars. That keeps the base ring small (Ø12 m) while the guys spread wide (anchor radius ~0.65x the top collar height).
+3. **The array sits above all the guys.** It sweeps a 17 m radius circle from 67 to 100 m. The highest collar is at 62 m, so the turning array never meets a guy. Above the collar the mast is braced by its own rotating **diamond stays** (spreaders and stays that turn with the mast, as on a racing yacht).
+4. **Thin roll-out blankets** (~0.5 to 1 kg/m² with harness). In 1/6 g with no wind they hang flat under light tension.
+5. **Balanced rig.** The array is one plane through the mast, left and right equal, so its centre of mass stays on the axis.
+6. **Steady sunlight makes thermal bow predictable.** Because the rig tracks the Sun, the same mast face is always sunlit, so the bow is nearly constant and can be trimmed out with guy tension. The mast sits behind the blanket, so its top section is in shade. CFRP tubes (α ≈ 0 to 1x10⁻⁶ /K) keep the bow to a few centimetres. The same 35 m length in aluminium would bow ~0.9 m.
+7. **Light installation gear.** The whole mast plus array (~5 t) weighs about 8 kN on the Moon, so a modest jack at deck level can raise all of it (section 7).
 
-## 3. Reference configuration
+## 3. Reference configuration (100 m baseline)
 
-| Item | Rev 2 value |
+| Item | Rev 3 value |
 |---|---|
-| Rail ring | **Ø12 m, single rail**, 12 identical segments, each π m (3.14 m) long |
-| Bogies | **8** captive bogies, 2 wheels each (16 wheels) |
-| Deck | Ø12 m ring girder + spokes, 4 bolted quarter-sections (fit a lander) |
-| Mast | 45 m triangular truss, built in 3 m sections |
-| Spreaders | 2 levels, ±8 m, to widen stay angles (as on a sailing boat) |
-| Yards | Top yard at 40 m and bottom yard at 15 m, each 40 m long |
-| Solar blanket | 40 m x 25 m = **1,000 m²**, one active face |
-| Power (30% cells, 1,361 W/m², ~85% system) | **~350 kWe** (same as rev 1) |
-| Rotating mass | ~12 t (blanket 1 t, yards 1 t, mast 3 t, stays/spreaders 0.5 t, deck 4 t, bogies 1.5 t, kingpin/slip ring 1 t) |
-| Lunar weight | 12 t x 1.62 ≈ **19.5 kN** (rev 1: 97 kN) |
-| Wheel load | ~1.2 kN nominal, 4 kN design (x3, one bogie removed) |
-| Centre of mass | ~18 m above the deck, on the axis |
+| Array top / bottom | **100 m / 70 m** above the deck |
+| Mast | 105 m triangular CFRP lattice (Ti nodes), 1.2 to 1.5 m face, ~25 kg/m (~2.5 t), built in 3 m sections |
+| Solar curtains | 8 vertical curtains, each ~4 m x 30 m, total 34 m x 30 m ≈ **1,000 m²** |
+| Power (30% cells, 1,361 W/m², ~85% system) | **~350 kWe** |
+| Top / bottom yards | 34 m, at 100 m and 70 m |
+| Guy collars (stationary) | 3 levels at **22, 42, 62 m**; 3 guys per level at 120° |
+| Guy anchors | 3 anchor groups at **~40 m radius** |
+| Guys | 6 mm stainless wire rope (UV-proof), pretension ~1 kN each, spring tensioner + load cell at the anchor |
+| Upper bracing (rotating) | Diamond stays: spreaders ±6 m at 81 m, stays from 62 m to the mast top |
+| Rail ring | Ø12 m single rail, 12 segments of π m, 8 bogies (unchanged from rev 2) |
+| Rotating mass | ~11.5 t (mast 2.5 t, array + yards 2 t, deck 4 t, bogies 1.5 t, kingpin 1 t, diamond stays 0.5 t) |
+| Lunar weight on the ring | ~19 kN, plus ~7 kN of guy pretension passed down through the collars |
+| Maintenance azimuth | Mast parked so the array lies **between** guy directions (e.g. 30°/210° when guys are at 0°/120°/240°) |
 
-**Stays.** Forestay/backstay pairs run from the mast top and spreader tips to the deck ring rim, front and back. Topping lifts run from the mast top to the yard tips. Each stay has a **spring tensioner and load cell** at the deck end to take thermal length change (a 45 m steel stay changes ~50 mm over 100 K) and to show the rig's state.
+**Scaling to other heights** (rough, same array, CFRP mast):
 
-## 4. Running gear (low friction, dust tolerant)
+| Array top | Top collar | Anchor radius | Guy levels | Mast mass | Total rotating + collars | Lunar weight |
+|---|---|---|---|---|---|---|
+| 60 m | 22 m | ~15 m | 2 | 1.2 t | ~10 t | ~16 kN |
+| **100 m** | **62 m** | **~40 m** | **3** | **2.5 t** | **~11.5 t** | **~19 kN** |
+| 150 m | 112 m | ~75 m | 4 | 4.8 t | ~14 t | ~23 kN |
+| 200 m | 162 m | ~105 m | 5 | 8 t | ~18 t | ~29 kN |
+
+Mass barely grows with height. In practice the limit comes from:
+- **Anchor footprint**: the ridge must be ~2x the anchor radius wide. Ridges are often only a few hundred metres across.
+- **Installation time** at the jack.
+- **Sightlines to other collectors**: a taller rig shades more of the ridge.
+
+## 4. Mast, collars and curtains
+
+**Roller collars.** Each collar is a stationary steel ring around the mast. At that height the mast carries a circular **collar band** (a short ring of rail). The collar has:
+- 6 radial guide rollers on the band, to hold the mast laterally, and
+- 3 thrust rollers on a shoulder, to carry the downward pull of the guys.
+
+The rollers are the same wheel/bearing technology as the bogies (dry-lubricated hybrid bearings, dissimilar surfaces), on slide-out **cartridges**. The collars carry only light loads (guy pretension and quake loads), so the heavy, critical parts stay at ground level: vertical load, drive and slip ring. Dust is far lower at height.
+
+**Curtains instead of one blanket.** The array is 8 vertical curtains, 4 m wide. Each hangs from its own **halyard on the top yard** and is tensioned down to the bottom yard. To repair one (for example after a micrometeoroid strike):
+1. Rotate the mast to the **maintenance azimuth**, so the array lies between guy directions.
+2. Release the curtain's bottom tension lines.
+3. Lower it on its halyard, in front of the bottom yard, straight down to the ground. There are no guys in that vertical plane, and the innermost curtain starts 2 m from the mast to clear the collars.
+4. Swap the curtain (or a section) at ground level and haul it back up.
+
+Nobody has to climb for the most common repair.
+
+**Mast climber robot.** A small robot climbs the lattice to inspect it, swap collar roller cartridges, re-tension diamond stays and service the yards. It is teleoperated with a human supervising, and it doubles as an installation tool (section 7).
+
+## 4b. Shading between collectors
+
+When several rigs share a ridge, one shades another when the Sun lines up behind it. The shade lasts roughly (array width / spacing in degrees + 0.53° Sun disc) / 0.51° per hour, once per lunar day for each neighbour that can line up:
+
+| Spacing | Shade per alignment | Share of the lunar day lost |
+|---|---|---|
+| 200 m | ~20 h | ~2.9% |
+| 340 m (10x width) | ~12 h | ~1.7% |
+| 500 m | ~9 h | ~1.2% |
+| 1,000 m | ~5 h | ~0.7% |
+
+Layout rules:
+- **Space rigs ≥10x the array width apart.**
+- **Put them on a line along the ridge crest**, so they line up with the Sun only twice per lunar day.
+- **Stagger the heights** of neighbours by more than the array height, so their arrays don't overlap in the sky. Then a neighbour's shadow is only its thin mast, which costs well under 1%.
+
+## 5. Running gear at ground level (low friction, dust tolerant)
 
 ![Bogie and rail: side view and cross-section](bogie-rail.svg)
 
@@ -64,7 +112,7 @@ How the design uses this:
 - **Avoid like-on-like metals** in vacuum (cold welding): hardened steel wheel on a ceramic or DLC-coated rail head (or Si₃N₄ rollers on steel).
 - Hybrid ceramic bearings with **dry lubrication** (sputtered MoS₂/WS₂, PTFE-composite cages). No grease or oil.
 - Labyrinth seals plus bellows boots.
-- Rolling resistance Crr ~0.001 to 0.003: at 19.5 kN that is **20 to 60 N** total.
+- Rolling resistance Crr ~0.001 to 0.003: at ~19 kN (plus guy pretension carried down the mast) that is **30 to 90 N** total.
 
 **Bogies**
 - 2-wheel **equaliser** bogies, spring-loaded so both wheels share load.
@@ -74,12 +122,12 @@ How the design uses this:
 - Standard **4-bolt kinematic mount** with captive bolts and a grapple fixture. One bogie ≈ 60 to 80 kg on Earth, about 12 kg-weight on the Moon: **one person can handle it**.
 
 **Centring, drive, power transfer**
-- Central **kingpin** with a slewing bearing (~1.2 m) takes radial loads and the mast base moment from quakes. It is also the survey datum for building the ring (section 6).
+- Central **kingpin** with a slewing bearing (~1.2 m) takes radial loads and the mast base moment from quakes. It is also the survey datum for building the ring (section 7).
 - **Drive**: 2 of the 8 bogies are drive bogies (a pinion on a rack on the rail web, or friction wheels); one is enough to turn the platform.
 - Running power is milliwatts. Size the drive for breakaway in dust (~20x running force, ~1 kN tangential): a few hundred watts.
 - Power crosses the rotation through a **slip ring or rotary transformer** in the kingpin.
 
-## 5. Track (raised, segmented, swappable)
+## 6. Track (raised, segmented, swappable)
 
 - **Raised rail** on piers ~0.5 m above the regolith, away from near-surface dust and with room to work underneath.
 - Rail: hollow box beam with a bolted, replaceable **rail head strip**.
@@ -96,59 +144,61 @@ How the design uses this:
 **Replacing a rail segment**
 1. Rotate so the segment is between two bogies. Bogie spacing is 4.7 m against 3.14 m segments, so there is margin.
 2. Clamp the **bridging rail** (6.3 m, two segment lengths) across it if the platform must keep moving.
-3. Unbolt, lift out, drop in the spare, level against the radius arm (section 6), remove the bridge.
+3. Unbolt, lift out, drop in the spare, level against the radius arm (section 7), remove the bridge.
 4. If only the running surface is damaged, swap just the rail head strip (~10 kg).
 
-**Spares on site**: 2 bogies, 2 rail segments, 6 rail head strips, 1 drive unit, slip-ring brush cartridges, 2 stays with tensioners, 1 blanket roll section.
+**Spares on site**: 2 bogies, 2 rail segments, 6 rail head strips, 1 drive unit, slip-ring brush cartridges, 2 collar roller cartridges, 2 guys with tensioners, 2 blanket curtains.
 
-## 6. Installation equipment and sequence (human supervised)
+## 7. Installation equipment and sequence (human supervised)
 
-Everything is built at or near ground level and then raised. A crew member (EVA, or from a pressurised rover nearby) supervises each step, checks readouts and approves every hold point. Machines do the lifting and positioning.
+Everything is assembled at deck level and raised. A crew member (EVA, or in a pressurised rover nearby) supervises each step and signs off every hold point. Machines do the lifting.
 
 | # | Equipment | What it does |
 |---|---|---|
-| E1 | **Kingpin driver** | Small drill/ground-screw rig that sets the central kingpin foundation. The kingpin becomes the datum for everything else. |
-| E2 | **Radius arm ("compass")** | A 6 m arm that rotates on the kingpin, with a laser level, encoder and a pier socket at its tip. It places every pier at exactly r = 6 m and the right height. Because the ring is small, one rigid arm replaces a survey crew. |
-| E3 | **Rail-riding installer cart** | Rides on the rail already installed, carries the next segment and pier, and places them at the open end of the ring under the radius arm's guidance. Later it becomes the **maintenance cart** (jacking, bogie and segment swaps). |
-| E4 | **Mast jack-up frame** | Sits on the deck around the kingpin. It lifts the whole mast one section (3 m) and a new section is pinned in at the bottom. All mast assembly happens at deck height, so no crane. Lifting the full 3 t mast needs only ~5 kN of jack force. |
-| E5 | **Rigging winches with load cells** | Tension the stays, raise the yards and deploy the blanket. Tensions are shown on a tablet for the supervisor. |
-| E6 | **Regolith compaction plate** | Vibratory plate to prepare pier pads; optional microwave sintering head. |
+| E1 | **Kingpin driver** | Sets the central kingpin foundation: the datum for everything else. |
+| E2 | **Radius arm ("compass")** | 6 m arm on the kingpin with a laser level, encoder and pier socket. It places and levels the 12 rail piers. With an extension and laser rangefinder, it also lays out the 3 guy anchor sites at 40 m. |
+| E3 | **Rail-riding installer cart** | Lays rail segments from the installed rail; later the maintenance cart (jacking, bogie and segment swaps). |
+| E4 | **Anchor installer** | Drives helical ground screws or places regolith-filled anchor bags at the 3 guy anchor sites, with a proof-load test. |
+| E5 | **Mast jack-up frame** | Sits on the deck around the kingpin and lifts the whole mast one 3 m section at a time; the new section is pinned in at the bottom. Peak lift is ~8 kN (whole mast + array) plus guy friction. |
+| E6 | **Guy winches with load cells** | One per anchor group, 3 drums each. They pay out and tension the guys during the jack-up and keep the mast plumb. Tensions are shown live on a supervisor tablet. |
+| E7 | **Mast climber robot** | Fits and checks the diamond stays and collar rollers at height. Later used for inspection and maintenance. |
+| E8 | **Curtain winch** | Raises and lowers curtains on their halyards (also used for repairs). |
 
 **Sequence**
-1. Survey and clear a ~16 m circle. Set the kingpin (E1).
-2. Mount the radius arm (E2) on the kingpin and set the 12 piers.
-3. Lay the 12 rail segments with the installer cart (E3), checking each against the radius arm. Hold point: ring flat to ±2 mm.
-4. Place 8 bogies on the rail, then the 4 deck quarter-sections on the bogies and kingpin. Bolt and check the deck turns freely by hand.
-5. Install the jack-up frame (E4). Fit the top mast section with the **top yard folded vertically** alongside it and the **blanket rolls** stowed on the yard.
-6. Jack the mast up section by section, adding spreaders and stays as each level passes deck height. Tension the stays progressively (E5).
-7. At full height, swing the top yard horizontal with its halyards and set the topping lifts.
-8. Unroll the blankets downward from the top yard. In 1/6 g and no wind they hang straight and do not flap. Attach them to the bottom yard and tension (E5).
-9. Connect the harness to the slip ring, commission the drive, start tracking.
+1. Survey and clear the site. Set the kingpin (E1). Lay out the 3 anchor sites with the radius arm (E2), then install and proof-load the anchors (E4).
+2. Set the 12 rail piers and lay the ring (E2, E3). Hold point: ring flat to ±2 mm.
+3. Place 8 bogies and the 4 deck quarters. Check the deck turns by hand.
+4. Fit the jack-up frame (E5). Assemble the **top assembly** at deck level: mast top section, diamond spreaders and stays, top yard folded vertically, curtains rolled on the top yard, bottom yard folded.
+5. **Jack up.** Each collar is fitted around the mast at deck level, clamped to its band section, and rides up with the mast. Its guys are paid out from the ground winches (E6), which keep the mast plumb. When a collar reaches its design height (22, 42, 62 m), its guys are locked and its clamp released. From then on the mast slides through it on the guide rollers as jacking continues.
+6. At full height, unfold the yards. Set the maintenance azimuth and lower the curtains one at a time onto the bottom yard, then tension them (E8).
+7. Trim guy tensions to plumb the mast and take out thermal bow. Connect the harness to the slip ring, commission the drive, start tracking.
 
-Every part is designed for this: captive fasteners only, one tool size, alignment cones on every joint, grapple fixtures, and no part over ~150 kg-weight on the Moon (~900 kg mass) without lifting gear.
+Design rules for every part: captive fasteners, one tool size, alignment cones, grapple fixtures, and no single piece heavier than ~150 kg-weight on the Moon without lifting gear.
 
-## 7. Environment checklist
+## 8. Environment checklist
 
 | Hazard | Response |
 |---|---|
-| Temperature swings | Spring tensioners on stays, radial float in bogies, rail expansion joints; materials tough at cryogenic temperatures (austenitic stainless, Ti-6Al-4V, Al-Li) |
-| Cold welding in vacuum | Dissimilar or coated mating surfaces, dry lubricants |
-| Abrasive, electrostatic dust | Raised rail, scrapers, labyrinth seals, overhanging skirt, keep rover traffic away; blanket mounted high, above most lofted dust |
-| Moonquakes | Symmetric balanced rig, stays, uplift rollers, kingpin moment capacity |
-| Micrometeoroids | Blanket made of replaceable strings/sections; stays sized with margin and redundant pairs |
-| Regolith settlement | Adjustable piers, periodic re-leveling with the radius arm |
-| Shading between rigs | Rigs on a shared ridge spaced ~10x blanket height apart along the Sun's path |
+| Terrain and neighbour shadows | Array at the top of a 100 m+ mast; site illumination study sets the height; spacing and stagger rules (section 4b) |
+| Temperature swings, one-sided sunlight | CFRP mast, mast behind the blanket, guy spring tensioners, steady sun-tracking gradient trimmed by guy tension |
+| Cold welding in vacuum | Dissimilar or coated mating surfaces, dry lubricants on all rollers |
+| Abrasive, electrostatic dust | Raised rail, scrapers, seals, skirt at ground level; collars and array are high above most lofted dust |
+| Moonquakes | Guys carry lateral load; balanced rig; uplift rollers at the base |
+| Micrometeoroids | Lowerable curtains; redundant guys (rig stays up with any one guy lost) |
+| UV and radiation on cables | Steel wire rope or coated CFRP rod, not bare aramid or polymer fibre |
+| Regolith settlement | Adjustable piers; guy tensions monitored with load cells and re-trimmed |
 
-## 8. Alternatives worth comparing
+## 9. Alternatives worth comparing
 
-- **No rail, kingpin only:** the rig is balanced, so a single large slewing bearing could carry it. The rail ring adds tipping stiffness and redundancy, and gives the installer and maintenance cart a track. Worth a trade study.
-- **NASA VSAT-style mast** (single tall tracking mast with a rotating array at the top): rotate only the array, not the base. Lighter base, but the rotating joint is 40 m up, which makes it harder to service.
-- **Fixed multi-face arrays:** no moving parts, about 1/3 to 1/2 of the energy.
+- **Rotate only the top** (VSAT / LUNARSABER style): a fixed guyed tower with a slewing bearing and slip ring under the array at 70 to 100 m. Simpler guys (they can attach directly), but the heaviest moving parts are high up. This design keeps them at ground level, at the cost of roller collars.
+- **No rail, kingpin only:** the rig is balanced and the guys carry lateral load, so a single base slewing bearing may be enough. The rail adds redundancy and a track for the maintenance cart. Worth a trade study.
+- **Several shorter rigs vs one tall one:** depends on the site's illumination-vs-height curve.
 
-## 9. Next steps
+## 10. Next steps
 
-1. Fix the site and power target; that sets mast height and blanket size.
-2. Rig analysis: stay pre-tension, thermal cases, modal analysis, moonquake response, the jack-up stages.
-3. Wheel/rail and bearing tests in vacuum with regolith simulant (LHS-1, NU-LHT) across the temperature range.
-4. Prototype the radius arm and installer cart; rehearse the whole build on Earth with suited operators (with a 1/6 g offload rig for the lifting steps).
-5. Packaging: deck quarters, mast sections and rail segments to fit the lander.
+1. **Site illumination study** on LOLA data: sunlight hours vs array height at candidate spots; pick the height.
+2. Mast and guy analysis: buckling between collars, guy pretension, thermal bow, moonquake response, every jack-up stage.
+3. Collar roller design and vacuum/thermal tests, together with the bogie wheel/rail tests (LHS-1, NU-LHT simulants).
+4. Prototype the jack-up with collars and ground winches at small scale; rehearse with suited operators.
+5. Curtain halyard and lowering trials; pick a blanket that tolerates repeated lowering.
+6. Packaging: deck quarters, 3 m mast sections, rail segments, curtain rolls to fit the lander.
