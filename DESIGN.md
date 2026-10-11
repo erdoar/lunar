@@ -125,6 +125,8 @@ A **transport clamp pin** in each cartridge locks the collar to the band during 
 
 **Wind-up: keeping the collars from turning with the mast.** Friction in the collar rollers drags the stationary collar round with the mast, so the bracing must hold it against twisting. In rev 4 to 6 every wire and strut lay in a vertical plane through the mast axis, so together they barely resisted twisting (`torsion_check.py` gives the numbers):
 
+![Torque arm: plan and elevation](torque-arm.svg)
+
 | Collar | Rev 4 to 6 | Rev 7 |
 |---|---|---|
 | Upper (wires) | ~2.9 kN·m/rad: ~0.2° of twist at normal friction (~10 N·m), **~10°** at 500 N·m (a partly seized roller) | **Torque arms**: ~320 kN·m/rad, about 110x stiffer; **~0.09°** at 500 N·m |
