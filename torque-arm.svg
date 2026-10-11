@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 920" font-family="Helvetica, Arial, sans-serif" font-size="13">
-<rect width="1240" height="920" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 880" font-family="Helvetica, Arial, sans-serif" font-size="13">
+<rect width="1240" height="880" fill="#fff"/>
 <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker></defs>
 <style>.s{stroke:#222;stroke-width:2}.l{stroke:#555;stroke-width:1;fill:none}.guy{stroke:#8e44ad;stroke-width:2}.arm{stroke:#c87f0a}.collar{fill:#4a9}.mast{fill:#888}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:17px;font-weight:bold}</style>
 <text x="20" y="30" class="t">Plan: one V pair of arms (of three) and its Y-bridle</text>
@@ -42,8 +42,8 @@
 <text x="20" y="495" font-size="12">Dashed: arms after a small twist (exaggerated). One leg tightens and the other slackens, and the split plate</text>
 <text x="20" y="511" font-size="12">is pulled sideways against the main cable tension. ~170 kN·m/rad at 1.5 kN, ~250 at 3 kN (all 3 planes):</text>
 <text x="20" y="527" font-size="12">~0.17° twist at 500 N·m (partly seized roller). Without arms: ~10°. Raise tension to stiffen.</text>
-<text x="660" y="30" class="t">Elevation: fold hinge + hanging A-bracket knee</text>
-<rect x="702" y="60" width="36" height="420" class="mast s"/>
+<text x="660" y="30" class="t">Elevation: fold hinge + V-plate pendant</text>
+<rect x="702" y="60" width="36" height="360" class="mast s"/>
 <text x="720" y="76" text-anchor="middle" font-size="11" style="stroke:none" fill="#fff">mast</text>
 <rect x="738" y="359.6" width="23.400000000000002" height="32.8" class="collar s"/>
 <rect x="678.6" y="359.6" width="23.400000000000002" height="32.8" class="collar s"/>
@@ -59,14 +59,12 @@
 <rect x="922" y="362" width="12" height="31.6" fill="#c87f0a" class="s"/>
 <circle cx="757.7" cy="370" r="8" fill="#fff" class="s"/><circle cx="757.7" cy="370" r="3" fill="#222"/>
 <rect x="738" y="359.6" width="23.400000000000002" height="38.7" class="collar s"/>
-<rect x="753.7" y="383.0" width="8" height="26.0" fill="#555" class="s"/>
-<path d="M755.7 409.0 l14 -10 M755.7 409.0 l-6 -10" stroke="#222" stroke-width="2" fill="none"/>
-<line x1="835.7" y1="385.6" x2="760.7" y2="409.0" stroke="#c87f0a" stroke-width="4"/>
-<circle cx="835.7" cy="385.6" r="4" fill="#fff" class="s"/>
-<circle cx="760.7" cy="409.0" r="4" fill="#f5b700" stroke="#222"/>
+<rect x="754.7" y="328.4" width="6" height="31.2" fill="#4a9" class="s"/><rect x="748.7" y="328.4" width="18" height="5" fill="#4a9" class="s"/>
+<line x1="835.7" y1="366.1" x2="763.7" y2="331.0" stroke="#8e44ad" stroke-width="2"/>
+<polygon points="831.8,370 839.6,370 835.7,363.5" fill="#c87f0a" stroke="#222"/>
 <line x1="757.7" y1="370" x2="757.7" y2="198.4" stroke="#c87f0a" stroke-width="4" stroke-dasharray="7 5"/>
 <line x1="773.3000000000001" y1="362.2" x2="773.3000000000001" y2="198.4" stroke="#c87f0a" stroke-width="2" stroke-dasharray="7 5"/>
-<line x1="773.3000000000001" y1="292" x2="773.3000000000001" y2="379.1" stroke="#c87f0a" stroke-width="2" stroke-dasharray="3 3"/>
+<path d="M765.7 292 q 14 23.400000000000002 -2 41.6" fill="none" stroke="#8e44ad" stroke-width="1.5" stroke-dasharray="3 3"/>
 <path d="M777.7 208.79999999999998 A166.4 166.4 0 0 1 909.8 346.6" fill="none" stroke="#222" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#ar)"/>
 <line x1="928" y1="380.4" x2="979.9922939411208" y2="487.0" class="guy"/>
 <path d="M750 370L660 330" class="l"/>
@@ -76,11 +74,11 @@
 <text x="781" y="205" text-anchor="start">Folded upright for jack-up</text>
 <path d="M863 279L886 258" class="l"/>
 <text x="890" y="262" text-anchor="start">Wire tension swings it down</text>
-<path d="M798 399L863 427" class="l"/>
-<text x="867" y="431" text-anchor="start">Hanging A-bracket knee: see detail</text>
-<path d="M754 401L680 432" class="l"/>
-<text x="676" y="436" text-anchor="end">Seat post under the collar</text>
-<text x="676" y="451" text-anchor="end">(stationary), cup 1.5 m down</text>
+<path d="M798 347L863 427" class="l"/>
+<text x="867" y="431" text-anchor="start">V-plate + pendant to crown ring: see detail</text>
+<path d="M758 328L680 432" class="l"/>
+<text x="676" y="436" text-anchor="end">Crown ring (stationary),</text>
+<text x="676" y="451" text-anchor="end">1.5 m above the hinge</text>
 <path d="M750 367L680 412" class="l"/>
 <text x="676" y="416" text-anchor="end">Upper collar, 62 m</text>
 <path d="M928 362L944 339" class="l"/>
@@ -88,42 +86,49 @@
 <path d="M951 432L1006 393" class="l"/>
 <text x="1010" y="397" text-anchor="start">Bridle leg, down to the</text>
 <text x="1010" y="412" text-anchor="start">split plate 12 m up</text>
-<rect x="590" y="525" width="625" height="340" fill="none" stroke="#999" stroke-dasharray="4 3"/>
-<text x="600" y="544" font-weight="bold">Detail: hanging A-bracket knee</text>
-<rect x="660" y="580" width="26" height="240" class="mast s"/>
-<rect x="686" y="570.0" width="80.0" height="64.0" class="collar s"/>
-<rect x="770" y="620.0" width="10" height="140.0" fill="#555" class="s"/>
-<path d="M776 766.0 Q786 774.0 796 766.0 L820 738.0" fill="none" stroke="#222" stroke-width="3"/>
-<line x1="780" y1="610" x2="1140.0" y2="610" stroke="#c87f0a" stroke-width="7"/>
-<line x1="795.0" y1="670.0" x2="1140.0" y2="670.0" stroke="#c87f0a" stroke-width="4"/>
-<line x1="795.0" y1="610" x2="822.0" y2="670.0" stroke="#c87f0a" stroke-width="1.5"/>
-<line x1="850.0" y1="610" x2="877.0" y2="670.0" stroke="#c87f0a" stroke-width="1.5"/>
-<line x1="905.0" y1="610" x2="932.0" y2="670.0" stroke="#c87f0a" stroke-width="1.5"/>
-<line x1="960.0" y1="610" x2="987.0" y2="670.0" stroke="#c87f0a" stroke-width="1.5"/>
-<line x1="1015.0" y1="610" x2="1042.0" y2="670.0" stroke="#c87f0a" stroke-width="1.5"/>
-<line x1="1070.0" y1="610" x2="1097.0" y2="670.0" stroke="#c87f0a" stroke-width="1.5"/>
-<circle cx="780" cy="610" r="8" fill="#fff" class="s"/><circle cx="780" cy="610" r="3" fill="#222"/>
-<line x1="1080.0" y1="670.0" x2="786" y2="764.0" stroke="#c87f0a" stroke-width="5"/>
-<circle cx="1080.0" cy="670.0" r="6" fill="#fff" class="s"/><circle cx="786" cy="764.0" r="5" fill="#f5b700" stroke="#222"/>
-<line x1="1080.0" y1="670.0" x2="1080.0" y2="815.0" stroke="#c87f0a" stroke-width="2" stroke-dasharray="5 4"/>
-<line x1="1149.0" y1="685.0" x2="1201.0" y2="685.0" stroke="#c87f0a" stroke-width="4"/>
-<path d="M1153.0 685.0 L1175.0 795.0 L1197.0 685.0" fill="none" stroke="#c87f0a" stroke-width="3"/>
-<circle cx="1153.0" cy="685.0" r="4" fill="#fff" class="s"/><circle cx="1197.0" cy="685.0" r="4" fill="#fff" class="s"/><circle cx="1175.0" cy="795.0" r="4" fill="#f5b700" stroke="#222"/>
-<text x="1175.0" y="673.0" text-anchor="middle" font-size="11">A, seen end-on:</text><text x="1175.0" y="813.0" text-anchor="middle" font-size="11">2 pins ~0.5 m apart</text>
-<path d="M960 715L870 830" class="l"/>
-<text x="874" y="834" text-anchor="start">Knee (A-bracket), ~3.35 m: compression only,</text>
-<text x="874" y="849" text-anchor="start">~3.4 kN (6.9 kN at 3 kN bridle tension)</text>
-<path d="M1078 800L1050 800" class="l"/>
-<text x="1046" y="804" text-anchor="end">Unloaded:</text>
-<text x="1046" y="819" text-anchor="end">hangs vertically</text>
-<path d="M778 768L720 790" class="l"/>
-<text x="716" y="794" text-anchor="end">Funnel ramp + cup seat</text>
-<path d="M775 700L720 700" class="l"/>
-<text x="716" y="704" text-anchor="end">Seat post</text>
-<text x="716" y="719" text-anchor="end">(stationary)</text>
-<path d="M786 604L830 565" class="l"/>
-<text x="834" y="569" text-anchor="start">Fold hinge (~3 kN)</text>
-<path d="M1140.0 615.0 v40" stroke="#8e44ad" stroke-width="2.5" marker-end="url(#ar)"/><text x="1134.0" y="598" font-size="11.5" fill="#8e44ad" text-anchor="middle">bridle pull</text>
-<text x="660" y="884" font-size="12">Each arm ~30 kg; the V pair folds as one frame on a common hinge axis.</text>
-<text x="660" y="900" font-size="12">Folded arms ride up with the collar; the 3 pairs balance, so the collar is not tilted.</text>
+<rect x="590" y="445" width="625" height="355" fill="none" stroke="#999" stroke-dasharray="4 3"/>
+<text x="600" y="464" font-weight="bold">Detail: V-plate + shackle + pendant (tension)</text>
+<rect x="660" y="480" width="26" height="270" class="mast s"/>
+<rect x="686" y="640.0" width="80.0" height="64.0" class="collar s"/>
+<rect x="768" y="530.0" width="10" height="110.00000000000001" fill="#4a9" class="s"/>
+<rect x="750" y="520.0" width="40" height="10" fill="#4a9" class="s"/>
+<circle cx="784" cy="530.0" r="4" fill="#fff" class="s"/>
+<line x1="780" y1="680" x2="1140.0" y2="680" stroke="#c87f0a" stroke-width="7"/>
+<line x1="795.0" y1="740.0" x2="1140.0" y2="740.0" stroke="#c87f0a" stroke-width="4"/>
+<line x1="795.0" y1="680" x2="822.0" y2="740.0" stroke="#c87f0a" stroke-width="1.5"/>
+<line x1="850.0" y1="680" x2="877.0" y2="740.0" stroke="#c87f0a" stroke-width="1.5"/>
+<line x1="905.0" y1="680" x2="932.0" y2="740.0" stroke="#c87f0a" stroke-width="1.5"/>
+<line x1="960.0" y1="680" x2="987.0" y2="740.0" stroke="#c87f0a" stroke-width="1.5"/>
+<line x1="1015.0" y1="680" x2="1042.0" y2="740.0" stroke="#c87f0a" stroke-width="1.5"/>
+<line x1="1070.0" y1="680" x2="1097.0" y2="740.0" stroke="#c87f0a" stroke-width="1.5"/>
+<circle cx="780" cy="680" r="8" fill="#fff" class="s"/><circle cx="780" cy="680" r="3" fill="#222"/>
+<polygon points="1068.0,676 1092.0,676 1055.0,631.0" fill="#c87f0a" stroke="#222" stroke-width="1.5"/>
+<circle cx="1074.0" cy="673" r="3" fill="#fff" stroke="#222"/><circle cx="1086.0" cy="673" r="3" fill="#fff" stroke="#222"/>
+<ellipse cx="1049.0" cy="627.0" rx="9" ry="6" fill="none" stroke="#222" stroke-width="2.5"/>
+<line x1="1043.0" y1="624.0" x2="784" y2="530.0" stroke="#8e44ad" stroke-width="3"/>
+<path d="M784 530.0 q 90.0 90.0 180.0 40.0" fill="none" stroke="#8e44ad" stroke-width="1.5" stroke-dasharray="4 3"/>
+<path d="M1145.0 525.0 L1205.0 525.0 L1175.0 590.0 Z" fill="#c87f0a" stroke="#222" stroke-width="1.5"/>
+<path d="M1159.0 533.0 L1191.0 533.0 L1175.0 570.0 Z" fill="#fff" stroke="#222" stroke-width="1"/>
+<circle cx="1153.0" cy="530.0" r="4" fill="#fff" stroke="#222"/><circle cx="1197.0" cy="530.0" r="4" fill="#fff" stroke="#222"/><circle cx="1175.0" cy="581.0" r="4" fill="#fff" stroke="#222"/>
+<text x="1175.0" y="515.0" text-anchor="middle" font-size="11">The part: flat V-plate</text>
+<text x="1175.0" y="606.0" text-anchor="middle" font-size="11">2 pin holes + 1 shackle hole</text>
+<path d="M918 580L870 480" class="l"/>
+<text x="874" y="484" text-anchor="start">Wire pendant ~2.3 m: tension ~3.4 kN</text>
+<text x="874" y="499" text-anchor="start">(6.9 kN at 3 kN bridle tension)</text>
+<path d="M1085 674L910 775" class="l"/>
+<text x="914" y="779" text-anchor="start">V-plate on 2 horizontally aligned pins, 3 m out</text>
+<path d="M1041 627L995 556" class="l"/>
+<text x="991" y="560" text-anchor="end">Shackle (safety pin)</text>
+<path d="M880 600L940 640" class="l"/>
+<text x="944" y="644" text-anchor="start">Unloaded (arm folded): pendant slack,</text>
+<text x="944" y="659" text-anchor="start">V-plate dangles from its pins</text>
+<path d="M750 525L652 495" class="l"/>
+<text x="648" y="499" text-anchor="end">Crown</text>
+<text x="648" y="514" text-anchor="end">ring</text>
+<path d="M774 686L652 755" class="l"/>
+<text x="648" y="759" text-anchor="end">Fold</text>
+<text x="648" y="774" text-anchor="end">hinge</text>
+<path d="M1140.0 685.0 v40" stroke="#8e44ad" stroke-width="2.5" marker-end="url(#ar)"/><text x="1146.0" y="755.0" font-size="11.5" fill="#8e44ad">bridle pull</text>
+<text x="660" y="844" font-size="12">Each arm ~30 kg; the V pair folds as one frame on a common hinge axis.</text>
+<text x="660" y="860" font-size="12">Folded arms ride up with the collar; the 3 pairs balance, so the collar is not tilted.</text>
 </svg>

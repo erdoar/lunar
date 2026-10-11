@@ -1,4 +1,4 @@
-# Lunar polar rotating solar platform: concept design (rev 12, tall mast on a strut tripod)
+# Lunar polar rotating solar platform: concept design (rev 13, tall mast on a strut tripod)
 
 A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
@@ -14,7 +14,8 @@ A small turntable on a circular rail that turns a very tall mast, with the solar
 - Rev 9: each bracing plane's wires become a **single cable that splits into a Y-bridle** at a fixed split plate about 12 m above the ground. The two legs run to the tips of **two hinged arms in a V** on the upper collar. There is one tensioner and one load cell per plane, and twist resistance comes from the monitored, adjustable pre-tension.
 - Rev 10: the curtains become **rigid concertina packs**, 1 to 3 m wide (2 m baseline), shipped and replaced as separate units. Each pack deploys and retracts like a **Roman blind**, and each can be **lowered on its own** to the ground for exchange. Lowering a whole wing is now only for top-bar work.
 - Rev 11: two-point arm root (fold hinge + seat 500 mm below) instead of knee braces.
-- **Rev 12 (this):** back to a knee, but an ultra-simple one. Each arm has a **hanging A-bracket knee** on 2 horizontally aligned pins. It hangs vertically when unloaded, and drops into a funnel seat by itself as the arm swings down. It carries compression only and needs no latch or actuator.
+- Rev 12: hanging A-bracket knee (compression strut into a funnel cup).
+- **Rev 13 (this):** the knee becomes the simplest possible part: a **flat V-plate**. Its 2 pin holes mount on the arm, and a single shackle hole at the apex takes a short wire **pendant** up to a stationary **crown ring** 1.5 m above the hinge. It works in **tension**: a flat bar would buckle in compression, and a shackle can't push. It hangs vertically when unloaded and tightens by itself as the arm comes down.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -61,10 +62,11 @@ How the design uses this:
 | Roller collars (stationary) | **Strut collar at 35 m**, **upper collar at 62 m** |
 | Struts | 3 **A-frames** at 120°: each 2 CFRP tubes Ø0.3 m x 2 mm, ~46 m long, ~3 kg/m, ball joints at both ends. Joined at the foot, spread ±1.5 m at a torque bracket 4 m out from the strut collar |
 | Foot pads | 3 at **30 m radius**, ~1 m² sintered or gabion pad, compression only (~0.5 kN) |
-| Upper torque arms | Per bracing plane, **2 hinged CFRP arms in a V** from the upper collar to tips 8 m out and ±3 m apart. The hinge axes line up, so the pair folds as one frame. A light tie bar joins the tips. Each arm has one fold hinge at the collar and a **hanging A-bracket knee** that seats in a funnel cup 1.5 m below the hinge. ~30 kg per arm plus ~6 kg per knee |
+| Upper torque arms | Per bracing plane, **2 hinged CFRP arms in a V** from the upper collar to tips 8 m out and ±3 m apart. The hinge axes line up, so the pair folds as one frame. A light tie bar joins the tips. Each arm has one fold hinge at the collar, plus a **V-plate + shackle + wire pendant** up to the crown ring 1.5 m above the hinge. ~30 kg per arm, ~1.5 kg per V-plate and pendant |
+| Crown ring (stationary) | Light ring (Ø~3.4 m) on 3 short posts, 1.5 m above the upper collar. It carries 6 pendant lugs, and the pendant pulls from the 3 stations cancel through the ring |
 | Cables | Per bracing plane, **one Y-bridle**: a single main cable (~13 m) from the foot tensioner up to a fixed **split plate** at ~12 m height, 26 m out, then 2 legs (~53 m) to the arm tips. 6 mm stainless wire rope, UV-proof. ~1.5 kN pre-tension per plane, adjustable to ~3 kN |
 | Ties | Foot to kingpin foundation, horizontal at ground level (passing under the raised rail), ~1 kN |
-| Upper bracing (rotating) | Diamond stays: spreaders ±6 m at 81 m, stays from 62 m to the mast top |
+| Upper bracing (rotating) | Diamond stays: spreaders ±6 m at 81 m, stays from 64 m (just above the crown ring) to the mast top |
 | Rail ring | Ø12 m single rail, 12 segments of π m, **3 bogies x 2 tyres** at 120° |
 | Rotating mass | ~12.6 t (mast 2.5 t, wings + top yard 3.1 t, deck 4 t, bogies 0.2 t, collar bands + margin 1.1 t, kingpin 1 t, diamond stays 0.5 t) |
 | Lunar weight on the ring | ~20.5 kN; the pre-tensioned tripod lifts the mast very slightly (~1.5 kN), so the ring carries a little less |
@@ -151,14 +153,15 @@ How it works:
   Near the collar the bridle is weak; near the foot it acts almost like two separate cables. **The split is set at 0.8** (~12 m above the ground, 26 m out), where it is ~170 kN·m/rad at the normal 1.5 kN and still reachable from the ground for inspection.
 - **The split must be a fixed plate, not a pulley.** A pulley would let the legs equalise and slide, and the twist resistance would almost vanish. Each leg is terminated on the plate separately.
 - **Tension monitored and adjustable.** There is one screw tensioner and load cell per plane, at the foot. Because stiffness rises with tension, the operator can raise pre-tension (up to ~3 kN, ~250 kN·m/rad) if collar friction trends upward. Above 1.5 kN the struts and ties are re-trimmed to keep the feet pressing down.
-- **Hanging A-bracket knee (self-seating, no latch).**
+- **V-plate pendant "knee" (tension, self-tightening).**
   - Each arm root is a single **fold hinge** (a horizontal pin in two lugs) on the collar ring.
-  - Under each arm hangs an **A-shaped knee**: two light CFRP tubes, ~3.35 m long, joined at a ball-nosed apex. Its top ends hang from **2 horizontally aligned pins** on the arm's bottom chord, 3 m out from the hinge and ~0.5 m apart. The wide pin base keeps the knee stable sideways.
-  - When unloaded, for example with the arm folded upright for jack-up, the knee simply **hangs vertically** from its pins under gravity.
-  - **Self-seating.** As bridle tension swings the arm down, the knee's apex meets a **funnel ramp** on a short stationary **seat post** under the collar (1.5 m below the hinge). It slides into the **cup seat**, and the knee becomes a diagonal strut that sets the arm level. The supervisor confirms the apex is seated on camera.
-  - **Compression only.** The bridle always pulls the arm tip down (~0.7 kN per tip, far more than the arm's own quake inertia), so the knee stays loaded. It carries ~3.4 kN at 1.5 kN bridle tension (~6.9 kN at 3 kN), and the hinge pin ~3 kN. No latch or keeper is needed. A light gravity flap over the cup is optional against debris.
-  - **Retrieval** is the reverse: slack the bridle and lift the arm, and the apex rises out of the cup and the knee hangs free again.
-  - The 3 V pairs balance one another, so the collar ring as a whole is not tilted.
+  - The knee is one **flat V-plate** (Ti, ~8 mm thick, 40 mm legs, about 0.5 m across and 0.6 m deep). Its **2 pin holes** mount on 2 horizontally aligned pins on the arm's top chord, 3 m out from the hinge. Its **apex hole** takes a **shackle**.
+  - The shackle connects to a short **wire pendant** (~2.3 m, 6 mm rope with a thimble), which runs up to a lug on the stationary **crown ring** 1.5 m above the hinge.
+  - **Tension, not compression.** The bridle pulls the arm tip down, so the arm wants to rotate down about its hinge, and the pendant holds it up. The pendant runs ~3.4 kN at 1.5 kN bridle tension (~6.9 kN at 3 kN). A flat V-plate carries hundreds of kN in tension, but as a 3.35 m compression strut the same bar would buckle at ~0.2 kN, and a shackle cannot push. That is why this knee hangs *above* the arm rather than bracing from below.
+  - **Hangs vertically when unloaded.** With the arm folded upright for jack-up, the pendant is slack and the V-plate just dangles from its two pins. As bridle tension swings the arm down, the pendant straightens and goes taut by itself at the horizontal position. That taut length *is* the arm stop: no latch, seat or funnel.
+  - **Fitted at deck level.** The V-plate, shackle and pendant are all connected before jack-up, so nothing has to be shackled at height. The shackles are safety-pin type with cotters, and their pins and bows are coated or of dissimilar metals against cold welding.
+  - **Crown ring.** A light stationary ring on 3 short posts above the collar takes all 6 pendants. Their horizontal pulls from the 3 stations balance through the ring, so neither the posts nor the collar see a net tilt. The ring sits at r ~1.7 m, clear of the turning mast, and the diamond stays start just above it at 64 m.
+  - The hinge pin takes ~3 kN, pushed inward against the collar.
 - **A-frame struts (strut collar).** Each strut is two tubes joined at the foot and spread ±1.5 m at a torque bracket 4 m out from the collar. This is the same triangle idea, in compression.
 - **Clearances.** All arm, crossbar and A-frame tips stay within ~21° of their bracing plane, so the maintenance azimuth (30°/210°) stays clear for lowering the wings. Everything is at or below 62 m, under the array sweep.
 - **Torque sensing.** Small load pins where the two legs attach to the split plate read the difference in leg tension, a direct measure of the upper collar's friction torque. The main cable's load cell at the foot reads the pre-tension. Together they give the seizure early warning in layer 3 below.

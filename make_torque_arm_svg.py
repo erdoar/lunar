@@ -2,7 +2,7 @@
 import math
 o = []
 A = o.append
-W, H = 1240, 920
+W, H = 1240, 880
 A(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" font-family="Helvetica, Arial, sans-serif" font-size="13">')
 A(f'<rect width="{W}" height="{H}" fill="#fff"/>')
 A('<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker></defs>')
@@ -75,8 +75,8 @@ A(f'<text x="20" y="{cy+227}" font-size="12">~0.17° twist at 500 N·m (partly s
 e, mx, hy = 26, 720, 370   # px/m, mast x, hinge height (62 m level)
 Xe = lambda r: mx + r * e
 Ye = lambda z: hy - z * e   # z relative to 62 m
-A(f'<text x="{mx-60}" y="30" class="t">Elevation: fold hinge + hanging A-bracket knee</text>')
-A(f'<rect x="{mx-18}" y="60" width="36" height="420" class="mast s"/>')
+A(f'<text x="{mx-60}" y="30" class="t">Elevation: fold hinge + V-plate pendant</text>')
+A(f'<rect x="{mx-18}" y="60" width="36" height="360" class="mast s"/>')
 A(f'<text x="{mx}" y="76" text-anchor="middle" font-size="11" style="stroke:none" fill="#fff">mast</text>')
 # collar (stationary) with band
 A(f'<rect x="{mx+18}" y="{Ye(0.4)}" width="{0.9*e}" height="{0.8*e+12}" class="collar s"/>')
@@ -93,17 +93,15 @@ for i in range(6):
 A(f'<rect x="{Xe(8)-6}" y="{Ye(0)-8}" width="12" height="{0.6*e+16}" fill="#c87f0a" class="s"/>')   # crossbar end-on
 # hinge
 A(f'<circle cx="{hx}" cy="{Ye(0)}" r="8" fill="#fff" class="s"/><circle cx="{hx}" cy="{Ye(0)}" r="3" fill="#222"/>')
-# hanging A-bracket knee: pins on the arm bottom chord 3 m out, apex seated in a funnel cup 1.5 m below the hinge
+# V-plate pendant knee: V-plate on the arm top chord 3 m out, shackle + wire pendant up to the crown ring 1.5 m above the hinge
 A(f'<rect x="{mx+18}" y="{Ye(0.4)}" width="{0.9*e}" height="{0.95*e+14}" class="collar s"/>')
-A(f'<rect x="{hx-4}" y="{Ye(-0.5)}" width="8" height="{1.0*e}" fill="#555" class="s"/>')                   # seat post
-A(f'<path d="M{hx-2} {Ye(-1.5)} l14 -10 M{hx-2} {Ye(-1.5)} l-6 -10" stroke="#222" stroke-width="2" fill="none"/>')
-A(f'<line x1="{Xe(4.45)}" y1="{Ye(-0.6)}" x2="{hx+3}" y2="{Ye(-1.5)}" stroke="#c87f0a" stroke-width="4"/>')  # knee
-A(f'<circle cx="{Xe(4.45)}" cy="{Ye(-0.6)}" r="4" fill="#fff" class="s"/>')
-A(f'<circle cx="{hx+3}" cy="{Ye(-1.5)}" r="4" fill="#f5b700" stroke="#222"/>')
+A(f'<rect x="{hx-3}" y="{Ye(1.6)}" width="6" height="{1.2*e}" fill="#4a9" class="s"/><rect x="{hx-9}" y="{Ye(1.6)}" width="18" height="5" fill="#4a9" class="s"/>')   # crown post + ring
+A(f'<line x1="{Xe(4.45)}" y1="{Ye(0.15)}" x2="{hx+6}" y2="{Ye(1.5)}" stroke="#8e44ad" stroke-width="2"/>')          # pendant
+A(f'<polygon points="{Xe(4.3)},{Ye(0)} {Xe(4.6)},{Ye(0)} {Xe(4.45)},{Ye(0.25)}" fill="#c87f0a" stroke="#222"/>')     # V-plate
 # folded (jack-up) position, dashed, and swing arc
 A(f'<line x1="{hx}" y1="{Ye(0)}" x2="{hx}" y2="{Ye(6.6)}" stroke="#c87f0a" stroke-width="4" stroke-dasharray="7 5"/>')
 A(f'<line x1="{hx+0.6*e}" y1="{Ye(0.3)}" x2="{hx+0.6*e}" y2="{Ye(6.6)}" stroke="#c87f0a" stroke-width="2" stroke-dasharray="7 5"/>')
-A(f'<line x1="{hx+0.6*e}" y1="{Ye(3)}" x2="{hx+0.6*e}" y2="{Ye(3-3.35)}" stroke="#c87f0a" stroke-width="2" stroke-dasharray="3 3"/>')
+A(f'<path d="M{hx+8} {Ye(3)} q 14 {0.9*e} -2 {1.6*e}" fill="none" stroke="#8e44ad" stroke-width="1.5" stroke-dasharray="3 3"/>')
 A(f'<path d="M{hx+20} {Ye(6.2)} A{6.4*e} {6.4*e} 0 0 1 {Xe(7.3)} {Ye(0.9)}" fill="none" stroke="#222" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#ar)"/>')
 # wire from tip down to foot
 A(f'<line x1="{Xe(8)}" y1="{Ye(-0.4)}" x2="{Xe(8)+(Ye(-4.5)-Ye(-0.4))/math.tan(math.radians(64))}" y2="{Ye(-4.5)}" class="guy"/>')
@@ -111,44 +109,51 @@ A(f'<line x1="{Xe(8)}" y1="{Ye(-0.4)}" x2="{Xe(8)+(Ye(-4.5)-Ye(-0.4))/math.tan(m
 lab(hx - 8, Ye(0), mx - 60, Ye(0) - 40, ['Fold hinge', '(horizontal pin)'], 'end')
 lab(hx, Ye(4), Xe(2.2), Ye(6.5), ['Folded upright for jack-up'])
 lab(Xe(5.5), Ye(3.5), Xe(6.4), Ye(4.3), ['Wire tension swings it down'])
-lab(Xe(3), Ye(-1.1), Xe(5.5), Ye(-2.2), ['Hanging A-bracket knee: see detail'])
-lab(hx - 4, Ye(-1.2), mx - 40, Ye(-2.4), ['Seat post under the collar', '(stationary), cup 1.5 m down'], 'end')
+lab(Xe(3), Ye(0.9), Xe(5.5), Ye(-2.2), ['V-plate + pendant to crown ring: see detail'])
+lab(hx, Ye(1.6), mx - 40, Ye(-2.4), ['Crown ring (stationary),', '1.5 m above the hinge'], 'end')
 lab(mx + 30, Ye(0.1), mx - 40, Ye(-1.6), ['Upper collar, 62 m'], 'end')
 lab(Xe(8), Ye(0) - 8, Xe(8.6), Ye(1.2), ['Tip tie bar (end-on)'])
 lab(Xe(8.9), Ye(-2.4), Xe(11.0), Ye(-0.9), ['Bridle leg, down to the', 'split plate 12 m up'])
 
-# ---------------- detail: hanging A-bracket knee (enlarged)
-d, ox, oy = 100, 780, 610          # px per metre, origin = fold hinge
-A(f'<rect x="{ox-190}" y="{oy-85}" width="625" height="340" fill="none" stroke="#999" stroke-dasharray="4 3"/>')
-A(f'<text x="{ox-180}" y="{oy-66}" font-weight="bold">Detail: hanging A-bracket knee</text>')
-A(f'<rect x="{ox-120}" y="{oy-30}" width="26" height="240" class="mast s"/>')
+# ---------------- detail: V-plate pendant knee (enlarged)
+d, ox, oy = 100, 780, 680          # px per metre, origin = fold hinge
+A(f'<rect x="{ox-190}" y="{oy-235}" width="625" height="355" fill="none" stroke="#999" stroke-dasharray="4 3"/>')
+A(f'<text x="{ox-180}" y="{oy-216}" font-weight="bold">Detail: V-plate + shackle + pendant (tension)</text>')
+A(f'<rect x="{ox-120}" y="{oy-200}" width="26" height="270" class="mast s"/>')
 A(f'<rect x="{ox-94}" y="{oy-0.4*d}" width="{0.8*d}" height="{0.5*d+14}" class="collar s"/>')               # collar ring
-A(f'<rect x="{ox-10}" y="{oy+0.1*d}" width="10" height="{1.4*d}" fill="#555" class="s"/>')                  # seat post
-cx_, cy_ = ox + 6, oy + 1.5 * d
-A(f'<path d="M{cx_-10} {cy_+6} Q{cx_} {cy_+14} {cx_+10} {cy_+6} L{cx_+34} {cy_-22}" fill="none" stroke="#222" stroke-width="3"/>')  # cup + funnel ramp
+A(f'<rect x="{ox-12}" y="{oy-1.5*d}" width="10" height="{1.1*d}" fill="#4a9" class="s"/>')                 # crown post
+A(f'<rect x="{ox-30}" y="{oy-1.6*d}" width="40" height="10" fill="#4a9" class="s"/>')                      # crown ring (section)
+A(f'<circle cx="{ox+4}" cy="{oy-1.5*d}" r="4" fill="#fff" class="s"/>')                                      # pendant lug hole
 A(f'<line x1="{ox}" y1="{oy}" x2="{ox+3.6*d}" y2="{oy}" stroke="#c87f0a" stroke-width="7"/>')                # arm top chord
-A(f'<line x1="{ox+0.15*d}" y1="{oy+0.6*d}" x2="{ox+3.6*d}" y2="{oy+0.6*d}" stroke="#c87f0a" stroke-width="4"/>')  # bottom chord
+A(f'<line x1="{ox+0.15*d}" y1="{oy+0.6*d}" x2="{ox+3.6*d}" y2="{oy+0.6*d}" stroke="#c87f0a" stroke-width="4"/>')
 for i in range(6):
     x0 = ox + 0.15 * d + i * 0.55 * d
     A(f'<line x1="{x0}" y1="{oy}" x2="{x0+0.27*d}" y2="{oy+0.6*d}" stroke="#c87f0a" stroke-width="1.5"/>')
 A(f'<circle cx="{ox}" cy="{oy}" r="8" fill="#fff" class="s"/><circle cx="{ox}" cy="{oy}" r="3" fill="#222"/>')   # fold hinge
-kx, ky = ox + 3.0 * d, oy + 0.6 * d
-A(f'<line x1="{kx}" y1="{ky}" x2="{cx_}" y2="{cy_+4}" stroke="#c87f0a" stroke-width="5"/>')                 # knee (seated)
-A(f'<circle cx="{kx}" cy="{ky}" r="6" fill="#fff" class="s"/><circle cx="{cx_}" cy="{cy_+4}" r="5" fill="#f5b700" stroke="#222"/>')
-A(f'<line x1="{kx}" y1="{ky}" x2="{kx}" y2="{ky+1.45*d}" stroke="#c87f0a" stroke-width="2" stroke-dasharray="5 4"/>')  # unloaded: hangs vertical
-# front view of the A (small)
-fx0, fy0 = ox + 3.95 * d, oy + 0.75 * d
-A(f'<line x1="{fx0-26}" y1="{fy0}" x2="{fx0+26}" y2="{fy0}" stroke="#c87f0a" stroke-width="4"/>')
-A(f'<path d="M{fx0-22} {fy0} L{fx0} {fy0+1.1*d} L{fx0+22} {fy0}" fill="none" stroke="#c87f0a" stroke-width="3"/>')
-A(f'<circle cx="{fx0-22}" cy="{fy0}" r="4" fill="#fff" class="s"/><circle cx="{fx0+22}" cy="{fy0}" r="4" fill="#fff" class="s"/><circle cx="{fx0}" cy="{fy0+1.1*d}" r="4" fill="#f5b700" stroke="#222"/>')
-A(f'<text x="{fx0}" y="{fy0-12}" text-anchor="middle" font-size="11">A, seen end-on:</text><text x="{fx0}" y="{fy0+1.1*d+18}" text-anchor="middle" font-size="11">2 pins ~0.5 m apart</text>')
+# V-plate in side view (pins on top chord at 3 m), apex shackle, pendant to crown lug
+vx, vy = ox + 3.0 * d, oy - 4
+ax_, ay_ = vx - 0.25 * d, vy - 0.45 * d
+A(f'<polygon points="{vx-0.12*d},{vy} {vx+0.12*d},{vy} {ax_},{ay_}" fill="#c87f0a" stroke="#222" stroke-width="1.5"/>')
+A(f'<circle cx="{vx-0.06*d}" cy="{vy-3}" r="3" fill="#fff" stroke="#222"/><circle cx="{vx+0.06*d}" cy="{vy-3}" r="3" fill="#fff" stroke="#222"/>')
+A(f'<ellipse cx="{ax_-6}" cy="{ay_-4}" rx="9" ry="6" fill="none" stroke="#222" stroke-width="2.5"/>')       # shackle
+A(f'<line x1="{ax_-12}" y1="{ay_-7}" x2="{ox+4}" y2="{oy-1.5*d}" stroke="#8e44ad" stroke-width="3"/>')       # pendant
+# slack (unloaded) pendant + dangling V, dashed
+A(f'<path d="M{ox+4} {oy-1.5*d} q {0.9*d} {0.9*d} {1.8*d} {0.4*d}" fill="none" stroke="#8e44ad" stroke-width="1.5" stroke-dasharray="4 3"/>')
+# front view of the V-plate (as the part looks)
+fx0, fy0 = ox + 3.95 * d, oy - 1.55 * d
+A(f'<path d="M{fx0-30} {fy0} L{fx0+30} {fy0} L{fx0} {fy0+0.65*d} Z" fill="#c87f0a" stroke="#222" stroke-width="1.5"/>')
+A(f'<path d="M{fx0-16} {fy0+8} L{fx0+16} {fy0+8} L{fx0} {fy0+0.45*d} Z" fill="#fff" stroke="#222" stroke-width="1"/>')
+A(f'<circle cx="{fx0-22}" cy="{fy0+5}" r="4" fill="#fff" stroke="#222"/><circle cx="{fx0+22}" cy="{fy0+5}" r="4" fill="#fff" stroke="#222"/><circle cx="{fx0}" cy="{fy0+0.56*d}" r="4" fill="#fff" stroke="#222"/>')
+A(f'<text x="{fx0}" y="{fy0-10}" text-anchor="middle" font-size="11">The part: flat V-plate</text>')
+A(f'<text x="{fx0}" y="{fy0+0.65*d+16}" text-anchor="middle" font-size="11">2 pin holes + 1 shackle hole</text>')
 # labels and forces
-lab(ox + 1.8 * d, oy + 1.05 * d, ox + 0.9 * d, oy + 2.2 * d, ['Knee (A-bracket), ~3.35 m: compression only,', '~3.4 kN (6.9 kN at 3 kN bridle tension)'], 'start')
-lab(kx - 2, ky + 1.3 * d, kx - 30, ky + 1.3 * d, ['Unloaded:', 'hangs vertically'], 'end')
-lab(cx_ - 8, cy_ + 8, ox - 60, cy_ + 30, ['Funnel ramp + cup seat'], 'end')
-lab(ox - 5, oy + 0.9 * d, ox - 60, oy + 0.9 * d, ['Seat post', '(stationary)'], 'end')
-lab(ox + 6, oy - 6, ox + 0.5 * d, oy - 0.45 * d, ['Fold hinge (~3 kN)'])
-A(f'<path d="M{ox+3.6*d} {oy+0.05*d} v40" stroke="#8e44ad" stroke-width="2.5" marker-end="url(#ar)"/><text x="{ox+3.6*d-6}" y="{oy-12}" font-size="11.5" fill="#8e44ad" text-anchor="middle">bridle pull</text>')
+lab((ax_ + ox) / 2, (ay_ + oy - 1.5 * d) / 2, ox + 0.9 * d, oy - 2.0 * d, ['Wire pendant ~2.3 m: tension ~3.4 kN', '(6.9 kN at 3 kN bridle tension)'])
+lab(vx + 0.05 * d, vy - 2, ox + 1.3 * d, oy + 0.95 * d, ['V-plate on 2 horizontally aligned pins, 3 m out'])
+lab(ax_ - 14, ay_ - 4, ax_ - 0.6 * d, ay_ - 0.75 * d, ['Shackle (safety pin)'], 'end')
+lab(ox + 1.0 * d, oy - 0.8 * d, ox + 1.6 * d, oy - 0.4 * d, ['Unloaded (arm folded): pendant slack,', 'V-plate dangles from its pins'])
+lab(ox - 30, oy - 1.55 * d, ox - 128, oy - 1.85 * d, ['Crown', 'ring'], 'end')
+lab(ox - 6, oy + 6, ox - 128, oy + 0.75 * d, ['Fold', 'hinge'], 'end')
+A(f'<path d="M{ox+3.6*d} {oy+0.05*d} v40" stroke="#8e44ad" stroke-width="2.5" marker-end="url(#ar)"/><text x="{ox+3.6*d+6}" y="{oy+0.75*d}" font-size="11.5" fill="#8e44ad">bridle pull</text>')
 A(f'<text x="{mx-60}" y="{H-36}" font-size="12">Each arm ~30 kg; the V pair folds as one frame on a common hinge axis.</text>')
 A(f'<text x="{mx-60}" y="{H-20}" font-size="12">Folded arms ride up with the collar; the 3 pairs balance, so the collar is not tilted.</text>')
 A('</svg>')
