@@ -2,6 +2,37 @@
 
 A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
+## Current design at a glance (rev 19 baseline)
+
+This is the design being developed. Everything under "Revision history" below records how it evolved, and section 9 (the top turret) is a side study only.
+
+![Current design at a glance](overview.svg)
+
+**What it is, from the ground up**
+1. **Fixed to the ground:**
+   - a Ø12 m **rail** ring on 12 short levelling piers,
+   - a **kingpin** in a foundation at the centre,
+   - **3 foot pads** 30 m out, each tied back to the kingpin foundation by a ground cable.
+2. **Turning, once per lunar day:**
+   - a spoked **deck**: a hub, 12 spokes and an outer ring girder, riding on **3 bogies** (2 tyres each) that run on the rail;
+   - the **108 m mast**, standing on the deck's hub;
+   - the **top yard** at 100 m;
+   - **two solar wings** (port and starboard) hanging from the yard between 70 and 100 m, ~350 kW.
+3. **Holding the mast upright, without turning:**
+   - two **roller collars** around the mast, at 35 m and 62 m;
+   - **A-frame struts** from the 35 m collar to the foot pads;
+   - **stay cables** from the 62 m collar (via V-links) to the foot pads.
+
+**What attaches to what at the base**
+
+Weight path: mast → hub → 3 main spokes → ring girder → 3 bogie pivots → 6 tyres → rail → piers → ground.
+
+- Each **bogie** carries a spherical pivot on top. The pivot bolts **under the deck's ring girder**, exactly where a **main spoke** meets the ring girder. Underneath, the bogie's 2 tyres roll on the **rail head**, and its uplift rollers hook under the rail head.
+- The **ring girder** is the deck's outer rim, directly above the rail. It rests on the 3 bogie pivots, and all 12 spokes bolt to it.
+- The **spokes** bolt to the **hub** at their inner ends (upper and lower hub rings) and to the **ring girder** at their outer ends. The 3 main spokes sit over the bogies.
+- The **hub** carries the **mast foot** (spherical seat) on top. Underneath, a slewing ring fits round the fixed **kingpin**, which only keeps the deck centred and carries no weight.
+- The **rail** is fixed: 12 segments on 12 piers. The **ground ties** from the strut feet end at the kingpin foundation and cancel each other out.
+
 **Revision history**
 - Rev 1: Ø42 m twin-rail turntable carrying a 30 m panel wall.
 - Rev 2: rail ring cut to Ø12 m for logistics; cable-stayed rig that uses low gravity and no wind; human-supervised installation equipment.
