@@ -227,10 +227,12 @@
 <path d="M1014.5 320.0 l8 -12 l8 12 z" fill="#e0a040" stroke="#222"/>
 <path d="M1013.5 246.0 l9 12 l9 -12 z" fill="#fff" stroke="#222"/>
 <circle cx="991.0" cy="315.0" r="5" fill="#fff" stroke="#222" stroke-width="2"/>
+<circle cx="1005.7" cy="316.0" r="4" fill="#fff" stroke="#c0392b" stroke-width="2"/>
 <rect x="1178.1" y="306.0" width="8" height="14" fill="#e0a040" stroke="#222"/>
 <path d="M1119.5 320.0 l8 -12 l8 12 z" fill="#e0a040" stroke="#222"/>
 <path d="M1118.5 246.0 l9 12 l9 -12 z" fill="#fff" stroke="#222"/>
 <circle cx="1159.0" cy="315.0" r="5" fill="#fff" stroke="#222" stroke-width="2"/>
+<circle cx="1144.3" cy="316.0" r="4" fill="#fff" stroke="#c0392b" stroke-width="2"/>
 <rect x="970.0" y="330.0" width="210.0" height="64" fill="#2c4a7a" opacity="0.9"/>
 <line x1="970.0" y1="360.0" x2="1180.0" y2="360.0" stroke="#7fa3d6"/>
 <line x1="970.0" y1="390.0" x2="1180.0" y2="390.0" stroke="#7fa3d6"/>
@@ -257,7 +259,7 @@
 <circle cx="935" cy="516" r="9" fill="#fff" stroke="#222"/><text x="935" y="520" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">6</text>
 <text x="951" y="520.0" font-size="11.5">Cones into the hanger sockets</text>
 <circle cx="935" cy="536" r="9" fill="#fff" stroke="#222"/><text x="935" y="540" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">7</text>
-<text x="951" y="540.0" font-size="11.5">2 lifting eyes, ~1.6 m apart</text>
+<text x="951" y="540.0" font-size="11.5">2 lifting eyes (+2 red rescue eyes)</text>
 <circle cx="935" cy="556" r="9" fill="#fff" stroke="#222"/><text x="935" y="560" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">8</text>
 <text x="951" y="560.0" font-size="11.5">Pack hangs square on 2 ropes</text>
 <text x="20" y="590" class="t">4. Twin-drum reel hoist (~14 kg; 2 parked at the top, 1 spare on the ground)</text>
@@ -292,13 +294,14 @@
 <text x="420" y="812" font-size="10.5">load cell on each rope (yellow)</text>
 <text x="660" y="650" font-size="12">2 x ~108 m of 2 mm stainless rope, opposite lay:</text>
 <text x="674" y="670" font-size="12">~0.11 kN each, factor ~21; lay torques cancel</text>
-<text x="660" y="690" font-size="12">One shaft: both ropes pay out exactly together</text>
-<text x="660" y="710" font-size="12">~11 N·m, 19 rpm for 0.1 m/s; ~40 W; ~6 Wh per 100 m</text>
-<text x="660" y="730" font-size="12">Self-locking worm + spring brake hold the pack</text>
-<text x="660" y="750" font-size="12">Load cells + encoder: slow, automatic approach;</text>
-<text x="674" y="770" font-size="12">unequal loads flag a snag or a tilted head</text>
-<text x="660" y="790" font-size="12">Powered from the socket; parked in the garage</text>
-<text x="674" y="810" font-size="12">at the yard root, so the bots climb unladen</text>
+<text x="660" y="690" font-size="12">One shaft, a dog clutch per drum: equal payout,</text>
+<text x="674" y="710" font-size="12">and each rope can be re-equalised in a recovery</text>
+<text x="660" y="730" font-size="12">~11 N·m, 19 rpm for 0.1 m/s; ~40 W; ~6 Wh per 100 m</text>
+<text x="660" y="750" font-size="12">Self-locking worm + spring brake hold the pack</text>
+<text x="660" y="770" font-size="12">Load cells + encoder: slow, automatic approach;</text>
+<text x="674" y="790" font-size="12">unequal loads flag a snag or a tilted head</text>
+<text x="660" y="810" font-size="12">Powered from the socket; parked in the garage</text>
+<text x="674" y="830" font-size="12">at the yard root, so the bots climb unladen</text>
 <text x="1065" y="634" font-size="12" font-weight="bold">Carrying a reel</text>
 <line x1="1160" y1="645" x2="1160" y2="872" stroke="#555" stroke-width="5"/>
 <line x1="1160" y1="660" x2="1146" y2="660" stroke="#555" stroke-width="3"/>

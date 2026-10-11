@@ -1,4 +1,4 @@
-# Generates top-yard.svg (rev 23): front elevation, side view, two-rope hanger station and twin-drum reel hoist.
+# Generates top-yard.svg (rev 25): front elevation, side view, two-rope hanger station and twin-drum reel hoist.
 # Run: python3 make_top_yard_svg.py
 o = []
 A = o.append
@@ -136,6 +136,7 @@ for sx in (-1, 1):
     A(f'<path d="M{hx+sx*0.5*hk-8} {yh} l8 -12 l8 12 z" fill="#e0a040" stroke="#222"/>')
     A(f'<path d="M{hx+sx*0.5*hk-9} {hb+12} l9 12 l9 -12 z" fill="#fff" stroke="#222"/>')
     A(f'<circle cx="{hx+sx*0.8*hk}" cy="{yh-5}" r="5" fill="#fff" stroke="#222" stroke-width="2"/>')
+    A(f'<circle cx="{hx+sx*0.66*hk}" cy="{yh-4}" r="4" fill="#fff" stroke="#c0392b" stroke-width="2"/>')   # rescue eye
 A(f'<rect x="{hx-1.0*hk}" y="{yh+10}" width="{2.0*hk}" height="64" fill="{PACK}" opacity="0.9"/>')
 for j in range(1, 3):
     A(f'<line x1="{hx-1.0*hk}" y1="{yh+10+j*30}" x2="{hx+1.0*hk}" y2="{yh+10+j*30}" stroke="#7fa3d6"/>')
@@ -149,7 +150,7 @@ pts = [(hx + 26, hy - 34), (hx - 0.55 * hk - 16, hy - 66), (hx - 0.85 * hk, hy -
 for n, (x_, y_) in enumerate(pts, 1):
     num(n, x_, y_)
 keys = ['Twin-drum reel in its socket', 'Bot, tethered to the rail trolley', 'Yard fall-arrest rail', '4 passive sheaves in the hanger',
-        'Flared guide forks (squares the head)', 'Cones into the hanger sockets', '2 lifting eyes, ~1.6 m apart', 'Pack hangs square on 2 ropes']
+        'Flared guide forks (squares the head)', 'Cones into the hanger sockets', '2 lifting eyes (+2 red rescue eyes)', 'Pack hangs square on 2 ropes']
 ky = yh + 96
 for j, t in enumerate(keys):
     num(j + 1, hx - 140, ky + j * 20)
@@ -179,7 +180,8 @@ A(f'<line x1="330" y1="{by}" x2="340" y2="{by}" stroke="#555" stroke-width="4"/>
 A(f'<text x="420" y="{by+72}" font-size="10.5">load cell on each rope (yellow)</text>')
 specs = ['2 x ~108 m of 2 mm stainless rope, opposite lay:',
          '   ~0.11 kN each, factor ~21; lay torques cancel',
-         'One shaft: both ropes pay out exactly together',
+         'One shaft, a dog clutch per drum: equal payout,',
+         '   and each rope can be re-equalised in a recovery',
          '~11 N·m, 19 rpm for 0.1 m/s; ~40 W; ~6 Wh per 100 m',
          'Self-locking worm + spring brake hold the pack',
          'Load cells + encoder: slow, automatic approach;',
