@@ -1,4 +1,4 @@
-# Generates base.svg (rev 22): spherical base pivot (hard ball, wear cup with sensing layers), drive, foundation, base frame.
+# Generates base.svg (rev 24): spherical base pivot (hard ball, wear cup with sensing layers), drive, foundation, base frame.
 # Run: python3 make_base_svg.py
 from math import sin, cos, radians
 
@@ -38,7 +38,7 @@ def call(n, px, py, qx, qy):   # numbered callout: part point (m) -> circle (m)
       f'<text x="{X(qx):.0f}" y="{Z(qy)+4:.0f}" text-anchor="middle" class="n" style="stroke:none">{n}</text>')
 
 
-A('<text x="20" y="30" class="t">Section through the base pivot (rev 22): fixed parts grey, turning parts orange</text>')
+A('<text x="20" y="30" class="t">Section through the base pivot (rev 24): fixed parts grey, turning parts orange</text>')
 A('<text x="20" y="50" fill="#555">Hard convex ball below, replaceable dry-lubricated wear cup above. Cup and gaps drawn thicker than true scale.</text>')
 # ground, pad, ties
 A(f'<rect x="{X(-1.45)}" y="{gy}" width="{2.9*k}" height="60" fill="url(#g)"/><line x1="{X(-1.45)}" y1="{gy}" x2="{X(1.45)}" y2="{gy}" stroke="#222"/>')
@@ -115,7 +115,7 @@ for sx in (-1, 1):
     A(f'<path d="M{xb} {Z(1.53)-6} l{sx*6} 6 l{-sx*6} 6 l{sx*6} 6" fill="none" stroke="#222"/>')
     A(f'<line x1="{X(sx*0.68)}" y1="{Z(1.53)}" x2="{X(sx*1.0)}" y2="{Z(1.30)}" stroke="{ROT}" stroke-width="2"/>')
     A(f'<line x1="{X(sx*1.2)}" y1="{Z(1.50)}" x2="{X(sx*1.2)}" y2="{Z(0.15)}" stroke="#999" stroke-width="4" stroke-dasharray="3 2"/>')
-A(f'<rect x="{X(0.80)}" y="{Z(1.72)}" width="{0.36*k}" height="{0.19*k}" fill="{DRV}" class="s"/><text x="{X(0.98)}" y="{Z(1.60)}" text-anchor="middle" font-size="11" style="stroke:none">bot dock</text>')
+A(f'<rect x="{X(0.80)}" y="{Z(1.72)}" width="{0.36*k}" height="{0.19*k}" fill="{DRV}" class="s"/><text x="{X(0.98)}" y="{Z(1.60)}" text-anchor="middle" font-size="11" style="stroke:none">battery + dock</text>')
 A(f'<rect x="{X(-1.16)}" y="{Z(1.70)}" width="{0.36*k}" height="{0.17*k}" fill="{SR}" class="s"/><text x="{X(-0.98)}" y="{Z(1.585)}" text-anchor="middle" font-size="10" style="stroke:none">readout</text>')
 A(f'<path d="M{X(-0.98)} {Z(1.53)} V{Z(1.20)} H{X(-0.20)} V{Z(1.06)}" fill="none" stroke="{CU}" stroke-width="1.5" stroke-dasharray="4 2"/>')
 # jack frame (fixed, stays bolted): posts + jack heads under the mast lugs
@@ -187,7 +187,7 @@ key = ['Pivot ball R 0.25 m, ~60 HRC steel + DLC or Si₃N₄ (fixed)',
        'Worm gearmotors (2), self-locking; slip clutch ~300 N·m',
        'Annular slip ring Ø0.9 m: rotor turns, stator fixed',
        'Foundation frame, ~2 x 2 m pad, 3 ground-tie lugs',
-       'Rotating base frame Ø3 m: bot dock, power, wear readout',
+       'Base frame Ø3 m: battery, bot dock, power, wear readout',
        'Brush skirt',
        'Jack frame: erection, then ~60 mm lift for a cup swap',
        'Debris falls off the ball, between the hooks',

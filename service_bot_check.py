@@ -58,3 +58,12 @@ print(f'worst (pack off one side, bot at the other tip): {M_pack+M_bot:.1f} kN.m
 print('while the pack hangs on the line its weight is still on the yard: no imbalance until it lands')
 # yard point load
 print(f'yard tip point load, bot + reel + pack on line: {(bot+reel+pack)*g:.0f} N (wing ~2.2 kN per side)')
+
+# 6. Power: bots recharge from a storage battery on the rotating base frame (rev 24)
+bot_batt = 2.0                               # kWh, humanoid-class pack
+swap_kwh = 1.2 * 0.35                        # ~1.2 h at ~350 W average (motion, compute, heaters)
+dark_h, dark_w = 48, 250                     # longest dark spell to ride through; reels, garage, sensors, survival heat
+base = 2 * bot_batt + dark_h * dark_w / 1e3 + 4
+print(f'one swap uses ~{swap_kwh:.2f} kWh of a {bot_batt} kWh bot battery (~{swap_kwh/bot_batt:.0%})')
+print(f'base battery: 2 full bot charges {2*bot_batt:.0f} kWh + {dark_h} h dark at {dark_w} W {dark_h*dark_w/1e3:.0f} kWh + margin -> ~{base:.0f} kWh')
+print(f'mass at ~120 Wh/kg packed, heated and boxed: ~{base*1e3/120:.0f} kg; bot charge at 1 kW: ~{bot_batt:.0f} h')
