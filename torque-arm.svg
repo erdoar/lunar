@@ -2,40 +2,46 @@
 <rect width="1240" height="760" fill="#fff"/>
 <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker></defs>
 <style>.s{stroke:#222;stroke-width:2}.l{stroke:#555;stroke-width:1;fill:none}.guy{stroke:#8e44ad;stroke-width:2}.arm{stroke:#c87f0a}.collar{fill:#4a9}.mast{fill:#888}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:17px;font-weight:bold}</style>
-<text x="20" y="30" class="t">Plan: one torque arm (of three) and its two wires</text>
+<text x="20" y="30" class="t">Plan: one V pair of arms (of three) and its Y-bridle</text>
 <circle cx="70" cy="300" r="23.2" fill="none" stroke="#4a9" stroke-width="7"/><circle cx="70" cy="300" r="15.2" fill="none" stroke="#7d8790" stroke-width="5"/>
 <polygon points="83.0,300.0 63.5,311.2 63.5,288.8" fill="none" stroke="#888" stroke-width="3"/>
 <line x1="70" y1="300" x2="306" y2="164" stroke="#2c4a7a" stroke-width="4" opacity="0.35"/>
-<line x1="198" y1="252" x2="550" y2="300" class="guy"/>
-<line x1="198" y1="348" x2="550" y2="300" class="guy"/>
+<line x1="198" y1="252" x2="479.6" y2="300" class="guy"/>
+<line x1="198" y1="348" x2="479.6" y2="300" class="guy"/>
+<line x1="479.6" y1="300" x2="550" y2="300" stroke="#8e44ad" stroke-width="4"/>
+<polygon points="470.6,291 486.6,300 470.6,309" fill="#8e44ad" stroke="#222"/>
 <rect x="540" y="290" width="20" height="20" fill="#555"/>
-<line x1="93.0" y1="296.8" x2="196.8" y2="282.2" stroke="#c87f0a" stroke-width="2" stroke-dasharray="6 4" opacity="0.9"/>
+<line x1="91.6" y1="287.3" x2="190.1" y2="234.7" stroke="#c87f0a" stroke-width="2" stroke-dasharray="6 4" opacity="0.9"/>
+<line x1="94.3" y1="306.3" x2="203.4" y2="329.7" stroke="#c87f0a" stroke-width="2" stroke-dasharray="6 4" opacity="0.9"/>
 <line x1="190.1" y1="234.7" x2="203.4" y2="329.7" stroke="#c87f0a" stroke-width="2" stroke-dasharray="6 4" opacity="0.9"/>
-<line x1="93.2" y1="300.0" x2="198.0" y2="300.0" stroke="#c87f0a" stroke-width="7"/>
-<line x1="198.0" y1="252.0" x2="198.0" y2="348.0" stroke="#c87f0a" stroke-width="7"/>
-<line x1="93.2" y1="292.0" x2="198" y2="252" stroke="#c87f0a" stroke-width="2.5"/>
-<line x1="93.2" y1="308.0" x2="198" y2="348" stroke="#c87f0a" stroke-width="2.5"/>
+<line x1="93.2" y1="290.4" x2="198.0" y2="252.0" stroke="#c87f0a" stroke-width="7"/>
+<line x1="93.2" y1="309.6" x2="198.0" y2="348.0" stroke="#c87f0a" stroke-width="7"/>
+<line x1="198.0" y1="252.0" x2="198.0" y2="348.0" stroke="#c87f0a" stroke-width="2.5"/>
 <path d="M88 268 A36.8 36.8 0 0 0 57 265" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#ar)"/>
 <text x="40" y="252" font-size="12">friction drag</text>
-<text x="294" y="257.2" font-size="13" fill="#8e44ad" font-weight="bold">+ΔT (stretches)</text>
-<text x="294" y="354.8" font-size="13" fill="#8e44ad" font-weight="bold">−ΔT (slackens)</text>
-<path d="M550 310L540 350" class="l"/>
-<text x="536" y="354" text-anchor="end">Foot pad, 30 m out</text>
+<text x="278" y="258.8" font-size="13" fill="#8e44ad" font-weight="bold">+ΔT (leg tightens)</text>
+<text x="278" y="353.2" font-size="13" fill="#8e44ad" font-weight="bold">−ΔT (leg slackens)</text>
+<path d="M550 310L555 360" class="l"/>
+<text x="551" y="364" text-anchor="end">Foot: tensioner +</text>
+<text x="551" y="379" text-anchor="end">load cell, 30 m out</text>
+<path d="M480 309L420 428" class="l"/>
+<text x="416" y="432" text-anchor="end">Split plate (fixed, NOT a pulley),</text>
+<text x="416" y="447" text-anchor="end">~12 m up; load pins read ΔT</text>
+<path d="M515 300L515 330" class="l"/>
+<text x="511" y="334" text-anchor="end">Single main cable</text>
 <path d="M198 252L218 212" class="l"/>
-<text x="222" y="216" text-anchor="start">Crossbar ±3 m (6 m across)</text>
-<path d="M150 304L160 375" class="l"/>
-<text x="164" y="379" text-anchor="start">Arm, 8 m (CFRP truss)</text>
-<path d="M150 270L140 200" class="l"/>
-<text x="136" y="204" text-anchor="end">Diagonal braces</text>
-<path d="M93 284L73 394" class="l"/>
-<text x="77" y="398" text-anchor="start">Upper collar (stationary),</text>
-<text x="77" y="413" text-anchor="start">mast turns inside</text>
+<text x="222" y="216" text-anchor="start">Arm tips ±3 m, light tie bar</text>
+<path d="M150 330L160 405" class="l"/>
+<text x="164" y="409" text-anchor="start">Two hinged arms in a V (CFRP), 8 m</text>
+<path d="M93 284L73 412" class="l"/>
+<text x="77" y="416" text-anchor="start">Upper collar (stationary),</text>
+<text x="77" y="431" text-anchor="start">mast turns inside</text>
 <path d="M278 180L308 162" class="l"/>
-<text x="312" y="166" text-anchor="start">Curtain-lowering plane (30°): tips stay</text>
+<text x="312" y="166" text-anchor="start">Wing-lowering plane (30°): tips stay</text>
 <text x="312" y="181" text-anchor="start">≥1.4 m clear (tip azimuth 20.6°)</text>
-<text x="20" y="450" font-size="12">Dashed: arm after a small twist (exaggerated). One wire is stretched and the other slackened;</text>
-<text x="20" y="466" font-size="12">their tension difference × 3 m lever resists the twist. Stiffness ~320 kN·m/rad (all 3 arms);</text>
-<text x="20" y="482" font-size="12">~0.09° twist at 500 N·m (partly seized roller). Without arms: ~10°.</text>
+<text x="20" y="495" font-size="12">Dashed: arms after a small twist (exaggerated). One leg tightens and the other slackens, and the split plate</text>
+<text x="20" y="511" font-size="12">is pulled sideways against the main cable tension. ~170 kN·m/rad at 1.5 kN, ~250 at 3 kN (all 3 planes):</text>
+<text x="20" y="527" font-size="12">~0.17° twist at 500 N·m (partly seized roller). Without arms: ~10°. Raise tension to stiffen.</text>
 <text x="660" y="30" class="t">Elevation: hinge, knee brace, latch</text>
 <rect x="702" y="60" width="36" height="500" class="mast s"/>
 <text x="720" y="76" text-anchor="middle" font-size="11" style="stroke:none" fill="#fff">mast</text>
@@ -79,10 +85,10 @@
 <path d="M750 367L680 412" class="l"/>
 <text x="676" y="416" text-anchor="end">Upper collar, 62 m</text>
 <path d="M928 362L944 339" class="l"/>
-<text x="948" y="343" text-anchor="start">Crossbar (end-on)</text>
+<text x="948" y="343" text-anchor="start">Tip tie bar (end-on)</text>
 <path d="M970 484L990 516" class="l"/>
-<text x="994" y="520" text-anchor="start">Wire to foot (64° slope);</text>
-<text x="994" y="535" text-anchor="start">one from each crossbar end</text>
-<text x="660" y="724" font-size="12">Arm ~70 kg (CFRP truss, Ti hinge and latch). Upward-folded arms ride up with the collar during</text>
-<text x="660" y="740" font-size="12">jack-up; the 3 arms balance each other, so the collar ring is not tilted.</text>
+<text x="994" y="520" text-anchor="start">Bridle leg, down to the</text>
+<text x="994" y="535" text-anchor="start">split plate 12 m up</text>
+<text x="660" y="724" font-size="12">Each arm ~30 kg; the V pair folds as one frame on a common hinge axis.</text>
+<text x="660" y="740" font-size="12">Folded arms ride up with the collar; the 3 pairs balance, so the collar is not tilted.</text>
 </svg>

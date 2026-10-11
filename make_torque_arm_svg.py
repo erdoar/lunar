@@ -1,4 +1,4 @@
-# Generates torque-arm.svg (upper collar anti-wind-up torque arm: plan + elevation). Run: python3 make_torque_arm_svg.py
+# Generates torque-arm.svg (rev 9: V torque arms with a Y-bridle; plan + elevation). Run: python3 make_torque_arm_svg.py
 import math
 o = []
 A = o.append
@@ -20,7 +20,7 @@ def lab(x1, y1, x2, y2, lines, anchor='start'):
 # ---------------- plan: one of the three arms
 k, cx, cy = 16, 70, 300
 P = lambda r, t: (cx + r * k, cy - t * k)          # r: radial (m), t: tangential (m)
-A('<text x="20" y="30" class="t">Plan: one torque arm (of three) and its two wires</text>')
+A('<text x="20" y="30" class="t">Plan: one V pair of arms (of three) and its Y-bridle</text>')
 # mast + collar
 A(f'<circle cx="{cx}" cy="{cy}" r="{1.45*k}" fill="none" stroke="#4a9" stroke-width="7"/><circle cx="{cx}" cy="{cy}" r="{0.95*k}" fill="none" stroke="#7d8790" stroke-width="5"/>')
 pts = [(cx + 0.81 * k * math.cos(math.radians(a)), cy + 0.81 * k * math.sin(math.radians(a))) for a in (0, 120, 240)]
@@ -29,11 +29,14 @@ A('<polygon points="' + ' '.join(f'{x:.1f},{y:.1f}' for x, y in pts) + '" fill="
 for ang, w, op in ((30, 4, 0.35),):
     a = math.radians(ang)
     A(f'<line x1="{cx}" y1="{cy}" x2="{cx+17*k*math.cos(a):.0f}" y2="{cy-17*k*math.sin(a):.0f}" stroke="#2c4a7a" stroke-width="{w}" opacity="{op}"/>')
-# wires to foot
+# Y-bridle: legs from the arm tips to the split plate, single main cable to the foot
 fx, fy = P(30, 0)
+jx, jy = P(25.6, 0)
 for t in (3, -3):
     x, y = P(8, t)
-    A(f'<line x1="{x}" y1="{y}" x2="{fx}" y2="{fy}" class="guy"/>')
+    A(f'<line x1="{x}" y1="{y}" x2="{jx}" y2="{jy}" class="guy"/>')
+A(f'<line x1="{jx}" y1="{jy}" x2="{fx}" y2="{fy}" stroke="#8e44ad" stroke-width="4"/>')
+A(f'<polygon points="{jx-9},{jy-9} {jx+7},{jy} {jx-9},{jy+9}" fill="#8e44ad" stroke="#222"/>')
 A(f'<rect x="{fx-10}" y="{fy-10}" width="20" height="20" fill="#555"/>')
 # arm (stem + crossbar) and the twisted position (ghost)
 th = math.radians(8)  # exaggerated twist
@@ -43,30 +46,30 @@ def rotp(x, y):
 for ghost in (True, False):
     f = (lambda p: rotp(*p)) if ghost else (lambda p: p)
     sty = 'stroke="#c87f0a" stroke-width="2" stroke-dasharray="6 4" opacity="0.9"' if ghost else 'stroke="#c87f0a" stroke-width="7"'
-    a0, a1, c0, c1 = f(P(1.45, 0)), f(P(8, 0)), f(P(8, 3)), f(P(8, -3))
-    A(f'<line x1="{a0[0]:.1f}" y1="{a0[1]:.1f}" x2="{a1[0]:.1f}" y2="{a1[1]:.1f}" {sty}/>')
-    A(f'<line x1="{c0[0]:.1f}" y1="{c0[1]:.1f}" x2="{c1[0]:.1f}" y2="{c1[1]:.1f}" {sty}/>')
-    if not ghost:
-        for d in ((1.45, 0.5, 8, 3), (1.45, -0.5, 8, -3)):
-            q0, q1 = P(d[0], d[1]), P(d[2], d[3])
-            A(f'<line x1="{q0[0]}" y1="{q0[1]}" x2="{q1[0]}" y2="{q1[1]}" stroke="#c87f0a" stroke-width="2.5"/>')
+    for t in (0.6, -0.6):                                   # the two hinged arms of the V
+        a0, a1 = f(P(1.45, t)), f(P(8, 3 if t > 0 else -3))
+        A(f'<line x1="{a0[0]:.1f}" y1="{a0[1]:.1f}" x2="{a1[0]:.1f}" y2="{a1[1]:.1f}" {sty}/>')
+    c0, c1 = f(P(8, 3)), f(P(8, -3))                       # light tip tie bar
+    tie = sty.replace('stroke-width="7"', 'stroke-width="2.5"')
+    A(f'<line x1="{c0[0]:.1f}" y1="{c0[1]:.1f}" x2="{c1[0]:.1f}" y2="{c1[1]:.1f}" {tie}/>')
 # rotation arrow on collar
 r = 2.3 * k
 A(f'<path d="M{cx+r*math.cos(math.radians(-60)):.0f} {cy+r*math.sin(math.radians(-60)):.0f} A{r} {r} 0 0 0 {cx+r*math.cos(math.radians(-110)):.0f} {cy+r*math.sin(math.radians(-110)):.0f}" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#ar)"/>')
 A(f'<text x="{cx-30}" y="{cy-48}" font-size="12">friction drag</text>')
 # tension change labels
-x, y = P(14, 2.3); A(f'<text x="{x}" y="{y-6}" font-size="13" fill="#8e44ad" font-weight="bold">+ΔT (stretches)</text>')
-x, y = P(14, -2.3); A(f'<text x="{x}" y="{y+18}" font-size="13" fill="#8e44ad" font-weight="bold">−ΔT (slackens)</text>')
-lab(fx, fy + 10, fx - 10, fy + 50, ['Foot pad, 30 m out'], 'end')
-x, y = P(8, 3); lab(x, y, x + 20, y - 40, ['Crossbar ±3 m (6 m across)'])
-x, y = P(5, 0); lab(x, y + 4, x + 10, y + 75, ['Arm, 8 m (CFRP truss)'])
-x, y = P(5, 1.9); lab(x, y, x - 10, y - 70, ['Diagonal braces'], 'end')
-x, y = P(1.45, 1.0); lab(x, y, x - 20, y + 110, ['Upper collar (stationary),', 'mast turns inside'], 'start')
+x, y = P(13, 2.2); A(f'<text x="{x}" y="{y-6}" font-size="13" fill="#8e44ad" font-weight="bold">+ΔT (leg tightens)</text>')
+x, y = P(13, -2.2); A(f'<text x="{x}" y="{y+18}" font-size="13" fill="#8e44ad" font-weight="bold">−ΔT (leg slackens)</text>')
+lab(fx, fy + 10, fx + 5, fy + 60, ['Foot: tensioner +', 'load cell, 30 m out'], 'end')
+lab(jx, jy + 9, jx - 60, jy + 128, ['Split plate (fixed, NOT a pulley),', '~12 m up; load pins read ΔT'], 'end')
+lab((jx+fx)/2, jy, (jx+fx)/2, jy + 30, ['Single main cable'], 'end')
+x, y = P(8, 3); lab(x, y, x + 20, y - 40, ['Arm tips ±3 m, light tie bar'])
+x, y = P(5, -1.9); lab(x, y, x + 10, y + 75, ['Two hinged arms in a V (CFRP), 8 m'])
+x, y = P(1.45, 1.0); lab(x, y, x - 20, y + 128, ['Upper collar (stationary),', 'mast turns inside'], 'start')
 a = math.radians(30); x, y = cx + 15 * k * math.cos(a), cy - 15 * k * math.sin(a)
-lab(x, y, x + 30, y - 18, ['Curtain-lowering plane (30°): tips stay', '≥1.4 m clear (tip azimuth 20.6°)'])
-A(f'<text x="20" y="{cy+150}" font-size="12">Dashed: arm after a small twist (exaggerated). One wire is stretched and the other slackened;</text>')
-A(f'<text x="20" y="{cy+166}" font-size="12">their tension difference × 3 m lever resists the twist. Stiffness ~320 kN·m/rad (all 3 arms);</text>')
-A(f'<text x="20" y="{cy+182}" font-size="12">~0.09° twist at 500 N·m (partly seized roller). Without arms: ~10°.</text>')
+lab(x, y, x + 30, y - 18, ['Wing-lowering plane (30°): tips stay', '≥1.4 m clear (tip azimuth 20.6°)'])
+A(f'<text x="20" y="{cy+195}" font-size="12">Dashed: arms after a small twist (exaggerated). One leg tightens and the other slackens, and the split plate</text>')
+A(f'<text x="20" y="{cy+211}" font-size="12">is pulled sideways against the main cable tension. ~170 kN·m/rad at 1.5 kN, ~250 at 3 kN (all 3 planes):</text>')
+A(f'<text x="20" y="{cy+227}" font-size="12">~0.17° twist at 500 N·m (partly seized roller). Without arms: ~10°. Raise tension to stiffen.</text>')
 
 # ---------------- elevation: hinge, knee brace, latch, folded position
 e, mx, hy = 26, 720, 370   # px/m, mast x, hinge height (62 m level)
@@ -112,9 +115,9 @@ lab(kb1[0] + 12, kb1[1] + 6, Xe(8.6), Ye(-2.2), ['Stop + spring latch', '(camera
 lab((kb0[0] + kb1[0]) / 2, (kb0[1] + kb1[1]) / 2, Xe(2.4), Ye(-5.4), ['Knee brace (pinned), carries', 'the arm bending'])
 lab(mx + 18 + 0.45 * e, Ye(-2.4) + 14, mx - 40, Ye(-4.2), ['Collar lower flange'], 'end')
 lab(mx + 30, Ye(0.1), mx - 40, Ye(-1.6), ['Upper collar, 62 m'], 'end')
-lab(Xe(8), Ye(0) - 8, Xe(8.6), Ye(1.2), ['Crossbar (end-on)'])
-lab(Xe(9.6), Ye(-4.4), Xe(10.4), Ye(-5.6), ['Wire to foot (64° slope);', 'one from each crossbar end'])
-A(f'<text x="{mx-60}" y="{H-36}" font-size="12">Arm ~70 kg (CFRP truss, Ti hinge and latch). Upward-folded arms ride up with the collar during</text>')
-A(f'<text x="{mx-60}" y="{H-20}" font-size="12">jack-up; the 3 arms balance each other, so the collar ring is not tilted.</text>')
+lab(Xe(8), Ye(0) - 8, Xe(8.6), Ye(1.2), ['Tip tie bar (end-on)'])
+lab(Xe(9.6), Ye(-4.4), Xe(10.4), Ye(-5.6), ['Bridle leg, down to the', 'split plate 12 m up'])
+A(f'<text x="{mx-60}" y="{H-36}" font-size="12">Each arm ~30 kg; the V pair folds as one frame on a common hinge axis.</text>')
+A(f'<text x="{mx-60}" y="{H-20}" font-size="12">Folded arms ride up with the collar; the 3 pairs balance, so the collar is not tilted.</text>')
 A('</svg>')
 open('torque-arm.svg', 'w').write('\n'.join(o))
