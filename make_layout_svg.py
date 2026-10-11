@@ -38,7 +38,6 @@ for fx, sc in ((FOOT, 1), (-FOOT / 2, -0.5)):
     A(f'<line x1="{X(fx)}" y1="{gy-3}" x2="{X(BR*sc)}" y2="{Z(MID)}" stroke="#555" stroke-width="5"/>')  # A-frame strut
     A(f'<line x1="{X(0)}" y1="{Z(MID)}" x2="{X(BR*sc)}" y2="{Z(MID)}" stroke="#555" stroke-width="4"/>')  # torque bracket
     A(f'<line x1="{X(0)}" y1="{Z(UP)}" x2="{X(ARM*sc)}" y2="{Z(UP)}" stroke="#c87f0a" stroke-width="4"/>')  # torque arm
-    A(f'<line x1="{X(0)}" y1="{Z(UP-4)}" x2="{X(ARM*sc*0.6)}" y2="{Z(UP)}" stroke="#c87f0a" stroke-width="2"/>')  # knee brace
     A(f'<line x1="{X(fx)}" y1="{gy-2}" x2="{X(0)}" y2="{gy-2}" stroke="#c87f0a" stroke-width="2" stroke-dasharray="7 3"/>')  # tie
     A(f'<rect x="{X(fx)-9}" y="{gy-5}" width="18" height="5" fill="#555"/>')
 for c in (MID, UP):

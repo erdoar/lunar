@@ -1,4 +1,4 @@
-# Lunar polar rotating solar platform: concept design (rev 10, tall mast on a strut tripod)
+# Lunar polar rotating solar platform: concept design (rev 11, tall mast on a strut tripod)
 
 A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
@@ -12,7 +12,8 @@ A small turntable on a circular rail that turns a very tall mast, with the solar
 - Rev 7: anti-**wind-up** bracing. The upper collar gets 3 **hinged rigid torque arms** whose tips carry the wires, and each strut becomes a narrow **A-frame**. Without them the upper collar would twist ~10° under a partly seized roller, and the strut collar is torsionally unstable (see section 4). The bogie pivot is now a stiff, travel-limited rocker with hard stops.
 - Rev 8: the array is split into **port and starboard wings**. Each hangs on halyards from a **permanent top yard** and is raised and lowered on its own for installation and maintenance. The wing's weight stays on the same sheaves whichever height it is at, so lowering one wing does not unbalance the rig. Only taking a wing's weight off its halyards would, and that is handled by a ballast swap or by landing both wings together (section 4).
 - Rev 9: each bracing plane's wires become a **single cable that splits into a Y-bridle** at a fixed split plate about 12 m above the ground. The two legs run to the tips of **two hinged arms in a V** on the upper collar. There is one tensioner and one load cell per plane, and twist resistance comes from the monitored, adjustable pre-tension.
-- **Rev 10 (this):** the curtains become **rigid concertina packs**, 1 to 3 m wide (2 m baseline), shipped and replaced as separate units. Each pack deploys and retracts like a **Roman blind**, and each can be **lowered on its own** to the ground for exchange. Lowering a whole wing is now only for top-bar work.
+- Rev 10: the curtains become **rigid concertina packs**, 1 to 3 m wide (2 m baseline), shipped and replaced as separate units. Each pack deploys and retracts like a **Roman blind**, and each can be **lowered on its own** to the ground for exchange. Lowering a whole wing is now only for top-bar work.
+- **Rev 11 (this):** the torque-arm knee braces are replaced by a **two-point root**: a fold hinge and, 500 mm below it, a seat with a keeper pin. The two points form a couple that carries the arm's bending.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -59,7 +60,7 @@ How the design uses this:
 | Roller collars (stationary) | **Strut collar at 35 m**, **upper collar at 62 m** |
 | Struts | 3 **A-frames** at 120°: each 2 CFRP tubes Ø0.3 m x 2 mm, ~46 m long, ~3 kg/m, ball joints at both ends. Joined at the foot, spread ±1.5 m at a torque bracket 4 m out from the strut collar |
 | Foot pads | 3 at **30 m radius**, ~1 m² sintered or gabion pad, compression only (~0.5 kN) |
-| Upper torque arms | Per bracing plane, **2 hinged CFRP arms in a V** from the upper collar to tips 8 m out and ±3 m apart. The hinge axes line up, so the pair folds as one frame. A light tie bar joins the tips, and knee braces run to the collar's lower flange. ~30 kg per arm |
+| Upper torque arms | Per bracing plane, **2 hinged CFRP arms in a V** from the upper collar to tips 8 m out and ±3 m apart. The hinge axes line up, so the pair folds as one frame. A light tie bar joins the tips. Each arm root is a **two-point root**: a fold hinge at the top, and a seat plus keeper pin **500 mm below**. ~30 kg per arm |
 | Cables | Per bracing plane, **one Y-bridle**: a single main cable (~13 m) from the foot tensioner up to a fixed **split plate** at ~12 m height, 26 m out, then 2 legs (~53 m) to the arm tips. 6 mm stainless wire rope, UV-proof. ~1.5 kN pre-tension per plane, adjustable to ~3 kN |
 | Ties | Foot to kingpin foundation, horizontal at ground level (passing under the raised rail), ~1 kN |
 | Upper bracing (rotating) | Diamond stays: spreaders ±6 m at 81 m, stays from 62 m to the mast top |
@@ -149,7 +150,12 @@ How it works:
   Near the collar the bridle is weak; near the foot it acts almost like two separate cables. **The split is set at 0.8** (~12 m above the ground, 26 m out), where it is ~170 kN·m/rad at the normal 1.5 kN and still reachable from the ground for inspection.
 - **The split must be a fixed plate, not a pulley.** A pulley would let the legs equalise and slide, and the twist resistance would almost vanish. Each leg is terminated on the plate separately.
 - **Tension monitored and adjustable.** There is one screw tensioner and load cell per plane, at the foot. Because stiffness rises with tension, the operator can raise pre-tension (up to ~3 kN, ~250 kN·m/rad) if collar friction trends upward. Above 1.5 kN the struts and ties are re-trimmed to keep the feet pressing down.
-- **Hinged.** Each V pair is hinged to the collar ring on a common horizontal axis and folds as one frame. During jack-up the arms ride folded upright against the mast. At height, tensioning the wires pulls the arms down to horizontal, where they land on a stop and a latch closes; the supervisor confirms each latch on camera. A knee brace to the collar's lower flange carries the arm's bending. The 3 arms balance one another, so the ring as a whole is not tilted.
+- **Two-point hinged root (no knee brace).** Each arm root is a short post with two connection points 500 mm apart on a 0.5 m deep box section of the collar ring:
+  - The **top pin** is the fold hinge, on a common horizontal axis for both arms of a V. It carries **tension**.
+  - The **bottom of the post** lands on a **seat** in the collar 500 mm lower when the arm swings down. A spring **keeper pin** drops in, and the supervisor confirms it on camera. The bridle pull at the tip rotates the post *into* the seat, so the seat carries **compression** and the keeper pin carries almost nothing in service. It only holds against quake uplift and during handling.
+  - The pair works as a couple. Each arm's root moment is ~4.6 kN·m at 1.5 kN bridle tension (~9.3 kN·m at 3 kN), which gives **~9 kN** (up to ~19 kN) at each point. That is easy for 20 to 25 mm Ti pins and lugs.
+  - A deeper knee brace would cut these forces about 5x. The 500 mm root is chosen anyway because it is compact, has nothing to snag, and leaves fewer parts to fit at height.
+  - During jack-up the arms ride folded upright against the mast. At height, tensioning the bridles swings them down onto their seats. The 3 V pairs balance one another, so the ring as a whole is not tilted.
 - **A-frame struts (strut collar).** Each strut is two tubes joined at the foot and spread ±1.5 m at a torque bracket 4 m out from the collar. This is the same triangle idea, in compression.
 - **Clearances.** All arm, crossbar and A-frame tips stay within ~21° of their bracing plane, so the maintenance azimuth (30°/210°) stays clear for lowering the wings. Everything is at or below 62 m, under the array sweep.
 - **Torque sensing.** Small load pins where the two legs attach to the split plate read the difference in leg tension, a direct measure of the upper collar's friction torque. The main cable's load cell at the foot reads the pre-tension. Together they give the seizure early warning in layer 3 below.
