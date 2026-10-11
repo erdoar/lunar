@@ -2,22 +2,21 @@
 <rect width="1180" height="820" fill="#fff"/>
 <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker><pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#a08c6c"/></pattern></defs>
 <style>.s{stroke:#222;stroke-width:2}.l{stroke:#555;stroke-width:1;fill:none}.guy{stroke:#8e44ad;stroke-width:1.4}.c{stroke:#555;stroke-width:1.3}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:17px;font-weight:bold}</style>
-<text x="20" y="30" class="t">Elevation (guys shown in projection)</text>
+<text x="20" y="30" class="t">Elevation (bracing shown in projection)</text>
 <rect x="10" y="760" width="580" height="40" fill="url(#g)"/><line x1="10" y1="760" x2="590" y2="760" class="s"/>
 <rect x="212.8" y="748" width="74.4" height="8" fill="#9fb4c7" class="s"/>
 <rect x="209.8" y="755" width="6" height="5" fill="#c0392b"/>
 <rect x="284.2" y="755" width="6" height="5" fill="#c0392b"/>
-<line x1="250.0" y1="617.6" x2="498.0" y2="760" class="guy"/>
-<line x1="250.0" y1="617.6" x2="126.0" y2="760" class="guy"/>
-<rect x="241.0" y="613.6" width="18" height="8" fill="#4a9" class="s"/>
-<line x1="250.0" y1="493.59999999999997" x2="498.0" y2="760" class="guy"/>
-<line x1="250.0" y1="493.59999999999997" x2="126.0" y2="760" class="guy"/>
-<rect x="241.0" y="489.59999999999997" width="18" height="8" fill="#4a9" class="s"/>
-<line x1="250.0" y1="369.59999999999997" x2="498.0" y2="760" class="guy"/>
-<line x1="250.0" y1="369.59999999999997" x2="126.0" y2="760" class="guy"/>
+<line x1="436.0" y1="757" x2="250.0" y2="369.59999999999997" class="guy"/>
+<line x1="436.0" y1="757" x2="250.0" y2="537.0" stroke="#555" stroke-width="5"/>
+<line x1="436.0" y1="758" x2="250.0" y2="758" stroke="#c87f0a" stroke-width="2" stroke-dasharray="7 3"/>
+<rect x="427.0" y="755" width="18" height="5" fill="#555"/>
+<line x1="157.0" y1="757" x2="250.0" y2="369.59999999999997" class="guy"/>
+<line x1="157.0" y1="757" x2="250.0" y2="537.0" stroke="#555" stroke-width="5"/>
+<line x1="157.0" y1="758" x2="250.0" y2="758" stroke="#c87f0a" stroke-width="2" stroke-dasharray="7 3"/>
+<rect x="148.0" y="755" width="18" height="5" fill="#555"/>
+<rect x="241.0" y="533.0" width="18" height="8" fill="#4a9" class="s"/>
 <rect x="241.0" y="365.59999999999997" width="18" height="8" fill="#4a9" class="s"/>
-<rect x="491.0" y="754" width="14" height="6" fill="#555"/>
-<rect x="119.0" y="754" width="14" height="6" fill="#555"/>
 <rect x="247.0" y="103.0" width="6" height="651.0" fill="#888" stroke="#222"/>
 <polyline points="250.0,103.0 212.8,251.8 250.0,369.59999999999997" fill="none" class="c"/>
 <polyline points="250.0,103.0 287.2,251.8 250.0,369.59999999999997" fill="none" class="c"/>
@@ -43,17 +42,19 @@
 <text x="415" y="227" text-anchor="start">≈1,000 m², ~350 kWe</text>
 <path d="M287 252L411 283" class="l"/>
 <text x="415" y="287" text-anchor="start">Diamond stays (rotate)</text>
-<path d="M259 618L300 604" class="l"/>
-<text x="304" y="608" text-anchor="start">Collar 22 m</text>
-<path d="M259 494L300 480" class="l"/>
-<text x="304" y="484" text-anchor="start">Collar 42 m</text>
-<path d="M259 370L300 356" class="l"/>
-<text x="304" y="360" text-anchor="start">Collar 62 m</text>
-<path d="M436 642L442 568" class="l"/>
-<text x="446" y="572" text-anchor="start">Stationary guys</text>
-<text x="446" y="587" text-anchor="start">(6 mm steel rope)</text>
-<path d="M498 757L455 720" class="l"/>
-<text x="459" y="724" text-anchor="start">Anchor, 40 m</text>
+<path d="M259 370L287 392" class="l"/>
+<text x="291" y="396" text-anchor="start">Upper collar 62 m</text>
+<path d="M259 537L213 519" class="l"/>
+<text x="209" y="523" text-anchor="end">Strut collar 35 m</text>
+<path d="M324 523L349 469" class="l"/>
+<text x="353" y="473" text-anchor="start">Wire (6 mm steel rope)</text>
+<path d="M368 674L405 605" class="l"/>
+<text x="409" y="609" text-anchor="start">Rigid strut</text>
+<text x="409" y="624" text-anchor="start">(CFRP tube, 46 m)</text>
+<path d="M374 758L287 786" class="l"/>
+<text x="291" y="790" text-anchor="start">Horizontal tie to kingpin foundation</text>
+<path d="M436 756L455 806" class="l"/>
+<text x="459" y="810" text-anchor="start">Foot pad at 30 m</text>
 <path d="M157 568L101 605" class="l"/>
 <text x="97" y="609" text-anchor="end">Curtain lowered</text>
 <text x="97" y="624" text-anchor="end">for repair</text>
@@ -64,34 +65,38 @@
 <line x1="88.79999999999998" y1="431.59999999999997" x2="231.4" y2="431.59999999999997" stroke="#f5b700" stroke-width="3" stroke-dasharray="7 4" marker-end="url(#ar)"/><circle cx="64.0" cy="431.59999999999997" r="11" fill="#f5b700" class="s"/><text x="26.799999999999983" y="413.59999999999997" font-size="12">Sun ~0–1.5°</text>
 <text x="600" y="30" class="t">Plan (from above)</text>
 <circle cx="880" cy="360" r="88.4" fill="#eef3fa" stroke="#2c4a7a" stroke-dasharray="6 4"/>
-<line x1="880" y1="360" x2="880.0" y2="152.0" class="guy"/>
-<rect x="872.0" y="144.0" width="16" height="16" fill="#555"/>
-<text x="894.0" y="144.0" text-anchor="start">Anchor 0°</text>
-<line x1="880" y1="360" x2="1060.1" y2="464.0" class="guy"/>
-<rect x="1052.1" y="456.0" width="16" height="16" fill="#555"/>
-<text x="1074.1" y="486.0" text-anchor="start">Anchor 120°</text>
-<line x1="880" y1="360" x2="699.9" y2="464.0" class="guy"/>
-<rect x="691.9" y="456.0" width="16" height="16" fill="#555"/>
-<text x="685.9" y="486.0" text-anchor="end">Anchor 240°</text>
-<circle cx="880" cy="360" r="31.200000000000003" fill="none" stroke="#c0392b" stroke-width="3"/>
-<line x1="835.8" y1="436.6" x2="924.2" y2="283.4" stroke="#2c4a7a" stroke-width="6"/>
-<line x1="794.6" y1="382.9" x2="965.4" y2="337.1" stroke="#2c4a7a" stroke-width="3" opacity="0.35"/>
+<line x1="880" y1="360" x2="880.0" y2="144.0" stroke="#555" stroke-width="5"/>
+<line x1="880" y1="360" x2="880.0" y2="144.0" class="guy"/>
+<rect x="871.0" y="135.0" width="18" height="18" fill="#555"/>
+<text x="894.0" y="136.0" text-anchor="start">Foot 0°</text>
+<line x1="880" y1="360" x2="1067.1" y2="468.0" stroke="#555" stroke-width="5"/>
+<line x1="880" y1="360" x2="1067.1" y2="468.0" class="guy"/>
+<rect x="1058.1" y="459.0" width="18" height="18" fill="#555"/>
+<text x="1081.1" y="494.0" text-anchor="start">Foot 120°</text>
+<line x1="880" y1="360" x2="692.9" y2="468.0" stroke="#555" stroke-width="5"/>
+<line x1="880" y1="360" x2="692.9" y2="468.0" class="guy"/>
+<rect x="683.9" y="459.0" width="18" height="18" fill="#555"/>
+<text x="678.9" y="494.0" text-anchor="end">Foot 240°</text>
+<circle cx="880" cy="360" r="43.2" fill="none" stroke="#c0392b" stroke-width="3"/>
+<line x1="818.8" y1="466.0" x2="941.2" y2="254.0" stroke="#2c4a7a" stroke-width="6"/>
+<line x1="761.8" y1="391.7" x2="998.2" y2="328.3" stroke="#2c4a7a" stroke-width="3" opacity="0.35"/>
 <circle cx="880" cy="360" r="5" fill="#fff" class="s"/>
-<path d="M924 283L1000 210" class="l"/>
+<path d="M941 254L1000 210" class="l"/>
 <text x="1004" y="214" text-anchor="start">Array parked at maintenance</text>
 <text x="1004" y="229" text-anchor="start">azimuth (30°/210°): curtains</text>
-<text x="1004" y="244" text-anchor="start">drop between guy planes</text>
-<path d="M948 342L1020 420" class="l"/>
-<text x="1024" y="424" text-anchor="start">Array while tracking</text>
-<text x="1024" y="439" text-anchor="start">(any angle above 67 m:</text>
-<text x="1024" y="454" text-anchor="start">clears all guys)</text>
-<path d="M818 422L730 510" class="l"/>
+<text x="1004" y="244" text-anchor="start">drop between bracing planes</text>
+<path d="M975 335L1030 420" class="l"/>
+<text x="1034" y="424" text-anchor="start">Array while tracking</text>
+<text x="1034" y="439" text-anchor="start">(any angle above 67 m:</text>
+<text x="1034" y="454" text-anchor="start">clears all bracing)</text>
+<path d="M794 446L730 510" class="l"/>
 <text x="726" y="514" text-anchor="end">Array sweep, r = 17 m</text>
 <text x="726" y="529" text-anchor="end">(only at 67–100 m)</text>
-<path d="M880 391L890 470" class="l"/>
+<path d="M880 403L890 470" class="l"/>
 <text x="894" y="474" text-anchor="start">Ø12 m ring</text>
-<path d="M880 504.0H1088.0" class="l" marker-start="url(#ar)" marker-end="url(#ar)" visibility="hidden"/>
-<line x1="610" y1="640" x2="635" y2="640" class="guy"/><text x="642" y="644">Stationary guy</text>
+<line x1="610" y1="620" x2="635" y2="620" stroke="#555" stroke-width="5"/><text x="642" y="624">Rigid strut (stationary; strut, wire and tie share one vertical plane)</text>
+<line x1="610" y1="640" x2="635" y2="640" class="guy"/><text x="642" y="644">Wire to upper collar</text>
+<line x1="810" y1="640" x2="835" y2="640" stroke="#c87f0a" stroke-width="2" stroke-dasharray="7 3"/><text x="842" y="644">Tie to kingpin foundation</text>
 <rect x="610" y="654" width="22" height="8" fill="#4a9" class="s"/><text x="642" y="663">Roller collar (mast turns inside)</text>
 <line x1="610" y1="678" x2="635" y2="678" stroke="#2c4a7a" stroke-width="5"/><text x="642" y="682">Solar curtains</text>
 <text x="610" y="712" font-size="12">Neighbouring rigs: ≥10x array width apart, in a line along the</text>

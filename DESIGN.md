@@ -1,11 +1,12 @@
-# Lunar polar rotating solar platform: concept design (rev 3, tall guyed rig)
+# Lunar polar rotating solar platform: concept design (rev 4, tall mast on a strut tripod)
 
 A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
 **Revision history**
 - Rev 1: Ø42 m twin-rail turntable carrying a 30 m panel wall.
 - Rev 2: rail ring cut to Ø12 m for logistics; cable-stayed rig that uses low gravity and no wind; human-supervised installation equipment.
-- **Rev 3 (this):** the array goes to the **highest practical height**, above local terrain shadows and the shadows of other collectors. Baseline array top: **100 m**. The 12 m ring stays, but the tall mast is now braced by **stationary ground guys** through **roller collars**, and the array is split into **curtains that can be lowered** to the ground for repair.
+- Rev 3: array raised to ~100 m to clear terrain and neighbour shadows; mast braced by stationary ground guys through roller collars; lowerable solar curtains.
+- **Rev 4 (this):** the ground guys and their tension anchors are replaced by a **strut tripod**. Three rigid struts run from a **mid-height collar** down to foot pads on the surface. Each foot is wire-braced up to an **upper collar** and tied **horizontally back to the platform's kingpin foundation**. It is a closed, pre-tensioned truss: no ground anchor ever has to resist being pulled up, and there are 2 collars instead of 3.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -22,20 +23,21 @@ At such low Sun angles every bump shades a long way: a 10 m rise casts a shadow 
 | Load | Earth | Moon | Effect on design |
 |---|---|---|---|
 | Wind | Governs tall masts | **None** | A slender 100 m+ mast and a 1,000 m² sail with almost no lateral load |
-| Gravity | 9.81 m/s² | **1.62 m/s² (1/6)** | Mast compression, guy tension, jacks and bearings are 1/6 the size |
-| Seismic | Varies | Shallow moonquakes, small accelerations | Main lateral load; carried by guys |
+| Gravity | 9.81 m/s² | **1.62 m/s² (1/6)** | Mast and strut compression, wire tension, jacks and bearings are 1/6 the size |
+| Seismic | Varies | Shallow moonquakes, small accelerations | Main lateral load; carried by the strut tripod |
 | Thermal | Moderate | Large swings and one-sided sunlight | Thermal bow of the mast; use CFRP, keep the gradient steady (below) |
 | Rotation dynamics | n/a | 0.51°/h | Negligible; ramp the drive steps gently |
 
 How the design uses this:
 
-1. **A guyed mast.** On Earth, guyed lattice masts over 600 m tall stand up to wind and ice. On the Moon, without wind and in 1/6 g, a light lattice mast with guys every ~20 m can reach 100 to 200 m. Its practical limit is set by the site, installation and shading, not strength.
-2. **The guys don't rotate.** They run from ground anchors to **roller collars** that encircle the mast. The mast turns inside the collars. That keeps the base ring small (Ø12 m) while the guys spread wide (anchor radius ~0.65x the top collar height).
-3. **The array sits above all the guys.** It sweeps a 17 m radius circle from 67 to 100 m. The highest collar is at 62 m, so the turning array never meets a guy. Above the collar the mast is braced by its own rotating **diamond stays** (spreaders and stays that turn with the mast, as on a racing yacht).
-4. **Thin roll-out blankets** (~0.5 to 1 kg/m² with harness). In 1/6 g with no wind they hang flat under light tension.
-5. **Balanced rig.** The array is one plane through the mast, left and right equal, so its centre of mass stays on the axis.
-6. **Steady sunlight makes thermal bow predictable.** Because the rig tracks the Sun, the same mast face is always sunlit, so the bow is nearly constant and can be trimmed out with guy tension. The mast sits behind the blanket, so its top section is in shade. CFRP tubes (α ≈ 0 to 1x10⁻⁶ /K) keep the bow to a few centimetres. The same 35 m length in aluminium would bow ~0.9 m.
-7. **Light installation gear.** The whole mast plus array (~5 t) weighs about 8 kN on the Moon, so a modest jack at deck level can raise all of it (section 7).
+1. **A slender braced mast.** Without wind and in 1/6 g, a light lattice mast needs only a little lateral bracing to reach 100 m or more. Its practical limit is set by the site, installation and shading, not strength.
+2. **The bracing doesn't rotate.** A stationary **strut tripod** holds the mast through two **roller collars**, and the mast turns inside them. This keeps the base ring small (Ø12 m) while the bracing spreads wide (feet at 30 m).
+3. **A closed truss, so no tension anchors.** Each bracing plane is a triangle: strut (compression), wire (tension) and the mast between the two collars. A horizontal tie from each foot to the kingpin foundation closes it at ground level. The three ties pull on the kingpin from 120° apart, so they cancel. The foot pads only ever push down on the ground. Holding up-pull in loose regolith is hard; bearing down on it is easy.
+4. **The array sits above all the bracing.** It sweeps a 17 m radius circle from 67 to 100 m. The upper collar is at 62 m, so the turning array never meets a strut or wire. Above the collar the mast is braced by its own rotating **diamond stays** (spreaders and stays that turn with the mast, as on a racing yacht).
+5. **Thin roll-out blankets** (~0.5 to 1 kg/m² with harness). In 1/6 g with no wind they hang flat under light tension.
+6. **Balanced rig.** The array is one plane through the mast, left and right equal, so its centre of mass stays on the axis.
+7. **Steady sunlight makes thermal bow predictable.** Because the rig tracks the Sun, the same mast face is always sunlit, so the bow is nearly constant and can be trimmed out with wire tension. The mast sits behind the blanket, so its top section is in shade. CFRP tubes (α ≈ 0 to 1x10⁻⁶ /K) keep the bow to a few centimetres. The same 35 m length in aluminium would bow ~0.9 m.
+8. **Light installation gear.** The whole mast plus array (~5 t) weighs about 8 kN on the Moon, so a modest jack at deck level can raise all of it (section 7).
 
 ## 3. Reference configuration (100 m baseline)
 
@@ -46,41 +48,54 @@ How the design uses this:
 | Solar curtains | 8 vertical curtains, each ~4 m x 30 m, total 34 m x 30 m ≈ **1,000 m²** |
 | Power (30% cells, 1,361 W/m², ~85% system) | **~350 kWe** |
 | Top / bottom yards | 34 m, at 100 m and 70 m |
-| Guy collars (stationary) | 3 levels at **22, 42, 62 m**; 3 guys per level at 120° |
-| Guy anchors | 3 anchor groups at **~40 m radius** |
-| Guys | 6 mm stainless wire rope (UV-proof), pretension ~1 kN each, spring tensioner + load cell at the anchor |
+| Roller collars (stationary) | **Strut collar at 35 m**, **upper collar at 62 m** |
+| Struts | 3 at 120°, CFRP tube Ø0.3 m x 2 mm, **46 m** long, ~3 kg/m (~140 kg each), ball joints at both ends |
+| Foot pads | 3 at **30 m radius**, ~1 m² sintered or gabion pad, compression only (~0.5 kN) |
+| Wires | Foot to upper collar, 69 m, 6 mm stainless wire rope (UV-proof), doubled for redundancy, ~1.5 kN pretension |
+| Ties | Foot to kingpin foundation, horizontal at ground level (passing under the raised rail), ~1 kN |
 | Upper bracing (rotating) | Diamond stays: spreaders ±6 m at 81 m, stays from 62 m to the mast top |
 | Rail ring | Ø12 m single rail, 12 segments of π m, 8 bogies (unchanged from rev 2) |
 | Rotating mass | ~11.5 t (mast 2.5 t, array + yards 2 t, deck 4 t, bogies 1.5 t, kingpin 1 t, diamond stays 0.5 t) |
-| Lunar weight on the ring | ~19 kN, plus ~7 kN of guy pretension passed down through the collars |
-| Maintenance azimuth | Mast parked so the array lies **between** guy directions (e.g. 30°/210° when guys are at 0°/120°/240°) |
+| Lunar weight on the ring | ~19 kN; the pre-tensioned tripod lifts the mast very slightly (~1.5 kN), so the ring carries a little less |
+| Maintenance azimuth | Mast parked so the array lies **between** bracing planes (e.g. 30°/210° when the struts are at 0°/120°/240°) |
 
-**Scaling to other heights** (rough, same array, CFRP mast):
+**Scaling to other heights** (rough; same array, CFRP mast; struts sized for ~4x buckling margin):
 
-| Array top | Top collar | Anchor radius | Guy levels | Mast mass | Total rotating + collars | Lunar weight |
+| Array top | Upper collar | Strut collar | Foot radius | Strut length | Mast mass | Lunar weight |
 |---|---|---|---|---|---|---|
-| 60 m | 22 m | ~15 m | 2 | 1.2 t | ~10 t | ~16 kN |
-| **100 m** | **62 m** | **~40 m** | **3** | **2.5 t** | **~11.5 t** | **~19 kN** |
-| 150 m | 112 m | ~75 m | 4 | 4.8 t | ~14 t | ~23 kN |
-| 200 m | 162 m | ~105 m | 5 | 8 t | ~18 t | ~29 kN |
+| 60 m | 22 m | 12 m | ~12 m | ~17 m | 1.2 t | ~16 kN |
+| **100 m** | **62 m** | **35 m** | **30 m** | **46 m** | **2.5 t** | **~19 kN** |
+| 150 m | 112 m | 60 m | ~50 m | ~78 m | 4.8 t | ~23 kN |
+| 200 m | 162 m | 85 m | ~70 m | ~110 m | 8 t | ~29 kN |
 
-Mass barely grows with height. In practice the limit comes from:
-- **Anchor footprint**: the ridge must be ~2x the anchor radius wide. Ridges are often only a few hundred metres across.
+Above ~150 m the struts get long enough that they need a larger lattice section or a mid-length brace. In practice the height is limited by:
+- **Footprint**: the ridge must be ~2x the foot radius wide. That is smaller than the guy anchor footprint in rev 3, but ridges are often only a few hundred metres across.
 - **Installation time** at the jack.
 - **Sightlines to other collectors**: a taller rig shades more of the ridge.
 
+**Pre-tension (100 m case).** Tighten the wire to ~1.5 kN and the tie to ~1 kN. That puts ~2.5 kN of compression in the strut (buckling load ~10 kN) and leaves each foot pressing ~0.5 kN on its pad. Keep strut compression above ~1.2x the wire tension so the feet never lift. Load cells on every wire and tie show the rig's state.
+
 ## 4. Mast, collars and curtains
 
-**Roller collars.** Each collar is a stationary steel ring around the mast. At that height the mast carries a circular **collar band** (a short ring of rail). The collar has:
-- 6 radial guide rollers on the band, to hold the mast laterally, and
-- 3 thrust rollers on a shoulder, to carry the downward pull of the guys.
+![Roller collar: plan and section](collar.svg)
 
-The rollers are the same wheel/bearing technology as the bogies (dry-lubricated hybrid bearings, dissimilar surfaces), on slide-out **cartridges**. The collars carry only light loads (guy pretension and quake loads), so the heavy, critical parts stay at ground level: vertical load, drive and slip ring. Dust is far lower at height.
+**Roller collars.** Each collar is a stationary ring around the mast, made of 3 bolted 120° segments so it can be fitted around the mast. At that height the mast carries a circular **collar band**: a Ti box ring bolted to the three mast legs, with ceramic/DLC-coated running faces on the top, outside and underside.
+
+The collar holds **6 identical roller cartridges**. Each is a C-frame that wraps the band edge, like a base bogie wraps its rail. It carries three rollers:
+- an **upper thrust roller**: the upper collar is pulled down by the wires,
+- a **radial guide roller**: holds the mast sideways,
+- a **lower thrust roller**: the strut collar is pushed up by the struts, and it also resists quake uplift.
+
+So one cartridge design serves both collars. Each cartridge slides out radially on rails through a window in the collar ring. A preload spring gives ±10 mm of float for thermal mismatch, it has 2 captive bolts, and it has a grapple fixture for the climber robot. The collar works with any one cartridge removed.
+
+The rollers use the same technology as the bogies (dry-lubricated hybrid bearings, dissimilar surfaces). The collars carry only light loads (pre-tension and quake loads), so the heavy, critical parts stay at ground level: vertical load, drive and slip ring. Dust is far lower at height.
+
+A **transport clamp pin** in each cartridge locks the collar to the band during jack-up (section 7) and is pulled once the collar is at height.
 
 **Curtains instead of one blanket.** The array is 8 vertical curtains, 4 m wide. Each hangs from its own **halyard on the top yard** and is tensioned down to the bottom yard. To repair one (for example after a micrometeoroid strike):
-1. Rotate the mast to the **maintenance azimuth**, so the array lies between guy directions.
+1. Rotate the mast to the **maintenance azimuth**, so the array lies between the bracing planes.
 2. Release the curtain's bottom tension lines.
-3. Lower it on its halyard, in front of the bottom yard, straight down to the ground. There are no guys in that vertical plane, and the innermost curtain starts 2 m from the mast to clear the collars.
+3. Lower it on its halyard, in front of the bottom yard, straight down to the ground. No strut, wire or tie lies in that vertical plane, and the innermost curtain starts 2 m from the mast to clear the collars.
 4. Swap the curtain (or a section) at ground level and haul it back up.
 
 Nobody has to climb for the most common repair.
@@ -112,7 +127,7 @@ Layout rules:
 - **Avoid like-on-like metals** in vacuum (cold welding): hardened steel wheel on a ceramic or DLC-coated rail head (or Si₃N₄ rollers on steel).
 - Hybrid ceramic bearings with **dry lubrication** (sputtered MoS₂/WS₂, PTFE-composite cages). No grease or oil.
 - Labyrinth seals plus bellows boots.
-- Rolling resistance Crr ~0.001 to 0.003: at ~19 kN (plus guy pretension carried down the mast) that is **30 to 90 N** total.
+- Rolling resistance Crr ~0.001 to 0.003: at ~19 kN  that is **30 to 90 N** total.
 
 **Bogies**
 - 2-wheel **equaliser** bogies, spring-loaded so both wheels share load.
@@ -147,7 +162,7 @@ Layout rules:
 3. Unbolt, lift out, drop in the spare, level against the radius arm (section 7), remove the bridge.
 4. If only the running surface is damaged, swap just the rail head strip (~10 kg).
 
-**Spares on site**: 2 bogies, 2 rail segments, 6 rail head strips, 1 drive unit, slip-ring brush cartridges, 2 collar roller cartridges, 2 guys with tensioners, 2 blanket curtains.
+**Spares on site**: 2 bogies, 2 rail segments, 6 rail head strips, 1 drive unit, slip-ring brush cartridges, 2 collar roller cartridges, 1 wire and 1 tie with tensioners, 1 strut section, 2 blanket curtains.
 
 ## 7. Installation equipment and sequence (human supervised)
 
@@ -156,22 +171,26 @@ Everything is assembled at deck level and raised. A crew member (EVA, or in a pr
 | # | Equipment | What it does |
 |---|---|---|
 | E1 | **Kingpin driver** | Sets the central kingpin foundation: the datum for everything else. |
-| E2 | **Radius arm ("compass")** | 6 m arm on the kingpin with a laser level, encoder and pier socket. It places and levels the 12 rail piers. With an extension and laser rangefinder, it also lays out the 3 guy anchor sites at 40 m. |
+| E2 | **Radius arm ("compass")** | 6 m arm on the kingpin with a laser level, encoder and pier socket. It places and levels the 12 rail piers. With an extension and laser rangefinder, it also lays out the 3 foot-pad sites at 30 m. |
 | E3 | **Rail-riding installer cart** | Lays rail segments from the installed rail; later the maintenance cart (jacking, bogie and segment swaps). |
-| E4 | **Anchor installer** | Drives helical ground screws or places regolith-filled anchor bags at the 3 guy anchor sites, with a proof-load test. |
-| E5 | **Mast jack-up frame** | Sits on the deck around the kingpin and lifts the whole mast one 3 m section at a time; the new section is pinned in at the bottom. Peak lift is ~8 kN (whole mast + array) plus guy friction. |
-| E6 | **Guy winches with load cells** | One per anchor group, 3 drums each. They pay out and tension the guys during the jack-up and keep the mast plumb. Tensions are shown live on a supervisor tablet. |
-| E7 | **Mast climber robot** | Fits and checks the diamond stays and collar rollers at height. Later used for inspection and maintenance. |
+| E4 | **Foot-pad and tie layer** | Compacts or sinters the 3 foot pads and lays the 3 ground ties from the kingpin foundation out to the feet, under the raised rail. No pull-out anchors needed. |
+| E5 | **Mast jack-up frame** | Sits on the deck around the kingpin and lifts the whole mast one 3 m section at a time; the new section is pinned in at the bottom. Peak lift is ~8 kN (whole mast + array) plus bracing pre-tension. |
+| E6 | **Tie and wire winches with load cells** | One at each foot. They control the ties (which pull the strut feet in as the mast rises) and the wires, and keep the mast plumb. Tensions are shown live on a supervisor tablet. |
+| E7 | **Mast climber robot** | Fits and checks the diamond stays and collar cartridges at height. Later used for inspection and maintenance. |
 | E8 | **Curtain winch** | Raises and lowers curtains on their halyards (also used for repairs). |
 
 **Sequence**
-1. Survey and clear the site. Set the kingpin (E1). Lay out the 3 anchor sites with the radius arm (E2), then install and proof-load the anchors (E4).
+1. Survey and clear the site. Set the kingpin (E1). Lay out the 3 foot sites with the radius arm (E2); prepare the pads and lay the ties (E4).
 2. Set the 12 rail piers and lay the ring (E2, E3). Hold point: ring flat to ±2 mm.
 3. Place 8 bogies and the 4 deck quarters. Check the deck turns by hand.
 4. Fit the jack-up frame (E5). Assemble the **top assembly** at deck level: mast top section, diamond spreaders and stays, top yard folded vertically, curtains rolled on the top yard, bottom yard folded.
-5. **Jack up.** Each collar is fitted around the mast at deck level, clamped to its band section, and rides up with the mast. Its guys are paid out from the ground winches (E6), which keep the mast plumb. When a collar reaches its design height (22, 42, 62 m), its guys are locked and its clamp released. From then on the mast slides through it on the guide rollers as jacking continues.
+5. **Jack up, with a scissor action.** Each collar is fitted around the mast at deck level (3 segments), clamped to its band, and rides up with the mast.
+   - The **upper collar** goes on first, with its 3 wires paid out from the foot winches as it rises. Until the struts are in, these wires act as light temporary guys (a few hundred N). Each foot winch is ballasted with regolith bags so it never needs a pull-out anchor.
+   - When the strut band reaches the deck, the **strut collar** goes on. The 3 struts are pinned to it while lying flat on the ground, pointing outward, with their feet on skid dollies.
+   - As the mast keeps rising, the struts swing up and the tie winches (E6) **pull the feet in** along the ground, from 46 m to their 30 m pads. Low gravity keeps the strut and dolly loads tiny.
+   - At final height, the feet drop onto their pads and the ties and wires are tensioned. The clamp pins are pulled, and from then on the mast turns freely in both collars.
 6. At full height, unfold the yards. Set the maintenance azimuth and lower the curtains one at a time onto the bottom yard, then tension them (E8).
-7. Trim guy tensions to plumb the mast and take out thermal bow. Connect the harness to the slip ring, commission the drive, start tracking.
+7. Trim wire and tie tensions to plumb the mast and take out thermal bow. Connect the harness to the slip ring, commission the drive, start tracking.
 
 Design rules for every part: captive fasteners, one tool size, alignment cones, grapple fixtures, and no single piece heavier than ~150 kg-weight on the Moon without lifting gear.
 
@@ -180,25 +199,26 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
 | Hazard | Response |
 |---|---|
 | Terrain and neighbour shadows | Array at the top of a 100 m+ mast; site illumination study sets the height; spacing and stagger rules (section 4b) |
-| Temperature swings, one-sided sunlight | CFRP mast, mast behind the blanket, guy spring tensioners, steady sun-tracking gradient trimmed by guy tension |
+| Temperature swings, one-sided sunlight | CFRP mast and struts, mast behind the blanket, spring tensioners on wires and ties, steady sun-tracking gradient trimmed by wire tension |
 | Cold welding in vacuum | Dissimilar or coated mating surfaces, dry lubricants on all rollers |
 | Abrasive, electrostatic dust | Raised rail, scrapers, seals, skirt at ground level; collars and array are high above most lofted dust |
-| Moonquakes | Guys carry lateral load; balanced rig; uplift rollers at the base |
-| Micrometeoroids | Lowerable curtains; redundant guys (rig stays up with any one guy lost) |
+| Moonquakes | Strut tripod carries lateral load; balanced rig; lower thrust rollers in the collars and uplift rollers at the base |
+| Micrometeoroids | Lowerable curtains; doubled wires; struts are thick-walled tubes, inspected by the climber |
 | UV and radiation on cables | Steel wire rope or coated CFRP rod, not bare aramid or polymer fibre |
-| Regolith settlement | Adjustable piers; guy tensions monitored with load cells and re-trimmed |
+| Regolith settlement | Adjustable piers and foot pads; wire and tie tensions monitored with load cells and re-trimmed |
 
 ## 9. Alternatives worth comparing
 
-- **Rotate only the top** (VSAT / LUNARSABER style): a fixed guyed tower with a slewing bearing and slip ring under the array at 70 to 100 m. Simpler guys (they can attach directly), but the heaviest moving parts are high up. This design keeps them at ground level, at the cost of roller collars.
-- **No rail, kingpin only:** the rig is balanced and the guys carry lateral load, so a single base slewing bearing may be enough. The rail adds redundancy and a track for the maintenance cart. Worth a trade study.
+- **Ground guys with tension anchors (rev 3):** 9 guys, 3 collars, anchors at 40 m. Needs proof-loaded pull-out anchors in regolith, which are uncertain and slow to install. The rev 4 tripod avoids them.
+- **Rotate only the top** (VSAT / LUNARSABER style): a fixed tower with a slewing bearing and slip ring under the array at 70 to 100 m. No collars, but the heaviest moving parts are high up. This design keeps them at ground level.
+- **No rail, kingpin only:** the rig is balanced and the tripod carries lateral load, so a single base slewing bearing may be enough. The rail adds redundancy and a track for the maintenance cart. Worth a trade study.
 - **Several shorter rigs vs one tall one:** depends on the site's illumination-vs-height curve.
 
 ## 10. Next steps
 
 1. **Site illumination study** on LOLA data: sunlight hours vs array height at candidate spots; pick the height.
-2. Mast and guy analysis: buckling between collars, guy pretension, thermal bow, moonquake response, every jack-up stage.
+2. Mast and tripod analysis: strut and mast buckling, pre-tension, thermal bow, moonquake response, every jack-up and scissor stage.
 3. Collar roller design and vacuum/thermal tests, together with the bogie wheel/rail tests (LHS-1, NU-LHT simulants).
-4. Prototype the jack-up with collars and ground winches at small scale; rehearse with suited operators.
+4. Prototype the jack-up with collars, the strut scissor and tie winches at small scale; rehearse with suited operators.
 5. Curtain halyard and lowering trials; pick a blanket that tolerates repeated lowering.
 6. Packaging: deck quarters, 3 m mast sections, rail segments, curtain rolls to fit the lander.

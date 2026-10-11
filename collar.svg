@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 730" font-family="Helvetica, Arial, sans-serif" font-size="13">
+<rect width="1240" height="730" fill="#fff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker></defs>
+<style>.s{stroke:#222;stroke-width:2}.l{stroke:#555;stroke-width:1;fill:none}.guy{stroke:#8e44ad;stroke-width:2}.band{fill:#7d8790}.collar{fill:#4a9}.cart{fill:#e0a040}.roll{fill:#bbb}.mast{fill:#888}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:17px;font-weight:bold}</style>
+<text x="20" y="30" class="t">Plan (looking down the mast)</text>
+<line x1="330.0" y1="154.2" x2="330.0" y2="53.0" class="guy"/>
+<line x1="499.5" y1="447.9" x2="587.2" y2="498.5" class="guy"/>
+<line x1="160.5" y1="447.9" x2="72.8" y2="498.5" class="guy"/>
+<circle cx="330" cy="350" r="182.25" fill="none" stroke="#4a9" stroke-width="27.0"/>
+<circle cx="330" cy="350" r="168.75" fill="none" stroke="#222" stroke-width="2"/><circle cx="330" cy="350" r="195.75" fill="none" stroke="#222" stroke-width="2"/>
+<line x1="472.7" y1="267.6" x2="503.0" y2="250.1" stroke="#fff" stroke-width="5"/><line x1="472.7" y1="267.6" x2="503.0" y2="250.1" stroke="#222" stroke-width="1.5" stroke-dasharray="3 3"/>
+<line x1="330.0" y1="514.8" x2="330.0" y2="549.8" stroke="#fff" stroke-width="5"/><line x1="330.0" y1="514.8" x2="330.0" y2="549.8" stroke="#222" stroke-width="1.5" stroke-dasharray="3 3"/>
+<line x1="187.3" y1="267.6" x2="157.0" y2="250.1" stroke="#fff" stroke-width="5"/><line x1="187.3" y1="267.6" x2="157.0" y2="250.1" stroke="#222" stroke-width="1.5" stroke-dasharray="3 3"/>
+<rect x="-9" y="-12" width="18" height="24" fill="#555" transform="translate(330.0,144.2) rotate(0)"/>
+<rect x="-9" y="-12" width="18" height="24" fill="#555" transform="translate(508.2,452.9) rotate(120)"/>
+<rect x="-9" y="-12" width="18" height="24" fill="#555" transform="translate(151.8,452.9) rotate(240)"/>
+<circle cx="330" cy="350" r="128.25" fill="none" stroke="#7d8790" stroke-width="13"/>
+<circle cx="330" cy="350" r="134.75" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<polygon points="330.0,240.6 424.7,404.7 235.3,404.7" fill="none" stroke="#888" stroke-width="4"/>
+<line x1="330.0" y1="240.6" x2="330.0" y2="227.8" stroke="#555" stroke-width="7"/>
+<circle cx="330.0" cy="240.6" r="9" class="mast s"/>
+<line x1="424.7" y1="404.7" x2="435.9" y2="411.1" stroke="#555" stroke-width="7"/>
+<circle cx="424.7" cy="404.7" r="9" class="mast s"/>
+<line x1="235.3" y1="404.7" x2="224.1" y2="411.1" stroke="#555" stroke-width="7"/>
+<circle cx="235.3" cy="404.7" r="9" class="mast s"/>
+<rect x="-16" y="-22" width="32" height="44" rx="3" class="cart s" transform="translate(408.5,214.0) rotate(30)"/>
+<rect x="-9" y="-6" width="18" height="12" rx="3" class="roll s" transform="translate(401.1,226.8) rotate(30)"/>
+<rect x="-16" y="-22" width="32" height="44" rx="3" class="cart s" transform="translate(487.0,350.0) rotate(90)"/>
+<rect x="-9" y="-6" width="18" height="12" rx="3" class="roll s" transform="translate(472.2,350.0) rotate(90)"/>
+<rect x="-16" y="-22" width="32" height="44" rx="3" class="cart s" transform="translate(408.5,486.0) rotate(150)"/>
+<rect x="-9" y="-6" width="18" height="12" rx="3" class="roll s" transform="translate(401.1,473.2) rotate(150)"/>
+<rect x="-16" y="-22" width="32" height="44" rx="3" class="cart s" transform="translate(251.5,486.0) rotate(210)"/>
+<rect x="-9" y="-6" width="18" height="12" rx="3" class="roll s" transform="translate(258.9,473.2) rotate(210)"/>
+<rect x="-16" y="-22" width="32" height="44" rx="3" class="cart s" transform="translate(173.0,350.0) rotate(270)"/>
+<rect x="-9" y="-6" width="18" height="12" rx="3" class="roll s" transform="translate(187.8,350.0) rotate(270)"/>
+<rect x="-16" y="-22" width="32" height="44" rx="3" class="cart s" transform="translate(251.5,214.0) rotate(330)"/>
+<rect x="-9" y="-6" width="18" height="12" rx="3" class="roll s" transform="translate(258.9,226.8) rotate(330)"/>
+<path d="M305 420 A74.25 74.25 0 0 1 260 375" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="330" y="354" text-anchor="middle" font-size="12">Mast turns</text><text x="330" y="369" text-anchor="middle" font-size="12">0.51°/h</text>
+<path d="M330 66L355 72" class="l"/>
+<text x="359" y="76" text-anchor="start">Strut or wire (stationary)</text>
+<path d="M488 259L480 150" class="l"/>
+<text x="484" y="154" text-anchor="start">Collar ring: 3 x 120° segments</text>
+<text x="484" y="169" text-anchor="start">(stationary, ~50 kg each)</text>
+<path d="M160 252L170 135" class="l"/>
+<text x="166" y="139" text-anchor="end">Segment joint,</text>
+<text x="166" y="154" text-anchor="end">captive bolts</text>
+<path d="M513 456L545 510" class="l"/>
+<text x="549" y="514" text-anchor="start">Lug + load pin</text>
+<path d="M404 479L450 585" class="l"/>
+<text x="454" y="589" text-anchor="start">6 roller cartridges</text>
+<text x="454" y="604" text-anchor="start">(any one removable)</text>
+<path d="M263 466L210 600" class="l"/>
+<text x="206" y="604" text-anchor="end">Collar band on the mast (rotates;</text>
+<text x="206" y="619" text-anchor="end">red = running face)</text>
+<path d="M229 405L150 290" class="l"/>
+<text x="146" y="294" text-anchor="end">CFRP mast leg</text>
+<text x="146" y="309" text-anchor="end">+ band bracket</text>
+<text x="20" y="692" font-size="12">Mast face 1.4 m. Band Ø1.9 m. Collar ring Ø2.5–2.9 m.</text>
+<text x="20" y="708" font-size="12">Struts/wires at 0°/120°/240°; segment joints between them.</text>
+<g transform="translate(40,0)">
+<text x="640" y="30" class="t">Section through a cartridge</text>
+<rect x="650" y="150" width="26" height="320" class="mast s"/>
+<rect x="676" y="306" width="40" height="28" fill="#555" class="s"/>
+<rect x="716" y="290" width="90" height="60" class="band s"/>
+<line x1="716" y1="290" x2="806" y2="290" stroke="#c0392b" stroke-width="4"/>
+<line x1="806" y1="290" x2="806" y2="350" stroke="#c0392b" stroke-width="4"/>
+<line x1="716" y1="350" x2="806" y2="350" stroke="#c0392b" stroke-width="4"/>
+<rect x="718" y="262" width="6" height="28" class="band s"/>
+<path d="M736 222 H950 V242 H866 V398 H950 V418 H736 V398 H846 V242 H736 Z" class="cart s"/>
+<line x1="770" y1="242" x2="770" y2="252" stroke="#222" stroke-width="3"/><circle cx="770" cy="270" r="19" class="roll s"/><circle cx="770" cy="270" r="4" fill="#222"/>
+<rect x="808" y="300" width="34" height="40" rx="5" class="roll s"/><line x1="825" y1="242" x2="825" y2="300" stroke="#222" stroke-width="3"/><line x1="825" y1="340" x2="825" y2="398" stroke="#222" stroke-width="3"/>
+<line x1="770" y1="398" x2="770" y2="386" stroke="#222" stroke-width="3"/><circle cx="770" cy="369" r="17" class="roll s"/><circle cx="770" cy="369" r="4" fill="#222"/>
+<rect x="796" y="196" width="10" height="110" fill="#c0392b" stroke="#222" stroke-width="1.5"/>
+<rect x="900" y="196" width="120" height="26" class="collar s"/><rect x="900" y="418" width="120" height="26" class="collar s"/>
+<rect x="1000" y="222" width="20" height="196" class="collar s"/>
+<line x1="900" y1="232" x2="1000" y2="232" stroke="#222" stroke-width="2" stroke-dasharray="6 3"/><line x1="900" y1="408" x2="1000" y2="408" stroke="#222" stroke-width="2" stroke-dasharray="6 3"/>
+<path d="M950 320 l6 -10 6 20 6 -20 6 20 6 -20 6 20 6 -10 h6" fill="none" stroke="#222" stroke-width="2"/>
+<rect x="1020" y="306" width="30" height="28" fill="#e0a040" class="s"/><circle cx="1058" cy="320" r="9" fill="#fff" class="s"/>
+<rect x="955" y="186" width="8" height="40" fill="#333"/><rect x="955" y="414" width="8" height="40" fill="#333"/>
+<rect x="1000" y="444" width="22" height="34" fill="#555" class="s"/><circle cx="1011" cy="468" r="5" fill="#fff"/>
+<line x1="1011" y1="468" x2="1100" y2="530" class="guy"/>
+<path d="M1080 230 V280" stroke="#8e44ad" stroke-width="2" marker-end="url(#ar)"/><path d="M1080 230 H1125" stroke="#8e44ad" stroke-width="2" marker-end="url(#ar)"/><text x="1078" y="214" font-size="11">Wire pull</text>
+<path d="M663 180L640 120" class="l"/><circle cx="640" cy="120" r="10" fill="#fff" stroke="#222" stroke-width="1.5"/><text x="640" y="124" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">1</text>
+<path d="M696 334L690 400" class="l"/><circle cx="690" cy="400" r="10" fill="#fff" stroke="#222" stroke-width="1.5"/><text x="690" y="404" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">2</text>
+<path d="M760 340L735 470" class="l"/><circle cx="735" cy="470" r="10" fill="#fff" stroke="#222" stroke-width="1.5"/><text x="735" y="474" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">3</text>
+<path d="M721 265L700 230" class="l"/><circle cx="700" cy="230" r="10" fill="#fff" stroke="#222" stroke-width="1.5"/><text x="700" y="234" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">4</text>
+<path d="M760 258L740 160" class="l"/><circle cx="740" cy="160" r="10" fill="#fff" stroke="#222" stroke-width="1.5"/><text x="740" y="164" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">5</text>
+<path d="M842 325L880 470" class="l"/><circle cx="880" cy="470" r="10" fill="#fff" stroke="#222" stroke-width="1.5"/><text x="880" y="474" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">6</text>
+<path d="M780 380L805 470" class="l"/><circle cx="805" cy="470" r="10" fill="#fff" stroke="#222" stroke-width="1.5"/><text x="805" y="474" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">7</text>
+<path d="M801 200L801 140" class="l"/><circle cx="801" cy="140" r="10" fill="#fff" stroke="#222" stroke-width="1.5"/><text x="801" y="144" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">8</text>
+<path d="M920 232L880 175" class="l"/><circle cx="880" cy="175" r="10" fill="#fff" stroke="#222" stroke-width="1.5"/><text x="880" y="179" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">9</text>
+<path d="M980 315L975 275" class="l"/><circle cx="975" cy="275" r="10" fill="#fff" stroke="#222" stroke-width="1.5"/><text x="975" y="279" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">10</text>
+<path d="M1015 200L1010 140" class="l"/><circle cx="1010" cy="140" r="10" fill="#fff" stroke="#222" stroke-width="1.5"/><text x="1010" y="144" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">11</text>
+<path d="M959 190L940 140" class="l"/><circle cx="940" cy="140" r="10" fill="#fff" stroke="#222" stroke-width="1.5"/><text x="940" y="144" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">12</text>
+<path d="M1058 330L1075 375" class="l"/><circle cx="1075" cy="375" r="10" fill="#fff" stroke="#222" stroke-width="1.5"/><text x="1075" y="379" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">13</text>
+<path d="M1011 478L1050 500" class="l"/><circle cx="1050" cy="500" r="10" fill="#fff" stroke="#222" stroke-width="1.5"/><text x="1050" y="504" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">14</text>
+</g>
+<circle cx="680" cy="564" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="680" y="568" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">1</text>
+<text x="693" y="568" font-size="11.5">CFRP mast leg</text>
+<circle cx="680" cy="583" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="680" y="587" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">2</text>
+<text x="693" y="587" font-size="11.5">Band bracket</text>
+<circle cx="680" cy="602" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="680" y="606" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">3</text>
+<text x="693" y="606" font-size="11.5">Collar band (turns with mast), Ti ring</text>
+<circle cx="680" cy="621" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="680" y="625" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">4</text>
+<text x="693" y="625" font-size="11.5">Dust lip</text>
+<circle cx="680" cy="640" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="680" y="644" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">5</text>
+<text x="693" y="644" font-size="11.5">Upper thrust roller: downward pull</text>
+<circle cx="680" cy="659" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="680" y="663" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">6</text>
+<text x="693" y="663" font-size="11.5">Radial roller: holds mast sideways</text>
+<circle cx="680" cy="678" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="680" y="682" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">7</text>
+<text x="693" y="682" font-size="11.5">Lower thrust roller: upward push</text>
+<circle cx="950" cy="564" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="950" y="568" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">8</text>
+<text x="963" y="568" font-size="11.5">Clamp pin: locks collar for jack-up</text>
+<circle cx="950" cy="583" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="950" y="587" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">9</text>
+<text x="963" y="587" font-size="11.5">Slide rails</text>
+<circle cx="950" cy="602" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="950" y="606" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">10</text>
+<text x="963" y="606" font-size="11.5">Preload spring: ±10 mm thermal float</text>
+<circle cx="950" cy="621" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="950" y="625" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">11</text>
+<text x="963" y="625" font-size="11.5">Collar ring (stationary)</text>
+<circle cx="950" cy="640" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="950" y="644" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">12</text>
+<text x="963" y="644" font-size="11.5">Captive bolts (2 per cartridge)</text>
+<circle cx="950" cy="659" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="950" y="663" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">13</text>
+<text x="963" y="663" font-size="11.5">Grapple for the climber robot</text>
+<circle cx="950" cy="678" r="8" fill="#fff" stroke="#222" stroke-width="1.2"/><text x="950" y="682" text-anchor="middle" font-size="10" font-weight="bold" style="stroke:none">14</text>
+<text x="963" y="682" font-size="11.5">Strut/wire lug with load pin</text>
+<text x="680" y="705" font-size="11.5">Red = ceramic/DLC running faces. Upper collar is pulled down, mid collar pushed up: same cartridge.</text>
+</svg>
