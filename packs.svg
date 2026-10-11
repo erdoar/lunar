@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 760" font-family="Helvetica, Arial, sans-serif" font-size="12.5">
+<rect width="1240" height="760" fill="#fff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker><pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#a08c6c"/></pattern></defs>
+<style>.s{stroke:#222;stroke-width:1.5}.l{stroke:#555;stroke-width:1;fill:none}.panel{stroke:#2c4a7a;stroke-width:5;stroke-linecap:round}.cord{stroke:#c0392b;stroke-width:1.5;fill:none}.hoist{stroke:#555;stroke-width:1.2}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:15px;font-weight:bold}</style>
+<text x="20" y="34" class="t">1. Deployed (side view and front)</text>
+<rect x="25.0" y="80" width="90" height="22" fill="#e0a040" class="s"/>
+<circle cx="54" cy="91" r="7" fill="#fff" class="s"/><circle cx="86" cy="91" r="7" fill="#fff" class="s"/>
+<rect x="38" y="102" width="64" height="12" fill="#4a9" class="s"/>
+<line x1="70" y1="116" x2="70" y2="158" class="panel"/>
+<circle cx="70" cy="160" r="3" fill="#222"/><circle cx="79" cy="160" r="4" fill="#fff" stroke="#c0392b" stroke-width="1.5"/>
+<line x1="70" y1="162" x2="70" y2="204" class="panel"/>
+<circle cx="70" cy="206" r="3" fill="#222"/><circle cx="79" cy="206" r="4" fill="#fff" stroke="#c0392b" stroke-width="1.5"/>
+<line x1="70" y1="208" x2="70" y2="250" class="panel"/>
+<circle cx="70" cy="252" r="3" fill="#222"/><circle cx="79" cy="252" r="4" fill="#fff" stroke="#c0392b" stroke-width="1.5"/>
+<line x1="70" y1="254" x2="70" y2="296" class="panel"/>
+<circle cx="70" cy="298" r="3" fill="#222"/><circle cx="79" cy="298" r="4" fill="#fff" stroke="#c0392b" stroke-width="1.5"/>
+<path d="M56 316 l28 -8 M56 324 l28 -8" stroke="#222" stroke-width="1.5"/>
+<line x1="70" y1="346" x2="70" y2="388" class="panel"/>
+<circle cx="70" cy="390" r="3" fill="#222"/><circle cx="79" cy="390" r="4" fill="#fff" stroke="#c0392b" stroke-width="1.5"/>
+<line x1="70" y1="392" x2="70" y2="434" class="panel"/>
+<circle cx="70" cy="436" r="3" fill="#222"/><circle cx="79" cy="436" r="4" fill="#fff" stroke="#c0392b" stroke-width="1.5"/>
+<line x1="70" y1="438" x2="70" y2="480" class="panel"/>
+<circle cx="70" cy="482" r="3" fill="#222"/><circle cx="79" cy="482" r="4" fill="#fff" stroke="#c0392b" stroke-width="1.5"/>
+<rect x="60" y="482" width="26" height="10" fill="#e0a040" class="s"/>
+<path d="M86 91 V114 L79 122 V482" class="cord"/>
+<path d="M40 91L30 62" class="l"/>
+<text x="34" y="66" text-anchor="start">Top bar (station)</text>
+<path d="M86 91L130 82" class="l"/>
+<text x="134" y="86" text-anchor="start">Lift-cord drum</text>
+<path d="M102 108L130 130" class="l"/>
+<text x="134" y="134" text-anchor="start">Carrier (latched)</text>
+<path d="M83 252L110 282" class="l"/>
+<text x="114" y="286" text-anchor="start">Ceramic guide</text>
+<text x="114" y="300" text-anchor="start">ring at fold</text>
+<path d="M70 160L110 182" class="l"/>
+<text x="114" y="186" text-anchor="start">Hinge (180° stop)</text>
+<path d="M86 487L110 512" class="l"/>
+<text x="114" y="516" text-anchor="start">Bottom bar</text>
+<text x="20" y="542" font-size="11.5">30 panels x 1 m = 30 m (shortened)</text>
+<rect x="255" y="114" width="70" height="368" fill="#2c4a7a"/>
+<line x1="255" y1="160" x2="325" y2="160" stroke="#9cc0ea"/>
+<line x1="255" y1="206" x2="325" y2="206" stroke="#9cc0ea"/>
+<line x1="255" y1="252" x2="325" y2="252" stroke="#9cc0ea"/>
+<line x1="255" y1="298" x2="325" y2="298" stroke="#9cc0ea"/>
+<line x1="255" y1="344" x2="325" y2="344" stroke="#9cc0ea"/>
+<line x1="255" y1="390" x2="325" y2="390" stroke="#9cc0ea"/>
+<line x1="255" y1="436" x2="325" y2="436" stroke="#9cc0ea"/>
+<line x1="263" y1="104" x2="263" y2="482" stroke="#c0392b" stroke-width="1.2" stroke-dasharray="4 3"/>
+<line x1="317" y1="104" x2="317" y2="482" stroke="#c0392b" stroke-width="1.2" stroke-dasharray="4 3"/>
+<rect x="251" y="102" width="78" height="12" fill="#4a9" class="s"/><rect x="253" y="482" width="74" height="8" fill="#e0a040" class="s"/>
+<path d="M255 506 H325" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="290.0" y="522" text-anchor="middle">1–3 m (2 m)</text>
+<text x="290.0" y="94" text-anchor="middle" font-size="11.5">front</text>
+<text x="330" y="34" class="t">2. Retracting (cords wind in)</text>
+<rect x="375.0" y="80" width="90" height="22" fill="#e0a040" class="s"/>
+<circle cx="404" cy="91" r="7" fill="#fff" class="s"/><circle cx="436" cy="91" r="7" fill="#fff" class="s"/>
+<rect x="388" y="102" width="64" height="12" fill="#4a9" class="s"/>
+<line x1="420" y1="116" x2="420" y2="158" class="panel"/>
+<circle cx="429" cy="160" r="4" fill="#fff" stroke="#c0392b" stroke-width="1.5"/>
+<line x1="420" y1="162" x2="420" y2="204" class="panel"/>
+<circle cx="429" cy="206" r="4" fill="#fff" stroke="#c0392b" stroke-width="1.5"/>
+<line x1="420" y1="208" x2="420" y2="250" class="panel"/>
+<circle cx="429" cy="252" r="4" fill="#fff" stroke="#c0392b" stroke-width="1.5"/>
+<polyline points="420,252 454,263 420,274 454,285 420,296 454,307 420,318 454,329 420,340" fill="none" stroke="#2c4a7a" stroke-width="5" stroke-linejoin="round"/>
+<rect x="410" y="344" width="56" height="10" fill="#e0a040" class="s"/>
+<path d="M436 91 V114 L429 122 V344" class="cord"/>
+<path d="M490 354 V252" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M454 263L505 292" class="l"/>
+<text x="509" y="296" text-anchor="start">Folds gather from</text>
+<text x="509" y="310" text-anchor="start">the bottom up</text>
+<path d="M450 329L505 344" class="l"/>
+<text x="509" y="348" text-anchor="start">Alternate hinges sprung</text>
+<text x="509" y="362" text-anchor="start">toward their fold</text>
+<path d="M436 91L480 64" class="l"/>
+<text x="484" y="68" text-anchor="start">Drums wind in</text>
+<text x="360" y="404" font-size="11.5">Deploy is the reverse: pay out, gravity</text>
+<text x="360" y="419" font-size="11.5">unfolds it (~0.1 m/s, ~5 min per pack)</text>
+<text x="620" y="34" class="t">3. Stowed stack</text>
+<rect x="645.0" y="80" width="90" height="22" fill="#e0a040" class="s"/>
+<circle cx="674" cy="91" r="7" fill="#fff" class="s"/><circle cx="706" cy="91" r="7" fill="#fff" class="s"/>
+<rect x="658" y="102" width="64" height="12" fill="#4a9" class="s"/>
+<polyline points="660,116 720,121 660,126 720,131 660,136 720,141 660,146 720,151 660,156 720,161 660,166 720,171 660,176 720,181 660,186 720,191" fill="none" stroke="#2c4a7a" stroke-width="3" stroke-linejoin="round"/>
+<rect x="656" y="194" width="68" height="8" fill="#e0a040" class="s"/>
+<path d="M720 154L745 194" class="l"/>
+<text x="749" y="198" text-anchor="start">~2 x 1 x 0.7 m,</text>
+<text x="749" y="212" text-anchor="start">~140 kg (0.23 kN</text>
+<text x="749" y="226" text-anchor="start">on the Moon)</text>
+<text x="630" y="364" font-size="11.5">Stays latched while other</text><text x="630" y="379" font-size="11.5">packs keep producing.</text>
+<text x="900" y="34" class="t">4. Exchange: lowered alone</text>
+<rect x="965" y="80" width="90" height="22" fill="#e0a040" class="s"/>
+<circle cx="984" cy="91" r="6" fill="#fff" class="s"/>
+<line x1="984" y1="97" x2="984" y2="570" class="hoist"/>
+<circle cx="1036" cy="91" r="6" fill="#fff" class="s"/>
+<line x1="1036" y1="97" x2="1036" y2="570" class="hoist"/>
+<rect x="978" y="570" width="64" height="12" fill="#4a9" class="s"/>
+<polyline points="980,584 1040,587 980,591 1040,594 980,598 1040,601 980,604 1040,608 980,611 1040,615 980,618 1040,621 980,625 1040,628" fill="none" stroke="#2c4a7a" stroke-width="3" stroke-linejoin="round"/>
+<rect x="960" y="630" width="100" height="10" fill="#9fb4c7" class="s"/><circle cx="974" cy="640" r="5" fill="#555"/><circle cx="1046" cy="640" r="5" fill="#555"/>
+<rect x="860" y="645" width="300" height="30" fill="url(#g)"/><line x1="860" y1="645" x2="1160" y2="645" stroke="#222"/>
+<path d="M1080 140 V560" stroke="#222" stroke-width="1.5" marker-end="url(#ar)" marker-start="url(#ar)"/>
+<path d="M1036 220L1090 240" class="l"/>
+<text x="1094" y="244" text-anchor="start">Hoist lines (2)</text>
+<text x="1094" y="258" text-anchor="start">from station drums</text>
+<path d="M978 576L920 530" class="l"/>
+<text x="916" y="534" text-anchor="end">Carrier + folded</text>
+<text x="916" y="548" text-anchor="end">pack, 4 cones +</text>
+<text x="916" y="562" text-anchor="end">captive latches</text>
+<path d="M1060 635L1090 600" class="l"/>
+<text x="1094" y="604" text-anchor="start">Ground cart (or the</text>
+<text x="1094" y="618" text-anchor="start">deck, for inner packs)</text>
+<path d="M965 91L910 130" class="l"/>
+<text x="906" y="134" text-anchor="end">Wing top bar</text>
+<text x="870" y="700" font-size="11.5">Mast parked at the maintenance azimuth. The pack weight stays on</text>
+<text x="870" y="715" font-size="11.5">the top bar until it lands; swap packs in port/starboard pairs.</text>
+</svg>

@@ -1,4 +1,4 @@
-# Lunar polar rotating solar platform: concept design (rev 9, tall mast on a strut tripod)
+# Lunar polar rotating solar platform: concept design (rev 10, tall mast on a strut tripod)
 
 A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
@@ -11,7 +11,8 @@ A small turntable on a circular rail that turns a very tall mast, with the solar
 - Rev 6: **2 tyres per bogie** (6 in all). Each bogie pivots at its centre, so the whole base is statically determinate and every tyre carries exactly the same load, with no springs. Each tyre has a built-in **support shoe** for swaps. The tyres are vertical, not angled outward, because the load they carry is vertical.
 - Rev 7: anti-**wind-up** bracing. The upper collar gets 3 **hinged rigid torque arms** whose tips carry the wires, and each strut becomes a narrow **A-frame**. Without them the upper collar would twist ~10° under a partly seized roller, and the strut collar is torsionally unstable (see section 4). The bogie pivot is now a stiff, travel-limited rocker with hard stops.
 - Rev 8: the array is split into **port and starboard wings**. Each hangs on halyards from a **permanent top yard** and is raised and lowered on its own for installation and maintenance. The wing's weight stays on the same sheaves whichever height it is at, so lowering one wing does not unbalance the rig. Only taking a wing's weight off its halyards would, and that is handled by a ballast swap or by landing both wings together (section 4).
-- **Rev 9 (this):** each bracing plane's wires become a **single cable that splits into a Y-bridle** at a fixed split plate about 12 m above the ground. The two legs run to the tips of **two hinged arms in a V** on the upper collar. There is one tensioner and one load cell per plane, and twist resistance comes from the monitored, adjustable pre-tension.
+- Rev 9: each bracing plane's wires become a **single cable that splits into a Y-bridle** at a fixed split plate about 12 m above the ground. The two legs run to the tips of **two hinged arms in a V** on the upper collar. There is one tensioner and one load cell per plane, and twist resistance comes from the monitored, adjustable pre-tension.
+- **Rev 10 (this):** the curtains become **rigid concertina packs**, 1 to 3 m wide (2 m baseline), shipped and replaced as separate units. Each pack deploys and retracts like a **Roman blind**, and each can be **lowered on its own** to the ground for exchange. Lowering a whole wing is now only for top-bar work.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -50,10 +51,11 @@ How the design uses this:
 |---|---|
 | Array top / bottom | **100 m / 70 m** above the deck |
 | Mast | 105 m triangular CFRP lattice (Ti nodes), 1.2 to 1.5 m face, ~25 kg/m (~2.5 t), built in 3 m sections |
-| Solar wings | **Port and starboard wings**, each 17 m x 30 m (~500 m²), each made of 4 roll-up curtain modules ~4 m wide; total ≈ **1,000 m²**. ~0.75 t per wing (~1.2 kN on the Moon) |
+| Solar wings | **Port and starboard wings**, each 17 m x 30 m (~500 m²), total ≈ **1,000 m²**. Each wing is **8 concertina packs** hung from a top bar. ~1.37 t per wing (~2.2 kN on the Moon) |
+| Concertina pack | Rigid panels ~2 m wide x 1 m tall (CFRP-honeycomb, ~2 kg/m² with cells), 30 panels hinged along their horizontal edges. Deployed: 2 m x 30 m. Folded: ~2 m x 1 m x 0.7 m, ~140 kg (~0.23 kN on the Moon). Packs from 1 to 3 m wide use the same station hardware |
 | Power (30% cells, 1,361 W/m², ~85% system) | **~350 kWe** |
 | Top yard (permanent) | 34 m truss fixed to the mast at 100 m, held by topping lifts; 2 halyard sheaves per wing (inner at 2 m, outer at 17 m from the mast) |
-| Wing bars | Each wing has a top bar (with the curtain roll drums) on 2 halyards, and a bottom tension bar that hangs from the curtains. No fixed bottom yard |
+| Wing top bar | Each wing has a top bar on 2 halyards carrying 8 **pack stations** (carrier latch, 2 lift-cord drums, 2 hoist-line drums). No fixed bottom yard: each pack has its own small bottom bar |
 | Roller collars (stationary) | **Strut collar at 35 m**, **upper collar at 62 m** |
 | Struts | 3 **A-frames** at 120°: each 2 CFRP tubes Ø0.3 m x 2 mm, ~46 m long, ~3 kg/m, ball joints at both ends. Joined at the foot, spread ±1.5 m at a torque bracket 4 m out from the strut collar |
 | Foot pads | 3 at **30 m radius**, ~1 m² sintered or gabion pad, compression only (~0.5 kN) |
@@ -62,8 +64,8 @@ How the design uses this:
 | Ties | Foot to kingpin foundation, horizontal at ground level (passing under the raised rail), ~1 kN |
 | Upper bracing (rotating) | Diamond stays: spreaders ±6 m at 81 m, stays from 62 m to the mast top |
 | Rail ring | Ø12 m single rail, 12 segments of π m, **3 bogies x 2 tyres** at 120° |
-| Rotating mass | ~11.5 t (mast 2.5 t, array + yards 2 t, deck 4 t, bogies 0.2 t, collar bands + margin 1.1 t, kingpin 1 t, diamond stays 0.5 t) |
-| Lunar weight on the ring | ~19 kN; the pre-tensioned tripod lifts the mast very slightly (~1.5 kN), so the ring carries a little less |
+| Rotating mass | ~12.6 t (mast 2.5 t, wings + top yard 3.1 t, deck 4 t, bogies 0.2 t, collar bands + margin 1.1 t, kingpin 1 t, diamond stays 0.5 t) |
+| Lunar weight on the ring | ~20.5 kN; the pre-tensioned tripod lifts the mast very slightly (~1.5 kN), so the ring carries a little less |
 | Maintenance azimuth | Mast parked so the array lies **between** bracing planes (e.g. 30°/210° when the struts are at 0°/120°/240°) |
 
 **Scaling to other heights** (rough; same array, CFRP mast; struts sized for ~4x buckling margin):
@@ -71,7 +73,7 @@ How the design uses this:
 | Array top | Upper collar | Strut collar | Foot radius | Strut length | Mast mass | Lunar weight |
 |---|---|---|---|---|---|---|
 | 60 m | 22 m | 12 m | ~12 m | ~17 m | 1.2 t | ~16 kN |
-| **100 m** | **62 m** | **35 m** | **30 m** | **46 m** | **2.5 t** | **~19 kN** |
+| **100 m** | **62 m** | **35 m** | **30 m** | **46 m** | **2.5 t** | **~20.5 kN** (rigid packs) |
 | 150 m | 112 m | 60 m | ~50 m | ~78 m | 4.8 t | ~23 kN |
 | 200 m | 162 m | 85 m | ~70 m | ~110 m | 8 t | ~29 kN |
 
@@ -152,32 +154,40 @@ How it works:
 - **Clearances.** All arm, crossbar and A-frame tips stay within ~21° of their bracing plane, so the maintenance azimuth (30°/210°) stays clear for lowering the wings. Everything is at or below 62 m, under the array sweep.
 - **Torque sensing.** Small load pins where the two legs attach to the split plate read the difference in leg tension, a direct measure of the upper collar's friction torque. The main cable's load cell at the foot reads the pre-tension. Together they give the seizure early warning in layer 3 below.
 
-**Port and starboard wings, raised and lowered on halyards.**
+**Port and starboard wings of concertina packs.**
 
-![Wings: raising, lowering and balance](wings.svg)
+![Pack mechanisms: deploy, retract, exchange](packs.svg)
 
-The array is two wings, port and starboard, one each side of the mast. Each wing is made of:
-- a **top bar** carrying 4 curtain **roll drums** (like roller blinds),
-- the 4 curtains, ~4 m x 30 m each, and
-- a **bottom tension bar** that hangs from the curtains. In 1/6 g with no wind, its weight keeps the curtains flat.
+Each wing is a **top bar** with **8 concertina packs** side by side, each 2 m wide (1 to 3 m packs fit the same stations), with ~0.1 m gaps between them. A pack is 30 rigid panels, 1 m tall, hinged along their horizontal edges. Folded, it is a ~2 m x 1 m x 0.7 m stack of ~140 kg (~0.23 kN on the Moon), which ships, stores and handles easily.
 
-The top bar hangs from **2 halyards**, run over sheaves on the **permanent top yard** at 2 m and 17 m from the mast. The halyards run down the mast to a **double-drum winch** on the deck, one per wing, which keeps the bar level. When the wing is up, the top bar latches to the yard and **sheets** (light tag lines) from the bottom bar ends to the mast hold the wing plane true.
+There are three raise/lower mechanisms, used from most to least often.
 
-To lower a wing for maintenance:
-1. Park the mast at the **maintenance azimuth**, so both wings lie in the clear 30°/210° plane between the bracing planes.
-2. Release the sheets and **roll the curtains up** onto the drums. The bottom bar rises and docks under the top bar, leaving a compact bundle ~17 m long and ~0.6 m deep.
-3. Unlatch the top bar and **lower the bundle** on its halyards to ~3 m above the ground: above the deck at the inner end, on stands at the outer end.
+**1. Deploying and retracting a pack (a Roman blind).**
+- Each pack hangs by its **top frame** from a **carrier** latched to its station on the top bar.
+- **Two lift cords**, one near each side edge, run from the station's cord drums down through **ceramic guide rings** at every fold line on the back of the pack. They are tied off to the pack's **bottom bar**.
+- *Deploy:* the drums pay out. Gravity (1/6 g) unfolds the panels one after another from the top. The hinges have **180° stops**, so the fully open pack hangs flat and its bottom bar keeps it gently tensioned. At ~0.1 m/s a pack opens in ~5 minutes, smoothly and without swinging (no wind).
+- *Retract:* the drums wind in. The cords lift the bottom bar, and the guide rings gather the panels into a neat zig-zag from the bottom up until the stack docks under the carrier. Alternate hinges are lightly sprung toward their fold direction, so every fold goes the right way.
+- Each station has its own small motor and a fail-safe brake. Packs can move one at a time or all together.
 
-   On the way down it passes the collars, torque arms and A-frames. In that plane they are ≥1.4 m away, and the inner end stays ≥2 m from the mast.
-4. Work at ground level: swap a whole curtain module (drum + curtain) or repair one. Then hoist, latch, unroll and set the sheets.
+**2. Exchanging one pack (routine maintenance).**
+- Each station's carrier also hangs on **2 hoist lines** that run over sheaves in the top bar to the station's hoist drums.
+1. Park the mast at the **maintenance azimuth**, so the wings lie in the clear 30°/210° plane between the bracing planes.
+2. Retract the pack to its stack.
+3. Release the carrier latch and **lower carrier + folded pack** straight down on the hoist lines to a **ground cart**, or onto the deck for the inner packs.
 
-**Balance.** Each wing weighs ~1.2 kN on the Moon, and that weight always hangs from the same two sheaves on the permanent top yard. Raising, lowering, rolling up or hanging the wing low doesn't change the load on the yard, so **either wing can be raised or lowered on its own** with no imbalance.
+   On the way down the pack stays ≥2 m from the mast and passes the collars, torque arms and A-frames ≥1.4 m clear.
+4. Unlatch the pack from the carrier (4 alignment cones, captive latches), latch the new pack on, hoist, latch the carrier, deploy.
 
-Imbalance only appears if a wing's weight comes **off** its halyards. One wing landed or removed while the other is up puts ~11 kN·m on the mast top above the upper collar: ~9 kN extra in the lattice chords. There are two ways to avoid it:
-- **Ballast swap (one wing at a time):** before un-hooking a wing that is being removed, hang a **regolith ballast pallet** of equal weight (~0.75 t) on its halyards. Halyard load cells confirm the match within ~5%.
-- **Simultaneous (both wings):** if both wings have to land (for example at first installation or for a full re-fit), a **cross-connect clutch** joins the two winches into one mechanism. Both wings then move and land together and stay balanced at every moment.
+The other 15 packs keep producing power the whole time; one exchange costs ~6% of output for under an hour.
 
-The halyard load cells and the collar load readings act as a balance monitor. The winches interlock against landing one wing alone unless ballast is detected.
+**3. Lowering a whole wing (top-bar work only).** As in rev 8, the top bar hangs on **2 halyards** over sheaves on the **permanent top yard** (2 m and 17 m from the mast). The halyards run down to a **double-drum winch** on the deck, one per wing. With all its packs retracted, a wing's top bar and stacks can be lowered to ~3 m above the ground.
+
+**Balance.**
+- The weight of a pack or a wing always hangs from the same sheaves on the permanent top yard, whatever its height. So **retracting, deploying, or lowering a pack or a wing never unbalances the rig**.
+- Imbalance only appears when weight comes **off** its lines:
+  - *One pack* taken off at the ground shifts the balance by only ~2.3 kN·m. Exchanges are done in **port/starboard pairs**, or alternated, so at most one pack is ever out of balance.
+  - *One whole wing* taken off would put ~21 kN·m on the mast top above the upper collar (~17 kN extra in the lattice chords). It is never done alone. Either hang a **regolith ballast pallet** of equal weight (~1.4 t) on its halyards first, or join the two halyard winches with the **cross-connect clutch** and move both wings together.
+- Load cells on every hoist line and halyard act as a balance monitor, and the winches interlock against an unbalanced landing.
 
 **Mast climber robot.** A small robot climbs the lattice to inspect it, swap collar roller cartridges, re-tension diamond stays and service the yards. It is teleoperated with a human supervising, and it doubles as an installation tool (section 7).
 
@@ -205,7 +215,7 @@ Layout rules:
 
 The strut tripod carries all overturning and quake loads at the collars, so the base only has to carry vertical load and centre the deck. Three bogies are enough. They are 12.6 m apart along the rail and each is ~1.3 m long, which leaves **~11 m of clear rail** between neighbours: three full rail segments with room to spare.
 
-**Loads.** ~19 kN on the Moon over 6 tyres is **~3.2 kN per tyre**. Tyres are designed for 6 kN.
+**Loads.** ~20.5 kN on the Moon over 6 tyres is **~3.4 kN per tyre**. Tyres are designed for 6 kN.
 
 **Which way should the tyres point? (the "duty force")**
 - The force on each tyre is **vertical**. The kingpin centres the deck, and each bogie floats ±20 mm radially on its pivot, so no outward or inward push reaches the rail. Tilting the tyres outward would only add a side thrust and scrub.
@@ -262,7 +272,7 @@ The strut tripod carries all overturning and quake loads at the collars, so the 
 2. Release the spherical pivot, wind both support shoes up, roll the bogie out along the rail into the gap and lift it off. Fit the spare the same way.
 3. Lower, remove the stand.
 
-**Spares on site**: 4 wheel cartridges, 2 uplift roller cartridges, 1 bogie, 2 rail segments, 6 rail head wear strips, 1 drive unit, slip-ring brush cartridges, 2 collar roller cartridges, 1 bridle (main cable, split plate, 2 legs) and 1 tie with tensioners, 1 strut section, 2 curtain modules (drum + curtain), 2 ballast pallet frames (filled with local regolith).
+**Spares on site**: 4 wheel cartridges, 2 uplift roller cartridges, 1 bogie, 2 rail segments, 6 rail head wear strips, 1 drive unit, slip-ring brush cartridges, 2 collar roller cartridges, 1 bridle (main cable, split plate, 2 legs) and 1 tie with tensioners, 1 strut section, 4 concertina packs, 2 carriers, 2 ballast pallet frames (filled with local regolith).
 
 ## 7. Installation equipment and sequence (human supervised)
 
@@ -277,7 +287,8 @@ Everything is assembled at deck level and raised. A crew member (EVA, or in a pr
 | E5 | **Mast jack-up frame** | Sits on the deck around the kingpin and lifts the whole mast one 3 m section at a time; the new section is pinned in at the bottom. Peak lift is ~8 kN (whole mast + array) plus bracing pre-tension. |
 | E6 | **Tie and wire winches with load cells** | One at each foot. They control the ties (which pull the strut feet in as the mast rises) and the wires, and keep the mast plumb. Tensions are shown live on a supervisor tablet. |
 | E7 | **Mast climber robot** | Fits and checks the diamond stays and collar cartridges at height. Later used for inspection and maintenance. |
-| E8 | **Wing winches** | Two double-drum halyard winches on the deck (port, starboard) with load cells, roll-drum drives, and a cross-connect clutch for simultaneous moves. Also used for maintenance. |
+| E8 | **Wing and pack winches** | Two double-drum halyard winches on the deck (port, starboard) with a cross-connect clutch; 16 pack stations on the top bars (lift-cord and hoist-line drums, brakes, load cells). |
+| E9 | **Pack carts** | Two small ground carts at the maintenance azimuth that receive, carry and present folded packs; they double as storage stands for spares. |
 
 **Sequence**
 1. Survey and clear the site. Set the kingpin (E1). Lay out the 3 foot sites with the radius arm (E2); prepare the pads and lay the ties (E4).
@@ -289,7 +300,7 @@ Everything is assembled at deck level and raised. A crew member (EVA, or in a pr
    - When the strut band reaches the deck, the **strut collar** goes on. The 3 A-frame struts are pinned to its torque brackets while lying flat on the ground, pointing outward, with their feet on skid dollies.
    - As the mast keeps rising, the struts swing up and the tie winches (E6) **pull the feet in** along the ground, from 46 m to their 30 m pads. Low gravity keeps the strut and dolly loads tiny.
    - At final height, the feet drop onto their pads. Tensioning the wires swings the torque arms down until they latch, then the ties and wires are trimmed to final tension. The clamp pins are pulled, and from then on the mast turns freely in both collars.
-6. At full height, unfold the top yard and set its topping lifts. Park at the maintenance azimuth. **Hoist both wing bundles simultaneously** from their ground stands (clutch engaged), latch them, unroll the curtains and set the sheets (E8).
+6. At full height, unfold the top yard and set its topping lifts. Park at the maintenance azimuth. **Hoist both empty wing top bars together** (clutch engaged) and latch them. Then hoist the **packs one by one, alternating port and starboard**, latch each carrier and deploy it (E8, E9). The array grows in 2 m steps, and every pack starts producing power as soon as it opens.
 7. Trim wire and tie tensions to plumb the mast and take out thermal bow. Connect the harness to the slip ring, commission the drive, start tracking.
 
 Design rules for every part: captive fasteners, one tool size, alignment cones, grapple fixtures, and no single piece heavier than ~150 kg-weight on the Moon without lifting gear.
@@ -303,7 +314,7 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
 | Cold welding in vacuum | Dissimilar or coated mating surfaces, dry lubricants on all rollers |
 | Abrasive, electrostatic dust | Raised rail, scrapers, seals, skirt at ground level; collars and array are high above most lofted dust |
 | Moonquakes | Strut tripod carries lateral load; balanced rig; lower thrust rollers in the collars and uplift rollers at the base |
-| Micrometeoroids | Wings lowered to ground level for repair; replaceable curtain modules; doubled wires; struts are thick-walled tubes, inspected by the climber |
+| Micrometeoroids | Damaged packs lowered and exchanged one at a time; doubled wires; struts are thick-walled tubes, inspected by the climber |
 | UV and radiation on cables | Steel wire rope or coated CFRP rod, not bare aramid or polymer fibre |
 | Regolith settlement | Adjustable piers and foot pads; wire and tie tensions monitored with load cells and re-trimmed |
 
@@ -320,5 +331,5 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
 2. Mast and tripod analysis: strut and mast buckling, pre-tension, thermal bow, moonquake response, every jack-up and scissor stage.
 3. Collar cartridge life test (vacuum, thermal cycling, dust), and tyre/rail tests (LHS-1, NU-LHT simulants).
 4. Prototype the jack-up with collars, the strut scissor and tie winches at small scale; rehearse with suited operators.
-5. Wing roll-up, lowering and ballast-swap trials; pick a blanket that tolerates repeated rolling.
-6. Packaging: deck quarters, 3 m mast sections, rail segments, wing bundles (top bar + rolled curtains) to fit the lander.
+5. Concertina pack trials: fold/unfold cycles in vacuum and cold, hinge and cord-ring wear, pack exchange with a suited crew, ballast swap.
+6. Packaging: deck quarters, 3 m mast sections, rail segments, folded packs (1 to 3 m wide) and top bar sections to fit the lander.

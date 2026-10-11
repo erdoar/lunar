@@ -12,7 +12,7 @@ A('<style>.s{stroke:#222;stroke-width:1.5}.hal{stroke:#555;stroke-width:1}.l{str
 e, gy = 4.3, 600
 STAGES = [
     ('1. Both wings up (operating)', 'up', 'up', None),
-    ('2. Port rolled up', 'rolled', 'up', None),
+    ('2. Port packs retracted', 'rolled', 'up', None),
     ('3. Port lowered to 3 m', 'low', 'up', None),
     ('4a. Port off: ballast on', 'ballast', 'up', None),
 ]
