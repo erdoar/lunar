@@ -1,4 +1,4 @@
-# Lunar polar rotating solar platform: concept design (rev 6, tall mast on a strut tripod)
+# Lunar polar rotating solar platform: concept design (rev 7, tall mast on a strut tripod)
 
 A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
@@ -8,7 +8,8 @@ A small turntable on a circular rail that turns a very tall mast, with the solar
 - Rev 3: array raised to ~100 m to clear terrain and neighbour shadows; mast braced by stationary ground guys through roller collars; lowerable solar curtains.
 - Rev 4: the ground guys and their tension anchors are replaced by a **strut tripod**. Three rigid struts run from a **mid-height collar** down to foot pads on the surface. Each foot is wire-braced up to an **upper collar** and tied **horizontally back to the platform's kingpin foundation**. It is a closed, pre-tensioned truss: no ground anchor ever has to resist being pulled up, and there are 2 collars instead of 3.
 - Rev 5: base running gear changed to **3 bogies with 4 individually replaceable tyres each**. Three supports always share the load evenly, so rail flatness and settlement don't matter. Any tyre can be lifted off the rail and swapped without jacking the deck. About 10 m of clear rail between bogies leaves room to replace wear-surface segments without a bridging rail.
-- **Rev 6 (this):** **2 tyres per bogie** (6 in all). Each bogie pivots at its centre, so the whole base is statically determinate and every tyre carries exactly the same load, with no springs. Each tyre has a built-in **support shoe** for swaps. The tyres are vertical, not angled outward, because the load they carry is vertical.
+- Rev 6: **2 tyres per bogie** (6 in all). Each bogie pivots at its centre, so the whole base is statically determinate and every tyre carries exactly the same load, with no springs. Each tyre has a built-in **support shoe** for swaps. The tyres are vertical, not angled outward, because the load they carry is vertical.
+- **Rev 7 (this):** anti-**wind-up** bracing. The upper collar gets 3 **hinged rigid torque arms** whose tips carry the wires, and each strut becomes a narrow **A-frame**. Without them the upper collar would twist ~10° under a partly seized roller, and the strut collar is torsionally unstable (see section 4). The bogie pivot is now a stiff, travel-limited rocker with hard stops.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -51,9 +52,10 @@ How the design uses this:
 | Power (30% cells, 1,361 W/m², ~85% system) | **~350 kWe** |
 | Top / bottom yards | 34 m, at 100 m and 70 m |
 | Roller collars (stationary) | **Strut collar at 35 m**, **upper collar at 62 m** |
-| Struts | 3 at 120°, CFRP tube Ø0.3 m x 2 mm, **46 m** long, ~3 kg/m (~140 kg each), ball joints at both ends |
+| Struts | 3 **A-frames** at 120°: each 2 CFRP tubes Ø0.3 m x 2 mm, ~46 m long, ~3 kg/m, ball joints at both ends. Joined at the foot, spread ±1.5 m at a torque bracket 4 m out from the strut collar |
 | Foot pads | 3 at **30 m radius**, ~1 m² sintered or gabion pad, compression only (~0.5 kN) |
-| Wires | Foot to upper collar, 69 m, 6 mm stainless wire rope (UV-proof), doubled for redundancy, ~1.5 kN pre-tension per bracing plane |
+| Upper torque arms | 3 hinged CFRP truss arms on the upper collar, each reaching 8 m out with a ±3 m crossbar (T shape), with a knee brace to the collar's lower flange, ~70 kg each |
+| Wires | 2 per bracing plane, one from each crossbar end down to the foot (~68 m, 6 mm stainless wire rope, UV-proof); ~1.5 kN pre-tension per plane |
 | Ties | Foot to kingpin foundation, horizontal at ground level (passing under the raised rail), ~1 kN |
 | Upper bracing (rotating) | Diamond stays: spreaders ±6 m at 81 m, stays from 62 m to the mast top |
 | Rail ring | Ø12 m single rail, 12 segments of π m, **3 bogies x 2 tyres** at 120° |
@@ -110,7 +112,7 @@ A **transport clamp pin** in each cartridge locks the collar to the band during 
    - Each roller has a **second rotation path**: the ball bearing runs on a dry-lubricated sleeve journal. If the bearing locks, the roller turns on the sleeve.
    - If both lock, the roller skids on its hard coated face rather than jamming. The other 5 cartridges keep guiding the mast.
    - No single cartridge can lock the collar.
-3. **See it coming.**
+3. **See it coming.** The tension difference between each torque arm's two wires reads collar friction torque directly.
    - Every roller has a small rotation sensor (magnet + Hall sensor). If the mast turns and a roller doesn't, the system alarms long before the bearing seizes.
    - Load cells on the wires and ties, drive motor current, and strain gauges on the mast between base and collar all track friction torque. A rising trend means "swap a cartridge soon".
 4. **Protect the structure if it happens.**
@@ -120,6 +122,20 @@ A **transport clamp pin** in each cartridge locks the collar to the band during 
    - The climber robot swaps the cartridge (2 captive bolts, slide out, slide in) while the other 5 hold the mast. Spare cartridges are kept on site.
    - Cartridges are also swapped on a schedule (for example, one per collar per year) and sent back for inspection, to learn real wear rates.
    - Before flight, prove all of this with a **vacuum-thermal life test** of a full cartridge, run on a band section in regolith simulant dust for many times the design number of revolutions.
+
+**Wind-up: keeping the collars from turning with the mast.** Friction in the collar rollers drags the stationary collar round with the mast, so the bracing must hold it against twisting. In rev 4 to 6 every wire and strut lay in a vertical plane through the mast axis, so together they barely resisted twisting (`torsion_check.py` gives the numbers):
+
+| Collar | Rev 4 to 6 | Rev 7 |
+|---|---|---|
+| Upper (wires) | ~2.9 kN·m/rad: ~0.2° of twist at normal friction (~10 N·m), **~10°** at 500 N·m (a partly seized roller) | **Torque arms**: ~320 kN·m/rad, about 110x stiffer; **~0.09°** at 500 N·m |
+| Strut collar | **Negative** (~ -7 kN·m/rad). Compressed struts on ball joints push the collar further round once it starts to turn: torsionally unstable, held only by roller friction | **A-frame struts**: ~14 MN·m/rad, effectively rigid |
+
+How it works:
+- **Torque arms (upper collar).** At each bracing plane a rigid arm runs 8 m out from the collar and ends in a ±3 m crossbar, like a T. The plane's two wires leave from the two crossbar ends and meet at the foot, so in plan view they form a triangle. If the collar starts to turn, one wire stretches and the other slackens, and with a 3 m lever that resists strongly. This is the "torque arm" used on tall guyed masts on Earth to stop twisting.
+- **Hinged.** Each arm is hinged to the collar ring on a horizontal axis. During jack-up the arms ride folded upright against the mast. At height, tensioning the wires pulls the arms down to horizontal, where they land on a stop and a latch closes; the supervisor confirms each latch on camera. A knee brace to the collar's lower flange carries the arm's bending. The 3 arms balance one another, so the ring as a whole is not tilted.
+- **A-frame struts (strut collar).** Each strut is two tubes joined at the foot and spread ±1.5 m at a torque bracket 4 m out from the collar. This is the same triangle idea, in compression.
+- **Clearances.** All arm, crossbar and A-frame tips stay within ~21° of their bracing plane, so the maintenance azimuth (30°/210°) stays clear for lowering curtains. Everything is at or below 62 m, under the array sweep.
+- **Free torque sensing.** The difference in tension between a torque arm's two wires is a direct reading of the upper collar's friction torque. Load cells at the feet already measure it, which gives the seizure early warning in layer 3 below.
 
 **Curtains instead of one blanket.** The array is 8 vertical curtains, 4 m wide. Each hangs from its own **halyard on the top yard** and is tensioned down to the bottom yard. To repair one (for example after a micrometeoroid strike):
 1. Rotate the mast to the **maintenance azimuth**, so the array lies between the bracing planes.
@@ -166,6 +182,7 @@ The strut tripod carries all overturning and quake loads at the collars, so the 
 
 **Bogie**
 - Short curved frame (~1.3 m) on a **spherical centre pivot** with ±20 mm radial float. The pivot is the load equaliser.
+- **Load balancing is stiff and travel-limited.** With 2 tyres the bogie only has to rock over small height differences: rail joint steps (≤1 mm) and pier settlement between re-levelings (a few mm). So the rocker gets **hard stops at about ±0.5°**, roughly ±4 mm at each tyre. There are no springs and no soft suspension. Within that range the two tyres share load exactly; beyond it the stops (and the support shoes) carry it, and the out-of-level reading tells you which pier to re-level.
 - 2 tyres on **cantilevered stub axles** on the outside of the rail. The frame sits inboard, so each tyre slides straight off outward.
 - A **support shoe** beside each tyre: a hardened, coated pad on a screw (one tool size). In service it rides **3 mm above** the rail. If a tyre or bearing ever fails, the shoe lands on the rail and carries the load (and the drive's torque limiter stops the platform). The bogie can never drop.
 - **Uplift rollers** under the rail head, 2 per bogie (cartridges), against quake bounce.
@@ -234,10 +251,10 @@ Everything is assembled at deck level and raised. A crew member (EVA, or in a pr
 3. Place the 3 bogies and the 4 deck quarters. Check the deck turns by hand and all 6 support shoes are at their 3 mm standoff.
 4. Fit the jack-up frame (E5). Assemble the **top assembly** at deck level: mast top section, diamond spreaders and stays, top yard folded vertically, curtains rolled on the top yard, bottom yard folded.
 5. **Jack up, with a scissor action.** Each collar is fitted around the mast at deck level (3 segments), clamped to its band, and rides up with the mast.
-   - The **upper collar** goes on first, with its 3 wires paid out from the foot winches as it rises. Until the struts are in, these wires act as light temporary guys (a few hundred N). Each foot winch is ballasted with regolith bags so it never needs a pull-out anchor.
-   - When the strut band reaches the deck, the **strut collar** goes on. The 3 struts are pinned to it while lying flat on the ground, pointing outward, with their feet on skid dollies.
+   - The **upper collar** goes on first, with its 3 torque arms folded upright and their 6 wires paid out from the foot winches as it rises. Until the struts are in, these wires act as light temporary guys (a few hundred N). Each foot winch is ballasted with regolith bags so it never needs a pull-out anchor.
+   - When the strut band reaches the deck, the **strut collar** goes on. The 3 A-frame struts are pinned to its torque brackets while lying flat on the ground, pointing outward, with their feet on skid dollies.
    - As the mast keeps rising, the struts swing up and the tie winches (E6) **pull the feet in** along the ground, from 46 m to their 30 m pads. Low gravity keeps the strut and dolly loads tiny.
-   - At final height, the feet drop onto their pads and the ties and wires are tensioned. The clamp pins are pulled, and from then on the mast turns freely in both collars.
+   - At final height, the feet drop onto their pads. Tensioning the wires swings the torque arms down until they latch, then the ties and wires are trimmed to final tension. The clamp pins are pulled, and from then on the mast turns freely in both collars.
 6. At full height, unfold the yards. Set the maintenance azimuth and lower the curtains one at a time onto the bottom yard, then tension them (E8).
 7. Trim wire and tie tensions to plumb the mast and take out thermal bow. Connect the harness to the slip ring, commission the drive, start tracking.
 

@@ -1,4 +1,4 @@
-# Generates platform-layout.svg (rev 4: tall mast braced by a strut tripod). Run: python3 make_layout_svg.py
+# Generates platform-layout.svg (rev 7: strut tripod with A-frame struts and upper torque arms). Run: python3 make_layout_svg.py
 import math
 o = []
 A = o.append
@@ -30,9 +30,13 @@ A(f'<rect x="{X(-RING)}" y="{gy-12}" width="{2*RING*e}" height="8" fill="#9fb4c7
 for R in (-RING, RING):
     A(f'<rect x="{X(R)-3}" y="{gy-5}" width="6" height="5" fill="#c0392b"/>')
 # bracing: the 0 deg plane projects to +30 m, the 120/240 deg planes overlap at -15 m
-for fx in (FOOT, -FOOT / 2):
-    A(f'<line x1="{X(fx)}" y1="{gy-3}" x2="{X(0)}" y2="{Z(UP)}" class="guy"/>')                     # wire
-    A(f'<line x1="{X(fx)}" y1="{gy-3}" x2="{X(0)}" y2="{Z(MID)}" stroke="#555" stroke-width="5"/>')  # strut
+ARM, BR = 8, 4   # m: torque arm reach (upper collar), A-frame bracket radius (strut collar)
+for fx, sc in ((FOOT, 1), (-FOOT / 2, -0.5)):
+    A(f'<line x1="{X(fx)}" y1="{gy-3}" x2="{X(ARM*sc)}" y2="{Z(UP)}" class="guy"/>')                     # wires (from crossbar ends)
+    A(f'<line x1="{X(fx)}" y1="{gy-3}" x2="{X(BR*sc)}" y2="{Z(MID)}" stroke="#555" stroke-width="5"/>')  # A-frame strut
+    A(f'<line x1="{X(0)}" y1="{Z(MID)}" x2="{X(BR*sc)}" y2="{Z(MID)}" stroke="#555" stroke-width="4"/>')  # torque bracket
+    A(f'<line x1="{X(0)}" y1="{Z(UP)}" x2="{X(ARM*sc)}" y2="{Z(UP)}" stroke="#c87f0a" stroke-width="4"/>')  # torque arm
+    A(f'<line x1="{X(0)}" y1="{Z(UP-4)}" x2="{X(ARM*sc*0.6)}" y2="{Z(UP)}" stroke="#c87f0a" stroke-width="2"/>')  # knee brace
     A(f'<line x1="{X(fx)}" y1="{gy-2}" x2="{X(0)}" y2="{gy-2}" stroke="#c87f0a" stroke-width="2" stroke-dasharray="7 3"/>')  # tie
     A(f'<rect x="{X(fx)-9}" y="{gy-5}" width="18" height="5" fill="#555"/>')
 for c in (MID, UP):
@@ -59,10 +63,11 @@ A(f'<path d="M{X(23)} {Z(YT)}V{gy}" class="l" marker-start="url(#ar)" marker-end
 A(f'<path d="M{X(-HALF)} {Z(MAST)-10}H{X(HALF)}" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="{X(0)}" y="{Z(MAST)-16}" text-anchor="middle">34 m</text>')
 lab(X(HALF), Z(85), X(26), Z(88), ['8 curtains, 34 x 30 m', '≈1,000 m², ~350 kWe'])
 lab(X(6), Z(81), X(26), Z(76), ['Diamond stays (rotate)'])
-lab(X(0) + 9, Z(UP), X(6), Z(UP) + 22, [f'Upper collar {UP} m'])
+lab(X(0) + 9, Z(UP), X(10), Z(UP) + 26, [f'Upper collar {UP} m'])
+lab(X(ARM), Z(UP), X(12), Z(UP) - 12, ['Hinged torque arm, 8 m'])
 lab(X(0) + 9, Z(MID), X(-6), Z(MID) - 18, [f'Strut collar {MID} m'], 'end')
 lab(X(12), Z(UP * 0.6), X(16), Z(46), ['Wire (6 mm steel rope)'])
-lab(X(19), Z(MID * 0.37), X(25), Z(24), ['Rigid strut', '(CFRP tube, 46 m)'])
+lab(X(19), Z(MID * 0.37), X(25), Z(24), ['A-frame strut', '(2 CFRP tubes, 46 m)'])
 lab(X(20), gy - 2, X(6), gy + 26, ['Horizontal tie to kingpin foundation'])
 lab(X(FOOT), gy - 4, X(33), gy + 46, ['Foot pad at 30 m'])
 lab(X(-HALF + 2), Z(30), X(-24), Z(24), ['Curtain lowered', 'for repair'], 'end')
@@ -80,8 +85,19 @@ k = 7.2
 for d in (0, 120, 240):
     a = math.radians(d - 90)
     ax, ay = cx + FOOT * k * math.cos(a), cy + FOOT * k * math.sin(a)
-    A(f'<line x1="{cx}" y1="{cy}" x2="{ax:.1f}" y2="{ay:.1f}" stroke="#555" stroke-width="5"/>')
-    A(f'<line x1="{cx}" y1="{cy}" x2="{ax:.1f}" y2="{ay:.1f}" class="guy"/>')
+    u = (math.cos(a), math.sin(a)); t = (-u[1], u[0])
+    P = lambda r, s_: (cx + (u[0] * r + t[0] * s_) * k, cy + (u[1] * r + t[1] * s_) * k)
+    for s_ in (-1.5, 1.5):                                   # A-frame legs from bracket to foot
+        bx, by = P(4, s_)
+        A(f'<line x1="{bx:.1f}" y1="{by:.1f}" x2="{ax:.1f}" y2="{ay:.1f}" stroke="#555" stroke-width="4"/>')
+    b1, b2 = P(4, -1.5), P(4, 1.5)
+    A(f'<line x1="{b1[0]:.1f}" y1="{b1[1]:.1f}" x2="{b2[0]:.1f}" y2="{b2[1]:.1f}" stroke="#555" stroke-width="3"/>')
+    for s_ in (-3, 3):                                       # wires from torque arm crossbar ends to foot
+        wx, wy = P(8, s_)
+        A(f'<line x1="{wx:.1f}" y1="{wy:.1f}" x2="{ax:.1f}" y2="{ay:.1f}" class="guy"/>')
+    s0, s1 = P(1.45, 0), P(8, 0); c1, c2 = P(8, -3), P(8, 3)
+    A(f'<line x1="{s0[0]:.1f}" y1="{s0[1]:.1f}" x2="{s1[0]:.1f}" y2="{s1[1]:.1f}" stroke="#c87f0a" stroke-width="4"/>')
+    A(f'<line x1="{c1[0]:.1f}" y1="{c1[1]:.1f}" x2="{c2[0]:.1f}" y2="{c2[1]:.1f}" stroke="#c87f0a" stroke-width="4"/>')
     A(f'<rect x="{ax-9:.1f}" y="{ay-9:.1f}" width="18" height="18" fill="#555"/>')
     A(f'<text x="{ax+(14 if d!=240 else -14):.1f}" y="{ay+(-8 if d==0 else 26):.1f}" text-anchor="{"start" if d!=240 else "end"}">Foot {d}°</text>')
 A(f'<circle cx="{cx}" cy="{cy}" r="{RING*k}" fill="none" stroke="#c0392b" stroke-width="3"/>')
@@ -98,7 +114,8 @@ lab(cx - HALF * k * 0.7, cy + HALF * k * 0.7, cx - 150, cy + 150, ['Array sweep,
 lab(cx, cy + RING * k, cx + 10, cy + 110, ['Ø12 m ring'])
 # legend + shading note
 L = 640
-A(f'<line x1="{cx-270}" y1="{L-20}" x2="{cx-245}" y2="{L-20}" stroke="#555" stroke-width="5"/><text x="{cx-238}" y="{L-16}">Rigid strut (stationary; strut, wire and tie share one vertical plane)</text>')
+A(f'<line x1="{cx-270}" y1="{L-20}" x2="{cx-245}" y2="{L-20}" stroke="#555" stroke-width="5"/><text x="{cx-238}" y="{L-16}">A-frame strut (stationary)</text>')
+A(f'<line x1="{cx-70}" y1="{L-20}" x2="{cx-45}" y2="{L-20}" stroke="#c87f0a" stroke-width="4"/><text x="{cx-38}" y="{L-16}">Upper torque arm (anti-wind-up)</text>')
 A(f'<line x1="{cx-270}" y1="{L}" x2="{cx-245}" y2="{L}" class="guy"/><text x="{cx-238}" y="{L+4}">Wire to upper collar</text>')
 A(f'<line x1="{cx+-70}" y1="{L}" x2="{cx-45}" y2="{L}" stroke="#c87f0a" stroke-width="2" stroke-dasharray="7 3"/><text x="{cx-38}" y="{L+4}">Tie to kingpin foundation</text>')
 A(f'<rect x="{cx-270}" y="{L+14}" width="22" height="8" fill="#4a9" class="s"/><text x="{cx-238}" y="{L+23}">Roller collar (mast turns inside)</text>')
