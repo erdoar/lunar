@@ -2,7 +2,7 @@
 <rect width="1240" height="930" fill="#fff"/>
 <defs><pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#a08c6c"/></pattern><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker></defs>
 <style>.s{stroke:#222;stroke-width:1.5}.l{stroke:#555;stroke-width:1;fill:none}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:16px;font-weight:bold}</style>
-<text x="20" y="30" class="t">Current design (rev 20 baseline): the whole rig</text>
+<text x="20" y="30" class="t">Current design (rev 21 baseline): the whole rig</text>
 <rect x="20" y="790" width="480" height="40" fill="url(#g)"/><line x1="20" y1="790" x2="500" y2="790" stroke="#222"/>
 <line x1="436.0" y1="788" x2="261.78" y2="405.59999999999997" stroke="#8e44ad" stroke-width="1.4"/>
 <line x1="436.0" y1="788" x2="274.8" y2="573.0" stroke="#7d8790" stroke-width="4"/>
@@ -24,9 +24,9 @@
 <rect x="242.56" y="784" width="14.879999999999999" height="6" fill="#7d8790"/>
 <rect x="141.5" y="780" width="93.0" height="3" fill="#999"/>
 <rect x="259.29999999999995" y="780" width="93.0" height="3" fill="#999"/>
-<path d="M145 263L114 232" class="l"/>
-<text x="110" y="236" text-anchor="end">Solar wings, 70–100 m</text>
-<text x="110" y="250" text-anchor="end">(2 x 17 x 30 m, ~350 kW)</text>
+<path d="M355 263L374 244" class="l"/>
+<text x="378" y="248" text-anchor="start">Solar wings, 70–100 m</text>
+<text x="378" y="262" text-anchor="start">(2 x 17 x 30 m, ~350 kW)</text>
 <path d="M188 170L114 145" class="l"/>
 <text x="110" y="149" text-anchor="end">Top yard, 100 m</text>
 <path d="M250 127L300 96" class="l"/>
@@ -38,50 +38,75 @@
 <path d="M436 786L442 680" class="l"/>
 <text x="446" y="684" text-anchor="start">Foot pad, 30 m out</text>
 <path d="M255 782L312 720" class="l"/>
-<text x="316" y="724" text-anchor="start">Single base bearing +</text>
+<text x="316" y="724" text-anchor="start">Single base pivot +</text>
 <text x="316" y="738" text-anchor="start">rotating base frame (see right)</text>
 <text x="30" y="848" font-size="12">Turns (once per lunar day): <tspan fill="#e67e22" font-weight="bold">orange</tspan> + <tspan fill="#2c4a7a" font-weight="bold">blue</tspan>.  Fixed: <tspan fill="#7d8790" font-weight="bold">grey</tspan>, <tspan fill="#4a9" font-weight="bold">green</tspan> collars, purple cables.</text>
 <text x="560" y="30" class="t">Base close-up: what attaches to what</text>
 <text x="560" y="48" font-size="11.5">Section through the mast foot (full detail in base.svg)</text>
-<rect x="560" y="520" width="600" height="40" fill="url(#g)"/><line x1="560" y1="520" x2="1160" y2="520" stroke="#222"/>
-<path d="M710 520 L792.5 437.5 H927.5 L1010 520 Z" fill="#7d8790" class="s"/>
-<path d="M797.0 437.5 A90.0 37.5 0 0 0 923.0 437.5" fill="#bbb" class="s"/>
-<rect x="797.0" y="377.5" width="126.0" height="60.0" fill="#7d8790" class="s"/>
-<rect x="810.5" y="400.0" width="99.0" height="12.0" fill="#e67e22" stroke="#222"/>
-<rect x="849.5" y="340.0" width="21.000000000000004" height="112.5" fill="#bfa6d9" class="s"/>
-<rect x="725.5" y="377.5" width="44" height="34" fill="#7fa3d6" class="s"/>
-<line x1="725.0" y1="511.0" x2="560" y2="511.0" stroke="#c87f0a" stroke-width="2" stroke-dasharray="6 3"/>
-<rect x="950.5" y="377.5" width="44" height="34" fill="#7fa3d6" class="s"/>
-<line x1="995.0" y1="511.0" x2="1160" y2="511.0" stroke="#c87f0a" stroke-width="2" stroke-dasharray="6 3"/>
-<rect x="792.5" y="367.0" width="135.0" height="10.500000000000002" fill="#e67e22" class="s"/>
-<rect x="755.0" y="130.0" width="210.0" height="225.0" fill="none" stroke="#e67e22" stroke-width="4"/>
-<rect x="635.0" y="295.0" width="450" height="8" fill="#e67e22" opacity="0.7"/>
-<rect x="980.0" y="259.0" width="60" height="36" fill="#7fa3d6" class="s"/>
-<rect x="672.5" y="175.0" width="375.0" height="262.5" fill="none" stroke="#2e7d32" stroke-width="2" stroke-dasharray="7 4"/>
-<path d="M905 362L1065 332" class="l"/><circle cx="1065" cy="332" r="10" fill="#fff" stroke="#222"/><text x="1065" y="336" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">1</text>
-<path d="M910 403L1084 428" class="l"/><circle cx="1084" cy="428" r="10" fill="#fff" stroke="#222"/><text x="1084" y="432" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">2</text>
-<path d="M905 445L1075 485" class="l"/><circle cx="1075" cy="485" r="10" fill="#fff" stroke="#222"/><text x="1075" y="489" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">3</text>
-<path d="M972 385L1082 340" class="l"/><circle cx="1082" cy="340" r="10" fill="#fff" stroke="#222"/><text x="1082" y="344" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">4</text>
-<path d="M1040 298L1100 268" class="l"/><circle cx="1100" cy="268" r="10" fill="#fff" stroke="#222"/><text x="1100" y="272" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">5</text>
-<path d="M860 348L690 308" class="l"/><circle cx="690" cy="308" r="10" fill="#fff" stroke="#222"/><text x="690" y="312" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">6</text>
-<path d="M725 511L615 551" class="l"/><circle cx="615" cy="551" r="10" fill="#fff" stroke="#222"/><text x="615" y="555" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">7</text>
-<path d="M672 235L612 215" class="l"/><circle cx="612" cy="215" r="10" fill="#fff" stroke="#222"/><text x="612" y="219" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">8</text>
+<rect x="556.0" y="540" width="608.0" height="30" fill="url(#g)"/><line x1="556.0" y1="540" x2="1164.0" y2="540" stroke="#222"/>
+<rect x="679.5" y="464.0" width="361.0" height="76.0" fill="#7d8790" opacity="0.85" class="s"/>
+<rect x="827.7" y="388.0" width="64.60000000000001" height="76.0" fill="#7d8790" class="s"/>
+<path d="M827.7 420.3 L801.1 430.18 V434.55 H918.9 V430.18 L892.3 420.3 Z" fill="#7d8790" class="s"/>
+<path d="M813.2 389.3 A47.5 47.5 0 0 1 906.8 389.3 L892.3 388.0 H827.7 Z" fill="#9fb3c8" class="s"/>
+<path d="M826.7 360.5 V334.8 H893.3 V360.5 A49.8 49.8 0 0 0 826.7 360.5 Z" fill="#e67e22" class="s"/>
+<path d="M832.8 358.6 A47.5 47.5 0 0 1 887.2 358.6 L891.1 353.1 A54.1 54.1 0 0 0 828.9 353.1 Z" fill="#e3d08e" class="s"/>
+<path d="M834.0 355.9 A49.0 49.0 0 0 1 886.0 355.9" stroke="#b87333" stroke-width="1.5" fill="none"/>
+<path d="M833.0 354.3 A50.9 50.9 0 0 1 887.0 354.3" stroke="#b87333" stroke-width="1.5" fill="none"/>
+<path d="M928.4 334.79999999999995 V441.2 H909.4 V436.45 H923.65 V334.79999999999995 Z" fill="#e67e22" class="s"/>
+<line x1="771.65" y1="464.0" x2="771.65" y2="388.0" stroke="#7d8790" stroke-width="4"/>
+<rect x="765.0" y="368.04999999999995" width="13.299999999999955" height="19.95" fill="#bfa6d9" class="s"/>
+<rect x="765.0" y="334.79999999999995" width="13.299999999999955" height="31.35" fill="#bfa6d9" stroke="#e67e22" stroke-width="2"/>
+<rect x="733.65" y="334.79999999999995" width="20.899999999999977" height="22.8" fill="none" stroke="#e67e22" stroke-width="2.5"/>
+<circle cx="744.1" cy="366.15" r="8" fill="#7fa3d6" class="s"/>
+<rect x="737.1" y="373.75" width="14" height="88.35000000000001" fill="#7fa3d6" class="s"/>
+<rect x="683.3" y="429.8" width="43.700000000000045" height="32.300000000000004" fill="#7fa3d6" class="s"/>
+<line x1="679.5" y1="528.6" x2="556.0" y2="528.6" stroke="#c87f0a" stroke-width="2" stroke-dasharray="6 3"/>
+<line x1="730.8" y1="323.4" x2="730.8" y2="121.99999999999994" stroke="#e67e22" stroke-width="4"/>
+<path d="M658.6 464.0 V160.0 H730.8" fill="none" stroke="#2e7d32" stroke-width="2" stroke-dasharray="7 4"/>
+<line x1="948.35" y1="464.0" x2="948.35" y2="388.0" stroke="#7d8790" stroke-width="4"/>
+<rect x="941.7" y="368.04999999999995" width="13.299999999999955" height="19.95" fill="#bfa6d9" class="s"/>
+<rect x="941.7" y="334.79999999999995" width="13.299999999999955" height="31.35" fill="#bfa6d9" stroke="#e67e22" stroke-width="2"/>
+<rect x="965.45" y="334.79999999999995" width="20.899999999999977" height="22.8" fill="none" stroke="#e67e22" stroke-width="2.5"/>
+<circle cx="975.9" cy="366.15" r="8" fill="#7fa3d6" class="s"/>
+<rect x="968.9" y="373.75" width="14" height="88.35000000000001" fill="#7fa3d6" class="s"/>
+<rect x="993.0" y="429.8" width="43.700000000000045" height="32.300000000000004" fill="#7fa3d6" class="s"/>
+<line x1="1040.5" y1="528.6" x2="1164.0" y2="528.6" stroke="#c87f0a" stroke-width="2" stroke-dasharray="6 3"/>
+<line x1="989.2" y1="323.4" x2="989.2" y2="121.99999999999994" stroke="#e67e22" stroke-width="4"/>
+<path d="M1061.4 464.0 V160.0 H989.2" fill="none" stroke="#2e7d32" stroke-width="2" stroke-dasharray="7 4"/>
+<rect x="723.2" y="323.4" width="273.59999999999997" height="11.4" fill="#e67e22" class="s"/>
+<rect x="594.0" y="249.3" width="532.0" height="7" fill="#e67e22" opacity="0.7"/>
+<rect x="1012.0" y="213.2" width="68.39999999999999" height="36.1" fill="#7fa3d6" class="s"/>
+<path d="M828 357 A51.3 51.3 0 0 0 809.8 386.8 L808.7 424.1 L797.3 430.75 V458.3" fill="none" stroke="#8a5a2b" stroke-width="1.5" stroke-dasharray="2 3"/>
+<path d="M898 329L1154 250" class="l"/><circle cx="1154" cy="250" r="10" fill="#fff" stroke="#222"/><text x="1154" y="254" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">1</text>
+<path d="M883 348L1154 285" class="l"/><circle cx="1154" cy="285" r="10" fill="#fff" stroke="#222"/><text x="1154" y="289" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">2</text>
+<path d="M986 344L1154 320" class="l"/><circle cx="1154" cy="320" r="10" fill="#fff" stroke="#222"/><text x="1154" y="324" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">6</text>
+<path d="M870 373L1154 365" class="l"/><circle cx="1154" cy="365" r="10" fill="#fff" stroke="#222"/><text x="1154" y="369" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">3</text>
+<path d="M917 439L1154 410" class="l"/><circle cx="1154" cy="410" r="10" fill="#fff" stroke="#222"/><text x="1154" y="414" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">4</text>
+<path d="M1037 445L1154 455" class="l"/><circle cx="1154" cy="455" r="10" fill="#fff" stroke="#222"/><text x="1154" y="459" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">5</text>
+<path d="M765 350L595 310" class="l"/><circle cx="595" cy="310" r="10" fill="#fff" stroke="#222"/><text x="595" y="314" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">7</text>
+<path d="M632 249L592 199" class="l"/><circle cx="592" cy="199" r="10" fill="#fff" stroke="#222"/><text x="592" y="203" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">8</text>
+<path d="M680 529L570 559" class="l"/><circle cx="570" cy="559" r="10" fill="#fff" stroke="#222"/><text x="570" y="563" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">9</text>
+<path d="M659 331L599 371" class="l"/><circle cx="599" cy="371" r="10" fill="#fff" stroke="#222"/><text x="599" y="375" text-anchor="middle" font-size="11" font-weight="bold" style="stroke:none">10</text>
 <circle cx="572" cy="596" r="9" fill="#fff" stroke="#222"/><text x="572" y="600" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">1</text>
-<text x="586" y="600" font-weight="bold">Mast → bearing</text><text x="586" y="614" font-size="11.5">The mast foot plate (where the 3 legs meet) bolts to the turning race of the base bearing.</text>
-<circle cx="572" cy="628" r="9" fill="#fff" stroke="#222"/><text x="572" y="632" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">2</text>
-<text x="586" y="632" font-weight="bold">Base bearing</text><text x="586" y="646" font-size="11.5">Ø0.6 m crossed-roller slewing ring in a swappable cartridge; carries ~9.9 kN.</text>
-<circle cx="572" cy="660" r="9" fill="#fff" stroke="#222"/><text x="572" y="664" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">3</text>
-<text x="586" y="664" font-weight="bold">Bearing → foundation</text><text x="586" y="678" font-size="11.5">The cartridge sits on a spherical seat (±1°) in the foundation frame on a ~2 x 2 m pad.</text>
-<circle cx="572" cy="692" r="9" fill="#fff" stroke="#222"/><text x="572" y="696" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">4</text>
-<text x="586" y="696" font-weight="bold">Drive → bearing</text><text x="586" y="710" font-size="11.5">2 self-locking worm motors on the foundation frame drive the ring's internal gear.</text>
-<circle cx="572" cy="724" r="9" fill="#fff" stroke="#222"/><text x="572" y="728" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">5</text>
-<text x="586" y="728" font-weight="bold">Base frame → mast</text><text x="586" y="742" font-size="11.5">The Ø3 m rotating base frame clamps to the bottom mast section ~1.5 m up (winch, power).</text>
-<circle cx="572" cy="756" r="9" fill="#fff" stroke="#222"/><text x="572" y="760" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">6</text>
-<text x="586" y="760" font-weight="bold">Slip ring</text><text x="586" y="774" font-size="11.5">Through the bearing's hollow centre: rotor on the mast side, stator in the foundation.</text>
-<circle cx="572" cy="788" r="9" fill="#fff" stroke="#222"/><text x="572" y="792" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">7</text>
-<text x="586" y="792" font-weight="bold">Ties → foundation</text><text x="586" y="806" font-size="11.5">The 3 ground ties from the strut feet end on lugs on the foundation frame and cancel out.</text>
-<circle cx="572" cy="820" r="9" fill="#fff" stroke="#222"/><text x="572" y="824" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">8</text>
-<text x="586" y="824" font-weight="bold">Jack frame</text><text x="586" y="838" font-size="11.5">Bolted to the foundation frame: used for erection, then left for bearing swaps.</text>
-<text x="560" y="78" font-size="12"><tspan fill="#e67e22" font-weight="bold">Turns:</tspan> mast, bearing inner race, base frame.   <tspan fill="#7d8790" font-weight="bold">Fixed:</tspan> foundation, seat, bearing housing, drives, ties.</text>
-<text x="560" y="96" font-size="12">Weight path: mast → foot plate → base bearing → spherical seat → foundation frame → pad → regolith.</text>
+<text x="586" y="600" font-weight="bold">Mast → cup</text><text x="586" y="614" font-size="11.5">The mast foot plate (where the 3 legs meet) holds the concave wear cup, facing down.</text>
+<circle cx="572" cy="627" r="9" fill="#fff" stroke="#222"/><text x="572" y="631" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">2</text>
+<text x="586" y="631" font-weight="bold">Wear cup</text><text x="586" y="645" font-size="11.5">Dry-lubricated, replaceable; conductive layers inside read wear depth electrically.</text>
+<circle cx="572" cy="658" r="9" fill="#fff" stroke="#222"/><text x="572" y="662" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">3</text>
+<text x="586" y="662" font-weight="bold">Pivot ball</text><text x="586" y="676" font-size="11.5">Hard convex ball R 0.25 m, fixed, facing up: carries ~9.9 kN; dust and debris fall off it.</text>
+<circle cx="572" cy="689" r="9" fill="#fff" stroke="#222"/><text x="572" y="693" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">4</text>
+<text x="586" y="693" font-weight="bold">Ball → foundation</text><text x="586" y="707" font-size="11.5">Pedestal with drip flange on the foundation frame (~2 x 2 m pad); 3 keeper hooks.</text>
+<circle cx="572" cy="720" r="9" fill="#fff" stroke="#222"/><text x="572" y="724" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">5</text>
+<text x="586" y="724" font-weight="bold">Drive</text><text x="586" y="738" font-size="11.5">2 self-locking worm motors (slip clutch ~300 N·m) on the frame drive a pin-ring gear.</text>
+<circle cx="572" cy="751" r="9" fill="#fff" stroke="#222"/><text x="572" y="755" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">6</text>
+<text x="586" y="755" font-weight="bold">Pin-ring gear</text><text x="586" y="769" font-size="11.5">Ø1.2 m lantern gear under the foot plate; tolerates dust and the ±1° pivot tilt.</text>
+<circle cx="572" cy="782" r="9" fill="#fff" stroke="#222"/><text x="572" y="786" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">7</text>
+<text x="586" y="786" font-weight="bold">Slip ring</text><text x="586" y="800" font-size="11.5">Annular, Ø0.9 m, around the pivot: rotor under the foot plate, stator on the frame.</text>
+<circle cx="572" cy="813" r="9" fill="#fff" stroke="#222"/><text x="572" y="817" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">8</text>
+<text x="586" y="817" font-weight="bold">Base frame → mast</text><text x="586" y="831" font-size="11.5">The Ø3 m rotating base frame clamps to the bottom mast section ~1.5 m up (winch, power).</text>
+<circle cx="572" cy="844" r="9" fill="#fff" stroke="#222"/><text x="572" y="848" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">9</text>
+<text x="586" y="848" font-weight="bold">Ties → foundation</text><text x="586" y="862" font-size="11.5">The 3 ground ties from the strut feet end on lugs on the foundation frame and cancel out.</text>
+<circle cx="572" cy="875" r="9" fill="#fff" stroke="#222"/><text x="572" y="879" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">10</text>
+<text x="586" y="879" font-weight="bold">Jack frame</text><text x="586" y="893" font-size="11.5">Bolted to the foundation frame: erection, then lifts the mast ~60 mm for a cup swap.</text>
+<text x="560" y="78" font-size="12"><tspan fill="#e67e22" font-weight="bold">Turns:</tspan> mast, foot plate, wear cup, pin ring, base frame.   <tspan fill="#7d8790" font-weight="bold">Fixed:</tspan> ball, foundation, drives, ties.</text>
+<text x="560" y="96" font-size="12">Weight path: mast → foot plate → wear cup → pivot ball → foundation frame → pad → regolith.</text>
 </svg>

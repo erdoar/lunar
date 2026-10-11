@@ -68,7 +68,7 @@ lab(X(19), Z(MID * 0.37), X(25), Z(24), ['A-frame strut', '(2 CFRP tubes, 46 m)'
 lab(X(20), gy - 2, X(6), gy + 26, ['Horizontal tie to central foundation'])
 lab(X(FOOT), gy - 4, X(33), gy + 46, ['Foot pad at 30 m'])
 lab(X(-HALF + 4), Z(4), X(-24), Z(14), ['Wing (packs retracted)', 'lowered on halyards'], 'end')
-lab(X(RING), gy - 8, X(14), gy - 28, ['Single base bearing + Ø3 m', 'rotating base frame'])
+lab(X(RING), gy - 8, X(14), gy - 28, ['Single base pivot + Ø3 m', 'rotating base frame'])
 hx = X(-9)
 A(f'<line x1="{hx}" y1="{gy-12}" x2="{hx}" y2="{gy}" stroke="#222" stroke-width="2"/><text x="{hx-4}" y="{gy-4}" font-size="11" text-anchor="end">2 m person</text>')
 A(f'<line x1="{X(-26)}" y1="{Z(52)}" x2="{X(-3)}" y2="{Z(52)}" stroke="#f5b700" stroke-width="3" stroke-dasharray="7 4" marker-end="url(#ar)"/>'

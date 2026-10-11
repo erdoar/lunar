@@ -24,11 +24,11 @@
 <path d="M318 478L362 509" class="l"/>
 <text x="366" y="513" text-anchor="start">Roller collar</text>
 <path d="M318 650L393 620" class="l"/>
-<text x="397" y="624" text-anchor="start">Single base bearing +</text>
+<text x="397" y="624" text-anchor="start">Single base pivot +</text>
 <text x="397" y="638" text-anchor="start">rotating base frame (ground level)</text>
 <path d="M310 244L185 369" class="l"/>
 <text x="181" y="373" text-anchor="end">Whole mast turns</text>
-<text x="60" y="715" font-size="12.5">Turns: ~7.1 t. Rotating bearings: 1 base bearing +</text>
+<text x="60" y="715" font-size="12.5">Turns: ~7.1 t. Rotating bearings: 1 base pivot +</text>
 <text x="60" y="731" font-size="12.5">2 collars (12 cartridges). All drives reachable from the ground.</text>
 <rect x="670" y="660" width="520" height="30" fill="url(#g)"/><line x1="670" y1="660" x2="1190" y2="660" stroke="#222"/>
 <line x1="1086.0" y1="658" x2="930.0" y2="337.59999999999997" class="cab"/>

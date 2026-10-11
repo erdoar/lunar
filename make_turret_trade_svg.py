@@ -43,7 +43,7 @@ def rig(mid, turret):
         A(f'<line x1="{X(0)+5}" y1="{Z(2)}" x2="{X(0)+5}" y2="{Z(63)}" stroke="#2e7d32" stroke-width="2" stroke-dasharray="6 3"/>')  # service lift rail
     else:
         A(f'<rect x="{X(-1.5)}" y="{gy-12}" width="{3*e}" height="4" fill="{ROT}"/>')                 # rotating base frame
-        A(f'<rect x="{X(-1.2)}" y="{gy-7}" width="{2.4*e}" height="7" fill="{FIX}"/>')                  # foundation + base bearing
+        A(f'<rect x="{X(-1.2)}" y="{gy-7}" width="{2.4*e}" height="7" fill="{FIX}"/>')                  # foundation + base pivot
         for c in (35, 62):
             A(f'<rect x="{X(0)-8}" y="{Z(c)-4}" width="16" height="8" fill="#4a9" class="s"/>')
     return X, Z
@@ -54,9 +54,9 @@ X, Z = rig(310, False)
 A('<text x="60" y="34" class="t">A. Whole mast turns (baseline)</text>')
 lab(X(0) + 8, Z(62), X(10), Z(56), ['Roller collar (mast turns inside)'])
 lab(X(0) + 8, Z(35), X(10), Z(29), ['Roller collar'])
-lab(X(1.5), gy - 10, X(16), gy - 40, ['Single base bearing +', 'rotating base frame (ground level)'])
+lab(X(1.5), gy - 10, X(16), gy - 40, ['Single base pivot +', 'rotating base frame (ground level)'])
 lab(X(0), Z(80), X(-24), Z(56), ['Whole mast turns'], 'end')
-A(f'<text x="60" y="{gy+55}" font-size="12.5">Turns: ~7.1 t. Rotating bearings: 1 base bearing +</text>')
+A(f'<text x="60" y="{gy+55}" font-size="12.5">Turns: ~7.1 t. Rotating bearings: 1 base pivot +</text>')
 A(f'<text x="60" y="{gy+71}" font-size="12.5">2 collars (12 cartridges). All drives reachable from the ground.</text>')
 
 # ---------- B
