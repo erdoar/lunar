@@ -1,4 +1,4 @@
-# Lunar polar rotating solar platform: concept design (rev 15, tall mast on a strut tripod)
+# Lunar polar rotating solar platform: concept design (rev 16, tall mast on a strut tripod)
 
 A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
@@ -17,7 +17,8 @@ A small turntable on a circular rail that turns a very tall mast, with the solar
 - Rev 12: hanging A-bracket knee (compression strut into a funnel cup).
 - Rev 13: V-plate pendant knee on the torque arms (superseded).
 - Rev 14: the torque arms, Y-bridles, knees and crown ring are all removed. Each bracing plane now has **one stay cable** from the foot to the apex of a **V-link**: a flat V-plate hinged on **two close pins** on the upper collar. The V-link only spreads and levers the cable's sideways (twisting) pull into a couple on those two pins. It has no other bracing, and with the cable slack it hangs straight down under gravity. Collar twist is limited by a **collar-torque interlock** on the drive.
-- **Rev 15 (this):** the Roman-blind cords and per-pack hoists are removed. **Both wings are lowered together** on their halyards. Each pack lands in a **landing tray** and folds itself up as the top bar comes down, which brings every pack attachment to working height for replacement. Raising unfolds the packs again. One winch drives all 4 halyards, so the wings can't move out of step.
+- Rev 15: the Roman-blind cords and per-pack hoists are removed. **Both wings are lowered together** on their halyards. Each pack lands in a **landing tray** and folds itself up as the top bar comes down, which brings every pack attachment to working height for replacement. Raising unfolds the packs again. One winch drives all 4 halyards, so the wings can't move out of step.
+- **Rev 16 (this):** **transport packaging and erection** (section 10). Every part is cut down to fit a **3.2 x 1.5 x 1.5 m freight module**. The mast becomes **flat-pack lattice sections**, the struts become **tent-pole segments**, and the deck becomes a 12-segment ring with spokes. Erection is base jack-up with the top weight kept to ~1 t.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -55,7 +56,7 @@ How the design uses this:
 | Item | Value |
 |---|---|
 | Array top / bottom | **100 m / 70 m** above the deck |
-| Mast | 105 m triangular CFRP lattice (Ti nodes), 1.2 to 1.5 m face, ~25 kg/m (~2.5 t), built in 3 m sections |
+| Mast | 105 m triangular CFRP lattice (Ti nodes), 1.2 to 1.5 m face, ~25 kg/m (~2.5 t), in **35 flat-pack 3 m sections** (section 10) |
 | Solar wings | **Port and starboard wings**, each 17 m x 30 m (~500 m²), total ≈ **1,000 m²**. Each wing is **8 concertina packs** hung from a top bar. ~1.37 t per wing (~2.2 kN on the Moon) |
 | Concertina pack | Rigid panels ~2 m wide x 1 m tall (CFRP-honeycomb, ~2 kg/m² with cells), 30 panels hinged along their horizontal edges. Deployed: 2 m x 30 m. Folded: ~2 m x 1 m x 0.7 m, ~140 kg (~0.23 kN on the Moon). Packs from 1 to 3 m wide use the same station hardware |
 | Power (30% cells, 1,361 W/m², ~85% system) | **~350 kWe** |
@@ -321,10 +322,10 @@ Everything is assembled at deck level and raised. A crew member (EVA, or in a pr
 **Sequence**
 1. Survey and clear the site. Set the kingpin (E1). Lay out the 3 foot sites with the radius arm (E2); prepare the pads and lay the ties (E4).
 2. Set the 12 rail piers and lay the ring (E2, E3). Hold point: ring flat to ±2 mm.
-3. Place the 3 bogies and the 4 deck quarters. Check the deck turns by hand and all 6 support shoes are at their 3 mm standoff.
+3. Place the 3 bogies, then assemble the deck (12 ring-girder segments + 12 spokes) on them. Check the deck turns by hand and all 6 support shoes are at their 3 mm standoff.
 4. Fit the jack-up frame (E5). Assemble the **top assembly** at deck level: mast top section, diamond spreaders and stays, and the permanent top yard folded vertically with its halyards rove. The wings are not on the mast during jack-up.
 5. **Jack up, with a scissor action.** Each collar is fitted around the mast at deck level (3 segments), clamped to its band, and rides up with the mast.
-   - The **upper collar** goes on first, with its 3 V-links already shackled to their stay cables, which are paid out from the foot winches as it rises. Until the struts are in, these wires act as light temporary guys (a few hundred N). Each foot winch is ballasted with regolith bags so it never needs a pull-out anchor.
+   - Up to ~43 m the mast stands free in the jack frame (section 10.3). When the upper-collar band reaches the deck, the **upper collar** goes on, with its 3 V-links already shackled to their stay cables, which are paid out from the foot winches as it rises. Until the struts are in, these cables act as light temporary guys (a few hundred N). Each foot winch is ballasted with regolith bags so it never needs a pull-out anchor.
    - When the strut band reaches the deck, the **strut collar** goes on. The 3 A-frame struts are pinned to its torque brackets while lying flat on the ground, pointing outward, with their feet on skid dollies.
    - As the mast keeps rising, the struts swing up and the tie winches (E6) **pull the feet in** along the ground, from 46 m to their 30 m pads. Low gravity keeps the strut and dolly loads tiny.
    - At final height, the feet drop onto their pads. The stay cables and ties are trimmed to final tension; the V-links line up with their cables by themselves. The clamp pins are pulled, and from then on the mast turns freely in both collars.
@@ -356,7 +357,7 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
 |---|---|---|
 | What turns | Whole mast + wings + deck, ~12.6 t (~20.5 kN) | Upper mast + yard + wings, **~5 t (~8 kN)** |
 | Rotating bearing sets | 6 tyres, kingpin, 2 collars (12 roller cartridges), drive pinions | **1 turret bearing** (~Ø2 m, 8 cartridges), turret drive |
-| Hardware removed by B | n/a | Rail ring + 12 piers, 3 bogies, 4-quarter deck, kingpin, 2 roller collars, V-links, collar-torque interlock: **~7 t less landed mass** |
+| Hardware removed by B | n/a | Rail ring + 12 piers, 3 bogies, deck, kingpin, 2 roller collars, V-links, collar-torque interlock: **~7 t less landed mass** |
 | Bracing | Stays and A-frame struts on stationary collars around a turning mast | Stays and struts bolt **straight onto the fixed mast**. No wind-up, so the A-frames could revert to single struts (the fixed mast foot carries the small drive torque) |
 | Groundwork | 12-segment rail, piers levelled to ±2 mm, raised above the dust | One mast foundation pad, plus the strut feet as before |
 | Dust exposure of moving parts | Tyres, rail and drive at ground level, the main wear risk | **None**: every moving part is at 64 m, above most lofted dust |
@@ -377,18 +378,73 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
   - the site's foundation conditions for one mast pad versus a levelled rail ring, and
   - how often the drive and slip ring are expected to need service.
 
-## 10. Alternatives worth comparing
+## 10. Transport packaging and mast erection
+
+![Packaging and erection](erection.svg)
+
+### 10.1 The freight constraint
+
+Mass and cost are acceptable. **Package dimensions are the binding limit.** The launcher is not the tight part:
+- Falcon 9's fairing has a usable envelope of roughly 4.6 m diameter x 11 m.
+- Starship's payload volume is roughly 8 m diameter x 17 m or more.
+
+The tight part is the **lunar lander's cargo deck and unloading gear**, and that is not chosen yet. So every part is cut to fit one conservative **standard freight module: ≤ 3.2 m x 1.5 m x 1.5 m**. It suits small cargo landers, packs many to a large lander, and needs nothing longer than one person-and-robot can handle. If the chosen lander allows bigger pieces, the same parts simply ship with fewer joints.
+
+| Item | Size as designed | Cut for freight | Packed size |
+|---|---|---|---|
+| Mast (105 m) | Triangular lattice, 1.4 m face | **35 flat-pack sections**, each 3 m long (see 10.2) | ~3 x 1.4 x 0.12 m each; 35 stack to ~4.2 m: **3 modules** |
+| Struts (6 tubes, 46 m) | CFRP tube Ø0.3 m | **Tent-pole segments**, 15 x ~3.1 m per tube, sleeve joints, internal steel tensioning cord | 90 tubes, ~25 per module: **4 modules** |
+| Rail | Ø12 m ring | 12 segments, π m arcs (~3.1 m chord), unchanged | 1 to 2 modules |
+| Deck (Ø12 m) | Was 4 quarter-sections (~8.5 m chord: too big) | **12 ring-girder segments + 12 spokes**, each spoke in 2 x 3 m pieces | 2 modules |
+| Top yard (34 m) and wing top bars (2 x 15 m) | Trusses | ~3 m bolted truss sections | 1 to 2 modules |
+| Landing trays (2 x 15 m) | Light frames | 3 m sections | 1 module |
+| Solar packs (16) | 2 x 30 m deployed | Folded packs ~2 x 1 x 0.7 m (1 to 3 m wide all fit) | 2 per module: **8 modules** |
+| Stay cables, ties, halyards | 68 m and less | On reels | 1 module |
+| Bogies, collars, V-links, jack frame, winches | ≤ ~2 m | As-is (collar rings in 3 segments, as designed) | 3 to 4 modules |
+
+Roughly **25 freight modules** in total for one rig.
+
+### 10.2 Mast: segments vs telescopic vs deployable
+
+| Option | Packaging | Erection | Verdict |
+|---|---|---|---|
+| Rigid bolted lattice sections (as before) | Poor: each 3 m section fills a whole 3 x 1.4 x 1.2 m volume and cannot nest | Base jack-up, conventional | Works, but ~10 modules of mostly air |
+| **Flat-pack lattice sections** | Each section's 3 faces are hinged along two chords and fold flat (~0.12 m thick). **35 sections in ~3 modules** | At the jack frame each section unfolds into its triangle, the open edge is pinned (captive pins, one tool), and it is pushed into the bottom of the mast | **Baseline.** Low risk, ~3x better packing, simple to inspect |
+| Telescopic (nested tubes) | Only if each stage ≤ ~3 m, so 105 m would need ~35 nested stages | Stiffness and overlap losses grow with every stage | **Not practical** for the main mast. Fine for short items (e.g. a 2 to 3 stage service-lift guide) |
+| Deployable articulated mast (ADAM-type, as flown on SRTM: a 60 m mast folded to about 1/20 of its length in a canister) | Excellent: 105 m might stow in a canister ~5 to 6 m long, ~1.2 m wide, or two shorter ones | **Deploys bay by bay upward from a canister at the base, which is a jack-up in itself** | Strong future option. It needs a gravity-rated version (SRTM's was for zero g), and has many joints to qualify against dust and cold welding |
+| On-site beam builder (truss formed from coiled strip at the base and pushed up) | Best (dense coils) | Continuous extrusion upward | Long-term; low technology maturity |
+
+### 10.3 Erection: bootstrapping height with top weight
+
+**Rules**
+1. **Build from the bottom.** All assembly happens at the jack frame at deck level. Top weight never grows as the mast gets taller; only the jack load does. No crane, no work at height.
+2. **Keep the top light during erection.** Only the mast top section, the folded top yard and the folded diamond spreaders ride up: **~1 t (~1.6 kN)**. Wings and packs go up last on their halyards (section 4). The turret option (section 9) rides up its turret on its own mast section in the same way.
+3. **Guy as soon as possible, and from the ground.** The stays come from winches at the feet, so tensioning is always done at ground level.
+
+**Stages**
+| Mast top height | What braces it | Check |
+|---|---|---|
+| 0 to ~43 m | **Free-standing** in the jack frame (2 guide levels 3 m apart). The upper-collar band is still below the deck | Axial ~3.4 kN against ~105 kN cantilever buckling (31x margin). A 0.1 m/s² quake gives ~6.6 kN·m, ~2.2 kN on the guides. No wind, so this is comfortable |
+| ~43 m | Upper collar fitted at the deck around its band; V-links shackled to their stay cables | Collar clamped (transport pin), rides up |
+| 43 to ~70 m | Stays from the foot winches to the upper collar act as **erection guys**; winches pay out to keep the mast plumb | Stays at a few hundred N |
+| ~70 m (strut band at the deck) | Strut collar fitted; A-frame struts pinned to it, lying flat, feet on skid dollies | Scissor action starts |
+| 70 to 105 m | Struts swing up as the tie winches pull the feet in to their pads | Feet land at 30 m |
+| 105 m | Clamp pins pulled, stays/ties trimmed, top yard unfolded and wings hoisted | Peak jack force ~10 kN (mast 2.5 t + top 1 t + stay pull-down) |
+
+At ~1 hour per 3 m section, the mast goes up in roughly **35 working hours** of supervised jacking.
+
+## 11. Alternatives worth comparing
 
 - **Ground guys with tension anchors (rev 3):** 9 guys, 3 collars, anchors at 40 m. Needs proof-loaded pull-out anchors in regolith, which are uncertain and slow to install. The rev 4 tripod avoids them.
 - **Rotate only the top** (VSAT / LUNARSABER style): see the full trade study in section 9 (option B).
 - **No rail, kingpin only:** the rig is balanced and the tripod carries lateral load, so a single base slewing bearing may be enough. The rail adds redundancy and a track for the maintenance cart. Worth a trade study.
 - **Several shorter rigs vs one tall one:** depends on the site's illumination-vs-height curve.
 
-## 11. Next steps
+## 12. Next steps
 
 1. **Site illumination study** on LOLA data: sunlight hours vs array height at candidate spots; pick the height.
 2. Mast and tripod analysis: strut and mast buckling, pre-tension, thermal bow, moonquake response, every jack-up and scissor stage.
 3. Collar cartridge life test (vacuum, thermal cycling, dust), and tyre/rail tests (LHS-1, NU-LHT simulants).
 4. Prototype the jack-up with collars, the strut scissor and tie winches at small scale; rehearse with suited operators.
 5. Concertina pack trials: self-folding into a tray and unfolding on lift (fold direction, hinge springs, panel edge contact), cycles in vacuum and cold, pack exchange with a suited crew.
-6. Packaging: deck quarters, 3 m mast sections, rail segments, folded packs (1 to 3 m wide) and top bar sections to fit the lander.
+6. Confirm the actual lander's freight envelope and re-cut the parts list (section 10) to it; build and fold a flat-pack mast section and a tent-pole strut, and test their assembly with suited operators.
