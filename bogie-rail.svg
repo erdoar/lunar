@@ -1,140 +1,137 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 820" font-family="Helvetica, Arial, sans-serif" font-size="13">
 <rect width="1240" height="820" fill="#fff"/>
-<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker><pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#a08c6c"/></pattern></defs>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker></defs>
 <style>.s{stroke:#222;stroke-width:2}.l{stroke:#555;stroke-width:1;fill:none}.deck{fill:#9fb4c7}.frame{fill:#e0a040}.tyre{fill:#bbb}.rail{fill:#7d8790}.head{fill:#c0392b}.pier{fill:#cfcfcf}.cart{fill:#4a9}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:17px;font-weight:bold}</style>
-<text x="20" y="30" class="t">Plan: 3 bogies at 120°</text>
-<circle cx="200" cy="250" r="156" fill="none" stroke="#c0392b" stroke-width="6"/>
-<line x1="238.3" y1="107.0" x2="242.4" y2="91.6" stroke="#222" stroke-width="1.5"/>
-<line x1="304.7" y1="145.3" x2="316.0" y2="134.0" stroke="#222" stroke-width="1.5"/>
-<line x1="343.0" y1="211.7" x2="358.4" y2="207.6" stroke="#222" stroke-width="1.5"/>
-<line x1="343.0" y1="288.3" x2="358.4" y2="292.4" stroke="#222" stroke-width="1.5"/>
-<line x1="304.7" y1="354.7" x2="316.0" y2="366.0" stroke="#222" stroke-width="1.5"/>
-<line x1="238.3" y1="393.0" x2="242.4" y2="408.4" stroke="#222" stroke-width="1.5"/>
-<line x1="161.7" y1="393.0" x2="157.6" y2="408.4" stroke="#222" stroke-width="1.5"/>
-<line x1="95.3" y1="354.7" x2="84.0" y2="366.0" stroke="#222" stroke-width="1.5"/>
-<line x1="57.0" y1="288.3" x2="41.6" y2="292.4" stroke="#222" stroke-width="1.5"/>
-<line x1="57.0" y1="211.7" x2="41.6" y2="207.6" stroke="#222" stroke-width="1.5"/>
-<line x1="95.3" y1="145.3" x2="84.0" y2="134.0" stroke="#222" stroke-width="1.5"/>
-<line x1="161.7" y1="107.0" x2="157.6" y2="91.6" stroke="#222" stroke-width="1.5"/>
-<path d="M169.0 97.1 A156 156 0 0 1 231.0 97.1" fill="none" stroke="#e0a040" stroke-width="16"/>
-<circle cx="174.9" cy="83.9" r="4" fill="#bbb" stroke="#222"/>
-<circle cx="191.6" cy="82.2" r="4" fill="#bbb" stroke="#222"/>
-<circle cx="208.4" cy="82.2" r="4" fill="#bbb" stroke="#222"/>
-<circle cx="225.1" cy="83.9" r="4" fill="#bbb" stroke="#222"/>
-<path d="M347.9 299.6 A156 156 0 0 1 316.9 353.3" fill="none" stroke="#e0a040" stroke-width="16"/>
-<circle cx="356.4" cy="311.3" r="4" fill="#bbb" stroke="#222"/>
-<circle cx="349.5" cy="326.6" r="4" fill="#bbb" stroke="#222"/>
-<circle cx="341.1" cy="341.2" r="4" fill="#bbb" stroke="#222"/>
-<circle cx="331.3" cy="354.8" r="4" fill="#bbb" stroke="#222"/>
-<path d="M83.1 353.3 A156 156 0 0 1 52.1 299.6" fill="none" stroke="#e0a040" stroke-width="16"/>
-<circle cx="68.7" cy="354.8" r="4" fill="#bbb" stroke="#222"/>
-<circle cx="58.9" cy="341.2" r="4" fill="#bbb" stroke="#222"/>
-<circle cx="50.5" cy="326.6" r="4" fill="#bbb" stroke="#222"/>
-<circle cx="43.6" cy="311.3" r="4" fill="#bbb" stroke="#222"/>
-<circle cx="200" cy="250" r="8" fill="#fff" class="s"/>
-<path d="M337.9 380.7 A190 190 0 0 1 62.1 380.7" fill="none" stroke="#222" stroke-width="1.3" marker-start="url(#ar)" marker-end="url(#ar)"/>
-<text x="200" y="464" text-anchor="middle">~10 m clear rail between bogies</text>
-<text x="200" y="480" text-anchor="middle">(3 full segments free)</text>
-<path d="M230 94L260 74" class="l"/>
-<text x="264" y="78" text-anchor="start">Bogie, 2.4 m,</text>
-<text x="264" y="93" text-anchor="start">4 tyres</text>
-<text x="200" y="298" text-anchor="middle" font-size="12">Ø12 m rail,</text><text x="200" y="313" text-anchor="middle" font-size="12">12 segments of π m</text>
-<text x="200" y="254" text-anchor="middle" font-size="11" dy="22">kingpin</text>
-<text x="560" y="30" class="t">Side view: one bogie (one tyre lifted out)</text>
-<rect x="568.5" y="90" width="567.0" height="34" class="deck s"/><text x="579.0" y="112">Rotating deck</text>
-<rect x="826.0" y="124" width="52" height="30" fill="#fff" class="s"/><circle cx="852.0" cy="169" r="15" class="frame s"/>
-<rect x="600.0" y="178" width="504.0" height="26" rx="5" class="frame s"/>
-<line x1="709" y1="204" x2="663" y2="275" stroke="#555" stroke-width="9" stroke-linecap="round"/>
-<circle cx="709" cy="204" r="6" fill="#fff" class="s"/>
-<path d="M676 204 l8 7 l-8 7 l8 7 l-8 7 l8 7 l-8 7" fill="none" stroke="#222" stroke-width="2"/>
-<rect x="672" y="156" width="8" height="22" fill="#333"/><rect x="666" y="150" width="20" height="7" fill="#333"/>
-<circle cx="663" cy="275" r="31.5" class="tyre s"/><circle cx="663" cy="275" r="17.325000000000003" fill="#ddd" stroke="#222"/><circle cx="663" cy="275" r="7" fill="#333"/>
-<line x1="835" y1="204" x2="789" y2="275" stroke="#555" stroke-width="9" stroke-linecap="round"/>
-<circle cx="835" cy="204" r="6" fill="#fff" class="s"/>
-<path d="M802 204 l8 7 l-8 7 l8 7 l-8 7 l8 7 l-8 7" fill="none" stroke="#222" stroke-width="2"/>
-<rect x="798" y="156" width="8" height="22" fill="#333"/><rect x="792" y="150" width="20" height="7" fill="#333"/>
-<circle cx="789" cy="275" r="31.5" class="tyre s"/><circle cx="789" cy="275" r="17.325000000000003" fill="#ddd" stroke="#222"/><circle cx="789" cy="275" r="7" fill="#333"/>
-<line x1="869" y1="204" x2="915" y2="261" stroke="#555" stroke-width="9" stroke-linecap="round"/>
-<circle cx="869" cy="204" r="6" fill="#fff" class="s"/>
-<path d="M902 204 l8 7 l-8 7 l8 7 l-8 7 l8 7 l-8 7" fill="none" stroke="#222" stroke-width="2"/>
-<rect x="898" y="156" width="8" height="22" fill="#333"/><rect x="892" y="150" width="20" height="7" fill="#333"/>
-<circle cx="915" cy="261" r="31.5" fill="none" stroke="#555" stroke-width="2" stroke-dasharray="6 4"/>
-<circle cx="915" cy="261" r="7" fill="#333"/>
-<line x1="995" y1="204" x2="1041" y2="275" stroke="#555" stroke-width="9" stroke-linecap="round"/>
-<circle cx="995" cy="204" r="6" fill="#fff" class="s"/>
-<path d="M1028 204 l8 7 l-8 7 l8 7 l-8 7 l8 7 l-8 7" fill="none" stroke="#222" stroke-width="2"/>
-<rect x="1024" y="156" width="8" height="22" fill="#333"/><rect x="1018" y="150" width="20" height="7" fill="#333"/>
-<circle cx="1041" cy="275" r="31.5" class="tyre s"/><circle cx="1041" cy="275" r="17.325000000000003" fill="#ddd" stroke="#222"/><circle cx="1041" cy="275" r="7" fill="#333"/>
-<line x1="616.8" y1="204" x2="616.8" y2="345" stroke="#555" stroke-width="5"/><circle cx="616.8" cy="349" r="9" class="cart s"/>
-<path d="M602.8 204 L586.8 313" stroke="#222" stroke-width="2.5"/>
-<line x1="1087.2" y1="204" x2="1087.2" y2="345" stroke="#555" stroke-width="5"/><circle cx="1087.2" cy="349" r="9" class="cart s"/>
-<path d="M1101.2 204 L1117.2 313" stroke="#222" stroke-width="2.5"/>
-<rect x="547.5" y="315" width="609.0" height="14" class="head s"/><rect x="547.5" y="329" width="609.0" height="12" class="rail s"/>
-<rect x="547.5" y="361" width="609.0" height="40" class="rail s"/><rect x="547.5" y="341" width="609.0" height="20" fill="#fff" stroke="none"/>
-<rect x="820.5" y="341" width="63.0" height="20" class="rail s"/>
-<line x1="982.2" y1="315" x2="999.0" y2="329" stroke="#fff" stroke-width="3"/>
-<path d="M867 169L972 142" class="l"/>
-<text x="976" y="146" text-anchor="start">Spherical pivot,</text>
-<text x="976" y="161" text-anchor="start">±20 mm radial float</text>
-<path d="M669 152L652 74" class="l"/>
-<text x="648" y="78" text-anchor="end">Retract screw (lifts tyre ~20 mm)</text>
-<path d="M685 220L548 230" class="l"/>
-<text x="544" y="234" text-anchor="end">Preload spring</text>
-<path d="M722 230L548 260" class="l"/>
-<text x="544" y="264" text-anchor="end">Swing arm</text>
-<path d="M935 295L894 419" class="l"/>
-<text x="898" y="423" text-anchor="start">Tyre lifted clear and slid off</text>
-<path d="M1073 285L1156 285" class="l"/>
-<text x="1160" y="289" text-anchor="start">Tyre Ø300</text>
-<path d="M1096 349L1156 363" class="l"/>
-<text x="1160" y="367" text-anchor="start">Uplift roller</text>
-<path d="M595 305L548 289" class="l"/>
-<text x="544" y="293" text-anchor="end">Scraper</text>
-<path d="M991 322L1052 437" class="l"/>
-<text x="1056" y="441" text-anchor="start">Wear strip joint</text>
-<path d="M726 322L747 419" class="l"/>
-<text x="743" y="423" text-anchor="end">Rail head wear strip (red), π m long</text>
+<text x="20" y="30" class="t">Plan: 3 bogies x 2 tyres</text>
+<circle cx="230" cy="250" r="156" fill="none" stroke="#c0392b" stroke-width="6"/>
+<line x1="268.3" y1="107.0" x2="272.4" y2="91.6" stroke="#222" stroke-width="1.5"/>
+<line x1="334.7" y1="145.3" x2="346.0" y2="134.0" stroke="#222" stroke-width="1.5"/>
+<line x1="373.0" y1="211.7" x2="388.4" y2="207.6" stroke="#222" stroke-width="1.5"/>
+<line x1="373.0" y1="288.3" x2="388.4" y2="292.4" stroke="#222" stroke-width="1.5"/>
+<line x1="334.7" y1="354.7" x2="346.0" y2="366.0" stroke="#222" stroke-width="1.5"/>
+<line x1="268.3" y1="393.0" x2="272.4" y2="408.4" stroke="#222" stroke-width="1.5"/>
+<line x1="191.7" y1="393.0" x2="187.6" y2="408.4" stroke="#222" stroke-width="1.5"/>
+<line x1="125.3" y1="354.7" x2="114.0" y2="366.0" stroke="#222" stroke-width="1.5"/>
+<line x1="87.0" y1="288.3" x2="71.6" y2="292.4" stroke="#222" stroke-width="1.5"/>
+<line x1="87.0" y1="211.7" x2="71.6" y2="207.6" stroke="#222" stroke-width="1.5"/>
+<line x1="125.3" y1="145.3" x2="114.0" y2="134.0" stroke="#222" stroke-width="1.5"/>
+<line x1="191.7" y1="107.0" x2="187.6" y2="91.6" stroke="#222" stroke-width="1.5"/>
+<path d="M213.1 94.9 A156 156 0 0 1 246.9 94.9" fill="none" stroke="#e0a040" stroke-width="16"/>
+<line x1="230" y1="250" x2="217.3" y2="80.5" stroke="#888" stroke-width="0.8" stroke-dasharray="3 4"/>
+<rect x="-6" y="-4" width="12" height="8" fill="#bbb" stroke="#222" transform="translate(217.3,80.5) rotate(-4.297183463481174)"/>
+<line x1="230" y1="250" x2="242.7" y2="80.5" stroke="#888" stroke-width="0.8" stroke-dasharray="3 4"/>
+<rect x="-6" y="-4" width="12" height="8" fill="#bbb" stroke="#222" transform="translate(242.7,80.5) rotate(4.297183463481174)"/>
+<path d="M372.7 312.9 A156 156 0 0 1 355.9 342.1" fill="none" stroke="#e0a040" stroke-width="16"/>
+<line x1="230" y1="250" x2="383.2" y2="323.7" stroke="#888" stroke-width="0.8" stroke-dasharray="3 4"/>
+<rect x="-6" y="-4" width="12" height="8" fill="#bbb" stroke="#222" transform="translate(383.2,323.7) rotate(115.70281653651882)"/>
+<line x1="230" y1="250" x2="370.4" y2="345.8" stroke="#888" stroke-width="0.8" stroke-dasharray="3 4"/>
+<rect x="-6" y="-4" width="12" height="8" fill="#bbb" stroke="#222" transform="translate(370.4,345.8) rotate(124.29718346348118)"/>
+<path d="M104.1 342.1 A156 156 0 0 1 87.3 312.9" fill="none" stroke="#e0a040" stroke-width="16"/>
+<line x1="230" y1="250" x2="89.6" y2="345.8" stroke="#888" stroke-width="0.8" stroke-dasharray="3 4"/>
+<rect x="-6" y="-4" width="12" height="8" fill="#bbb" stroke="#222" transform="translate(89.6,345.8) rotate(235.70281653651884)"/>
+<line x1="230" y1="250" x2="76.8" y2="323.7" stroke="#888" stroke-width="0.8" stroke-dasharray="3 4"/>
+<rect x="-6" y="-4" width="12" height="8" fill="#bbb" stroke="#222" transform="translate(76.8,323.7) rotate(244.29718346348116)"/>
+<circle cx="230" cy="250" r="8" fill="#fff" class="s"/>
+<path d="M379.3 367.5 A190 190 0 0 1 80.7 367.5" fill="none" stroke="#222" stroke-width="1.3" marker-start="url(#ar)" marker-end="url(#ar)"/>
+<text x="230" y="464" text-anchor="middle">~11 m clear rail between bogies</text>
+<text x="230" y="480" text-anchor="middle">(3 full segments free)</text>
+<path d="M252 94L290 72" class="l"/>
+<text x="294" y="76" text-anchor="start">Bogie 1.3 m, 2 tyres;</text>
+<text x="294" y="91" text-anchor="start">axles point at centre</text>
+<text x="294" y="106" text-anchor="start">(fan ~8.6°)</text>
+<text x="230" y="278" text-anchor="middle" font-size="11">kingpin</text>
+<text x="230" y="298" text-anchor="middle" font-size="12">Ø12 m rail,</text><text x="230" y="313" text-anchor="middle" font-size="12">12 segments of π m</text>
+<text x="560" y="30" class="t">Side view: one bogie (right tyre out, shoe down)</text>
+<rect x="535.0" y="90" width="510.0" height="34" class="deck s"/><text x="550.0" y="112">Rotating deck</text>
+<rect x="764" y="124" width="52" height="34" fill="#fff" class="s"/><circle cx="790" cy="184" r="16" class="frame s"/>
+<path d="M595.0 200 H985.0 V240 H958.0 V222 H622.0 V240 H595.0 Z" class="frame s"/>
+<line x1="655.0" y1="222" x2="655.0" y2="270" stroke="#555" stroke-width="10"/>
+<circle cx="655.0" cy="270" r="45.0" class="tyre s"/><circle cx="655.0" cy="270" r="24.750000000000004" fill="#ddd" stroke="#222"/><circle cx="655.0" cy="270" r="7" fill="#333"/>
+<rect x="579.0" y="210" width="8" height="85" fill="#333"/>
+<rect x="563.0" y="295" width="40" height="14" rx="2" fill="#4a9" class="s"/>
+<line x1="925.0" y1="222" x2="925.0" y2="270" stroke="#555" stroke-width="10"/>
+<circle cx="925.0" cy="265" r="45.0" fill="none" stroke="#555" stroke-width="2" stroke-dasharray="6 4"/><circle cx="925.0" cy="265" r="7" fill="#333"/>
+<rect x="993.0" y="210" width="8" height="91" fill="#333"/>
+<rect x="977.0" y="301" width="40" height="14" rx="2" fill="#4a9" class="s"/>
+<path d="M610.0 240 L574.0 313" stroke="#222" stroke-width="2.5"/>
+<path d="M970.0 240 L1006.0 313" stroke="#222" stroke-width="2.5"/>
+<line x1="775.0" y1="240" x2="775.0" y2="345" stroke="#555" stroke-width="5"/><circle cx="775.0" cy="349" r="9" class="cart s"/>
+<line x1="805.0" y1="240" x2="805.0" y2="345" stroke="#555" stroke-width="5"/><circle cx="805.0" cy="349" r="9" class="cart s"/>
+<rect x="520.0" y="315" width="540.0" height="14" class="head s"/><rect x="520.0" y="329" width="540.0" height="12" class="rail s"/>
+<rect x="754.0" y="341" width="72.0" height="20" class="rail s"/><rect x="520.0" y="361" width="540.0" height="40" class="rail s"/>
+<line x1="1015.0" y1="315" x2="1030.0" y2="329" stroke="#fff" stroke-width="3"/>
+<path d="M806 184L910 140" class="l"/>
+<text x="914" y="144" text-anchor="start">Spherical centre pivot</text>
+<text x="914" y="159" text-anchor="start">= load equaliser, ±20 mm radial float</text>
+<path d="M583 260L505 218" class="l"/>
+<text x="501" y="222" text-anchor="end">Support shoe on screw,</text>
+<text x="501" y="237" text-anchor="end">3 mm above rail</text>
+<path d="M1017 308L1075 275" class="l"/>
+<text x="1079" y="279" text-anchor="start">Shoe down: carries</text>
+<text x="1079" y="294" text-anchor="start">the load for a swap</text>
+<path d="M945 240L1075 190" class="l"/>
+<text x="1079" y="194" text-anchor="start">Tyre slid off</text>
+<text x="1079" y="209" text-anchor="start">outward</text>
+<path d="M611 260L505 258" class="l"/>
+<text x="501" y="262" text-anchor="end">Tyre Ø300</text>
+<path d="M766 349L505 367" class="l"/>
+<text x="501" y="371" text-anchor="end">Uplift rollers (2)</text>
+<path d="M586 307L505 329" class="l"/>
+<text x="501" y="333" text-anchor="end">Scraper</text>
+<path d="M1021 322L1075 375" class="l"/>
+<text x="1079" y="379" text-anchor="start">Wear strip joint</text>
+<path d="M640 322L700 419" class="l"/>
+<text x="696" y="423" text-anchor="end">Flat rail head wear strip (red), π m long</text>
 <text x="470" y="490" class="t">Section through a tyre (ring centre to the left)</text>
 <rect x="480" y="510" width="420" height="30" class="deck s"/>
 <rect x="590" y="540" width="60" height="70" class="frame s"/>
-<rect x="650" y="580" width="26" height="40" fill="#555" class="s"/>
-<rect x="676" y="592" width="120" height="14" fill="#555" class="s"/>
-<polygon points="696,552 760,558 760,642 696,648" class="tyre s"/>
-<rect x="706" y="580" width="44" height="38" fill="#ddd" stroke="#222"/>
-<polygon points="766,590 792,590 796,599 792,608 766,608" fill="#333"/>
-<polygon points="680,651 776,642 776,658 680,667" class="head s"/>
-<rect x="716" y="660" width="24" height="26" class="rail s"/><rect x="684" y="686" width="90" height="70" class="rail s"/>
-<rect x="716" y="756" width="26" height="40" class="pier s"/>
-<rect x="620" y="610" width="12" height="62" class="frame s"/><circle cx="684" cy="674" r="8" class="cart s"/><line x1="632" y1="670" x2="676" y2="674" stroke="#555" stroke-width="4"/>
-<path d="M810 570 H870" stroke="#222" stroke-width="2" marker-end="url(#ar)"/><text x="812" y="562" font-size="12">slides off</text>
+<g transform="rotate(-5.7 732 602)">
+<rect x="650" y="590" width="26" height="30" fill="#555" class="s"/>
+<rect x="676" y="596" width="122" height="13" fill="#555" class="s"/>
+<polygon points="692,558 772,550 772,654 692,646" class="tyre s"/>
+<rect x="708" y="582" width="48" height="40" fill="#ddd" stroke="#222"/>
+<polygon points="772,593 796,593 800,602 796,611 772,611" fill="#333"/>
+</g>
+<rect x="676" y="650" width="104" height="16" class="head s"/>
+<rect x="716" y="666" width="24" height="24" class="rail s"/><rect x="684" y="690" width="90" height="70" class="rail s"/>
+<rect x="716" y="760" width="26" height="40" class="pier s"/>
+<rect x="620" y="610" width="12" height="76" class="frame s"/><circle cx="682" cy="678" r="8" class="cart s"/><line x1="632" y1="676" x2="674" y2="678" stroke="#555" stroke-width="4"/>
+<line x1="480" y1="650" x2="676" y2="650" stroke="#888" stroke-dasharray="4 4"/>
+<path d="M815 570 H875" stroke="#222" stroke-width="2" marker-end="url(#ar)"/><text x="817" y="562" font-size="12">slides off</text>
 <path d="M620 560L530 580" class="l"/>
 <text x="526" y="584" text-anchor="end">Bogie frame</text>
 <text x="526" y="599" text-anchor="end">(inboard)</text>
-<path d="M686 599L610 740" class="l"/>
-<text x="606" y="744" text-anchor="end">Cantilevered stub axle,</text>
-<text x="606" y="759" text-anchor="end">points at ring centre</text>
-<path d="M728 556L800 530" class="l"/>
-<text x="804" y="534" text-anchor="start">Flangeless conical tread (apex at ring centre)</text>
-<path d="M792 602L850 620" class="l"/>
-<text x="854" y="624" text-anchor="start">Captive hub nut</text>
-<path d="M742 610L850 645" class="l"/>
-<text x="854" y="649" text-anchor="start">Wheel cartridge: hub, sealed</text>
-<text x="854" y="664" text-anchor="start">hybrid bearing, MoS₂, steel tread</text>
-<path d="M770 650L850 685" class="l"/>
-<text x="854" y="689" text-anchor="start">Conical rail head wear strip,</text>
-<text x="854" y="704" text-anchor="start">ceramic/DLC coated</text>
-<path d="M684 680L610 700" class="l"/>
-<text x="606" y="704" text-anchor="end">Uplift roller</text>
-<path d="M770 730L850 735" class="l"/>
-<text x="854" y="739" text-anchor="start">Box beam rail on pier</text>
+<path d="M684 602L610 746" class="l"/>
+<text x="606" y="750" text-anchor="end">Stub axle tipped ~1.4° down</text>
+<text x="606" y="765" text-anchor="end">toward the centre (drawn ~6°)</text>
+<path d="M500 650L500 690" class="l"/>
+<text x="496" y="694" text-anchor="end">Rail-top plane runs to the</text>
+<text x="496" y="709" text-anchor="end">ring centre = cone apex</text>
+<path d="M732 556L810 530" class="l"/>
+<text x="814" y="534" text-anchor="start">Conical tread, half-angle ~1.4°</text>
+<path d="M794 608L850 622" class="l"/>
+<text x="854" y="626" text-anchor="start">Captive hub nut</text>
+<path d="M750 620L850 650" class="l"/>
+<text x="854" y="654" text-anchor="start">Wheel cartridge: hub, sealed</text>
+<text x="854" y="669" text-anchor="start">hybrid bearing, MoS₂, steel tread</text>
+<path d="M775 658L850 694" class="l"/>
+<text x="854" y="698" text-anchor="start">Flat rail head wear strip,</text>
+<text x="854" y="713" text-anchor="start">ceramic/DLC coated</text>
+<path d="M682 686L620 716" class="l"/>
+<text x="616" y="720" text-anchor="end">Uplift roller</text>
+<path d="M770 740L850 745" class="l"/>
+<text x="854" y="749" text-anchor="start">Box beam rail on pier</text>
+<text x="480" y="798" font-size="12">Load on each tyre is vertical (tripod + kingpin take all side loads), so tyres are not tilted outward.</text>
 <text x="20" y="520" class="t">Swapping a tyre</text>
 <text x="20" y="546" font-size="13">1. Stop and lock the drive.</text>
-<text x="20" y="565" font-size="13">2. Wind the retract screw: tyre lifts</text>
-<text x="20" y="584" font-size="13">    ~20 mm, its load goes to the other 3.</text>
+<text x="20" y="565" font-size="13">2. Wind the support shoe down until it</text>
+<text x="20" y="584" font-size="13">    takes the load; tyre lifts ~5 mm.</text>
 <text x="20" y="603" font-size="13">3. Undo the captive hub nut; slide the</text>
 <text x="20" y="622" font-size="13">    wheel cartridge off outward.</text>
 <text x="20" y="641" font-size="13">4. Slide the spare on, tighten, wind the</text>
-<text x="20" y="660" font-size="13">    screw back to the spring-load mark.</text>
-<text x="20" y="679" font-size="13">Wheel cartridge ~10 kg (under 2 kg-weight</text>
+<text x="20" y="660" font-size="13">    shoe back to its 3 mm standoff.</text>
+<text x="20" y="679" font-size="13">Wheel cartridge ~12 kg (~2 kg-weight</text>
 <text x="20" y="698" font-size="13">on the Moon). No deck jacking.</text>
+<text x="20" y="717" font-size="13">If a tyre fails in service, its shoe</text>
+<text x="20" y="736" font-size="13">lands on the rail: the bogie never drops.</text>
 </svg>
