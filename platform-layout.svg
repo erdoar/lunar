@@ -4,9 +4,8 @@
 <style>.s{stroke:#222;stroke-width:2}.l{stroke:#555;stroke-width:1;fill:none}.guy{stroke:#8e44ad;stroke-width:1.4}.c{stroke:#555;stroke-width:1.3}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:17px;font-weight:bold}</style>
 <text x="20" y="30" class="t">Elevation (bracing shown in projection)</text>
 <rect x="10" y="760" width="580" height="40" fill="url(#g)"/><line x1="10" y1="760" x2="590" y2="760" class="s"/>
-<rect x="212.8" y="748" width="74.4" height="8" fill="#9fb4c7" class="s"/>
-<rect x="209.8" y="755" width="6" height="5" fill="#c0392b"/>
-<rect x="284.2" y="755" width="6" height="5" fill="#c0392b"/>
+<rect x="240.7" y="748" width="18.6" height="4" fill="#e67e22"/>
+<path d="M243.8 760 L247.52 754 H252.48 L256.2 760 Z" fill="#7d8790"/>
 <line x1="436.0" y1="757" x2="261.78" y2="375.18" class="guy"/>
 <line x1="436.0" y1="757" x2="274.8" y2="537.0" stroke="#555" stroke-width="5"/>
 <line x1="250.0" y1="537.0" x2="274.8" y2="537.0" stroke="#555" stroke-width="4"/>
@@ -54,15 +53,15 @@
 <text x="409" y="609" text-anchor="start">A-frame strut</text>
 <text x="409" y="624" text-anchor="start">(2 CFRP tubes, 46 m)</text>
 <path d="M374 758L287 786" class="l"/>
-<text x="291" y="790" text-anchor="start">Horizontal tie to kingpin foundation</text>
+<text x="291" y="790" text-anchor="start">Horizontal tie to central foundation</text>
 <path d="M436 756L455 806" class="l"/>
 <text x="459" y="810" text-anchor="start">Foot pad at 30 m</text>
 <path d="M169 729L101 667" class="l"/>
 <text x="97" y="671" text-anchor="end">Wing (packs retracted)</text>
 <text x="97" y="686" text-anchor="end">lowered on halyards</text>
-<path d="M287 752L337 732" class="l"/>
-<text x="341" y="736" text-anchor="start">Ø12 m ring: bogies,</text>
-<text x="341" y="751" text-anchor="start">drive, slip ring</text>
+<path d="M259 752L337 732" class="l"/>
+<text x="341" y="736" text-anchor="start">Single base bearing + Ø3 m</text>
+<text x="341" y="751" text-anchor="start">rotating base frame</text>
 <line x1="194.2" y1="748" x2="194.2" y2="760" stroke="#222" stroke-width="2"/><text x="190.2" y="756" font-size="11" text-anchor="end">2 m person</text>
 <line x1="88.79999999999998" y1="431.59999999999997" x2="231.4" y2="431.59999999999997" stroke="#f5b700" stroke-width="3" stroke-dasharray="7 4" marker-end="url(#ar)"/><circle cx="64.0" cy="431.59999999999997" r="11" fill="#f5b700" class="s"/><text x="26.799999999999983" y="413.59999999999997" font-size="12">Sun ~0–1.5°</text>
 <text x="600" y="30" class="t">Plan (from above)</text>
@@ -88,7 +87,7 @@
 <circle cx="868.2" cy="366.8" r="3" fill="#c87f0a"/>
 <rect x="683.9" y="459.0" width="18" height="18" fill="#555"/>
 <text x="678.9" y="494.0" text-anchor="end">Foot 240°</text>
-<circle cx="880" cy="360" r="43.2" fill="none" stroke="#c0392b" stroke-width="3"/>
+<circle cx="880" cy="360" r="10.8" fill="none" stroke="#e67e22" stroke-width="3"/>
 <line x1="818.8" y1="466.0" x2="941.2" y2="254.0" stroke="#2c4a7a" stroke-width="6"/>
 <line x1="761.8" y1="391.7" x2="998.2" y2="328.3" stroke="#2c4a7a" stroke-width="3" opacity="0.35"/>
 <circle cx="880" cy="360" r="5" fill="#fff" class="s"/>
@@ -103,12 +102,12 @@
 <path d="M794 446L730 510" class="l"/>
 <text x="726" y="514" text-anchor="end">Array sweep, r = 17 m</text>
 <text x="726" y="529" text-anchor="end">(only at 67–100 m)</text>
-<path d="M880 403L890 470" class="l"/>
-<text x="894" y="474" text-anchor="start">Ø12 m ring</text>
+<path d="M880 371L890 470" class="l"/>
+<text x="894" y="474" text-anchor="start">Ø3 m rotating base frame</text>
 <line x1="610" y1="620" x2="635" y2="620" stroke="#555" stroke-width="5"/><text x="642" y="624">A-frame strut (stationary)</text>
 <line x1="810" y1="620" x2="835" y2="620" stroke="#c87f0a" stroke-width="4"/><text x="842" y="624">V-link on upper collar</text>
 <line x1="610" y1="640" x2="635" y2="640" class="guy"/><text x="642" y="644">Stay cable (to V-link)</text>
-<line x1="810" y1="640" x2="835" y2="640" stroke="#c87f0a" stroke-width="2" stroke-dasharray="7 3"/><text x="842" y="644">Tie to kingpin foundation</text>
+<line x1="810" y1="640" x2="835" y2="640" stroke="#c87f0a" stroke-width="2" stroke-dasharray="7 3"/><text x="842" y="644">Tie to central foundation</text>
 <rect x="610" y="654" width="22" height="8" fill="#4a9" class="s"/><text x="642" y="663">Roller collar (mast turns inside)</text>
 <line x1="610" y1="678" x2="635" y2="678" stroke="#2c4a7a" stroke-width="5"/><text x="642" y="682">Solar wings</text>
 <text x="610" y="712" font-size="12">Neighbouring rigs: ≥10x array width apart, in a line along the</text>

@@ -1,21 +1,21 @@
-# Lunar polar rotating solar platform: concept design (rev 19, tall mast on a strut tripod)
+# Lunar polar rotating solar platform: concept design (rev 20, tall mast on a single base bearing)
 
-A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
+A very tall mast that turns on a single base bearing, braced by a stationary strut tripod, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
-## Current design at a glance (rev 19 baseline)
+## Current design at a glance (rev 20 baseline)
 
-This is the design being developed. Everything under "Revision history" below records how it evolved, and section 9 (the top turret) is a side study only.
+This is the design being developed (mode 1: the **whole mast turns**). Everything under "Revision history" below records how it evolved. Section 9 (mode 2, a top turret) is set aside, and Appendix A (the earlier rail turntable) is superseded.
 
 ![Current design at a glance](overview.svg)
 
 **What it is, from the ground up**
 1. **Fixed to the ground:**
-   - a Ø12 m **rail** ring on 12 short levelling piers,
-   - a **kingpin** in a foundation at the centre,
-   - **3 foot pads** 30 m out, each tied back to the kingpin foundation by a ground cable.
+   - one central **foundation pad** (~2 x 2 m) carrying the **base bearing** housing,
+   - **3 foot pads** 30 m out, each tied back to the central foundation by a ground cable,
+   - 2 **landing trays** on short legs along the maintenance azimuth.
 2. **Turning, once per lunar day:**
-   - a spoked **deck**: a hub, 12 spokes and an outer ring girder, riding on **3 bogies** (2 tyres each) that run on the rail;
-   - the **108 m mast**, standing on the deck's hub;
+   - the **108 m mast**, standing on the base bearing;
+   - a small **rotating base frame** (Ø ~3 m) clamped to the bottom of the mast, carrying the wing winch, power gear and the slip-ring rotor;
    - the **top yard** at 100 m;
    - **two solar wings** (port and starboard) hanging from the yard between 70 and 100 m, ~350 kW.
 3. **Holding the mast upright, without turning:**
@@ -25,13 +25,14 @@ This is the design being developed. Everything under "Revision history" below re
 
 **What attaches to what at the base**
 
-Weight path: mast → hub → 3 main spokes → ring girder → 3 bogie pivots → 6 tyres → rail → piers → ground.
+Weight path: mast → foot plate → base bearing (rotating race → rollers → fixed race) → spherical seat → foundation frame → pad → regolith.
 
-- Each **bogie** carries a spherical pivot on top. The pivot bolts **under the deck's ring girder**, exactly where a **main spoke** meets the ring girder. Underneath, the bogie's 2 tyres roll on the **rail head**, and its uplift rollers hook under the rail head.
-- The **ring girder** is the deck's outer rim, directly above the rail. It rests on the 3 bogie pivots, and all 12 spokes bolt to it.
-- The **spokes** bolt to the **hub** at their inner ends (upper and lower hub rings) and to the **ring girder** at their outer ends. The 3 main spokes sit over the bogies.
-- The **hub** carries the **mast foot** (spherical seat) on top. Underneath, a slewing ring fits round the fixed **kingpin**, which only keeps the deck centred and carries no weight.
-- The **rail** is fixed: 12 segments on 12 piers. The **ground ties** from the strut feet end at the kingpin foundation and cancel each other out.
+- The **mast foot plate** (where the 3 mast legs meet) bolts to the **rotating race** of the base bearing.
+- The **base bearing cartridge** sits on a **spherical seat** in the **foundation frame**. The seat lets the mast settle plumb (±1°) as the collars set it.
+- **2 worm-drive motors** on the foundation frame drive pinions in the bearing's internal gear.
+- The **rotating base frame** clamps to the bottom mast section ~1.5 m up, and turns with it.
+- The **slip ring / rotary transformer** runs through the hollow centre of the bearing: rotor on the mast side, stator in the foundation.
+- The **3 ground ties** from the strut feet end on lugs on the foundation frame and cancel out. The **jack frame** used for erection stays bolted to the foundation frame for bearing swaps.
 
 **Revision history**
 - Rev 1: Ø42 m twin-rail turntable carrying a 30 m panel wall.
@@ -51,8 +52,9 @@ Weight path: mast → hub → 3 main spokes → ring girder → 3 bogie pivots �
 - Rev 15: the Roman-blind cords and per-pack hoists are removed. **Both wings are lowered together** on their halyards. Each pack lands in a **landing tray** and folds itself up as the top bar comes down, which brings every pack attachment to working height for replacement. Raising unfolds the packs again. One winch drives all 4 halyards, so the wings can't move out of step.
 - Rev 16: **transport packaging and erection** (section 10). Every part is cut down to fit a **3.2 x 1.5 x 1.5 m freight module**. The mast becomes **flat-pack lattice sections**, the struts become **tent-pole segments**, and the deck becomes a 12-segment ring with spokes. Erection is base jack-up with the top weight kept to ~1 t.
 - Rev 17: **detailed top yard** (section 4a): yard truss, an 8 m masthead (the mast becomes 108 m), topping lifts, braces, halyard sheaves and routing, **docking latches** that take the wings' weight off the halyards, and the **panel elevation winch** (one motor, linked traction sheaves).
-- Rev 18: **deck defined** (section 5a): a spoked frame with 3 deep main spokes over the bogies, a hub carrying the mast-foot seat over the kingpin, gratings only where needed, and an equipment layout. The halyards now enter the mast through a side window, not through the foot seat. Deck mass is revised from 4 t to ~2.5 t, so rotating mass becomes ~11.1 t (~18 kN, ~3.0 kN per tyre).
-- **Rev 19 (this):** **deck spokes characterised** (section 5a, `spoke_check.py`): tapered triangular CFRP trusses, member sizes, loads, stiffness, joints and mass.
+- Rev 18: **deck defined** (now Appendix A.2): a spoked frame with 3 deep main spokes over the bogies, a hub carrying the mast-foot seat over the kingpin, gratings only where needed, and an equipment layout. The halyards now enter the mast through a side window, not through the foot seat. Deck mass is revised from 4 t to ~2.5 t, so rotating mass becomes ~11.1 t (~18 kN, ~3.0 kN per tyre).
+- Rev 19: **deck spokes characterised** (now Appendix A.2, `spoke_check.py`): tapered triangular CFRP trusses, member sizes, loads, stiffness, joints and mass.
+- **Rev 20 (this):** **single base bearing** (section 5). The rail, piers, bogies, deck, spokes and kingpin are deleted. The struts and stays already carry all tipping loads, so the base only has to carry ~10 kN down, centre the mast foot and turn it. A swappable slewing-ring cartridge on one foundation pad does that, driven by 2 small worm motors, with a small **rotating base frame** for the winch and power gear. This saves ~3.7 t, removes all wheel-on-regolith contact, and lets a mechanical slip clutch protect the collars. The rail turntable is kept in **Appendix A** for reference.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -77,46 +79,46 @@ At such low Sun angles every bump shades a long way: a 10 m rise casts a shadow 
 How the design uses this:
 
 1. **A slender braced mast.** Without wind and in 1/6 g, a light lattice mast needs only a little lateral bracing to reach 100 m or more. Its practical limit is set by the site, installation and shading, not strength.
-2. **The bracing doesn't rotate.** A stationary **strut tripod** holds the mast through two **roller collars**, and the mast turns inside them. This keeps the base ring small (Ø12 m) while the bracing spreads wide (feet at 30 m).
-3. **A closed truss, so no tension anchors.** Each bracing plane is a triangle: strut (compression), wire (tension) and the mast between the two collars. A horizontal tie from each foot to the kingpin foundation closes it at ground level. The three ties pull on the kingpin from 120° apart, so they cancel. The foot pads only ever push down on the ground. Holding up-pull in loose regolith is hard; bearing down on it is easy.
+2. **The bracing doesn't rotate.** A stationary **strut tripod** holds the mast through two **roller collars**, and the mast turns inside them. This keeps the base down to a single bearing while the bracing spreads wide (feet at 30 m).
+3. **A closed truss, so no tension anchors.** Each bracing plane is a triangle: strut (compression), wire (tension) and the mast between the two collars. A horizontal tie from each foot to the central foundation closes it at ground level. The three ties pull on the foundation from 120° apart, so they cancel. The foot pads only ever push down on the ground. Holding up-pull in loose regolith is hard; bearing down on it is easy.
 4. **The array sits above all the bracing.** It sweeps a 17 m radius circle from 67 to 100 m. The upper collar is at 62 m, so the turning array never meets a strut or wire. Above the collar the mast is braced by its own rotating **diamond stays** (spreaders and stays that turn with the mast, as on a racing yacht).
 5. **Light rigid concertina packs** (~2 kg/m²) that hang from the top. In 1/6 g with no wind they unfold under their own weight and hang flat, with no frame needed to hold the 30 m height.
 6. **Balanced rig.** The array is one plane through the mast, left and right equal, so its centre of mass stays on the axis.
 7. **Steady sunlight makes thermal bow predictable.** Because the rig tracks the Sun, the same mast face is always sunlit, so the bow is nearly constant and can be trimmed out with wire tension. The mast sits behind the blanket, so its top section is in shade. CFRP tubes (α ≈ 0 to 1x10⁻⁶ /K) keep the bow to a few centimetres. The same 35 m length in aluminium would bow ~0.9 m.
-8. **Light installation gear.** The whole mast plus array (~5 t) weighs about 8 kN on the Moon, so a modest jack at deck level can raise all of it (section 7).
+8. **Light installation gear.** The whole mast plus array (~5 t) weighs about 8 kN on the Moon, so a modest jack at the base can raise all of it (section 7).
 
 ## 3. Reference configuration (100 m baseline)
 
 | Item | Value |
 |---|---|
-| Array top / bottom | **100 m / 70 m** above the deck |
+| Array top / bottom | **100 m / 70 m** above the ground |
 | Mast | **108 m** triangular CFRP lattice (Ti nodes), 1.2 to 1.5 m face, ~25 kg/m (~2.7 t), in **36 flat-pack 3 m sections** (section 10). Top yard at 100 m, masthead 8 m above it |
 | Solar wings | **Port and starboard wings**, each 17 m x 30 m (~500 m²), total ≈ **1,000 m²**. Each wing is **8 concertina packs** hung from a top bar. ~1.37 t per wing (~2.2 kN on the Moon) |
 | Concertina pack | Rigid panels ~2 m wide x 1 m tall (CFRP-honeycomb, ~2 kg/m² with cells), 30 panels hinged along their horizontal edges. Deployed: 2 m x 30 m. Folded: ~2 m x 1 m x 0.7 m, ~140 kg (~0.23 kN on the Moon). Packs from 1 to 3 m wide use the same station hardware |
 | Power (30% cells, 1,361 W/m², ~85% system) | **~350 kWe** |
 | Top yard (permanent) | 34 m CFRP truss fixed to the mast at 100 m, with topping lifts from the masthead and braces to the spreader tips. 2 halyard sheaves and 2 docking latches per wing. Details in section 4a |
 | Wing top bar | Each wing has a top bar on 2 halyards carrying 8 **pack hangers** (4 alignment cones + captive latches each). No fixed bottom yard: each pack has its own small bottom bar |
-| Landing trays | 2 light trays at deck height (~1.5 m) along the maintenance azimuth (port and starboard, 2 to 17 m from the mast), on the deck inboard and on short legs outboard. The packs fold into them |
+| Landing trays | 2 light trays on short ground legs (~1.5 m high) along the maintenance azimuth (port and starboard, 2 to 17 m from the mast). The packs fold into them |
 | Roller collars (stationary) | **Strut collar at 35 m**, **upper collar at 62 m** |
 | Struts | 3 **A-frames** at 120°: each 2 CFRP tubes Ø0.3 m x 2 mm, ~46 m long, ~3 kg/m, ball joints at both ends. Joined at the foot, spread ±1.5 m at a torque bracket 4 m out from the strut collar |
 | Foot pads | 3 at **30 m radius**, ~1 m² sintered or gabion pad, compression only (~0.5 kN) |
 | V-links (upper collar) | 1 per bracing plane: a flat Ti V-plate (~8 mm), **2 pin holes 0.4 m apart** on the collar (horizontally aligned, instrumented load pins) and **1 shackle hole at the apex, 1 m out**. Free to hinge; hangs straight down when the cable is slack. ~2 kg |
 | Stay cables | 1 per bracing plane, from the foot tensioner to the V-link shackle (~68 m), 6 mm stainless wire rope, UV-proof. ~1.5 kN pre-tension, adjustable to ~3 kN, load cell at the foot |
-| Ties | Foot to kingpin foundation, horizontal at ground level (passing under the raised rail), ~1 kN |
+| Ties | Foot to the central foundation frame, horizontal at ground level, ~1 kN |
 | Upper bracing (rotating) | Diamond stays: spreaders ±6 m at 81 m, stays from 64 m (just above the upper collar) to the mast top |
-| Rail ring | Ø12 m single rail, 12 segments of π m, **3 bogies x 2 tyres** at 120° |
-| Rotating mass | ~11.1 t (mast 2.7 t, wings + top yard 3.1 t, deck 2.5 t, bogies 0.2 t, collar bands + margin 1.1 t, kingpin 1 t, diamond stays 0.5 t) |
-| Lunar weight on the ring | ~18 kN; the pre-tensioned tripod lifts the mast very slightly (~1.5 kN), so the ring carries a little less |
+| Base | **Single base bearing**: Ø ~0.6 m crossed-roller slewing ring with an internal gear, in a swappable cartridge on a spherical seat, on a ~2 x 2 m foundation pad. **2 worm-drive motors** with a slip clutch. **Rotating base frame** Ø ~3 m on the bottom mast section (section 5) |
+| Rotating mass | ~7.1 t (mast 2.7 t, wings + top yard 3.1 t, diamond stays 0.5 t, collar bands 0.2 t, rotating base frame 0.6 t) |
+| Load on the base bearing | ~11.5 kN weight; **~9.9 kN** net after the stay pull-down (+4 kN) and strut push-up (−5.7 kN) at the collars |
 | Maintenance azimuth | Mast parked so the array lies **between** bracing planes (e.g. 30°/210° when the struts are at 0°/120°/240°) |
 
 **Scaling to other heights** (rough; same array, CFRP mast; struts sized for ~4x buckling margin):
 
 | Array top | Upper collar | Strut collar | Foot radius | Strut length | Mast mass | Lunar weight |
 |---|---|---|---|---|---|---|
-| 60 m | 22 m | 12 m | ~12 m | ~17 m | 1.2 t | ~16 kN |
-| **100 m** | **62 m** | **35 m** | **30 m** | **46 m** | **2.7 t** | **~18 kN** (rigid packs) |
-| 150 m | 112 m | 60 m | ~50 m | ~78 m | 4.8 t | ~23 kN |
-| 200 m | 162 m | 85 m | ~70 m | ~110 m | 8 t | ~29 kN |
+| 60 m | 22 m | 12 m | ~12 m | ~17 m | 1.2 t | ~9 kN |
+| **100 m** | **62 m** | **35 m** | **30 m** | **46 m** | **2.7 t** | **~11.5 kN** |
+| 150 m | 112 m | 60 m | ~50 m | ~78 m | 4.8 t | ~15 kN |
+| 200 m | 162 m | 85 m | ~70 m | ~110 m | 8 t | ~20 kN |
 
 Above ~150 m the struts get long enough that they need a larger lattice section or a mid-length brace. In practice the height is limited by:
 - **Footprint**: the ridge must be ~2x the foot radius wide. That is smaller than the guy anchor footprint in rev 3, but ridges are often only a few hundred metres across.
@@ -131,14 +133,14 @@ Above ~150 m the struts get long enough that they need a larger lattice section 
 
 **Roller collars.** Each collar is a stationary ring around the mast, made of 3 bolted 120° segments so it can be fitted around the mast. At that height the mast carries a circular **collar band**: a Ti box ring bolted to the three mast legs, with ceramic/DLC-coated running faces on the top, outside and underside.
 
-The collar holds **6 identical roller cartridges**. Each is a C-frame that wraps the band edge, like a base bogie wraps its rail. It carries three rollers:
+The collar holds **6 identical roller cartridges**. Each is a C-frame that wraps the band edge, like a rail clamp. It carries three rollers:
 - an **upper thrust roller**: the upper collar is pulled down by the wires,
 - a **radial guide roller**: holds the mast sideways,
 - a **lower thrust roller**: the strut collar is pushed up by the struts, and it also resists quake uplift.
 
 So one cartridge design serves both collars. Each cartridge slides out radially on rails through a window in the collar ring. A preload spring gives ±10 mm of float for thermal mismatch, it has 2 captive bolts, and it has a grapple fixture for the climber robot. The collar works with any one cartridge removed.
 
-The rollers use the same technology as the bogies (dry-lubricated hybrid bearings, dissimilar surfaces). The collars carry only light loads (pre-tension and quake loads), so the heavy, critical parts stay at ground level: vertical load, drive and slip ring. Dust is far lower at height.
+The rollers use the same technology as the base bearing (dry-lubricated hybrid rollers, dissimilar surfaces). The collars carry only light loads (pre-tension and quake loads), so the heavy, critical parts stay at ground level: vertical load, drive and slip ring. Dust is far lower at height.
 
 A **transport clamp pin** in each cartridge locks the collar to the band during jack-up (section 7) and is pulled once the collar is at height.
 
@@ -162,7 +164,7 @@ A **transport clamp pin** in each cartridge locks the collar to the band during 
    - Every roller has a small rotation sensor (magnet + Hall sensor). If the mast turns and a roller doesn't, the system alarms long before the bearing seizes.
    - Load cells on the wires and ties, drive motor current, and strain gauges on the mast between base and collar all track friction torque. A rising trend means "swap a cartridge soon".
 4. **Protect the structure if it happens.**
-   - A **collar-torque interlock** stops the base drive if the V-link load pins read more than ~200 N·m. A drive torque limiter can't do this job: the drive needs several kN·m to break the deck free in dust. The collar is never wound round more than ~3°.
+   - A **collar-torque interlock** stops the base drive if the V-link load pins read more than ~200 N·m. Since rev 20 the drive needs only ~35 N·m, so a **mechanical slip clutch at ~250 N·m** on each drive motor backs it up (section 5). The collar is never wound round more than ~3°.
    - The array keeps working in its last position until the fault is cleared. At most a few percent of a lunar day's energy is lost.
 5. **Fix it in place.**
    - The climber robot swaps the cartridge (2 captive bolts, slide out, slide in) while the other 5 hold the mast. Spare cartridges are kept on site.
@@ -195,8 +197,8 @@ How it works:
   - In normal running (~10 N·m of collar friction) the collar twists ~0.15° and stays there, elastically and stably.
   - Raising the tension (monitored at the foot, adjustable to ~3 kN) stiffens it.
   - A longer V adds little and costs clearance, so 1 m is the baseline.
-- **Collar-torque interlock (essential with this simple lever).** The base drive must be able to break the deck free in dust (several kN·m), so a drive torque limiter cannot protect the collar. Instead, the **V-link load pins** read the collar's friction torque directly. The drive stops if it exceeds **~200 N·m** (about 20x normal), which caps the twist at **~3°** at 1.5 kN (~1.5° at 3 kN). That is well inside what the cables and clearances accept, and the collar springs back once the fault is cleared.
-- **Installation.** The V-links are pinned to the collar and shackled to their stay cables at deck level, before jack-up. As the collar rides up, they hang and then line up with the cables by themselves. Nothing is fitted at height.
+- **Collar-torque interlock (essential with this simple lever).** The **V-link load pins** read the collar's friction torque directly. The drive stops if it exceeds **~200 N·m** (about 20x normal), which caps the twist at **~3°** at 1.5 kN (~1.5° at 3 kN). That is well inside what the cables and clearances accept, and the collar springs back once the fault is cleared.
+- **Installation.** The V-links are pinned to the collar and shackled to their stay cables at the base, before jack-up. As the collar rides up, they hang and then line up with the cables by themselves. Nothing is fitted at height.
 - **Loads.** Each V-plate carries the stay tension (~1.5 to 3 kN) in tension. The pin couple at the 200 N·m interlock limit is about ±0.2 kN. Shackles are safety-pin type, coated or of dissimilar metals against cold welding.
 - **A-frame struts (strut collar).** Each strut is two tubes joined at the foot and spread ±1.5 m at a torque bracket 4 m out from the collar. This is the same triangle idea, in compression.
 - **Clearances.** The V-links stay within ~2 m of the mast, and the A-frame brackets within ~21° of their bracing plane. So the maintenance azimuth (30°/210°) stays clear for lowering the wings. Everything is at or below 62 m, under the array sweep.
@@ -211,7 +213,7 @@ Each wing is a **top bar** with **8 concertina packs** side by side, each 2 m wi
 - **Attachment:** each pack hangs from a **pack hanger** on the top bar (4 alignment cones + captive latches).
 - **Fold direction:** alternate hinges are lightly sprung toward their fold direction, so the panels always fold the same zig-zag way.
 
-There is **one raise/lower mechanism**: the top bar of each wing hangs on **2 halyards** over sheaves on the **permanent top yard** (2 m and 17 m from the mast). All **4 halyards** run down the mast to **one winch** on the deck with 4 linked drums.
+There is **one raise/lower mechanism**: the top bar of each wing hangs on **2 halyards** over sheaves on the **permanent top yard** (2 m and 17 m from the mast). All **4 halyards** run down the mast to **one winch** on the rotating base frame with 4 linked drums.
 
 **Lowering for maintenance (both wings together):**
 1. Park the mast at the **maintenance azimuth**, so both wings lie in the clear 30°/210° plane between the bracing planes. Set the 2 **landing trays**.
@@ -256,17 +258,17 @@ The whole cycle (down ~20 min, swap, up ~20 min) costs about an hour of output; 
 
 **Halyards and routing**
 - Each wing hangs on **2 halyards**, one at each end of its top bar (2 m and 17 m from the mast).
-- Each halyard runs up to a **sheave at the yard**, turns 90° to run **inside the yard truss** to a **turning block at the yard-mast section**, then runs **down inside the mast lattice** to the panel elevation winch on the deck.
+- Each halyard runs up to a **sheave at the yard**, turns 90° to run **inside the yard truss** to a **turning block at the yard-mast section**, then runs **down inside the mast lattice** to the panel elevation winch on the rotating base frame.
 - Halyard tension is ~1.1 kN with a wing hanging, in 6 mm stainless wire rope (breaking load ~25 kN, factor >20).
 - Lengths: ~214 m (outer) and ~200 m (inner), including the 97.5 m stroke from the yard down to the landing trays.
-- The halyard loop adds ~4.4 kN of compression to the mast while the wings hang on it. It does not add load at the mast foot: the pull is internal, top to deck.
+- The halyard loop adds ~4.4 kN of compression to the mast while the wings hang on it. It does not add load at the mast foot: the pull is internal, top to base frame.
 
-**How the deck motor drives the wings: the halyard path**
+**How the base winch drives the wings: the halyard path**
 
-![Halyard path from the deck winch to the wing](halyard-path.svg)
+![Halyard path from the base winch to the wing](halyard-path.svg)
 
-The motor never drives the yard, which is fixed to the mast. It only pulls the halyards, so **the rope is the whole transmission**. In the baseline the deck, mast and yard turn together, so the ropes never cross a rotating joint and cannot twist. Each halyard runs:
-1. **Traction sheave on the deck** → through a **side window in mast section 1** over a deflection sheave ~2 m up (clear of the mast-foot seat at the centre) → into the **clear centre channel of the mast lattice**. The lattice members sit only on the three faces.
+The motor never drives the yard, which is fixed to the mast. It only pulls the halyards, so **the rope is the whole transmission**. The base frame, mast and yard turn together, so the ropes never cross a rotating joint and cannot twist. Each halyard runs:
+1. **Traction sheave on the rotating base frame** → through a **side window in mast section 1** over a deflection sheave ~2 m up (clear of the mast-foot seat at the centre) → into the **clear centre channel of the mast lattice**. The lattice members sit only on the three faces.
 2. **Up 100 m** as a loose 4-rope bundle through **ceramic-lined guide rings at every 3 m section**. Each rope weighs only ~23 N over 100 m on the Moon, so it barely touches the rings.
 3. **Turning block** at the yard-mast section (100 m) → 90° to horizontal.
 4. **Along the inside of the yard truss** on 2–3 guide rollers to the **end sheave** (2 m or 17 m out) → 90° down to the cone on the wing top bar.
@@ -284,10 +286,10 @@ The motor never drives the yard, which is fixed to the mast. It only pulls the h
 
   A 6 cm difference tilts a 15 m top bar by only ~0.2°, which is harmless to the structure, but it makes the two cones reach their docks at different moments. Three measures handle it:
   1. **Length-matched routing.** The inner halyard takes a ~7 m out-and-back loop along the yard over a small extra sheave, so all 4 halyards are the same length and follow similar paths. That cancels the systematic stretch and uniform-thermal difference.
-  2. **Trim sheaves.** Each halyard passes a small sheave on a lead screw on the deck, motorised with ±0.25 m range. An inclinometer on each wing top bar levels the bar automatically before docking. This also takes out uneven heating, rope creep, and any port/starboard difference.
+  2. **Trim sheaves.** Each halyard passes a small sheave on a lead screw on the base frame, motorised with ±0.25 m range. An inclinometer on each wing top bar levels the bar automatically before docking. This also takes out uneven heating, rope creep, and any port/starboard difference.
   3. **Sprung docks.** Each dock has ~60 mm of spring travel, so the first cone to arrive rides up until the second latches. Both limit switches must read latched before the halyards are eased. The same applies on release.
 - **Fitting the ropes during jack-up:** the halyards are rove through the top yard first, and the winch pays out as the mast rises. Each **flat-pack section is unfolded around the 4-rope bundle** at the jack frame before its third chord is pinned, so the ropes end up inside every section and nothing is threaded at height.
-- **Alternative: send power, not rope.** A winch at the yard, with only a power cable up the mast, gives short ropes but puts the motor and brake at 100 m. The winch is rarely used (the wings sit on docks), so it stays on the deck for ground access. In the turret option (section 9) rope cannot cross the turret bearing, so the winch rides on the turret.
+- **Alternative: send power, not rope.** A winch at the yard, with only a power cable up the mast, gives short ropes but puts the motor and brake at 100 m. The winch is rarely used (the wings sit on docks), so it stays on the base frame for ground access. In the turret option (section 9) rope cannot cross the turret bearing, so the winch rides on the turret.
 
 **Docking latches (wings off the halyards when up)**
 - At each halyard point the top bar carries a **cone**, which seats in a **dock** under the yard.
@@ -296,14 +298,14 @@ The motor never drives the yard, which is fixed to the mast. It only pulls the h
   - *Lowering:* hoist ~50 mm again and the latch toggles open, then lower.
 - Once docked, the halyards are eased to a light holding tension (~0.1 kN). **The wing weight sits on the yard, not on the halyards or the winch brake**, so wire creep and brake load are avoided while the array operates. A limit switch at each dock confirms latched or open.
 
-**Panel elevation winch (on the deck at the mast base)**
+**Panel elevation winch (on the rotating base frame)**
 - **One drive for all 4 halyards**, so both wings always move together (section 4, Balance):
   - **4 grooved traction sheaves** (Ø0.4 m, 3 wraps each) on **one shaft**. Constant-diameter traction sheaves give **exactly equal stroke** on all 4 halyards, so the bars stay level whatever length is stored.
   - **4 storage reels**, each with a slip clutch that keeps the rope just taut behind its traction sheave, and a level-wind guide.
 - **Drive:** about 4.8 rpm at the sheaves (0.1 m/s), ~890 N·m.
   - **2 brushless motors** (~0.5 kW each, either one can do the job) through a ~600:1 planetary gearbox.
   - A **spring-applied fail-safe brake**, and a **hand-crank socket** for an EVA tool as the last-resort backup.
-- **Controls:** load cells on all 4 halyards give balance monitoring and the interlock (section 4). Encoders give position, so the trays and docks are approached slowly. The winch has a dust-sealed housing on the deck.
+- **Controls:** load cells on all 4 halyards give balance monitoring and the interlock (section 4). Encoders give position, so the trays and docks are approached slowly. The winch has a dust-sealed housing on the base frame.
 - **Power** at 0.1 m/s with 70% efficiency is ~0.65 kW: trivial next to the ~350 kW the wings make.
 
 **No panel tilt drive is needed.** At the poles the Sun stays within ~1.5° of the horizon, and vertical panels lose only cos 1.5° ≈ 0.03%. "Elevation" here means only raising and lowering the wings.
@@ -326,7 +328,221 @@ Layout rules:
 - **Put them on a line along the ridge crest**, so they line up with the Sun only twice per lunar day.
 - **Stagger the heights** of neighbours by more than the array height, so their arrays don't overlap in the sky. Then a neighbour's shadow is only its thin mast, which costs well under 1%.
 
-## 5. Running gear at ground level (low friction, dust tolerant)
+## 5. Base bearing, drive and rotating base frame
+
+![Base: bearing cartridge, drive and base frame](base.svg)
+
+**Why a single bearing is enough.** The strut tripod and stays carry all tipping, quake and wing-imbalance loads at the collars. So the mast foot is effectively a **pin**: it only has to carry the weight (~10 kN), keep the foot centred, and turn. A rail turntable (Appendix A) did those jobs with ~5 t of rail, piers, bogies, deck and kingpin.
+
+**Foundation (fixed)**
+- A **~2 x 2 m pad** of compacted and sintered regolith (or regolith-filled gabions) under a bolted **foundation frame** (Ti/steel, ~0.3 t, in 2 freight pieces). Bearing pressure ~2.5 kPa, trivial for compacted regolith.
+- The frame carries:
+  - the **bearing housing** with its **spherical seat**, so the mast can settle plumb within ±1° as the collars set it;
+  - the **2 drive motors**;
+  - the **stator of the slip ring**;
+  - **lugs for the 3 ground ties** (their pulls cancel at the centre);
+  - the **jack-frame** mounting.
+- The bearing sits ~1 m above the regolith, out of the near-surface dust. A **brush skirt** on the rotating base frame hangs over the housing.
+
+**Base bearing cartridge**
+- A **crossed-roller slewing ring, Ø ~0.6 m, with an internal gear**: one ring carries axial, radial and tilting loads, and is captive against uplift.
+- **Load** ~9.9 kN down (weight ~11.5 kN + stay pull-down 4.0 − strut push-up 5.7), plus small radial and quake loads. Rings this size are rated for well over 100 kN, so it runs very lightly loaded.
+- **Vacuum and dust:**
+  - Hybrid rollers (Si₃N₄) on steel races, with sputtered MoS₂/WS₂ dry film.
+  - A labyrinth seal plus a metal bellows boot.
+  - No grease or oil.
+- **Second rotation path (no single-point seizure):** the outer race sits in a dry plain-bearing sleeve in the cartridge housing (DLC-coated Ti on ceramic). If the rollers ever lock, the whole ring turns in its sleeve at a slightly higher torque. The drive's current reading flags it.
+- **Hollow centre** (Ø ~0.25 m) for the slip ring / rotary transformer and the signal cables.
+
+**Drive**
+- **Running torque ~35 N·m:** ~15 N·m in the base bearing plus ~20 N·m from the two collars. The mechanical power is microwatts.
+- **2 worm-drive gearmotors** (either one enough), each driving a pinion in the bearing's internal gear. Worms are **self-locking**, so the mast holds position with no brake power and is parked by simply stopping.
+- Sized for ~500 N·m with large margin. There are no wheels in dust, so there is no kN·m breakaway torque any more.
+- **Collar protection gets simpler:** with drive torque this low, each motor carries a **mechanical slip clutch set at ~250 N·m**. It backs up the electronic collar-torque interlock (V-link load pins, ~200 N·m), and neither the base drive nor a stuck collar can wind the mast round more than ~3°.
+
+**Rotating base frame**
+- A light CFRP/Ti platform, **Ø ~3 m**, clamped to the bottom mast section ~1.5 m above the ground. It turns with the mast. ~0.6 t, in 3 freight pieces. It carries:
+  - the **panel elevation winch** with its 4 trim sheaves (section 4a), next to the mast's rope-entry window;
+  - **power conditioning** (combiners, DC/DC) feeding the **slip-ring rotor**;
+  - **drive and sensor electronics** and cameras looking at the bearing, the trays and the winch;
+  - a **grating walkway** round the mast for suited crew and robots.
+
+**Swapping the base bearing (rare, planned)**
+1. Park the mast at any azimuth (the worms hold it).
+2. The **jack frame**, left bolted to the foundation after erection, lifts the mast ~10 mm at its bottom-section jack lugs. The collars and tripod hold it upright, and only ~10 kN is lifted.
+3. Unbolt the foot plate from the rotating race and the cartridge from the seat. Slide the cartridge out sideways on its rails with the **service cart**, slide the spare in, bolt up, lower.
+4. About one supervised shift. The array stops tracking only during the swap.
+
+## 5b. Bearing and joint schedule
+
+Only **three bearing sets rotate in service**: the base bearing and the 2 collars. Everything else is static in service and moves only during installation or maintenance, or by tiny thermal amounts.
+
+| # | Joint | Relative motion | Load (Moon) | Type |
+|---|---|---|---|---|
+| 1 | **Base bearing** | Rotating, ~0.5°/h, always | **~9.9 kN** down; small radial and quake loads | Ø ~0.6 m crossed-roller slewing ring, hybrid rollers, dry film, sealed; plain-sleeve second path; swappable cartridge |
+| 2 | **Upper collar** (62 m, 6 cartridges) | Rotating (mast inside a stationary collar) | Stay pull-down ~4 kN total, ~0.7 kN per thrust roller; small radial | Roller cartridges with dual rotation paths; torque read by the V-link load pins |
+| 3 | **Strut collar** (35 m, 6 cartridges) | Rotating | Strut push-up ~5.7 kN total, ~0.9 kN per lower thrust roller | Same cartridge design as the upper collar |
+| 4 | Base spherical seat | No rotation; settles the bearing plumb (±1°) | ~9.9 kN | Spherical plain seat, dry film |
+| 5 | Drive pinions and worms (2) | Rotating, always (very slowly) | ~35 N·m running, slip clutch at ~250 N·m | Self-locking worm gearmotors, pinion in the ring's internal gear |
+| 6 | **Strut A-frame ends** (6 tubes, 2 ends each) | **Static in service.** Swing only during the scissor erection; thermal micro-motion after | ~1.25 kN per tube | Spherical plain bearings, dry film. They hardly move, so the concern is fretting, not wear |
+| 7 | **V-links** (3 x 2 pins, upper collar) | Static in service; hinge only during installation | Stay tension 1.5 to 3 kN; couple ≤ ±0.2 kN at the interlock limit | Pins in lugs; instrumented load pins |
+| 8 | Stay and tie terminations, foot pads | Static (tensioners adjusted occasionally) | 1.5 to 3 kN | Screw tensioners + load cells |
+| 9 | **Top yard** at 100 m | **None:** fixed to the mast, turns with it | Wings + yard ~5 kN down, through topping lifts into the mast top, then down the mast to the base bearing | Bolted joint, no bearing |
+| 10 | Halyard sheaves (4, top yard) | Only when lowering and raising the wings | ~1.1 kN per halyard | Sheaves on dry-lubricated bushings |
+
+## 6. Spares on site
+
+1 base bearing cartridge (with seat), 1 worm-drive motor unit, 1 slip clutch, slip-ring brush cartridges, 2 collar roller cartridges, 1 stay cable, 1 V-link with load pins, 1 tie with tensioner, 1 strut section, 4 concertina packs, 1 ballast pallet frame (filled with local regolith).
+
+## 7. Installation equipment and sequence (human supervised)
+
+Everything is assembled at the base (on the foundation, inside the jack frame) and raised. A crew member (EVA, or in a pressurised rover nearby) supervises each step and signs off every hold point. Machines do the lifting.
+
+| # | Equipment | What it does |
+|---|---|---|
+| E1 | **Foundation rig** | Compacts or sinters the central pad and sets the foundation frame and bearing housing: the datum for everything else. |
+| E2 | **Radius arm ("compass")** | Arm on the foundation datum with a laser level, encoder and rangefinder. It lays out the 3 foot-pad sites at 30 m and the landing-tray legs. |
+| E3 | **Bearing service cart** | Carries the base bearing cartridge and slides it in and out of the housing on its rails (installation and swaps). |
+| E4 | **Foot-pad and tie layer** | Compacts or sinters the 3 foot pads and lays the 3 ground ties from the central foundation out to the feet. No pull-out anchors needed. |
+| E5 | **Mast jack-up frame** | Bolts to the foundation frame around the bearing and lifts the whole mast one 3 m section at a time; the new section is pinned in at the bottom. Peak lift ~10 kN. It stays afterwards for base-bearing swaps. |
+| E6 | **Tie and wire winches with load cells** | One at each foot. They control the ties (which pull the strut feet in as the mast rises) and the wires, and keep the mast plumb. Tensions are shown live on a supervisor tablet. |
+| E7 | **Mast climber robot** | Fits and checks the diamond stays and collar cartridges at height. Later used for inspection and maintenance. |
+| E8 | **Wing winch** | One winch on the rotating base frame with 4 linked halyard drums (both wings always move together), brake and halyard load cells. |
+| E9 | **Landing trays** | Two light trays on short ground legs along the maintenance azimuth; the packs fold into them on lowering and unfold from them on raising. They double as storage for spare packs. |
+
+**Sequence**
+1. Survey and clear the site. Make the central pad and set the foundation frame and bearing housing (E1). Lay out the 3 foot sites and the tray legs with the radius arm (E2); prepare the pads and lay the ties (E4).
+2. Slide the base bearing cartridge into its housing (E3), fit the 2 drive units and the slip-ring stator. Check the bearing turns by hand.
+3. Bolt the jack frame (E5) to the foundation frame around the bearing.
+4. Fit the **top yard first**, on the topmost mast section at the base:
+   - **unfolded and horizontal**, at the maintenance azimuth,
+   - topping lifts set and tensioned,
+   - all 4 halyards rove through their sheaves and led to the wing winch, which pays them out as the mast rises.
+
+   It then simply rides up. During jack-up only the stays and struts are on the mast, and both are always below the yard, so it cannot foul anything and nothing has to be unfolded at height. The wings are not on the mast during jack-up. **Build it as it rises:** every later section goes in at the base already in its final form. The diamond-spreader section, for example, is fitted with its spreaders open (12 m across) and its stays connected.
+5. **Jack up, with a scissor action.** Each collar is fitted around the mast at the base (3 segments), clamped to its band, and rides up with the mast.
+   - Up to ~43 m the mast stands free in the jack frame (section 10.3). When the upper-collar band reaches the jack frame, the **upper collar** goes on, with its 3 V-links already shackled to their stay cables, which are paid out from the foot winches as it rises. Until the struts are in, these cables act as light temporary guys (a few hundred N). Each foot winch is ballasted with regolith bags so it never needs a pull-out anchor.
+   - When the strut band reaches the jack frame, the **strut collar** goes on. The 3 A-frame struts are pinned to its torque brackets while lying flat on the ground, pointing outward, with their feet on skid dollies.
+   - As the mast keeps rising, the struts swing up and the tie winches (E6) **pull the feet in** along the ground, from 46 m to their 30 m pads. Low gravity keeps the strut and dolly loads tiny.
+   - At final height, the feet drop onto their pads. The stay cables and ties are trimmed to final tension; the V-links line up with their cables by themselves. The clamp pins are pulled. The bottom section is bolted to the bearing's rotating race, and the **rotating base frame** is clamped on ~1.5 m up. From then on the mast turns freely on the base bearing and in both collars.
+6. At full height (the top yard is already rigged), park at the maintenance azimuth. Shackle both wing top bars, waiting at the trays, to their halyards, set the folded packs in the trays and latch them to their hangers (all 16, or as many as have arrived, in matched port/starboard pairs). **Raise both wings together** (E8, E9); the packs unfold as they lift. More packs can be added later by the same lower, latch and raise cycle.
+7. Trim wire and tie tensions to plumb the mast and take out thermal bow. Connect the harness to the slip ring, commission the worm drives and slip clutches, start tracking.
+
+Design rules for every part: captive fasteners, one tool size, alignment cones, grapple fixtures, and no single piece heavier than ~150 kg-weight on the Moon without lifting gear.
+
+## 8. Environment checklist
+
+| Hazard | Response |
+|---|---|
+| Terrain and neighbour shadows | Array at the top of a 100 m+ mast; site illumination study sets the height; spacing and stagger rules (section 4b) |
+| Temperature swings, one-sided sunlight | CFRP mast and struts, mast behind the blanket, spring tensioners on wires and ties, steady sun-tracking gradient trimmed by wire tension |
+| Cold welding in vacuum | Dissimilar or coated mating surfaces, dry lubricants in the base bearing and on all collar rollers |
+| Abrasive, electrostatic dust | Only one moving part at ground level: the sealed base bearing (labyrinth + bellows), ~1 m up, under a brush skirt. Nothing rolls on regolith. Collars and array are high above most lofted dust |
+| Moonquakes | Strut tripod carries lateral load; balanced rig; lower thrust rollers in the collars; the crossed-roller base bearing is captive against uplift |
+| Micrometeoroids | Damaged packs lowered and exchanged one at a time; doubled wires; struts are thick-walled tubes, inspected by the climber |
+| UV and radiation on cables | Steel wire rope or coated CFRP rod, not bare aramid or polymer fibre |
+| Regolith settlement | Shimmable foundation frame and foot pads; the spherical seat lets the mast stay plumb; wire and tie tensions monitored and re-trimmed |
+
+## 9. Trade study: whole mast turns (baseline) vs top turret (set aside)
+
+![Whole mast turns vs top turret](turret-trade.svg)
+
+**Option B, top turret.** The whole mast below ~64 m is **fixed** to a foundation at the base. A single **turret bearing** at ~64 m, just above the upper bracing, carries everything that turns: the upper mast (64 to 108 m), diamond stays, top yard and both wings. The drive, slip ring and wing winch move up onto the turret.
+
+| | **A. Whole mast turns on a base bearing (baseline, rev 20)** | **B. Top turret (set aside)** |
+|---|---|---|
+| What turns | Whole mast + wings + base frame, ~7.1 t (~11.5 kN) | Upper mast + yard + wings, **~5 t (~8 kN)** |
+| Rotating bearing sets | Base bearing (Ø0.6 m) + 2 collars (12 roller cartridges) | **1 turret bearing** (~Ø2 m, 8 cartridges) |
+| Hardware difference | n/a | B drops the 2 roller collars, V-links and collar-torque interlock (~1 t), but adds a Ø2 m bearing, drive and winch at 64 m |
+| Bracing | Stays and A-frame struts on stationary collars around a turning mast | Stays and struts bolt **straight onto the fixed mast**. No wind-up, so the A-frames could revert to single struts (the fixed mast foot carries the small drive torque) |
+| Groundwork | One foundation pad, plus the strut feet | Same |
+| Dust exposure of moving parts | One sealed bearing ~1 m above the ground | **None**: every moving part is at 64 m |
+| Turret bearing loads | n/a | Normal: ~1 kN per cartridge. Quake (0.1 m/s², ~12 kN·m): ±3 kN. One wing landed alone (~21 kN·m): ±5 kN. A crossed-roller ring or 8 collar-style cartridges rated ~6 kN |
+| Access to moving parts | **From the ground** (base bearing, drive, slip ring, winch) | **At 64 m.** But a fixed mast can carry a permanent **service lift / climber rail** that a turning mast cannot, so access improves for the parts that are high up anyway |
+| Power and cables | Slip ring through the base bearing; everything turns with the mast | Slip ring at the turret; cables run down the fixed mast |
+| Wing lowering | Winch on the rotating base frame | Winch on the turret (halyards must not cross the turning joint). Trays and the maintenance azimuth are unchanged |
+| Failure modes | Collar seizure / wind-up (V-links, interlock, slip clutch); base bearing single point (second rotation path + swappable cartridge) | Turret seizure, which stops tracking (the collar measures there disappear, but the bearing is a single point); the drive and slip ring are at height |
+| Installation | Bearing cartridge on one pad; collars ride up with the mast | Simpler groundwork. The turret assembly is fitted at the base on its mast section and rides up with the jack-up; no collars, so the bracing heads are just lugs on mast sections |
+| Fits the original brief? | Partly: whole platform turns at ground level; no rails since rev 20 | No |
+
+**Assessment.** Since rev 20 the gap is small. B saves ~2 t and the collars, but puts the only rotating bearing, the drive, the slip ring and the winch at 64 m. A keeps all of them reachable from the ground and needs nothing new at height. **A is the baseline. B is set aside** and can be reopened if collar life testing disappoints.
+
+## 10. Transport packaging and mast erection
+
+![Packaging and erection](erection.svg)
+
+### 10.1 The freight constraint
+
+Mass and cost are acceptable. **Package dimensions are the binding limit.** The launcher is not the tight part:
+- Falcon 9's fairing has a usable envelope of roughly 4.6 m diameter x 11 m.
+- Starship's payload volume is roughly 8 m diameter x 17 m or more.
+
+The tight part is the **lunar lander's cargo deck and unloading gear**, and that is not chosen yet. So every part is cut to fit one conservative **standard freight module: ≤ 3.2 m x 1.5 m x 1.5 m**. It suits small cargo landers, packs many to a large lander, and needs nothing longer than one person-and-robot can handle. If the chosen lander allows bigger pieces, the same parts simply ship with fewer joints.
+
+| Item | Size as designed | Cut for freight | Packed size |
+|---|---|---|---|
+| Mast (108 m) | Triangular lattice, 1.4 m face | **36 flat-pack sections**, each 3 m long (see 10.2) | ~3 x 1.4 x 0.12 m each; 36 stack to ~4.3 m: **3 modules** |
+| Struts (6 tubes, 46 m) | CFRP tube Ø0.3 m | **Tent-pole segments**, 15 x ~3.1 m per tube, sleeve joints, internal steel tensioning cord | 90 tubes, ~25 per module: **4 modules** |
+| Base bearing cartridge, seat, foundation frame | Ø0.6 m ring; frame ~2 x 2 m | Cartridge as-is; frame in 2 pieces | 1 module |
+| Rotating base frame (Ø3 m) | Light platform | 3 pieces | 1 module |
+| Top yard (34 m) and wing top bars (2 x 15 m) | Trusses | ~3 m bolted truss sections | 1 to 2 modules |
+| Landing trays (2 x 15 m) | Light frames | 3 m sections | 1 module |
+| Solar packs (16) | 2 x 30 m deployed | Folded packs ~2 x 1 x 0.7 m (1 to 3 m wide all fit) | 2 per module: **8 modules** |
+| Stay cables, ties, halyards | 68 m and less | On reels | 1 module |
+| Collars, V-links, jack frame, winches, drives | ≤ ~2 m | As-is (collar rings in 3 segments, as designed) | 3 modules |
+
+Roughly **22 freight modules** in total for one rig.
+
+### 10.2 Mast: segments vs telescopic vs deployable
+
+| Option | Packaging | Erection | Verdict |
+|---|---|---|---|
+| Rigid bolted lattice sections (as before) | Poor: each 3 m section fills a whole 3 x 1.4 x 1.2 m volume and cannot nest | Base jack-up, conventional | Works, but ~10 modules of mostly air |
+| **Flat-pack lattice sections** | Each section's 3 faces are hinged along two chords and fold flat (~0.12 m thick). **35 sections in ~3 modules** | At the jack frame each section unfolds into its triangle, the open edge is pinned (captive pins, one tool), and it is pushed into the bottom of the mast | **Baseline.** Low risk, ~3x better packing, simple to inspect |
+| Telescopic (nested tubes) | Only if each stage ≤ ~3 m, so 105 m would need ~35 nested stages | Stiffness and overlap losses grow with every stage | **Not practical** for the main mast. Fine for short items (e.g. a 2 to 3 stage service-lift guide) |
+| Deployable articulated mast (ADAM-type, as flown on SRTM: a 60 m mast folded to about 1/20 of its length in a canister) | Excellent: 105 m might stow in a canister ~5 to 6 m long, ~1.2 m wide, or two shorter ones | **Deploys bay by bay upward from a canister at the base, which is a jack-up in itself** | Strong future option. It needs a gravity-rated version (SRTM's was for zero g), and has many joints to qualify against dust and cold welding |
+| On-site beam builder (truss formed from coiled strip at the base and pushed up) | Best (dense coils) | Continuous extrusion upward | Long-term; low technology maturity |
+
+### 10.3 Erection: bootstrapping height with top weight
+
+**Rules**
+1. **Build from the bottom.** All assembly happens at the jack frame at the base. Top weight never grows as the mast gets taller; only the jack load does. No crane, no work at height.
+2. **Fit the top yard first, and keep the top light.** The top yard goes on the very first section, unfolded, horizontal and fully rigged (topping lifts set, halyards rove), and rides up the whole way. The diamond spreaders are fitted open when their section reaches the jack frame, 24 m below the top. The top weight is **~1 t (~1.6 kN)**: top section + yard + spreaders. Wings and packs go up last on their halyards (section 4). The turret option (section 9) rides up its turret on its own mast section in the same way.
+3. **Guy as soon as possible, and from the ground.** The stays come from winches at the feet, so tensioning is always done at ground level.
+
+**Stages**
+| Mast top height | What braces it | Check |
+|---|---|---|
+| 0 to ~43 m | **Free-standing** in the jack frame (2 guide levels 3 m apart). The upper-collar band is still below the jack frame | Axial ~3.4 kN against ~105 kN cantilever buckling (31x margin). A 0.1 m/s² quake gives ~6.6 kN·m, ~2.2 kN on the guides. No wind, so this is comfortable |
+| ~43 m | Upper collar fitted at the jack frame around its band; V-links shackled to their stay cables | Collar clamped (transport pin), rides up |
+| 43 to ~70 m | Stays from the foot winches to the upper collar act as **erection guys**; winches pay out to keep the mast plumb | Stays at a few hundred N |
+| ~70 m (strut band at the jack frame) | Strut collar fitted; A-frame struts pinned to it, lying flat, feet on skid dollies | Scissor action starts |
+| 70 to 108 m | Struts swing up as the tie winches pull the feet in to their pads | Feet land at 30 m |
+| 108 m | Clamp pins pulled, stays/ties trimmed, wings hoisted on the pre-rove halyards | Peak jack force ~10 kN (mast 2.5 t + top 1 t + stay pull-down) |
+
+At ~1 hour per 3 m section, the mast goes up in roughly **35 working hours** of supervised jacking.
+
+## 11. Alternatives worth comparing
+
+- **Ground guys with tension anchors (rev 3):** 9 guys, 3 collars, anchors at 40 m. Needs proof-loaded pull-out anchors in regolith, which are uncertain and slow to install. The rev 4 tripod avoids them.
+- **Rotate only the top** (VSAT / LUNARSABER style): see the full trade study in section 9 (option B).
+- **Rail turntable base (revs 2 to 19):** 3 bogies on a Ø12 m rail with a spoked deck. It gave tyre-level redundancy and ground-level wheel and track swaps, at ~3.7 t more mass and with wheels in the dust. Superseded by the single base bearing; see Appendix A.
+- **Several shorter rigs vs one tall one:** depends on the site's illumination-vs-height curve.
+
+## 12. Next steps
+
+1. **Site illumination study** on LOLA data: sunlight hours vs array height at candidate spots; pick the height.
+2. Mast and tripod analysis: strut and mast buckling, pre-tension, thermal bow, moonquake response, every jack-up and scissor stage.
+3. Life tests in vacuum, thermal cycling and dust (LHS-1, NU-LHT simulants) for the collar cartridges and the base bearing, including its plain-sleeve second rotation path.
+4. Prototype the jack-up with collars, the strut scissor and tie winches at small scale; rehearse with suited operators.
+5. Concertina pack trials: self-folding into a tray and unfolding on lift (fold direction, hinge springs, panel edge contact), cycles in vacuum and cold, pack exchange with a suited crew.
+6. Confirm the actual lander's freight envelope and re-cut the parts list (section 10) to it; build and fold a flat-pack mast section and a tent-pole strut, and test their assembly with suited operators.
+
+## Appendix A. Superseded: rail turntable base (revs 2 to 19)
+
+Kept for reference. In rev 20 the base became a single bearing (section 5); everything below no longer applies to the baseline.
+
+### A.1 Running gear at ground level (low friction, dust tolerant)
 
 ![Bogie and rail: plan, side view and section](bogie-rail.svg)
 
@@ -371,7 +587,7 @@ The strut tripod carries all overturning and quake loads at the collars, so the 
 - Running power is milliwatts. Size the drive for breakaway in dust (~20x running force, ~1 kN tangential): a few hundred watts.
 - Power crosses the rotation through a **slip ring or rotary transformer** in the kingpin.
 
-## 5a. Deck
+### A.2 Deck
 
 ![Deck: plan and section](deck.svg)
 
@@ -443,27 +659,7 @@ The strut tripod carries all overturning and quake loads at the collars, so the 
 | Gratings | 0.24 t |
 | Skirt, trays and mounts | 0.15 t |
 
-## 5b. Bearing and joint schedule
-
-Only **three sets of bearings rotate in service**: the 6 tyres and 2 collars. Everything else is static in service and moves only during installation or maintenance, or by tiny thermal amounts.
-
-| # | Joint | Relative motion | Load (Moon) | Type |
-|---|---|---|---|---|
-| 1 | **Tyres** (3 bogies x 2) | Rotating, ~0.5°/h, always | ~3.0 kN each, vertical | Wheel cartridges: hybrid ceramic bearings, dry lube, conical tread on a flat rail head |
-| 2 | **Upper collar** (62 m, 6 cartridges) | Rotating (mast inside a stationary collar) | Stay pull-down ~4 kN total, ~0.7 kN per thrust roller; small radial | Roller cartridges with dual rotation paths; torque read by the V-link load pins |
-| 3 | **Strut collar** (35 m, 6 cartridges) | Rotating | Strut push-up ~5.7 kN total, ~0.9 kN per lower thrust roller | Same cartridge design as the upper collar |
-| 4 | Kingpin | Rotating, but radial centring only | A few hundred N (quake, misalignment) | Slewing ring ~1.2 m, with the slip ring / rotary transformer |
-| 5 | **Mast foot** on the deck centre | **No rotation** (turns with the deck); small tilt only | **~9 kN** vertical: mast + wings + top yard (~10.6 kN), plus stay pull-down (~4 kN), less strut push-up (~5.7 kN) | **Spherical seat** (ball joint), dry-film plain bearing; torque through a dog coupling |
-| 6 | Bogie pivots (3) | Rocking ±0.5°, ±20 mm radial float | ~6.0 kN each | Spherical pivot with hard stops |
-| 7 | Uplift rollers, support shoes | None in service (standby) | ~0 (quake / fault only) | Rollers / screw shoes |
-| 8 | **Strut A-frame ends** (6 tubes, 2 ends each) | **Static in service.** Swing only during the scissor erection; thermal micro-motion after | ~1.25 kN per tube | Spherical plain bearings, dry film. They hardly move, so the concern is fretting, not wear |
-| 9 | **V-links** (3 x 2 pins, upper collar) | Static in service; hinge only during installation | Stay tension 1.5 to 3 kN; couple ≤ ±0.2 kN at the interlock limit | Pins in lugs; instrumented load pins |
-| 10 | Stay and tie terminations, foot pads | Static (tensioners adjusted occasionally) | 1.5 to 3 kN | Screw tensioners + load cells |
-| 11 | **Top yard** at 100 m | **None:** fixed to the mast, turns with it | Wings + yard ~5 kN down, through topping lifts into the mast top, then down the mast to the mast foot | Bolted joint, no bearing |
-| 12 | Halyard sheaves (4, top yard) | Only when lowering and raising the wings | ~1.1 kN per halyard | Sheaves on dry-lubricated bushings |
-| 13 | Drive pinions (2) | Rotating, always | ≤ ~1 kN at breakaway | Pinion on a rack on the rail web |
-
-## 6. Track (raised, segmented, swappable)
+### A.3 Track (raised, segmented, swappable)
 
 - **Raised rail** on piers ~0.5 m above the regolith, away from near-surface dust and with room to work underneath.
 - Rail: hollow box beam with a bolted, replaceable **rail head strip**.
@@ -483,155 +679,4 @@ Only **three sets of bearings rotate in service**: the 6 tyres and 2 collars. Ev
 2. Release the spherical pivot, wind both support shoes up, roll the bogie out along the rail into the gap and lift it off. Fit the spare the same way.
 3. Lower, remove the stand.
 
-**Spares on site**: 4 wheel cartridges, 2 uplift roller cartridges, 1 bogie, 2 rail segments, 6 rail head wear strips, 1 drive unit, slip-ring brush cartridges, 2 collar roller cartridges, 1 stay cable, 1 V-link with load pins, and 1 tie with tensioners, 1 strut section, 4 concertina packs, 1 ballast pallet frame (filled with local regolith).
 
-## 7. Installation equipment and sequence (human supervised)
-
-Everything is assembled at deck level and raised. A crew member (EVA, or in a pressurised rover nearby) supervises each step and signs off every hold point. Machines do the lifting.
-
-| # | Equipment | What it does |
-|---|---|---|
-| E1 | **Kingpin driver** | Sets the central kingpin foundation: the datum for everything else. |
-| E2 | **Radius arm ("compass")** | 6 m arm on the kingpin with a laser level, encoder and pier socket. It places and levels the 12 rail piers. With an extension and laser rangefinder, it also lays out the 3 foot-pad sites at 30 m. |
-| E3 | **Rail-riding installer cart** | Lays rail segments from the installed rail; later the maintenance cart (tyre, wear strip and segment swaps, jack stand). |
-| E4 | **Foot-pad and tie layer** | Compacts or sinters the 3 foot pads and lays the 3 ground ties from the kingpin foundation out to the feet, under the raised rail. No pull-out anchors needed. |
-| E5 | **Mast jack-up frame** | Sits on the deck around the kingpin and lifts the whole mast one 3 m section at a time; the new section is pinned in at the bottom. Peak lift is ~8 kN (whole mast + array) plus bracing pre-tension. |
-| E6 | **Tie and wire winches with load cells** | One at each foot. They control the ties (which pull the strut feet in as the mast rises) and the wires, and keep the mast plumb. Tensions are shown live on a supervisor tablet. |
-| E7 | **Mast climber robot** | Fits and checks the diamond stays and collar cartridges at height. Later used for inspection and maintenance. |
-| E8 | **Wing winch** | One winch on the deck with 4 linked halyard drums (both wings always move together), brake and halyard load cells. |
-| E9 | **Landing trays** | Two light trays at deck height along the maintenance azimuth; the packs fold into them on lowering and unfold from them on raising. They double as storage for spare packs. |
-
-**Sequence**
-1. Survey and clear the site. Set the kingpin (E1). Lay out the 3 foot sites with the radius arm (E2); prepare the pads and lay the ties (E4).
-2. Set the 12 rail piers and lay the ring (E2, E3). Hold point: ring flat to ±2 mm.
-3. Place the 3 bogies, then assemble the deck (12 ring-girder segments + 12 spokes) on them. Check the deck turns by hand and all 6 support shoes are at their 3 mm standoff.
-4. Fit the jack-up frame (E5). Fit the **top yard first**, on the topmost mast section at deck level:
-   - **unfolded and horizontal**, at the maintenance azimuth,
-   - topping lifts set and tensioned,
-   - all 4 halyards rove through their sheaves and led to the wing winch, which pays them out as the mast rises.
-
-   It then simply rides up. During jack-up only the stays and struts are on the mast, and both are always below the yard, so it cannot foul anything and nothing has to be unfolded at height. The wings are not on the mast during jack-up. **Build it as it rises:** every later section goes in at deck level already in its final form. The diamond-spreader section, for example, is fitted with its spreaders open (12 m across) and its stays connected.
-5. **Jack up, with a scissor action.** Each collar is fitted around the mast at deck level (3 segments), clamped to its band, and rides up with the mast.
-   - Up to ~43 m the mast stands free in the jack frame (section 10.3). When the upper-collar band reaches the deck, the **upper collar** goes on, with its 3 V-links already shackled to their stay cables, which are paid out from the foot winches as it rises. Until the struts are in, these cables act as light temporary guys (a few hundred N). Each foot winch is ballasted with regolith bags so it never needs a pull-out anchor.
-   - When the strut band reaches the deck, the **strut collar** goes on. The 3 A-frame struts are pinned to its torque brackets while lying flat on the ground, pointing outward, with their feet on skid dollies.
-   - As the mast keeps rising, the struts swing up and the tie winches (E6) **pull the feet in** along the ground, from 46 m to their 30 m pads. Low gravity keeps the strut and dolly loads tiny.
-   - At final height, the feet drop onto their pads. The stay cables and ties are trimmed to final tension; the V-links line up with their cables by themselves. The clamp pins are pulled, and from then on the mast turns freely in both collars.
-6. At full height (the top yard is already rigged), park at the maintenance azimuth. Shackle both wing top bars, waiting at the trays, to their halyards, set the folded packs in the trays and latch them to their hangers (all 16, or as many as have arrived, in matched port/starboard pairs). **Raise both wings together** (E8, E9); the packs unfold as they lift. More packs can be added later by the same lower, latch and raise cycle.
-7. Trim wire and tie tensions to plumb the mast and take out thermal bow. Connect the harness to the slip ring, commission the drive, start tracking.
-
-Design rules for every part: captive fasteners, one tool size, alignment cones, grapple fixtures, and no single piece heavier than ~150 kg-weight on the Moon without lifting gear.
-
-## 8. Environment checklist
-
-| Hazard | Response |
-|---|---|
-| Terrain and neighbour shadows | Array at the top of a 100 m+ mast; site illumination study sets the height; spacing and stagger rules (section 4b) |
-| Temperature swings, one-sided sunlight | CFRP mast and struts, mast behind the blanket, spring tensioners on wires and ties, steady sun-tracking gradient trimmed by wire tension |
-| Cold welding in vacuum | Dissimilar or coated mating surfaces, dry lubricants on all rollers |
-| Abrasive, electrostatic dust | Raised rail, scrapers, seals, skirt at ground level; collars and array are high above most lofted dust |
-| Moonquakes | Strut tripod carries lateral load; balanced rig; lower thrust rollers in the collars and uplift rollers at the base |
-| Micrometeoroids | Damaged packs lowered and exchanged one at a time; doubled wires; struts are thick-walled tubes, inspected by the climber |
-| UV and radiation on cables | Steel wire rope or coated CFRP rod, not bare aramid or polymer fibre |
-| Regolith settlement | Adjustable piers and foot pads; wire and tie tensions monitored with load cells and re-trimmed |
-
-## 9. Trade study: ground turntable (baseline) vs top turret
-
-![Ground turntable vs top turret](turret-trade.svg)
-
-**Option B, top turret.** The whole mast below ~64 m is **fixed** to a foundation at the base. A single **turret bearing** at ~64 m, just above the upper bracing, carries everything that turns: the upper mast (64 to 108 m), diamond stays, top yard and both wings. The drive, slip ring and wing winch move up onto the turret.
-
-| | **A. Ground turntable (baseline, rev 15)** | **B. Top turret** |
-|---|---|---|
-| What turns | Whole mast + wings + deck, ~11.1 t (~18 kN) | Upper mast + yard + wings, **~5 t (~8 kN)** |
-| Rotating bearing sets | 6 tyres, kingpin, 2 collars (12 roller cartridges), drive pinions | **1 turret bearing** (~Ø2 m, 8 cartridges), turret drive |
-| Hardware removed by B | n/a | Rail ring + 12 piers, 3 bogies, deck, kingpin, 2 roller collars, V-links, collar-torque interlock: **~7 t less landed mass** |
-| Bracing | Stays and A-frame struts on stationary collars around a turning mast | Stays and struts bolt **straight onto the fixed mast**. No wind-up, so the A-frames could revert to single struts (the fixed mast foot carries the small drive torque) |
-| Groundwork | 12-segment rail, piers levelled to ±2 mm, raised above the dust | One mast foundation pad, plus the strut feet as before |
-| Dust exposure of moving parts | Tyres, rail and drive at ground level, the main wear risk | **None**: every moving part is at 64 m, above most lofted dust |
-| Turret bearing loads | n/a | Normal: ~1 kN per cartridge. Quake (0.1 m/s², ~12 kN·m): ±3 kN. One wing landed alone (~21 kN·m): ±5 kN. A crossed-roller ring or 8 collar-style cartridges rated ~6 kN |
-| Access to moving parts | **From the ground** (tyres, drive, slip ring) | **At 64 m.** But a fixed mast can carry a permanent **service lift / climber rail** that a turning mast cannot, so access improves for the parts that are high up anyway |
-| Power and cables | Slip ring at the kingpin; everything turns with the mast | Slip ring at the turret; cables run down the fixed mast |
-| Wing lowering | Winch on the deck | Winch on the turret (halyards must not cross the turning joint). Trays and the maintenance azimuth are unchanged |
-| Failure modes | Collar seizure / wind-up; rail damage from regolith; settlement under 3 bogies | Turret seizure, which stops tracking (the collar measures there disappear, but the bearing is a single point); the drive and slip ring are at height |
-| Installation | Rail, bogies and deck to set; collars ride up with the mast | Simpler groundwork. The turret assembly is fitted at deck level on its mast section and rides up with the jack-up; no collars, so the bracing heads are just lugs on mast sections |
-| Fits the original brief? | **Yes**: platform on circular rails, replaceable wheels and track sections | No: no ground rails or wheels |
-
-**Assessment.**
-- *B is simpler:* fewer bearing sets, ~7 t lighter, no dust on moving parts, no wind-up problem, and much less precise groundwork.
-- *A's advantages:* its heaviest rotating hardware (tyres, drive, slip ring) can be reached and swapped from the ground, and it matches the original brief.
-- *Access cuts both ways.* Both options already depend on the climber robot for parts at height. A fixed mast also allows a permanent service lift, which shrinks B's access penalty.
-- *Recommendation:* carry **B as the leading alternative**. Run a short side-by-side study before freezing the design, based on:
-  - turret bearing life testing,
-  - the site's foundation conditions for one mast pad versus a levelled rail ring, and
-  - how often the drive and slip ring are expected to need service.
-
-## 10. Transport packaging and mast erection
-
-![Packaging and erection](erection.svg)
-
-### 10.1 The freight constraint
-
-Mass and cost are acceptable. **Package dimensions are the binding limit.** The launcher is not the tight part:
-- Falcon 9's fairing has a usable envelope of roughly 4.6 m diameter x 11 m.
-- Starship's payload volume is roughly 8 m diameter x 17 m or more.
-
-The tight part is the **lunar lander's cargo deck and unloading gear**, and that is not chosen yet. So every part is cut to fit one conservative **standard freight module: ≤ 3.2 m x 1.5 m x 1.5 m**. It suits small cargo landers, packs many to a large lander, and needs nothing longer than one person-and-robot can handle. If the chosen lander allows bigger pieces, the same parts simply ship with fewer joints.
-
-| Item | Size as designed | Cut for freight | Packed size |
-|---|---|---|---|
-| Mast (108 m) | Triangular lattice, 1.4 m face | **36 flat-pack sections**, each 3 m long (see 10.2) | ~3 x 1.4 x 0.12 m each; 36 stack to ~4.3 m: **3 modules** |
-| Struts (6 tubes, 46 m) | CFRP tube Ø0.3 m | **Tent-pole segments**, 15 x ~3.1 m per tube, sleeve joints, internal steel tensioning cord | 90 tubes, ~25 per module: **4 modules** |
-| Rail | Ø12 m ring | 12 segments, π m arcs (~3.1 m chord), unchanged | 1 to 2 modules |
-| Deck (Ø12 m) | Was 4 quarter-sections (~8.5 m chord: too big) | **12 ring-girder segments + 12 spokes**, each spoke in 2 x 3 m pieces | 2 modules |
-| Top yard (34 m) and wing top bars (2 x 15 m) | Trusses | ~3 m bolted truss sections | 1 to 2 modules |
-| Landing trays (2 x 15 m) | Light frames | 3 m sections | 1 module |
-| Solar packs (16) | 2 x 30 m deployed | Folded packs ~2 x 1 x 0.7 m (1 to 3 m wide all fit) | 2 per module: **8 modules** |
-| Stay cables, ties, halyards | 68 m and less | On reels | 1 module |
-| Bogies, collars, V-links, jack frame, winches | ≤ ~2 m | As-is (collar rings in 3 segments, as designed) | 3 to 4 modules |
-
-Roughly **25 freight modules** in total for one rig.
-
-### 10.2 Mast: segments vs telescopic vs deployable
-
-| Option | Packaging | Erection | Verdict |
-|---|---|---|---|
-| Rigid bolted lattice sections (as before) | Poor: each 3 m section fills a whole 3 x 1.4 x 1.2 m volume and cannot nest | Base jack-up, conventional | Works, but ~10 modules of mostly air |
-| **Flat-pack lattice sections** | Each section's 3 faces are hinged along two chords and fold flat (~0.12 m thick). **35 sections in ~3 modules** | At the jack frame each section unfolds into its triangle, the open edge is pinned (captive pins, one tool), and it is pushed into the bottom of the mast | **Baseline.** Low risk, ~3x better packing, simple to inspect |
-| Telescopic (nested tubes) | Only if each stage ≤ ~3 m, so 105 m would need ~35 nested stages | Stiffness and overlap losses grow with every stage | **Not practical** for the main mast. Fine for short items (e.g. a 2 to 3 stage service-lift guide) |
-| Deployable articulated mast (ADAM-type, as flown on SRTM: a 60 m mast folded to about 1/20 of its length in a canister) | Excellent: 105 m might stow in a canister ~5 to 6 m long, ~1.2 m wide, or two shorter ones | **Deploys bay by bay upward from a canister at the base, which is a jack-up in itself** | Strong future option. It needs a gravity-rated version (SRTM's was for zero g), and has many joints to qualify against dust and cold welding |
-| On-site beam builder (truss formed from coiled strip at the base and pushed up) | Best (dense coils) | Continuous extrusion upward | Long-term; low technology maturity |
-
-### 10.3 Erection: bootstrapping height with top weight
-
-**Rules**
-1. **Build from the bottom.** All assembly happens at the jack frame at deck level. Top weight never grows as the mast gets taller; only the jack load does. No crane, no work at height.
-2. **Fit the top yard first, and keep the top light.** The top yard goes on the very first section, unfolded, horizontal and fully rigged (topping lifts set, halyards rove), and rides up the whole way. The diamond spreaders are fitted open when their section reaches the deck, 24 m below the top. The top weight is **~1 t (~1.6 kN)**: top section + yard + spreaders. Wings and packs go up last on their halyards (section 4). The turret option (section 9) rides up its turret on its own mast section in the same way.
-3. **Guy as soon as possible, and from the ground.** The stays come from winches at the feet, so tensioning is always done at ground level.
-
-**Stages**
-| Mast top height | What braces it | Check |
-|---|---|---|
-| 0 to ~43 m | **Free-standing** in the jack frame (2 guide levels 3 m apart). The upper-collar band is still below the deck | Axial ~3.4 kN against ~105 kN cantilever buckling (31x margin). A 0.1 m/s² quake gives ~6.6 kN·m, ~2.2 kN on the guides. No wind, so this is comfortable |
-| ~43 m | Upper collar fitted at the deck around its band; V-links shackled to their stay cables | Collar clamped (transport pin), rides up |
-| 43 to ~70 m | Stays from the foot winches to the upper collar act as **erection guys**; winches pay out to keep the mast plumb | Stays at a few hundred N |
-| ~70 m (strut band at the deck) | Strut collar fitted; A-frame struts pinned to it, lying flat, feet on skid dollies | Scissor action starts |
-| 70 to 108 m | Struts swing up as the tie winches pull the feet in to their pads | Feet land at 30 m |
-| 108 m | Clamp pins pulled, stays/ties trimmed, wings hoisted on the pre-rove halyards | Peak jack force ~10 kN (mast 2.5 t + top 1 t + stay pull-down) |
-
-At ~1 hour per 3 m section, the mast goes up in roughly **35 working hours** of supervised jacking.
-
-## 11. Alternatives worth comparing
-
-- **Ground guys with tension anchors (rev 3):** 9 guys, 3 collars, anchors at 40 m. Needs proof-loaded pull-out anchors in regolith, which are uncertain and slow to install. The rev 4 tripod avoids them.
-- **Rotate only the top** (VSAT / LUNARSABER style): see the full trade study in section 9 (option B).
-- **No rail, kingpin only:** the rig is balanced and the tripod carries lateral load, so a single base slewing bearing may be enough. The rail adds redundancy and a track for the maintenance cart. Worth a trade study.
-- **Several shorter rigs vs one tall one:** depends on the site's illumination-vs-height curve.
-
-## 12. Next steps
-
-1. **Site illumination study** on LOLA data: sunlight hours vs array height at candidate spots; pick the height.
-2. Mast and tripod analysis: strut and mast buckling, pre-tension, thermal bow, moonquake response, every jack-up and scissor stage.
-3. Collar cartridge life test (vacuum, thermal cycling, dust), and tyre/rail tests (LHS-1, NU-LHT simulants).
-4. Prototype the jack-up with collars, the strut scissor and tie winches at small scale; rehearse with suited operators.
-5. Concertina pack trials: self-folding into a tray and unfolding on lift (fold direction, hinge springs, panel edge contact), cycles in vacuum and cold, pack exchange with a suited crew.
-6. Confirm the actual lander's freight envelope and re-cut the parts list (section 10) to it; build and fold a flat-pack mast section and a tent-pole strut, and test their assembly with suited operators.

@@ -1,4 +1,4 @@
-# Generates halyard-path.svg: one halyard from the deck winch, up the mast, along the yard, down to the wing.
+# Generates halyard-path.svg: one halyard from the base-frame winch, up the mast, along the yard, down to the wing.
 o = []
 A = o.append
 W, H = 1000, 640
@@ -28,13 +28,13 @@ def lab(x1, y1, x2, y2, lines, anchor='start'):
     A(f'<path d="M{x1:.0f} {y1:.0f}L{x2:.0f} {y2:.0f}" class="l"/>')
     for j, t in enumerate(lines):
         A(f'<text x="{x2+(4 if anchor=="start" else -4):.0f}" y="{y2+4+j*15:.0f}" text-anchor="{anchor}">{t}</text>')
-lab(mx - 26, deck - 14, mx - 80, deck - 50, ['1. Traction sheave', '(motor + gearbox beside it)'], 'end')
+lab(mx - 26, deck - 14, mx - 80, deck - 50, ['1. Traction sheave on the', 'rotating base frame'], 'end')
 lab(mx - 9, 330, mx - 80, 330, ['2. Up the clear centre of the', 'lattice, ceramic guide ring', 'every 3 m (~23 N rope weight)'], 'end')
 lab(mx - 9, top, mx - 80, top - 20, ['3. Turning block at', 'the yard-mast, 100 m'], 'end')
 lab(mx + 200, top + 5, mx + 200, top + 50, ['4. Inside the yard on guide rollers'])
 lab(mx + 569, top + 8, mx + 610, top + 50, ['5. End sheave', '(2 m or 17 m out),', 'turns down'])
 lab(mx + 560, top + 140, mx + 610, top + 120, ['Cone on the wing', 'top bar (docks', 'under the yard)'])
 A(f'<text x="{mx+120}" y="{deck-40}" font-size="11.5">gearbox + motors</text>')
-A(f'<text x="20" y="{H-20}" font-size="12">Deck, mast and yard turn together: no rope crosses a rotating joint. Flat-pack sections unfold around the 4-rope bundle during jack-up.</text>')
+A(f'<text x="20" y="{H-20}" font-size="12">Base frame, mast and yard turn together: no rope crosses a rotating joint. Flat-pack sections unfold around the 4-rope bundle during jack-up.</text>')
 A('</svg>')
 open('halyard-path.svg', 'w').write('\n'.join(o))

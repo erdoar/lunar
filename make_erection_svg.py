@@ -18,7 +18,7 @@ for i in range(12):
 A(f'<text x="{ox}" y="{oy+1.5*k+20}">~12 flat-packed 3 m mast sections per module;</text>')
 A(f'<text x="{ox}" y="{oy+1.5*k+36}">35 sections = 3 modules (vs ~10 rigid).</text>')
 A(f'<text x="{ox}" y="{oy+1.5*k+60}">Whole rig ≈ 25 modules: tent-pole struts,</text>')
-A(f'<text x="{ox}" y="{oy+1.5*k+76}">rail and deck segments, packs, reels.</text>')
+A(f'<text x="{ox}" y="{oy+1.5*k+76}">base bearing + base frame, packs, reels.</text>')
 
 # ---------- 2. flat-pack section unfolding
 A('<text x="20" y="330" class="t">2. Flat-pack section unfolds at the jack frame</text>')

@@ -4,7 +4,7 @@ o = []
 A = o.append
 W, H = 1180, 820
 MAST, YT, YB, HALF = 105, 100, 70, 17          # m: mast top, yard heights, half array width
-MID, UP, FOOT, RING = 35, 62, 30, 6             # m: strut collar, wire collar, foot radius, ring radius
+MID, UP, FOOT, RING = 35, 62, 30, 1.5           # m: strut collar, wire collar, foot radius, rotating base frame radius
 A(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" font-family="Helvetica, Arial, sans-serif" font-size="13">')
 A(f'<rect width="{W}" height="{H}" fill="#fff"/>')
 A('<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker>'
@@ -26,9 +26,8 @@ Z = lambda m: gy - 6 - m * e
 A('<text x="20" y="30" class="t">Elevation (bracing shown in projection)</text>')
 A(f'<rect x="10" y="{gy}" width="580" height="40" fill="url(#g)"/><line x1="10" y1="{gy}" x2="590" y2="{gy}" class="s"/>')
 # base
-A(f'<rect x="{X(-RING)}" y="{gy-12}" width="{2*RING*e}" height="8" fill="#9fb4c7" class="s"/>')
-for R in (-RING, RING):
-    A(f'<rect x="{X(R)-3}" y="{gy-5}" width="6" height="5" fill="#c0392b"/>')
+A(f'<rect x="{X(-RING)}" y="{gy-12}" width="{2*RING*e}" height="4" fill="#e67e22"/>')          # rotating base frame
+A(f'<path d="M{X(-1)} {gy} L{X(-0.4)} {gy-6} H{X(0.4)} L{X(1)} {gy} Z" fill="#7d8790"/>')       # foundation + bearing
 # bracing: the 0 deg plane projects to +30 m, the 120/240 deg planes overlap at -15 m
 ARM, BR = 8, 4   # m: torque arm reach (upper collar), A-frame bracket radius (strut collar)
 for fx, sc in ((FOOT, 1), (-FOOT / 2, -0.5)):
@@ -66,10 +65,10 @@ lab(X(1.9), Z(UP-0.9), X(12), Z(UP) - 12, ['V-link (torque lever)'])
 lab(X(0) + 9, Z(MID), X(-6), Z(MID) - 18, [f'Strut collar {MID} m'], 'end')
 lab(X(12), Z(UP * 0.6), X(16), Z(46), ['Stay cable (6 mm rope)'])
 lab(X(19), Z(MID * 0.37), X(25), Z(24), ['A-frame strut', '(2 CFRP tubes, 46 m)'])
-lab(X(20), gy - 2, X(6), gy + 26, ['Horizontal tie to kingpin foundation'])
+lab(X(20), gy - 2, X(6), gy + 26, ['Horizontal tie to central foundation'])
 lab(X(FOOT), gy - 4, X(33), gy + 46, ['Foot pad at 30 m'])
 lab(X(-HALF + 4), Z(4), X(-24), Z(14), ['Wing (packs retracted)', 'lowered on halyards'], 'end')
-lab(X(RING), gy - 8, X(14), gy - 28, ['Ø12 m ring: bogies,', 'drive, slip ring'])
+lab(X(RING), gy - 8, X(14), gy - 28, ['Single base bearing + Ø3 m', 'rotating base frame'])
 hx = X(-9)
 A(f'<line x1="{hx}" y1="{gy-12}" x2="{hx}" y2="{gy}" stroke="#222" stroke-width="2"/><text x="{hx-4}" y="{gy-4}" font-size="11" text-anchor="end">2 m person</text>')
 A(f'<line x1="{X(-26)}" y1="{Z(52)}" x2="{X(-3)}" y2="{Z(52)}" stroke="#f5b700" stroke-width="3" stroke-dasharray="7 4" marker-end="url(#ar)"/>'
@@ -95,7 +94,7 @@ for d in (0, 120, 240):
     A(f'<circle cx="{s0[0]:.1f}" cy="{s0[1]:.1f}" r="3" fill="#c87f0a"/>')
     A(f'<rect x="{ax-9:.1f}" y="{ay-9:.1f}" width="18" height="18" fill="#555"/>')
     A(f'<text x="{ax+(14 if d!=240 else -14):.1f}" y="{ay+(-8 if d==0 else 26):.1f}" text-anchor="{"start" if d!=240 else "end"}">Foot {d}°</text>')
-A(f'<circle cx="{cx}" cy="{cy}" r="{RING*k}" fill="none" stroke="#c0392b" stroke-width="3"/>')
+A(f'<circle cx="{cx}" cy="{cy}" r="{RING*k}" fill="none" stroke="#e67e22" stroke-width="3"/>')
 # array at maintenance azimuth 30/210 (measured like the guys, clockwise from up)
 for d, style in ((30, 'stroke="#2c4a7a" stroke-width="6"'), (75, 'stroke="#2c4a7a" stroke-width="3" opacity="0.35"')):
     a = math.radians(d - 90)
@@ -106,13 +105,13 @@ lab(cx + HALF * k * math.cos(a), cy + HALF * k * math.sin(a), cx + 120, cy - 150
 a = math.radians(75 - 90)
 lab(cx + 0.8 * HALF * k * math.cos(a), cy + 0.8 * HALF * k * math.sin(a), cx + 150, cy + 60, ['Array while tracking', '(any angle above 67 m:', 'clears all bracing)'])
 lab(cx - HALF * k * 0.7, cy + HALF * k * 0.7, cx - 150, cy + 150, ['Array sweep, r = 17 m', '(only at 67–100 m)'], 'end')
-lab(cx, cy + RING * k, cx + 10, cy + 110, ['Ø12 m ring'])
+lab(cx, cy + RING * k, cx + 10, cy + 110, ['Ø3 m rotating base frame'])
 # legend + shading note
 L = 640
 A(f'<line x1="{cx-270}" y1="{L-20}" x2="{cx-245}" y2="{L-20}" stroke="#555" stroke-width="5"/><text x="{cx-238}" y="{L-16}">A-frame strut (stationary)</text>')
 A(f'<line x1="{cx-70}" y1="{L-20}" x2="{cx-45}" y2="{L-20}" stroke="#c87f0a" stroke-width="4"/><text x="{cx-38}" y="{L-16}">V-link on upper collar</text>')
 A(f'<line x1="{cx-270}" y1="{L}" x2="{cx-245}" y2="{L}" class="guy"/><text x="{cx-238}" y="{L+4}">Stay cable (to V-link)</text>')
-A(f'<line x1="{cx+-70}" y1="{L}" x2="{cx-45}" y2="{L}" stroke="#c87f0a" stroke-width="2" stroke-dasharray="7 3"/><text x="{cx-38}" y="{L+4}">Tie to kingpin foundation</text>')
+A(f'<line x1="{cx+-70}" y1="{L}" x2="{cx-45}" y2="{L}" stroke="#c87f0a" stroke-width="2" stroke-dasharray="7 3"/><text x="{cx-38}" y="{L+4}">Tie to central foundation</text>')
 A(f'<rect x="{cx-270}" y="{L+14}" width="22" height="8" fill="#4a9" class="s"/><text x="{cx-238}" y="{L+23}">Roller collar (mast turns inside)</text>')
 A(f'<line x1="{cx-270}" y1="{L+38}" x2="{cx-245}" y2="{L+38}" stroke="#2c4a7a" stroke-width="5"/><text x="{cx-238}" y="{L+42}">Solar wings</text>')
 A(f'<text x="{cx-270}" y="{L+72}" font-size="12">Neighbouring rigs: ≥10x array width apart, in a line along the</text>')

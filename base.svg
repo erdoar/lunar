@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 760" font-family="Helvetica, Arial, sans-serif" font-size="12">
+<rect width="1240" height="760" fill="#fff"/>
+<defs><pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#a08c6c"/></pattern><pattern id="gr" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 0H6M0 0V6" stroke="#9aa" stroke-width="0.8"/></pattern><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker></defs>
+<style>.s{stroke:#222;stroke-width:1.5}.l{stroke:#555;stroke-width:1;fill:none}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:15px;font-weight:bold}</style>
+<text x="20" y="30" class="t">Section through the base (rev 20): fixed parts grey, turning parts orange</text>
+<rect x="71.99999999999994" y="640" width="836.0000000000001" height="60" fill="url(#g)"/><line x1="71.99999999999994" y1="640" x2="908.0" y2="640" stroke="#222"/>
+<rect x="300.0" y="640" width="380.0" height="18" fill="#c9b79c" stroke="#222"/>
+<path d="M300.0 640 L404.5 535.5 H575.5 L680.0 640 Z" fill="#7d8790" opacity="0.85" class="s"/>
+<circle cx="319.0" cy="628.6" r="6" fill="#fff" class="s"/>
+<line x1="319.0" y1="628.6" x2="71.99999999999994" y2="628.6" stroke="#c87f0a" stroke-width="2" stroke-dasharray="6 3" marker-end="url(#ar)"/>
+<circle cx="661.0" cy="628.6" r="6" fill="#fff" class="s"/>
+<line x1="661.0" y1="628.6" x2="908.0" y2="628.6" stroke="#c87f0a" stroke-width="2" stroke-dasharray="6 3" marker-end="url(#ar)"/>
+<path d="M410.2 535.5 A114.0 47.5 0 0 0 569.8 535.5" fill="#bbb" class="s"/>
+<rect x="410.2" y="459.5" width="159.6" height="76.0" fill="#7d8790" class="s"/>
+<rect x="421.6" y="465.2" width="136.79999999999998" height="13.3" fill="#e8d8a8" stroke="#222"/>
+<rect x="421.6" y="478.5" width="136.79999999999998" height="22.8" fill="#aab" stroke="#222"/>
+<rect x="428.0" y="483.0" width="10" height="10" fill="#666" transform="rotate(45 433.0 488.0)"/>
+<rect x="447.0" y="483.0" width="10" height="10" fill="#666" transform="rotate(45 452.0 488.0)"/>
+<rect x="466.0" y="483.0" width="10" height="10" fill="#666" transform="rotate(45 471.0 488.0)"/>
+<rect x="485.0" y="483.0" width="10" height="10" fill="#666" transform="rotate(45 490.0 488.0)"/>
+<rect x="504.0" y="483.0" width="10" height="10" fill="#666" transform="rotate(45 509.0 488.0)"/>
+<rect x="523.0" y="483.0" width="10" height="10" fill="#666" transform="rotate(45 528.0 488.0)"/>
+<rect x="542.0" y="483.0" width="10" height="10" fill="#666" transform="rotate(45 547.0 488.0)"/>
+<rect x="427.3" y="497.5" width="125.4" height="13.3" fill="#e67e22" stroke="#222"/>
+<rect x="474.8" y="402.5" width="30.400000000000002" height="152.0" fill="#bfa6d9" class="s"/>
+<rect x="317.5" y="459.5" width="60" height="44" fill="#7fa3d6" class="s"/>
+<line x1="347.5" y1="459.5" x2="347.5" y2="535.5" stroke="#555" stroke-width="4"/>
+<circle cx="421.6" cy="501.3" r="9" fill="#ddd" class="s"/>
+<line x1="421.6" y1="501.3" x2="360.79999999999995" y2="478.5" stroke="#555" stroke-width="3"/>
+<rect x="602.5" y="459.5" width="60" height="44" fill="#7fa3d6" class="s"/>
+<line x1="632.5" y1="459.5" x2="632.5" y2="535.5" stroke="#555" stroke-width="4"/>
+<circle cx="558.4" cy="501.3" r="9" fill="#ddd" class="s"/>
+<line x1="558.4" y1="501.3" x2="619.2" y2="478.5" stroke="#555" stroke-width="3"/>
+<rect x="404.5" y="446.2" width="171.0" height="13.3" fill="#e67e22" class="s"/>
+<rect x="357.0" y="89.0" width="266.0" height="357.2" fill="none" stroke="#e67e22" stroke-width="4"/>
+<line x1="357.0" y1="393.0" x2="623.0" y2="279.0" stroke="#e67e22" stroke-width="1.5"/>
+<line x1="357.0" y1="279.0" x2="623.0" y2="165.0" stroke="#e67e22" stroke-width="1.5"/>
+<path d="M404.5 432.9 L357.0 393.0 M575.5 432.9 L623.0 393.0" stroke="#e67e22" stroke-width="4"/>
+<rect x="205.0" y="355.0" width="570.0" height="10" fill="url(#gr)" stroke="#e67e22" stroke-width="2"/>
+<rect x="651.5" y="307.0" width="80" height="48" fill="#7fa3d6" class="s"/><text x="691.5" y="335.0" text-anchor="middle" font-size="11" style="stroke:none" fill="#fff">winch</text>
+<rect x="233.5" y="315.0" width="70" height="40" fill="#bfa6d9" class="s"/><text x="268.5" y="339.0" text-anchor="middle" font-size="11" style="stroke:none">power</text>
+<line x1="205.0" y1="360.7" x2="205.0" y2="450.0" stroke="#999" stroke-width="3" stroke-dasharray="3 2"/>
+<line x1="357.0" y1="355.0" x2="262.0" y2="402.5" stroke="#e67e22" stroke-width="2"/>
+<line x1="775.0" y1="360.7" x2="775.0" y2="450.0" stroke="#999" stroke-width="3" stroke-dasharray="3 2"/>
+<line x1="623.0" y1="355.0" x2="718.0" y2="402.5" stroke="#e67e22" stroke-width="2"/>
+<rect x="252.5" y="184.0" width="475.0" height="351.5" fill="none" stroke="#2e7d32" stroke-width="2" stroke-dasharray="7 4"/>
+<path d="M670.5 307.0 L623.0 260.0 L490 221.99999999999994 V89.0" fill="none" stroke="#c0392b" stroke-width="2"/>
+<circle cx="623.0" cy="260.0" r="5" fill="#fff" class="s"/>
+<path d="M410 564L186 536" class="l"/>
+<text x="182" y="540" text-anchor="end">Spherical seat (±1°)</text>
+<path d="M319 602L186 592" class="l"/>
+<text x="182" y="596" text-anchor="end">Foundation frame on a</text>
+<text x="182" y="610" text-anchor="end">~2 x 2 m sintered pad</text>
+<path d="M319 629L186 655" class="l"/>
+<text x="182" y="659" text-anchor="end">Tie lugs: 3 ground ties</text>
+<text x="182" y="673" text-anchor="end">from the strut feet</text>
+<path d="M471 450L186 450" class="l"/>
+<text x="182" y="454" text-anchor="end">Slip ring / rotary transformer</text>
+<text x="182" y="468" text-anchor="end">through the hollow centre</text>
+<path d="M348 460L186 488" class="l"/>
+<text x="182" y="492" text-anchor="end">Worm-drive motor (x2),</text>
+<text x="182" y="506" text-anchor="end">self-locking, slip clutch</text>
+<path d="M234 336L186 308" class="l"/>
+<text x="182" y="312" text-anchor="end">Rotating base frame Ø3 m</text>
+<text x="182" y="326" text-anchor="end">(grating walkway)</text>
+<path d="M252 203L186 194" class="l"/>
+<text x="182" y="198" text-anchor="end">Jack frame: erection,</text>
+<text x="182" y="212" text-anchor="end">then bearing swaps</text>
+<path d="M558 488L794 460" class="l"/>
+<text x="798" y="464" text-anchor="start">Crossed-roller ring Ø0.6 m:</text>
+<text x="798" y="478" text-anchor="start">turning inner race + gear (orange),</text>
+<text x="798" y="492" text-anchor="start">rollers, outer race</text>
+<path d="M558 471L794 526" class="l"/>
+<text x="798" y="530" text-anchor="start">Plain sleeve: 2nd rotation path</text>
+<path d="M576 440L794 393" class="l"/>
+<text x="798" y="397" text-anchor="start">Mast foot plate on the</text>
+<text x="798" y="411" text-anchor="start">rotating race (~9.9 kN)</text>
+<path d="M623 260L794 241" class="l"/>
+<text x="798" y="245" text-anchor="start">Halyards enter the mast via</text>
+<text x="798" y="259" text-anchor="start">a side window + deflection sheave</text>
+<path d="M775 412L794 346" class="l"/>
+<text x="798" y="350" text-anchor="start">Brush skirt over the bearing</text>
+<path d="M623 127L794 118" class="l"/>
+<text x="798" y="122" text-anchor="start">Bottom mast section (turns)</text>
+<text x="1010" y="70" font-weight="bold">Numbers</text>
+<text x="1010" y="92" font-size="12">Load on the bearing ~9.9 kN</text>
+<text x="1010" y="108" font-size="12">(ring rated well over 100 kN)</text>
+<text x="1010" y="124" font-size="12">Running torque ~35 N·m</text>
+<text x="1010" y="140" font-size="12">(bearing ~15 + collars ~20)</text>
+<text x="1010" y="156" font-size="12">Slip clutch ~250 N·m;</text>
+<text x="1010" y="172" font-size="12">collar interlock ~200 N·m</text>
+<text x="1010" y="188" font-size="12">Pad pressure ~2.5 kPa</text>
+<text x="1010" y="204" font-size="12">Bearing ~1 m above regolith</text>
+<text x="1010" y="220" font-size="12"></text>
+<text x="1010" y="236" font-size="12">Bearing swap: jack frame lifts</text>
+<text x="1010" y="252" font-size="12">the mast ~10 mm; cartridge</text>
+<text x="1010" y="268" font-size="12">slides out on rails; ~1 shift</text>
+</svg>

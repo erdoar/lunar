@@ -56,7 +56,7 @@ lab(X(-9), Z(104.2), X(-12), Z(107), ['Topping lift ~3.0 kN'], 'end')
 lab(X(7), Z(100.4), X(7.5), Z(103.6), ['Yard truss 34 m, 0.8 m deep,', '~2.7 kN compression'])
 lab(X(17), Z(99.6) + 6, X(15), Z(97.6), ['Sheave + dock'], 'end')
 lab(X(-10), Z(99.6) + 6, X(-12), Z(97.4), ['Halyards run inside the yard'], 'end')
-lab(X(0.3), Z(95), X(3), Z(95.5), ['…then down inside the mast', 'to the deck winch'])
+lab(X(0.3), Z(95), X(3), Z(95.5), ['…then down inside the mast', 'to the base-frame winch'])
 lab(X(-9), Z(99.6) + 24, X(-12), Z(94.2), ['Wing top bar, docked', '(weight on the yard)'], 'end')
 A(f'<text x="{X(-17)}" y="{Z(Zb)+18}" font-size="11.5">Wing packs hang below (30 m, shortened here)</text>')
 
@@ -101,7 +101,7 @@ A(f'<text x="{dx-120}" y="{dy+260}" font-size="11.5">confirms the state.</text>'
 
 # ---------------- 4. panel elevation winch (deck)
 wy = 520
-A(f'<text x="20" y="{wy-20}" class="t">4. Panel elevation winch (on the deck at the mast base)</text>')
+A(f'<text x="20" y="{wy-20}" class="t">4. Panel elevation winch (on the rotating base frame at the mast base)</text>')
 A(f'<rect x="40" y="{wy}" width="1160" height="380" fill="none" stroke="#999" stroke-dasharray="4 3"/>')
 shaft_y = wy + 170
 A(f'<line x1="200" y1="{shaft_y}" x2="1020" y2="{shaft_y}" stroke="#555" stroke-width="8"/>')

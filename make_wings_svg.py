@@ -19,7 +19,7 @@ def panel(i, title, top):
     Z = lambda m: gy - m * e
     A(f'<text x="{mid}" y="40" text-anchor="middle" class="t">{title}</text>')
     A(f'<rect x="{mid-140}" y="{gy}" width="280" height="30" fill="url(#g)"/><line x1="{mid-140}" y1="{gy}" x2="{mid+140}" y2="{gy}" stroke="#222"/>')
-    A(f'<rect x="{X(-6)}" y="{Z(1.3)}" width="{12*e}" height="{1.3*e}" fill="#9fb4c7" class="s"/>')
+    A(f'<rect x="{X(-1.5)}" y="{Z(1.5)}" width="{3*e}" height="3" fill="#e67e22"/><path d="M{X(-1)} {gy} L{X(-0.4)} {Z(0.6)} H{X(0.4)} L{X(1)} {gy} Z" fill="#7d8790"/>')
     A(f'<rect x="{X(0)-2}" y="{Z(105)}" width="4" height="{105*e}" fill="#888"/>')
     for c in (35, 62):
         A(f'<rect x="{X(0)-5}" y="{Z(c)-3}" width="10" height="6" fill="#4a9" class="s"/>')
@@ -56,7 +56,7 @@ A(f'<path d="M{mid-17*e} {gy-60*e}L{mid-100} {gy-70*e}" class="l"/><text x="{mid
 A(f'<path d="M{mid+8} {gy-90*e} V{gy-60*e}" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>')
 mid = 760
 A(f'<path d="M{mid+10*e} {gy-3.2*e}L{mid+80} {gy-20*e}" class="l"/><text x="{mid+60}" y="{gy-20*e-6}" font-size="11">Hangers at working</text><text x="{mid+60}" y="{gy-20*e+8}" font-size="11">height (~1 m above tray)</text>')
-A(f'<path d="M{mid-14*e} {gy-1.5*e}L{mid-90} {gy-14*e}" class="l"/><text x="{mid-92}" y="{gy-14*e}" font-size="11" text-anchor="end">Landing tray</text><text x="{mid-92}" y="{gy-14*e+13}" font-size="11" text-anchor="end">(deck height)</text>')
+A(f'<path d="M{mid-14*e} {gy-1.5*e}L{mid-90} {gy-14*e}" class="l"/><text x="{mid-92}" y="{gy-14*e}" font-size="11" text-anchor="end">Landing tray</text><text x="{mid-92}" y="{gy-14*e+13}" font-size="11" text-anchor="end">(on ground legs)</text>')
 
 # ---------- 4. detail: one pack folding into its tray (side view)
 dx, dy = 1080, 120

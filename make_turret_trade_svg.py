@@ -42,9 +42,8 @@ def rig(mid, turret):
         A(f'<rect x="{X(-4)}" y="{gy-10}" width="{8*e}" height="10" fill="{FIX}" class="s"/>')                 # foundation pad
         A(f'<line x1="{X(0)+5}" y1="{Z(2)}" x2="{X(0)+5}" y2="{Z(63)}" stroke="#2e7d32" stroke-width="2" stroke-dasharray="6 3"/>')  # service lift rail
     else:
-        A(f'<rect x="{X(-6)}" y="{gy-14}" width="{12*e}" height="8" fill="{ROT}" class="s"/>')                 # deck
-        for R in (-6, 6):
-            A(f'<rect x="{X(R)-6}" y="{gy-6}" width="12" height="6" fill="{FIX}"/><circle cx="{X(R)}" cy="{gy-9}" r="4" fill="{ROT}" stroke="#222"/>')
+        A(f'<rect x="{X(-1.5)}" y="{gy-12}" width="{3*e}" height="4" fill="{ROT}"/>')                 # rotating base frame
+        A(f'<rect x="{X(-1.2)}" y="{gy-7}" width="{2.4*e}" height="7" fill="{FIX}"/>')                  # foundation + base bearing
         for c in (35, 62):
             A(f'<rect x="{X(0)-8}" y="{Z(c)-4}" width="16" height="8" fill="#4a9" class="s"/>')
     return X, Z
@@ -52,24 +51,24 @@ def rig(mid, turret):
 
 # ---------- A
 X, Z = rig(310, False)
-A('<text x="60" y="34" class="t">A. Ground turntable (baseline)</text>')
+A('<text x="60" y="34" class="t">A. Whole mast turns (baseline)</text>')
 lab(X(0) + 8, Z(62), X(10), Z(56), ['Roller collar (mast turns inside)'])
 lab(X(0) + 8, Z(35), X(10), Z(29), ['Roller collar'])
-lab(X(6), gy - 12, X(16), gy - 40, ['Deck + 3 bogies on a', 'Ø12 m rail (ground level)'])
+lab(X(1.5), gy - 10, X(16), gy - 40, ['Single base bearing +', 'rotating base frame (ground level)'])
 lab(X(0), Z(80), X(-24), Z(56), ['Whole mast turns'], 'end')
-A(f'<text x="60" y="{gy+55}" font-size="12.5">Turns: ~12.6 t. Rotating bearings: 6 tyres, kingpin,</text>')
-A(f'<text x="60" y="{gy+71}" font-size="12.5">2 collars (12 cartridges). Reachable from the ground; dust-exposed.</text>')
+A(f'<text x="60" y="{gy+55}" font-size="12.5">Turns: ~7.1 t. Rotating bearings: 1 base bearing +</text>')
+A(f'<text x="60" y="{gy+71}" font-size="12.5">2 collars (12 cartridges). All drives reachable from the ground.</text>')
 
 # ---------- B
 X, Z = rig(930, True)
-A('<text x="680" y="34" class="t">B. Top turret (alternative)</text>')
+A('<text x="680" y="34" class="t">B. Top turret (set aside)</text>')
 lab(X(0) + 14, Z(64), X(10), Z(70), ['Turret bearing ~Ø2 m at 64 m', '+ drive, slip ring, wing winch'])
 lab(X(0) + 8, Z(62), X(10), Z(56), ['Stay head (fixed lugs, no rollers)'])
 lab(X(0) + 8, Z(35), X(10), Z(29), ['Strut head (fixed lugs)'])
 lab(X(0) + 5, Z(20), X(-24), Z(26), ['Service lift on the', 'fixed mast'], 'end')
 lab(X(2), gy - 8, X(10), gy - 30, ['Mast foundation pad (no rail)'])
 lab(X(0), Z(52), X(-24), Z(46), ['Fixed lower mast'], 'end')
-A(f'<text x="680" y="{gy+55}" font-size="12.5">Turns: ~5 t. Rotating bearings: 1 turret. ~7 t less hardware;</text>')
+A(f'<text x="680" y="{gy+55}" font-size="12.5">Turns: ~5 t. Rotating bearings: 1 turret; no collars;</text>')
 A(f'<text x="680" y="{gy+71}" font-size="12.5">no moving parts in the dust; all moving parts at 64 m.</text>')
 # legend
 A(f'<rect x="560" y="60" width="16" height="10" fill="{ROT}"/><text x="582" y="70">turns</text><rect x="560" y="78" width="16" height="10" fill="{FIX}"/><text x="582" y="88">fixed</text>')

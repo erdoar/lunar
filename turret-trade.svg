@@ -14,23 +14,22 @@
 <rect x="219.0" y="138.0" width="182.0" height="4" fill="#e67e22" class="s"/>
 <rect x="221.6" y="140.0" width="78.00000000000003" height="156.0" fill="#2c4a7a" stroke="#e67e22" stroke-width="3"/>
 <rect x="320.4" y="140.0" width="78.0" height="156.0" fill="#2c4a7a" stroke="#e67e22" stroke-width="3"/>
-<rect x="278.8" y="646" width="62.400000000000006" height="8" fill="#e67e22" class="s"/>
-<rect x="272.8" y="654" width="12" height="6" fill="#888"/><circle cx="278.8" cy="651" r="4" fill="#e67e22" stroke="#222"/>
-<rect x="335.2" y="654" width="12" height="6" fill="#888"/><circle cx="341.2" cy="651" r="4" fill="#e67e22" stroke="#222"/>
+<rect x="302.2" y="648" width="15.600000000000001" height="4" fill="#e67e22"/>
+<rect x="303.76" y="653" width="12.48" height="7" fill="#888"/>
 <rect x="302.0" y="474.0" width="16" height="8" fill="#4a9" class="s"/>
 <rect x="302.0" y="333.59999999999997" width="16" height="8" fill="#4a9" class="s"/>
-<text x="60" y="34" class="t">A. Ground turntable (baseline)</text>
+<text x="60" y="34" class="t">A. Whole mast turns (baseline)</text>
 <path d="M318 338L362 369" class="l"/>
 <text x="366" y="373" text-anchor="start">Roller collar (mast turns inside)</text>
 <path d="M318 478L362 509" class="l"/>
 <text x="366" y="513" text-anchor="start">Roller collar</text>
-<path d="M341 648L393 620" class="l"/>
-<text x="397" y="624" text-anchor="start">Deck + 3 bogies on a</text>
-<text x="397" y="638" text-anchor="start">Ø12 m rail (ground level)</text>
+<path d="M318 650L393 620" class="l"/>
+<text x="397" y="624" text-anchor="start">Single base bearing +</text>
+<text x="397" y="638" text-anchor="start">rotating base frame (ground level)</text>
 <path d="M310 244L185 369" class="l"/>
 <text x="181" y="373" text-anchor="end">Whole mast turns</text>
-<text x="60" y="715" font-size="12.5">Turns: ~12.6 t. Rotating bearings: 6 tyres, kingpin,</text>
-<text x="60" y="731" font-size="12.5">2 collars (12 cartridges). Reachable from the ground; dust-exposed.</text>
+<text x="60" y="715" font-size="12.5">Turns: ~7.1 t. Rotating bearings: 1 base bearing +</text>
+<text x="60" y="731" font-size="12.5">2 collars (12 cartridges). All drives reachable from the ground.</text>
 <rect x="670" y="660" width="520" height="30" fill="url(#g)"/><line x1="670" y1="660" x2="1190" y2="660" stroke="#222"/>
 <line x1="1086.0" y1="658" x2="930.0" y2="337.59999999999997" class="cab"/>
 <line x1="1086.0" y1="658" x2="930.0" y2="478.0" stroke="#555" stroke-width="4"/>
@@ -47,7 +46,7 @@
 <rect x="922.0" y="334.59999999999997" width="16" height="6" fill="#888" class="s"/><rect x="922.0" y="475.0" width="16" height="6" fill="#888" class="s"/>
 <rect x="909.2" y="650" width="41.6" height="10" fill="#888" class="s"/>
 <line x1="935.0" y1="649.6" x2="935.0" y2="332.4" stroke="#2e7d32" stroke-width="2" stroke-dasharray="6 3"/>
-<text x="680" y="34" class="t">B. Top turret (alternative)</text>
+<text x="680" y="34" class="t">B. Top turret (set aside)</text>
 <path d="M944 327L982 296" class="l"/>
 <text x="986" y="300" text-anchor="start">Turret bearing ~Ø2 m at 64 m</text>
 <text x="986" y="314" text-anchor="start">+ drive, slip ring, wing winch</text>
@@ -62,7 +61,7 @@
 <text x="986" y="634" text-anchor="start">Mast foundation pad (no rail)</text>
 <path d="M930 390L805 421" class="l"/>
 <text x="801" y="425" text-anchor="end">Fixed lower mast</text>
-<text x="680" y="715" font-size="12.5">Turns: ~5 t. Rotating bearings: 1 turret. ~7 t less hardware;</text>
+<text x="680" y="715" font-size="12.5">Turns: ~5 t. Rotating bearings: 1 turret; no collars;</text>
 <text x="680" y="731" font-size="12.5">no moving parts in the dust; all moving parts at 64 m.</text>
 <rect x="560" y="60" width="16" height="10" fill="#e67e22"/><text x="582" y="70">turns</text><rect x="560" y="78" width="16" height="10" fill="#888"/><text x="582" y="88">fixed</text>
 </svg>
