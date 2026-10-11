@@ -1,4 +1,4 @@
-# Lunar polar rotating solar platform: concept design (rev 4, tall mast on a strut tripod)
+# Lunar polar rotating solar platform: concept design (rev 5, tall mast on a strut tripod)
 
 A small turntable on a circular rail that turns a very tall mast, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
@@ -6,7 +6,8 @@ A small turntable on a circular rail that turns a very tall mast, with the solar
 - Rev 1: Ø42 m twin-rail turntable carrying a 30 m panel wall.
 - Rev 2: rail ring cut to Ø12 m for logistics; cable-stayed rig that uses low gravity and no wind; human-supervised installation equipment.
 - Rev 3: array raised to ~100 m to clear terrain and neighbour shadows; mast braced by stationary ground guys through roller collars; lowerable solar curtains.
-- **Rev 4 (this):** the ground guys and their tension anchors are replaced by a **strut tripod**. Three rigid struts run from a **mid-height collar** down to foot pads on the surface. Each foot is wire-braced up to an **upper collar** and tied **horizontally back to the platform's kingpin foundation**. It is a closed, pre-tensioned truss: no ground anchor ever has to resist being pulled up, and there are 2 collars instead of 3.
+- Rev 4: the ground guys and their tension anchors are replaced by a **strut tripod**. Three rigid struts run from a **mid-height collar** down to foot pads on the surface. Each foot is wire-braced up to an **upper collar** and tied **horizontally back to the platform's kingpin foundation**. It is a closed, pre-tensioned truss: no ground anchor ever has to resist being pulled up, and there are 2 collars instead of 3.
+- **Rev 5 (this):** base running gear changed to **3 bogies with 4 individually replaceable tyres each**. Three supports always share the load evenly, so rail flatness and settlement don't matter. Any tyre can be lifted off the rail and swapped without jacking the deck. About 10 m of clear rail between bogies leaves room to replace wear-surface segments without a bridging rail.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -41,7 +42,7 @@ How the design uses this:
 
 ## 3. Reference configuration (100 m baseline)
 
-| Item | Rev 3 value |
+| Item | Value |
 |---|---|
 | Array top / bottom | **100 m / 70 m** above the deck |
 | Mast | 105 m triangular CFRP lattice (Ti nodes), 1.2 to 1.5 m face, ~25 kg/m (~2.5 t), built in 3 m sections |
@@ -54,8 +55,8 @@ How the design uses this:
 | Wires | Foot to upper collar, 69 m, 6 mm stainless wire rope (UV-proof), doubled for redundancy, ~1.5 kN pretension |
 | Ties | Foot to kingpin foundation, horizontal at ground level (passing under the raised rail), ~1 kN |
 | Upper bracing (rotating) | Diamond stays: spreaders ±6 m at 81 m, stays from 62 m to the mast top |
-| Rail ring | Ø12 m single rail, 12 segments of π m, 8 bogies (unchanged from rev 2) |
-| Rotating mass | ~11.5 t (mast 2.5 t, array + yards 2 t, deck 4 t, bogies 1.5 t, kingpin 1 t, diamond stays 0.5 t) |
+| Rail ring | Ø12 m single rail, 12 segments of π m, **3 bogies x 4 tyres** at 120° |
+| Rotating mass | ~11.5 t (mast 2.5 t, array + yards 2 t, deck 4 t, bogies 0.4 t, collar bands + margin 1.1 t, kingpin 1 t, diamond stays 0.5 t) |
 | Lunar weight on the ring | ~19 kN; the pre-tensioned tripod lifts the mast very slightly (~1.5 kN), so the ring carries a little less |
 | Maintenance azimuth | Mast parked so the array lies **between** bracing planes (e.g. 30°/210° when the struts are at 0°/120°/240°) |
 
@@ -92,6 +93,29 @@ The rollers use the same technology as the bogies (dry-lubricated hybrid bearing
 
 A **transport clamp pin** in each cartridge locks the collar to the band during jack-up (section 7) and is pulled once the collar is at height.
 
+**Preventing collar bearing seizure.** The upper collar is the hardest part to reach (62 m up). It carries a steady downward pull from the wires and sees the biggest temperature swings, so it gets the most protection. If it seized while the base kept driving, the mast would be twisted against the tripod. Protection is in five layers:
+
+1. **Remove the causes of seizure.**
+   - *Cold welding:* no like-on-like metal contact anywhere. Steel or Si₃N₄ rollers run on a ceramic/DLC-coated Ti band; races and balls are dissimilar (hybrid ceramic bearings).
+   - *Lubricant loss:* dry films only (sputtered MoS₂ or WS₂ on races, PTFE/polyimide-composite cages that keep re-transferring lubricant). Nothing evaporates, freezes or creeps in vacuum.
+   - *Thermal pinching:* the band and collar ring are both Ti, so they expand alike. Each radial roller sits on a **preload spring with ±10 mm float**, so no temperature difference or thermal bow of the mast can squeeze a roller tight. The thrust rollers are crowned and spring-loaded the same way. White thermal coating plus a light sunshade keep the collar near the mast's temperature.
+   - *Dust:* at 62 m the collar is far above most lofted dust. Metal labyrinth lips on the band, a cover over each cartridge, and a brush skirt keep out what does arrive. Wear debris falls onto a catch shelf, not into the next roller.
+   - *Overload:* contact stresses are kept very low (each roller carries well under 1 kN), and the rollers turn only ~20 times per lunar day, so wear is tiny.
+2. **Make a stuck roller harmless.**
+   - Each roller has a **second rotation path**: the ball bearing runs on a dry-lubricated sleeve journal. If the bearing locks, the roller turns on the sleeve.
+   - If both lock, the roller skids on its hard coated face rather than jamming. The other 5 cartridges keep guiding the mast.
+   - No single cartridge can lock the collar.
+3. **See it coming.**
+   - Every roller has a small rotation sensor (magnet + Hall sensor). If the mast turns and a roller doesn't, the system alarms long before the bearing seizes.
+   - Load cells on the wires and ties, drive motor current, and strain gauges on the mast between base and collar all track friction torque. A rising trend means "swap a cartridge soon".
+4. **Protect the structure if it happens.**
+   - The base drive has a **torque limiter** set just above normal collar friction. If the collar torque rises past it, the drive slips and stops. The mast is never forced to twist against a locked collar.
+   - The array keeps working in its last position until the fault is cleared. At most a few percent of a lunar day's energy is lost.
+5. **Fix it in place.**
+   - The climber robot swaps the cartridge (2 captive bolts, slide out, slide in) while the other 5 hold the mast. Spare cartridges are kept on site.
+   - Cartridges are also swapped on a schedule (for example, one per collar per year) and sent back for inspection, to learn real wear rates.
+   - Before flight, prove all of this with a **vacuum-thermal life test** of a full cartridge, run on a band section in regolith simulant dust for many times the design number of revolutions.
+
 **Curtains instead of one blanket.** The array is 8 vertical curtains, 4 m wide. Each hangs from its own **halyard on the top yard** and is tensioned down to the bottom yard. To repair one (for example after a micrometeoroid strike):
 1. Rotate the mast to the **maintenance azimuth**, so the array lies between the bracing planes.
 2. Release the curtain's bottom tension lines.
@@ -120,25 +144,39 @@ Layout rules:
 
 ## 5. Running gear at ground level (low friction, dust tolerant)
 
-![Bogie and rail: side view and cross-section](bogie-rail.svg)
+![Bogie and rail: plan, side view and section](bogie-rail.svg)
 
-**Wheels**
-- Flanged steel wheels, ~250 mm diameter (loads are now small), through-hardened bearing steel or a coated Ti wheel.
-- **Avoid like-on-like metals** in vacuum (cold welding): hardened steel wheel on a ceramic or DLC-coated rail head (or Si₃N₄ rollers on steel).
-- Hybrid ceramic bearings with **dry lubrication** (sputtered MoS₂/WS₂, PTFE-composite cages). No grease or oil.
-- Labyrinth seals plus bellows boots.
-- Rolling resistance Crr ~0.001 to 0.003: at ~19 kN  that is **30 to 90 N** total.
+**Why 3 bogies.** Three points always define a plane, so the 3 bogies share the weight evenly however the rail settles or warps with temperature: no wheel can be left unloaded. The strut tripod carries all overturning and quake loads at the collars, so the base only has to carry vertical load and centre the deck. Three support points are enough. At 120° spacing on the Ø12 m ring, the bogies are 12.6 m apart along the rail. Each bogie is ~2.4 m long, which leaves **~10 m of clear rail** between neighbours: three full rail segments.
 
-**Bogies**
-- 2-wheel **equaliser** bogies, spring-loaded so both wheels share load.
-- **Uplift rollers** under the rail head (captive bogie) for quakes and handling.
-- **Side guide rollers** are optional: the kingpin centres the deck, so the bogies can float radially (±20 mm) for thermal movement.
-- **Dust scrapers and brushes** ahead of each wheel, both directions.
-- Standard **4-bolt kinematic mount** with captive bolts and a grapple fixture. One bogie ≈ 60 to 80 kg on Earth, about 12 kg-weight on the Moon: **one person can handle it**.
+**Loads.** ~19 kN on the Moon over 3 bogies is ~6.4 kN per bogie, or **~1.6 kN per tyre**. With one tyre lifted out, its three neighbours carry ~2.1 kN each. Tyres are designed for 4 kN.
+
+**Bogie**
+- **Curved frame** that follows the 6 m rail radius. Each stub axle points exactly at the ring centre, so every tyre rolls true around the curve with no scrubbing.
+- **4 tyres, each on its own swing arm** with a preload spring. The springs share load between the 4 tyres and soak up small rail steps at joints.
+- **Retract screw** on each arm (one tool size): winding it lifts that tyre ~20 mm clear of the rail, and the spring load passes to the other three.
+- **Cantilevered stub axles on the outside of the rail.** The frame sits inboard; nothing blocks the tyre on its outer side, so it slides straight off the axle radially outward.
+- **Uplift rollers** under the rail head, 2 per bogie (also cartridges), against quake bounce.
+- **Dust scrapers and brushes** at each end of the bogie, both directions.
+- **Mounting to the deck**: a spherical pivot with ±20 mm radial float. The deck can't be forced out of shape by temperature, and the kingpin alone sets its centre.
+- Bogie ≈ 120 kg on Earth (~20 kg-weight on the Moon).
+
+**Tyres (individually replaceable)**
+- Each "tyre" is a complete **wheel cartridge**: hub, sealed bearing, and a hardened steel tread ring (~Ø300 mm x 60 mm), held by one captive hub nut. ~10 kg on Earth, under 2 kg-weight on the Moon.
+- **Flangeless, slightly conical tread** with its cone apex at the ring centre, on a matching conical rail head. This is standard turntable practice: it gives pure rolling across the whole tread width, with no flange to wear or bind. The kingpin does the centring.
+- **Avoid like-on-like metals** in vacuum (cold welding): hardened steel tread on a ceramic- or DLC-coated rail head.
+- Hybrid ceramic bearings with **dry lubrication** (sputtered MoS₂/WS₂, PTFE-composite cages), labyrinth seal plus bellows boot. No grease or oil.
+- Rolling resistance Crr ~0.001 to 0.003: **20 to 60 N** total.
+
+**Replacing a tyre** (platform keeps its weight on the other 11)
+1. Stop and lock the drive.
+2. Wind that arm's retract screw until the tyre is clear of the rail.
+3. Undo the captive hub nut, slide the wheel cartridge off outward, slide the spare on, tighten.
+4. Wind the screw back until the spring load reading is back in range. About 15 minutes for one suited person or a robot.
 
 **Centring, drive, power transfer**
-- Central **kingpin** with a slewing bearing (~1.2 m) takes radial loads and the mast base moment from quakes. It is also the survey datum for building the ring (section 7).
-- **Drive**: 2 of the 8 bogies are drive bogies (a pinion on a rack on the rail web, or friction wheels); one is enough to turn the platform.
+- Central **kingpin** with a slewing bearing (~1.2 m) centres the deck and is the survey datum for building the ring (section 7).
+- The **mast foot** sits on a spherical seat at the deck centre, and torque goes through a dog coupling. The collars hold the mast vertical, so small deck tilts from rail settlement are never forced into the mast.
+- **Drive**: a pinion on a rack on the rail web, on 2 of the 3 bogies. Either one can turn the platform.
 - Running power is milliwatts. Size the drive for breakaway in dust (~20x running force, ~1 kN tangential): a few hundred watts.
 - Power crosses the rotation through a **slip ring or rotary transformer** in the kingpin.
 
@@ -151,18 +189,18 @@ Layout rules:
 - **Piers** have leveling screws (±50 mm) on sintered-regolith pads, helical ground screws, or regolith-filled gabion bags.
 - An overhanging **skirt or brush seal** on the deck keeps falling dust off the rail head.
 
-**Replacing a bogie** (N+2: runs with any 2 non-adjacent bogies removed)
-1. Stop the drive and lock it.
-2. Jack the deck ~10 mm at the hard-points either side of the bogie.
-3. Undo 4 captive bolts, slide the bogie out radially, slide the spare in (the kinematic mount self-locates), torque, lower.
+**Replacing a rail segment or wear strip** (the main reason for the wide bogie gaps)
+1. Turn the platform until the damaged segment sits in a gap. With ~10 m of free rail between bogies, any segment can be placed with ≥3 m to spare at each end. No bridging rail is needed.
+2. If only the running surface is damaged (the usual case), unbolt and swap just the **rail head wear strip** (~10 kg, π m long).
+3. If the beam itself is damaged, unbolt the whole segment from its 2 piers, lift it out, drop in the spare and level it against the radius arm (section 7).
+4. Turn the platform past the new piece slowly and check the tyre spring loads as each bogie crosses it.
 
-**Replacing a rail segment**
-1. Rotate so the segment is between two bogies. Bogie spacing is 4.7 m against 3.14 m segments, so there is margin.
-2. Clamp the **bridging rail** (6.3 m, two segment lengths) across it if the platform must keep moving.
-3. Unbolt, lift out, drop in the spare, level against the radius arm (section 7), remove the bridge.
-4. If only the running surface is damaged, swap just the rail head strip (~10 kg).
+**Replacing a whole bogie** (rare; tyres and uplift rollers are swapped in place)
+1. Set a **jack stand** on the rail just beside the bogie (the wide gaps leave room) and lift that corner of the deck ~10 mm.
+2. Release the spherical pivot, roll the bogie out along the rail into the gap and lift it off. Fit the spare the same way.
+3. Lower, remove the stand.
 
-**Spares on site**: 2 bogies, 2 rail segments, 6 rail head strips, 1 drive unit, slip-ring brush cartridges, 2 collar roller cartridges, 1 wire and 1 tie with tensioners, 1 strut section, 2 blanket curtains.
+**Spares on site**: 6 wheel cartridges, 2 uplift roller cartridges, 1 bogie, 2 rail segments, 6 rail head wear strips, 1 drive unit, slip-ring brush cartridges, 2 collar roller cartridges, 1 wire and 1 tie with tensioners, 1 strut section, 2 blanket curtains.
 
 ## 7. Installation equipment and sequence (human supervised)
 
@@ -172,7 +210,7 @@ Everything is assembled at deck level and raised. A crew member (EVA, or in a pr
 |---|---|---|
 | E1 | **Kingpin driver** | Sets the central kingpin foundation: the datum for everything else. |
 | E2 | **Radius arm ("compass")** | 6 m arm on the kingpin with a laser level, encoder and pier socket. It places and levels the 12 rail piers. With an extension and laser rangefinder, it also lays out the 3 foot-pad sites at 30 m. |
-| E3 | **Rail-riding installer cart** | Lays rail segments from the installed rail; later the maintenance cart (jacking, bogie and segment swaps). |
+| E3 | **Rail-riding installer cart** | Lays rail segments from the installed rail; later the maintenance cart (tyre, wear strip and segment swaps, jack stand). |
 | E4 | **Foot-pad and tie layer** | Compacts or sinters the 3 foot pads and lays the 3 ground ties from the kingpin foundation out to the feet, under the raised rail. No pull-out anchors needed. |
 | E5 | **Mast jack-up frame** | Sits on the deck around the kingpin and lifts the whole mast one 3 m section at a time; the new section is pinned in at the bottom. Peak lift is ~8 kN (whole mast + array) plus bracing pre-tension. |
 | E6 | **Tie and wire winches with load cells** | One at each foot. They control the ties (which pull the strut feet in as the mast rises) and the wires, and keep the mast plumb. Tensions are shown live on a supervisor tablet. |
@@ -182,7 +220,7 @@ Everything is assembled at deck level and raised. A crew member (EVA, or in a pr
 **Sequence**
 1. Survey and clear the site. Set the kingpin (E1). Lay out the 3 foot sites with the radius arm (E2); prepare the pads and lay the ties (E4).
 2. Set the 12 rail piers and lay the ring (E2, E3). Hold point: ring flat to ±2 mm.
-3. Place 8 bogies and the 4 deck quarters. Check the deck turns by hand.
+3. Place the 3 bogies and the 4 deck quarters. Check the deck turns by hand and the 12 tyre spring loads read even.
 4. Fit the jack-up frame (E5). Assemble the **top assembly** at deck level: mast top section, diamond spreaders and stays, top yard folded vertically, curtains rolled on the top yard, bottom yard folded.
 5. **Jack up, with a scissor action.** Each collar is fitted around the mast at deck level (3 segments), clamped to its band, and rides up with the mast.
    - The **upper collar** goes on first, with its 3 wires paid out from the foot winches as it rises. Until the struts are in, these wires act as light temporary guys (a few hundred N). Each foot winch is ballasted with regolith bags so it never needs a pull-out anchor.
@@ -218,7 +256,7 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
 
 1. **Site illumination study** on LOLA data: sunlight hours vs array height at candidate spots; pick the height.
 2. Mast and tripod analysis: strut and mast buckling, pre-tension, thermal bow, moonquake response, every jack-up and scissor stage.
-3. Collar roller design and vacuum/thermal tests, together with the bogie wheel/rail tests (LHS-1, NU-LHT simulants).
+3. Collar cartridge life test (vacuum, thermal cycling, dust), and tyre/rail tests (LHS-1, NU-LHT simulants).
 4. Prototype the jack-up with collars, the strut scissor and tie winches at small scale; rehearse with suited operators.
 5. Curtain halyard and lowering trials; pick a blanket that tolerates repeated lowering.
 6. Packaging: deck quarters, 3 m mast sections, rail segments, curtain rolls to fit the lander.
