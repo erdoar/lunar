@@ -1,130 +1,154 @@
-# Lunar polar rotating solar platform: concept design
+# Lunar polar rotating solar platform: concept design (rev 2, compact ring)
 
-A large turntable on circular rails carrying a tall scaffold of solar panels, for a lunar polar site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
+A small turntable on a circular rail that carries a tall, cable-stayed solar array, for a lunar polar site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
+
+**Rev 2 changes:** for logistics and construction reasons the rail ring is cut from Ø42 m (two rails) to **Ø12 m (one rail)**. The array is now much wider and taller than the ring. That only works because the Moon has **low gravity and no wind**, and the design is built around using both as fully as possible (section 2). The installation equipment is custom and human supervised (section 6).
+
+![Platform layout: plan and elevation](platform-layout.svg)
 
 ## 1. Why it rotates, and how fast
 
 At the poles the Sun stays within ~1.5° of the horizon and goes once around the horizon each lunar day (synodic, 29.5 Earth days). So the panels must:
 
-- stand **vertical** (tilt only ±2°), which makes the scaffold tall rather than wide, and
+- stand **vertical**, and
 - turn about a vertical axis **once every 29.5 days**: about **0.51°/hour**, continuously, in one direction.
 
-That speed is extremely slow. Friction barely matters for running power; it matters for **breakaway (stick-slip) torque, wear from dust, and cold welding**. The design is built around those.
+Height also pays: a few tens of metres above the local ground clears nearby terrain shadows and gives noticeably more hours of sunlight at most polar sites.
 
-## 2. Reference configuration
+## 2. Using low gravity and no wind
 
-| Item | Baseline value |
+On Earth a 40 m wide vertical sail on a 12 m base would blow over. On the Moon the only loads are:
+
+| Load | Earth | Moon | Effect on design |
+|---|---|---|---|
+| Wind | Governs everything | **None** | Huge flat area costs almost nothing in structure; no flutter, no gust factor |
+| Gravity | 9.81 m/s² | **1.62 m/s² (1/6)** | Members, stays, jacks and bearings are 1/6 the size for the same mass |
+| Seismic | Varies | Shallow moonquakes, small accelerations | Main lateral load case; handled by symmetry, stays and uplift rollers |
+| Thermal | Moderate | Large swings (~40 K to ~330 K) | Stays need spring tensioners; joints need float |
+| Rotation dynamics | n/a | 0.51°/h: negligible | Only the start/stop steps matter; ramp them gently |
+
+How the design uses this:
+
+1. **Tension structure, sailing-ship rig.** A central mast holds horizontal yards; the solar blanket hangs from the top yard and is tensioned down to a bottom yard, like a square sail. Thin cables and booms carry everything; there are almost no bending members.
+2. **Thin flexible solar blankets** (roll-out, ROSA-type, ~0.5 to 1 kg/m² including harness) instead of rigid panels. In 1/6 g with no wind they hang flat under light tension.
+3. **Symmetry puts the centre of mass on the axis.** The array is one plane through the mast, left and right wings balanced. The ring only carries vertical load and small moments, so it can be small.
+4. **The array overhangs the ring.** A 40 m wide blanket sits on a 12 m ring. Tipping needs a lateral acceleration of about g x r / h(CoM) = 1.62 x 6 / 18 ≈ **0.5 m/s²**, far above expected moonquake shaking, and uplift rollers add a positive lock on top.
+5. **Low natural frequency is acceptable.** With no wind there is nothing to excite the rig except the drive and quakes. Drive in small steps with smooth acceleration ramps (seconds to minutes), never sudden starts.
+6. **Light installation gear.** A jack or winch lifts 6x the mass it could on Earth. A 3 t mast weighs only ~4.9 kN on the Moon: hand-winch territory.
+
+## 3. Reference configuration
+
+| Item | Rev 2 value |
 |---|---|
-| Track diameter | 40 m (2 concentric rails at 38 m and 42 m) |
-| Scaffold | Twin vertical panel walls, back to back, 36 m wide x 30 m tall, on a space-frame truss |
-| Panel area | ~2 x 1,000 m² (one face sunlit; the back face can be bifacial or radiator) |
-| Power (30% cells, 1,361 W/m², ~85% system) | ~350 kWe from one face |
-| Total rotating mass | ~60 t (truss 25 t, panels 15 t, deck 15 t, bogies 5 t) |
-| Lunar weight | 60 t x 1.62 m/s² ≈ **97 kN** |
-| Bogies | 24 bogies (12 per rail), 2 load wheels each = **48 load wheels** |
-| Nominal wheel load | ~2.0 kN (~200 kg-force) |
-| Design wheel load | 6 kN (x3 for uneven load, dynamic, one neighbour bogie removed) |
+| Rail ring | **Ø12 m, single rail**, 12 identical segments, each π m (3.14 m) long |
+| Bogies | **8** captive bogies, 2 wheels each (16 wheels) |
+| Deck | Ø12 m ring girder + spokes, 4 bolted quarter-sections (fit a lander) |
+| Mast | 45 m triangular truss, built in 3 m sections |
+| Spreaders | 2 levels, ±8 m, to widen stay angles (as on a sailing boat) |
+| Yards | Top yard at 40 m and bottom yard at 15 m, each 40 m long |
+| Solar blanket | 40 m x 25 m = **1,000 m²**, one active face |
+| Power (30% cells, 1,361 W/m², ~85% system) | **~350 kWe** (same as rev 1) |
+| Rotating mass | ~12 t (blanket 1 t, yards 1 t, mast 3 t, stays/spreaders 0.5 t, deck 4 t, bogies 1.5 t, kingpin/slip ring 1 t) |
+| Lunar weight | 12 t x 1.62 ≈ **19.5 kN** (rev 1: 97 kN) |
+| Wheel load | ~1.2 kN nominal, 4 kN design (x3, one bogie removed) |
+| Centre of mass | ~18 m above the deck, on the axis |
 
-![Platform layout: plan and elevation](platform-layout.svg)
+**Stays.** Forestay/backstay pairs run from the mast top and spreader tips to the deck ring rim, front and back. Topping lifts run from the mast top to the yard tips. Each stay has a **spring tensioner and load cell** at the deck end to take thermal length change (a 45 m steel stay changes ~50 mm over 100 K) and to show the rig's state.
 
-Twin back-to-back walls keep the centre of mass on the axis and balance the overturning moment; a single wall would put a large eccentric load on one side of the ring.
-
-```
-             Sun (on horizon, moving around)
-                 ->
-   +----------------------------------+   <- panel wall A (30 m tall)
-   |##################################|
-   |##################################|   <- space-frame truss between walls
-   |##################################|   <- panel wall B
-   +================+=================+   <- rotating deck (ring girder)
-   [B]   [B]   [B]  | kingpin  [B]  [B]   <- bogies on two rails
- ==rail==rail=======O=====rail===rail===  <- raised rail on piers, 0.6 m above regolith
-```
-
-## 3. Running gear (low friction, dust tolerant)
+## 4. Running gear (low friction, dust tolerant)
 
 ![Bogie and rail: side view and cross-section](bogie-rail.svg)
 
 **Wheels**
-- Flanged steel wheels, ~400 mm diameter, through-hardened bearing steel (or Ti wheel with a hard coating). Wheel load is low, so wheels can be light.
-- **Avoid like-on-like metals** in vacuum (cold welding). Pair a hardened steel wheel with a rail head of a different material or coating: e.g. ceramic (TiN / DLC / Al₂O₃ plasma spray) on the rail head, or silicon nitride rollers on a steel rail.
-- Bearings: hybrid ceramic (Si₃N₄ balls, steel races) with **dry lubrication** (sputtered MoS₂ or WS₂, or PTFE-composite cages). No grease or oil: they outgas, freeze and collect dust.
-- Sealed bearings with **labyrinth seals plus bellows boots**. Contact seals wear quickly in regolith.
-- Rolling resistance with dry hard surfaces: Crr ~0.001 to 0.003. At 97 kN that is **100 to 300 N** total resistance.
+- Flanged steel wheels, ~250 mm diameter (loads are now small), through-hardened bearing steel or a coated Ti wheel.
+- **Avoid like-on-like metals** in vacuum (cold welding): hardened steel wheel on a ceramic or DLC-coated rail head (or Si₃N₄ rollers on steel).
+- Hybrid ceramic bearings with **dry lubrication** (sputtered MoS₂/WS₂, PTFE-composite cages). No grease or oil.
+- Labyrinth seals plus bellows boots.
+- Rolling resistance Crr ~0.001 to 0.003: at 19.5 kN that is **20 to 60 N** total.
 
 **Bogies**
-- Each bogie is a **swing-arm (equaliser) pair** of 2 wheels, spring-loaded so all wheels share load over uneven rail.
-- **Radial float** of ±50 mm, so thermal expansion of the deck vs. the cold rail is taken in the bogie, not in the structure.
-- **Uplift rollers** under the rail head (captive bogie), to resist tipping from moonquakes, off-centre loads and handling.
-- **Side guide rollers** on the inner rail only; the outer rail is free radially. This avoids binding.
-- **Dust scrapers and brushes** ahead of each wheel in both directions; a soft brush plus a hard skid.
-- Standard **4-bolt kinematic interface** (cone, V-groove, flat) to the deck, with captive bolts and a robot grapple fixture. One bogie = one replaceable unit (~150 to 200 kg).
+- 2-wheel **equaliser** bogies, spring-loaded so both wheels share load.
+- **Uplift rollers** under the rail head (captive bogie) for quakes and handling.
+- **Side guide rollers** are optional: the kingpin centres the deck, so the bogies can float radially (±20 mm) for thermal movement.
+- **Dust scrapers and brushes** ahead of each wheel, both directions.
+- Standard **4-bolt kinematic mount** with captive bolts and a grapple fixture. One bogie ≈ 60 to 80 kg on Earth, about 12 kg-weight on the Moon: **one person can handle it**.
 
-**Centring and drive**
-- Central **kingpin** (large slewing bearing, ~2 m) takes radial loads only; vertical load goes to the rails. This keeps the ring concentric even if rail segments shift a little.
-- **Drive**: 4 friction or pinion drive bogies (redundant, 2 needed). A rack on the inner rail gives positive drive without slip in dust; a friction drive is simpler but can slip.
-- Running power: 300 N x (40 m x π / 29.5 d) ≈ 300 N x 0.05 mm/s ≈ **15 mW**. The drive is sized for **breakaway and dust**: assume 20x running force, ~6 kN tangential, still under 1 kW of motors.
-- Drive by **stepping** (move a few cm, stop) rather than truly continuous creep; this avoids stick-slip chatter and lets you clean between moves.
+**Centring, drive, power transfer**
+- Central **kingpin** with a slewing bearing (~1.2 m) takes radial loads and the mast base moment from quakes. It is also the survey datum for building the ring (section 6).
+- **Drive**: 2 of the 8 bogies are drive bogies (a pinion on a rack on the rail web, or friction wheels); one is enough to turn the platform.
+- Running power is milliwatts. Size the drive for breakaway in dust (~20x running force, ~1 kN tangential): a few hundred watts.
+- Power crosses the rotation through a **slip ring or rotary transformer** in the kingpin.
 
-**Power and data across the rotation**
-- Rotation is always one way, so cable wrap won't work for long. Use a **slip ring or rotary transformer at the kingpin**. A contactless rotary transformer avoids brush wear and dust. At ~350 kW, a DC slip ring with multiple redundant brushes in a sealed housing is the simpler choice.
+## 5. Track (raised, segmented, swappable)
 
-## 4. Track (raised, segmented, swappable)
+- **Raised rail** on piers ~0.5 m above the regolith, away from near-surface dust and with room to work underneath.
+- Rail: hollow box beam with a bolted, replaceable **rail head strip**.
+- **12 identical segments**, π m long. Each sits on 2 piers that are shared with its neighbours at the joints, so **12 piers** in all, plus 4 kingpin anchors.
+- **Angled (scarf) joints** with slotted holes for ~3 to 5 mm expansion each.
+- **Piers** have leveling screws (±50 mm) on sintered-regolith pads, helical ground screws, or regolith-filled gabion bags.
+- An overhanging **skirt or brush seal** on the deck keeps falling dust off the rail head.
 
-- **Raised rail** on piers ~0.6 m above the regolith. Most dust that moves near the surface (rover-kicked, electrostatically lofted) stays low. It also keeps the rail away from regolith creep and gives clearance to work underneath.
-- Rail profile: a hollow steel or titanium box beam with a bolted, replaceable **rail head strip**.
-- **Segments**: 3 m arcs (40 per inner ring, 44 per outer ring), all identical within each ring. Each segment sits on **2 adjustable piers** with leveling screws (±50 mm).
-- **Joints**: angled (scarf) joints so the wheel never meets a square gap; slotted holes give ~5 mm expansion per joint. Steel across 150 K changes ~5.4 mm per 3 m segment, so each joint takes its own segment's movement.
-- **Foundations**: one of
-  - sintered or microwave-melted regolith pads,
-  - helical ground screws (good in compacted regolith),
-  - regolith-filled gabion bags with a leveling plate.
-  Leveling is reset by robot via the pier screws, so foundation settlement is a maintenance task, not a failure.
-- Covers: a **light skirt or brush seal** on the deck hangs over the rail head and catches falling dust. An electrodynamic dust shield (EDS) on the rail head is optional.
-
-## 5. In-situ replacement
-
-Design rule: **N+2 redundancy**. The platform keeps operating with any 2 non-adjacent bogies removed, and with any single rail segment removed.
-
-**Replacing a bogie**
-1. Stop rotation; lock the drive.
-2. A robot (or crew) sets a **jack** on the deck hard-points either side of the bogie and lifts ~10 mm. Neighbouring bogies carry the load (that is why the design wheel load is 3x nominal).
-3. Undo the 4 captive bolts; the grapple pulls the bogie radially outward on its guide rails.
-4. Insert the spare; the kinematic mount self-locates; torque bolts; lower.
+**Replacing a bogie** (N+2: runs with any 2 non-adjacent bogies removed)
+1. Stop the drive and lock it.
+2. Jack the deck ~10 mm at the hard-points either side of the bogie.
+3. Undo 4 captive bolts, slide the bogie out radially, slide the spare in (the kinematic mount self-locates), torque, lower.
 
 **Replacing a rail segment**
-1. Rotate the platform so the segment is in the gap **between** two bogies (bogie spacing ~5 m > 3 m segment length, with margin).
-2. Install a **bridging rail** (a stiff 6 m beam, carried by the robot) that clamps to the neighbouring segments, so the platform can still roll past if needed.
-3. Unbolt the segment from its 2 piers; lift it off; place the new one; level it with the pier screws against a laser reference.
-4. Remove the bridge. Or just replace the **rail head strip** (bolted, ~30 kg) if only the running surface is damaged.
+1. Rotate so the segment is between two bogies. Bogie spacing is 4.7 m against 3.14 m segments, so there is margin.
+2. Clamp the **bridging rail** (6.3 m, two segment lengths) across it if the platform must keep moving.
+3. Unbolt, lift out, drop in the spare, level against the radius arm (section 6), remove the bridge.
+4. If only the running surface is damaged, swap just the rail head strip (~10 kg).
 
-**Spares on site**: 4 bogies, 4 rail segments, 20 rail head strips, 2 drive units, slip ring brush cartridges.
+**Spares on site**: 2 bogies, 2 rail segments, 6 rail head strips, 1 drive unit, slip-ring brush cartridges, 2 stays with tensioners, 1 blanket roll section.
 
-**Interfaces for robots**: every replaceable unit has a standard grapple fixture, captive fasteners (no loose nuts), one tool size, alignment pins and visual targets.
+## 6. Installation equipment and sequence (human supervised)
 
-## 6. Environment checklist
+Everything is built at or near ground level and then raised. A crew member (EVA, or from a pressurised rover nearby) supervises each step, checks readouts and approves every hold point. Machines do the lifting and positioning.
+
+| # | Equipment | What it does |
+|---|---|---|
+| E1 | **Kingpin driver** | Small drill/ground-screw rig that sets the central kingpin foundation. The kingpin becomes the datum for everything else. |
+| E2 | **Radius arm ("compass")** | A 6 m arm that rotates on the kingpin, with a laser level, encoder and a pier socket at its tip. It places every pier at exactly r = 6 m and the right height. Because the ring is small, one rigid arm replaces a survey crew. |
+| E3 | **Rail-riding installer cart** | Rides on the rail already installed, carries the next segment and pier, and places them at the open end of the ring under the radius arm's guidance. Later it becomes the **maintenance cart** (jacking, bogie and segment swaps). |
+| E4 | **Mast jack-up frame** | Sits on the deck around the kingpin. It lifts the whole mast one section (3 m) and a new section is pinned in at the bottom. All mast assembly happens at deck height, so no crane. Lifting the full 3 t mast needs only ~5 kN of jack force. |
+| E5 | **Rigging winches with load cells** | Tension the stays, raise the yards and deploy the blanket. Tensions are shown on a tablet for the supervisor. |
+| E6 | **Regolith compaction plate** | Vibratory plate to prepare pier pads; optional microwave sintering head. |
+
+**Sequence**
+1. Survey and clear a ~16 m circle. Set the kingpin (E1).
+2. Mount the radius arm (E2) on the kingpin and set the 12 piers.
+3. Lay the 12 rail segments with the installer cart (E3), checking each against the radius arm. Hold point: ring flat to ±2 mm.
+4. Place 8 bogies on the rail, then the 4 deck quarter-sections on the bogies and kingpin. Bolt and check the deck turns freely by hand.
+5. Install the jack-up frame (E4). Fit the top mast section with the **top yard folded vertically** alongside it and the **blanket rolls** stowed on the yard.
+6. Jack the mast up section by section, adding spreaders and stays as each level passes deck height. Tension the stays progressively (E5).
+7. At full height, swing the top yard horizontal with its halyards and set the topping lifts.
+8. Unroll the blankets downward from the top yard. In 1/6 g and no wind they hang straight and do not flap. Attach them to the bottom yard and tension (E5).
+9. Connect the harness to the slip ring, commission the drive, start tracking.
+
+Every part is designed for this: captive fasteners only, one tool size, alignment cones on every joint, grapple fixtures, and no part over ~150 kg-weight on the Moon (~900 kg mass) without lifting gear.
+
+## 7. Environment checklist
 
 | Hazard | Response |
 |---|---|
-| Temperature, roughly 40 K (shadow) to ~ +60 °C in sunlit polar areas | Radial float in bogies, expansion joints in rail, materials tough at cryogenic temperatures (austenitic stainless, Ti-6Al-4V, Al-Li; avoid ferritic steel near permanent shadow, it embrittles) |
+| Temperature swings | Spring tensioners on stays, radial float in bogies, rail expansion joints; materials tough at cryogenic temperatures (austenitic stainless, Ti-6Al-4V, Al-Li) |
 | Cold welding in vacuum | Dissimilar or coated mating surfaces, dry lubricants |
-| Abrasive, electrostatic dust | Raised rail, scrapers, labyrinth seals, overhanging skirt, stepping motion, keep rover traffic away |
-| Moonquakes (shallow ones up to ~M5) | Uplift rollers, low natural frequency checked against the tall scaffold |
-| Micrometeoroids | Replaceable panel strings; rail head strips are consumables |
-| Settlement of regolith | Adjustable piers, periodic laser leveling |
-| Shadowing between towers | Spacing rule ~10x tower height if several platforms share a ridge |
+| Abrasive, electrostatic dust | Raised rail, scrapers, labyrinth seals, overhanging skirt, keep rover traffic away; blanket mounted high, above most lofted dust |
+| Moonquakes | Symmetric balanced rig, stays, uplift rollers, kingpin moment capacity |
+| Micrometeoroids | Blanket made of replaceable strings/sections; stays sized with margin and redundant pairs |
+| Regolith settlement | Adjustable piers, periodic re-leveling with the radius arm |
+| Shading between rigs | Rigs on a shared ridge spaced ~10x blanket height apart along the Sun's path |
 
-## 7. Alternatives worth comparing
+## 8. Alternatives worth comparing
 
-- **Central slewing bearing only** (no rails): simpler for small arrays, but a 30 m tall wall puts a huge overturning moment on one bearing. Rails win at this size.
-- **Fixed vertical arrays facing several directions** (no rotation): no moving parts, but about 1/3 to 1/2 of the energy of a tracking array.
-- **Rotate panels on the scaffold instead of the whole platform**: many small actuators instead of one big turntable. More failure points, but each is small and easy to replace.
-- **NASA VSAT-style mast**: a single tall tracking mast, already being developed; useful as a benchmark.
+- **No rail, kingpin only:** the rig is balanced, so a single large slewing bearing could carry it. The rail ring adds tipping stiffness and redundancy, and gives the installer and maintenance cart a track. Worth a trade study.
+- **NASA VSAT-style mast** (single tall tracking mast with a rotating array at the top): rotate only the array, not the base. Lighter base, but the rotating joint is 40 m up, which makes it harder to service.
+- **Fixed multi-face arrays:** no moving parts, about 1/3 to 1/2 of the energy.
 
-## 8. Next steps
+## 9. Next steps
 
-1. Fix the site and power target; that sets height and diameter.
-2. Structural model of the scaffold (modal analysis, moonquake, handling loads during jacking).
-3. Wheel and rail material tests in vacuum with lunar regolith simulant (e.g. LHS-1, NU-LHT) at temperature extremes: wear rate, friction, cold welding.
-4. Detailed bogie design and a robotic swap demonstration on Earth.
-5. Mass and launch packaging: segment lengths should fit the lander fairing.
+1. Fix the site and power target; that sets mast height and blanket size.
+2. Rig analysis: stay pre-tension, thermal cases, modal analysis, moonquake response, the jack-up stages.
+3. Wheel/rail and bearing tests in vacuum with regolith simulant (LHS-1, NU-LHT) across the temperature range.
+4. Prototype the radius arm and installer cart; rehearse the whole build on Earth with suited operators (with a 1/6 g offload rig for the lifting steps).
+5. Packaging: deck quarters, mast sections and rail segments to fit the lander.

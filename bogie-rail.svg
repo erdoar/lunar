@@ -50,13 +50,13 @@
   <text x="166" y="295" class="lbl" fill="#fff" visibility="hidden">.</text>
   <path d="M330 300 L350 375" class="lead"/><text x="300" y="392" class="lbl">Scarf joint (3 m segments,</text><text x="300" y="406" class="lbl">slotted for expansion)</text>
   <path d="M120 350 L160 430" class="lead"/><text x="150" y="446" class="lbl">Pier with leveling screws</text>
-  <text x="150" y="460" class="lbl">(rail ~0.6 m above regolith)</text>
+  <text x="150" y="460" class="lbl">(rail ~0.5 m above regolith)</text>
   <path d="M140 513 L200 495" class="lead"/><text x="202" y="497" class="lbl">Sintered pad / ground screw</text>
-  <text x="186" y="265" class="lbl" font-size="11">Ø400</text>
+  <text x="186" y="265" class="lbl" font-size="11">Ø250</text>
   <text x="40" y="590" class="lbl">Red: replaceable rail head strip.  Green: swap interface / rollers</text>
 
   <!-- ========== CROSS SECTION ========== -->
-  <text x="610" y="30" class="t">Cross-section (inner rail)</text>
+  <text x="610" y="30" class="t">Cross-section</text>
   <rect x="640" y="50" width="330" height="35" class="deck s"/>
   <!-- skirts -->
   <line x1="665" y1="85" x2="665" y2="300" stroke="#555" stroke-width="3" stroke-dasharray="6 4"/>
@@ -89,7 +89,7 @@
   <path d="M665 180 L620 200" class="lead"/><text x="606" y="216" class="lbl">Dust</text><text x="606" y="230" class="lbl">skirt</text>
   <text x="905" y="110" class="lbl" visibility="hidden">.</text>
   <path d="M870 200 L950 200" class="lead"/><text x="955" y="190" class="lbl">Axle: hybrid</text><text x="955" y="204" class="lbl">ceramic bearing,</text><text x="955" y="218" class="lbl">MoS₂, labyrinth</text><text x="955" y="232" class="lbl">seal</text>
-  <path d="M754 298 L700 340" class="lead"/><text x="620" y="356" class="lbl">Side guide roller</text><text x="620" y="370" class="lbl">(inner rail only)</text>
+  <path d="M754 298 L700 340" class="lead"/><text x="620" y="356" class="lbl">Side guide roller</text><text x="620" y="370" class="lbl">(optional)</text>
   <path d="M850 307 L900 345" class="lead"/><text x="880" y="360" class="lbl">Uplift rollers</text><text x="880" y="374" class="lbl">under rail head</text>
   <text x="905" y="296" class="lbl" visibility="hidden">.</text>
   <path d="M870 350 L880 420" class="lead"/><text x="850" y="436" class="lbl">Box beam rail</text>
