@@ -3,7 +3,7 @@
 A very tall mast that turns on a single spherical base pivot, braced by a stationary strut tripod, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
 
-**Client presentation:** an 18-slide deck for agency and mission planners, built from this document and its drawings: https://claude.ai/artifact/AGcYswBAxcMva48yaVsggh (private until shared).
+**Client presentation:** a 21-slide deck, with renders, for agency and mission planners, built from this document and its drawings: https://claude.ai/artifact/AGcYswBAxcMva48yaVsggh (private until shared).
 
 **Renders:** ten photoreal views of the rev 33 rig at a polar site (section 13), made with Blender Cycles from the parametric model in `render/`.
 
