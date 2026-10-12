@@ -5,6 +5,10 @@ A very tall mast that turns on a single spherical base pivot, braced by a statio
 
 **Client presentation:** an 18-slide deck for agency and mission planners, built from this document and its drawings: https://claude.ai/artifact/AGcYswBAxcMva48yaVsggh (private until shared).
 
+**Renders:** ten photoreal views of the rev 33 rig at a polar site (section 13), made with Blender Cycles from the parametric model in `render/`.
+
+![Ground level, from the sunward side](renders/03_ground_hero.jpg)
+
 ## Current design at a glance (rev 33 baseline)
 
 This is the design being developed (mode 1: the **whole mast turns**). Everything under "Revision history" below records how it evolved. Section 9 (mode 2, a top turret) is set aside, and Appendix A (the earlier rail turntable) is superseded.
@@ -1075,6 +1079,25 @@ At ~1 hour per 3 m section, the mast goes up in roughly **35 working hours** of 
 6. Confirm the actual lander's freight envelope and re-cut the parts list (section 10) to it; build and fold a flat-pack mast section and a tent-pole strut, and test their assembly with suited operators.
 7. **Service-bot trials:** climb a full-size mast-core mock-up (1.4 m face) on the fall-arrest rail with a reel as a chest pack; work the hanger latch and the reel socket; lower and re-latch a full-size pack on two ropes, measuring spin and guide-fork capture; walk the yard tip between the splayed lift rods; rehearse the recovery ladder (grabs, untangling, re-equalising with the drum clutches, and a rescue lowering with rope-riding hooks); cold-soak the base battery and bot charging; check supervision and teleoperation modes and fall-arrest drop tests.
 8. **Rod bundle tests:** coil and uncoil cold-soaked bundles at Ø1.4 m; pull-test potted cone sockets after thermal cycling; UV and charging tests of the white jacket; calibrate the crown load pins against a rod pair.
+
+## 13. Renders
+
+Made by `render/render_all.py` from the parametric model in `render/` (`params.py` holds the rev 33 dimensions). Materials, textures and the environment are described in `render/README.md`.
+
+The setting is a knoll just outside the rim of a 21 km crater. The Sun is 1.5° up, the array faces it at the maintenance azimuth, and port pack 6 is halfway through a swap. Earth hangs gibbous 5.5° above the horizon. The ground is lit only at grazing angles, so most of it is dark and the crater interior is in permanent shadow.
+
+| | |
+|---|---|
+| ![Isometric, whole rig](renders/01_iso_rig.jpg) | ![Isometric, site on the crater rim](renders/02_iso_site.jpg) |
+| 1. Isometric, whole rig | 2. Isometric, the site on the crater rim |
+| ![Ground level, from the sunward side](renders/03_ground_hero.jpg) | ![Ground level at a strut foot](renders/04_ground_foot.jpg) |
+| 3. Ground level, from the sunward side | 4. Ground level at a strut foot: pad, tensioner, tie, A-frame |
+| ![Masthead](renders/05_zoom_masthead.jpg) | ![Yard tip](renders/06_zoom_yard_tip.jpg) |
+| 5. Masthead: crown, instrument post, lifts, a bot on the platform | 6. Yard tip: walkway between the splayed lift rods, a bot at a station |
+| ![Pack swap](renders/07_pack_swap.jpg) | ![Base](renders/08_zoom_base.jpg) |
+| 7. Pack swap: one pack on two ropes | 8. Base: pivot enclosure, base frame, trays, an astronaut for scale |
+| ![From along the rim](renders/09_far_rim.jpg) | ![High isometric](renders/10_iso_plan.jpg) |
+| 9. From 260 m along the rim, Earth low in the sky | 10. High isometric: tripod, trays and long shadows |
 
 ## Appendix A. Superseded: rail turntable base (revs 2 to 19)
 
