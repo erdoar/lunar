@@ -1,11 +1,11 @@
-# Lunar polar rotating solar platform: concept design (rev 28, tall mast on a single base pivot, bot-serviced wings)
+# Lunar polar rotating solar platform: concept design (rev 29, tall mast on a single base pivot, bot-serviced wings)
 
 A very tall mast that turns on a single spherical base pivot, braced by a stationary strut tripod, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
 
 **Client presentation:** an 18-slide deck for agency and mission planners, built from this document and its drawings: https://claude.ai/artifact/AGcYswBAxcMva48yaVsggh (private until shared).
 
-## Current design at a glance (rev 28 baseline)
+## Current design at a glance (rev 29 baseline)
 
 This is the design being developed (mode 1: the **whole mast turns**). Everything under "Revision history" below records how it evolved. Section 9 (mode 2, a top turret) is set aside, and Appendix A (the earlier rail turntable) is superseded.
 
@@ -76,10 +76,16 @@ Weight path: mast → foot plate → wear cup (turns) → pivot ball (fixed) →
   - **Mast:** 2 jointless trunks run in grounded trays in the corners of the mast core.
   - **Slip ring:** a drum type with 4 power-class rings (including a spare) and 2 signal rings, 8 brush cartridges and barrier fins.
   - **Rule:** no connector or brush ever makes or breaks under load.
-- **Rev 28 (this):** **pack converter and hanger connector detailed** (section 5d, `pack_converter_check.py`).
+- Rev 28: **pack converter and hanger connector detailed** (section 5d, `pack_converter_check.py`).
   - **Converter:** 4 height-banded MPPT boost inputs, a 450 V link, and a dual-active-bridge converter with 2 stacked secondaries giving ±500 V. Its SiC transistors run at ≤42% of their voltage rating. It is 98% efficient and has a hinged radiator fin.
   - **Connector:** 5 pins of three lengths (earth first, then power, then pilots), with shutters on both halves and a floating receptacle. The **hanger e-fuse is the switch**: it stays open unless the pilot loop, including the latch, is closed.
   - **Power figure:** with real cell packing (87%) a pack makes ~21 kW, so the array delivers ~335 kW. Reaching the 350 kW headline needs ~91% packing; that is noted as a design-margin item.
+- **Rev 29 (this):** **collar roller cartridge detailed** (section 4, `collar_cartridge_check.py`).
+  - **Rollers:** tapered Si₃N₄ tyres (cone apex on the mast axis, so they roll without spin) on replaceable, DLC-coated 440C running strips. Each sits on a hybrid bearing with a sleeve journal as a second rotation path.
+  - **Springs:** Belleville stacks put both thrust rollers in contact; a spring swing arm carries the radial roller.
+  - **Removal:** a 90° release cam unloads every roller so the cartridge slides out.
+  - **Sensing:** a sensor and load bridge on every cartridge, and a self-powered radio sensor hub on each collar.
+  - **Fault check:** a skidding roller (both paths locked) makes ~345 N·m, so the 200 N·m interlock stops the drive.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -169,10 +175,59 @@ The rollers use dry-lubricated hybrid rollers on dissimilar surfaces, the same n
 
 A **transport clamp pin** in each cartridge locks the collar to the band during jack-up (section 7) and is pulled once the collar is at height.
 
+**Roller cartridge detail** (`collar_cartridge_check.py`)
+
+![Collar roller cartridge: section, roller detail, collar plan and swap](cartridge.svg)
+
+- **Band and running strips.**
+  - The Ti box band is bolted to the three mast legs. Its outer face is at r 0.975 m, and the thrust faces sit at a mean r 0.935 m.
+  - Its top, outer and underside faces carry **replaceable 440C steel running strips**: 2 mm, through-hardened, DLC-coated.
+  - The strips come in 6 segments per face, with angled scarf joints so the rollers cross them smoothly. The gaps absorb the ~1.8 mm of steel-on-Ti thermal mismatch round the ring over a 200 K swing.
+  - A worn strip is unbolted and replaced from outside the collar.
+- **Rollers.** All three are Ø100 mm, 30 mm wide, with **Si₃N₄ ceramic tyres** crowned to R 200 mm: ceramic on steel, so there is no like-on-like contact.
+  - The two **thrust rollers are tapered** (3.1° half-angle, cone apex on the mast axis), so they roll on the flat annular faces without spin. A straight roller would scrub ±1.6% across its face.
+  - Peak contact stress at the worst load (1.15 kN, strut collar with one cartridge out) is **~0.73 GPa**, well inside what both materials carry routinely.
+- **Inside each roller: two rotation paths.**
+  - The tyre turns on a **hybrid 6004-size ball bearing** (Si₃N₄ balls, 440C races, sputtered MoS₂, PTFE/polyimide-composite cage).
+  - The bearing's inner race rides on a **sleeve journal** (MoS₂-filled polyimide) on a DLC-coated axle.
+  - If the bearing locks, the sleeve turns instead. Two magnets, one on the tyre and one on the sleeve, read by Hall sensors, show which path is turning.
+  - Fatigue is irrelevant: the bearing's L10 at full load is ~200,000 times the 10-year count of ~2,400 turns. The dry film's life in vacuum and dust is what the life test must prove.
+- **Springs and float.**
+  - Both thrust rollers sit on **Belleville stacks** preloaded to 300 N, with 1.5 mm of travel to a hard stop. The loaded roller rests on its stop (upper roller on the upper collar, lower roller on the strut collar), so it is rigid. The unloaded one keeps 300 N on the band, so nothing rattles in a quake.
+  - The **radial roller** is on a spring swing arm: 250 N preload, 10 N/mm, ±10 mm float (150 to 350 N). That takes up thermal bow and mismatch.
+- **Friction, normal and faulty** (upper collar):
+
+  | Case | Collar torque | Result |
+  |---|---|---|
+  | Normal (all rollers on their bearings) | ~8 N·m | Tracks normally |
+  | One bearing locked, roller on its sleeve | ~42 N·m | Alarm; swap at the next visit |
+  | One roller skidding (both paths locked) | ~345 N·m | Over the 200 N·m interlock: the drive stops until the cartridge is swapped |
+
+- **Release cam.** A 90° turn with the bot's hex tool retracts both thrust rollers 3 mm and the radial roller 15 mm. The other 5 cartridges take the load (≤1.15 kN per roller), and this one slides out radially on its dovetail rails without dragging.
+- **Sensing.** Each cartridge reports through one blind-mate 8-pin connector at its back:
+  - 3 tyre sensors and 3 sleeve sensors;
+  - a strain bridge on the loaded thrust roller's axle block, which reads that roller's share of the stay pull-down;
+  - a temperature sensor.
+- **Collar sensor hub.** The collars are stationary, so nothing reaches them through the slip ring.
+  - Each collar carries a small hub (~5 W) that collects the cartridge sensors and the V-link load pins.
+  - It is powered by a ring of small solar cells round the collar, with a ~240 Wh battery for 48 h of darkness.
+  - It reports to the base by short-range radio.
+  - **Loss of the link counts as a fault: the drive stops,** so the collar-torque interlock fails safe.
+- **Dust and sun.** Each cartridge has a hinged cover that doubles as a sunshade, a brush lip against the band, and a catch shelf under the rollers for wear debris.
+- **Mass:** ~5.9 kg per cartridge (Ti C-frame ~3 kg). 12 are fitted and 2 kept as spares.
+
+**Cartridge swap** (~30 min at height)
+1. Park the mast.
+2. A bot climbs the core rail to the collar's exit, steps out and clips to the collar's grab rail.
+3. Turn the release cam 90°.
+4. Undo the 2 captive bolts and draw the cartridge out on its rails by the grapple handle (~1 kg-weight on the Moon).
+5. Slide the spare in, bolt it, set the cam to "run", and check that its sensors report and the rollers turn.
+6. The old cartridge goes down in the bot's chest pack for inspection, to learn real wear rates.
+
 **Preventing collar bearing seizure.** The upper collar is the hardest part to reach (62 m up). It carries a steady downward pull from the wires and sees the biggest temperature swings, so it gets the most protection. If it seized while the base kept driving, the mast would be twisted against the tripod. Protection is in five layers:
 
 1. **Remove the causes of seizure.**
-   - *Cold welding:* no like-on-like metal contact anywhere. Steel or Si₃N₄ rollers run on a ceramic/DLC-coated Ti band; races and balls are dissimilar (hybrid ceramic bearings).
+   - *Cold welding:* no like-on-like metal contact anywhere. Si₃N₄ roller tyres run on DLC-coated 440C running strips; races and balls are dissimilar (hybrid ceramic bearings).
    - *Lubricant loss:* dry films only (sputtered MoS₂ or WS₂ on races, PTFE/polyimide-composite cages that keep re-transferring lubricant). Nothing evaporates, freezes or creeps in vacuum.
    - *Thermal pinching:* the band and collar ring are both Ti, so they expand alike. Each radial roller sits on a **preload spring with ±10 mm float**, so no temperature difference or thermal bow of the mast can squeeze a roller tight. The thrust rollers are crowned and spring-loaded the same way. White thermal coating plus a light sunshade keep the collar near the mast's temperature.
    - *Dust:* at 62 m the collar is far above most lofted dust. Metal labyrinth lips on the band, a cover over each cartridge, and a brush skirt keep out what does arrive. Wear debris falls onto a catch shelf, not into the next roller.
@@ -183,7 +238,7 @@ A **transport clamp pin** in each cartridge locks the collar to the band during 
    - *Very few turns:* each roller runs on a ~6.1 m circle (band Ø1.95 m) once per lunar day, about 6.1 / (π x 0.1) ≈ **20 turns per lunar day**. That is ~240 a year, or ~2,400 in ten years, where an ordinary bearing makes that many turns in a few seconds. Rolling fatigue and wear are therefore negligible. The real risks are static ones during long, almost motionless spells: cold welding, fretting from vibration, and dust settling. The other measures here are aimed at those.
 2. **Make a stuck roller harmless.**
    - Each roller has a **second rotation path**: the ball bearing runs on a dry-lubricated sleeve journal. If the bearing locks, the roller turns on the sleeve.
-   - If both lock, the roller skids on its hard coated face rather than jamming. The other 5 cartridges keep guiding the mast.
+   - If both lock, the roller skids on its hard face rather than jamming. The other 5 cartridges keep guiding the mast, and the skid friction (~345 N·m) trips the collar-torque interlock, so the drive stops until the cartridge is swapped.
    - No single cartridge can lock the collar.
 3. **See it coming.** The V-link load pins read collar friction torque directly.
    - Every roller has a small rotation sensor (magnet + Hall sensor). If the mast turns and a roller doesn't, the system alarms long before the bearing seizes.
@@ -563,7 +618,7 @@ Only **three bearing sets rotate in service**: the base pivot and the 2 collars.
 | # | Joint | Relative motion | Load (Moon) | Type |
 |---|---|---|---|---|
 | 1 | **Base pivot** | Rotating, ~0.5°/h, always | **~9.9 kN** down (~0.16 MPa); small radial and quake loads | Spherical plain pivot: hard convex ball (fixed) under a replaceable MoS₂/WS₂ composite wear cup (turning) with embedded wear-sensing layers |
-| 2 | **Upper collar** (62 m, 6 cartridges) | Rotating (mast inside a stationary collar) | Stay pull-down ~4 kN total, ~0.7 kN per thrust roller; small radial | Roller cartridges with dual rotation paths; torque read by the V-link load pins |
+| 2 | **Upper collar** (62 m, 6 cartridges) | Rotating (mast inside a stationary collar) | Stay pull-down ~4 kN total, ~0.7 kN per thrust roller; small radial | 6 roller cartridges: tapered Si₃N₄ tyres on 440C strips, hybrid bearing + sleeve journal, Belleville and swing-arm preload |
 | 3 | **Strut collar** (35 m, 6 cartridges) | Rotating | Strut push-up ~5.7 kN total, ~0.9 kN per lower thrust roller | Same cartridge design as the upper collar |
 | 4 | Pivot keeper hooks (3) | None in service (~5 mm clearance) | ~0 (handling, quake only) | Pinned hooks on the foot plate, under a conical flange on the pedestal |
 | 5 | Drive units (2) | Rotating, always (very slowly) | ~50 to 165 N·m running, limiter at ~300 N·m | Removable cartridges: motor, 50:1 planetary, self-locking 60:1 worm, torque limiter, 12-tooth pin wheel on a 96-pin Ø1.2 m ring (24,000:1) |
@@ -707,7 +762,7 @@ Each half is ~1.5 kg. The receptacle hangs under the hanger, facing down, 0.25 m
 
 ## 6. Spares on site
 
-2 pivot wear cups, 1 pivot ball, 1 drive-unit cartridge, 1 torque limiter, 1 pin-ring segment, 2 enclosure panels (1 radiator, 1 plain), 1 lid segment, 2 slip-ring brush cartridges, 1 pack converter, 1 converter radiator fin, 1 hanger receptacle and 1 plug, 4 e-fuses, 2 collar roller cartridges, 1 stay cable, 1 V-link with load pins, 1 tie with tensioner, 1 strut section, 4 concertina packs, 1 spare reel hoist and 2 spare ropes, spare fall-arrest trolleys, 2 cable cutters, 4 rope grabs, 1 spare rescue kit (2 rope-riding hooks, 2 edge rollers), 2 battery modules. A third service bot in reserve is worth considering.
+2 pivot wear cups, 1 pivot ball, 1 drive-unit cartridge, 1 torque limiter, 1 pin-ring segment, 2 enclosure panels (1 radiator, 1 plain), 1 lid segment, 2 slip-ring brush cartridges, 1 pack converter, 1 converter radiator fin, 1 hanger receptacle and 1 plug, 4 e-fuses, 2 collar roller cartridges, 2 running-strip segments, 1 collar sensor hub, 1 stay cable, 1 V-link with load pins, 1 tie with tensioner, 1 strut section, 4 concertina packs, 1 spare reel hoist and 2 spare ropes, spare fall-arrest trolleys, 2 cable cutters, 4 rope grabs, 1 spare rescue kit (2 rope-riding hooks, 2 edge rollers), 2 battery modules. A third service bot in reserve is worth considering.
 
 ## 7. Installation equipment and sequence (human supervised)
 
@@ -856,7 +911,7 @@ At ~1 hour per 3 m section, the mast goes up in roughly **35 working hours** of 
 
 1. **Site illumination study** on LOLA data: sunlight hours vs array height at candidate spots; pick the height.
 2. Mast and tripod analysis: strut and mast buckling, pre-tension, thermal bow, moonquake response, every jack-up and scissor stage.
-3. Life tests in vacuum, thermal cycling and dust (LHS-1, NU-LHT simulants) for the collar cartridges and the base pivot: friction, wear rate with regolith simulant, and the wear-indicator layers. Thermal-vacuum test of the base enclosure with the slip ring under load at ±500 V with simulant dust (brush wear, contact drop, tracking); make-and-break tests of the hanger connector interlock; a pack converter heavy-ion test (single-event burnout at the 42% derating) and a thermal-vacuum test with its radiator fin; a cell-packing study to close the ~5% gap to 350 kW; and a dual-drive torque-bias and mesh-release test.
+3. Life tests in vacuum, thermal cycling and dust (LHS-1, NU-LHT simulants) for the collar cartridges (a full cartridge on a band section with scarf-jointed strips: dry-film life, sleeve-path break-out, skid friction) and the base pivot: friction, wear rate with regolith simulant, and the wear-indicator layers. Thermal-vacuum test of the base enclosure with the slip ring under load at ±500 V with simulant dust (brush wear, contact drop, tracking); make-and-break tests of the hanger connector interlock; a pack converter heavy-ion test (single-event burnout at the 42% derating) and a thermal-vacuum test with its radiator fin; a cell-packing study to close the ~5% gap to 350 kW; and a dual-drive torque-bias and mesh-release test.
 4. Prototype the jack-up with collars, the strut scissor and tie winches at small scale; rehearse with suited operators.
 5. Concertina pack trials: self-folding into a tray and unfolding on lift (fold direction, hinge springs, panel edge contact), cycles in vacuum and cold; lowering one pack past its neighbours.
 6. Confirm the actual lander's freight envelope and re-cut the parts list (section 10) to it; build and fold a flat-pack mast section and a tent-pole strut, and test their assembly with suited operators.
