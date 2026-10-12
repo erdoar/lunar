@@ -15,18 +15,18 @@
 <rect x="240.0" y="569.0" width="20" height="8" fill="#4a9" class="s"/>
 <rect x="240.0" y="401.59999999999997" width="20" height="8" fill="#4a9" class="s"/>
 <rect x="247.0" y="120.39999999999998" width="6" height="661.6" fill="#e67e22"/>
-<rect x="141.5" y="168.0" width="217.0" height="5" fill="#e67e22" class="s"/>
-<line x1="250.0" y1="120.39999999999998" x2="144.6" y2="170.0" stroke="#555"/>
-<rect x="144.6" y="173.0" width="93.0" height="183.0" fill="#2c4a7a"/>
-<line x1="250.0" y1="120.39999999999998" x2="355.4" y2="170.0" stroke="#555"/>
-<rect x="262.4" y="173.0" width="93.0" height="183.0" fill="#2c4a7a"/>
+<rect x="134.06" y="168.0" width="231.88" height="5" fill="#e67e22" class="s"/>
+<line x1="250.0" y1="120.39999999999998" x2="135.3" y2="170.0" stroke="#555"/>
+<rect x="135.3" y="173.0" width="103.53999999999999" height="183.0" fill="#2c4a7a"/>
+<line x1="250.0" y1="120.39999999999998" x2="364.7" y2="170.0" stroke="#555"/>
+<rect x="261.16" y="173.0" width="103.53999999999996" height="183.0" fill="#2c4a7a"/>
 <rect x="240.7" y="779" width="18.6" height="3" fill="#e67e22"/>
 <rect x="242.56" y="784" width="14.879999999999999" height="6" fill="#7d8790"/>
 <rect x="141.5" y="780" width="93.0" height="3" fill="#999"/>
 <rect x="259.29999999999995" y="780" width="93.0" height="3" fill="#999"/>
-<path d="M355 263L374 244" class="l"/>
-<text x="378" y="248" text-anchor="start">Solar wings, 70–100 m</text>
-<text x="378" y="262" text-anchor="start">(2 x 17 x 30 m, ~350 kW)</text>
+<path d="M365 263L380 244" class="l"/>
+<text x="384" y="248" text-anchor="start">Solar wings, 70–100 m</text>
+<text x="384" y="262" text-anchor="start">(2 x 16.7 x 30 m, ~335 kW)</text>
 <path d="M188 170L114 145" class="l"/>
 <text x="110" y="149" text-anchor="end">Top yard, 100 m</text>
 <path d="M250 127L300 96" class="l"/>

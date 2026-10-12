@@ -35,16 +35,16 @@ for c in (35, 62):
     A(f'<rect x="{X(0)-10}" y="{Z(c)-4}" width="20" height="8" fill="{FIX2}" class="s"/>')
 # rotating: mast, yard, wings, deck
 A(f'<rect x="{X(0)-3}" y="{Z(108)}" width="6" height="{108*e-8}" fill="{ROT}"/>')
-A(f'<rect x="{X(-17.5)}" y="{Z(100)-2}" width="{35*e}" height="5" fill="{ROT}" class="s"/>')
+A(f'<rect x="{X(-18.7)}" y="{Z(100)-2}" width="{37.4*e}" height="5" fill="{ROT}" class="s"/>')
 for sx in (-1, 1):
-    A(f'<line x1="{X(0)}" y1="{Z(108)}" x2="{X(sx*17)}" y2="{Z(100)}" stroke="#555"/>')
-    xl, xr = sorted((X(sx * 2), X(sx * 17)))
+    A(f'<line x1="{X(0)}" y1="{Z(108)}" x2="{X(sx*18.5)}" y2="{Z(100)}" stroke="#555"/>')
+    xl, xr = sorted((X(sx * 1.8), X(sx * 18.5)))
     A(f'<rect x="{xl}" y="{Z(100)+3}" width="{xr-xl}" height="{30*e-3}" fill="{ROT2}"/>')
 A(f'<rect x="{X(-1.5)}" y="{gy-11}" width="{3*e}" height="3" fill="{ROT}"/>')
 A(f'<rect x="{X(-1.2)}" y="{gy-6}" width="{2.4*e}" height="6" fill="{FIX}"/>')
 for sx in (-1, 1):
     A(f'<rect x="{X(sx*9.5)-8*e}" y="{gy-10}" width="{15*e}" height="3" fill="#999"/>')
-lab(X(17), Z(85), X(20), Z(88), ['Solar wings, 70–100 m', '(2 x 17 x 30 m, ~350 kW)'])
+lab(X(18.5), Z(85), X(21), Z(88), ['Solar wings, 70–100 m', '(2 x 16.7 x 30 m, ~335 kW)'])
 lab(X(-10), Z(100), X(-22), Z(104), ['Top yard, 100 m'], 'end')
 lab(X(0), Z(107), X(8), Z(112), ['Mast, 108 m'])
 lab(X(0) + 10, Z(62), X(14), Z(64), ['Upper collar 62 m + stay cables'])

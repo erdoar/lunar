@@ -44,13 +44,13 @@ print('opposite-hand pair: lay torques cancel; flared guide forks square the las
 
 # 4. Swap time (one pack, one bot)
 climb_v = 0.15                               # m/s inside the mast, clipped on
-t = 2 * H_yard / climb_v / 60 + 2 * 17 / 0.3 / 60 + 2 * t_move + 15
+t = 2 * H_yard / climb_v / 60 + 2 * 18.7 / 0.3 / 60 + 2 * t_move + 15
 print(f'one swap: climb up/down {2*H_yard/climb_v/60:.0f} min, walk out/back {2*17/0.3/60:.0f} min, lower+hoist {2*t_move:.0f} min,'
       f' rig/unrig + ground handling ~15 min -> ~{t/60:.1f} h')
 print(f'first fit of 16 packs: hoist only ~{16*(t_move+15)/60:.0f} h with one bot, half that with two\n')
 
 # 5. Balance about the mast (wing plane), worst cases
-r_pack, r_tip = 16.0, 17.0
+r_pack, r_tip = 17.5, 18.7                  # rev 32: outer hanger centre and yard tip
 M_pack = T * r_pack / 1e3
 M_bot = (bot + reel) * g * r_tip / 1e3
 print(f'outer pack missing: {M_pack:.1f} kN.m; bot+reel at a yard tip: {M_bot:.1f} kN.m')

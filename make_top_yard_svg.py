@@ -1,4 +1,4 @@
-# Generates top-yard.svg (rev 25): front elevation, side view, two-rope hanger station and twin-drum reel hoist.
+# Generates top-yard.svg (rev 32): front elevation, side view, two-rope hanger station and twin-drum reel hoist.
 # Run: python3 make_top_yard_svg.py
 o = []
 A = o.append
@@ -39,22 +39,22 @@ for z in range(Zb, 108, 1):
     A(f'<line x1="{X(-0.7)}" y1="{Z(z)}" x2="{X(0.7)}" y2="{Z(z+1)}" stroke="#ccc"/>')
 A(f'<line x1="{X(0)}" y1="{Z(Zb)}" x2="{X(0)}" y2="{Z(101.6)}" stroke="{BOT}" stroke-width="2" stroke-dasharray="6 3"/>')
 for zc in (100.4, 99.6):
-    A(f'<line x1="{X(-17)}" y1="{Z(zc)}" x2="{X(17)}" y2="{Z(zc)}" class="yard"/>')
-for i in range(-17, 17):
-    A(f'<line x1="{X(i)}" y1="{Z(100.4)}" x2="{X(i+1)}" y2="{Z(99.6)}" stroke="#c87f0a" stroke-width="1"/>')
+    A(f'<line x1="{X(-18.7)}" y1="{Z(zc)}" x2="{X(18.7)}" y2="{Z(zc)}" class="yard"/>')
+for i in range(-14, 14):
+    A(f'<line x1="{X(i*18.7/14)}" y1="{Z(100.4)}" x2="{X((i+1)*18.7/14)}" y2="{Z(99.6)}" stroke="#c87f0a" stroke-width="1"/>')
 # walkway + rail on top
-A(f'<rect x="{X(-17)}" y="{Z(100.4)-3}" width="{34*k}" height="3" fill="url(#gr)" stroke="#777" stroke-width="0.6"/>')
-A(f'<line x1="{X(-17)}" y1="{Z(101.5)}" x2="{X(17)}" y2="{Z(101.5)}" stroke="{BOT}" stroke-width="1.6"/>')
-for i in range(-17, 18, 2):
+A(f'<rect x="{X(-18.7)}" y="{Z(100.4)-3}" width="{37.4*k}" height="3" fill="url(#gr)" stroke="#777" stroke-width="0.6"/>')
+A(f'<line x1="{X(-18.7)}" y1="{Z(101.5)}" x2="{X(18.7)}" y2="{Z(101.5)}" stroke="{BOT}" stroke-width="1.6"/>')
+for i in range(-18, 19, 2):
     A(f'<line x1="{X(i)}" y1="{Z(100.4)-3}" x2="{X(i)}" y2="{Z(101.5)}" stroke="{BOT}" stroke-width="0.8"/>')
 for sx in (-1, 1):
-    A(f'<line x1="{X(0)}" y1="{Z(108)}" x2="{X(sx*17)}" y2="{Z(100.4)}" class="w"/>')
+    A(f'<line x1="{X(0)}" y1="{Z(108)}" x2="{X(sx*18.5)}" y2="{Z(100.4)}" class="w"/>')
 A(f'<circle cx="{X(0)}" cy="{Z(108)}" r="4" fill="#555"/>')
 # hangers and packs; one port pack being lowered
-pitch, pw, LOW = 15 / 8, 1.75, 5
+pitch, pw, LOW = 2.1, 2.0, 5
 for sx in (-1, 1):
     for i in range(8):
-        c = sx * (2 + pitch * (i + 0.5))
+        c = sx * (2.8 + pitch * i)
         A(f'<path d="M{X(c)-9} {Z(99.6)} h18 l-4 7 h-10 z" fill="{HNG}" stroke="#222"/>')
         A(f'<rect x="{X(c)-4}" y="{Z(100.4)-9}" width="8" height="6" fill="#ddd" stroke="#222" stroke-width="0.8"/>')   # reel socket
         if sx == -1 and i == LOW:
@@ -71,9 +71,9 @@ A(f'<rect x="{X(-2.6)}" y="{Z(100.4)-16}" width="{1.6*k}" height="13" fill="#d5d
 lab(X(-1.8), Z(100.4) - 16, X(-3.5), Z(104.2), ['Reel garage (2 reels)'])
 A(f'<rect x="{lx-12}" y="{Z(100.4)-15}" width="12" height="11" fill="#7fa3d6" class="s"/>')
 lab(X(0) + 4, Z(108), X(3), Z(108.6), ['Masthead, 108 m (8 m above yard)'])
-lab(X(9), Z(103.9), X(10), Z(106.3), ['Topping lift ~3.0 kN'])
+lab(X(8.6), Z(104.2), X(7.6), Z(106.3), ['Topping lift ~3.4 kN (CFRP rods)'])
 lab(X(6), Z(101.5), X(7.5), Z(104.3), ['Walkway + fall-arrest rail'])
-lab(X(8), Z(100.4), X(8.5), Z(102.6), ['Yard truss 34 m, 0.8 m deep'])
+lab(X(8), Z(100.4), X(8.5), Z(102.6), ['Yard truss 37.4 m, 0.8 m deep'])
 lab(lx + 4, Z(102.6), X(-15.5), Z(107.6), ['Bot with a reel at the station'])
 lab(X(-2.9), Z(99.6) + 5, X(-6), Z(89.2), ['Fixed hanger (16)'])
 lab(lx, Z(93), X(-16.5), Z(89.2), ['Two ropes to the', 'pack being lowered'])

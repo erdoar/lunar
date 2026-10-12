@@ -1,11 +1,11 @@
-# Lunar polar rotating solar platform: concept design (rev 31, tall mast on a single base pivot, bot-serviced wings)
+# Lunar polar rotating solar platform: concept design (rev 32, tall mast on a single base pivot, bot-serviced wings)
 
 A very tall mast that turns on a single spherical base pivot, braced by a stationary strut tripod, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
 
 **Client presentation:** an 18-slide deck for agency and mission planners, built from this document and its drawings: https://claude.ai/artifact/AGcYswBAxcMva48yaVsggh (private until shared).
 
-## Current design at a glance (rev 31 baseline)
+## Current design at a glance (rev 32 baseline)
 
 This is the design being developed (mode 1: the **whole mast turns**). Everything under "Revision history" below records how it evolved. Section 9 (mode 2, a top turret) is set aside, and Appendix A (the earlier rail turntable) is superseded.
 
@@ -91,11 +91,15 @@ Weight path: mast → foot plate → wear cup (turns) → pivot ball (fixed) →
   - **Tensioner:** the foot winch used in erection stays on as the permanent **servo tensioner**: a self-locking worm drum, a Belleville buffer, a load cell and a 10 W servo.
   - **Why it must be active:** 67 m of steel stay changes length by ~0.25 m between sun and shade, ±2.6 kN if held rigid. A white coating halves that, so even with the power off the tension stays at ~0.2 to 2.8 kN.
   - **Correction:** the pin couple at the 200 N·m interlock is ~±90 N, not ±0.2 kN (that is the 500 N·m figure).
-- **Rev 31 (this):** **strut A-frame and foot pad detailed** (section 4, `strut_foot_check.py`).
+- Rev 31: **strut A-frame and foot pad detailed** (section 4, `strut_foot_check.py`).
   - **Margin:** the tubes have a 7.4x buckling margin even with the joints, so no lacing is needed.
   - **Joints:** tent-pole sleeve joints with a 0.3 m Ti spigot carry the erection bending.
   - **Correction 1:** each strut end swings ~53° during the scissor erection, beyond a spherical bearing's range. Each end now gets a **hinge pin** for the swing plus a spherical bushing for misalignment.
   - **Correction 2:** friction alone (~0.3 kN) cannot hold a foot against a quake (~0.4 kN). The foot frame now sits in a **sintered conical socket** (~1.2 kN sideways).
+- **Rev 32 (this):** **top yard and pack hanger detailed** (section 4a, `top_yard_detail_check.py`).
+  - **Correction 1:** 8 packs of 2 m with 0.1 m gaps need 16.7 m, but the old 2 to 17 m span held only 15 m. The wings now run from **1.8 to 18.5 m** (0.53 m clear of the collar rings), and the yard grows from 34 m to **37.4 m**. The topping lift rises to ~3.4 kN, and the worst imbalance to ~7 kN·m, still about half the quake case.
+  - **Correction 2:** the steel topping lifts, braces and diamond stays would swing ±1.3 kN with temperature against the CFRP mast and yard. They become **coated CFRP rods** (2 x Ø8 mm per line, potted Ti ends), which swing only ±0.4 kN. The bracing stays stay steel because they pay out from a drum during erection.
+  - **Detail:** the yard truss, its root joint round an open mast core, and each hanger's layout along its length.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -122,7 +126,7 @@ How the design uses this:
 1. **A slender braced mast.** Without wind and in 1/6 g, a light lattice mast needs only a little lateral bracing to reach 100 m or more. Its practical limit is set by the site, installation and shading, not strength.
 2. **The bracing doesn't rotate.** A stationary **strut tripod** holds the mast through two **roller collars**, and the mast turns inside them. This keeps the base down to a single pivot while the bracing spreads wide (feet at 30 m).
 3. **A closed truss, so no tension anchors.** Each bracing plane is a triangle: strut (compression), wire (tension) and the mast between the two collars. A horizontal tie from each foot to the central foundation closes it at ground level. The three ties pull on the foundation from 120° apart, so they cancel. The foot pads only ever push down on the ground. Holding up-pull in loose regolith is hard; bearing down on it is easy.
-4. **The array sits above all the bracing.** It sweeps a 17 m radius circle from 67 to 100 m. The upper collar is at 62 m, so the turning array never meets a strut or wire. Above the collar the mast is braced by its own rotating **diamond stays** (spreaders and stays that turn with the mast, as on a racing yacht).
+4. **The array sits above all the bracing.** It sweeps an 18.5 m radius circle from 67 to 100 m. The upper collar is at 62 m, so the turning array never meets a strut or wire. Above the collar the mast is braced by its own rotating **diamond stays** (spreaders and stays that turn with the mast, as on a racing yacht).
 5. **Light rigid concertina packs** (~2 kg/m²) that hang from the top. In 1/6 g with no wind they unfold under their own weight and hang flat, with no frame needed to hold the 30 m height.
 6. **Balanced rig.** The array is one plane through the mast, left and right equal, so its centre of mass stays on the axis.
 7. **Steady sunlight makes thermal bow predictable.** Because the rig tracks the Sun, the same mast face is always sunlit, so the bow is nearly constant and can be trimmed out with wire tension. The mast sits behind the blanket, so its top section is in shade. CFRP tubes (α ≈ 0 to 1x10⁻⁶ /K) keep the bow to a few centimetres. The same 35 m length in aluminium would bow ~0.9 m.
@@ -134,12 +138,12 @@ How the design uses this:
 |---|---|
 | Array top / bottom | **100 m / 70 m** above the ground |
 | Mast | **108 m** triangular CFRP lattice (Ti nodes), 1.2 to 1.5 m face, ~25 kg/m (~2.7 t), in **36 flat-pack 3 m sections** (section 10). Top yard at 100 m, masthead 8 m above it |
-| Solar wings | **Port and starboard wings**, each 17 m x 30 m (~500 m²), total ≈ **1,000 m²**. Each wing is **8 concertina packs**, each on its own fixed hanger under the top yard. ~1.37 t per wing (~2.2 kN on the Moon) |
+| Solar wings | **Port and starboard wings**, each ~16.7 m x 30 m (8 packs of 2.0 m, ~480 m²), total ≈ **960 m²**. Each wing is **8 concertina packs**, each on its own fixed hanger under the top yard. ~1.37 t per wing (~2.2 kN on the Moon) |
 | Concertina pack | Rigid panels ~2 m wide x 1 m tall (CFRP-honeycomb, ~2 kg/m² with cells), 30 panels hinged along their horizontal edges. Deployed: 2 m x 30 m. Folded: ~2 m x 1 m x 0.7 m, ~140 kg (~0.23 kN on the Moon). Packs from 1 to 3 m wide use the same station hardware |
 | Power (30% cells, 1,361 W/m², ~85% system) | **~350 kWe** |
-| Top yard (permanent) | 34 m CFRP truss fixed to the mast at 100 m, with topping lifts from the masthead and braces to the spreader tips. 8 fixed **pack hangers** per wing, each with 4 rope sheaves, guide forks and a **reel socket** above it, a reel garage at the root, and a railed **walkway** along the top. Details in section 4a |
+| Top yard (permanent) | 37.4 m CFRP truss fixed to the mast at 100 m, with topping lifts from the masthead and braces to the spreader tips (coated CFRP rods). 8 fixed **pack hangers** per wing, each with 4 rope sheaves, guide forks and a **reel socket** above it, a reel garage at the root, and a railed **walkway** along the top. Details in section 4a |
 | Service bots | **2 humanoid-class bots** (~70 kg, ~0.11 kN on the Moon), supervised or teleoperated. They climb a fall-arrest rail inside the mast core (clear ~Ø0.69 m). Pack swaps use **twin-drum reel hoists** (~14 kg, 2 x ~108 m of 2 mm stainless rope) kept in a garage at the yard root. They carry cable cutters and rope grabs for emergencies. Docked and charged from a ~20 kWh storage battery on the rotating base frame |
-| Landing trays | 2 light trays on short ground legs (~1.5 m high) along the maintenance azimuth (port and starboard, 2 to 17 m from the mast). The packs fold into them |
+| Landing trays | 2 light trays on short ground legs (~1.5 m high) along the maintenance azimuth (port and starboard, 1.8 to 18.5 m from the mast). The packs fold into them |
 | Roller collars (stationary) | **Strut collar at 35 m**, **upper collar at 62 m** |
 | Struts | 3 **A-frames** at 120°: each 2 CFRP tubes Ø0.3 m x 2 mm, ~46 m long, ~3 kg/m, ball joints at both ends. Joined at the foot, spread ±1.5 m at a torque bracket 4 m out from the strut collar |
 | Foot pads | 3 at **30 m radius**, 1.2 x 1.2 m sintered pad with a 30° conical socket (gabion fallback), compression only (~0.64 kN) |
@@ -377,7 +381,7 @@ How it works:
 
 ![Wings: a service bot lowers one pack into its landing tray](wings.svg)
 
-Each wing is **8 concertina packs** side by side between 2 and 17 m from the mast, each ~2 m wide (1 to 3 m packs fit the same hangers), with ~0.1 m gaps.
+Each wing is **8 concertina packs** side by side **between 1.8 and 18.5 m** from the mast: 2.0 m packs at a 2.1 m pitch, with ~0.1 m gaps (1 to 3 m packs fit the same hangers).
 - **A pack** is 30 rigid panels, 1 m tall, hinged along their horizontal edges, with a small bottom bar. Folded, it is a ~2 m x 1 m x 0.7 m stack of ~140 kg (~0.23 kN on the Moon), which ships, stores and handles easily.
 - **Pack head:** the top of each pack is a light 2 m beam with 4 alignment cones, an end tab at each end for the guide forks, and a **lifting eye at each end**, ~1.6 m apart, with a **rescue eye** beside each (section 4, recovery).
 - **Attachment:** the pack head latches into a **fixed pack hanger** under the top yard (section 4a). There is no wing top bar and no halyard: the yard carries every pack directly.
@@ -393,7 +397,7 @@ Pack swap, about 1.2 h with one bot:
 3. It clips the reel into the socket, hooks the two ropes to the pack head's two lifting eyes, takes the load (~50 mm off the cones) and opens the hanger latch.
 4. **Lower** at ~0.1 m/s (~16 min).
    - For the first 30 m the pack slides down past its hanging neighbours. With no wind, everything hangs still.
-   - It passes the collars, V-links and A-frames ≥1.4 m clear.
+   - It passes the collar rings ≥0.5 m clear (inner pack) and the V-links and A-frame brackets, which are 30° out of the wing plane.
    - Its bottom bar lands in its tray slot with ~30 m still to pay out. The pack then **folds itself up** in the slot, panel by panel, as the whole wings did in revs 15 to 21.
 5. A rover or a suited crew member unhooks the old pack, moves it aside, sets the new folded pack in the slot and hooks the rope on.
 6. **Hoist.** The pack unfolds panel by panel as it lifts off the tray. In the last ~0.4 m its end tabs enter the **flared guide forks**, which square it up, and the cones seat. The bot closes the latch (the limit switch confirms), slackens and unhooks the ropes, returns the reel to the garage and climbs down.
@@ -453,7 +457,7 @@ On the Moon there is no outside help, so every fault must be recoverable with th
 
 **Balance.**
 - While a pack hangs on the rope its weight is still on the yard, so the balance changes only once it lands.
-- With the outermost pack off, the imbalance is **~3.6 kN·m**. With the bot and reel at the opposite yard tip, the worst case is **~6 kN·m**. That is about half the ~12 kN·m quake case the mast and collars are already checked for. The topping-lift load cells read the imbalance directly.
+- With the outermost pack off, the imbalance is **~4.3 kN·m**. With the bot and reel at the opposite yard tip, the worst case is **~7 kN·m**. That is about half the ~12 kN·m quake case the mast and collars are already checked for. The topping-lift load cells read the imbalance directly.
 - The whole wings never land any more, so the ~21 kN·m one-wing-landed case and the ballast pallet are gone.
 - The first fit of the 16 packs, and any job on several packs, alternates port and starboard, so the rig is never more than one pack out of balance.
 
@@ -462,25 +466,56 @@ On the Moon there is no outside help, so every fault must be recoverable with th
 ![Top yard: elevation, side view, pack hanger station and reel hoist](top-yard.svg)
 
 **Structure**
-- **Yard:** a 34 m CFRP-tube truss with Ti nodes, ~0.8 m deep and ~0.5 m wide. It is built from 12 bolted sections of ~2.8 m, flat-pack like the mast, to fit the freight module. Mass ~0.4 t (~12 kg/m).
-  - It is bolted at its centre to a **yard-mast section** at 100 m, so it turns with the mast. There is no bearing.
-  - It carries only light, mostly axial loads: ~2.7 kN of compression from the topping lifts. Its buckling load as a 17 m pinned strut is ~275 kN.
+- **Yard:** a **37.4 m** CFRP-tube truss (two 18.7 m arms) with Ti nodes, ~0.8 m deep and ~0.5 m wide. It is built from 14 bolted sections of ~2.7 m, flat-pack like the mast, to fit the freight module. Mass ~0.45 t (~12 kg/m).
+  - Its two arms bolt to a stiffened **yard-mast section** at 100 m, so it turns with the mast. There is no bearing.
+  - Each arm carries ~3.1 kN of compression from its topping lift, plus the wing's bending between the mast and the lift. The arm's buckling load is ~320 kN sideways and ~830 kN vertically. Details below.
 - **Masthead:** an 8 m mast extension above the yard (mast top at 108 m), carrying the topping-lift tangs and the diamond-stay head.
-  - It is 8 m rather than 5 m because the steeper lift angle (25° instead of 16°) cuts the topping-lift tension from ~4.5 kN to **~3.0 kN**, and the yard compression from ~4.3 to **~2.7 kN**.
+  - It is 8 m rather than 5 m because the steeper lift angle cuts the topping-lift tension. With the rev 32 yard (lift at 18.5 m, 23°) it is **~3.4 kN**, and the yard compression **~3.1 kN** per arm.
   - Cost: one extra mast section (+75 kg).
 
 **Stays at the top**
 | Line | From → to | Purpose | Load (wings up) |
 |---|---|---|---|
-| **Topping lifts** (2) | Masthead → yard tips (±17 m) | Hold the yard ends up against the wing weight | ~3.0 kN each |
+| **Topping lifts** (2) | Masthead → yard tips (±18.5 m) | Hold the yard ends up against the wing weight | ~3.4 kN each |
 | **Braces** (4) | Yard tips → diamond-spreader tips (±6 m fore/aft, at 81 m) | Hold the yard square to the mast against yaw and quake, and stop it swinging | Pre-tension ~0.3 kN |
 | **Diamond stays** (2 pairs) | Mast at 64 m → spreader tips (81 m) → masthead (108 m) | Brace the upper mast fore/aft (the wing plane is braced by the yard + topping lifts) | Pre-tension ~1 kN |
 
-- All are 6 mm stainless wire rope with turnbuckles. The topping lifts get **load cells**: the two readings show the wing balance directly.
-- The front braces cross in front of the wings, and their shadow (two 6 mm wires) costs <0.05%.
+- **All are coated CFRP rods** (rev 32): 2 x Ø8 mm pultruded rods per line, with potted Ti end fittings and turnbuckles.
+  - In steel, a 20 m topping lift would change length ~38 mm with temperature (±1.3 kN if fixed), and a 27 m diamond stay ~51 mm, more than its 1 kN pre-tension. In CFRP, like the mast and yard, it is ~1 to 1.5 mm (±0.4 kN).
+  - These lines never pay out from a drum, so the rods' only drawback, a large bend radius, does not matter here.
+  - Each rod breaks at ~100 kN, so one rod of a pair still holds the lift with a factor of ~30. The pairs also double as the micrometeoroid redundancy.
+  - The diamond stays are pre-fitted at the masthead and hang straight down along the mast during jack-up until their spreader section goes in.
+- The topping lifts get **load cells**: the two readings show the wing balance directly.
+- The front braces cross in front of the wings, and their shadow (two pairs of 8 mm rods) costs <0.05%.
+
+**Yard and hanger detail** (`top_yard_detail_check.py`)
+
+![Top yard and pack hanger detail](yard-hanger.svg)
+
+- **Truss.** Each arm has 4 chords (Ø60 x 2 mm CFRP, ~380 mm²) at the corners of a 0.8 x 0.5 m box, with Ø40 mm diagonals in 0.7 m panels and bonded Ti nodes.
+  - **Bending:** one arm carries ~2.6 kN (8 packs at ~150 kg with their converters, the hangers, the truss and the walkway) between the mast and the lift at 18.5 m. That gives ~5.7 kN·m at midspan: ~3.6 kN per chord, ~11 MPa in the top chords including the lift's compression.
+  - **Deflection:** ~7 mm at midspan under the full wing. A pack swap changes the tip load by only ~0.24 kN.
+- **Root joint, with the core kept open.** The yard does not pass through the mast. Each arm's 4 chords bolt to Ti **ring frames** at the two chord levels, inside a stiffened 3 m yard-mast section, and chord forces pass round the mast through those rings.
+  - The core stays clear, so the bots' climb rail ends at a **hatch** in the yard-mast section face, opening onto the walkway beside the reel garage.
+  - The masthead above is reached from outside, on its own short rail.
+- **Walkway.** A 0.5 m grating on the top chords with toe boards. The T-section fall-arrest rail runs along the outer edge and joins the climb rail at the hatch.
+- **Pack hanger** (16; Ti box beam, 2.0 m x 0.12 x 0.08 m, ~8 kg). Each is bolted under both bottom chords at 2 nodes on shimmed seats, aligned once on the ground before jack-up. Along its length:
+
+  | From centre | Part |
+  |---|---|
+  | ±1.02 m | Flared guide forks, which square the pack head before the cones touch |
+  | ±0.80 m | End sheaves that turn each rope down to its lifting eye (0.66 m: rescue eyes on the pack head) |
+  | ±0.50 m | Cone sockets, front and back (4 in all), and the latch hooks beside them |
+  | ±0.05 m | The 2 centre sheaves that bring the ropes down from the reel socket |
+  | +0.25 m | The connector receptacle on its float mount |
+  | top | The e-fuse junction box tapped off the yard bus, and the reel socket with its 2 anchor eyes on the walkway above |
+
+- **Latch.** Two spring-closed hooks, one beside each cone pair, catch latch bars on the pack head. A cross rod links them to **one lever** at walkway level, with a position flag, a lock pin and the pilot switch (opened in the first ~10° of travel).
+  - The latch is rated 5 kN, ~20 times the pack's 0.24 kN.
+  - A limit switch on each hook confirms that both have closed.
 
 **Pack hangers (16, fixed under the yard)**
-- One per pack, between 2 and 17 m from the mast on each side, bolted under the yard's bottom chord.
+- One per pack, centred at 2.8, 4.9, ... 17.5 m from the mast on each side (2.1 m pitch), bolted under the yard's bottom chords.
 - **4 cone sockets** take the pack head's cones. A **captive latch** holds them: a hooked bar on a hand lever, spring-closed, with a lock pin.
 - The lever suits a robot hand or a simple end tool, and carries a large position flag that a camera can read. A limit switch reports latched or open.
 - Above each hanger, on the walkway, is a **reel socket**: a standard clamp interface and a power/data plug fed from the service feeder (section 5c).
@@ -491,7 +526,7 @@ On the Moon there is no outside help, so every fault must be recoverable with th
 **Walkway and fall-arrest rail**
 - A 0.5 m grating along the top of each yard arm, with a continuous T-section **fall-arrest rail**. It joins the climb rail inside the mast through an opening in the yard-mast section.
 - ~0.15 t for both arms.
-- A bot and a reel add at most ~0.14 kN at a yard tip, or ~0.36 kN with a pack on the rope. Each wing already puts ~2.2 kN on the yard, so the yard and topping lifts need no change.
+- A bot and a reel add at most ~0.14 kN at a yard tip, or ~0.36 kN with a pack on the rope. Each wing already puts ~2.6 kN on the yard, so the yard and topping lifts need no change.
 
 **Twin-drum reel hoist (2 at the top + 1 spare on the ground)**
 - ~14 kg, about 0.3 x 0.2 x 0.18 m. **Two Ø0.1 m drums on one shaft**, each with ~108 m of 2 mm stainless wire rope (one left-hand, one right-hand lay). The rope breaks at ~2.4 kN, factor ~21 on the ~0.11 kN per rope.
@@ -949,7 +984,7 @@ The tight part is the **lunar lander's cargo deck and unloading gear**, and that
 | Struts (6 tubes, 46 m) | CFRP tube Ø0.3 m | **Tent-pole segments**, 15 x ~3.1 m per tube, sleeve joints with 0.3 m Ti spigots, internal steel cord (~1 kN, anti-rattle) | 90 tubes, ~25 per module: **4 modules** |
 | Pivot ball, wear cups, foundation frame | Ø0.5 m ball; frame ~2 x 2 m | Ball and cups as-is; frame in 2 pieces | 1 module |
 | Rotating base frame (Ø3 m) | Light platform | 3 pieces | 1 module |
-| Top yard (34 m) with walkway, rail and pack hangers | Truss | ~3 m bolted truss sections | 1 to 2 modules |
+| Top yard (37.4 m) with walkway, rail and pack hangers | Truss | ~3 m bolted truss sections | 1 to 2 modules |
 | Landing trays (2 x 15 m) | Light frames | 3 m sections | 1 module |
 | Solar packs (16) | 2 x 30 m deployed | Folded packs ~2 x 1 x 0.7 m (1 to 3 m wide all fit) | 2 per module: **8 modules** |
 | Stay cables, ties, reel-hoist ropes | 68 m and less | On reels | 1 module |

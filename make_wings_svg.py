@@ -50,24 +50,24 @@ for c in (35, 62):
     A(f'<rect x="{X(-1.4)}" y="{Z(c)-3}" width="{2.8*e}" height="6" fill="#4a9" class="s"/>')
 A(f'<rect x="{X(-1.5)}" y="{Z(1.5)-2}" width="{3*e}" height="4" fill="#e67e22"/><rect x="{X(-1)}" y="{gy-4}" width="{2*e}" height="4" fill="#7d8790"/>')
 # yard, walkway rail, topping lifts
-A(f'<rect x="{X(-17)}" y="{Z(100.4)}" width="{34*e}" height="{0.8*e}" fill="{YARD}" class="s"/>')
-A(f'<line x1="{X(-17)}" y1="{Z(101.6)}" x2="{X(17)}" y2="{Z(101.6)}" stroke="{BOT}" stroke-width="1.2"/>')
-for i in range(-17, 18, 2):
+A(f'<rect x="{X(-18.7)}" y="{Z(100.4)}" width="{37.4*e}" height="{0.8*e}" fill="{YARD}" class="s"/>')
+A(f'<line x1="{X(-18.7)}" y1="{Z(101.6)}" x2="{X(18.7)}" y2="{Z(101.6)}" stroke="{BOT}" stroke-width="1.2"/>')
+for i in range(-18, 19, 2):
     A(f'<line x1="{X(i)}" y1="{Z(100.4)}" x2="{X(i)}" y2="{Z(101.6)}" stroke="{BOT}" stroke-width="0.8"/>')
 for sx in (-1, 1):
-    A(f'<line x1="{X(0)}" y1="{Z(108)}" x2="{X(sx*17)}" y2="{Z(100.4)}" stroke="#555"/>')
-# packs: 8 per wing between 2 and 17 m; one port pack lowered
-pitch, pw = 15 / 8, 1.75
+    A(f'<line x1="{X(0)}" y1="{Z(108)}" x2="{X(sx*18.5)}" y2="{Z(100.4)}" stroke="#555"/>')
+# packs: 8 per wing between 1.8 and 18.5 m; one port pack lowered
+pitch, pw = 2.1, 2.0
 LOW = 5                       # index of the port pack being swapped
 top_now = 48                  # m, current height of its pack head
 trays = []
 for sx in (-1, 1):
-    xl, xr = sorted((X(sx * 2), X(sx * 17)))
+    xl, xr = sorted((X(sx * 1.8), X(sx * 18.5)))
     A(f'<rect x="{xl-2}" y="{Z(1.5)}" width="{xr-xl+4}" height="4" fill="#7d8790"/>')
-    for leg in (2.5, 9.5, 16.5):
+    for leg in (2.4, 10.2, 18.0):
         A(f'<line x1="{X(sx*leg)}" y1="{Z(1.5)}" x2="{X(sx*leg)}" y2="{gy}" stroke="#7d8790" stroke-width="2"/>')
     for i in range(8):
-        c = sx * (2 + pitch * (i + 0.5))
+        c = sx * (2.8 + pitch * i)
         x0 = X(c - pw / 2)
         A(f'<rect x="{X(c)-3}" y="{Z(100.4)}" width="6" height="4" fill="#4a9" stroke="#222" stroke-width="0.8"/>')   # hanger
         if sx == -1 and i == LOW:

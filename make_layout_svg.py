@@ -1,9 +1,9 @@
-# Generates platform-layout.svg (rev 22: strut tripod, A-frame struts, stay cables on V-links, bot-lowered pack). Run: python3 make_layout_svg.py
+# Generates platform-layout.svg (rev 32: 37.4 m yard; rev 22: strut tripod, A-frame struts, stay cables on V-links, bot-lowered pack). Run: python3 make_layout_svg.py
 import math
 o = []
 A = o.append
 W, H = 1180, 820
-MAST, YT, YB, HALF = 105, 100, 70, 17          # m: mast top, yard heights, half array width
+MAST, YT, YB, HALF = 105, 100, 70, 18.5         # m: mast top, yard heights, half array width
 MID, UP, FOOT, RING = 35, 62, 30, 1.5           # m: strut collar, wire collar, foot radius, rotating base frame radius
 A(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" font-family="Helvetica, Arial, sans-serif" font-size="13">')
 A(f'<rect width="{W}" height="{H}" fill="#fff"/>')
@@ -43,21 +43,22 @@ A(f'<polyline points="{X(0)},{Z(MAST)} {X(-6)},{Z(81)} {X(0)},{Z(62)}" fill="non
 A(f'<polyline points="{X(0)},{Z(MAST)} {X(6)},{Z(81)} {X(0)},{Z(62)}" fill="none" class="c"/>')
 A(f'<line x1="{X(-6)}" y1="{Z(81)}" x2="{X(6)}" y2="{Z(81)}" stroke="#e0a040" stroke-width="3"/>')
 # curtains
-for i in range(8):
-    x0 = -HALF + i * 4.25
-    A(f'<rect x="{X(x0)+1}" y="{Z(YT)}" width="{4.25*e-2}" height="{(YT-YB)*e}" fill="#2c4a7a" opacity="0.92"/>')
+for sx in (-1, 1):
+    for i in range(8):
+        x0 = sx * (2.8 + 2.1 * i) - 1.0
+        A(f'<rect x="{X(x0)}" y="{Z(YT)}" width="{2.0*e}" height="{(YT-YB)*e}" fill="#2c4a7a" opacity="0.92"/>')
 for m in (YT, YB):
     A(f'<rect x="{X(-HALF)-3}" y="{Z(m)-3}" width="{2*HALF*e+6}" height="6" fill="#e0a040" class="s"/>')
 for sx in (-1, 1):
     A(f'<line x1="{X(0)}" y1="{Z(MAST)}" x2="{X(sx*HALF)}" y2="{Z(YT)}" class="c"/>')
 # one port pack being lowered by a service bot's reel into its tray (ghost)
-A(f'<rect x="{X(-HALF)}" y="{Z(4)}" width="{4.25*e}" height="5" fill="none" stroke="#2c4a7a" stroke-width="2" stroke-dasharray="5 3"/>')
-A(f'<line x1="{X(-HALF+2.1)}" y1="{Z(YT)}" x2="{X(-HALF+2.1)}" y2="{Z(4)}" stroke="#c0392b" stroke-width="0.9" stroke-dasharray="3 4"/>')
-A(f'<path d="M{X(-HALF+3)} {Z(YB)+8}V{Z(20)}" class="l" marker-end="url(#ar)"/>')
+A(f'<rect x="{X(-HALF)}" y="{Z(4)}" width="{2.0*e}" height="5" fill="none" stroke="#2c4a7a" stroke-width="2" stroke-dasharray="5 3"/>')
+A(f'<line x1="{X(-HALF+1.0)}" y1="{Z(YT)}" x2="{X(-HALF+1.0)}" y2="{Z(4)}" stroke="#c0392b" stroke-width="0.9" stroke-dasharray="3 4"/>')
+A(f'<path d="M{X(-HALF+2.4)} {Z(YB)+8}V{Z(20)}" class="l" marker-end="url(#ar)"/>')
 # dims + labels
 A(f'<path d="M{X(23)} {Z(YT)}V{gy}" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="{X(23)+5}" y="{Z(55)}">100 m</text>')
-A(f'<path d="M{X(-HALF)} {Z(MAST)-10}H{X(HALF)}" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="{X(0)}" y="{Z(MAST)-16}" text-anchor="middle">34 m</text>')
-lab(X(HALF), Z(85), X(26), Z(88), ['Port + starboard wings, 2 x 17 x 30 m', '≈1,000 m², ~350 kWe'])
+A(f'<path d="M{X(-HALF)} {Z(MAST)-10}H{X(HALF)}" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="{X(0)}" y="{Z(MAST)-16}" text-anchor="middle">37 m</text>')
+lab(X(HALF), Z(85), X(26), Z(88), ['Port + starboard wings, 2 x 8 packs of 2 x 30 m', '≈960 m², ~335 kWe at the bus'])
 lab(X(6), Z(81), X(26), Z(76), ['Diamond stays (rotate)'])
 lab(X(0) + 9, Z(UP), X(10), Z(UP) + 26, [f'Upper collar {UP} m'])
 lab(X(1.9), Z(UP-0.9), X(12), Z(UP) - 12, ['V-link (torque lever)'])
@@ -66,7 +67,7 @@ lab(X(12), Z(UP * 0.6), X(16), Z(46), ['Stay cable (6 mm rope)'])
 lab(X(19), Z(MID * 0.37), X(25), Z(24), ['A-frame strut', '(2 CFRP tubes, 46 m)'])
 lab(X(20), gy - 2, X(6), gy + 26, ['Horizontal tie to central foundation'])
 lab(X(FOOT), gy - 4, X(33), gy + 46, ['Foot pad at 30 m'])
-lab(X(-HALF + 2.1), Z(14), X(-11), Z(24), ['One pack lowered', 'by a bot\'s reel'])
+lab(X(-HALF + 1.0), Z(14), X(-11), Z(24), ['One pack lowered', 'by a bot\'s reel'])
 lab(X(RING), gy - 8, X(14), gy - 28, ['Single base pivot + Ø3 m', 'rotating base frame'])
 hx = X(-9)
 A(f'<line x1="{hx}" y1="{gy-12}" x2="{hx}" y2="{gy}" stroke="#222" stroke-width="2"/><text x="{hx-4}" y="{gy-4}" font-size="11" text-anchor="end">2 m person</text>')
@@ -103,7 +104,7 @@ a = math.radians(30 - 90)
 lab(cx + HALF * k * math.cos(a), cy + HALF * k * math.sin(a), cx + 120, cy - 150, ['Array parked at maintenance', 'azimuth (30°/210°): packs', 'lower between bracing planes'])
 a = math.radians(75 - 90)
 lab(cx + 0.8 * HALF * k * math.cos(a), cy + 0.8 * HALF * k * math.sin(a), cx + 150, cy + 60, ['Array while tracking', '(any angle above 67 m:', 'clears all bracing)'])
-lab(cx - HALF * k * 0.7, cy + HALF * k * 0.7, cx - 150, cy + 150, ['Array sweep, r = 17 m', '(only at 67–100 m)'], 'end')
+lab(cx - HALF * k * 0.7, cy + HALF * k * 0.7, cx - 150, cy + 150, ['Array sweep, r = 18.5 m', '(only at 67–100 m)'], 'end')
 lab(cx, cy + RING * k, cx + 10, cy + 110, ['Ø3 m rotating base frame'])
 # legend + shading note
 L = 640
