@@ -1,11 +1,11 @@
-# Lunar polar rotating solar platform: concept design (rev 29, tall mast on a single base pivot, bot-serviced wings)
+# Lunar polar rotating solar platform: concept design (rev 30, tall mast on a single base pivot, bot-serviced wings)
 
 A very tall mast that turns on a single spherical base pivot, braced by a stationary strut tripod, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
 
 **Client presentation:** an 18-slide deck for agency and mission planners, built from this document and its drawings: https://claude.ai/artifact/AGcYswBAxcMva48yaVsggh (private until shared).
 
-## Current design at a glance (rev 29 baseline)
+## Current design at a glance (rev 30 baseline)
 
 This is the design being developed (mode 1: the **whole mast turns**). Everything under "Revision history" below records how it evolved. Section 9 (mode 2, a top turret) is set aside, and Appendix A (the earlier rail turntable) is superseded.
 
@@ -80,12 +80,17 @@ Weight path: mast → foot plate → wear cup (turns) → pivot ball (fixed) →
   - **Converter:** 4 height-banded MPPT boost inputs, a 450 V link, and a dual-active-bridge converter with 2 stacked secondaries giving ±500 V. Its SiC transistors run at ≤42% of their voltage rating. It is 98% efficient and has a hinged radiator fin.
   - **Connector:** 5 pins of three lengths (earth first, then power, then pilots), with shutters on both halves and a floating receptacle. The **hanger e-fuse is the switch**: it stays open unless the pilot loop, including the latch, is closed.
   - **Power figure:** with real cell packing (87%) a pack makes ~21 kW, so the array delivers ~335 kW. Reaching the 350 kW headline needs ~91% packing; that is noted as a design-margin item.
-- **Rev 29 (this):** **collar roller cartridge detailed** (section 4, `collar_cartridge_check.py`).
+- Rev 29: **collar roller cartridge detailed** (section 4, `collar_cartridge_check.py`).
   - **Rollers:** tapered Si₃N₄ tyres (cone apex on the mast axis, so they roll without spin) on replaceable, DLC-coated 440C running strips. Each sits on a hybrid bearing with a sleeve journal as a second rotation path.
   - **Springs:** Belleville stacks put both thrust rollers in contact; a spring swing arm carries the radial roller.
   - **Removal:** a 90° release cam unloads every roller so the cartridge slides out.
   - **Sensing:** a sensor and load bridge on every cartridge, and a self-powered radio sensor hub on each collar.
   - **Fault check:** a skidding roller (both paths locked) makes ~345 N·m, so the 200 N·m interlock stops the drive.
+- **Rev 30 (this):** **V-link and stay tensioner detailed** (section 4, `vlink_tensioner_check.py`).
+  - **V-plate and pins:** a 2.5 kg Ti V-plate on two 2-axis load pins in spherical bushings, with a swaged fork terminal at the apex.
+  - **Tensioner:** the foot winch used in erection stays on as the permanent **servo tensioner**: a self-locking worm drum, a Belleville buffer, a load cell and a 10 W servo.
+  - **Why it must be active:** 67 m of steel stay changes length by ~0.25 m between sun and shade, ±2.6 kN if held rigid. A white coating halves that, so even with the power off the tension stays at ~0.2 to 2.8 kN.
+  - **Correction:** the pin couple at the 200 N·m interlock is ~±90 N, not ±0.2 kN (that is the 500 N·m figure).
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -279,10 +284,56 @@ How it works:
   - A longer V adds little and costs clearance, so 1 m is the baseline.
 - **Collar-torque interlock (essential with this simple lever).** The **V-link load pins** read the collar's friction torque directly. The drive stops if it exceeds **~200 N·m** (about 20x normal), which caps the twist at **~3°** at 1.5 kN (~1.5° at 3 kN). That is well inside what the cables and clearances accept, and the collar springs back once the fault is cleared.
 - **Installation.** The V-links are pinned to the collar and shackled to their stay cables at the base, before jack-up. As the collar rides up, they hang and then line up with the cables by themselves. Nothing is fitted at height.
-- **Loads.** Each V-plate carries the stay tension (~1.5 to 3 kN) in tension. The pin couple at the 200 N·m interlock limit is about ±0.2 kN. Shackles are safety-pin type, coated or of dissimilar metals against cold welding.
+- **Loads.** Each V-plate carries the stay tension (~1.5 to 3 kN) in tension. The pin couple at the 200 N·m interlock limit is about ±90 N (±0.22 kN at 500 N·m). Shackles are safety-pin type, coated or of dissimilar metals against cold welding.
 - **A-frame struts (strut collar).** Each strut is two tubes joined at the foot and spread ±1.5 m at a torque bracket 4 m out from the collar. This is the same triangle idea, in compression.
 - **Clearances.** The V-links stay within ~2 m of the mast, and the A-frame brackets within ~21° of their bracing plane. So the maintenance azimuth (30°/210°) stays clear for lowering packs. Everything is at or below 62 m, under the array sweep.
 - **Torque sensing.** The couple on each V-link's two load pins is a direct measure of the upper collar's friction torque. The load cell at each foot reads the pre-tension. Together they give the seizure early warning in layer 3 below and feed the interlock.
+
+**V-link and stay tensioner detail** (`vlink_tensioner_check.py`)
+
+![V-link and stay tensioner detail](vlink-tensioner.svg)
+
+- **V-plate.** Ti-6Al-4V, 8 mm thick, two 30 mm legs meeting at a boss 1.0 m from the hinge axis (half-angle 11.3°), ~2.5 kg.
+  - At 3 kN each leg carries ~1.5 kN, only ~6 MPa. The plate is sized for handling, holes and stiffness, not strength.
+  - It is proof-loaded to 6 kN.
+- **Hinge pins = load pins.** The two pins (0.4 m apart, one horizontal axis) are **2-axis strain-gauged load pins**, Ø20 mm, 17-4PH with DLC. They run in **spherical plain bushings** in the plate (MoS₂-coated steel balls in polyimide-lined Ti housings), so cable sway and the collar's small twists never bind the hinge.
+  - The pins sit in lugs on the collar ring. They turn only during installation, so fretting, not wear, is the concern, and the dry film covers it.
+- **What the pins read.** The couple across the two pins is the collar's friction torque:
+
+  | Collar torque | Sideways pull at each apex | Pin couple |
+  |---|---|---|
+  | 10 N·m (normal) | ~1.8 N | ±4.5 N |
+  | 200 N·m (interlock) | ~36 N | ±89 N |
+  | 500 N·m | ~89 N | ±223 N |
+
+  Pins with a 3 kN range at 0.1% resolve ~3 N, about 7 N·m of collar torque, so the 200 N·m trip is ~30 times the resolution. The pins report to the collar sensor hub.
+- **Apex termination.** A spherical bushing in the apex boss takes a **swaged fork terminal** on the stay, through a captive clevis pin with a keeper. All the metals are dissimilar against cold welding. No split pins or wire: a bot can open it with one tool.
+- **Stay cable.** 6 mm 7x19 stainless (Nitronic 50, tough when cold), breaking load ~25 kN: a factor of 8 at 3 kN.
+  - It is ~67 m long with a stiffness of ~21 kN/m, so it stretches ~72 mm at 1.5 kN.
+  - It gets a **thin white high-emissivity coating**. A bare stay swings from ~318 K in the Sun to ~100 K in shade; the coating cuts the swing from ~220 K to ~110 K.
+- **Why the tensioner must be active.** The CFRP mast and struts barely change length with temperature; the steel stays do.
+
+  | Stay | Thermal swing | Length change | Tension change if held rigid |
+  |---|---|---|---|
+  | Bare | ~220 K | ~250 mm | ±2.6 kN |
+  | White-coated | ~110 K | ~120 mm | ±1.3 kN |
+
+  A passive spring soft enough to absorb that would also make the bracing soft against quakes. The stay's thermal time constant is ~20 min and shadows move at 0.51°/h, so a slow servo keeps up easily.
+- **Stay tensioner = the foot winch.** The winch that pays the stay out during jack-up (E6) stays on as its permanent tensioner. It has:
+  - a Ø0.3 m drum holding the spare stay;
+  - a **self-locking 50:1 worm** behind a 30:1 planetary, with a ~1 N·m motor (450 N·m on the drum at 3 kN);
+  - a **Belleville buffer** (40 kN/m, ±15 mm) in the line, so the stay drifts only ~7 mm between trims;
+  - an in-line **load cell**, a ratchet pawl as a second lock, and a hand-drive socket for a bot.
+- **Servo.** It holds **1.5 kN** (or **3 kN** in "stiff" mode) to ±0.1 kN, trimming at 0.5 mm/s. A 250 mm thermal change takes under 10 minutes of motor time. Power is ~10 W average per foot, from the fixed side through a cable laid along the tie, backed by the base battery.
+- **If the power fails.** The worm locks. With the white coating the tension then wanders only between ~0.2 and ~2.8 kN as temperatures change: never slack, never near overload. The drive is stopped anyway when the collar sensors go silent.
+- **Ties.** The 28.5 m horizontal ties use the same unit with a 1 kN setpoint.
+- **Foot node.** Each foot node is a Ti frame on the ~1 m² sintered pad. It carries:
+  - the A-frame strut's ball joint;
+  - the stay tensioner, pulling up and in at 65°;
+  - the tie tensioner, pulling horizontally to the centre.
+
+  At 1.5 kN stay, 1 kN tie and 2.5 kN strut, the forces nearly cancel sideways (−0.14 kN, taken by pad friction) and the pad is pressed down by ~0.64 kN. The servos keep strut compression above ~1.2 times the stay tension, so the pad never lifts.
+- **Alternative.** A coated CFRP rod stay (α ≈ 0) would remove the thermal problem: a passive swing of only ~±0.15 kN. But it needs a Ø1.2 m+ drum to pay out during jack-up, and it is brittle under impact and dust abrasion. It is kept as a trade for later.
 
 **Port and starboard wings of concertina packs.**
 
@@ -624,7 +675,7 @@ Only **three bearing sets rotate in service**: the base pivot and the 2 collars.
 | 5 | Drive units (2) | Rotating, always (very slowly) | ~50 to 165 N·m running, limiter at ~300 N·m | Removable cartridges: motor, 50:1 planetary, self-locking 60:1 worm, torque limiter, 12-tooth pin wheel on a 96-pin Ø1.2 m ring (24,000:1) |
 | 6 | **Strut A-frame ends** (6 tubes, 2 ends each) | **Static in service.** Swing only during the scissor erection; thermal micro-motion after | ~1.25 kN per tube | Spherical plain bearings, dry film. They hardly move, so the concern is fretting, not wear |
 | 7 | **V-links** (3 x 2 pins, upper collar) | Static in service; hinge only during installation | Stay tension 1.5 to 3 kN; couple ≤ ±0.2 kN at the interlock limit | Pins in lugs; instrumented load pins |
-| 8 | Stay and tie terminations, foot pads | Static (tensioners adjusted occasionally) | 1.5 to 3 kN | Screw tensioners + load cells |
+| 8 | Stay and tie terminations, foot tensioners | Servo-trimmed slowly (thermal, ~0.25 m over a day at most) | 1.5 to 3 kN | Self-locking worm drum + Belleville buffer + load cell; swaged fork terminals, spherical bushings |
 | 9 | **Top yard** at 100 m | **None:** fixed to the mast, turns with it | Wings + yard ~5 kN down, through topping lifts into the mast top, then down the mast to the base pivot | Bolted joint, no bearing |
 | 10 | Pack hangers (16, top yard) | Static; unlatched only for a pack swap; 4 rope sheaves turn only during a swap | ~0.23 kN per pack | 4 alignment cones, 2 flared guide forks, a captive latch worked by the bot; limit switch |
 | 11 | Climb- and yard-rail trolleys | Only while a bot moves | Bot + reel ~0.14 kN; arrest load ~2 kN | Captive trolley with a cam fall-arrest brake |
@@ -762,7 +813,7 @@ Each half is ~1.5 kg. The receptacle hangs under the hanger, facing down, 0.25 m
 
 ## 6. Spares on site
 
-2 pivot wear cups, 1 pivot ball, 1 drive-unit cartridge, 1 torque limiter, 1 pin-ring segment, 2 enclosure panels (1 radiator, 1 plain), 1 lid segment, 2 slip-ring brush cartridges, 1 pack converter, 1 converter radiator fin, 1 hanger receptacle and 1 plug, 4 e-fuses, 2 collar roller cartridges, 2 running-strip segments, 1 collar sensor hub, 1 stay cable, 1 V-link with load pins, 1 tie with tensioner, 1 strut section, 4 concertina packs, 1 spare reel hoist and 2 spare ropes, spare fall-arrest trolleys, 2 cable cutters, 4 rope grabs, 1 spare rescue kit (2 rope-riding hooks, 2 edge rollers), 2 battery modules. A third service bot in reserve is worth considering.
+2 pivot wear cups, 1 pivot ball, 1 drive-unit cartridge, 1 torque limiter, 1 pin-ring segment, 2 enclosure panels (1 radiator, 1 plain), 1 lid segment, 2 slip-ring brush cartridges, 1 pack converter, 1 converter radiator fin, 1 hanger receptacle and 1 plug, 4 e-fuses, 2 collar roller cartridges, 2 running-strip segments, 1 collar sensor hub, 1 stay cable, 1 V-link with load pins, 1 tie, 1 foot tensioner unit, 1 strut section, 4 concertina packs, 1 spare reel hoist and 2 spare ropes, spare fall-arrest trolleys, 2 cable cutters, 4 rope grabs, 1 spare rescue kit (2 rope-riding hooks, 2 edge rollers), 2 battery modules. A third service bot in reserve is worth considering.
 
 ## 7. Installation equipment and sequence (human supervised)
 
@@ -775,7 +826,7 @@ Everything is assembled at the base (on the foundation, inside the jack frame) a
 | E3 | **Pivot service davit** | A small hoist that clamps to the climb rail inside the mast core and lifts the cup, the holder ring or the ball in and out through the foot-plate opening (installation and swaps). |
 | E4 | **Foot-pad and tie layer** | Compacts or sinters the 3 foot pads and lays the 3 ground ties from the central foundation out to the feet. No pull-out anchors needed. |
 | E5 | **Mast jack-up frame** | Bolts to the foundation frame around the pivot and lifts the whole mast one 3 m section at a time; the new section is pinned in at the bottom. Peak lift ~10 kN. It stays afterwards for wear-cup swaps. |
-| E6 | **Tie and wire winches with load cells** | One at each foot. They control the ties (which pull the strut feet in as the mast rises) and the wires, and keep the mast plumb. Tensions are shown live on a supervisor tablet. |
+| E6 | **Tie and stay winches with load cells (stay on as the permanent servo tensioners)** | One at each foot. They control the ties (which pull the strut feet in as the mast rises) and the wires, and keep the mast plumb. Tensions are shown live on a supervisor tablet. |
 | E7 | **Service bots (2)** | Humanoid-class, supervised. They climb the rail inside the mast, fit and check the diamond stays and collar cartridges at height, and hoist the packs. They stay on site for maintenance. |
 | E8 | **Twin-drum reel hoists (2 + 1 spare)** | ~14 kg each, parked in the garage at the yard root. They clip into the reel socket above any pack hanger and lower or hoist one pack on two 2 mm stainless ropes, powered from the socket. |
 | E9 | **Landing trays** | Two light trays on short ground legs along the maintenance azimuth; each pack folds into its slot on lowering and unfolds from it on hoisting. They double as storage for spare packs. |
@@ -808,7 +859,7 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
 | Hazard | Response |
 |---|---|
 | Terrain and neighbour shadows | Array at the top of a 100 m+ mast; site illumination study sets the height; spacing and stagger rules (section 4b) |
-| Temperature swings, one-sided sunlight | CFRP mast and struts, mast behind the blanket, spring tensioners on wires and ties, steady sun-tracking gradient trimmed by wire tension |
+| Temperature swings, one-sided sunlight | CFRP mast and struts, mast behind the blanket, white-coated stays on servo foot tensioners (self-locking; ±1.3 kN drift at most if unpowered), steady sun-tracking gradient trimmed by wire tension |
 | Cold welding in vacuum | Dissimilar or coated mating surfaces: hard ball against a solid-lubricant composite cup at the base; dry lubricants on all collar rollers |
 | Abrasive, electrostatic dust | Only one moving part at ground level: the base pivot, ~1 m up, inside a removable enclosure with a labyrinth lid. Its convex ball sheds debris, and the wear cup's embedded layers flag any abrasive wear. Nothing rolls on regolith. Collars and array are high above most lofted dust |
 | Moonquakes | Strut tripod carries lateral load; balanced rig; lower thrust rollers in the collars; the base pivot has keeper hooks and is always ~10 kN in compression |

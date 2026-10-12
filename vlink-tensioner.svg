@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 960" font-family="Helvetica, Arial, sans-serif" font-size="12">
+<rect width="1300" height="960" fill="#fff"/>
+<defs><pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#a08c6c"/></pattern><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker></defs>
+<style>.s{stroke:#222;stroke-width:1.3}.l{stroke:#555;stroke-width:1;fill:none}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:15px;font-weight:bold}</style>
+<text x="20" y="30" class="t">A. V-link (in its own plane)</text>
+<rect x="94.0" y="72" width="192.0" height="26" fill="#4a9" opacity="0.6" class="s"/><text x="190" y="90" text-anchor="middle" font-size="11" style="stroke:none">collar ring lugs</text>
+<polygon points="120.0,120 140.0,120 197,420.0 183,420.0" fill="#9fb3c8" class="s"/>
+<polygon points="240.0,120 260.0,120 197,420.0 183,420.0" fill="#9fb3c8" class="s"/>
+<circle cx="130.0" cy="120" r="18" fill="#9fb3c8" class="s"/><circle cx="130.0" cy="120" r="11" fill="#fff" stroke="#222"/><circle cx="130.0" cy="120" r="6" fill="#c9a227" stroke="#222"/>
+<rect x="124.0" y="72" width="12" height="40" fill="#c9a227" opacity="0.7"/>
+<circle cx="250.0" cy="120" r="18" fill="#9fb3c8" class="s"/><circle cx="250.0" cy="120" r="11" fill="#fff" stroke="#222"/><circle cx="250.0" cy="120" r="6" fill="#c9a227" stroke="#222"/>
+<rect x="244.0" y="72" width="12" height="40" fill="#c9a227" opacity="0.7"/>
+<circle cx="190" cy="420.0" r="20" fill="#9fb3c8" class="s"/><circle cx="190" cy="420.0" r="11" fill="#fff" stroke="#222"/>
+<path d="M181 428.0 L181 460.0 L199 460.0 L199 428.0" fill="#ddd" stroke="#222"/>
+<rect x="184" y="460.0" width="12" height="34" fill="#bbb" stroke="#222"/>
+<line x1="190" y1="494.0" x2="190" y2="580.0" stroke="#8e44ad" stroke-width="3"/>
+<path d="M130.0 132 V420.0 M126.0 420.0 h8" class="l"/>
+<path d="M100.0 120 V420.0" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="96.0" y="270.0" text-anchor="end" font-size="11">1.0 m</text>
+<path d="M130.0 62 H250.0" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="190" y="58" text-anchor="middle" font-size="11">0.4 m</text>
+<path d="M268 120L330 140" class="l"/>
+<text x="334" y="144" text-anchor="start" font-size="11.5">2-axis load pins Ø20,</text>
+<text x="334" y="158" text-anchor="start" font-size="11.5">spherical bushings</text>
+<path d="M223 270L330 255" class="l"/>
+<text x="334" y="259" text-anchor="start" font-size="11.5">Ti-6Al-4V, 8 mm,</text>
+<text x="334" y="273" text-anchor="start" font-size="11.5">30 mm legs, ~2.5 kg</text>
+<path d="M210 420L330 410" class="l"/>
+<text x="334" y="414" text-anchor="start" font-size="11.5">apex boss +</text>
+<text x="334" y="428" text-anchor="start" font-size="11.5">spherical bushing</text>
+<path d="M199 450L330 460" class="l"/>
+<text x="334" y="464" text-anchor="start" font-size="11.5">swaged fork terminal,</text>
+<text x="334" y="478" text-anchor="start" font-size="11.5">captive clevis pin</text>
+<path d="M190 550L330 540" class="l"/>
+<text x="334" y="544" text-anchor="start" font-size="11.5">stay: 6 mm 7x19</text>
+<text x="334" y="558" text-anchor="start" font-size="11.5">Nitronic 50, white</text>
+<text x="30" y="610.0" font-size="11">Hangs straight down when slack; under tension</text><text x="30" y="624.0" font-size="11">it lines up with the stay. No other bracing.</text>
+<text x="470" y="30" class="t">B. Load pin (section)</text>
+<rect x="480" y="100" width="40" height="100" fill="#4a9" opacity="0.6" class="s"/><rect x="600" y="100" width="40" height="100" fill="#4a9" opacity="0.6" class="s"/>
+<rect x="530" y="116" width="60" height="68" fill="#9fb3c8" class="s"/>
+<ellipse cx="560" cy="150" rx="22" ry="22" fill="#ddd" stroke="#222"/>
+<rect x="460" y="140" width="200" height="20" fill="#c9a227" class="s"/>
+<rect x="524" y="140" width="4" height="20" fill="#2c4a7a"/>
+<rect x="592" y="140" width="4" height="20" fill="#2c4a7a"/>
+<rect x="660" y="136" width="10" height="28" fill="#555"/><rect x="670" y="144" width="22" height="12" fill="#2c4a7a"/>
+<rect x="448" y="136" width="12" height="28" fill="#555"/>
+<path d="M500 100L500 70" class="l"/>
+<text x="504" y="74" text-anchor="start" font-size="11.5">collar lug (clevis)</text>
+<path d="M560 128L610 72" class="l"/>
+<text x="614" y="76" text-anchor="start" font-size="11.5">spherical bushing (MoS₂ ball,</text>
+<text x="614" y="90" text-anchor="start" font-size="11.5">polyimide-lined Ti housing)</text>
+<path d="M594 160L620 230" class="l"/>
+<text x="624" y="234" text-anchor="start" font-size="11.5">strain-gauge grooves at the</text>
+<text x="624" y="248" text-anchor="start" font-size="11.5">two shear planes, 17-4PH + DLC</text>
+<path d="M681 156L700 190" class="l"/>
+<text x="704" y="194" text-anchor="start" font-size="11.5">connector to the</text>
+<text x="704" y="208" text-anchor="start" font-size="11.5">collar sensor hub</text>
+<path d="M454 164L420 224" class="l"/>
+<text x="416" y="228" text-anchor="end" font-size="11.5">retaining collar</text>
+<text x="470" y="290" class="t">C. What the pins read</text>
+<rect x="465" y="302" width="330" height="22" fill="#eee"/>
+<text x="470" y="318" font-size="11.5" font-weight="bold">Collar torque</text>
+<text x="620" y="318" font-size="11.5" font-weight="bold">Pull at apex</text>
+<text x="720" y="318" font-size="11.5" font-weight="bold">Pin couple</text>
+<text x="470" y="342" font-size="11.5">10 N·m (normal)</text>
+<text x="620" y="342" font-size="11.5">~1.8 N</text>
+<text x="720" y="342" font-size="11.5">±4.5 N</text>
+<text x="470" y="366" font-size="11.5">200 N·m (interlock)</text>
+<text x="620" y="366" font-size="11.5">~36 N</text>
+<text x="720" y="366" font-size="11.5">±89 N</text>
+<text x="470" y="390" font-size="11.5">500 N·m</text>
+<text x="620" y="390" font-size="11.5">~89 N</text>
+<text x="720" y="390" font-size="11.5">±223 N</text>
+<text x="470" y="420" font-size="11">0.1% pins resolve ~3 N ≈ 7 N·m of collar torque.</text>
+<text x="470" y="436" font-size="11">Corrects the earlier "±0.2 kN at 200 N·m".</text>
+<text x="820" y="30" class="t">D. Foot node (elevation; mast to the left)</text>
+<rect x="820" y="420" width="470" height="50" fill="url(#g)"/><line x1="820" y1="420" x2="1290" y2="420" stroke="#222"/>
+<rect x="1010" y="420" width="160" height="14" fill="#c9b79c" stroke="#222"/>
+<path d="M1020 420 L1040 360 H1150 L1160 420 Z" fill="#9fb3c8" opacity="0.6" class="s"/>
+<circle cx="1050" cy="356" r="12" fill="#ddd" class="s"/>
+<line x1="1050" y1="356" x2="894" y2="148" stroke="#7d8790" stroke-width="9"/>
+<circle cx="1110" cy="328" r="26" fill="#bbb" class="s"/>
+<circle cx="1110" cy="328" r="8" fill="none" stroke="#8e44ad" stroke-width="1"/>
+<circle cx="1110" cy="328" r="14" fill="none" stroke="#8e44ad" stroke-width="1"/>
+<circle cx="1110" cy="328" r="20" fill="none" stroke="#8e44ad" stroke-width="1"/>
+<rect x="1140" y="314" width="40" height="28" fill="#7fa3d6" class="s"/><rect x="1180" y="318" width="34" height="20" fill="#5d7fb8" class="s"/>
+<text x="1160" y="356" font-size="9.5" text-anchor="middle">worm</text><text x="1197" y="356" font-size="9.5" text-anchor="middle">motor</text>
+<rect x="1074" y="280" width="16" height="22" fill="#2c4a7a" transform="rotate(-25 1082 291)"/>
+<path d="M1060 268 l12 -5 l12 5" stroke="#c0392b" stroke-width="2" fill="none" transform="rotate(-25 1072 258)"/>
+<path d="M1055 257 l12 -5 l12 5" stroke="#c0392b" stroke-width="2" fill="none" transform="rotate(-25 1072 258)"/>
+<path d="M1050 246 l12 -5 l12 5" stroke="#c0392b" stroke-width="2" fill="none" transform="rotate(-25 1072 258)"/>
+<path d="M1045 235 l12 -5 l12 5" stroke="#c0392b" stroke-width="2" fill="none" transform="rotate(-25 1072 258)"/>
+<line x1="1088" y1="314" x2="957" y2="33" stroke="#8e44ad" stroke-width="3"/>
+<path d="M1122 354 l8 10 l8 -10" stroke="#222" stroke-width="2" fill="none"/>
+<rect x="1000" y="386" width="30" height="28" fill="#bbb" class="s"/>
+<line x1="1000" y1="400" x2="820" y2="400" stroke="#c87f0a" stroke-width="3"/>
+<line x1="1000" y1="408" x2="820" y2="408" stroke="#2e7d32" stroke-width="2" stroke-dasharray="6 3"/>
+<path d="M900 156L850 120" class="l"/>
+<text x="854" y="124" text-anchor="start" font-size="11.5">A-frame strut (CFRP), 53°</text>
+<path d="M968 57L1020 50" class="l"/>
+<text x="1024" y="54" text-anchor="start" font-size="11.5">stay to the V-link, 65°</text>
+<path d="M1058 254L1100 170" class="l"/>
+<text x="1104" y="174" text-anchor="start" font-size="11.5">Belleville buffer 40 kN/m ±15 mm</text>
+<text x="1104" y="188" text-anchor="start" font-size="11.5">+ in-line load cell</text>
+<path d="M1130 308L1140 230" class="l"/>
+<text x="1144" y="234" text-anchor="start" font-size="11.5">drum Ø0.3 m (spare stay)</text>
+<text x="1144" y="248" text-anchor="start" font-size="11.5">self-locking 50:1 worm</text>
+<text x="1144" y="262" text-anchor="start" font-size="11.5">+ 30:1 planetary</text>
+<text x="1144" y="276" text-anchor="start" font-size="11.5">~1 N·m motor</text>
+<path d="M1130 362L1200 380" class="l"/>
+<text x="1204" y="384" text-anchor="start" font-size="11.5">ratchet pawl +</text>
+<text x="1204" y="398" text-anchor="start" font-size="11.5">hand-drive socket</text>
+<path d="M1050 366L930 495" class="l"/>
+<text x="934" y="499" text-anchor="start" font-size="11.5">strut ball joint on the Ti foot frame</text>
+<path d="M970 400L830 360" class="l"/>
+<text x="834" y="364" text-anchor="start" font-size="11.5">tie tensioner (same unit, 1 kN)</text>
+<path d="M880 408L840 515" class="l"/>
+<text x="844" y="519" text-anchor="start" font-size="11.5">power + data cable along the tie to the base</text>
+<text x="830" y="550" font-size="11">Net on the pad at 1.5 kN stay / 1 kN tie / 2.5 kN strut: −0.14 kN sideways, 0.64 kN down</text>
+<text x="20" y="680" class="t">E. Stay tension swing over a sun/shade cycle (67 m of 6 mm stainless)</text>
+<line x1="700" y1="698" x2="700" y2="830" stroke="#222"/>
+<text x="420" y="726" text-anchor="end" font-size="12">Bare, held rigid</text>
+<rect x="440" y="710" width="520" height="22" fill="#c0392b" opacity="0.85"/>
+<text x="970" y="726" font-size="11.5">±2.6 kN (~220 K, ~250 mm)</text>
+<text x="420" y="766" text-anchor="end" font-size="12">White-coated, held rigid (power off)</text>
+<rect x="570" y="750" width="260" height="22" fill="#e67e22" opacity="0.85"/>
+<text x="840" y="766" font-size="11.5">±1.3 kN (~110 K, ~120 mm): 0.2–2.8 kN, never slack</text>
+<text x="420" y="806" text-anchor="end" font-size="12">White-coated, servo tensioner on</text>
+<rect x="690" y="790" width="20" height="22" fill="#2e7d32" opacity="0.85"/>
+<text x="720" y="806" font-size="11.5">±0.1 kN deadband (buffer drift ~7 mm)</text>
+<text x="700" y="850" text-anchor="middle" font-size="11">set point 1.5 kN</text>
+<text x="20" y="880" font-size="11.5">The CFRP mast and struts barely change length; the steel stays and ties do. A soft spring would absorb it but make the bracing soft against quakes,</text>
+<text x="20" y="896" font-size="11.5">so the foot winch stays on as a slow servo (0.5 mm/s; the stay's thermal time constant is ~20 min). Alternative for later: a coated CFRP rod stay (α ≈ 0).</text>
+</svg>
