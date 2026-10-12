@@ -1,11 +1,11 @@
-# Lunar polar rotating solar platform: concept design (rev 30, tall mast on a single base pivot, bot-serviced wings)
+# Lunar polar rotating solar platform: concept design (rev 31, tall mast on a single base pivot, bot-serviced wings)
 
 A very tall mast that turns on a single spherical base pivot, braced by a stationary strut tripod, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
 
 **Client presentation:** an 18-slide deck for agency and mission planners, built from this document and its drawings: https://claude.ai/artifact/AGcYswBAxcMva48yaVsggh (private until shared).
 
-## Current design at a glance (rev 30 baseline)
+## Current design at a glance (rev 31 baseline)
 
 This is the design being developed (mode 1: the **whole mast turns**). Everything under "Revision history" below records how it evolved. Section 9 (mode 2, a top turret) is set aside, and Appendix A (the earlier rail turntable) is superseded.
 
@@ -86,11 +86,16 @@ Weight path: mast → foot plate → wear cup (turns) → pivot ball (fixed) →
   - **Removal:** a 90° release cam unloads every roller so the cartridge slides out.
   - **Sensing:** a sensor and load bridge on every cartridge, and a self-powered radio sensor hub on each collar.
   - **Fault check:** a skidding roller (both paths locked) makes ~345 N·m, so the 200 N·m interlock stops the drive.
-- **Rev 30 (this):** **V-link and stay tensioner detailed** (section 4, `vlink_tensioner_check.py`).
+- Rev 30: **V-link and stay tensioner detailed** (section 4, `vlink_tensioner_check.py`).
   - **V-plate and pins:** a 2.5 kg Ti V-plate on two 2-axis load pins in spherical bushings, with a swaged fork terminal at the apex.
   - **Tensioner:** the foot winch used in erection stays on as the permanent **servo tensioner**: a self-locking worm drum, a Belleville buffer, a load cell and a 10 W servo.
   - **Why it must be active:** 67 m of steel stay changes length by ~0.25 m between sun and shade, ±2.6 kN if held rigid. A white coating halves that, so even with the power off the tension stays at ~0.2 to 2.8 kN.
   - **Correction:** the pin couple at the 200 N·m interlock is ~±90 N, not ±0.2 kN (that is the 500 N·m figure).
+- **Rev 31 (this):** **strut A-frame and foot pad detailed** (section 4, `strut_foot_check.py`).
+  - **Margin:** the tubes have a 7.4x buckling margin even with the joints, so no lacing is needed.
+  - **Joints:** tent-pole sleeve joints with a 0.3 m Ti spigot carry the erection bending.
+  - **Correction 1:** each strut end swings ~53° during the scissor erection, beyond a spherical bearing's range. Each end now gets a **hinge pin** for the swing plus a spherical bushing for misalignment.
+  - **Correction 2:** friction alone (~0.3 kN) cannot hold a foot against a quake (~0.4 kN). The foot frame now sits in a **sintered conical socket** (~1.2 kN sideways).
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -137,7 +142,7 @@ How the design uses this:
 | Landing trays | 2 light trays on short ground legs (~1.5 m high) along the maintenance azimuth (port and starboard, 2 to 17 m from the mast). The packs fold into them |
 | Roller collars (stationary) | **Strut collar at 35 m**, **upper collar at 62 m** |
 | Struts | 3 **A-frames** at 120°: each 2 CFRP tubes Ø0.3 m x 2 mm, ~46 m long, ~3 kg/m, ball joints at both ends. Joined at the foot, spread ±1.5 m at a torque bracket 4 m out from the strut collar |
-| Foot pads | 3 at **30 m radius**, ~1 m² sintered or gabion pad, compression only (~0.5 kN) |
+| Foot pads | 3 at **30 m radius**, 1.2 x 1.2 m sintered pad with a 30° conical socket (gabion fallback), compression only (~0.64 kN) |
 | V-links (upper collar) | 1 per bracing plane: a flat Ti V-plate (~8 mm), **2 pin holes 0.4 m apart** on the collar (horizontally aligned, instrumented load pins) and **1 shackle hole at the apex, 1 m out**. Free to hinge; hangs straight down when the cable is slack. ~2 kg |
 | Stay cables | 1 per bracing plane, from the foot tensioner to the V-link shackle (~68 m), 6 mm stainless wire rope, UV-proof. ~1.5 kN pre-tension, adjustable to ~3 kN, load cell at the foot |
 | Ties | Foot to the central foundation frame, horizontal at ground level, ~1 kN |
@@ -334,6 +339,39 @@ How it works:
 
   At 1.5 kN stay, 1 kN tie and 2.5 kN strut, the forces nearly cancel sideways (−0.14 kN, taken by pad friction) and the pad is pressed down by ~0.64 kN. The servos keep strut compression above ~1.2 times the stay tension, so the pad never lifts.
 - **Alternative.** A coated CFRP rod stay (α ≈ 0) would remove the thermal problem: a passive swing of only ~±0.15 kN. But it needs a Ø1.2 m+ drum to pay out during jack-up, and it is brittle under impact and dust abrasion. It is kept as a trade for later.
+
+**Strut A-frame and foot pad detail** (`strut_foot_check.py`)
+
+![Strut A-frame and foot pad detail](strut-foot.svg)
+
+- **Tubes.** Each A-frame is 2 CFRP tubes, Ø0.3 m x 2 mm, ~46 m long, ~3.0 kg/m (~139 kg each), with an axial-dominated layup (E ~110 GPa) and a white coating.
+  - **Stress:** each tube carries ~1.25 kN, a wall stress of only ~0.7 MPa. The tubes are sized for stiffness, not strength.
+  - **Buckling:** ~10.9 kN per tube pinned-pinned, or ~9.2 kN after a 15% knockdown for the 14 sleeve joints: a **margin of ~7.4**.
+  - **No lacing:** buckling out of the A's plane needs both tubes to go together (~18.5 kN against 2.5 kN), so no lacing between the tubes is needed.
+- **Sag and bow.** Inclined at 53°, a strut sags ~86 mm under its own weight. A one-sided Sun bows it another ~44 mm (half that with the white coat). Compression amplifies the total to ~150 mm, a bending stress of only ~6 MPa.
+  - The first bending mode is ~0.6 Hz.
+- **Tent-pole segments.** Each tube is 15 segments of ~3.1 m that ship 25 to a module.
+  - Each segment has a bonded **Ti spigot (0.3 m overlap)** at one end and a socket at the other, with an alignment key and a captive latch.
+  - The worst bending is during erection, with the strut lying flat on its dolly (~1.3 kN·m at midspan): the overlap carries it as a ~6.4 kN bearing couple.
+  - An internal steel cord at ~1 kN only keeps the joints closed and quiet. It takes no structural load.
+- **End fittings.** In the scissor erection each strut swings from flat to 53°, far beyond a spherical bearing's ±15°. So each end has:
+  - a **hinge pin on a tangential axis** for that swing, with MoS₂-coated pins in polyimide-lined Ti bores;
+  - a **spherical bushing** (±5°) for misalignment only.
+
+  At the top, each tube has its own fitting on the strut collar's torque bracket (±1.5 m tangentially, 4 m out). At the foot, both tubes are bonded into a Ti **Y-fitting** (the A's apex, 3.7° included) with one hinge. After erection the joints barely move; fretting, not wear, is the concern.
+- **Foot pad.** A **1.2 x 1.2 m sintered regolith slab, 0.3 m thick,** with a shallow **30° conical socket** in its top. A regolith-filled gabion bag with a bearing plate is the fallback.
+  - The pad is pressed down by ~0.64 kN, a bearing pressure of ~0.44 kPa.
+  - **Why the socket:** friction alone gives ~0.32 kN sideways, enough for the static −0.14 kN but marginal against a quake (~0.4 kN per foot).
+  - The **foot frame's cone** seats in the socket. It centres itself, like the base pivot, and holds **~1.2 kN** sideways.
+  - 3 levelling screws set the frame on shims at installation. Later settlement is taken up by the servo tensioners.
+- **Foot frame.** A ~25 kg Ti frame on the cone. It carries:
+  - the strut Y-fitting's hinge;
+  - the stay and tie tensioners;
+  - the servo electronics box;
+  - the end of the power and data cable laid along the tie.
+- **Erection dolly.** A sled under the Y-fitting with two 1.2 m polished Ti runners, on a compacted strip from 46 m in to the pad.
+  - It carries ~0.27 kN; dragging it at μ ~0.5 takes ~0.13 kN, easily within the tie winch.
+  - At 30 m the frame's cone is lowered into the socket and the sled is unbolted and recovered.
 
 **Port and starboard wings of concertina packs.**
 
@@ -673,7 +711,7 @@ Only **three bearing sets rotate in service**: the base pivot and the 2 collars.
 | 3 | **Strut collar** (35 m, 6 cartridges) | Rotating | Strut push-up ~5.7 kN total, ~0.9 kN per lower thrust roller | Same cartridge design as the upper collar |
 | 4 | Pivot keeper hooks (3) | None in service (~5 mm clearance) | ~0 (handling, quake only) | Pinned hooks on the foot plate, under a conical flange on the pedestal |
 | 5 | Drive units (2) | Rotating, always (very slowly) | ~50 to 165 N·m running, limiter at ~300 N·m | Removable cartridges: motor, 50:1 planetary, self-locking 60:1 worm, torque limiter, 12-tooth pin wheel on a 96-pin Ø1.2 m ring (24,000:1) |
-| 6 | **Strut A-frame ends** (6 tubes, 2 ends each) | **Static in service.** Swing only during the scissor erection; thermal micro-motion after | ~1.25 kN per tube | Spherical plain bearings, dry film. They hardly move, so the concern is fretting, not wear |
+| 6 | **Strut A-frame ends** (6 tubes, 2 ends each) | **Static in service.** Swing ~53° only during the scissor erection; thermal micro-motion after | ~1.25 kN per tube | Hinge pin (tangential axis) for the erection swing + spherical bushing (±5°) for misalignment, dry film. They hardly move, so the concern is fretting, not wear |
 | 7 | **V-links** (3 x 2 pins, upper collar) | Static in service; hinge only during installation | Stay tension 1.5 to 3 kN; couple ≤ ±0.2 kN at the interlock limit | Pins in lugs; instrumented load pins |
 | 8 | Stay and tie terminations, foot tensioners | Servo-trimmed slowly (thermal, ~0.25 m over a day at most) | 1.5 to 3 kN | Self-locking worm drum + Belleville buffer + load cell; swaged fork terminals, spherical bushings |
 | 9 | **Top yard** at 100 m | **None:** fixed to the mast, turns with it | Wings + yard ~5 kN down, through topping lifts into the mast top, then down the mast to the base pivot | Bolted joint, no bearing |
@@ -824,7 +862,7 @@ Everything is assembled at the base (on the foundation, inside the jack frame) a
 | E1 | **Foundation rig** | Compacts or sinters the central pad and sets the foundation frame and pivot pedestal: the datum for everything else. |
 | E2 | **Radius arm ("compass")** | Arm on the foundation datum with a laser level, encoder and rangefinder. It lays out the 3 foot-pad sites at 30 m and the landing-tray legs. |
 | E3 | **Pivot service davit** | A small hoist that clamps to the climb rail inside the mast core and lifts the cup, the holder ring or the ball in and out through the foot-plate opening (installation and swaps). |
-| E4 | **Foot-pad and tie layer** | Compacts or sinters the 3 foot pads and lays the 3 ground ties from the central foundation out to the feet. No pull-out anchors needed. |
+| E4 | **Foot-pad and tie layer** | Compacts or sinters the 3 foot pads (with their conical sockets) and the dolly strips and lays the 3 ground ties from the central foundation out to the feet. No pull-out anchors needed. |
 | E5 | **Mast jack-up frame** | Bolts to the foundation frame around the pivot and lifts the whole mast one 3 m section at a time; the new section is pinned in at the bottom. Peak lift ~10 kN. It stays afterwards for wear-cup swaps. |
 | E6 | **Tie and stay winches with load cells (stay on as the permanent servo tensioners)** | One at each foot. They control the ties (which pull the strut feet in as the mast rises) and the wires, and keep the mast plumb. Tensions are shown live on a supervisor tablet. |
 | E7 | **Service bots (2)** | Humanoid-class, supervised. They climb the rail inside the mast, fit and check the diamond stays and collar cartridges at height, and hoist the packs. They stay on site for maintenance. |
@@ -863,7 +901,7 @@ Design rules for every part: captive fasteners, one tool size, alignment cones, 
 | Cold welding in vacuum | Dissimilar or coated mating surfaces: hard ball against a solid-lubricant composite cup at the base; dry lubricants on all collar rollers |
 | Abrasive, electrostatic dust | Only one moving part at ground level: the base pivot, ~1 m up, inside a removable enclosure with a labyrinth lid. Its convex ball sheds debris, and the wear cup's embedded layers flag any abrasive wear. Nothing rolls on regolith. Collars and array are high above most lofted dust |
 | Moonquakes | Strut tripod carries lateral load; balanced rig; lower thrust rollers in the collars; the base pivot has keeper hooks and is always ~10 kN in compression |
-| Micrometeoroids | Damaged packs lowered and exchanged one at a time by a service bot; doubled wires; struts are thick-walled tubes, inspected by the bots |
+| Micrometeoroids | Damaged packs lowered and exchanged one at a time by a service bot; doubled wires; struts run at ~0.7 MPa, so a puncture hardly matters; inspected by cameras on the collars and from the mast |
 | Work at 100 m | Bots, not crew, work at height. They are always clipped to a captive fall-arrest trolley on the climb rail (inside the mast) or the yard rail. Packs move on a reel with a fail-safe brake. No rope that holds a pack is ever cut or joined. A fouled reel is recovered with rope grabs and untangling, or a rescue lowering on the second reel |
 | High voltage in vacuum and dust | ±500 V bus (500 V to structure); no connector or brush makes or breaks under load (pilot interlocks, solid-state breakers); insulation monitor; barrier fins and creepage in the slip ring; recessed, shuttered connectors |
 | UV and radiation on cables | Steel wire rope or coated CFRP rod, not bare aramid or polymer fibre |
@@ -908,7 +946,7 @@ The tight part is the **lunar lander's cargo deck and unloading gear**, and that
 | Item | Size as designed | Cut for freight | Packed size |
 |---|---|---|---|
 | Mast (108 m) | Triangular lattice, 1.4 m face | **36 flat-pack sections**, each 3 m long (see 10.2) | ~3 x 1.4 x 0.12 m each; 36 stack to ~4.3 m: **3 modules** |
-| Struts (6 tubes, 46 m) | CFRP tube Ø0.3 m | **Tent-pole segments**, 15 x ~3.1 m per tube, sleeve joints, internal steel tensioning cord | 90 tubes, ~25 per module: **4 modules** |
+| Struts (6 tubes, 46 m) | CFRP tube Ø0.3 m | **Tent-pole segments**, 15 x ~3.1 m per tube, sleeve joints with 0.3 m Ti spigots, internal steel cord (~1 kN, anti-rattle) | 90 tubes, ~25 per module: **4 modules** |
 | Pivot ball, wear cups, foundation frame | Ø0.5 m ball; frame ~2 x 2 m | Ball and cups as-is; frame in 2 pieces | 1 module |
 | Rotating base frame (Ø3 m) | Light platform | 3 pieces | 1 module |
 | Top yard (34 m) with walkway, rail and pack hangers | Truss | ~3 m bolted truss sections | 1 to 2 modules |

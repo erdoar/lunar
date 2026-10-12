@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 930" font-family="Helvetica, Arial, sans-serif" font-size="12">
+<rect width="1300" height="930" fill="#fff"/>
+<defs><pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#a08c6c"/></pattern><pattern id="sn" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#d8ccb4"/><circle cx="3" cy="3" r="1" fill="#a08c6c"/></pattern><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker></defs>
+<style>.s{stroke:#222;stroke-width:1.3}.l{stroke:#555;stroke-width:1;fill:none}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:15px;font-weight:bold}</style>
+<text x="20" y="30" class="t">A. One A-frame, in its plane</text>
+<text x="20" y="48" font-size="11" fill="#555">width drawn x4</text>
+<rect x="44.39999999999999" y="62.0" width="211.20000000000002" height="16" fill="#4a9" opacity="0.6" class="s"/><text x="150" y="74.0" text-anchor="middle" font-size="10.5" style="stroke:none">strut collar torque bracket</text>
+<line x1="150" y1="640.0" x2="78.0" y2="88.0" stroke="#5d6d7e" stroke-width="7"/>
+<line x1="140.2" y1="603.2" x2="150.2" y2="603.2" stroke="#fff" stroke-width="2"/>
+<line x1="135.4" y1="566.4" x2="145.4" y2="566.4" stroke="#fff" stroke-width="2"/>
+<line x1="130.6" y1="529.6" x2="140.6" y2="529.6" stroke="#fff" stroke-width="2"/>
+<line x1="125.80000000000001" y1="492.8" x2="135.8" y2="492.8" stroke="#fff" stroke-width="2"/>
+<line x1="121.0" y1="456.0" x2="131.0" y2="456.0" stroke="#fff" stroke-width="2"/>
+<line x1="116.2" y1="419.2" x2="126.2" y2="419.2" stroke="#fff" stroke-width="2"/>
+<line x1="111.4" y1="382.4" x2="121.4" y2="382.4" stroke="#fff" stroke-width="2"/>
+<line x1="106.6" y1="345.6" x2="116.6" y2="345.6" stroke="#fff" stroke-width="2"/>
+<line x1="101.80000000000001" y1="308.8" x2="111.80000000000001" y2="308.8" stroke="#fff" stroke-width="2"/>
+<line x1="97.0" y1="272.0" x2="107.0" y2="272.0" stroke="#fff" stroke-width="2"/>
+<line x1="92.2" y1="235.2" x2="102.2" y2="235.2" stroke="#fff" stroke-width="2"/>
+<line x1="87.4" y1="198.39999999999998" x2="97.4" y2="198.39999999999998" stroke="#fff" stroke-width="2"/>
+<line x1="82.6" y1="161.60000000000002" x2="92.6" y2="161.60000000000002" stroke="#fff" stroke-width="2"/>
+<line x1="77.8" y1="124.79999999999995" x2="87.8" y2="124.79999999999995" stroke="#fff" stroke-width="2"/>
+<circle cx="78.0" cy="88.0" r="6" fill="#c9a227" class="s"/>
+<line x1="150" y1="640.0" x2="222.0" y2="88.0" stroke="#5d6d7e" stroke-width="7"/>
+<line x1="149.8" y1="603.2" x2="159.8" y2="603.2" stroke="#fff" stroke-width="2"/>
+<line x1="154.6" y1="566.4" x2="164.6" y2="566.4" stroke="#fff" stroke-width="2"/>
+<line x1="159.4" y1="529.6" x2="169.4" y2="529.6" stroke="#fff" stroke-width="2"/>
+<line x1="164.2" y1="492.8" x2="174.2" y2="492.8" stroke="#fff" stroke-width="2"/>
+<line x1="169.0" y1="456.0" x2="179.0" y2="456.0" stroke="#fff" stroke-width="2"/>
+<line x1="173.8" y1="419.2" x2="183.8" y2="419.2" stroke="#fff" stroke-width="2"/>
+<line x1="178.6" y1="382.4" x2="188.6" y2="382.4" stroke="#fff" stroke-width="2"/>
+<line x1="183.4" y1="345.6" x2="193.4" y2="345.6" stroke="#fff" stroke-width="2"/>
+<line x1="188.2" y1="308.8" x2="198.2" y2="308.8" stroke="#fff" stroke-width="2"/>
+<line x1="193.0" y1="272.0" x2="203.0" y2="272.0" stroke="#fff" stroke-width="2"/>
+<line x1="197.8" y1="235.2" x2="207.8" y2="235.2" stroke="#fff" stroke-width="2"/>
+<line x1="202.6" y1="198.39999999999998" x2="212.6" y2="198.39999999999998" stroke="#fff" stroke-width="2"/>
+<line x1="207.4" y1="161.60000000000002" x2="217.4" y2="161.60000000000002" stroke="#fff" stroke-width="2"/>
+<line x1="212.2" y1="124.79999999999995" x2="222.2" y2="124.79999999999995" stroke="#fff" stroke-width="2"/>
+<circle cx="222.0" cy="88.0" r="6" fill="#c9a227" class="s"/>
+<path d="M140 622.0 L150 644.0 L160 622.0 Z" fill="#9fb3c8" class="s"/><circle cx="150" cy="644.0" r="6" fill="#c9a227" class="s"/>
+<path d="M238.0 640.0 V88.0" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="242.0" y="364.0" font-size="11">~46 m</text>
+<path d="M78.0 106.0 H222.0" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="150" y="120.0" text-anchor="middle" font-size="11">3 m</text>
+<path d="M188 336L240 280" class="l"/>
+<text x="244" y="284" text-anchor="start" font-size="11.5">2 CFRP tubes</text>
+<text x="244" y="298" text-anchor="start" font-size="11.5">Ø0.3 m x 2 mm</text>
+<text x="244" y="312" text-anchor="start" font-size="11.5">15 segments each</text>
+<path d="M150 632L240 592" class="l"/>
+<text x="244" y="596" text-anchor="start" font-size="11.5">Ti Y-fitting</text>
+<text x="244" y="610" text-anchor="start" font-size="11.5">+ one hinge</text>
+<text x="20" y="680.0" font-size="11">No lacing: both tubes must buckle</text><text x="20" y="694.0" font-size="11">together out of plane (18.5 kN vs 2.5 kN).</text>
+<text x="380" y="30" class="t">B. Tent-pole sleeve joint (section)</text>
+<rect x="400" y="150.0" width="168.0" height="120.0" fill="none" stroke="#5d6d7e" stroke-width="5"/>
+<rect x="520.0" y="147.0" width="168.0" height="126.0" fill="none" stroke="#5d6d7e" stroke-width="6" opacity="0.7"/>
+<rect x="448.0" y="154.8" width="120.0" height="110.4" fill="#9fb3c8" opacity="0.7" class="s"/>
+<line x1="400.0" y1="210" x2="688.0" y2="210" stroke="#333" stroke-width="2" stroke-dasharray="8 3"/>
+<rect x="560.0" y="136.0" width="18" height="12" fill="#555"/><rect x="480.0" y="268.0" width="10" height="10" fill="#c9a227"/>
+<path d="M448.0 294.0 H568.0" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="508.0" y="310.0" text-anchor="middle" font-size="11">0.3 m overlap</text>
+<path d="M420 150L400 120" class="l"/>
+<text x="404" y="124" text-anchor="start" font-size="11.5">segment n (CFRP)</text>
+<path d="M640 150L620 120" class="l"/>
+<text x="624" y="124" text-anchor="start" font-size="11.5">segment n+1</text>
+<path d="M508 190L720 170" class="l"/>
+<text x="724" y="174" text-anchor="start" font-size="11.5">bonded Ti spigot</text>
+<text x="724" y="188" text-anchor="start" font-size="11.5">carries the bending</text>
+<path d="M660 210L720 218" class="l"/>
+<text x="724" y="222" text-anchor="start" font-size="11.5">steel cord ~1 kN</text>
+<text x="724" y="236" text-anchor="start" font-size="11.5">(anti-rattle only)</text>
+<path d="M578 142L720 118" class="l"/>
+<text x="724" y="122" text-anchor="start" font-size="11.5">captive latch</text>
+<path d="M485 278L720 262" class="l"/>
+<text x="724" y="266" text-anchor="start" font-size="11.5">alignment key</text>
+<text x="380" y="420" class="t">C. End fitting: hinge for the swing, sphere for misalignment</text>
+<rect x="410" y="500" width="40" height="120" fill="#9fb3c8" opacity="0.6" class="s"/><rect x="590" y="500" width="40" height="120" fill="#9fb3c8" opacity="0.6" class="s"/>
+<rect x="460" y="520" width="120" height="80" fill="#9fb3c8" class="s"/><circle cx="520" cy="560" r="30" fill="#ddd" stroke="#222"/>
+<rect x="390" y="550" width="260" height="20" fill="#c9a227" class="s"/>
+<path d="M480 600 L460 710 M560 600 L580 710" stroke="#5d6d7e" stroke-width="10"/>
+<path d="M430 500L360 470" class="l"/>
+<text x="356" y="474" text-anchor="end" font-size="11.5">clevis on the torque bracket</text>
+<text x="356" y="488" text-anchor="end" font-size="11.5">(top) or the foot frame (foot)</text>
+<path d="M640 560L670 490" class="l"/>
+<text x="674" y="494" text-anchor="start" font-size="11.5">hinge pin, tangential axis:</text>
+<text x="674" y="508" text-anchor="start" font-size="11.5">the ~53° erection swing</text>
+<text x="674" y="522" text-anchor="start" font-size="11.5">MoS₂ pin, polyimide-lined bore</text>
+<path d="M542 580L670 580" class="l"/>
+<text x="674" y="584" text-anchor="start" font-size="11.5">spherical bushing ±5°:</text>
+<text x="674" y="598" text-anchor="start" font-size="11.5">misalignment only</text>
+<path d="M575 680L670 670" class="l"/>
+<text x="674" y="674" text-anchor="start" font-size="11.5">tube end (CFRP)</text>
+<text x="880" y="30" class="t">D. Foot pad and frame (section)</text>
+<rect x="881.0" y="400" width="418.00000000000006" height="70" fill="url(#g)"/>
+<path d="M976.0 400 H1042.5 L1090 428.79534467583255 L1137.5 400 H1204.0 V457.0 H976.0 Z" fill="url(#sn)" class="s"/>
+<path d="M1044.4 398 L1090 424.79534467583255 L1135.6 398 Z" fill="#9fb3c8" class="s"/>
+<rect x="1004.5" y="366" width="171.0" height="32" fill="#9fb3c8" opacity="0.8" class="s"/>
+<rect x="1010.0" y="394" width="8" height="10" fill="#555"/>
+<rect x="1162.0" y="394" width="8" height="10" fill="#555"/>
+<circle cx="1042.5" cy="352" r="10" fill="#c9a227" class="s"/>
+<line x1="1042.5" y1="352" x2="892.5" y2="152" stroke="#5d6d7e" stroke-width="11"/>
+<circle cx="1112.8" cy="342" r="18" fill="#bbb" class="s"/><rect x="1132.8" y="332" width="34" height="20" fill="#7fa3d6" class="s"/>
+<line x1="1100.8" y1="330" x2="1000.8" y2="115" stroke="#8e44ad" stroke-width="3"/>
+<rect x="972.2" y="374" width="22" height="20" fill="#bbb" class="s"/><line x1="972.2" y1="384" x2="881.0" y2="384" stroke="#c87f0a" stroke-width="3"/>
+<rect x="1131.8" y="370" width="26" height="22" fill="#f2c94c" class="s"/>
+<path d="M985.5 480 h95.0 M995.5 480 v-8 M1070.5 480 v-8" stroke="#888" stroke-width="3" stroke-dasharray="6 3"/>
+<path d="M952 232L920 140" class="l"/><circle cx="952" cy="232" r="2" fill="#222"/><circle cx="920" cy="140" r="9" fill="#fff" stroke="#222"/><text x="920" y="144" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">1</text>
+<path d="M1043 182L1010 90" class="l"/><circle cx="1043" cy="182" r="2" fill="#222"/><circle cx="1010" cy="90" r="9" fill="#fff" stroke="#222"/><text x="1010" y="94" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">2</text>
+<path d="M1042 352L920 300" class="l"/><circle cx="1042" cy="352" r="2" fill="#222"/><circle cx="920" cy="300" r="9" fill="#fff" stroke="#222"/><text x="920" y="304" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">3</text>
+<path d="M1113 342L1230 220" class="l"/><circle cx="1113" cy="342" r="2" fill="#222"/><circle cx="1230" cy="220" r="9" fill="#fff" stroke="#222"/><text x="1230" y="224" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">4</text>
+<path d="M1158 380L1240 300" class="l"/><circle cx="1158" cy="380" r="2" fill="#222"/><circle cx="1240" cy="300" r="9" fill="#fff" stroke="#222"/><text x="1240" y="304" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">5</text>
+<path d="M972 384L920 360" class="l"/><circle cx="972" cy="384" r="2" fill="#222"/><circle cx="920" cy="360" r="9" fill="#fff" stroke="#222"/><text x="920" y="364" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">6</text>
+<path d="M1166 398L1240 360" class="l"/><circle cx="1166" cy="398" r="2" fill="#222"/><circle cx="1240" cy="360" r="9" fill="#fff" stroke="#222"/><text x="1240" y="364" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">7</text>
+<path d="M1090 414L1240 420" class="l"/><circle cx="1090" cy="414" r="2" fill="#222"/><circle cx="1240" cy="420" r="9" fill="#fff" stroke="#222"/><text x="1240" y="424" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">8</text>
+<path d="M1185 448L1240 470" class="l"/><circle cx="1185" cy="448" r="2" fill="#222"/><circle cx="1240" cy="470" r="9" fill="#fff" stroke="#222"/><text x="1240" y="474" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">9</text>
+<path d="M1033 480L920 470" class="l"/><circle cx="1033" cy="480" r="2" fill="#222"/><circle cx="920" cy="470" r="9" fill="#fff" stroke="#222"/><text x="920" y="474" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">10</text>
+<circle cx="880" cy="520" r="9" fill="#fff" stroke="#222"/><text x="880" y="524" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">1</text>
+<text x="894" y="524" font-size="11">A-frame strut (53°)</text>
+<circle cx="880" cy="542" r="9" fill="#fff" stroke="#222"/><text x="880" y="546" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">2</text>
+<text x="894" y="546" font-size="11">Stay (65°)</text>
+<circle cx="880" cy="564" r="9" fill="#fff" stroke="#222"/><text x="880" y="568" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">3</text>
+<text x="894" y="568" font-size="11">Y-fitting hinge</text>
+<circle cx="880" cy="586" r="9" fill="#fff" stroke="#222"/><text x="880" y="590" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">4</text>
+<text x="894" y="590" font-size="11">Stay tensioner (worm drum)</text>
+<circle cx="880" cy="608" r="9" fill="#fff" stroke="#222"/><text x="880" y="612" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">5</text>
+<text x="894" y="612" font-size="11">Servo box + base cable</text>
+<circle cx="1085" cy="520" r="9" fill="#fff" stroke="#222"/><text x="1085" y="524" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">6</text>
+<text x="1099" y="524" font-size="11">Tie tensioner → centre</text>
+<circle cx="1085" cy="542" r="9" fill="#fff" stroke="#222"/><text x="1085" y="546" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">7</text>
+<text x="1099" y="546" font-size="11">3 levelling screws, shims</text>
+<circle cx="1085" cy="564" r="9" fill="#fff" stroke="#222"/><text x="1085" y="568" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">8</text>
+<text x="1099" y="568" font-size="11">30° cone in sintered socket</text>
+<circle cx="1085" cy="586" r="9" fill="#fff" stroke="#222"/><text x="1085" y="590" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">9</text>
+<text x="1099" y="590" font-size="11">Pad 1.2 x 1.2 x 0.3 m</text>
+<circle cx="1085" cy="608" r="9" fill="#fff" stroke="#222"/><text x="1085" y="612" text-anchor="middle" font-size="10.5" font-weight="bold" style="stroke:none">10</text>
+<text x="1099" y="612" font-size="11">Erection sled (removed)</text>
+<text x="880" y="690" class="t">E. Numbers (strut_foot_check.py)</text>
+<text x="880" y="712" font-size="11.5">Per tube: 1.25 kN, 0.7 MPa; buckling 9.2 kN with joints: margin 7.4</text>
+<text x="880" y="730" font-size="11.5">Sag 86 mm + Sun bow 44 mm, amplified to ~150 mm; ~6 MPa</text>
+<text x="880" y="748" font-size="11.5">First bending mode ~0.6 Hz</text>
+<text x="880" y="766" font-size="11.5">Erection (flat): 1.3 kN·m at midspan → 6.4 kN spigot couple</text>
+<text x="880" y="784" font-size="11.5">Pad: 0.64 kN down (0.44 kPa); friction 0.32 kN &lt; quake ~0.4 kN</text>
+<text x="880" y="802" font-size="11.5">→ cone in a socket: ~1.2 kN sideways</text>
+<text x="880" y="820" font-size="11.5">Sled drag ~0.13 kN during the scissor erection</text>
+</svg>
