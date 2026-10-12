@@ -1,0 +1,300 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 1000" font-family="Helvetica, Arial, sans-serif" font-size="12">
+<rect width="1300" height="1000" fill="#fff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker><pattern id="gr" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M0 0H5M0 0V5" stroke="#888" stroke-width="0.7"/></pattern><pattern id="hz" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 6L6 0" stroke="#e6b0aa" stroke-width="1.2"/></pattern></defs>
+<style>.s{stroke:#222;stroke-width:1.2}.l{stroke:#555;stroke-width:1;fill:none}.rod{stroke:#7f8c8d;stroke-width:2.2;fill:none}text{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.t{font-size:15px;font-weight:bold}.n{font-size:11px;font-weight:bold}</style>
+<text x="20" y="30" class="t">1. Masthead, wing-plane elevation</text>
+<rect x="200.0" y="165" width="70.0" height="450" fill="#f7f7f7" stroke="#888" stroke-width="2.4"/>
+<path d="M200.0 615.0 L270.0 577.5 M270.0 615.0 L200.0 577.5" stroke="#ccc"/>
+<path d="M200.0 577.5 L270.0 540.0 M270.0 577.5 L200.0 540.0" stroke="#ccc"/>
+<path d="M200.0 540.0 L270.0 502.5 M270.0 540.0 L200.0 502.5" stroke="#ccc"/>
+<path d="M200.0 502.5 L270.0 465.0 M270.0 502.5 L200.0 465.0" stroke="#ccc"/>
+<path d="M200.0 465.0 L270.0 427.5 M270.0 465.0 L200.0 427.5" stroke="#ccc"/>
+<path d="M200.0 427.5 L270.0 390.0 M270.0 427.5 L200.0 390.0" stroke="#ccc"/>
+<path d="M200.0 390.0 L270.0 352.5 M270.0 390.0 L200.0 352.5" stroke="#ccc"/>
+<path d="M200.0 352.5 L270.0 315.0 M270.0 352.5 L200.0 315.0" stroke="#ccc"/>
+<path d="M200.0 315.0 L270.0 277.5 M270.0 315.0 L200.0 277.5" stroke="#ccc"/>
+<path d="M200.0 277.5 L270.0 240.0 M270.0 277.5 L200.0 240.0" stroke="#ccc"/>
+<path d="M200.0 240.0 L270.0 202.5 M270.0 240.0 L200.0 202.5" stroke="#ccc"/>
+<path d="M200.0 202.5 L270.0 165.0 M270.0 202.5 L200.0 165.0" stroke="#ccc"/>
+<line x1="235" y1="615" x2="235" y2="165" stroke="#888" stroke-width="1.6"/>
+<line x1="196.0" y1="465" x2="274.0" y2="465" stroke="#555" stroke-width="2"/>
+<line x1="196.0" y1="315" x2="274.0" y2="315" stroke="#555" stroke-width="2"/>
+<rect x="35.0" y="562.0" width="155.0" height="6" fill="#e0a040" stroke="#8a5a00"/>
+<rect x="35.0" y="522.0000000000001" width="155.0" height="6" fill="#e0a040" stroke="#8a5a00"/>
+<line x1="190.0" y1="565.0" x2="155.0" y2="525.0000000000001" stroke="#8a5a00" stroke-width="1.6"/>
+<line x1="155.0" y1="525.0000000000001" x2="120.00000000000001" y2="565.0" stroke="#8a5a00" stroke-width="1.6"/>
+<line x1="120.00000000000001" y1="565.0" x2="85.00000000000003" y2="525.0000000000001" stroke="#8a5a00" stroke-width="1.6"/>
+<line x1="85.00000000000003" y1="525.0000000000001" x2="50.0" y2="565.0" stroke="#8a5a00" stroke-width="1.6"/>
+<line x1="50.0" y1="565.0" x2="35.0" y2="547.8571428571429" stroke="#8a5a00" stroke-width="1.6"/>
+<rect x="35.0" y="522.0" width="155.0" height="3" fill="url(#gr)" stroke="#555" stroke-width="0.6"/>
+<line x1="35.0" y1="468.0000000000001" x2="190.0" y2="468.0000000000001" stroke="#6c3483" stroke-width="2"/>
+<path d="M35.0 454.9999999999999 l-4 8 l8 8 l-4 8 V575.0000000000001" stroke="#888" fill="none"/>
+<rect x="280.0" y="562.0" width="155.0" height="6" fill="#e0a040" stroke="#8a5a00"/>
+<rect x="280.0" y="522.0000000000001" width="155.0" height="6" fill="#e0a040" stroke="#8a5a00"/>
+<line x1="280.0" y1="565.0" x2="315.0" y2="525.0000000000001" stroke="#8a5a00" stroke-width="1.6"/>
+<line x1="315.0" y1="525.0000000000001" x2="350.0" y2="565.0" stroke="#8a5a00" stroke-width="1.6"/>
+<line x1="350.0" y1="565.0" x2="385.0" y2="525.0000000000001" stroke="#8a5a00" stroke-width="1.6"/>
+<line x1="385.0" y1="525.0000000000001" x2="420.0" y2="565.0" stroke="#8a5a00" stroke-width="1.6"/>
+<line x1="420.0" y1="565.0" x2="435.0" y2="547.8571428571429" stroke="#8a5a00" stroke-width="1.6"/>
+<rect x="280.0" y="522.0" width="155.0" height="3" fill="url(#gr)" stroke="#555" stroke-width="0.6"/>
+<line x1="280.0" y1="468.0000000000001" x2="435.0" y2="468.0000000000001" stroke="#6c3483" stroke-width="2"/>
+<path d="M435.0 454.9999999999999 l-4 8 l8 8 l-4 8 V575.0000000000001" stroke="#888" fill="none"/>
+<rect x="190.0" y="561.0" width="90.0" height="8" fill="#9fb3c8" class="s"/>
+<rect x="190.0" y="521.0000000000001" width="90.0" height="8" fill="#9fb3c8" class="s"/>
+<rect x="241.0" y="472.5000000000003" width="25.0" height="47.5" fill="#fff" stroke="#222" stroke-dasharray="4 2"/>
+<line x1="237.5" y1="615" x2="237.5" y2="504.9999999999999" stroke="#6c3483" stroke-width="2.4" stroke-dasharray="6 3"/>
+<line x1="262.5" y1="469.9999999999997" x2="262.5" y2="179.9999999999999" stroke="#6c3483" stroke-width="2.6"/>
+<rect x="217.5" y="235.00000000000028" width="55.00000000000001" height="4" fill="url(#gr)" stroke="#555"/>
+<line x1="220.0" y1="235.00000000000028" x2="220.0" y2="185.00000000000028" stroke="#777" stroke-width="1.4"/>
+<line x1="270.0" y1="235.00000000000028" x2="270.0" y2="185.00000000000028" stroke="#777" stroke-width="1.4"/>
+<g opacity="0.55">
+<g stroke="#6c3483" stroke-width="7.0" stroke-linecap="round" fill="none"><line x1="242.5" y1="211.6153846153849" x2="230.80769230769232" y2="235.00000000000028"/><line x1="242.5" y1="211.6153846153849" x2="254.19230769230768" y2="235.00000000000028"/><line x1="242.5" y1="211.6153846153849" x2="242.5" y2="179.46153846153874"/><line x1="242.5" y1="185.3076923076926" x2="224.96153846153845" y2="205.76923076923106"/><line x1="242.5" y1="185.3076923076926" x2="260.03846153846155" y2="164.84615384615415"/></g><circle cx="242.5" cy="169.2307692307695" r="9.9" fill="#6c3483"/>
+</g>
+<path d="M269.0 485.0000000000003 V168.0 H238.0" stroke="#2e86c1" stroke-width="1.6" fill="none"/>
+<rect x="196.0" y="162.5000000000001" width="78.0" height="3.5" fill="#9fb3c8" class="s"/>
+<rect x="229.0" y="154.00000000000006" width="12.0" height="8.5" fill="#9fb3c8" class="s"/>
+<path d="M229.0 155.99999999999966 L222.0 160.00000000000028 L222.0 172.0 L229.0 162.5000000000001" fill="#9fb3c8" class="s"/>
+<circle cx="225.0" cy="168.9999999999999" r="3" fill="#c0392b"/>
+<line x1="225.0" y1="168.9999999999999" x2="30.00000000000003" y2="253.7114216607223" class="rod"/>
+<line x1="225.0" y1="170.9999999999999" x2="30.00000000000003" y2="256.2114216607223" class="rod" stroke-width="1.4"/>
+<path d="M241.0 155.99999999999966 L248.0 160.00000000000028 L248.0 172.0 L241.0 162.5000000000001" fill="#9fb3c8" class="s"/>
+<circle cx="245.0" cy="168.9999999999999" r="3" fill="#c0392b"/>
+<line x1="245.0" y1="168.9999999999999" x2="440.0" y2="253.7114216607223" class="rod"/>
+<line x1="245.0" y1="170.9999999999999" x2="440.0" y2="256.2114216607223" class="rod" stroke-width="1.4"/>
+<circle cx="235" cy="160.00000000000028" r="5" fill="#fff" stroke="#222" stroke-width="1.4"/>
+<rect x="233.0" y="90.0" width="4.0" height="64.0" fill="#d5d8dc" class="s"/>
+<rect x="228.5" y="83.99999999999977" width="13.0" height="7.000000000000001" fill="#5d6d7e" class="s"/>
+<circle cx="238.0" cy="87.50000000000011" r="3" fill="#aed6f1" stroke="#222"/>
+<line x1="235" y1="83.99999999999977" x2="235" y2="52.5" stroke="#222" stroke-width="2.2"/>
+<circle cx="235" cy="50.000000000000114" r="4" fill="#e74c3c" stroke="#222"/>
+<line x1="235" y1="110.00000000000028" x2="222.5" y2="110.00000000000028" stroke="#222" stroke-width="1.6"/>
+<rect x="217.5" y="105.00000000000028" width="10" height="10" fill="#f9e79f" class="s"/>
+<line x1="235" y1="110.00000000000028" x2="247.5" y2="110.00000000000028" stroke="#222" stroke-width="1.6"/>
+<rect x="242.5" y="105.00000000000028" width="10" height="10" fill="#f9e79f" class="s"/>
+<path d="M237.0 127.5 l10 -6 v12 z" fill="#d5d8dc" class="s"/>
+<rect x="230.0" y="149.00000000000034" width="10.0" height="3.5000000000000004" fill="#a9cce3" class="s"/>
+<text x="30.00000000000003" y="271.7114216607223" font-size="11">lift to the port tip</text>
+<text x="440.0" y="271.7114216607223" text-anchor="end" font-size="11">to the starboard tip, 18.5 m</text>
+<path d="M196 315L165 345" class="l"/>
+<text x="161" y="349" text-anchor="end" font-size="11.5">Section joints</text>
+<text x="161" y="363" text-anchor="end" font-size="11.5">(102, 105 m)</text>
+<path d="M200 161L155 135" class="l"/>
+<circle cx="155" cy="135" r="9" fill="#fff" stroke="#222"/><text x="155" y="139" text-anchor="middle" class="n" style="stroke:none">1</text>
+<path d="M224 167L155 185" class="l"/>
+<circle cx="155" cy="185" r="9" fill="#fff" stroke="#222"/><text x="155" y="189" text-anchor="middle" class="n" style="stroke:none">2</text>
+<path d="M235 160L185 85" class="l"/>
+<circle cx="185" cy="85" r="9" fill="#fff" stroke="#222"/><text x="185" y="89" text-anchor="middle" class="n" style="stroke:none">3</text>
+<path d="M228 81L185 55" class="l"/>
+<circle cx="185" cy="55" r="9" fill="#fff" stroke="#222"/><text x="185" y="59" text-anchor="middle" class="n" style="stroke:none">4</text>
+<path d="M252 110L285 55" class="l"/>
+<circle cx="285" cy="55" r="9" fill="#fff" stroke="#222"/><text x="285" y="59" text-anchor="middle" class="n" style="stroke:none">5</text>
+<path d="M235 50L258 38" class="l"/>
+<circle cx="258" cy="38" r="9" fill="#fff" stroke="#222"/><text x="258" y="42" text-anchor="middle" class="n" style="stroke:none">6</text>
+<path d="M240 148L315 100" class="l"/>
+<circle cx="315" cy="100" r="9" fill="#fff" stroke="#222"/><text x="315" y="104" text-anchor="middle" class="n" style="stroke:none">7</text>
+<path d="M238 128L315 128" class="l"/>
+<circle cx="315" cy="128" r="9" fill="#fff" stroke="#222"/><text x="315" y="132" text-anchor="middle" class="n" style="stroke:none">8</text>
+<path d="M262 205L315 195" class="l"/>
+<circle cx="315" cy="195" r="9" fill="#fff" stroke="#222"/><text x="315" y="199" text-anchor="middle" class="n" style="stroke:none">9</text>
+<path d="M265 235L315 245" class="l"/>
+<circle cx="315" cy="245" r="9" fill="#fff" stroke="#222"/><text x="315" y="249" text-anchor="middle" class="n" style="stroke:none">10</text>
+<path d="M269 365L315 355" class="l"/>
+<circle cx="315" cy="355" r="9" fill="#fff" stroke="#222"/><text x="315" y="359" text-anchor="middle" class="n" style="stroke:none">11</text>
+<path d="M266 495L315 440" class="l"/>
+<circle cx="315" cy="440" r="9" fill="#fff" stroke="#222"/><text x="315" y="444" text-anchor="middle" class="n" style="stroke:none">12</text>
+<path d="M190 565L155 595" class="l"/>
+<circle cx="155" cy="595" r="9" fill="#fff" stroke="#222"/><text x="155" y="599" text-anchor="middle" class="n" style="stroke:none">13</text>
+<circle cx="29" cy="655" r="8" fill="#fff" stroke="#222"/><text x="29" y="659" text-anchor="middle" class="n" style="stroke:none">1</text>
+<text x="44" y="659" font-size="11.5">Ti crown plate on the 3 chord ends (~18 kg)</text>
+<circle cx="29" cy="672" r="8" fill="#fff" stroke="#222"/><text x="29" y="676" text-anchor="middle" class="n" style="stroke:none">2</text>
+<text x="44" y="676" font-size="11.5">Lift arm + twin tang, a load pin per rod</text>
+<circle cx="29" cy="689" r="8" fill="#fff" stroke="#222"/><text x="29" y="693" text-anchor="middle" class="n" style="stroke:none">3</text>
+<text x="44" y="693" font-size="11.5">Stay arms fore and aft, 0.95 m (see plan)</text>
+<circle cx="29" cy="706" r="8" fill="#fff" stroke="#222"/><text x="29" y="710" text-anchor="middle" class="n" style="stroke:none">4</text>
+<text x="44" y="710" font-size="11.5">Pan-tilt inspection camera</text>
+<circle cx="29" cy="723" r="8" fill="#fff" stroke="#222"/><text x="29" y="727" text-anchor="middle" class="n" style="stroke:none">5</text>
+<text x="44" y="727" font-size="11.5">Sun sensors (tracking check)</text>
+<circle cx="29" cy="740" r="8" fill="#fff" stroke="#222"/><text x="29" y="744" text-anchor="middle" class="n" style="stroke:none">6</text>
+<text x="44" y="744" font-size="11.5">Radio relay + obstacle light</text>
+<circle cx="29" cy="757" r="8" fill="#fff" stroke="#222"/><text x="29" y="761" text-anchor="middle" class="n" style="stroke:none">7</text>
+<text x="44" y="761" font-size="11.5">Sensor hub + 3-axis accelerometer</text>
+<circle cx="29" cy="774" r="8" fill="#fff" stroke="#222"/><text x="29" y="778" text-anchor="middle" class="n" style="stroke:none">8</text>
+<text x="44" y="778" font-size="11.5">Corner reflector for landers</text>
+<circle cx="29" cy="791" r="8" fill="#fff" stroke="#222"/><text x="29" y="795" text-anchor="middle" class="n" style="stroke:none">9</text>
+<text x="44" y="795" font-size="11.5">Masthead rail (outside, aft face)</text>
+<circle cx="29" cy="808" r="8" fill="#fff" stroke="#222"/><text x="29" y="812" text-anchor="middle" class="n" style="stroke:none">10</text>
+<text x="44" y="812" font-size="11.5">Grating at 106.6 m: crown at chest height</text>
+<circle cx="29" cy="825" r="8" fill="#fff" stroke="#222"/><text x="29" y="829" text-anchor="middle" class="n" style="stroke:none">11</text>
+<text x="44" y="829" font-size="11.5">~60 W feed up from the yard junction</text>
+<circle cx="29" cy="842" r="8" fill="#fff" stroke="#222"/><text x="29" y="846" text-anchor="middle" class="n" style="stroke:none">12</text>
+<text x="44" y="846" font-size="11.5">Hatch: climb rail to walkway rail</text>
+<circle cx="29" cy="859" r="8" fill="#fff" stroke="#222"/><text x="29" y="863" text-anchor="middle" class="n" style="stroke:none">13</text>
+<text x="44" y="863" font-size="11.5">Ti ring frames, yard chords bolted on</text>
+<text x="20" y="882" font-size="11" fill="#555">Top 2 standard sections (102 to 108 m), 1.4 m face; post 1.5 m, on the axis.</text>
+<text x="470" y="30" class="t">2. Crown, plan from above</text>
+<polygon points="680.0,111.8 778.0,281.6 582.0,281.6" fill="none" stroke="#888" stroke-width="2" stroke-dasharray="6 3"/>
+<polygon points="680.0,117.5 773.1,278.8 586.9,278.8" fill="#9fb3c8" fill-opacity="0.55" stroke="#222" stroke-width="1.4"/>
+<circle cx="680.0" cy="111.8" r="7" fill="#888" stroke="#222"/>
+<circle cx="778.0" cy="281.6" r="7" fill="#888" stroke="#222"/>
+<circle cx="582.0" cy="281.6" r="7" fill="#888" stroke="#222"/>
+<rect x="631.0" y="290.8" width="154.0" height="58.8" fill="none" stroke="#777" stroke-dasharray="4 3"/>
+<rect x="753.0" y="281.2" width="8" height="8" fill="#6c3483"/>
+<rect x="673.0" y="92.0" width="14.0" height="116.2" fill="#9fb3c8" class="s"/>
+<circle cx="680" cy="92.0" r="6" fill="#fff" stroke="#222" stroke-width="1.6"/><circle cx="680" cy="92.0" r="2" fill="#222"/>
+<line x1="680" y1="92.0" x2="680" y2="40.19999999999999" stroke="#8e44ad" stroke-width="2.4"/>
+<rect x="673.0" y="241.8" width="14.0" height="116.2" fill="#9fb3c8" class="s"/>
+<circle cx="680" cy="358.0" r="6" fill="#fff" stroke="#222" stroke-width="1.6"/><circle cx="680" cy="358.0" r="2" fill="#222"/>
+<line x1="680" y1="358.0" x2="680" y2="409.8" stroke="#8e44ad" stroke-width="2.4"/>
+<rect x="643.6" y="218.0" width="19.6" height="14.0" fill="#9fb3c8" class="s"/>
+<line x1="649.2" y1="220.8" x2="512.0" y2="217.0" stroke="#7f8c8d" stroke-width="2.4"/>
+<circle cx="649.2" cy="220.8" r="3.2" fill="#c0392b"/>
+<line x1="649.2" y1="229.2" x2="512.0" y2="233.0" stroke="#7f8c8d" stroke-width="2.4"/>
+<circle cx="649.2" cy="229.2" r="3.2" fill="#c0392b"/>
+<rect x="696.8" y="218.0" width="19.6" height="14.0" fill="#9fb3c8" class="s"/>
+<line x1="710.8" y1="220.8" x2="848.0" y2="217.0" stroke="#7f8c8d" stroke-width="2.4"/>
+<circle cx="710.8" cy="220.8" r="3.2" fill="#c0392b"/>
+<line x1="710.8" y1="229.2" x2="848.0" y2="233.0" stroke="#7f8c8d" stroke-width="2.4"/>
+<circle cx="710.8" cy="229.2" r="3.2" fill="#c0392b"/>
+<circle cx="680" cy="225" r="16.8" fill="#9fb3c8" stroke="#222" stroke-width="1.4"/><circle cx="680" cy="225" r="7.0" fill="#d5d8dc" stroke="#222"/>
+<text x="848.0" y="211" text-anchor="end" font-size="11">to the starboard tip →</text>
+<text x="512.0" y="211" font-size="11">← to the port tip</text>
+<text x="690" y="44.19999999999999" font-size="11" fill="#8e44ad">fore diamond stay</text>
+<text x="690" y="413.8" font-size="11" fill="#8e44ad">aft diamond stay</text>
+<path d="M687 141L750 99" class="l"/>
+<text x="754" y="103" text-anchor="start" font-size="11.5">Stay arm 0.95 m, clear of</text>
+<text x="754" y="117" text-anchor="start" font-size="11.5">the 0.81 m lattice vertex</text>
+<path d="M763 253L785 295" class="l"/>
+<text x="789" y="299" text-anchor="start" font-size="11.5">Crown plate</text>
+<path d="M649 229L575 288" class="l"/>
+<text x="571" y="292" text-anchor="end" font-size="11.5">Twin tang: 2 load pins,</text>
+<text x="571" y="306" text-anchor="end" font-size="11.5">rods 60 mm apart</text>
+<path d="M617 190L575 106" class="l"/>
+<text x="571" y="110" text-anchor="end" font-size="11.5">Mast top (1.4 m face)</text>
+<path d="M652 350L575 358" class="l"/>
+<text x="571" y="362" text-anchor="end" font-size="11.5">Grating 1.4 m below</text>
+<path d="M688 229L785 253" class="l"/>
+<text x="789" y="257" text-anchor="start" font-size="11.5">Boss + post (on the axis)</text>
+<text x="470" y="452" font-size="12" font-weight="bold">Lift tang, side view (one rod shown)</text>
+<rect x="479.4" y="477.2" width="45.6" height="57.0" fill="#9fb3c8" class="s"/>
+<path d="M525 488.6 L601.0 500 L601.0 522.8 L525 530.4 z" fill="#9fb3c8" class="s"/>
+<rect x="479.4" y="534.2" width="152.0" height="6" fill="#9fb3c8" class="s"/>
+<g transform="rotate(23.4 601.0 511.4)"><rect x="593.0" y="502.4" width="34" height="18" rx="4" fill="#9fb3c8" class="s"/><path d="M627.0 503.4 L672.6 508.4 V514.4 L627.0 519.4 z" fill="#9fb3c8" class="s"/><rect x="672.6" y="508.4" width="38.0" height="6" fill="#fdfefe" stroke="#555"/></g>
+<circle cx="601.0" cy="511.4" r="6" fill="#c0392b" stroke="#222"/>
+<path d="M601.0 505.4 q-10 -22 -60 -20" stroke="#2e86c1" fill="none" stroke-width="1.4"/>
+<path d="M605 506L696 470" class="l"/>
+<text x="700" y="474" text-anchor="start" font-size="11.5">Load pin Ø16 mm, 10 kN, wired</text>
+<path d="M651 533L696 538" class="l"/>
+<text x="700" y="542" text-anchor="start" font-size="11.5">Potted Ti cone socket + clevis, 23.4°</text>
+<text x="502.2" y="507.6" text-anchor="middle" font-size="10.5" style="stroke:none">boss</text>
+<text x="905" y="30" class="t">3. Yard tip, looking in along the arm</text>
+<text x="905" y="47" font-size="11" fill="#555">Each rod's line here is its true height vs offset,</text>
+<text x="905" y="61" font-size="11" fill="#555">so this view shows the clearance at every station.</text>
+<rect x="1018.0" y="129.39999999999912" width="84.0" height="252.0" fill="url(#hz)" stroke="#c0392b" stroke-dasharray="5 3"/>
+<text x="1060" y="232.9999999999984" text-anchor="middle" font-size="11" fill="#c0392b">bot</text><text x="1060" y="246.9999999999984" text-anchor="middle" font-size="11" fill="#c0392b">1.8 x 0.6 m</text>
+<line x1="1025.0" y1="498.9999999999992" x2="1025.0" y2="386.9999999999996" stroke="#8a5a00" stroke-width="1.6"/>
+<line x1="1095.0" y1="498.9999999999992" x2="1095.0" y2="386.9999999999996" stroke="#8a5a00" stroke-width="1.6"/>
+<line x1="1025.0" y1="498.9999999999992" x2="1095.0" y2="498.9999999999992" stroke="#8a5a00" stroke-width="1.6"/>
+<line x1="1025.0" y1="386.9999999999996" x2="1095.0" y2="386.9999999999996" stroke="#8a5a00" stroke-width="1.6"/>
+<line x1="1025.0" y1="498.9999999999992" x2="1095.0" y2="386.9999999999996" stroke="#8a5a00" stroke-dasharray="4 3"/>
+<rect x="973.2" y="492.9999999999992" width="173.6" height="12" fill="#9fb3c8" class="s"/>
+<circle cx="1025.0" cy="498.9999999999992" r="4.2" fill="#e0a040" stroke="#8a5a00" stroke-width="1.4"/>
+<circle cx="1025.0" cy="386.9999999999996" r="4.2" fill="#e0a040" stroke="#8a5a00" stroke-width="1.4"/>
+<circle cx="1095.0" cy="498.9999999999992" r="4.2" fill="#e0a040" stroke="#8a5a00" stroke-width="1.4"/>
+<circle cx="1095.0" cy="386.9999999999996" r="4.2" fill="#e0a040" stroke="#8a5a00" stroke-width="1.4"/>
+<rect x="1022.2" y="378.5999999999993" width="75.60000000000001" height="5.6000000000000005" fill="url(#gr)" stroke="#555"/>
+<line x1="1102.0" y1="381.3999999999987" x2="1102.0" y2="227.39999999999952" stroke="#6c3483" stroke-width="3"/>
+<rect x="1096.4" y="223.19999999999936" width="14.0" height="5" fill="#6c3483"/>
+<line x1="983.0" y1="498.9999999999992" x2="1009.8" y2="86.0" stroke="#7f8c8d" stroke-width="3"/>
+<rect x="978.0" y="468.9999999999992" width="10" height="22" fill="#d5d8dc" class="s"/>
+<rect x="976.0" y="489.9999999999992" width="14" height="9" fill="#9fb3c8" class="s"/>
+<line x1="1025.0" y1="505.9999999999988" x2="1011.6" y2="547.9999999999984" stroke="#7d3c98" stroke-width="2"/>
+<line x1="1137.0" y1="498.9999999999992" x2="1110.2" y2="86.0" stroke="#7f8c8d" stroke-width="3"/>
+<rect x="1132.0" y="468.9999999999992" width="10" height="22" fill="#d5d8dc" class="s"/>
+<rect x="1130.0" y="489.9999999999992" width="14" height="9" fill="#9fb3c8" class="s"/>
+<line x1="1095.0" y1="505.9999999999988" x2="1108.4" y2="547.9999999999984" stroke="#7d3c98" stroke-width="2"/>
+<path d="M1102.0 129.39999999999912 H1113.0" stroke="#222" stroke-width="1.2"/>
+<path d="M1113 129L1147 100" class="l"/>
+<text x="1151" y="104" text-anchor="start" font-size="11.5">≥78 mm at head height</text>
+<path d="M1142 479L1147 415" class="l"/>
+<text x="1151" y="419" text-anchor="start" font-size="11.5">M16 barrel adjuster,</text>
+<text x="1151" y="433" text-anchor="start" font-size="11.5">locknut + lock wire</text>
+<path d="M1144 499L1147 513" class="l"/>
+<text x="1151" y="517" text-anchor="start" font-size="11.5">Outrigger ±0.55 m</text>
+<path d="M1116 177L1147 170" class="l"/>
+<text x="1151" y="174" text-anchor="start" font-size="11.5">Lift rod (bundle)</text>
+<path d="M1102 289L1147 310" class="l"/>
+<text x="1151" y="314" text-anchor="start" font-size="11.5">Rail + trolley</text>
+<text x="1151" y="328" text-anchor="start" font-size="11.5">(rod 0.12 m out)</text>
+<path d="M1022 376L959 366" class="l"/>
+<text x="955" y="370" text-anchor="end" font-size="11.5">Walkway</text>
+<path d="M1025 443L959 457" class="l"/>
+<text x="955" y="461" text-anchor="end" font-size="11.5">Yard box</text>
+<text x="955" y="475" text-anchor="end" font-size="11.5">0.8 x 0.5 m</text>
+<path d="M1018 541L959 544" class="l"/>
+<text x="955" y="548" text-anchor="end" font-size="11.5">Brace to the</text>
+<text x="955" y="562" text-anchor="end" font-size="11.5">spreader tip</text>
+<text x="470" y="590" class="t">4. Topping lift, crown to yard tip: elevation and plan (plan across-yard x5)</text>
+<rect x="504.6" y="618.5999999999999" width="30.799999999999997" height="184.80000000000013" fill="#f7f7f7" stroke="#888"/>
+<rect x="535.4" y="777.0" width="396.0" height="17.6" fill="none" stroke="#8a5a00" stroke-width="1.4"/>
+<line x1="535.4" y1="775.68" x2="931.4" y2="775.68" stroke="#555" stroke-width="2"/>
+<line x1="520" y1="618.5999999999999" x2="927.0" y2="794.5999999999999" stroke="#7f8c8d" stroke-width="2.4"/>
+<rect x="575.0" y="736.52" width="13.2" height="39.6" fill="none" stroke="#bbb" stroke-dasharray="3 2"/>
+<rect x="621.2" y="736.52" width="13.2" height="39.6" fill="none" stroke="#bbb" stroke-dasharray="3 2"/>
+<rect x="667.4" y="736.52" width="13.2" height="39.6" fill="none" stroke="#bbb" stroke-dasharray="3 2"/>
+<rect x="713.6" y="736.52" width="13.2" height="39.6" fill="none" stroke="#bbb" stroke-dasharray="3 2"/>
+<rect x="759.8" y="736.52" width="13.2" height="39.6" fill="none" stroke="#bbb" stroke-dasharray="3 2"/>
+<rect x="806.0" y="736.52" width="13.2" height="39.6" fill="url(#hz)" stroke="#c0392b" stroke-dasharray="3 2"/>
+<rect x="852.2" y="736.52" width="13.2" height="39.6" fill="url(#hz)" stroke="#c0392b" stroke-dasharray="3 2"/>
+<rect x="898.4" y="736.52" width="13.2" height="39.6" fill="url(#hz)" stroke="#c0392b" stroke-dasharray="3 2"/>
+<circle cx="792.7" cy="736.5" r="3.5" fill="#c0392b"/>
+<circle cx="884.3" cy="776.1" r="3.5" fill="#c0392b"/>
+<path d="M793 737L718 665" class="l"/>
+<text x="714" y="669" text-anchor="end" font-size="11.5">1.8 m above the walkway at 12.4 m</text>
+<path d="M884 776L850 702" class="l"/>
+<text x="846" y="706" text-anchor="end" font-size="11.5">at walkway level at 16.6 m</text>
+<text x="931.4" y="817.4000000000001" text-anchor="end" font-size="11">On the centreline it would cross the bot envelopes at the outer stations (red)</text>
+<text x="542.0" y="622.5999999999999" font-size="11">crown, 108 m</text>
+<rect x="535.4" y="877.5" width="396.0" height="55.0" fill="#fbeee0" stroke="#8a5a00"/>
+<line x1="535.4" y1="938.0" x2="931.4" y2="938.0" stroke="#6c3483" stroke-width="2"/>
+<rect x="792.69" y="872.0" width="138.70999999999998" height="66.0" fill="url(#hz)" stroke="#c0392b" stroke-dasharray="4 3"/>
+<rect x="504.6" y="861.0" width="30.799999999999997" height="89.10000000000001" fill="#f7f7f7" stroke="#888"/>
+<line x1="524.4" y1="901.7" x2="927.0" y2="844.5" stroke="#7f8c8d" stroke-width="2.4"/>
+<rect x="924.0" y="841.2" width="6" height="36.299999999999955" fill="#9fb3c8" class="s"/>
+<line x1="524.4" y1="908.3" x2="927.0" y2="965.5" stroke="#7f8c8d" stroke-width="2.4"/>
+<rect x="924.0" y="932.5" width="6" height="36.299999999999955" fill="#9fb3c8" class="s"/>
+<path d="M872 852L813 841" class="l"/>
+<text x="809" y="845" text-anchor="end" font-size="11.5">Rods splay 0.06 → 1.1 m apart</text>
+<path d="M927 969L898 973" class="l"/>
+<text x="894" y="977" text-anchor="end" font-size="11.5">Tip outriggers</text>
+<path d="M740 938L685 966" class="l"/>
+<text x="681" y="970" text-anchor="end" font-size="11.5">Walkway rail (+0.30 m)</text>
+<path d="M804 905L773 910" class="l"/>
+<text x="769" y="914" text-anchor="end" font-size="11.5">Bot band where the lift is</text>
+<text x="769" y="928" text-anchor="end" font-size="11.5">below head height</text>
+<text x="20" y="905" class="t">5. Rod bundle section</text>
+<circle cx="85" cy="955" r="33.6" fill="#fdfefe" stroke="#555" stroke-width="1.4"/>
+<circle cx="85.0" cy="955.0" r="9.0" fill="#2c3e50"/>
+<circle cx="94.0" cy="970.6" r="9.0" fill="#2c3e50"/>
+<circle cx="76.0" cy="970.6" r="9.0" fill="#2c3e50"/>
+<circle cx="67.0" cy="955.0" r="9.0" fill="#2c3e50"/>
+<circle cx="76.0" cy="939.4" r="9.0" fill="#2c3e50"/>
+<circle cx="94.0" cy="939.4" r="9.0" fill="#2c3e50"/>
+<circle cx="103.0" cy="955.0" r="9.0" fill="#2c3e50"/>
+<text x="140" y="932" font-size="11.5">7 x Ø3 mm pultruded rods, ~50 mm²</text>
+<text x="140" y="947" font-size="11.5">White static-dissipative jacket, ~Ø11 mm</text>
+<text x="140" y="962" font-size="11.5">Breaks ~89 kN; ~0.1 kg/m</text>
+<text x="140" y="977" font-size="11.5">Coils to Ø1.4 m at 0.21% (Ø8 solid: 0.57%)</text>
+<text x="1010" y="612" class="t">Numbers</text>
+<text x="1010" y="632" font-size="11.5">Lift 20.2 m at 23.4°</text>
+<text x="1010" y="647" font-size="11.5">Static 3.36 kN (1.68 per rod)</text>
+<text x="1010" y="662" font-size="11.5">Bot at the outer station: 3.69 kN</text>
+<text x="1010" y="677" font-size="11.5">Factor 48 per rod; 24 on one rod</text>
+<text x="1010" y="692" font-size="11.5">Outer pack off: −0.58 kN in a lift</text>
+<text x="1010" y="707" font-size="11.5">Crown sideways ≤0.83 kN, sway 1.4 mm</text>
+<text x="1010" y="722" font-size="11.5">Masthead compression ~4.7 kN</text>
+<text x="1010" y="737" font-size="11.5">Stay arm root ~0.9 kN·m</text>
+<text x="1010" y="752" font-size="11.5">Rod mode 3.2 Hz, sag 5 mm</text>
+<text x="1010" y="767" font-size="11.5">1/8 adjuster turn = 64 N</text>
+<text x="1010" y="782" font-size="11.5">Broken rod: 0.73 kN·m arm torsion</text>
+<text x="1010" y="797" font-size="11.5">Horizon ~19 km (22 km to a rover)</text>
+</svg>

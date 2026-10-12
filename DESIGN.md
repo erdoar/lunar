@@ -1,11 +1,11 @@
-# Lunar polar rotating solar platform: concept design (rev 32, tall mast on a single base pivot, bot-serviced wings)
+# Lunar polar rotating solar platform: concept design (rev 33, tall mast on a single base pivot, bot-serviced wings)
 
 A very tall mast that turns on a single spherical base pivot, braced by a stationary strut tripod, with the solar array at the top, for a lunar polar crater-rim or ridge site (e.g. Shackleton rim, Malapert, Connecting Ridge). This is a first-pass concept with sizing estimates. Numbers are starting points to refine, not verified engineering.
 
 
 **Client presentation:** an 18-slide deck for agency and mission planners, built from this document and its drawings: https://claude.ai/artifact/AGcYswBAxcMva48yaVsggh (private until shared).
 
-## Current design at a glance (rev 32 baseline)
+## Current design at a glance (rev 33 baseline)
 
 This is the design being developed (mode 1: the **whole mast turns**). Everything under "Revision history" below records how it evolved. Section 9 (mode 2, a top turret) is set aside, and Appendix A (the earlier rail turntable) is superseded.
 
@@ -96,10 +96,15 @@ Weight path: mast → foot plate → wear cup (turns) → pivot ball (fixed) →
   - **Joints:** tent-pole sleeve joints with a 0.3 m Ti spigot carry the erection bending.
   - **Correction 1:** each strut end swings ~53° during the scissor erection, beyond a spherical bearing's range. Each end now gets a **hinge pin** for the swing plus a spherical bushing for misalignment.
   - **Correction 2:** friction alone (~0.3 kN) cannot hold a foot against a quake (~0.4 kN). The foot frame now sits in a **sintered conical socket** (~1.2 kN sideways).
-- **Rev 32 (this):** **top yard and pack hanger detailed** (section 4a, `top_yard_detail_check.py`).
+- Rev 32: **top yard and pack hanger detailed** (section 4a, `top_yard_detail_check.py`).
   - **Correction 1:** 8 packs of 2 m with 0.1 m gaps need 16.7 m, but the old 2 to 17 m span held only 15 m. The wings now run from **1.8 to 18.5 m** (0.53 m clear of the collar rings), and the yard grows from 34 m to **37.4 m**. The topping lift rises to ~3.4 kN, and the worst imbalance to ~7 kN·m, still about half the quake case.
   - **Correction 2:** the steel topping lifts, braces and diamond stays would swing ±1.3 kN with temperature against the CFRP mast and yard. They become **coated CFRP rods** (2 x Ø8 mm per line, potted Ti ends), which swing only ±0.4 kN. The bracing stays stay steel because they pay out from a drum during erection.
   - **Detail:** the yard truss, its root joint round an open mast core, and each hanger's layout along its length.
+- **Rev 33 (this):** **masthead and topping lifts detailed** (section 4a, `masthead_check.py`).
+  - **Crown:** a Ti crown closes the mast top. Its cruciform carries the lift tangs on short arms and the diamond-stay tangs on 0.95 m arms, so the stays clear the lattice. Every line of action passes through one node on the mast axis. A 1.5 m instrument post on top carries the inspection camera, Sun sensors, an accelerometer and the site radio relay.
+  - **Correction 1:** on the yard centreline the lift would pass less than 1.8 m over the walkway from 12.4 m out and meet it at 16.6 m, right over the outer stations. The two rods of each lift now **splay to outriggers ±0.55 m either side of the yard tip**, so the walkway runs between them. They clear a bot by ≥78 mm.
+  - **Correction 2:** a Ø8 mm solid rod coiled to fit a 1.5 m freight module would be strained to 0.57%, over a third of its ultimate. Each rod becomes a **bundle of 7 x Ø3 mm rods** in a white jacket with the same strength, which coils to Ø1.4 m at 0.21%.
+  - **Sensing:** a load pin under each rod at the crown (4 in all) reads the wing balance, the share between the rods of each pair and any broken rod.
 
 ![Platform layout: elevation and plan](platform-layout.svg)
 
@@ -472,21 +477,49 @@ On the Moon there is no outside help, so every fault must be recoverable with th
 - **Masthead:** an 8 m mast extension above the yard (mast top at 108 m), carrying the topping-lift tangs and the diamond-stay head.
   - It is 8 m rather than 5 m because the steeper lift angle cuts the topping-lift tension. With the rev 32 yard (lift at 18.5 m, 23°) it is **~3.4 kN**, and the yard compression **~3.1 kN** per arm.
   - Cost: one extra mast section (+75 kg).
+  - Detail: crown, tangs, instrument post and lift ends below (**Masthead and topping lift detail**).
 
 **Stays at the top**
 | Line | From → to | Purpose | Load (wings up) |
 |---|---|---|---|
-| **Topping lifts** (2) | Masthead → yard tips (±18.5 m) | Hold the yard ends up against the wing weight | ~3.4 kN each |
+| **Topping lifts** (2) | Crown → yard-tip outriggers (±18.5 m); the 2 rods of each lift splay either side of the walkway | Hold the yard ends up against the wing weight | ~3.4 kN each, 3.7 kN with a bot at the outer station |
 | **Braces** (4) | Yard tips → diamond-spreader tips (±6 m fore/aft, at 81 m) | Hold the yard square to the mast against yaw and quake, and stop it swinging | Pre-tension ~0.3 kN |
 | **Diamond stays** (2 pairs) | Mast at 64 m → spreader tips (81 m) → masthead (108 m) | Brace the upper mast fore/aft (the wing plane is braced by the yard + topping lifts) | Pre-tension ~1 kN |
 
-- **All are coated CFRP rods** (rev 32): 2 x Ø8 mm pultruded rods per line, with potted Ti end fittings and turnbuckles.
+- **All are coated CFRP rod bundles** (revs 32 and 33): 2 per line, each 7 x Ø3 mm pultruded rods in a white, static-dissipative jacket (~Ø11 mm, as strong as one Ø8 mm rod), with potted Ti end fittings and barrel adjusters.
   - In steel, a 20 m topping lift would change length ~38 mm with temperature (±1.3 kN if fixed), and a 27 m diamond stay ~51 mm, more than its 1 kN pre-tension. In CFRP, like the mast and yard, it is ~1 to 1.5 mm (±0.4 kN).
   - These lines never pay out from a drum, so the rods' only drawback, a large bend radius, does not matter here.
-  - Each rod breaks at ~100 kN, so one rod of a pair still holds the lift with a factor of ~30. The pairs also double as the micrometeoroid redundancy.
-  - The diamond stays are pre-fitted at the masthead and hang straight down along the mast during jack-up until their spreader section goes in.
-- The topping lifts get **load cells**: the two readings show the wing balance directly.
-- The front braces cross in front of the wings, and their shadow (two pairs of 8 mm rods) costs <0.05%.
+  - Each bundle breaks at ~89 kN, so one bundle of a pair still holds the worst-case lift with a factor of ~24. The pairs also double as the micrometeoroid redundancy.
+  - The bundles coil to Ø1.4 m (0.21% strain) to ship in the freight module; a solid Ø8 mm rod would be strained to 0.57%.
+  - The diamond stays are pinned to the crown arms before jack-up. Their coils sit on a free-turning cradle at the jack frame and pay off as the mast rises, clipped to the lattice at ground level, until their spreader section goes in.
+- The topping lifts get **load pins**, one under each rod at the crown: the line sums show the wing balance directly, and the split within each pair shows rod sharing or a broken rod.
+- The front braces cross in front of the wings, and their shadow (two pairs of ~11 mm bundles) costs <0.05%.
+
+**Masthead and topping lift detail** (`masthead_check.py`)
+
+![Masthead and topping lift detail](masthead.svg)
+
+- **Masthead.** The top two standard 3 m sections (102 to 108 m), 1.4 m face, closed by the crown. The lines put ~4.7 kN down the masthead. The worst imbalance (outer pack off one side, bot and reel at the other tip) pulls the crown ~0.83 kN sideways: ~6.6 kN·m at the yard, ~5.5 kN in a chord, ~1.4 mm of sway. That is small for the lattice.
+- **Crown.** A machined Ti-6Al-4V plate bolted to the 3 chord ends, ~18 kg, with a central boss and a cruciform of 4 arms:
+  - **Lift arms** (port and starboard, 0.2 m): a twin tang per lift, the two rods 60 mm apart, each on its own **single-axis load pin** (Ø16 mm, 10 kN range, 10 N resolution). One outer pack off changes a lift by ~0.58 kN, ~0.29 kN per pin.
+  - **Diamond-stay arms** (fore and aft, 0.95 m): beyond the 0.81 m lattice vertex, so the stays leave the crown clear of the lattice faces. The pair balances; each arm root sees ~0.9 kN·m.
+  - All 4 lines of action meet on the mast axis at 108 m, so the crown carries no net moment from the lines.
+- **Instrument post** (1.5 m, on the boss, on the axis so it adds no imbalance; ~25 kg with payload):
+  - a pan-tilt **inspection camera** that sees both yard arms, the walkways, the pack heads and the rod ends;
+  - 2 **Sun sensors** that check the drive's ephemeris tracking;
+  - a 3-axis **accelerometer** for mast sway and quake response;
+  - the site **radio relay**: from 109.5 m the horizon is ~19 km, ~22 km to a rover's 2 m mast;
+  - an obstacle light and a corner reflector for landers.
+  - Power and data come up the outside of the masthead from the yard junction at the hatch (~60 W).
+- **Access.** The masthead rail runs from the hatch up the aft face to a small grating at 106.6 m, so a bot clipped to it has the crown at chest height. It can swap a load pin, a tang pin or an instrument there.
+- **Topping lifts.** Each runs 20.2 m at 23.4° from the crown to the yard tip: ~3.4 kN, up to ~3.7 kN with a bot and reel at the outer station.
+  - **Split at the tip.** On the yard centreline a lift would pass less than 1.8 m over the walkway from 12.4 m out and meet the walkway at 16.6 m, over the outer stations. So its two rods splay from 60 mm apart at the crown to **outriggers ±0.55 m** on the yard's bottom-chord tip node, and the walkway runs between them.
+    - The rods clear a 1.8 m x ±0.30 m bot by ≥78 mm (at head height) and the rail trolley by ~0.12 m. Beyond 16.6 m they are below walkway level, beside the yard.
+    - Each rod pulls its outrigger in by ~48 N, cancelled across the tip frame. If one rod breaks, the other takes the tip alone: ~0.73 kN·m of arm torsion, small for the box truss.
+  - **Rods.** Each is a bundle of 7 x Ø3 mm pultruded rods (~50 mm², ~0.1 kg/m with its jacket) potted into Ti cone sockets at both ends. Factor ~48 per bundle at the worst case. First string mode ~3.2 Hz, sag ~5 mm.
+  - **Tip end.** Socket → M16 x 1.5 barrel adjuster with locknut and lock wire → clevis on the outrigger lug. A 1 mm length mismatch shifts ~0.34 kN between the pair, so the adjusters are set against the crown load pins: 1/8 turn is ~64 N. A bot kneeling at the walkway end can trim one under load (~3 N·m).
+  - The braces to the spreader tips pin to the same tip frame, on lugs below the bottom chords.
+- **Erection.** The crown, both masthead sections and the yard section are assembled and rigged at the jack frame as the first three sections. The lifts are set with the yard on stands and the load pins zeroed before the stands come out. The crown and post add ~60 kg to the ~1 t top weight.
 
 **Yard and hanger detail** (`top_yard_detail_check.py`)
 
@@ -988,6 +1021,7 @@ The tight part is the **lunar lander's cargo deck and unloading gear**, and that
 | Landing trays (2 x 15 m) | Light frames | 3 m sections | 1 module |
 | Solar packs (16) | 2 x 30 m deployed | Folded packs ~2 x 1 x 0.7 m (1 to 3 m wide all fit) | 2 per module: **8 modules** |
 | Stay cables, ties, reel-hoist ropes | 68 m and less | On reels | 1 module |
+| Top rigging: topping lifts, braces, diamond stays | CFRP rod bundles, 20 to 27 m | Coiled to Ø1.4 m (0.21% strain), ends potted | Shares the stay-cable module |
 | Power trunks (2 x 115 m), service feeder, fibres | Continuous cables | On reels | 1 module |
 | Collars, V-links, jack frame, foot winches, drive cartridges, base enclosure, reel hoists | ≤ ~2 m | As-is (collar rings in 3 segments, as designed) | 3 modules |
 | Service bots (2) | Humanoid-class | Folded in padded crates, ~1.8 x 0.8 x 0.6 m each | 1 module |
@@ -1039,7 +1073,8 @@ At ~1 hour per 3 m section, the mast goes up in roughly **35 working hours** of 
 4. Prototype the jack-up with collars, the strut scissor and tie winches at small scale; rehearse with suited operators.
 5. Concertina pack trials: self-folding into a tray and unfolding on lift (fold direction, hinge springs, panel edge contact), cycles in vacuum and cold; lowering one pack past its neighbours.
 6. Confirm the actual lander's freight envelope and re-cut the parts list (section 10) to it; build and fold a flat-pack mast section and a tent-pole strut, and test their assembly with suited operators.
-7. **Service-bot trials:** climb a full-size mast-core mock-up (1.4 m face) on the fall-arrest rail with a reel as a chest pack; work the hanger latch and the reel socket; lower and re-latch a full-size pack on two ropes, measuring spin and guide-fork capture; rehearse the recovery ladder (grabs, untangling, re-equalising with the drum clutches, and a rescue lowering with rope-riding hooks); cold-soak the base battery and bot charging; check supervision and teleoperation modes and fall-arrest drop tests.
+7. **Service-bot trials:** climb a full-size mast-core mock-up (1.4 m face) on the fall-arrest rail with a reel as a chest pack; work the hanger latch and the reel socket; lower and re-latch a full-size pack on two ropes, measuring spin and guide-fork capture; walk the yard tip between the splayed lift rods; rehearse the recovery ladder (grabs, untangling, re-equalising with the drum clutches, and a rescue lowering with rope-riding hooks); cold-soak the base battery and bot charging; check supervision and teleoperation modes and fall-arrest drop tests.
+8. **Rod bundle tests:** coil and uncoil cold-soaked bundles at Ø1.4 m; pull-test potted cone sockets after thermal cycling; UV and charging tests of the white jacket; calibrate the crown load pins against a rod pair.
 
 ## Appendix A. Superseded: rail turntable base (revs 2 to 19)
 

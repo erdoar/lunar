@@ -48,7 +48,7 @@ A(f'<line x1="{X(-18.7)}" y1="{Z(101.5)}" x2="{X(18.7)}" y2="{Z(101.5)}" stroke=
 for i in range(-18, 19, 2):
     A(f'<line x1="{X(i)}" y1="{Z(100.4)-3}" x2="{X(i)}" y2="{Z(101.5)}" stroke="{BOT}" stroke-width="0.8"/>')
 for sx in (-1, 1):
-    A(f'<line x1="{X(0)}" y1="{Z(108)}" x2="{X(sx*18.5)}" y2="{Z(100.4)}" class="w"/>')
+    A(f'<line x1="{X(0)}" y1="{Z(108)}" x2="{X(sx*18.5)}" y2="{Z(99.6)}" class="w"/>')
 A(f'<circle cx="{X(0)}" cy="{Z(108)}" r="4" fill="#555"/>')
 # hangers and packs; one port pack being lowered
 pitch, pw, LOW = 2.1, 2.0, 5

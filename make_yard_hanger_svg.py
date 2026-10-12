@@ -1,4 +1,4 @@
-# Generates yard-hanger.svg (rev 32): yard cross-section, pack hanger elevation, root joint, CFRP rod end fitting and numbers.
+# Generates yard-hanger.svg (rev 33): yard cross-section, pack hanger elevation, root joint, CFRP rod end fitting and numbers.
 # Run: python3 make_yard_hanger_svg.py
 o = []
 A = o.append
@@ -272,36 +272,31 @@ key(20, 876, [('A', 'Ti ring frames at both chord levels take the chord forces r
               ('F', 'Masthead rail outside, above the hatch'),
               ('G', 'Arms: 14 sections of ~2.7 m, ~0.45 t for both')])
 
-# ================= 4. CFRP rod end fitting =================
-A('<text x="610" y="568" class="t">4. Top rigging rod end (yard tip)</text>')
+# ================= 4. CFRP rod end fitting (rev 33: one bundle per outrigger) =================
+A('<text x="610" y="568" class="t">4. Topping lift rod end (yard tip)</text>')
 s4, x4, y4 = 400, 618, 690
 X4 = lambda m: x4 + m * s4
-for dy in (-0.03, 0.03):
-    yy = y4 + dy * s4
-    A(f'<rect x="{X4(0)}" y="{yy-0.004*s4:.1f}" width="{0.15*s4}" height="{0.008*s4:.1f}" fill="#fdfefe" stroke="#555" stroke-width="0.8"/>')
-    A(f'<path d="M{X4(0.15)} {yy-3:.1f} L{X4(0.27)} {yy-0.011*s4:.1f} V{yy+0.011*s4:.1f} L{X4(0.15)} {yy+3:.1f} z" fill="{TI}" class="s"/>')
-    A(f'<rect x="{X4(0.27)}" y="{yy-4:.1f}" width="{0.035*s4}" height="8" fill="{TI}" class="s"/><circle cx="{X4(0.29)}" cy="{yy:.1f}" r="2.5" fill="#222"/>')
-A(f'<path d="M{X4(0.28)} {y4-0.045*s4} L{X4(0.40)} {y4-0.012*s4} V{y4+0.012*s4} L{X4(0.28)} {y4+0.045*s4} z" fill="{TI}" class="s" opacity="0.9"/>')
-for dy in (-0.03, 0.03):
-    A(f'<circle cx="{X4(0.29)}" cy="{y4+dy*s4}" r="2.5" fill="#222"/>')
-A(f'<rect x="{X4(0.40)}" y="{y4-5}" width="{0.11*s4}" height="10" fill="#d5d8dc" class="s"/>')
+A(f'<rect x="{X4(0)}" y="{y4-0.0055*s4:.1f}" width="{0.17*s4}" height="{0.011*s4:.1f}" fill="#fdfefe" stroke="#555" stroke-width="0.8"/>')
+A(f'<path d="M{X4(0.17)} {y4-3:.1f} L{X4(0.29)} {y4-0.012*s4:.1f} V{y4+0.012*s4:.1f} L{X4(0.17)} {y4+3:.1f} z" fill="{TI}" class="s"/>')
+A(f'<rect x="{X4(0.29)}" y="{y4-5}" width="{0.11*s4}" height="10" fill="#d5d8dc" class="s"/>')
 for i in range(8):
-    A(f'<line x1="{X4(0.41+i*0.012)}" y1="{y4-5}" x2="{X4(0.415+i*0.012)}" y2="{y4+5}" stroke="#555" stroke-width="0.7"/>')
-A(f'<rect x="{X4(0.455)}" y="{y4-7}" width="8" height="14" fill="#555"/>')
-A(f'<path d="M{X4(0.51)} {y4-8} H{X4(0.56)} V{y4+8} H{X4(0.51)} z" fill="{TI}" class="s"/><circle cx="{X4(0.545)}" cy="{y4}" r="3" fill="#222"/>')
-A(f'<path d="M{X4(0.535)} {y4-4} H{X4(0.60)} V{y4+40} H{X4(0.535)} z" fill="{TI}" stroke="#222"/>')
-A(f'<rect x="{X4(0.50)}" y="{y4+40}" width="{0.13*s4}" height="26" fill="{TI}" class="s"/>')
-A(f'<circle cx="{X4(0.565)}" cy="{y4+53}" r="9" fill="{YD}" stroke="{YDS}" stroke-width="1.4"/>')
-A(f'<text x="{X4(0.565)}" y="{y4+82}" text-anchor="middle" font-size="10.5">yard tip node</text>')
-lab(X4(0.07), y4 - 0.03 * s4, X4(-0.01), y4 - 80, ['2 x Ø8 mm CFRP rods,', 'white-coated'])
-lab(X4(0.21), y4 + 0.03 * s4 + 3, X4(0.10), y4 + 50, ['Bonded Ti', 'potting sockets'])
-lab(X4(0.35), y4 - 0.03 * s4, X4(0.36), y4 - 80, ['Equaliser plate:', 'rods share the load'])
-lab(X4(0.46), y4 + 5, X4(0.25), y4 + 104, ['Barrel adjuster ±25 mm, set once', 'on the ground; locknut + wire'])
-A(f'<text x="610" y="{y4+150}" font-size="11">Same fitting at the masthead crane plate.</text>')
-A(f'<text x="610" y="{y4+166}" font-size="11">Steel 6 mm rope would swing ~38 mm on the</text>')
-A(f'<text x="610" y="{y4+180}" font-size="11">20.2 m lift with sun and shade (±1.3 kN if</text>')
-A(f'<text x="610" y="{y4+194}" font-size="11">held); the rods move ~1 mm (±0.4 kN).</text>')
-A(f'<text x="610" y="{y4+214}" font-size="11">One rod alone breaks at ~100 kN: factor ~30.</text>')
+    A(f'<line x1="{X4(0.30+i*0.012)}" y1="{y4-5}" x2="{X4(0.305+i*0.012)}" y2="{y4+5}" stroke="#555" stroke-width="0.7"/>')
+A(f'<rect x="{X4(0.345)}" y="{y4-7}" width="8" height="14" fill="#555"/>')
+A(f'<path d="M{X4(0.40)} {y4-8} H{X4(0.45)} V{y4+8} H{X4(0.40)} z" fill="{TI}" class="s"/><circle cx="{X4(0.435)}" cy="{y4}" r="3" fill="#222"/>')
+A(f'<path d="M{X4(0.425)} {y4-4} H{X4(0.49)} V{y4+40} H{X4(0.425)} z" fill="{TI}" stroke="#222"/>')
+A(f'<rect x="{X4(0.40)}" y="{y4+40}" width="{0.13*s4}" height="26" fill="{TI}" class="s"/>')
+A(f'<circle cx="{X4(0.465)}" cy="{y4+53}" r="9" fill="{YD}" stroke="{YDS}" stroke-width="1.4"/>')
+A(f'<text x="{X4(0.465)}" y="{y4+82}" text-anchor="middle" font-size="10.5">outrigger, ±0.55 m</text>')
+lab(X4(0.07), y4 - 0.0055 * s4, X4(-0.01), y4 - 60, ['Rod bundle 7 x Ø3 mm,', 'white jacket (~Ø11 mm)'])
+lab(X4(0.23), y4 + 0.012 * s4, X4(0.10), y4 + 50, ['Potted Ti', 'cone socket'])
+lab(X4(0.35), y4 - 7, X4(0.36), y4 - 60, ['M16 barrel adjuster,', 'locknut + lock wire'])
+A(f'<text x="610" y="{y4+112}" font-size="11">One per rod: the 2 rods of a lift splay to</text>')
+A(f'<text x="610" y="{y4+126}" font-size="11">outriggers either side of the walkway, and</text>')
+A(f'<text x="610" y="{y4+140}" font-size="11">are trimmed against the crown load pins</text>')
+A(f'<text x="610" y="{y4+154}" font-size="11">(masthead.svg; 1/8 turn = 64 N).</text>')
+A(f'<text x="610" y="{y4+176}" font-size="11">Steel rope would swing ~38 mm on the lift</text>')
+A(f'<text x="610" y="{y4+190}" font-size="11">(±1.3 kN if held); CFRP ~1 mm (±0.4 kN).</text>')
+A(f'<text x="610" y="{y4+212}" font-size="11">One bundle breaks at ~89 kN: factor ~24 alone.</text>')
 
 # ================= 5. Key + numbers =================
 A('<text x="905" y="568" class="t">Hanger key (panel 3)</text>')
